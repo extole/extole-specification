@@ -1,0 +1,53 @@
+{
+  "name": "@extole/specification",
+  "version": "0.0.0",
+  "description": "Extole API OpenAPI specifications and Postman collections.",
+  "author": "Extole <engineering@extole.com>",
+  "scripts": {
+    "build": "run-s openapi-to-postman migrations:openapi",
+    "clean": "rm -rf .cache",
+    "lint": "spectral lint openapi/*.json --display-only-failures",
+    "lint:tsc": "tsc --noEmit",
+    "migrations:openapi": "ts-node openapi/migrations",
+    "openapi-to-postman": "ts-node utils/openapi-to-postman.ts",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/extole/extole-specification"
+  },
+  "bugs": {
+    "url": "https://github.com/extole/extole-specification/issues"
+  },
+  "keywords": [
+    "extole",
+    "specification",
+    "api",
+    "rest",
+    "openapi",
+    "spec",
+    "postman",
+    "collection",
+    "json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "21.0.1",
+    "@commitlint/config-conventional": "21.0.1",
+    "@stoplight/spectral-cli": "6.16.0",
+    "husky": "9.1.7",
+    "lint-staged": "17.0.5",
+    "npm-run-all": "4.1.5",
+    "openapi-to-postmanv2": "4.25.0",
+    "prettier": "3.8.3",
+    "ts-node": "10.9.2",
+    "typescript": "5.9.3"
+  },
+  "files": [
+    "openapi/*.json",
+    "postman/*.json"
+  ],
+  "license": "MIT"
+}
