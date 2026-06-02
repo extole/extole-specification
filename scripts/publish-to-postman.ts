@@ -103,10 +103,11 @@ async function createWorkspace(apiKey: string, teamDomain: string): Promise<Work
   }
 
   const workspace = body.workspace;
+  const workspaceType = (workspace.type as 'public' | 'team' | 'personal') ?? 'team';
   return {
     ...workspace,
     slug: workspace.slug ?? WORKSPACE_SLUG,
-    type: workspace.type,
+    type: workspaceType,
   };
 }
 
@@ -132,7 +133,7 @@ async function ensureWorkspace(
     name: workspace.name,
     slug: workspace.slug ?? WORKSPACE_SLUG,
     teamDomain,
-    type: workspace.type as 'public' | 'team' | 'personal',
+    type: (workspace.type as 'public' | 'team' | 'personal') ?? 'team',
     overviewUrl: workspaceOverviewUrl(teamDomain, workspace.slug ?? WORKSPACE_SLUG),
   };
 }

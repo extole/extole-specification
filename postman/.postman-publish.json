@@ -1,4 +1,28 @@
 {
-  "workspace": null,
-  "collections": {}
+  "workspace": {
+    "id": "4a4df133-955d-4b00-b65c-bf951e55f38e",
+    "name": "Extole API",
+    "slug": "extole-api",
+    "teamDomain": "extole-4017592",
+    "type": "team",
+    "overviewUrl": "https://www.postman.com/extole-4017592/extole-api/overview"
+  },
+  "collections": {
+    "integration-consumer-to-extole": {
+      "uid": "55251382-30fa5d2b-fd22-4a4f-8437-c978542642c0",
+      "name": "Integration API - Consumer to Extole"
+    },
+    "integration-server-to-extole": {
+      "uid": "55251382-9f79860b-5f0e-48cb-a5cc-a06d6704221a",
+      "name": "Integration API - Server to Extole"
+    },
+    "management-expert": {
+      "uid": "55251382-d685ad33-74c7-449b-ae3c-4876337a6005",
+      "name": "Management Expert API"
+    },
+    "management": {
+      "uid": "55251382-7b0dde25-8521-4425-81c3-274fe590685d",
+      "name": "Management API"
+    }
+  }
 }
