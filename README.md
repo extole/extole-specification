@@ -48,6 +48,7 @@ const managementCollection = require('@extole/specification/postman/management.j
 ## Interactive documentation
 
 - **GitHub Pages:** [extole.github.io/extole-specification](https://extole.github.io/extole-specification/) (Swagger UI)
+- **Postman:** [Extole API workspace](https://www.postman.com/extole-4017592/extole-api/overview) — public workspace with forkable collections for all four API bundles
 - **ReadMe:** synced from [extole/openapi](https://github.com/extole/openapi) on each spec update
 
 ## Development
@@ -63,6 +64,24 @@ npm run lint     # Spectral lint (mirrors pluribus rules)
 Specs are synced automatically when [extole/openapi](https://github.com/extole/openapi) publishes a new bundle set from pluribus `master`. The `sync-from-openapi` workflow opens a PR in this repo with the updated files.
 
 Manual sync: trigger **Sync from extole/openapi** in the Actions tab, or dispatch from openapi after a successful `update-specs` run.
+
+## Publishing to Postman
+
+The **Publish to Postman** workflow (`publish-to-postman.yml`) keeps the public [Extole API workspace](https://www.postman.com/extole-4017592/extole-api/overview) in sync with `main`. It regenerates Postman collections from OpenAPI, publishes them via the Postman API, and runs verification checks.
+
+```bash
+export POSTMAN_API_KEY=<your-postman-api-key>
+npm run publish:postman
+npm run verify:postman
+```
+
+Collection and workspace UIDs are stored in `postman/.postman-publish.json` so publishes are idempotent.
+
+**Manual follow-ups (Postman UI only):**
+
+- Submit the workspace to the [Postman API Network](https://www.postman.com/explore) for catalog discoverability.
+- Add team branding (logo, description) under Postman team settings.
+- Optionally rename the team from `Admin's Team` to `Extole` for a cleaner public URL.
 
 ## Publishing to npm
 
@@ -82,6 +101,7 @@ Until `NPM_TOKEN` is configured, release-please will still open version-bump PRs
 | ------------------- | ----------------------------------------------------------------------- |
 | `EXTOLE_GITHUB_PAT` | `sync-from-openapi.yml` — clone private `extole/openapi`, push sync PRs |
 | `NPM_TOKEN`         | `release-please.yml` publish job                                        |
+| `POSTMAN_API_KEY`   | `publish-to-postman.yml` — publish and verify Postman collections       |
 
 ## License
 

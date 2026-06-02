@@ -1,0 +1,62 @@
+name: publish-to-postman
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'openapi/**'
+      - 'postman/**'
+      - 'scripts/publish-to-postman.ts'
+      - 'scripts/verify-postman-publish.ts'
+      - 'scripts/postman-publish-lib.ts'
+      - '.github/workflows/publish-to-postman.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-to-postman
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          cache: npm
+          node-version-file: .nvmrc
+
+      - name: Install dependencies
+        run: npm ci --prefer-offline
+
+      - name: Build Postman collections
+        run: npm run build
+
+      - name: Publish to Postman
+        env:
+          POSTMAN_API_KEY: ${{ secrets.POSTMAN_API_KEY }}
+        run: npm run publish:postman
+
+      - name: Verify Postman publish
+        env:
+          POSTMAN_API_KEY: ${{ secrets.POSTMAN_API_KEY }}
+        run: npm run verify:postman
+
+      - name: Commit mapping updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- postman/.postman-publish.json; then
+            echo "No mapping changes to commit."
+            exit 0
+          fi
+          git add postman/.postman-publish.json
+          git commit -m "chore(postman): update publish mapping [skip ci]"
+          git push
