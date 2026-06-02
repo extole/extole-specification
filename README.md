@@ -47,8 +47,8 @@ const managementCollection = require('@extole/specification/postman/management.j
 
 ## Interactive documentation
 
-- **GitHub Pages:** [extole.github.io/extole-specification](https://extole.github.io/extole-specification/) (Swagger UI)
-- **Postman:** [Extole API workspace](https://www.postman.com/extole-4017592/extole-api/overview) — public workspace with forkable collections for all four API bundles
+- **GitHub Pages:** [extole.github.io/extole-specification](https://extole.github.io/extole-specification/) (Swagger UI; enable GitHub Pages in repo settings if this 404s)
+- **Postman:** [Extole API workspace](https://www.postman.com/extole-4017592/extole-api/overview) — four collections are published and kept in sync by CI; **flip workspace visibility to Public in Postman UI** (see below) before sharing the link externally
 - **ReadMe:** synced from [extole/openapi](https://github.com/extole/openapi) on each spec update
 
 ## Development
@@ -67,7 +67,7 @@ Manual sync: trigger **Sync from extole/openapi** in the Actions tab, or dispatc
 
 ## Publishing to Postman
 
-The **Publish to Postman** workflow (`publish-to-postman.yml`) keeps the public [Extole API workspace](https://www.postman.com/extole-4017592/extole-api/overview) in sync with `main`. It regenerates Postman collections from OpenAPI, publishes them via the Postman API, and runs verification checks.
+The **Publish to Postman** workflow (`publish-to-postman.yml`) keeps the [Extole API workspace](https://www.postman.com/extole-4017592/extole-api/overview) in sync with `main`. It regenerates Postman collections from OpenAPI, publishes them via the Postman API, and runs verification checks.
 
 ```bash
 export POSTMAN_API_KEY=<your-postman-api-key>
@@ -77,11 +77,16 @@ npm run verify:postman
 
 Collection and workspace UIDs are stored in `postman/.postman-publish.json` so publishes are idempotent.
 
-**Manual follow-ups (Postman UI only):**
+### Make the workspace publicly discoverable (Postman UI — required once)
 
-- Submit the workspace to the [Postman API Network](https://www.postman.com/explore) for catalog discoverability.
-- Add team branding (logo, description) under Postman team settings.
-- Optionally rename the team from `Admin's Team` to `Extole` for a cleaner public URL.
+The Postman REST API cannot create or flip a workspace to `public` on all plan tiers. After the first CI publish, a team admin must complete these steps in the Postman web app:
+
+1. **Enable the team public profile:** Team settings → turn on **Public profile** (otherwise `postman.com/extole-4017592` shows "Profile cannot be found").
+2. **Set workspace visibility to Public:** Open **Extole API** → Settings → Workspace type → **Public** → Save. (May require Community Manager approval on Team/Enterprise plans.)
+3. **Verify anonymously:** open the workspace URL in an incognito window — all four collections should load without login, with **Fork** / **Run in Postman** visible.
+4. **Optional polish:** rename team `extole-4017592` → `extole` for a cleaner URL (`postman.com/extole/extole-api/...`), add logo/description, and submit the workspace to the [Postman API Network](https://www.postman.com/explore) so `search?q=Extole` surfaces it.
+
+After step 2, update `postman/.postman-publish.json` `"type"` to `"public"` (or re-run publish locally) so CI verification enforces anonymous access.
 
 ## Publishing to npm
 
