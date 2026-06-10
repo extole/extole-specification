@@ -258,225 +258,6 @@
               "description": "",
               "item": [
                 {
-                  "id": "cfe44ab3-3b46-4a51-a5fd-f33335bad4f6",
-                  "name": "Submit a share event",
-                  "request": {
-                    "name": "Submit a share event",
-                    "description": {
-                      "content": "Deprecated. Use `POST /v6/email/share` instead. Records a share event on behalf of the authenticated advocate and returns a `polling_id` for status polling.",
-                      "type": "text/plain"
-                    },
-                    "url": {
-                      "path": ["v4", "events", "share"],
-                      "host": ["{{baseUrl}}"],
-                      "query": [],
-                      "variable": []
-                    },
-                    "header": [
-                      { "key": "Content-Type", "value": "<string>" },
-                      { "key": "Accept", "value": "<string>" }
-                    ],
-                    "method": "POST",
-                    "auth": null
-                  },
-                  "response": [
-                    {
-                      "id": "a85c4664-2e62-429b-a9e1-51c4ed114552",
-                      "name": "Successful response",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v4", "events", "share"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "OK",
-                      "code": 200,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    },
-                    {
-                      "id": "b73e9cf5-3b2b-4aa7-9973-6e432e252834",
-                      "name": "Bad Request",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v4", "events", "share"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "Bad Request",
-                      "code": 400,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    },
-                    {
-                      "id": "432dd6ba-0ce8-4999-9141-72bfa3dd3cc6",
-                      "name": "Unauthorized",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v4", "events", "share"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "Unauthorized",
-                      "code": 401,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    },
-                    {
-                      "id": "8b5cbe8f-fdc4-4f32-83e6-3c53169d9633",
-                      "name": "Forbidden",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v4", "events", "share"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "Forbidden",
-                      "code": 403,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    },
-                    {
-                      "id": "fa417ee4-a928-4760-affb-b6995878fe7d",
-                      "name": "Unsupported Media Type",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v4", "events", "share"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "Unsupported Media Type",
-                      "code": 415,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    },
-                    {
-                      "id": "6c215df9-ce1e-4662-a1ae-78b8dbb44171",
-                      "name": "Too Many Requests",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v4", "events", "share"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "Too Many Requests",
-                      "code": 429,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    }
-                  ],
-                  "event": [],
-                  "protocolProfileBehavior": { "disableBodyPruning": true }
-                },
-                {
                   "name": "status",
                   "description": "",
                   "item": [
@@ -772,6 +553,225 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "id": "cfe44ab3-3b46-4a51-a5fd-f33335bad4f6",
+                  "name": "Submit a share event",
+                  "request": {
+                    "name": "Submit a share event",
+                    "description": {
+                      "content": "Deprecated. Use `POST /v6/email/share` instead. Records a share event on behalf of the authenticated advocate and returns a `polling_id` for status polling.",
+                      "type": "text/plain"
+                    },
+                    "url": {
+                      "path": ["v4", "events", "share"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [],
+                      "variable": []
+                    },
+                    "header": [
+                      { "key": "Content-Type", "value": "<string>" },
+                      { "key": "Accept", "value": "<string>" }
+                    ],
+                    "method": "POST",
+                    "auth": null
+                  },
+                  "response": [
+                    {
+                      "id": "a85c4664-2e62-429b-a9e1-51c4ed114552",
+                      "name": "Successful response",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v4", "events", "share"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "b73e9cf5-3b2b-4aa7-9973-6e432e252834",
+                      "name": "Bad Request",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v4", "events", "share"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "Bad Request",
+                      "code": 400,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "432dd6ba-0ce8-4999-9141-72bfa3dd3cc6",
+                      "name": "Unauthorized",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v4", "events", "share"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "Unauthorized",
+                      "code": 401,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "8b5cbe8f-fdc4-4f32-83e6-3c53169d9633",
+                      "name": "Forbidden",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v4", "events", "share"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "Forbidden",
+                      "code": 403,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "fa417ee4-a928-4760-affb-b6995878fe7d",
+                      "name": "Unsupported Media Type",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v4", "events", "share"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "Unsupported Media Type",
+                      "code": 415,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "6c215df9-ce1e-4662-a1ae-78b8dbb44171",
+                      "name": "Too Many Requests",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v4", "events", "share"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "Too Many Requests",
+                      "code": 429,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    }
+                  ],
+                  "event": [],
+                  "protocolProfileBehavior": { "disableBodyPruning": true }
                 }
               ]
             }
@@ -3077,225 +3077,6 @@
               "description": "",
               "item": [
                 {
-                  "id": "a61685d9-0570-46e1-b08f-4146f838a80a",
-                  "name": "Send an email as the authenticated consumer",
-                  "request": {
-                    "name": "Send an email as the authenticated consumer",
-                    "description": {
-                      "content": "Deprecated. Sends an email on behalf of the authenticated consumer and returns a `polling_id` for status polling. Prefer event-based email flows where available.",
-                      "type": "text/plain"
-                    },
-                    "url": {
-                      "path": ["v4", "me", "email"],
-                      "host": ["{{baseUrl}}"],
-                      "query": [],
-                      "variable": []
-                    },
-                    "header": [
-                      { "key": "Content-Type", "value": "<string>" },
-                      { "key": "Accept", "value": "<string>" }
-                    ],
-                    "method": "POST",
-                    "auth": null
-                  },
-                  "response": [
-                    {
-                      "id": "a873280f-1fdb-4154-b82c-45e08a7cbc69",
-                      "name": "Successful response",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v4", "me", "email"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "OK",
-                      "code": 200,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    },
-                    {
-                      "id": "ae579ffe-2798-4460-a390-a34f7fb9e6ae",
-                      "name": "Bad Request",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v4", "me", "email"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "Bad Request",
-                      "code": 400,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    },
-                    {
-                      "id": "d54f7602-27f3-4c19-b604-d48b66cbeddd",
-                      "name": "Unauthorized",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v4", "me", "email"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "Unauthorized",
-                      "code": 401,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    },
-                    {
-                      "id": "a9e4bc47-3ca2-4056-8ba9-8526f69da853",
-                      "name": "Forbidden",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v4", "me", "email"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "Forbidden",
-                      "code": 403,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    },
-                    {
-                      "id": "7c54bb79-1f87-459e-b537-077016d115e8",
-                      "name": "Unsupported Media Type",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v4", "me", "email"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "Unsupported Media Type",
-                      "code": 415,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    },
-                    {
-                      "id": "6d705fe9-7cfa-4630-ba9c-f5c7f90059a1",
-                      "name": "Too Many Requests",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v4", "me", "email"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "Too Many Requests",
-                      "code": 429,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    }
-                  ],
-                  "event": [],
-                  "protocolProfileBehavior": { "disableBodyPruning": true }
-                },
-                {
                   "name": "status",
                   "description": "",
                   "item": [
@@ -3591,6 +3372,225 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "id": "a61685d9-0570-46e1-b08f-4146f838a80a",
+                  "name": "Send an email as the authenticated consumer",
+                  "request": {
+                    "name": "Send an email as the authenticated consumer",
+                    "description": {
+                      "content": "Deprecated. Sends an email on behalf of the authenticated consumer and returns a `polling_id` for status polling. Prefer event-based email flows where available.",
+                      "type": "text/plain"
+                    },
+                    "url": {
+                      "path": ["v4", "me", "email"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [],
+                      "variable": []
+                    },
+                    "header": [
+                      { "key": "Content-Type", "value": "<string>" },
+                      { "key": "Accept", "value": "<string>" }
+                    ],
+                    "method": "POST",
+                    "auth": null
+                  },
+                  "response": [
+                    {
+                      "id": "a873280f-1fdb-4154-b82c-45e08a7cbc69",
+                      "name": "Successful response",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v4", "me", "email"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "ae579ffe-2798-4460-a390-a34f7fb9e6ae",
+                      "name": "Bad Request",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v4", "me", "email"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "Bad Request",
+                      "code": 400,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "d54f7602-27f3-4c19-b604-d48b66cbeddd",
+                      "name": "Unauthorized",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v4", "me", "email"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "Unauthorized",
+                      "code": 401,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "a9e4bc47-3ca2-4056-8ba9-8526f69da853",
+                      "name": "Forbidden",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v4", "me", "email"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "Forbidden",
+                      "code": 403,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "7c54bb79-1f87-459e-b537-077016d115e8",
+                      "name": "Unsupported Media Type",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v4", "me", "email"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "Unsupported Media Type",
+                      "code": 415,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "6d705fe9-7cfa-4630-ba9c-f5c7f90059a1",
+                      "name": "Too Many Requests",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v4", "me", "email"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "Too Many Requests",
+                      "code": 429,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    }
+                  ],
+                  "event": [],
+                  "protocolProfileBehavior": { "disableBodyPruning": true }
                 }
               ]
             },
@@ -5751,225 +5751,6 @@
               "description": "",
               "item": [
                 {
-                  "id": "1c9fa840-f74b-4f56-9b49-7b094350e8d0",
-                  "name": "Send a profile verification email",
-                  "request": {
-                    "name": "Send a profile verification email",
-                    "description": {
-                      "content": "Deprecated. Sends a verification email to confirm the authenticated consumer's email address. Returns a `polling_id` for status polling.",
-                      "type": "text/plain"
-                    },
-                    "url": {
-                      "path": ["v4", "me", "send-verification-email"],
-                      "host": ["{{baseUrl}}"],
-                      "query": [],
-                      "variable": []
-                    },
-                    "header": [
-                      { "key": "Content-Type", "value": "<string>" },
-                      { "key": "Accept", "value": "<string>" }
-                    ],
-                    "method": "POST",
-                    "auth": null
-                  },
-                  "response": [
-                    {
-                      "id": "967149eb-ba0e-4418-986e-011fd7206818",
-                      "name": "Successful response",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v4", "me", "send-verification-email"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "OK",
-                      "code": 200,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    },
-                    {
-                      "id": "7ff51be5-f060-43fc-a2cb-d6d5553e22e5",
-                      "name": "Bad Request",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v4", "me", "send-verification-email"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "Bad Request",
-                      "code": 400,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    },
-                    {
-                      "id": "e25d5f11-d591-4f57-a42f-c0142ff0c365",
-                      "name": "Unauthorized",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v4", "me", "send-verification-email"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "Unauthorized",
-                      "code": 401,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    },
-                    {
-                      "id": "0b4d1ddf-f61c-4714-8b45-f4ec1207ba31",
-                      "name": "Forbidden",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v4", "me", "send-verification-email"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "Forbidden",
-                      "code": 403,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    },
-                    {
-                      "id": "d1d16343-5f9f-4478-93da-dbdda4ddf600",
-                      "name": "Unsupported Media Type",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v4", "me", "send-verification-email"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "Unsupported Media Type",
-                      "code": 415,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    },
-                    {
-                      "id": "93d962d6-8274-4fd1-b4d9-1b42c5dc20bd",
-                      "name": "Too Many Requests",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v4", "me", "send-verification-email"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "Too Many Requests",
-                      "code": 429,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    }
-                  ],
-                  "event": [],
-                  "protocolProfileBehavior": { "disableBodyPruning": true }
-                },
-                {
                   "name": "status",
                   "description": "",
                   "item": [
@@ -6265,6 +6046,225 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "id": "1c9fa840-f74b-4f56-9b49-7b094350e8d0",
+                  "name": "Send a profile verification email",
+                  "request": {
+                    "name": "Send a profile verification email",
+                    "description": {
+                      "content": "Deprecated. Sends a verification email to confirm the authenticated consumer's email address. Returns a `polling_id` for status polling.",
+                      "type": "text/plain"
+                    },
+                    "url": {
+                      "path": ["v4", "me", "send-verification-email"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [],
+                      "variable": []
+                    },
+                    "header": [
+                      { "key": "Content-Type", "value": "<string>" },
+                      { "key": "Accept", "value": "<string>" }
+                    ],
+                    "method": "POST",
+                    "auth": null
+                  },
+                  "response": [
+                    {
+                      "id": "967149eb-ba0e-4418-986e-011fd7206818",
+                      "name": "Successful response",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v4", "me", "send-verification-email"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "7ff51be5-f060-43fc-a2cb-d6d5553e22e5",
+                      "name": "Bad Request",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v4", "me", "send-verification-email"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "Bad Request",
+                      "code": 400,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "e25d5f11-d591-4f57-a42f-c0142ff0c365",
+                      "name": "Unauthorized",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v4", "me", "send-verification-email"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "Unauthorized",
+                      "code": 401,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "0b4d1ddf-f61c-4714-8b45-f4ec1207ba31",
+                      "name": "Forbidden",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v4", "me", "send-verification-email"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "Forbidden",
+                      "code": 403,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "d1d16343-5f9f-4478-93da-dbdda4ddf600",
+                      "name": "Unsupported Media Type",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v4", "me", "send-verification-email"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "Unsupported Media Type",
+                      "code": 415,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "93d962d6-8274-4fd1-b4d9-1b42c5dc20bd",
+                      "name": "Too Many Requests",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v4", "me", "send-verification-email"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "Too Many Requests",
+                      "code": 429,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    }
+                  ],
+                  "event": [],
+                  "protocolProfileBehavior": { "disableBodyPruning": true }
                 }
               ]
             },
@@ -12240,225 +12240,6 @@
               "description": "",
               "item": [
                 {
-                  "id": "ab20fa86-9678-40c7-8ce5-ddcf0a155e60",
-                  "name": "Submit a custom share event",
-                  "request": {
-                    "name": "Submit a custom share event",
-                    "description": {
-                      "content": "Deprecated. Use event-based sharing instead. Records a custom share on behalf of the authenticated advocate and returns a `polling_id` for status polling.",
-                      "type": "text/plain"
-                    },
-                    "url": {
-                      "path": ["v5", "custom", "share"],
-                      "host": ["{{baseUrl}}"],
-                      "query": [],
-                      "variable": []
-                    },
-                    "header": [
-                      { "key": "Content-Type", "value": "<string>" },
-                      { "key": "Accept", "value": "<string>" }
-                    ],
-                    "method": "POST",
-                    "auth": null
-                  },
-                  "response": [
-                    {
-                      "id": "80bc16f7-eab6-4112-afd9-9e6522124697",
-                      "name": "Successful response",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v5", "custom", "share"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "OK",
-                      "code": 200,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    },
-                    {
-                      "id": "20f10975-d900-4f6e-b1f9-34b620256b47",
-                      "name": "Bad Request",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v5", "custom", "share"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "Bad Request",
-                      "code": 400,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    },
-                    {
-                      "id": "87e9eda8-d1ad-4d9d-883d-dddee3201f10",
-                      "name": "Unauthorized",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v5", "custom", "share"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "Unauthorized",
-                      "code": 401,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    },
-                    {
-                      "id": "48bff3a6-96d2-47a8-8a0d-392f7fde22c6",
-                      "name": "Forbidden",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v5", "custom", "share"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "Forbidden",
-                      "code": 403,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    },
-                    {
-                      "id": "bfd1f8b4-1a2d-4e50-b75d-172772f8d4f1",
-                      "name": "Unsupported Media Type",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v5", "custom", "share"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "Unsupported Media Type",
-                      "code": 415,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    },
-                    {
-                      "id": "ba786691-f9c5-4fa4-85db-98cddeff2bdb",
-                      "name": "Too Many Requests",
-                      "originalRequest": {
-                        "url": {
-                          "path": ["v5", "custom", "share"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": []
-                        },
-                        "header": [
-                          { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" },
-                          {
-                            "description": {
-                              "content": "Added as a part of security scheme: apikey",
-                              "type": "text/plain"
-                            },
-                            "key": "Authorization",
-                            "value": "<API Key>"
-                          }
-                        ],
-                        "method": "POST"
-                      },
-                      "status": "Too Many Requests",
-                      "code": 429,
-                      "header": [
-                        { "key": "Content-Type", "value": "application/json" }
-                      ],
-                      "cookie": [],
-                      "_postman_previewlanguage": "json"
-                    }
-                  ],
-                  "event": [],
-                  "protocolProfileBehavior": { "disableBodyPruning": true }
-                },
-                {
                   "name": "status",
                   "description": "",
                   "item": [
@@ -12754,261 +12535,225 @@
                       ]
                     }
                   ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "email",
-          "description": "",
-          "item": [
-            {
-              "name": "share",
-              "description": "",
-              "item": [
+                },
                 {
-                  "name": "batch",
-                  "description": "",
-                  "item": [
+                  "id": "ab20fa86-9678-40c7-8ce5-ddcf0a155e60",
+                  "name": "Submit a custom share event",
+                  "request": {
+                    "name": "Submit a custom share event",
+                    "description": {
+                      "content": "Deprecated. Use event-based sharing instead. Records a custom share on behalf of the authenticated advocate and returns a `polling_id` for status polling.",
+                      "type": "text/plain"
+                    },
+                    "url": {
+                      "path": ["v5", "custom", "share"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [],
+                      "variable": []
+                    },
+                    "header": [
+                      { "key": "Content-Type", "value": "<string>" },
+                      { "key": "Accept", "value": "<string>" }
+                    ],
+                    "method": "POST",
+                    "auth": null
+                  },
+                  "response": [
                     {
-                      "id": "b2c805fe-5863-4875-8b8a-77654109d0d5",
-                      "name": "Send referral email shares in batch (legacy)",
-                      "request": {
-                        "name": "Send referral email shares in batch (legacy)",
-                        "description": {
-                          "content": "Deprecated. Use `POST /v6/email/share/batch` instead. Sends referral emails to multiple recipients in a single request.",
-                          "type": "text/plain"
-                        },
+                      "id": "80bc16f7-eab6-4112-afd9-9e6522124697",
+                      "name": "Successful response",
+                      "originalRequest": {
                         "url": {
-                          "path": ["v5", "email", "share", "batch"],
+                          "path": ["v5", "custom", "share"],
                           "host": ["{{baseUrl}}"],
                           "query": [],
                           "variable": []
                         },
                         "header": [
                           { "key": "Content-Type", "value": "<string>" },
-                          { "key": "Accept", "value": "<string>" }
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
                         ],
-                        "method": "POST",
-                        "auth": null
+                        "method": "POST"
                       },
-                      "response": [
-                        {
-                          "id": "1a5991c4-4abb-4a84-b6f6-744391578083",
-                          "name": "Successful response",
-                          "originalRequest": {
-                            "url": {
-                              "path": ["v5", "email", "share", "batch"],
-                              "host": ["{{baseUrl}}"],
-                              "query": [],
-                              "variable": []
-                            },
-                            "header": [
-                              { "key": "Content-Type", "value": "<string>" },
-                              { "key": "Accept", "value": "<string>" },
-                              {
-                                "description": {
-                                  "content": "Added as a part of security scheme: apikey",
-                                  "type": "text/plain"
-                                },
-                                "key": "Authorization",
-                                "value": "<API Key>"
-                              }
-                            ],
-                            "method": "POST"
-                          },
-                          "status": "OK",
-                          "code": 200,
-                          "header": [
-                            {
-                              "key": "Content-Type",
-                              "value": "application/json"
-                            }
-                          ],
-                          "cookie": [],
-                          "_postman_previewlanguage": "json"
-                        },
-                        {
-                          "id": "5363ee2a-6da5-4d22-a814-38e74c6b8403",
-                          "name": "Bad Request",
-                          "originalRequest": {
-                            "url": {
-                              "path": ["v5", "email", "share", "batch"],
-                              "host": ["{{baseUrl}}"],
-                              "query": [],
-                              "variable": []
-                            },
-                            "header": [
-                              { "key": "Content-Type", "value": "<string>" },
-                              { "key": "Accept", "value": "<string>" },
-                              {
-                                "description": {
-                                  "content": "Added as a part of security scheme: apikey",
-                                  "type": "text/plain"
-                                },
-                                "key": "Authorization",
-                                "value": "<API Key>"
-                              }
-                            ],
-                            "method": "POST"
-                          },
-                          "status": "Bad Request",
-                          "code": 400,
-                          "header": [
-                            {
-                              "key": "Content-Type",
-                              "value": "application/json"
-                            }
-                          ],
-                          "cookie": [],
-                          "_postman_previewlanguage": "json"
-                        },
-                        {
-                          "id": "be2f3f86-dd90-43f3-91b7-38eada29b7be",
-                          "name": "Unauthorized",
-                          "originalRequest": {
-                            "url": {
-                              "path": ["v5", "email", "share", "batch"],
-                              "host": ["{{baseUrl}}"],
-                              "query": [],
-                              "variable": []
-                            },
-                            "header": [
-                              { "key": "Content-Type", "value": "<string>" },
-                              { "key": "Accept", "value": "<string>" },
-                              {
-                                "description": {
-                                  "content": "Added as a part of security scheme: apikey",
-                                  "type": "text/plain"
-                                },
-                                "key": "Authorization",
-                                "value": "<API Key>"
-                              }
-                            ],
-                            "method": "POST"
-                          },
-                          "status": "Unauthorized",
-                          "code": 401,
-                          "header": [
-                            {
-                              "key": "Content-Type",
-                              "value": "application/json"
-                            }
-                          ],
-                          "cookie": [],
-                          "_postman_previewlanguage": "json"
-                        },
-                        {
-                          "id": "3b08ae35-748a-42fc-be8d-de2ab4e8fdc1",
-                          "name": "Forbidden",
-                          "originalRequest": {
-                            "url": {
-                              "path": ["v5", "email", "share", "batch"],
-                              "host": ["{{baseUrl}}"],
-                              "query": [],
-                              "variable": []
-                            },
-                            "header": [
-                              { "key": "Content-Type", "value": "<string>" },
-                              { "key": "Accept", "value": "<string>" },
-                              {
-                                "description": {
-                                  "content": "Added as a part of security scheme: apikey",
-                                  "type": "text/plain"
-                                },
-                                "key": "Authorization",
-                                "value": "<API Key>"
-                              }
-                            ],
-                            "method": "POST"
-                          },
-                          "status": "Forbidden",
-                          "code": 403,
-                          "header": [
-                            {
-                              "key": "Content-Type",
-                              "value": "application/json"
-                            }
-                          ],
-                          "cookie": [],
-                          "_postman_previewlanguage": "json"
-                        },
-                        {
-                          "id": "a5ab54c2-8c58-452c-9d89-2eaa0bfa3396",
-                          "name": "Unsupported Media Type",
-                          "originalRequest": {
-                            "url": {
-                              "path": ["v5", "email", "share", "batch"],
-                              "host": ["{{baseUrl}}"],
-                              "query": [],
-                              "variable": []
-                            },
-                            "header": [
-                              { "key": "Content-Type", "value": "<string>" },
-                              { "key": "Accept", "value": "<string>" },
-                              {
-                                "description": {
-                                  "content": "Added as a part of security scheme: apikey",
-                                  "type": "text/plain"
-                                },
-                                "key": "Authorization",
-                                "value": "<API Key>"
-                              }
-                            ],
-                            "method": "POST"
-                          },
-                          "status": "Unsupported Media Type",
-                          "code": 415,
-                          "header": [
-                            {
-                              "key": "Content-Type",
-                              "value": "application/json"
-                            }
-                          ],
-                          "cookie": [],
-                          "_postman_previewlanguage": "json"
-                        },
-                        {
-                          "id": "6e367b7f-6798-4914-868b-a2e13d261873",
-                          "name": "Too Many Requests",
-                          "originalRequest": {
-                            "url": {
-                              "path": ["v5", "email", "share", "batch"],
-                              "host": ["{{baseUrl}}"],
-                              "query": [],
-                              "variable": []
-                            },
-                            "header": [
-                              { "key": "Content-Type", "value": "<string>" },
-                              { "key": "Accept", "value": "<string>" },
-                              {
-                                "description": {
-                                  "content": "Added as a part of security scheme: apikey",
-                                  "type": "text/plain"
-                                },
-                                "key": "Authorization",
-                                "value": "<API Key>"
-                              }
-                            ],
-                            "method": "POST"
-                          },
-                          "status": "Too Many Requests",
-                          "code": 429,
-                          "header": [
-                            {
-                              "key": "Content-Type",
-                              "value": "application/json"
-                            }
-                          ],
-                          "cookie": [],
-                          "_postman_previewlanguage": "json"
-                        }
+                      "status": "OK",
+                      "code": 200,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
                       ],
-                      "event": [],
-                      "protocolProfileBehavior": { "disableBodyPruning": true }
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "20f10975-d900-4f6e-b1f9-34b620256b47",
+                      "name": "Bad Request",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v5", "custom", "share"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "Bad Request",
+                      "code": 400,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "87e9eda8-d1ad-4d9d-883d-dddee3201f10",
+                      "name": "Unauthorized",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v5", "custom", "share"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "Unauthorized",
+                      "code": 401,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "48bff3a6-96d2-47a8-8a0d-392f7fde22c6",
+                      "name": "Forbidden",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v5", "custom", "share"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "Forbidden",
+                      "code": 403,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "bfd1f8b4-1a2d-4e50-b75d-172772f8d4f1",
+                      "name": "Unsupported Media Type",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v5", "custom", "share"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "Unsupported Media Type",
+                      "code": 415,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "ba786691-f9c5-4fa4-85db-98cddeff2bdb",
+                      "name": "Too Many Requests",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["v5", "custom", "share"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" },
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "method": "POST"
+                      },
+                      "status": "Too Many Requests",
+                      "code": 429,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
                     }
-                  ]
+                  ],
+                  "event": [],
+                  "protocolProfileBehavior": { "disableBodyPruning": true }
                 }
               ]
             }
@@ -13658,6 +13403,261 @@
               "protocolProfileBehavior": { "disableBodyPruning": true }
             }
           ]
+        },
+        {
+          "name": "email",
+          "description": "",
+          "item": [
+            {
+              "name": "share",
+              "description": "",
+              "item": [
+                {
+                  "name": "batch",
+                  "description": "",
+                  "item": [
+                    {
+                      "id": "b2c805fe-5863-4875-8b8a-77654109d0d5",
+                      "name": "Send referral email shares in batch (legacy)",
+                      "request": {
+                        "name": "Send referral email shares in batch (legacy)",
+                        "description": {
+                          "content": "Deprecated. Use `POST /v6/email/share/batch` instead. Sends referral emails to multiple recipients in a single request.",
+                          "type": "text/plain"
+                        },
+                        "url": {
+                          "path": ["v5", "email", "share", "batch"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Content-Type", "value": "<string>" },
+                          { "key": "Accept", "value": "<string>" }
+                        ],
+                        "method": "POST",
+                        "auth": null
+                      },
+                      "response": [
+                        {
+                          "id": "1a5991c4-4abb-4a84-b6f6-744391578083",
+                          "name": "Successful response",
+                          "originalRequest": {
+                            "url": {
+                              "path": ["v5", "email", "share", "batch"],
+                              "host": ["{{baseUrl}}"],
+                              "query": [],
+                              "variable": []
+                            },
+                            "header": [
+                              { "key": "Content-Type", "value": "<string>" },
+                              { "key": "Accept", "value": "<string>" },
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "<API Key>"
+                              }
+                            ],
+                            "method": "POST"
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "5363ee2a-6da5-4d22-a814-38e74c6b8403",
+                          "name": "Bad Request",
+                          "originalRequest": {
+                            "url": {
+                              "path": ["v5", "email", "share", "batch"],
+                              "host": ["{{baseUrl}}"],
+                              "query": [],
+                              "variable": []
+                            },
+                            "header": [
+                              { "key": "Content-Type", "value": "<string>" },
+                              { "key": "Accept", "value": "<string>" },
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "<API Key>"
+                              }
+                            ],
+                            "method": "POST"
+                          },
+                          "status": "Bad Request",
+                          "code": 400,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "be2f3f86-dd90-43f3-91b7-38eada29b7be",
+                          "name": "Unauthorized",
+                          "originalRequest": {
+                            "url": {
+                              "path": ["v5", "email", "share", "batch"],
+                              "host": ["{{baseUrl}}"],
+                              "query": [],
+                              "variable": []
+                            },
+                            "header": [
+                              { "key": "Content-Type", "value": "<string>" },
+                              { "key": "Accept", "value": "<string>" },
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "<API Key>"
+                              }
+                            ],
+                            "method": "POST"
+                          },
+                          "status": "Unauthorized",
+                          "code": 401,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "3b08ae35-748a-42fc-be8d-de2ab4e8fdc1",
+                          "name": "Forbidden",
+                          "originalRequest": {
+                            "url": {
+                              "path": ["v5", "email", "share", "batch"],
+                              "host": ["{{baseUrl}}"],
+                              "query": [],
+                              "variable": []
+                            },
+                            "header": [
+                              { "key": "Content-Type", "value": "<string>" },
+                              { "key": "Accept", "value": "<string>" },
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "<API Key>"
+                              }
+                            ],
+                            "method": "POST"
+                          },
+                          "status": "Forbidden",
+                          "code": 403,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "a5ab54c2-8c58-452c-9d89-2eaa0bfa3396",
+                          "name": "Unsupported Media Type",
+                          "originalRequest": {
+                            "url": {
+                              "path": ["v5", "email", "share", "batch"],
+                              "host": ["{{baseUrl}}"],
+                              "query": [],
+                              "variable": []
+                            },
+                            "header": [
+                              { "key": "Content-Type", "value": "<string>" },
+                              { "key": "Accept", "value": "<string>" },
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "<API Key>"
+                              }
+                            ],
+                            "method": "POST"
+                          },
+                          "status": "Unsupported Media Type",
+                          "code": 415,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "6e367b7f-6798-4914-868b-a2e13d261873",
+                          "name": "Too Many Requests",
+                          "originalRequest": {
+                            "url": {
+                              "path": ["v5", "email", "share", "batch"],
+                              "host": ["{{baseUrl}}"],
+                              "query": [],
+                              "variable": []
+                            },
+                            "header": [
+                              { "key": "Content-Type", "value": "<string>" },
+                              { "key": "Accept", "value": "<string>" },
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "<API Key>"
+                              }
+                            ],
+                            "method": "POST"
+                          },
+                          "status": "Too Many Requests",
+                          "code": 429,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        }
+                      ],
+                      "event": [],
+                      "protocolProfileBehavior": { "disableBodyPruning": true }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -14236,6 +14236,251 @@
                   "protocolProfileBehavior": { "disableBodyPruning": true }
                 },
                 {
+                  "name": "{code}",
+                  "description": "",
+                  "item": [
+                    {
+                      "id": "2267911b-0483-43fd-8ba2-fdd6dae50609",
+                      "name": "Get a shareable by code",
+                      "request": {
+                        "name": "Get a shareable by code",
+                        "description": {
+                          "content": "Returns the shareable identified by `code` when it belongs to the authenticated consumer.",
+                          "type": "text/plain"
+                        },
+                        "url": {
+                          "path": ["v6", "me", "shareables", ":code"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": [
+                            {
+                              "type": "any",
+                              "value": "<string>",
+                              "key": "code",
+                              "disabled": false,
+                              "description": {
+                                "content": "(Required) ",
+                                "type": "text/plain"
+                              }
+                            }
+                          ]
+                        },
+                        "header": [{ "key": "Accept", "value": "<string>" }],
+                        "method": "GET",
+                        "auth": null
+                      },
+                      "response": [
+                        {
+                          "id": "87455400-8b38-4f35-86c1-339491f6371c",
+                          "name": "Successful response",
+                          "originalRequest": {
+                            "url": {
+                              "path": ["v6", "me", "shareables", ":code"],
+                              "host": ["{{baseUrl}}"],
+                              "query": [],
+                              "variable": []
+                            },
+                            "header": [
+                              { "key": "Accept", "value": "<string>" },
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "<API Key>"
+                              }
+                            ],
+                            "method": "GET"
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "3609f528-a891-4c69-b98f-8147f504aa3a",
+                          "name": "Bad Request",
+                          "originalRequest": {
+                            "url": {
+                              "path": ["v6", "me", "shareables", ":code"],
+                              "host": ["{{baseUrl}}"],
+                              "query": [],
+                              "variable": []
+                            },
+                            "header": [
+                              { "key": "Accept", "value": "<string>" },
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "<API Key>"
+                              }
+                            ],
+                            "method": "GET"
+                          },
+                          "status": "Bad Request",
+                          "code": 400,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "dea1aeba-e281-47d1-bbb3-3bdb06778c6a",
+                          "name": "Unauthorized",
+                          "originalRequest": {
+                            "url": {
+                              "path": ["v6", "me", "shareables", ":code"],
+                              "host": ["{{baseUrl}}"],
+                              "query": [],
+                              "variable": []
+                            },
+                            "header": [
+                              { "key": "Accept", "value": "<string>" },
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "<API Key>"
+                              }
+                            ],
+                            "method": "GET"
+                          },
+                          "status": "Unauthorized",
+                          "code": 401,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "1f01bacf-0561-458a-b10b-02157a1d3367",
+                          "name": "Forbidden",
+                          "originalRequest": {
+                            "url": {
+                              "path": ["v6", "me", "shareables", ":code"],
+                              "host": ["{{baseUrl}}"],
+                              "query": [],
+                              "variable": []
+                            },
+                            "header": [
+                              { "key": "Accept", "value": "<string>" },
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "<API Key>"
+                              }
+                            ],
+                            "method": "GET"
+                          },
+                          "status": "Forbidden",
+                          "code": 403,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "cf4ddd28-e5ac-469d-8cbc-c322cedcb7cc",
+                          "name": "Unsupported Media Type",
+                          "originalRequest": {
+                            "url": {
+                              "path": ["v6", "me", "shareables", ":code"],
+                              "host": ["{{baseUrl}}"],
+                              "query": [],
+                              "variable": []
+                            },
+                            "header": [
+                              { "key": "Accept", "value": "<string>" },
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "<API Key>"
+                              }
+                            ],
+                            "method": "GET"
+                          },
+                          "status": "Unsupported Media Type",
+                          "code": 415,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "1083e0cb-50db-4b70-8f47-6a348c991a07",
+                          "name": "Too Many Requests",
+                          "originalRequest": {
+                            "url": {
+                              "path": ["v6", "me", "shareables", ":code"],
+                              "host": ["{{baseUrl}}"],
+                              "query": [],
+                              "variable": []
+                            },
+                            "header": [
+                              { "key": "Accept", "value": "<string>" },
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "<API Key>"
+                              }
+                            ],
+                            "method": "GET"
+                          },
+                          "status": "Too Many Requests",
+                          "code": 429,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        }
+                      ],
+                      "event": [],
+                      "protocolProfileBehavior": { "disableBodyPruning": true }
+                    }
+                  ]
+                },
+                {
                   "name": "get-create-or-update",
                   "description": "",
                   "item": [
@@ -14768,251 +15013,6 @@
                               }
                             ],
                             "method": "POST"
-                          },
-                          "status": "Too Many Requests",
-                          "code": 429,
-                          "header": [
-                            {
-                              "key": "Content-Type",
-                              "value": "application/json"
-                            }
-                          ],
-                          "cookie": [],
-                          "_postman_previewlanguage": "json"
-                        }
-                      ],
-                      "event": [],
-                      "protocolProfileBehavior": { "disableBodyPruning": true }
-                    }
-                  ]
-                },
-                {
-                  "name": "{code}",
-                  "description": "",
-                  "item": [
-                    {
-                      "id": "2267911b-0483-43fd-8ba2-fdd6dae50609",
-                      "name": "Get a shareable by code",
-                      "request": {
-                        "name": "Get a shareable by code",
-                        "description": {
-                          "content": "Returns the shareable identified by `code` when it belongs to the authenticated consumer.",
-                          "type": "text/plain"
-                        },
-                        "url": {
-                          "path": ["v6", "me", "shareables", ":code"],
-                          "host": ["{{baseUrl}}"],
-                          "query": [],
-                          "variable": [
-                            {
-                              "type": "any",
-                              "value": "<string>",
-                              "key": "code",
-                              "disabled": false,
-                              "description": {
-                                "content": "(Required) ",
-                                "type": "text/plain"
-                              }
-                            }
-                          ]
-                        },
-                        "header": [{ "key": "Accept", "value": "<string>" }],
-                        "method": "GET",
-                        "auth": null
-                      },
-                      "response": [
-                        {
-                          "id": "87455400-8b38-4f35-86c1-339491f6371c",
-                          "name": "Successful response",
-                          "originalRequest": {
-                            "url": {
-                              "path": ["v6", "me", "shareables", ":code"],
-                              "host": ["{{baseUrl}}"],
-                              "query": [],
-                              "variable": []
-                            },
-                            "header": [
-                              { "key": "Accept", "value": "<string>" },
-                              {
-                                "description": {
-                                  "content": "Added as a part of security scheme: apikey",
-                                  "type": "text/plain"
-                                },
-                                "key": "Authorization",
-                                "value": "<API Key>"
-                              }
-                            ],
-                            "method": "GET"
-                          },
-                          "status": "OK",
-                          "code": 200,
-                          "header": [
-                            {
-                              "key": "Content-Type",
-                              "value": "application/json"
-                            }
-                          ],
-                          "cookie": [],
-                          "_postman_previewlanguage": "json"
-                        },
-                        {
-                          "id": "3609f528-a891-4c69-b98f-8147f504aa3a",
-                          "name": "Bad Request",
-                          "originalRequest": {
-                            "url": {
-                              "path": ["v6", "me", "shareables", ":code"],
-                              "host": ["{{baseUrl}}"],
-                              "query": [],
-                              "variable": []
-                            },
-                            "header": [
-                              { "key": "Accept", "value": "<string>" },
-                              {
-                                "description": {
-                                  "content": "Added as a part of security scheme: apikey",
-                                  "type": "text/plain"
-                                },
-                                "key": "Authorization",
-                                "value": "<API Key>"
-                              }
-                            ],
-                            "method": "GET"
-                          },
-                          "status": "Bad Request",
-                          "code": 400,
-                          "header": [
-                            {
-                              "key": "Content-Type",
-                              "value": "application/json"
-                            }
-                          ],
-                          "cookie": [],
-                          "_postman_previewlanguage": "json"
-                        },
-                        {
-                          "id": "dea1aeba-e281-47d1-bbb3-3bdb06778c6a",
-                          "name": "Unauthorized",
-                          "originalRequest": {
-                            "url": {
-                              "path": ["v6", "me", "shareables", ":code"],
-                              "host": ["{{baseUrl}}"],
-                              "query": [],
-                              "variable": []
-                            },
-                            "header": [
-                              { "key": "Accept", "value": "<string>" },
-                              {
-                                "description": {
-                                  "content": "Added as a part of security scheme: apikey",
-                                  "type": "text/plain"
-                                },
-                                "key": "Authorization",
-                                "value": "<API Key>"
-                              }
-                            ],
-                            "method": "GET"
-                          },
-                          "status": "Unauthorized",
-                          "code": 401,
-                          "header": [
-                            {
-                              "key": "Content-Type",
-                              "value": "application/json"
-                            }
-                          ],
-                          "cookie": [],
-                          "_postman_previewlanguage": "json"
-                        },
-                        {
-                          "id": "1f01bacf-0561-458a-b10b-02157a1d3367",
-                          "name": "Forbidden",
-                          "originalRequest": {
-                            "url": {
-                              "path": ["v6", "me", "shareables", ":code"],
-                              "host": ["{{baseUrl}}"],
-                              "query": [],
-                              "variable": []
-                            },
-                            "header": [
-                              { "key": "Accept", "value": "<string>" },
-                              {
-                                "description": {
-                                  "content": "Added as a part of security scheme: apikey",
-                                  "type": "text/plain"
-                                },
-                                "key": "Authorization",
-                                "value": "<API Key>"
-                              }
-                            ],
-                            "method": "GET"
-                          },
-                          "status": "Forbidden",
-                          "code": 403,
-                          "header": [
-                            {
-                              "key": "Content-Type",
-                              "value": "application/json"
-                            }
-                          ],
-                          "cookie": [],
-                          "_postman_previewlanguage": "json"
-                        },
-                        {
-                          "id": "cf4ddd28-e5ac-469d-8cbc-c322cedcb7cc",
-                          "name": "Unsupported Media Type",
-                          "originalRequest": {
-                            "url": {
-                              "path": ["v6", "me", "shareables", ":code"],
-                              "host": ["{{baseUrl}}"],
-                              "query": [],
-                              "variable": []
-                            },
-                            "header": [
-                              { "key": "Accept", "value": "<string>" },
-                              {
-                                "description": {
-                                  "content": "Added as a part of security scheme: apikey",
-                                  "type": "text/plain"
-                                },
-                                "key": "Authorization",
-                                "value": "<API Key>"
-                              }
-                            ],
-                            "method": "GET"
-                          },
-                          "status": "Unsupported Media Type",
-                          "code": 415,
-                          "header": [
-                            {
-                              "key": "Content-Type",
-                              "value": "application/json"
-                            }
-                          ],
-                          "cookie": [],
-                          "_postman_previewlanguage": "json"
-                        },
-                        {
-                          "id": "1083e0cb-50db-4b70-8f47-6a348c991a07",
-                          "name": "Too Many Requests",
-                          "originalRequest": {
-                            "url": {
-                              "path": ["v6", "me", "shareables", ":code"],
-                              "host": ["{{baseUrl}}"],
-                              "query": [],
-                              "variable": []
-                            },
-                            "header": [
-                              { "key": "Accept", "value": "<string>" },
-                              {
-                                "description": {
-                                  "content": "Added as a part of security scheme: apikey",
-                                  "type": "text/plain"
-                                },
-                                "key": "Authorization",
-                                "value": "<API Key>"
-                              }
-                            ],
-                            "method": "GET"
                           },
                           "status": "Too Many Requests",
                           "code": 429,
