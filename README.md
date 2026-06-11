@@ -2,8 +2,6 @@
 
 OpenAPI 3 specifications and Postman collections for the Extole API.
 
-Specs are extracted from [extole/pluribus](https://github.com/extole/pluribus), published via the private [extole/openapi](https://github.com/extole/openapi) repo, and mirrored here for public consumption.
-
 ## Installation
 
 ```bash
@@ -49,21 +47,15 @@ const managementCollection = require('@extole/specification/postman/management.j
 
 - **GitHub Pages:** [extole.github.io/extole-specification](https://extole.github.io/extole-specification/) (Swagger UI)
 - **Postman:** [Extole API workspace](https://www.postman.com/extole-4017592/extole-api/overview) — public workspace with forkable collections for all four API bundles
-- **ReadMe:** synced from [extole/openapi](https://github.com/extole/openapi) on each spec update
+- **ReadMe:** Extole API reference documentation
 
 ## Development
 
 ```bash
 npm ci
 npm run build    # regenerate Postman collections from OpenAPI
-npm run lint     # Spectral lint (mirrors pluribus rules)
+npm run lint     # Spectral lint
 ```
-
-## Updating specs
-
-Specs are synced automatically when [extole/openapi](https://github.com/extole/openapi) publishes a new bundle set from pluribus `master`. The `sync-from-openapi` workflow opens a PR in this repo with the updated files.
-
-Manual sync: trigger **Sync from extole/openapi** in the Actions tab, or dispatch from openapi after a successful `update-specs` run.
 
 ## Publishing to Postman
 
@@ -97,11 +89,10 @@ Until `NPM_TOKEN` is configured, release-please will still open version-bump PRs
 
 ## Repository secrets
 
-| Secret              | Used by                                                                 |
-| ------------------- | ----------------------------------------------------------------------- |
-| `EXTOLE_GITHUB_PAT` | `sync-from-openapi.yml` — clone private `extole/openapi`, push sync PRs |
-| `NPM_TOKEN`         | `release-please.yml` publish job                                        |
-| `POSTMAN_API_KEY`   | `publish-to-postman.yml` — publish and verify Postman collections       |
+| Secret            | Used by                                                   |
+| ----------------- | --------------------------------------------------------- |
+| `NPM_TOKEN`       | `release-please.yml` publish job                          |
+| `POSTMAN_API_KEY` | `publish-to-postman.yml` — publish and verify collections |
 
 ## License
 
