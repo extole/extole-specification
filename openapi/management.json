@@ -10586,16 +10586,16 @@
           "$ref" : "#/components/schemas/BuiltCampaignComponentSettingResponseBase"
         }, {
           "properties" : {
-            "client_key_oauth_flow" : {
+            "authorization_url" : {
               "type" : "string"
             },
-            "client_key_url" : {
+            "client_secret_key_id" : {
               "type" : "string"
             },
             "description" : {
               "type" : "string"
             },
-            "redirect_uri" : {
+            "redirect_url" : {
               "type" : "string"
             },
             "source" : {
@@ -10616,7 +10616,7 @@
           },
           "type" : "object"
         } ],
-        "required" : [ "client_key_oauth_flow", "client_key_url", "description", "display_name", "name", "priority", "redirect_uri", "source", "source_component_id", "source_version", "tags", "type", "values" ],
+        "required" : [ "authorization_url", "client_secret_key_id", "description", "display_name", "name", "priority", "redirect_url", "source", "source_component_id", "source_version", "tags", "type", "values" ],
         "type" : "object"
       },
       "BuiltComponentComponentIdVariableResponse" : {
@@ -11722,16 +11722,16 @@
           "$ref" : "#/components/schemas/CampaignComponentSettingRequestBase"
         }, {
           "properties" : {
-            "client_key_oauth_flow" : {
+            "authorization_url" : {
               "type" : "string"
             },
-            "client_key_url" : {
+            "client_secret_key_id" : {
               "type" : "string"
             },
             "description" : {
               "$ref" : "#/components/schemas/DescriptionInCampaignComponentVariableRequest"
             },
-            "redirect_uri" : {
+            "redirect_url" : {
               "type" : "string"
             },
             "source" : {
@@ -11759,13 +11759,13 @@
           "$ref" : "#/components/schemas/CampaignComponentSettingResponseBase"
         }, {
           "properties" : {
-            "client_key_oauth_flow" : {
+            "authorization_url" : {
               "type" : "string"
             },
-            "client_key_url" : {
+            "client_secret_key_id" : {
               "type" : "string"
             },
-            "redirect_uri" : {
+            "redirect_url" : {
               "type" : "string"
             },
             "source" : {
@@ -11786,7 +11786,7 @@
           "type" : "object"
         } ],
         "description" : "Stored campaign component client key flow variable definition. Field `description` is unevaluated and appears in buildtime-evaluatable form.",
-        "required" : [ "client_key_oauth_flow", "client_key_url", "description", "display_name", "name", "priority", "redirect_uri", "source", "tags", "type", "values" ],
+        "required" : [ "authorization_url", "client_secret_key_id", "description", "display_name", "name", "priority", "redirect_url", "source", "tags", "type", "values" ],
         "type" : "object"
       },
       "CampaignComponentClientKeyFlowVariableUpdateRequest" : {
@@ -11794,10 +11794,10 @@
           "$ref" : "#/components/schemas/CampaignComponentSettingUpdateRequestBase"
         }, {
           "properties" : {
-            "client_key_oauth_flow" : {
+            "authorization_url" : {
               "type" : "string"
             },
-            "client_key_url" : {
+            "client_secret_key_id" : {
               "type" : "string"
             },
             "description" : {
@@ -11807,7 +11807,7 @@
               "nullable" : true,
               "type" : "string"
             },
-            "redirect_uri" : {
+            "redirect_url" : {
               "type" : "string"
             },
             "source" : {
