@@ -7224,7 +7224,7 @@
           }
         },
         "summary" : "List assets for a person",
-        "tags" : [ "Profiles" ],
+        "tags" : [ "Profile Assets" ],
         "x-codeSamples" : [ {
           "label" : "cURL",
           "lang" : "shell",
@@ -7372,7 +7372,7 @@
           }
         },
         "summary" : "Download a person asset by name",
-        "tags" : [ "Profiles" ],
+        "tags" : [ "Profile Assets" ],
         "x-codeSamples" : [ {
           "label" : "cURL",
           "lang" : "shell",
@@ -7520,7 +7520,7 @@
           }
         },
         "summary" : "Get a person asset by ID",
-        "tags" : [ "Profiles" ],
+        "tags" : [ "Profile Assets" ],
         "x-codeSamples" : [ {
           "label" : "cURL",
           "lang" : "shell",
@@ -7669,7 +7669,7 @@
           }
         },
         "summary" : "Download a person asset by asset ID",
-        "tags" : [ "Profiles" ],
+        "tags" : [ "Profile Assets" ],
         "x-codeSamples" : [ {
           "label" : "cURL",
           "lang" : "shell",
@@ -11440,10 +11440,12 @@
   }, {
     "name" : "Persons"
   }, {
+    "name" : "Profile Assets"
+  }, {
     "name" : "Profiles"
   } ],
   "x-tagGroups" : [ {
     "name" : "Integration API - Consumer to Extole",
-    "tags" : [ "Authentication", "Content", "Email", "Events", "Persons", "Profiles" ]
+    "tags" : [ "Authentication", "Content", "Email", "Events", "Persons", "Profile Assets", "Profiles" ]
   } ]
 }
