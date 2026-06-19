@@ -1,0 +1,10 @@
+export enum ReportResultStatusValue {
+    PENDING_DATA = "PENDING_DATA",
+    PENDING = "PENDING",
+    IN_PROGRESS = "IN_PROGRESS",
+    DONE = "DONE",
+    FAILED = "FAILED",
+    CANCELED = "CANCELED",
+    SFTP_DELIVERY_FAILED = "SFTP_DELIVERY_FAILED",
+    EXPIRED = "EXPIRED"
+}
