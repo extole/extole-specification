@@ -47,7 +47,7 @@ const managementCollection = require('@extole/specification/postman/management.j
 
 Many Extole configuration fields accept **evaluatable** values — static literals, Handlebars templates, or JavaScript functions that run at **buildtime** (when a campaign or component is saved) or **runtime** (when a step, trigger, or webhook executes). The OpenAPI bundles describe each field's allowed formats; JavaScript evaluatables receive a `context` object whose methods and properties are defined by these types.
 
-This repository publishes **TypeScript declaration files** (`.d.ts`) under [`openapi/expression-context/`](openapi/expression-context/) that document those contexts. They are generated from the platform Java APIs and kept in sync by the OpenAPI pipeline — the same source that produces the JSON specs above.
+This repository publishes **TypeScript declaration files** (`.d.ts`) under [`openapi/expression-context/`](openapi/expression-context/) that document those contexts. They are published alongside the OpenAPI bundles above and updated when the API specs change.
 
 | What                   | Where                                                                                                                                                                                                      |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
