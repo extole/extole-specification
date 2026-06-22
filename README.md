@@ -1,6 +1,6 @@
 # extole-specification
 
-OpenAPI 3 specifications and Postman collections for the Extole API.
+OpenAPI 3 specifications, Postman collections, and TypeScript types for Extole evaluatable expression contexts.
 
 ## Installation
 
@@ -42,6 +42,22 @@ const managementCollection = require('@extole/specification/postman/management.j
 | `management-expert.json`              | Advanced expert-only configuration: campaign controllers, typed actions and triggers, advanced component types, and other expert surfaces. |
 | `integration-server-to-extole.json`   | Backend server-to-Extole integration: event submission, person lookup, zone rendering, token management, and reward retrieval.             |
 | `integration-consumer-to-extole.json` | Consumer-to-Extole integration: consumer event submission, zone rendering, profile management, and SDK-backing operations.                 |
+
+## Expression context types
+
+Many Extole configuration fields accept **evaluatable** values — static literals, Handlebars templates, or JavaScript functions that run at **buildtime** (when a campaign or component is saved) or **runtime** (when a step, trigger, or webhook executes). The OpenAPI bundles describe each field's allowed formats; JavaScript evaluatables receive a `context` object whose methods and properties are defined by these types.
+
+This repository publishes **TypeScript declaration files** (`.d.ts`) under [`openapi/expression-context/`](openapi/expression-context/) that document those contexts. They are generated from the platform Java APIs and kept in sync by the OpenAPI pipeline — the same source that produces the JSON specs above.
+
+| What                   | Where                                                                                                                                                                                                      |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| All context types      | [`openapi/expression-context/com/extole/api/`](openapi/expression-context/com/extole/api/)                                                                                                                 |
+| Per-field context link | `externalDocs` on evaluatable `oneOf` branches in the OpenAPI bundles (also linked from [ReadMe API reference](https://docs.extole.com/))                                                                  |
+| Example                | [`AudienceBuildtimeContext.d.ts`](openapi/expression-context/com/extole/api/audience/AudienceBuildtimeContext.d.ts), [`StepContext.d.ts`](openapi/expression-context/com/extole/api/step/StepContext.d.ts) |
+
+**Finding the right context:** open the request schema for the API field you are configuring, locate the evaluatable `oneOf` branch you need (`handlebars@buildtime`, `javascript@runtime`, etc.), and follow its `externalDocs` link to the matching `.d.ts` file. Walk the `extends` chain in that file to see every method available on `context`.
+
+**Using the types locally:** clone or browse this repo, or reference the GitHub URLs embedded in the OpenAPI specs. Point your editor or TypeScript tooling at `openapi/expression-context/` for autocomplete when authoring JavaScript evaluatables. Handlebars evaluatables use variable names only (`{{variableName}}`) — the `.d.ts` files apply to JavaScript branches that call `context` methods.
 
 ## Interactive documentation
 
