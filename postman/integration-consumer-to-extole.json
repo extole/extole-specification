@@ -271,7 +271,7 @@
                           "request": {
                             "name": "Get share event status",
                             "description": {
-                              "content": "Deprecated. Returns the processing status for a prior `POST /v4/events/share` call identified by `pollingId`.",
+                              "content": "Deprecated. Returns the processing status for a prior `POST /api/v4/events/share` call identified by `pollingId`.",
                               "type": "text/plain"
                             },
                             "url": {
@@ -560,7 +560,7 @@
                   "request": {
                     "name": "Submit a share event",
                     "description": {
-                      "content": "Deprecated. Use `POST /v6/email/share` instead. Records a share event on behalf of the authenticated advocate and returns a `polling_id` for status polling.",
+                      "content": "Deprecated. Use `POST /api/v6/email/share` instead. Records a share event on behalf of the authenticated advocate and returns a `polling_id` for status polling.",
                       "type": "text/plain"
                     },
                     "url": {
@@ -3090,7 +3090,7 @@
                           "request": {
                             "name": "Get email send status",
                             "description": {
-                              "content": "Deprecated. Returns the processing status for a prior `POST /v4/me/email` call identified by `polling_id`. Poll until the send reaches a terminal state.",
+                              "content": "Deprecated. Returns the processing status for a prior `POST /api/v4/me/email` call identified by `polling_id`. Poll until the send reaches a terminal state.",
                               "type": "text/plain"
                             },
                             "url": {
@@ -6278,7 +6278,7 @@
                   "request": {
                     "name": "List shareables for the authenticated consumer (legacy)",
                     "description": {
-                      "content": "Deprecated. Use `GET /v6/me/shareables` instead. Returns all shareables owned by the authenticated consumer.",
+                      "content": "Deprecated. Use `GET /api/v6/me/shareables` instead. Returns all shareables owned by the authenticated consumer.",
                       "type": "text/plain"
                     },
                     "url": {
@@ -6488,7 +6488,7 @@
                   "request": {
                     "name": "Create a shareable (legacy)",
                     "description": {
-                      "content": "Deprecated. Use `POST /v6/me/shareables` instead. Creates a new shareable for the authenticated consumer.",
+                      "content": "Deprecated. Use `POST /api/v6/me/shareables` instead. Creates a new shareable for the authenticated consumer.",
                       "type": "text/plain"
                     },
                     "url": {
@@ -7008,7 +7008,7 @@
                       "request": {
                         "name": "Get a shareable by ID (legacy)",
                         "description": {
-                          "content": "Deprecated. Use `GET /v6/me/shareables/{code}` instead. Returns the shareable identified by `shareable_id` when it belongs to the authenticated consumer.",
+                          "content": "Deprecated. Use `GET /api/v6/me/shareables/{code}` instead. Returns the shareable identified by `shareable_id` when it belongs to the authenticated consumer.",
                           "type": "text/plain"
                         },
                         "url": {
@@ -8838,7 +8838,7 @@
                       "request": {
                         "name": "Get a person's profile picture URL (legacy)",
                         "description": {
-                          "content": "Deprecated. Use `GET /v4/persons/{personId}/profile-picture-url` instead. Returns the profile picture URL for the person identified by `personId` as plain text.",
+                          "content": "Deprecated. Use `GET /api/v4/persons/{personId}/profile-picture-url` instead. Returns the profile picture URL for the person identified by `personId` as plain text.",
                           "type": "text/plain"
                         },
                         "url": {
@@ -9117,7 +9117,7 @@
                   "request": {
                     "name": "Get a public person profile (legacy)",
                     "description": {
-                      "content": "Deprecated. Use `GET /v4/persons/{personId}` instead. Returns the public profile for the person identified by `personId`.",
+                      "content": "Deprecated. Use `GET /api/v4/persons/{personId}` instead. Returns the public profile for the person identified by `personId`.",
                       "type": "text/plain"
                     },
                     "url": {
@@ -10929,7 +10929,7 @@
               "request": {
                 "name": "Create a shareable (legacy)",
                 "description": {
-                  "content": "Deprecated. Use `POST /v6/me/shareables` instead. Creates a shareable for the authenticated consumer.",
+                  "content": "Deprecated. Use `POST /api/v6/me/shareables` instead. Creates a shareable for the authenticated consumer.",
                   "type": "text/plain"
                 },
                 "url": {
@@ -11662,7 +11662,7 @@
               "request": {
                 "name": "List shares",
                 "description": {
-                  "content": "Deprecated. Returns shares matching optional `partner_share_id` or `partner_id` filters. For the authenticated consumer's shares use `GET /v4/me/shares` instead.",
+                  "content": "Deprecated. Returns shares matching optional `partner_share_id` or `partner_id` filters. For the authenticated consumer's shares use `GET /api/v4/me/shares` instead.",
                   "type": "text/plain"
                 },
                 "url": {
@@ -12006,7 +12006,7 @@
                   "request": {
                     "name": "Get a share by ID",
                     "description": {
-                      "content": "Deprecated. Returns the share identified by `share_id`. For the authenticated consumer's shares use `GET /v4/me/shares/{shareId}` instead.",
+                      "content": "Deprecated. Returns the share identified by `share_id`. For the authenticated consumer's shares use `GET /api/v4/me/shares/{shareId}` instead.",
                       "type": "text/plain"
                     },
                     "url": {
@@ -12253,7 +12253,7 @@
                           "request": {
                             "name": "Get custom share status",
                             "description": {
-                              "content": "Deprecated. Returns the processing status for a prior `POST /v5/custom/share` call identified by `pollingId`.",
+                              "content": "Deprecated. Returns the processing status for a prior `POST /api/v5/custom/share` call identified by `pollingId`.",
                               "type": "text/plain"
                             },
                             "url": {
@@ -13422,7 +13422,7 @@
                       "request": {
                         "name": "Send referral email shares in batch (legacy)",
                         "description": {
-                          "content": "Deprecated. Use `POST /v6/email/share/batch` instead. Sends referral emails to multiple recipients in a single request.",
+                          "content": "Deprecated. Use `POST /api/v6/email/share/batch` instead. Sends referral emails to multiple recipients in a single request.",
                           "type": "text/plain"
                         },
                         "url": {
@@ -15045,7 +15045,7 @@
               "request": {
                 "name": "Render a zone",
                 "description": {
-                  "content": "Renders the zone identified by `event_name` in the JSON request body and returns the structured zone content as JSON. Intended for backend rendering where the caller manages token identity directly. For browser or in-app rendering use `POST /zones` instead.",
+                  "content": "API-friendly zone rendering at `POST /api/v6/zones`. Intended for backend rendering where the caller supplies a bearer access token directly. Renders the zone identified by `event_name` in the JSON request body and returns the structured zone content as JSON. Returns an error when no content backs the zone. For browser or in-app rendering use `POST /zones` instead.",
                   "type": "text/plain"
                 },
                 "url": {
@@ -15268,7 +15268,7 @@
                   "request": {
                     "name": "Render a named zone",
                     "description": {
-                      "content": "Renders the zone identified by the `event_name` path parameter and returns the structured zone content as JSON. Pass zone input data in the request body. Intended for backend rendering where the caller manages token identity directly. For browser or in-app rendering use `POST /zones/{zone_name}` instead.",
+                      "content": "API-friendly zone rendering at `POST /api/v6/zones/{event_name}`. Intended for backend rendering where the caller supplies a bearer access token directly. Renders the zone identified by the `event_name` path parameter and returns the structured zone content as JSON. Pass zone input data in the request body. Returns an error when no content backs the zone. For browser or in-app rendering use `POST /zones/{zone_name}` instead.",
                       "type": "text/plain"
                     },
                     "url": {
@@ -15508,7 +15508,7 @@
           "request": {
             "name": "Render a zone with the name in the body",
             "description": {
-              "content": "Renders the zone identified by `event_name` in the request body, applies any other body fields as targeting data passed to the creative, and returns the rendered creative content (HTML, JavaScript, JSON, or plain text). Designed for direct use from a browser page or web SDK embed — accepts form-encoded, plain-text, and multipart bodies in addition to JSON, and handles cookie-based identity automatically. If `event_name` is omitted, returns an empty 200 with `Extole-Log: target zone=unknown`; the access token is still allocated and written as a cookie. For backend zone rendering use `POST /v6/zones` instead.",
+              "content": "Web-friendly zone rendering at `POST /zones`. Intended for direct use from a browser page or web SDK embed — accepts form-encoded, plain-text, and multipart bodies in addition to JSON, and handles cookie-based identity automatically. Renders the zone identified by `event_name` in the request body, applies any other body fields as targeting data passed to the creative, and returns the rendered creative content (HTML, JavaScript, JSON, or plain text). If `event_name` is omitted, returns an empty 200 with `Extole-Log: target zone=unknown`; the access token is still allocated and written as a cookie. For backend zone rendering use `POST /api/v6/zones` instead.",
               "type": "text/plain"
             },
             "url": {
@@ -15729,7 +15729,7 @@
               "request": {
                 "name": "Render a named zone for web-page embedding",
                 "description": {
-                  "content": "Renders the zone identified by `zone_name` and returns its content. Designed for direct use from a browser page or web SDK embed — accepts form-encoded and multipart bodies in addition to JSON, and handles cookie-based identity automatically. For backend zone rendering use `POST /v6/zones/{event_name}` instead.",
+                  "content": "Web-friendly zone rendering at `POST /zones/{zone_name}`. Intended for direct use from a browser page or web SDK embed — accepts form-encoded and multipart bodies in addition to JSON, and handles cookie-based identity automatically. Renders the zone identified by `zone_name` and returns its content (HTML, JavaScript, JSON, or plain text). For backend zone rendering use `POST /api/v6/zones/{event_name}` instead.",
                   "type": "text/plain"
                 },
                 "url": {
