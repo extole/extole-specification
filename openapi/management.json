@@ -7526,6 +7526,7 @@
       "BlockCheckResponse" : {
         "properties" : {
           "block_Id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "result" : {
@@ -7560,6 +7561,7 @@
             "type" : "string"
           },
           "client_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "created_date" : {
@@ -7578,6 +7580,7 @@
             "type" : "string"
           },
           "user_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "value" : {
@@ -10371,6 +10374,7 @@
           "properties" : {
             "referral_originator" : {
               "enum" : [ "ADVOCATE", "FRIEND" ],
+              "nullable" : true,
               "type" : "string"
             },
             "trigger_type" : {
@@ -10723,6 +10727,7 @@
               "type" : "boolean"
             },
             "step_name" : {
+              "nullable" : true,
               "type" : "string"
             },
             "trigger_type" : {
@@ -10730,6 +10735,7 @@
               "type" : "string"
             },
             "zone_name" : {
+              "nullable" : true,
               "type" : "string"
             }
           },
@@ -10788,6 +10794,7 @@
             "type" : "array"
           },
           "description" : {
+            "nullable" : true,
             "type" : "string"
           },
           "expression" : {
@@ -17549,6 +17556,7 @@
               "additionalProperties" : {
                 "type" : "string"
               },
+              "nullable" : true,
               "type" : "object"
             },
             "expression" : {
@@ -17843,6 +17851,7 @@
           "properties" : {
             "referral_originator" : {
               "enum" : [ "ADVOCATE", "FRIEND" ],
+              "nullable" : true,
               "type" : "string"
             },
             "trigger_type" : {
@@ -18168,15 +18177,19 @@
       "CampaignDuplicateRequest" : {
         "properties" : {
           "description" : {
+            "nullable" : true,
             "type" : "string"
           },
           "message" : {
+            "nullable" : true,
             "type" : "string"
           },
           "name" : {
+            "nullable" : true,
             "type" : "string"
           },
           "program_label" : {
+            "nullable" : true,
             "type" : "string"
           }
         },
@@ -18516,9 +18529,11 @@
       "CampaignPublishRequest" : {
         "properties" : {
           "launch" : {
+            "nullable" : true,
             "type" : "boolean"
           },
           "message" : {
+            "nullable" : true,
             "type" : "string"
           }
         },
@@ -18554,6 +18569,7 @@
           },
           "end_date" : {
             "format" : "date-time",
+            "nullable" : true,
             "type" : "string"
           },
           "flow_steps" : {
@@ -18579,6 +18595,7 @@
           },
           "last_published_date" : {
             "format" : "date-time",
+            "nullable" : true,
             "type" : "string"
           },
           "name" : {
@@ -18586,10 +18603,12 @@
           },
           "parent_version" : {
             "format" : "int32",
+            "nullable" : true,
             "type" : "integer"
           },
           "pause_date" : {
             "format" : "date-time",
+            "nullable" : true,
             "type" : "string"
           },
           "program_label" : {
@@ -18600,6 +18619,7 @@
           },
           "start_date" : {
             "format" : "date-time",
+            "nullable" : true,
             "type" : "string"
           },
           "state" : {
@@ -18614,6 +18634,7 @@
           },
           "stop_date" : {
             "format" : "date-time",
+            "nullable" : true,
             "type" : "string"
           },
           "tags" : {
@@ -19963,6 +19984,7 @@
             "type" : "string"
           },
           "description" : {
+            "nullable" : true,
             "type" : "string"
           },
           "name" : {
@@ -19986,6 +20008,7 @@
             "type" : "string"
           },
           "description" : {
+            "nullable" : true,
             "type" : "string"
           },
           "name" : {
@@ -20957,10 +20980,12 @@
       "CreateReportRequest" : {
         "properties" : {
           "display_name" : {
+            "nullable" : true,
             "type" : "string"
           },
           "format" : {
             "enum" : [ "CSV", "HEADLESS_CSV", "HEADLESS_PSV", "JSON", "JSONL", "PSV", "XLSX" ],
+            "nullable" : true,
             "type" : "string"
           },
           "formats" : {
@@ -20968,6 +20993,7 @@
               "enum" : [ "CSV", "HEADLESS_CSV", "HEADLESS_PSV", "JSON", "JSONL", "PSV", "XLSX" ],
               "type" : "string"
             },
+            "nullable" : true,
             "type" : "array"
           },
           "name" : {
@@ -20983,6 +21009,7 @@
             "type" : "string"
           },
           "rerun" : {
+            "nullable" : true,
             "type" : "boolean"
           },
           "scopes" : {
@@ -20990,19 +21017,23 @@
               "enum" : [ "CLIENT_ADMIN", "CLIENT_SUPERUSER", "CONSUMER_PUBLIC" ],
               "type" : "string"
             },
+            "nullable" : true,
             "type" : "array",
             "uniqueItems" : true
           },
           "sftp_report_name" : {
+            "nullable" : true,
             "type" : "string"
           },
           "sftp_server_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "tags" : {
             "items" : {
               "type" : "string"
             },
+            "nullable" : true,
             "type" : "array",
             "uniqueItems" : true
           }
@@ -22611,6 +22642,7 @@
         "description" : "The description as configured: a literal value, or an expression (type:string) when defined dynamically.",
         "oneOf" : [ {
           "description" : "Literal description",
+          "nullable" : true,
           "title" : "Static Value",
           "type" : "string"
         }, {
@@ -22639,6 +22671,7 @@
         "description" : "The description as configured: a literal value, or an expression (type:string) when defined dynamically.",
         "oneOf" : [ {
           "description" : "Literal description",
+          "nullable" : true,
           "title" : "Static Value",
           "type" : "string"
         }, {
@@ -23971,6 +24004,7 @@
             "type" : "string"
           },
           "note" : {
+            "nullable" : true,
             "type" : "string"
           },
           "status" : {
@@ -30585,6 +30619,7 @@
             "type" : "string"
           },
           "filename" : {
+            "nullable" : true,
             "type" : "string"
           },
           "id" : {
@@ -30688,6 +30723,7 @@
           },
           "expires_at" : {
             "format" : "date-time",
+            "nullable" : true,
             "type" : "string"
           }
         },
@@ -33673,20 +33709,26 @@
         "type" : "object"
       },
       "PersonShareableContentV4Response" : {
+        "nullable" : true,
         "properties" : {
           "description" : {
+            "nullable" : true,
             "type" : "string"
           },
           "image_url" : {
+            "nullable" : true,
             "type" : "string"
           },
           "partner_content_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "title" : {
+            "nullable" : true,
             "type" : "string"
           },
           "url" : {
+            "nullable" : true,
             "type" : "string"
           }
         },
@@ -33710,6 +33752,7 @@
             "type" : "string"
           },
           "label" : {
+            "nullable" : true,
             "type" : "string"
           },
           "link" : {
@@ -33948,12 +33991,14 @@
             "type" : "string"
           },
           "key" : {
+            "nullable" : true,
             "type" : "string"
           },
           "label" : {
             "type" : "string"
           },
           "program_url" : {
+            "nullable" : true,
             "type" : "string"
           }
         },
@@ -34021,6 +34066,7 @@
         "description" : "Body of a `PUT /v2/users/{user_id}/properties/{name}` request.",
         "properties" : {
           "value" : {
+            "nullable" : true,
             "type" : "string"
           }
         },
@@ -34334,12 +34380,15 @@
       "ReportDebugResponse" : {
         "properties" : {
           "debug_message" : {
+            "nullable" : true,
             "type" : "string"
           },
           "error_code" : {
+            "nullable" : true,
             "type" : "string"
           },
           "error_message" : {
+            "nullable" : true,
             "type" : "string"
           },
           "report_id" : {
@@ -34486,6 +34535,7 @@
       "ReportParameterDetailsResponse" : {
         "properties" : {
           "category" : {
+            "nullable" : true,
             "type" : "string"
           },
           "display_name" : {
@@ -34526,12 +34576,14 @@
           },
           "value_type" : {
             "enum" : [ "DYNAMIC", "STATIC" ],
+            "nullable" : true,
             "type" : "string"
           },
           "values" : {
             "items" : {
               "type" : "string"
             },
+            "nullable" : true,
             "type" : "array",
             "uniqueItems" : true
           }
@@ -34541,12 +34593,14 @@
       "ReportResponse" : {
         "properties" : {
           "completed_date" : {
+            "nullable" : true,
             "type" : "string"
           },
           "display_name" : {
             "type" : "string"
           },
           "download_uri" : {
+            "nullable" : true,
             "type" : "string"
           },
           "formats" : {
@@ -34767,6 +34821,7 @@
             "$ref" : "#/components/schemas/SftpReportNamePatternInReportRunnerResponse"
           },
           "sftp_server_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "tags" : {
@@ -34917,9 +34972,11 @@
             "type" : "string"
           },
           "note" : {
+            "nullable" : true,
             "type" : "string"
           },
           "sample_value" : {
+            "nullable" : true,
             "type" : "string"
           }
         },
@@ -34974,9 +35031,11 @@
         "description" : "Declared parameters (static + dynamic) the report type accepts.",
         "properties" : {
           "category" : {
+            "nullable" : true,
             "type" : "string"
           },
           "default_value" : {
+            "nullable" : true,
             "type" : "string"
           },
           "description" : {
@@ -35239,6 +35298,7 @@
           "description" : "Literal request",
           "properties" : {
             "body" : {
+              "nullable" : true,
               "type" : "string"
             },
             "headers" : {
@@ -35314,6 +35374,7 @@
           "description" : "Static request",
           "properties" : {
             "body" : {
+              "nullable" : true,
               "type" : "string"
             },
             "headers" : {
@@ -35379,6 +35440,7 @@
           "description" : "Literal request",
           "properties" : {
             "body" : {
+              "nullable" : true,
               "type" : "string"
             },
             "headers" : {
@@ -35444,6 +35506,7 @@
           "description" : "Static request",
           "properties" : {
             "body" : {
+              "nullable" : true,
               "type" : "string"
             },
             "headers" : {
@@ -36804,16 +36867,20 @@
       "RewardRuleResponse" : {
         "properties" : {
           "count_rewards_based_on_partner_user_id" : {
+            "nullable" : true,
             "type" : "boolean"
           },
           "data_attribute_matcher_type" : {
             "enum" : [ "EXACT", "REGEX" ],
+            "nullable" : true,
             "type" : "string"
           },
           "data_attribute_name" : {
+            "nullable" : true,
             "type" : "string"
           },
           "data_attribute_value" : {
+            "nullable" : true,
             "type" : "string"
           },
           "expression" : {
@@ -36845,14 +36912,17 @@
           },
           "reward_count_since_days" : {
             "format" : "int32",
+            "nullable" : true,
             "type" : "integer"
           },
           "reward_count_since_month" : {
             "format" : "int32",
+            "nullable" : true,
             "type" : "integer"
           },
           "reward_every_x_friend_actions" : {
             "format" : "int32",
+            "nullable" : true,
             "type" : "integer"
           },
           "reward_slots" : {
@@ -36870,10 +36940,12 @@
           },
           "reward_value_since_days" : {
             "format" : "int32",
+            "nullable" : true,
             "type" : "integer"
           },
           "reward_value_since_month" : {
             "format" : "int32",
+            "nullable" : true,
             "type" : "integer"
           },
           "rewardee" : {
@@ -39226,9 +39298,11 @@
             "type" : "string"
           },
           "first_name" : {
+            "nullable" : true,
             "type" : "string"
           },
           "last_name" : {
+            "nullable" : true,
             "type" : "string"
           },
           "user_id" : {
@@ -39583,12 +39657,15 @@
             "type" : "string"
           },
           "face_value" : {
+            "nullable" : true,
             "type" : "number"
           },
           "max_value" : {
+            "nullable" : true,
             "type" : "number"
           },
           "min_value" : {
+            "nullable" : true,
             "type" : "number"
           },
           "reward_name" : {
@@ -39616,6 +39693,7 @@
             "type" : "string"
           },
           "image_url" : {
+            "nullable" : true,
             "type" : "string"
           },
           "items" : {
@@ -40128,18 +40206,22 @@
         "properties" : {
           "date" : {
             "format" : "date-time",
+            "nullable" : true,
             "type" : "string"
           },
           "description" : {
+            "nullable" : true,
             "type" : "string"
           },
           "name" : {
+            "nullable" : true,
             "type" : "string"
           },
           "tags" : {
             "items" : {
               "type" : "string"
             },
+            "nullable" : true,
             "type" : "array",
             "uniqueItems" : true
           }
@@ -41224,6 +41306,7 @@
       "WebhookRequest" : {
         "properties" : {
           "body" : {
+            "nullable" : true,
             "type" : "string"
           },
           "headers" : {
@@ -42790,6 +42873,7 @@
           "in" : "header",
           "name" : "Content-Type",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
@@ -42797,6 +42881,7 @@
           "name" : "format",
           "required" : true,
           "schema" : {
+            "nullable" : true,
             "pattern" : "(\\.csv|\\.json|\\.xlsx)?",
             "type" : "string"
           }
@@ -47161,24 +47246,28 @@
           "in" : "query",
           "name" : "having_any_tags",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "having_all_tags",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "exclude_having_any_tags",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "exclude_having_all_tags",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
@@ -55567,12 +55656,14 @@
           "in" : "query",
           "name" : "limit",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "offset",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         } ],
@@ -58502,30 +58593,35 @@
           "in" : "query",
           "name" : "operation_id",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "issued",
           "schema" : {
+            "nullable" : true,
             "type" : "boolean"
           }
         }, {
           "in" : "query",
           "name" : "include_expired",
           "schema" : {
+            "nullable" : true,
             "type" : "boolean"
           }
         }, {
           "in" : "query",
           "name" : "limit",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "offset",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         } ],
@@ -59079,30 +59175,35 @@
           "in" : "query",
           "name" : "operation_id",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "issued",
           "schema" : {
+            "nullable" : true,
             "type" : "boolean"
           }
         }, {
           "in" : "query",
           "name" : "include_expired",
           "schema" : {
+            "nullable" : true,
             "type" : "boolean"
           }
         }, {
           "in" : "query",
           "name" : "limit",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "offset",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         } ],
@@ -59332,18 +59433,21 @@
           "in" : "query",
           "name" : "filename",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "limit",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "offset",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         } ],
@@ -59798,12 +59902,14 @@
           "in" : "query",
           "name" : "limit",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "offset",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         } ],
@@ -60817,6 +60923,7 @@
             "items" : {
               "type" : "string"
             },
+            "nullable" : true,
             "type" : "array",
             "uniqueItems" : true
           }
@@ -61555,6 +61662,7 @@
           "name" : "scope",
           "schema" : {
             "default" : "account",
+            "nullable" : true,
             "type" : "string"
           }
         } ],
@@ -65029,6 +65137,7 @@
           "name" : "format",
           "required" : true,
           "schema" : {
+            "nullable" : true,
             "pattern" : "(\\.csv|\\.json|\\.jsonl|\\.xlsx|\\.psv|\\.headless_csv|\\.headless_psv)?",
             "type" : "string"
           }
@@ -66000,6 +66109,7 @@
           "in" : "header",
           "name" : "Content-Type",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
@@ -66014,6 +66124,7 @@
           "name" : "format",
           "required" : true,
           "schema" : {
+            "nullable" : true,
             "pattern" : "(\\.csv|\\.json|\\.jsonl|\\.xlsx|\\.psv|\\.headless_csv|\\.headless_psv)?",
             "type" : "string"
           }
@@ -66021,18 +66132,21 @@
           "in" : "query",
           "name" : "limit",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "offset",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "filename",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         } ],
@@ -77180,12 +77294,14 @@
           "in" : "query",
           "name" : "having_any_tags",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "having_all_tags",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         } ],
@@ -78156,6 +78272,7 @@
           "in" : "query",
           "name" : "enabled",
           "schema" : {
+            "nullable" : true,
             "type" : "boolean"
           }
         }, {
@@ -78163,6 +78280,7 @@
           "name" : "type",
           "schema" : {
             "enum" : [ "CLIENT", "GENERIC", "PARTNER", "REWARD" ],
+            "nullable" : true,
             "type" : "string"
           }
         } ],
@@ -78615,6 +78733,7 @@
           "in" : "query",
           "name" : "enabled",
           "schema" : {
+            "nullable" : true,
             "type" : "boolean"
           }
         }, {
@@ -78622,18 +78741,21 @@
           "name" : "type",
           "schema" : {
             "enum" : [ "CLIENT", "GENERIC", "PARTNER", "REWARD" ],
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "name",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "include_archived",
           "schema" : {
+            "nullable" : true,
             "type" : "boolean"
           }
         }, {
@@ -78641,6 +78763,7 @@
           "name" : "limit",
           "schema" : {
             "format" : "int32",
+            "nullable" : true,
             "type" : "integer"
           }
         }, {
@@ -78648,6 +78771,7 @@
           "name" : "offset",
           "schema" : {
             "format" : "int32",
+            "nullable" : true,
             "type" : "integer"
           }
         } ],
@@ -90094,6 +90218,7 @@
           "in" : "query",
           "name" : "allow_duplicate",
           "schema" : {
+            "nullable" : true,
             "type" : "boolean"
           }
         } ],

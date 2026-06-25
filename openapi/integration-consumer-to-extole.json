@@ -987,15 +987,18 @@
         "properties" : {
           "data_type" : {
             "enum" : [ "PRIVATE", "PUBLIC" ],
+            "nullable" : true,
             "type" : "string"
           },
           "name" : {
+            "nullable" : true,
             "type" : "string"
           },
           "tags" : {
             "items" : {
               "type" : "string"
             },
+            "nullable" : true,
             "type" : "array"
           }
         },
@@ -1061,6 +1064,7 @@
             "additionalProperties" : {
               "type" : "string"
             },
+            "nullable" : true,
             "type" : "object"
           },
           "message" : {
@@ -1073,6 +1077,7 @@
             "type" : "array"
           },
           "subject" : {
+            "nullable" : true,
             "type" : "string"
           }
         },
@@ -1094,30 +1099,15 @@
               },
               "type" : "array"
             },
-            "type" : "object"
-          },
-          "mediaType" : {
             "properties" : {
-              "parameters" : {
-                "additionalProperties" : {
-                  "type" : "string"
-                },
-                "type" : "object"
-              },
-              "subtype" : {
-                "type" : "string"
-              },
-              "type" : {
-                "type" : "string"
-              },
-              "wildcardSubtype" : {
-                "type" : "boolean"
-              },
-              "wildcardType" : {
+              "empty" : {
                 "type" : "boolean"
               }
             },
             "type" : "object"
+          },
+          "mediaType" : {
+            "$ref" : "#/components/schemas/MediaType"
           },
           "messageBodyWorkers" : {
             "$ref" : "#/components/schemas/MessageBodyWorkers"
@@ -1129,57 +1119,74 @@
               },
               "type" : "array"
             },
+            "properties" : {
+              "empty" : {
+                "type" : "boolean"
+              }
+            },
             "type" : "object"
           },
           "parent" : {
             "$ref" : "#/components/schemas/MultiPart"
           },
           "providers" : {
-            "type" : "object"
+            "$ref" : "#/components/schemas/Providers"
           }
         },
         "type" : "object"
       },
       "ConsumerEventRequest" : {
+        "nullable" : true,
         "properties" : {
           "campaign_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "channel" : {
+            "nullable" : true,
             "type" : "string"
           },
           "origin_event_id" : {
             "format" : "int64",
+            "nullable" : true,
             "type" : "integer"
           },
           "parameters" : {
             "additionalProperties" : {
               "type" : "string"
             },
+            "nullable" : true,
             "type" : "object"
           },
           "product_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "recipient_emails" : {
             "items" : {
               "type" : "string"
             },
+            "nullable" : true,
             "type" : "array"
           },
           "site_host_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "source" : {
+            "nullable" : true,
             "type" : "string"
           },
           "source_url" : {
+            "nullable" : true,
             "type" : "string"
           },
           "via_zone" : {
+            "nullable" : true,
             "type" : "string"
           },
           "zone_name" : {
+            "nullable" : true,
             "type" : "string"
           }
         },
@@ -1228,9 +1235,11 @@
             "additionalProperties" : {
               "type" : "string"
             },
+            "nullable" : true,
             "type" : "object"
           },
           "key" : {
+            "nullable" : true,
             "type" : "string"
           },
           "label" : {
@@ -1240,6 +1249,7 @@
             "items" : {
               "type" : "string"
             },
+            "nullable" : true,
             "type" : "array"
           }
         },
@@ -1249,6 +1259,7 @@
       "CreateMeShareableV4Request" : {
         "properties" : {
           "code" : {
+            "nullable" : true,
             "type" : "string"
           },
           "content" : {
@@ -1258,12 +1269,15 @@
             "additionalProperties" : {
               "type" : "string"
             },
+            "nullable" : true,
             "type" : "object"
           },
           "key" : {
+            "nullable" : true,
             "type" : "string"
           },
           "label" : {
+            "nullable" : true,
             "type" : "string"
           },
           "target_url" : {
@@ -1285,19 +1299,23 @@
       "CreateShareableV4Request" : {
         "properties" : {
           "access_token" : {
+            "nullable" : true,
             "type" : "string",
             "writeOnly" : true
           },
           "code" : {
+            "nullable" : true,
             "type" : "string"
           },
           "content" : {
             "$ref" : "#/components/schemas/ShareableV4Content"
           },
           "key" : {
+            "nullable" : true,
             "type" : "string"
           },
           "label" : {
+            "nullable" : true,
             "type" : "string"
           },
           "target_url" : {
@@ -1333,14 +1351,17 @@
           "duration_seconds" : {
             "description" : "Requested token lifetime in seconds. Defaults to the client configuration value when omitted.",
             "format" : "int64",
+            "nullable" : true,
             "type" : "integer"
           },
           "email" : {
             "description" : "Email address used to identify or create the consumer. Ignored when `jwt` is present.",
+            "nullable" : true,
             "type" : "string"
           },
           "jwt" : {
             "description" : "Signed JWT carrying consumer identity claims. When supplied, identity is derived from the token claims rather than from `email`.",
+            "nullable" : true,
             "type" : "string"
           }
         },
@@ -1356,6 +1377,7 @@
             "type" : "string"
           },
           "share_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "status" : {
@@ -1411,15 +1433,19 @@
             "additionalProperties" : {
               "type" : "string"
             },
+            "nullable" : true,
             "type" : "object"
           },
           "key" : {
+            "nullable" : true,
             "type" : "string"
           },
           "label" : {
+            "nullable" : true,
             "type" : "string"
           },
           "target_url" : {
+            "nullable" : true,
             "type" : "string"
           }
         },
@@ -1447,6 +1473,7 @@
             "type" : "string"
           },
           "share_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "status" : {
@@ -1498,11 +1525,17 @@
       },
       "FormDataBodyPart" : {
         "properties" : {
+          "content" : {
+            "type" : "object"
+          },
           "contentDisposition" : {
             "$ref" : "#/components/schemas/ContentDisposition"
           },
           "entity" : {
             "type" : "object"
+          },
+          "fileName" : {
+            "type" : "string"
           },
           "formDataContentDisposition" : {
             "$ref" : "#/components/schemas/FormDataContentDisposition"
@@ -1514,30 +1547,15 @@
               },
               "type" : "array"
             },
-            "type" : "object"
-          },
-          "mediaType" : {
             "properties" : {
-              "parameters" : {
-                "additionalProperties" : {
-                  "type" : "string"
-                },
-                "type" : "object"
-              },
-              "subtype" : {
-                "type" : "string"
-              },
-              "type" : {
-                "type" : "string"
-              },
-              "wildcardSubtype" : {
-                "type" : "boolean"
-              },
-              "wildcardType" : {
+              "empty" : {
                 "type" : "boolean"
               }
             },
             "type" : "object"
+          },
+          "mediaType" : {
+            "$ref" : "#/components/schemas/MediaType"
           },
           "messageBodyWorkers" : {
             "$ref" : "#/components/schemas/MessageBodyWorkers"
@@ -1552,13 +1570,18 @@
               },
               "type" : "array"
             },
+            "properties" : {
+              "empty" : {
+                "type" : "boolean"
+              }
+            },
             "type" : "object"
           },
           "parent" : {
             "$ref" : "#/components/schemas/MultiPart"
           },
           "providers" : {
-            "type" : "object"
+            "$ref" : "#/components/schemas/Providers"
           },
           "simple" : {
             "type" : "boolean"
@@ -1656,12 +1679,14 @@
             "additionalProperties" : {
               "type" : "string"
             },
+            "nullable" : true,
             "type" : "object"
           },
           "key" : {
             "type" : "string"
           },
           "label" : {
+            "nullable" : true,
             "type" : "string"
           },
           "link" : {
@@ -1706,36 +1731,45 @@
             "type" : "object"
           },
           "entry_advocate_code" : {
+            "nullable" : true,
             "type" : "string"
           },
           "entry_advocate_partner_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "entry_consumer_event_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "entry_coupon_code" : {
+            "nullable" : true,
             "type" : "string"
           },
           "entry_label" : {
             "type" : "string"
           },
           "entry_profile_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "entry_promotable_code" : {
+            "nullable" : true,
             "type" : "string"
           },
           "entry_reason" : {
             "type" : "string"
           },
           "entry_referral_reason" : {
+            "nullable" : true,
             "type" : "string"
           },
           "entry_share_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "entry_shareable_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "entry_zone" : {
@@ -1749,30 +1783,39 @@
             "type" : "string"
           },
           "last_advocate_code" : {
+            "nullable" : true,
             "type" : "string"
           },
           "last_advocate_partner_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "last_consumer_event_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "last_coupon_code" : {
+            "nullable" : true,
             "type" : "string"
           },
           "last_profile_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "last_promotable_code" : {
+            "nullable" : true,
             "type" : "string"
           },
           "last_referral_reason" : {
+            "nullable" : true,
             "type" : "string"
           },
           "last_share_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "last_shareable_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "last_zone" : {
@@ -1807,6 +1850,7 @@
         "properties" : {
           "type" : {
             "enum" : [ "CLIENT", "PRIVATE", "PUBLIC" ],
+            "nullable" : true,
             "type" : "string"
           },
           "value" : {
@@ -1828,12 +1872,14 @@
             "additionalProperties" : {
               "type" : "string"
             },
+            "nullable" : true,
             "type" : "object"
           },
           "key" : {
             "type" : "string"
           },
           "label" : {
+            "nullable" : true,
             "type" : "string"
           },
           "link" : {
@@ -1855,12 +1901,14 @@
             "additionalProperties" : {
               "type" : "string"
             },
+            "nullable" : true,
             "type" : "object"
           },
           "key" : {
             "type" : "string"
           },
           "label" : {
+            "nullable" : true,
             "type" : "string"
           },
           "link" : {
@@ -1871,6 +1919,29 @@
           }
         },
         "required" : [ "code", "content", "data", "key", "label", "link", "shareable_id" ],
+        "type" : "object"
+      },
+      "MediaType" : {
+        "properties" : {
+          "parameters" : {
+            "additionalProperties" : {
+              "type" : "string"
+            },
+            "type" : "object"
+          },
+          "subtype" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string"
+          },
+          "wildcardSubtype" : {
+            "type" : "boolean"
+          },
+          "wildcardType" : {
+            "type" : "boolean"
+          }
+        },
         "type" : "object"
       },
       "MessageBodyWorkers" : {
@@ -1897,30 +1968,15 @@
               },
               "type" : "array"
             },
-            "type" : "object"
-          },
-          "mediaType" : {
             "properties" : {
-              "parameters" : {
-                "additionalProperties" : {
-                  "type" : "string"
-                },
-                "type" : "object"
-              },
-              "subtype" : {
-                "type" : "string"
-              },
-              "type" : {
-                "type" : "string"
-              },
-              "wildcardSubtype" : {
-                "type" : "boolean"
-              },
-              "wildcardType" : {
+              "empty" : {
                 "type" : "boolean"
               }
             },
             "type" : "object"
+          },
+          "mediaType" : {
+            "$ref" : "#/components/schemas/MediaType"
           },
           "messageBodyWorkers" : {
             "$ref" : "#/components/schemas/MessageBodyWorkers"
@@ -1932,13 +1988,18 @@
               },
               "type" : "array"
             },
+            "properties" : {
+              "empty" : {
+                "type" : "boolean"
+              }
+            },
             "type" : "object"
           },
           "parent" : {
             "$ref" : "#/components/schemas/MultiPart"
           },
           "providers" : {
-            "type" : "object"
+            "$ref" : "#/components/schemas/Providers"
           }
         },
         "type" : "object"
@@ -1973,6 +2034,7 @@
           },
           "locale" : {
             "description" : "BCP 47 locale tag for the consumer. Null when not set.",
+            "nullable" : true,
             "type" : "string"
           },
           "parameters" : {
@@ -2019,6 +2081,7 @@
         "type" : "object"
       },
       "PartnerEventIdResponse" : {
+        "nullable" : true,
         "properties" : {
           "name" : {
             "description" : "Name of the partner event identifier (e.g. `order_id`).",
@@ -2110,6 +2173,9 @@
         "required" : [ "quality_results", "reward", "status" ],
         "type" : "object"
       },
+      "Providers" : {
+        "type" : "object"
+      },
       "PublicPersonResponse" : {
         "properties" : {
           "first_name" : {
@@ -2160,6 +2226,7 @@
             "type" : "string"
           },
           "channel" : {
+            "nullable" : true,
             "type" : "string"
           },
           "id" : {
@@ -2167,6 +2234,7 @@
             "type" : "string"
           },
           "link" : {
+            "nullable" : true,
             "type" : "string"
           },
           "partner_id" : {
@@ -2179,6 +2247,7 @@
             "type" : "string"
           },
           "shareable_id" : {
+            "nullable" : true,
             "type" : "string"
           }
         },
@@ -2224,6 +2293,7 @@
             "type" : "string"
           },
           "shareable_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "updated_at" : {
@@ -2239,15 +2309,18 @@
             "additionalProperties" : {
               "type" : "object"
             },
+            "nullable" : true,
             "type" : "object"
           },
           "event_name" : {
             "type" : "string"
           },
           "id_token" : {
+            "nullable" : true,
             "type" : "string"
           },
           "jwt" : {
+            "nullable" : true,
             "type" : "string"
           }
         },
@@ -2319,6 +2392,7 @@
           },
           "email" : {
             "description" : "Email address of the reward recipient. Null if not available.",
+            "nullable" : true,
             "type" : "string"
           },
           "face_value" : {
@@ -2339,6 +2413,7 @@
           },
           "partner_reward_id" : {
             "description" : "Partner-assigned identifier for this reward. Null if not yet assigned.",
+            "nullable" : true,
             "type" : "string"
           },
           "partner_reward_key_type" : {
@@ -2348,10 +2423,12 @@
           },
           "partner_reward_supplier_id" : {
             "description" : "Partner-assigned identifier for the reward supplier. Null if not provided.",
+            "nullable" : true,
             "type" : "string"
           },
           "partner_user_id" : {
             "description" : "Partner's identifier for the person. Null if not provided.",
+            "nullable" : true,
             "type" : "string"
           },
           "person_id" : {
@@ -2384,6 +2461,7 @@
         "type" : "object"
       },
       "SendEmailError" : {
+        "nullable" : true,
         "properties" : {
           "code" : {
             "type" : "string"
@@ -2410,9 +2488,11 @@
       "SendEmailPollingResponse" : {
         "properties" : {
           "action_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "email_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "error" : {
@@ -2435,6 +2515,7 @@
             "additionalProperties" : {
               "type" : "string"
             },
+            "nullable" : true,
             "type" : "object"
           },
           "zone_name" : {
@@ -2459,6 +2540,7 @@
             "type" : "string"
           },
           "channel" : {
+            "nullable" : true,
             "type" : "string"
           },
           "data" : {
@@ -2475,15 +2557,18 @@
             "type" : "string"
           },
           "link" : {
+            "nullable" : true,
             "type" : "string"
           },
           "message" : {
+            "nullable" : true,
             "type" : "string"
           },
           "partner_id" : {
             "$ref" : "#/components/schemas/PartnerEventIdResponse"
           },
           "recipient_email" : {
+            "nullable" : true,
             "type" : "string"
           },
           "recipients" : {
@@ -2499,9 +2584,11 @@
             "type" : "string"
           },
           "shareable_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "subject" : {
+            "nullable" : true,
             "type" : "string"
           }
         },
@@ -2509,26 +2596,33 @@
         "type" : "object"
       },
       "ShareableContent" : {
+        "nullable" : true,
         "properties" : {
           "description" : {
+            "nullable" : true,
             "type" : "string"
           },
           "image_url" : {
+            "nullable" : true,
             "type" : "string"
           },
           "partner_content_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "title" : {
+            "nullable" : true,
             "type" : "string"
           },
           "url" : {
+            "nullable" : true,
             "type" : "string"
           }
         },
         "type" : "object"
       },
       "ShareableCreateV4Error" : {
+        "nullable" : true,
         "properties" : {
           "code" : {
             "type" : "string"
@@ -2561,10 +2655,12 @@
             "type" : "string"
           },
           "shareable_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "status" : {
             "enum" : [ "FAILED", "PENDING", "SUCCEEDED" ],
+            "nullable" : true,
             "type" : "string"
           }
         },
@@ -2574,18 +2670,23 @@
       "ShareableV4Content" : {
         "properties" : {
           "description" : {
+            "nullable" : true,
             "type" : "string"
           },
           "image_url" : {
+            "nullable" : true,
             "type" : "string"
           },
           "partner_content_id" : {
+            "nullable" : true,
             "type" : "string"
           },
           "title" : {
+            "nullable" : true,
             "type" : "string"
           },
           "url" : {
+            "nullable" : true,
             "type" : "string"
           }
         },
@@ -2603,6 +2704,7 @@
         "properties" : {
           "cookie_consent" : {
             "description" : "Cookie consent string set by the platform during event processing. Null when no consent update occurred.",
+            "nullable" : true,
             "type" : "string"
           },
           "id" : {
@@ -2668,6 +2770,7 @@
       "VerificationEmailRequest" : {
         "properties" : {
           "campaign_id" : {
+            "nullable" : true,
             "type" : "string"
           }
         },
@@ -2681,6 +2784,7 @@
           },
           "status" : {
             "enum" : [ "FAILED", "PENDING", "SUCCEEDED" ],
+            "nullable" : true,
             "type" : "string"
           }
         },
@@ -4470,12 +4574,14 @@
           "in" : "query",
           "name" : "container",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "type",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         } ],
@@ -6223,6 +6329,7 @@
           "in" : "query",
           "name" : "partner_share_id",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
@@ -6230,6 +6337,7 @@
           "in" : "query",
           "name" : "partner_id",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         } ],
@@ -6493,18 +6601,21 @@
           "in" : "query",
           "name" : "campaign_id",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "program_label",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "step_name",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
@@ -6512,18 +6623,21 @@
           "name" : "quality",
           "schema" : {
             "enum" : [ "HIGH", "LOW", "NONE" ],
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "partner_event_id_name",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "partner_event_id_value",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         } ],
@@ -8154,6 +8268,7 @@
           "in" : "query",
           "name" : "partner_share_id",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
@@ -8161,6 +8276,7 @@
           "in" : "query",
           "name" : "partner_id",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         } ],
@@ -8958,12 +9074,14 @@
           "in" : "query",
           "name" : "key",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "label",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         } ],
