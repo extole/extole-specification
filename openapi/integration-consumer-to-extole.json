@@ -3087,19 +3087,6 @@
         },
         "summary" : "Get the authenticated consumer profile",
         "tags" : [ "Profiles" ],
-        "x-codeSamples" : [ {
-          "label" : "cURL",
-          "lang" : "shell",
-          "source" : "curl \"https://{brand}.extole.io/api/v4/me\" \\\n  -H \"Authorization: Bearer YOUR_ACCESS_TOKEN\" \\\n  -H \"Accept: application/json\""
-        }, {
-          "label" : "JavaScript (fetch)",
-          "lang" : "javascript",
-          "source" : "const response = await fetch(\"https://{brand}.extole.io/api/v4/me\", {\n  headers: { \"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\", \"Accept\": \"application/json\" }\n});\nconst profile = await response.json();\nconsole.log(profile.email);"
-        }, {
-          "label" : "Python (requests)",
-          "lang" : "python",
-          "source" : "import requests\nresponse = requests.get(\n    \"https://{brand}.extole.io/api/v4/me\",\n    headers={\"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\", \"Accept\": \"application/json\"},\n)\nresponse.raise_for_status()\nprint(response.json()[\"email\"])"
-        } ],
         "x-extole-bundle" : "integration-consumer-to-extole",
         "x-extole-visibility" : "visible"
       },
@@ -5361,19 +5348,6 @@
         },
         "summary" : "Get reward redemption status",
         "tags" : [ "Profiles" ],
-        "x-codeSamples" : [ {
-          "label" : "cURL",
-          "lang" : "shell",
-          "source" : "curl \"https://{brand}.extole.io/api/v4/me/rewards/status?polling_id=POLLING_ID\" \\\n  -H \"Authorization: Bearer YOUR_ACCESS_TOKEN\" \\\n  -H \"Accept: application/json\""
-        }, {
-          "label" : "JavaScript (fetch)",
-          "lang" : "javascript",
-          "source" : "const response = await fetch(`https://{brand}.extole.io/api/v4/me/rewards/status?polling_id=POLLING_ID`, {\n  headers: { \"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\", \"Accept\": \"application/json\" }\n});\nconst reward = await response.json();\nconsole.log(reward.status);"
-        }, {
-          "label" : "Python (requests)",
-          "lang" : "python",
-          "source" : "import requests\nresponse = requests.get(\n    \"https://{brand}.extole.io/api/v4/me/rewards/status\",\n    params={\"polling_id\": \"POLLING_ID\"},\n    headers={\"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\", \"Accept\": \"application/json\"},\n)\nresponse.raise_for_status()\nprint(response.json()[\"status\"])"
-        } ],
         "x-extole-bundle" : "integration-consumer-to-extole",
         "x-extole-visibility" : "visible"
       }
@@ -7198,19 +7172,6 @@
         },
         "summary" : "List assets for a person",
         "tags" : [ "Profile Assets" ],
-        "x-codeSamples" : [ {
-          "label" : "cURL",
-          "lang" : "shell",
-          "source" : "curl \"https://{brand}.extole.io/api/v4/persons/PERSON_ID/assets/\" \\\n  -H \"Authorization: Bearer YOUR_ACCESS_TOKEN\" \\\n  -H \"Accept: application/json\""
-        }, {
-          "label" : "JavaScript (fetch)",
-          "lang" : "javascript",
-          "source" : "const response = await fetch(\"https://{brand}.extole.io/api/v4/persons/PERSON_ID/assets/\", {\n  headers: { \"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\", \"Accept\": \"application/json\" }\n});\nconst assets = await response.json();\nconsole.log(assets.length);"
-        }, {
-          "label" : "Python (requests)",
-          "lang" : "python",
-          "source" : "import requests\nresponse = requests.get(\n    \"https://{brand}.extole.io/api/v4/persons/PERSON_ID/assets/\",\n    headers={\"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\", \"Accept\": \"application/json\"},\n)\nresponse.raise_for_status()\nprint(len(response.json()))"
-        } ],
         "x-extole-bundle" : "integration-consumer-to-extole",
         "x-extole-visibility" : "visible"
       }
@@ -7346,19 +7307,6 @@
         },
         "summary" : "Download a person asset by name",
         "tags" : [ "Profile Assets" ],
-        "x-codeSamples" : [ {
-          "label" : "cURL",
-          "lang" : "shell",
-          "source" : "curl -L \"https://{brand}.extole.io/api/v4/persons/PERSON_ID/assets/download?name=ASSET_NAME\" \\\n  -H \"Authorization: Bearer YOUR_ACCESS_TOKEN\" \\\n  -o asset_content"
-        }, {
-          "label" : "JavaScript (fetch)",
-          "lang" : "javascript",
-          "source" : "const response = await fetch(\"https://{brand}.extole.io/api/v4/persons/PERSON_ID/assets/download?name=ASSET_NAME\", {\n  headers: { \"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\" }\n});\nconst blob = await response.blob();\nconsole.log(blob.size);"
-        }, {
-          "label" : "Python (requests)",
-          "lang" : "python",
-          "source" : "import requests\nresponse = requests.get(\n    \"https://{brand}.extole.io/api/v4/persons/PERSON_ID/assets/download\",\n    params={\"name\": \"ASSET_NAME\"},\n    headers={\"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\"},\n    allow_redirects=True,\n)\nresponse.raise_for_status()\nwith open(\"asset_content\", \"wb\") as f:\n    f.write(response.content)"
-        } ],
         "x-extole-bundle" : "integration-consumer-to-extole",
         "x-extole-visibility" : "visible"
       }
@@ -7494,19 +7442,6 @@
         },
         "summary" : "Get a person asset by ID",
         "tags" : [ "Profile Assets" ],
-        "x-codeSamples" : [ {
-          "label" : "cURL",
-          "lang" : "shell",
-          "source" : "curl \"https://{brand}.extole.io/api/v4/persons/PERSON_ID/assets/ASSET_ID\" \\\n  -H \"Authorization: Bearer YOUR_ACCESS_TOKEN\" \\\n  -H \"Accept: application/json\""
-        }, {
-          "label" : "JavaScript (fetch)",
-          "lang" : "javascript",
-          "source" : "const response = await fetch(\"https://{brand}.extole.io/api/v4/persons/PERSON_ID/assets/ASSET_ID\", {\n  headers: { \"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\", \"Accept\": \"application/json\" }\n});\nconst asset = await response.json();\nconsole.log(asset.name);"
-        }, {
-          "label" : "Python (requests)",
-          "lang" : "python",
-          "source" : "import requests\nresponse = requests.get(\n    \"https://{brand}.extole.io/api/v4/persons/PERSON_ID/assets/ASSET_ID\",\n    headers={\"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\", \"Accept\": \"application/json\"},\n)\nresponse.raise_for_status()\nprint(response.json()[\"name\"])"
-        } ],
         "x-extole-bundle" : "integration-consumer-to-extole",
         "x-extole-visibility" : "visible"
       }
@@ -7643,19 +7578,6 @@
         },
         "summary" : "Download a person asset by asset ID",
         "tags" : [ "Profile Assets" ],
-        "x-codeSamples" : [ {
-          "label" : "cURL",
-          "lang" : "shell",
-          "source" : "curl -L \"https://{brand}.extole.io/api/v4/persons/PERSON_ID/assets/ASSET_ID/download\" \\\n  -H \"Authorization: Bearer YOUR_ACCESS_TOKEN\" \\\n  -o asset_content"
-        }, {
-          "label" : "JavaScript (fetch)",
-          "lang" : "javascript",
-          "source" : "const response = await fetch(\"https://{brand}.extole.io/api/v4/persons/PERSON_ID/assets/ASSET_ID/download\", {\n  headers: { \"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\" }\n});\nconst blob = await response.blob();\nconsole.log(blob.size);"
-        }, {
-          "label" : "Python (requests)",
-          "lang" : "python",
-          "source" : "import requests\nresponse = requests.get(\n    \"https://{brand}.extole.io/api/v4/persons/PERSON_ID/assets/ASSET_ID/download\",\n    headers={\"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\"},\n    allow_redirects=True,\n)\nresponse.raise_for_status()\nwith open(\"asset_content\", \"wb\") as f:\n    f.write(response.content)"
-        } ],
         "x-extole-bundle" : "integration-consumer-to-extole",
         "x-extole-visibility" : "visible"
       }
@@ -8783,19 +8705,6 @@
         },
         "summary" : "Get consumer token details",
         "tags" : [ "Authentication" ],
-        "x-codeSamples" : [ {
-          "label" : "cURL",
-          "lang" : "shell",
-          "source" : "curl \"https://{brand}.extole.io/api/v5/token\" \\\n  -H \"Authorization: Bearer YOUR_ACCESS_TOKEN\" \\\n  -H \"Accept: application/json\""
-        }, {
-          "label" : "JavaScript (fetch)",
-          "lang" : "javascript",
-          "source" : "const response = await fetch(\"https://{brand}.extole.io/api/v5/token\", {\n  headers: { \"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\", \"Accept\": \"application/json\" }\n});\nconst token = await response.json();\nconsole.log(token.access_token);"
-        }, {
-          "label" : "Python (requests)",
-          "lang" : "python",
-          "source" : "import requests\nresponse = requests.get(\n    \"https://{brand}.extole.io/api/v5/token\",\n    headers={\"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\", \"Accept\": \"application/json\"},\n)\nresponse.raise_for_status()\nprint(response.json()[\"access_token\"])"
-        } ],
         "x-extole-bundle" : "integration-consumer-to-extole",
         "x-extole-visibility" : "visible"
       },
@@ -8917,19 +8826,6 @@
         },
         "summary" : "Create a consumer access token",
         "tags" : [ "Authentication" ],
-        "x-codeSamples" : [ {
-          "label" : "cURL",
-          "lang" : "shell",
-          "source" : "curl -X POST \"https://{brand}.extole.io/api/v5/token\" \\\n  -H \"Content-Type: application/json\" \\\n  -H \"Accept: application/json\" \\\n  -d '{\"email\": \"user@example.com\"}'"
-        }, {
-          "label" : "JavaScript (fetch)",
-          "lang" : "javascript",
-          "source" : "const response = await fetch(\"https://{brand}.extole.io/api/v5/token\", {\n  method: \"POST\",\n  headers: { \"Content-Type\": \"application/json\", \"Accept\": \"application/json\" },\n  body: JSON.stringify({ email: \"user@example.com\" })\n});\nconst token = await response.json();\nconsole.log(token.access_token);"
-        }, {
-          "label" : "Python (requests)",
-          "lang" : "python",
-          "source" : "import requests\nresponse = requests.post(\n    \"https://{brand}.extole.io/api/v5/token\",\n    headers={\"Content-Type\": \"application/json\", \"Accept\": \"application/json\"},\n    json={\"email\": \"user@example.com\"},\n)\nresponse.raise_for_status()\nprint(response.json()[\"access_token\"])"
-        } ],
         "x-extole-bundle" : "integration-consumer-to-extole",
         "x-extole-visibility" : "visible"
       },
@@ -9049,19 +8945,6 @@
         },
         "summary" : "Delete a consumer access token",
         "tags" : [ "Authentication" ],
-        "x-codeSamples" : [ {
-          "label" : "cURL",
-          "lang" : "shell",
-          "source" : "curl -X DELETE \"https://{brand}.extole.io/api/v5/token\" \\\n  -H \"Authorization: Bearer YOUR_ACCESS_TOKEN\" \\\n  -H \"Accept: application/json\""
-        }, {
-          "label" : "JavaScript (fetch)",
-          "lang" : "javascript",
-          "source" : "const response = await fetch(\"https://{brand}.extole.io/api/v5/token\", {\n  method: \"DELETE\",\n  headers: { \"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\", \"Accept\": \"application/json\" }\n});\nconst result = await response.json();\nconsole.log(result.status);"
-        }, {
-          "label" : "Python (requests)",
-          "lang" : "python",
-          "source" : "import requests\nresponse = requests.delete(\n    \"https://{brand}.extole.io/api/v5/token\",\n    headers={\"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\", \"Accept\": \"application/json\"},\n)\nresponse.raise_for_status()\nprint(response.json()[\"status\"])"
-        } ],
         "x-extole-bundle" : "integration-consumer-to-extole",
         "x-extole-visibility" : "visible"
       }
@@ -9620,19 +9503,6 @@
         },
         "summary" : "Submit a consumer event by URL",
         "tags" : [ "Events" ],
-        "x-codeSamples" : [ {
-          "label" : "cURL",
-          "lang" : "shell",
-          "source" : "curl \"https://{brand}.extole.io/events/advocate_share?access_token=YOUR_ACCESS_TOKEN&email=friend@example.com\" \\\n  -H \"Accept: application/json\""
-        }, {
-          "label" : "JavaScript (fetch)",
-          "lang" : "javascript",
-          "source" : "const params = new URLSearchParams({ access_token: \"YOUR_ACCESS_TOKEN\", email: \"friend@example.com\" });\nconst response = await fetch(`https://{brand}.extole.io/events/advocate_share?${params}`, {\n  headers: { \"Accept\": \"application/json\" }\n});\nconst result = await response.json();\nconsole.log(result.id);"
-        }, {
-          "label" : "Python (requests)",
-          "lang" : "python",
-          "source" : "import requests\nresponse = requests.get(\n    \"https://{brand}.extole.io/events/advocate_share\",\n    params={\"access_token\": \"YOUR_ACCESS_TOKEN\", \"email\": \"friend@example.com\"},\n    headers={\"Accept\": \"application/json\"},\n)\nresponse.raise_for_status()\nprint(response.json()[\"id\"])"
-        } ],
         "x-extole-bundle" : "integration-consumer-to-extole",
         "x-extole-visibility" : "visible"
       }
@@ -10859,19 +10729,6 @@
         },
         "summary" : "Render a zone",
         "tags" : [ "Content" ],
-        "x-codeSamples" : [ {
-          "label" : "cURL",
-          "lang" : "shell",
-          "source" : "curl -X POST \"https://{brand}.extole.io/api/v6/zones\" \\\n  -H \"Authorization: Bearer YOUR_ACCESS_TOKEN\" \\\n  -H \"Content-Type: application/json\" \\\n  -H \"Accept: application/json\" \\\n  -d '{\"event_name\": \"microsite_hero\"}'"
-        }, {
-          "label" : "JavaScript (fetch)",
-          "lang" : "javascript",
-          "source" : "const response = await fetch(\"https://{brand}.extole.io/api/v6/zones\", {\n  method: \"POST\",\n  headers: {\n    \"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\",\n    \"Content-Type\": \"application/json\",\n    \"Accept\": \"application/json\"\n  },\n  body: JSON.stringify({ event_name: \"microsite_hero\" })\n});\nconst zone = await response.json();\nconsole.log(zone.event_id);"
-        }, {
-          "label" : "Python (requests)",
-          "lang" : "python",
-          "source" : "import requests\nresponse = requests.post(\n    \"https://{brand}.extole.io/api/v6/zones\",\n    headers={\n        \"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\",\n        \"Content-Type\": \"application/json\",\n        \"Accept\": \"application/json\",\n    },\n    json={\"event_name\": \"microsite_hero\"},\n)\nresponse.raise_for_status()\nprint(response.json()[\"event_id\"])"
-        } ],
         "x-extole-bundle" : "integration-consumer-to-extole",
         "x-extole-visibility" : "visible"
       }
@@ -11015,19 +10872,6 @@
         },
         "summary" : "Render a named zone",
         "tags" : [ "Content" ],
-        "x-codeSamples" : [ {
-          "label" : "cURL",
-          "lang" : "shell",
-          "source" : "curl -X POST \"https://{brand}.extole.io/api/v6/zones/microsite_hero\" \\\n  -H \"Authorization: Bearer YOUR_ACCESS_TOKEN\" \\\n  -H \"Content-Type: application/json\" \\\n  -H \"Accept: application/json\" \\\n  -d '{}'"
-        }, {
-          "label" : "JavaScript (fetch)",
-          "lang" : "javascript",
-          "source" : "const response = await fetch(\"https://{brand}.extole.io/api/v6/zones/microsite_hero\", {\n  method: \"POST\",\n  headers: {\n    \"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\",\n    \"Content-Type\": \"application/json\",\n    \"Accept\": \"application/json\"\n  },\n  body: JSON.stringify({})\n});\nconst zone = await response.json();\nconsole.log(zone.event_id);"
-        }, {
-          "label" : "Python (requests)",
-          "lang" : "python",
-          "source" : "import requests\nresponse = requests.post(\n    \"https://{brand}.extole.io/api/v6/zones/microsite_hero\",\n    headers={\n        \"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\",\n        \"Content-Type\": \"application/json\",\n        \"Accept\": \"application/json\",\n    },\n    json={},\n)\nresponse.raise_for_status()\nprint(response.json()[\"event_id\"])"
-        } ],
         "x-extole-bundle" : "integration-consumer-to-extole",
         "x-extole-visibility" : "visible"
       }
@@ -11173,19 +11017,6 @@
         },
         "summary" : "Render a zone with the name in the body",
         "tags" : [ "Content" ],
-        "x-codeSamples" : [ {
-          "label" : "cURL",
-          "lang" : "shell",
-          "source" : "curl -X POST \"https://{brand}.extole.io/zones\" \\\n  -H \"Authorization: Bearer YOUR_ACCESS_TOKEN\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"event_name\": \"microsite_hero\"}'"
-        }, {
-          "label" : "JavaScript (fetch)",
-          "lang" : "javascript",
-          "source" : "const response = await fetch(\"https://{brand}.extole.io/zones\", {\n  method: \"POST\",\n  headers: {\n    \"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\",\n    \"Content-Type\": \"application/json\"\n  },\n  body: JSON.stringify({ event_name: \"microsite_hero\" })\n});\nconst content = await response.text();\nconsole.log(content);"
-        }, {
-          "label" : "Python (requests)",
-          "lang" : "python",
-          "source" : "import requests\nresponse = requests.post(\n    \"https://{brand}.extole.io/zones\",\n    headers={\n        \"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\",\n        \"Content-Type\": \"application/json\",\n    },\n    json={\"event_name\": \"microsite_hero\"},\n)\nresponse.raise_for_status()\nprint(response.text)"
-        } ],
         "x-extole-bundle" : "integration-consumer-to-extole",
         "x-extole-visibility" : "visible"
       }
@@ -11351,19 +11182,6 @@
         },
         "summary" : "Render a named zone for web-page embedding",
         "tags" : [ "Content" ],
-        "x-codeSamples" : [ {
-          "label" : "cURL",
-          "lang" : "shell",
-          "source" : "curl -X POST \"https://{brand}.extole.io/zones/microsite_hero\" \\\n  -H \"Authorization: Bearer YOUR_ACCESS_TOKEN\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{}'"
-        }, {
-          "label" : "JavaScript (fetch)",
-          "lang" : "javascript",
-          "source" : "const response = await fetch(\"https://{brand}.extole.io/zones/microsite_hero\", {\n  method: \"POST\",\n  headers: {\n    \"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\",\n    \"Content-Type\": \"application/json\"\n  },\n  body: JSON.stringify({})\n});\nconst content = await response.text();\nconsole.log(content);"
-        }, {
-          "label" : "Python (requests)",
-          "lang" : "python",
-          "source" : "import requests\nresponse = requests.post(\n    \"https://{brand}.extole.io/zones/microsite_hero\",\n    headers={\n        \"Authorization\": \"Bearer YOUR_ACCESS_TOKEN\",\n        \"Content-Type\": \"application/json\",\n    },\n    json={},\n)\nresponse.raise_for_status()\nprint(response.text)"
-        } ],
         "x-extole-bundle" : "integration-consumer-to-extole",
         "x-extole-visibility" : "visible"
       }
