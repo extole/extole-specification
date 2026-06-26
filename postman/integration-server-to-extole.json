@@ -23675,7 +23675,7 @@
                       "request": {
                         "name": "Delete a person key lookup",
                         "description": {
-                          "content": "Deletes the exact person key lookup for the calling client, wherever it currently points. Identify the key as a `<type>:<value>` path segment, the same format used to look up persons via `GET /v5/persons?person_keys=<type>:<value>`. Returns `400 key_not_found` when no lookup exists or the type is not a configured partner-profile key, and `400 read_only_key_type` for the client's identity key.",
+                          "content": "Deletes the exact person key lookup for the calling client, wherever it currently points. Identify the key as a `<type>:<value>` path segment, the same format used to look up persons via `GET /v5/persons?person_keys=<type>:<value>`. Values may contain forward slashes; include them literally in the path segment, for example `DELETE /v5/persons/person-keys/order_id:customer/vip/42`. Returns `400 key_not_found` when no lookup exists or the type is not a configured partner-profile key, and `400 read_only_key_type` for the client's identity key.",
                           "type": "text/plain"
                         },
                         "url": {
@@ -23694,7 +23694,7 @@
                               "key": "person_key",
                               "disabled": false,
                               "description": {
-                                "content": "(Required) The person key to delete using the format <type>:<value>, for example order_id:abc123.",
+                                "content": "(Required) The person key to delete using the format <type>:<value>, for example order_id:abc123 or order_id:customer/vip/42 when the value contains forward slashes.",
                                 "type": "text/plain"
                               }
                             }
@@ -23745,8 +23745,8 @@
                           "_postman_previewlanguage": "json"
                         },
                         {
-                          "id": "02b75285-7e30-45a8-93fd-2ce15939c4f2",
-                          "name": "Bad Request",
+                          "id": "fd54b0ca-c268-4dce-99e4-edf6375b851e",
+                          "name": "Person key lookup cannot be deleted. The named examples below cover this operation's specific validation errors. Inspect the response `code` field for details.",
                           "originalRequest": {
                             "url": {
                               "path": [
