@@ -23340,12 +23340,12 @@
                   "description": "",
                   "item": [
                     {
-                      "id": "e53f74aa-815e-4d74-bc10-23dc4d2f6b9a",
-                      "name": "Forward a person to another profile",
+                      "id": "834140ef-21e2-407a-92db-c96953c43b46",
+                      "name": "Forward an identity profile to another identity profile",
                       "request": {
-                        "name": "Forward a person to another profile",
+                        "name": "Forward an identity profile to another identity profile",
                         "description": {
-                          "content": "Merges the specified person profile into a target profile, forwarding all identity references from the source to the target. After the operation the source profile is no longer independently addressable; lookups by any of its identifiers resolve to the target. Use to consolidate duplicate person profiles.",
+                          "content": "Merges the specified identity profile into the target identity profile. All activity associated with the source identity profile, is forwarded to the target identity profile. After the operation the source profile is no longer independently addressable; lookups by any of its identifiers resolve to the target. Used to consolidate duplicate profiles.",
                           "type": "text/plain"
                         },
                         "url": {
@@ -23359,7 +23359,7 @@
                               "key": "person_id",
                               "disabled": false,
                               "description": {
-                                "content": "(Required) ",
+                                "content": "(Required) Source identity profile Extole unique identifier.",
                                 "type": "text/plain"
                               }
                             }
@@ -23374,7 +23374,7 @@
                       },
                       "response": [
                         {
-                          "id": "dc60c1ba-cf03-4b99-b3ae-29fd0ef2cdbd",
+                          "id": "aab9536a-efc3-47bf-a281-3f1a2c0e2419",
                           "name": "Successful response",
                           "originalRequest": {
                             "url": {
@@ -23414,7 +23414,7 @@
                           "_postman_previewlanguage": "json"
                         },
                         {
-                          "id": "9b66dd56-39ba-461b-8764-69f3220e50a7",
+                          "id": "dd9cfb28-9612-4915-aa2e-377ce98cd8f1",
                           "name": "Bad Request",
                           "originalRequest": {
                             "url": {
@@ -23454,7 +23454,7 @@
                           "_postman_previewlanguage": "json"
                         },
                         {
-                          "id": "dddba89a-33fe-4d86-a337-264bb89fe2c9",
+                          "id": "9507e190-cb24-4ee6-a1e6-6c379a7afb19",
                           "name": "Unauthorized",
                           "originalRequest": {
                             "url": {
@@ -23494,7 +23494,7 @@
                           "_postman_previewlanguage": "json"
                         },
                         {
-                          "id": "1969f5e5-58f4-4e29-b29c-46c9f53b3325",
+                          "id": "d383b935-2db9-42a0-a3c9-e9f67706e00f",
                           "name": "Payment Required",
                           "originalRequest": {
                             "url": {
@@ -23534,7 +23534,7 @@
                           "_postman_previewlanguage": "json"
                         },
                         {
-                          "id": "58c31882-3557-4ad9-b10b-17f86d03706f",
+                          "id": "e9614bdd-12df-4bf8-97bf-b308a494ac3d",
                           "name": "Forbidden",
                           "originalRequest": {
                             "url": {
@@ -23574,7 +23574,7 @@
                           "_postman_previewlanguage": "json"
                         },
                         {
-                          "id": "7f62c7a2-ac8f-46d6-9c10-15cc8f179a1a",
+                          "id": "35b471e7-7f23-4b49-83d3-7f40cd5af7fe",
                           "name": "Unsupported Media Type",
                           "originalRequest": {
                             "url": {
@@ -23614,7 +23614,7 @@
                           "_postman_previewlanguage": "json"
                         },
                         {
-                          "id": "638399e1-d137-4618-a450-90fe15e4a8dd",
+                          "id": "f310505a-ed7b-487a-96f4-0dae87f9b8ba",
                           "name": "Too Many Requests",
                           "originalRequest": {
                             "url": {
