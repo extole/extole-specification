@@ -1,5 +1,6 @@
 {
   "schemaFaker": false,
   "requestParametersResolution": "Example",
-  "exampleParametersResolution": "Example"
+  "exampleParametersResolution": "Example",
+  "folderStrategy": "Tags"
 }
