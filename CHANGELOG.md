@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/extole/extole-specification/compare/v1.1.0...v1.1.1) (2026-07-08)
+
+
+### Bug Fixes
+
+* **postman:** organize generated collections by OpenAPI tags instead of paths ([#13](https://github.com/extole/extole-specification/issues/13)) ([46a6176](https://github.com/extole/extole-specification/commit/46a617614aedd7f1b5a9c26acfed6f2f024fe6b1))
+
 ## [1.1.0](https://github.com/extole/extole-specification/compare/v1.0.0...v1.1.0) (2026-06-30)
 
 
