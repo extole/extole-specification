@@ -110159,11 +110159,11 @@
   },
   "event": [],
   "variable": [
+    { "key": "actionId", "value": "<string>" },
     { "key": "baseUrl", "value": "https://api.extole.io" },
     { "key": "campaignId", "value": "<string>" },
-    { "key": "version", "value": "<string>" },
-    { "key": "actionId", "value": "<string>" },
-    { "key": "format", "value": "<string>" }
+    { "key": "format", "value": "<string>" },
+    { "key": "version", "value": "<string>" }
   ],
   "info": {
     "_postman_id": "a4417093-82f3-4d80-892a-9add5509e897",

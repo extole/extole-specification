@@ -65,6 +65,16 @@ function normalizeCollectionVariables(variables: unknown): void {
     }
     entry.value = normalizeParamValue(entry.value);
   }
+  // openapi-to-postmanv2 discovers collection-level path variables via
+  // concurrent traversal, so their order can vary between otherwise
+  // identical runs. Sort by key for a stable, reproducible output.
+  variables.sort((a, b) => {
+    const keyA =
+      a && typeof a === 'object' ? String((a as JsonRecord).key ?? '') : '';
+    const keyB =
+      b && typeof b === 'object' ? String((b as JsonRecord).key ?? '') : '';
+    return keyA.localeCompare(keyB);
+  });
 }
 
 function stableUuid(seed: string): string {

@@ -84020,11 +84020,11 @@
   "event": [],
   "variable": [
     { "key": "baseUrl", "value": "https://api.extole.io" },
-    { "key": "format", "value": "<string>" },
     { "key": "campaignId", "value": "<string>" },
-    { "key": "version", "value": "<string>" },
     { "key": "component_id", "value": "<string>" },
-    { "key": "extension", "value": "<string>" }
+    { "key": "extension", "value": "<string>" },
+    { "key": "format", "value": "<string>" },
+    { "key": "version", "value": "<string>" }
   ],
   "info": {
     "_postman_id": "792b7904-59b4-400a-baca-abeed06116bb",

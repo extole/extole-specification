@@ -14638,8 +14638,8 @@
   },
   "event": [],
   "variable": [
-    { "key": "brand", "value": "<string>" },
-    { "key": "baseUrl", "value": "https://{{brand}}.extole.io" }
+    { "key": "baseUrl", "value": "https://{{brand}}.extole.io" },
+    { "key": "brand", "value": "<string>" }
   ],
   "info": {
     "_postman_id": "74b31352-c74f-487e-9668-09fd1697741d",
