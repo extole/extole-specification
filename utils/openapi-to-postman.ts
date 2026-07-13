@@ -2,7 +2,9 @@
 
 import child_process from 'child_process';
 import fs from 'fs';
+import os from 'os';
 import path from 'path';
+import { addFreeformMapExamples } from './openapi-freeform-examples';
 import { normalizePostmanCollection } from './postman-normalize';
 
 const repoRoot = path.join(__dirname, '..');
@@ -28,11 +30,23 @@ for (const bundle of bundles) {
   const name = path.basename(bundle, '.json');
   const src = path.join(openapiDir, bundle);
   const dest = path.join(postmanDir, `${name}.json`);
-  console.log(`Converting ${src} -> ${dest}`);
-  child_process.execSync(
-    `npx openapi2postmanv2 -s "${src}" -o "${dest}" -p -c "${optionsPath}"`,
-    { stdio: 'inherit' },
+  const spec = addFreeformMapExamples(
+    JSON.parse(fs.readFileSync(src, 'utf8')) as unknown,
   );
+  const tempSpec = path.join(
+    os.tmpdir(),
+    `extole-specification-${name}-${process.pid}.json`,
+  );
+  fs.writeFileSync(tempSpec, `${JSON.stringify(spec)}\n`);
+  console.log(`Converting ${src} -> ${dest}`);
+  try {
+    child_process.execSync(
+      `npx openapi2postmanv2 -s "${tempSpec}" -o "${dest}" -p -c "${optionsPath}"`,
+      { stdio: 'inherit' },
+    );
+  } finally {
+    fs.unlinkSync(tempSpec);
+  }
   const collection = JSON.parse(fs.readFileSync(dest, 'utf8')) as unknown;
   const normalized = normalizePostmanCollection(collection, name);
   fs.writeFileSync(dest, `${JSON.stringify(normalized)}\n`);

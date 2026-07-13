@@ -47,6 +47,7 @@ const FREEFORM_OBJECT_KEYS = new Set([
   'parameterizedHeaders',
   'parameters',
   'properties',
+  'response_body_handler',
   'settings',
   'state_transitions',
   'targeting_attributes',
@@ -54,16 +55,29 @@ const FREEFORM_OBJECT_KEYS = new Set([
   'values',
 ]);
 
-const STABLE_SINGLE_SEGMENT_KEYS = new Set([
+const STABLE_OBJECT_KEYS = new Set([
   'auth',
   'body',
+  'channels',
   'code',
   'columns',
+  'component_id',
+  'component_ids',
+  'component_references',
   'content',
-  'data',
+  'data_source',
   'description',
+  'dkim_cname_records',
+  'domain',
+  'duration_seconds',
   'email',
   'enabled',
+  'event_columns',
+  'event_name',
+  'event_time',
+  'expected_headers',
+  'filter_expression',
+  'filtering_level',
   'format',
   'formats',
   'headers',
@@ -73,25 +87,33 @@ const STABLE_SINGLE_SEGMENT_KEYS = new Set([
   'key',
   'label',
   'lang',
+  'match_mode',
   'message',
   'method',
   'name',
+  'on_mismatch',
   'parameters',
+  'partner_user_id',
+  'password',
   'path',
   'paused',
+  'person_id',
   'prefix',
   'priority',
   'quality',
   'query',
   'request',
   'response',
+  'response_handler',
   'schema',
   'scopes',
   'settings',
+  'socket_names',
   'source',
   'status',
   'summary',
   'tags',
+  'tasks',
   'title',
   'type',
   'url',
@@ -99,75 +121,52 @@ const STABLE_SINGLE_SEGMENT_KEYS = new Set([
   'values',
 ]);
 
-const STABLE_SHORT_SEGMENTS = new Set([
-  'as',
-  'at',
-  'by',
-  'id',
-  'ip',
-  'ms',
-  'of',
-  'ok',
-  'or',
-  'to',
-]);
-
 function isUnstableMapKey(key: string): boolean {
   if (isPlaceholder(key)) {
+    return false;
+  }
+  if (STABLE_OBJECT_KEYS.has(key)) {
     return false;
   }
   if (/[0-9A-Z]/.test(key) || key.includes('__') || key.endsWith('_')) {
     return true;
   }
-  if (!key.includes('_') && !STABLE_SINGLE_SEGMENT_KEYS.has(key)) {
-    return true;
+  if (!key.includes('_')) {
+    return false;
   }
-  const segments = key.split('_');
-  if (
-    segments.some(
-      (segment) => segment.length <= 2 && !STABLE_SHORT_SEGMENTS.has(segment),
-    )
-  ) {
-    return true;
-  }
-  if (
-    segments.length === 2 &&
-    STABLE_SHORT_SEGMENTS.has(segments[0]) &&
-    /^[a-f]{3,4}$/i.test(segments[1])
-  ) {
-    return true;
-  }
-  return false;
+  return true;
 }
 
-function normalizeJsonValue(value: unknown, parentKey?: string): unknown {
+function normalizeJsonStrings(value: unknown, parentKey?: string): unknown {
   if (typeof value === 'string') {
     return normalizeParamValue(value);
   }
-  if (typeof value === 'number' || typeof value === 'boolean' || value === null) {
+  if (typeof value === 'number') {
+    return Number.isInteger(value) ? '<integer>' : '<number>';
+  }
+  if (typeof value === 'boolean') {
+    return '<boolean>';
+  }
+  if (value === null) {
     return value;
   }
   if (Array.isArray(value)) {
-    return value.map((entry) => normalizeJsonValue(entry));
+    return value.map((entry) => normalizeJsonStrings(entry));
   }
   if (value && typeof value === 'object') {
-    const entries = Object.entries(value as JsonRecord).sort(([a], [b]) =>
-      a.localeCompare(b),
-    );
-    if (
-      (parentKey && FREEFORM_OBJECT_KEYS.has(parentKey)) ||
-      (parentKey && isPlaceholder(parentKey))
-    ) {
-      return { '<string>': '<string>' };
+    if (parentKey && FREEFORM_OBJECT_KEYS.has(parentKey)) {
+      return {};
     }
     const normalized: JsonRecord = {};
-    for (const [key, entry] of entries) {
+    for (const [key, entry] of Object.entries(value as JsonRecord).sort(
+      ([a], [b]) => a.localeCompare(b),
+    )) {
       if (isUnstableMapKey(key)) {
         continue;
       }
-      normalized[key] = normalizeJsonValue(entry, key);
+      normalized[key] = normalizeJsonStrings(entry, key);
     }
-    if (Object.keys(normalized).length === 0 && entries.length > 0) {
+    if (Object.keys(normalized).length === 0 && Object.keys(value as JsonRecord).length > 0) {
       return { '<string>': '<string>' };
     }
     return normalized;
@@ -185,7 +184,7 @@ function normalizeRequestBody(body: unknown): void {
   }
   try {
     const parsed = JSON.parse(bodyRecord.raw) as unknown;
-    bodyRecord.raw = `${JSON.stringify(normalizeJsonValue(parsed), null, 2)}\n`;
+    bodyRecord.raw = `${JSON.stringify(normalizeJsonStrings(parsed), null, 2)}\n`;
   } catch {
     bodyRecord.raw = '<string>';
   }

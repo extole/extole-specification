@@ -734,7 +734,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"event_name\": \"<string>\",\n  \"id_token\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
+              "raw": "{\n  \"data\": {},\n  \"event_name\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
               "options": {
                 "raw": { "headerFamily": "json", "language": "json" }
               }
@@ -767,7 +767,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"event_name\": \"<string>\",\n  \"id_token\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"event_name\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -806,7 +806,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"event_name\": \"<string>\",\n  \"id_token\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"event_name\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -845,7 +845,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"event_name\": \"<string>\",\n  \"id_token\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"event_name\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -884,7 +884,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"event_name\": \"<string>\",\n  \"id_token\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"event_name\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -923,7 +923,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"event_name\": \"<string>\",\n  \"id_token\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"event_name\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -962,7 +962,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"event_name\": \"<string>\",\n  \"id_token\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"event_name\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -1281,7 +1281,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"event_name\": \"<string>\",\n  \"id_token\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
+              "raw": "{\n  \"data\": {},\n  \"event_name\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
               "options": {
                 "raw": { "headerFamily": "json", "language": "json" }
               }
@@ -1314,7 +1314,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"event_name\": \"<string>\",\n  \"id_token\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"event_name\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -1351,7 +1351,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"event_name\": \"<string>\",\n  \"id_token\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"event_name\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -1390,7 +1390,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"event_name\": \"<string>\",\n  \"id_token\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"event_name\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -1429,7 +1429,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"event_name\": \"<string>\",\n  \"id_token\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"event_name\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -1468,7 +1468,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"event_name\": \"<string>\",\n  \"id_token\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"event_name\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -1507,7 +1507,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"event_name\": \"<string>\",\n  \"id_token\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"event_name\": \"<string>\",\n  \"jwt\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -2058,7 +2058,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"zone_name\": \"<string>\"\n}\n",
+              "raw": "{\n  \"data\": {}\n}\n",
               "options": {
                 "raw": { "headerFamily": "json", "language": "json" }
               }
@@ -2091,7 +2091,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"zone_name\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {}\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -2130,7 +2130,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"zone_name\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {}\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -2169,7 +2169,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"zone_name\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {}\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -2208,7 +2208,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"zone_name\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {}\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -2247,7 +2247,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"zone_name\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {}\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -2286,7 +2286,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"zone_name\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {}\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -4812,7 +4812,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"access_token\": \"<string>\",\n  \"email\": \"<string>\",\n  \"first_name\": \"<string>\",\n  \"last_name\": \"<string>\",\n  \"partner_user_id\": \"<string>\",\n  \"profile_picture_url\": \"<string>\"\n}\n",
+              "raw": "{\n  \"email\": \"<string>\",\n  \"partner_user_id\": \"<string>\"\n}\n",
               "options": {
                 "raw": { "headerFamily": "json", "language": "json" }
               }
@@ -4845,7 +4845,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"access_token\": \"<string>\",\n  \"email\": \"<string>\",\n  \"first_name\": \"<string>\",\n  \"last_name\": \"<string>\",\n  \"partner_user_id\": \"<string>\",\n  \"profile_picture_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"email\": \"<string>\",\n  \"partner_user_id\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -4884,7 +4884,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"access_token\": \"<string>\",\n  \"email\": \"<string>\",\n  \"first_name\": \"<string>\",\n  \"last_name\": \"<string>\",\n  \"partner_user_id\": \"<string>\",\n  \"profile_picture_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"email\": \"<string>\",\n  \"partner_user_id\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -4923,7 +4923,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"access_token\": \"<string>\",\n  \"email\": \"<string>\",\n  \"first_name\": \"<string>\",\n  \"last_name\": \"<string>\",\n  \"partner_user_id\": \"<string>\",\n  \"profile_picture_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"email\": \"<string>\",\n  \"partner_user_id\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -4962,7 +4962,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"access_token\": \"<string>\",\n  \"email\": \"<string>\",\n  \"first_name\": \"<string>\",\n  \"last_name\": \"<string>\",\n  \"partner_user_id\": \"<string>\",\n  \"profile_picture_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"email\": \"<string>\",\n  \"partner_user_id\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -5001,7 +5001,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"access_token\": \"<string>\",\n  \"email\": \"<string>\",\n  \"first_name\": \"<string>\",\n  \"last_name\": \"<string>\",\n  \"partner_user_id\": \"<string>\",\n  \"profile_picture_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"email\": \"<string>\",\n  \"partner_user_id\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -5040,7 +5040,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"access_token\": \"<string>\",\n  \"email\": \"<string>\",\n  \"first_name\": \"<string>\",\n  \"last_name\": \"<string>\",\n  \"partner_user_id\": \"<string>\",\n  \"profile_picture_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"email\": \"<string>\",\n  \"partner_user_id\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -7711,7 +7711,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"parameters\": {\n    \"<string>\": \"<string>\"\n  },\n  \"type\": \"<string>\"\n}\n",
+              "raw": "{\n  \"parameters\": {},\n  \"type\": \"<string>\"\n}\n",
               "options": {
                 "raw": { "headerFamily": "json", "language": "json" }
               }
@@ -7744,7 +7744,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"parameters\": {\n    \"<string>\": \"<string>\"\n  },\n  \"type\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"parameters\": {},\n  \"type\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -7783,7 +7783,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"parameters\": {\n    \"<string>\": \"<string>\"\n  },\n  \"type\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"parameters\": {},\n  \"type\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -7822,7 +7822,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"parameters\": {\n    \"<string>\": \"<string>\"\n  },\n  \"type\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"parameters\": {},\n  \"type\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -7861,7 +7861,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"parameters\": {\n    \"<string>\": \"<string>\"\n  },\n  \"type\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"parameters\": {},\n  \"type\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -7900,7 +7900,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"parameters\": {\n    \"<string>\": \"<string>\"\n  },\n  \"type\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"parameters\": {},\n  \"type\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -7939,7 +7939,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"parameters\": {\n    \"<string>\": \"<string>\"\n  },\n  \"type\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"parameters\": {},\n  \"type\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -9320,7 +9320,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+              "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
               "options": {
                 "raw": { "headerFamily": "json", "language": "json" }
               }
@@ -9353,7 +9353,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -9392,7 +9392,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -9431,7 +9431,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -9470,7 +9470,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -9509,7 +9509,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -9548,7 +9548,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -10153,7 +10153,7 @@
             "method": "PUT",
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+              "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
               "options": {
                 "raw": { "headerFamily": "json", "language": "json" }
               }
@@ -10186,7 +10186,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -10225,7 +10225,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -10264,7 +10264,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -10303,7 +10303,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -10342,7 +10342,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -10381,7 +10381,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -11720,7 +11720,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"access_token\": \"<string>\",\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+              "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
               "options": {
                 "raw": { "headerFamily": "json", "language": "json" }
               }
@@ -11753,7 +11753,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"access_token\": \"<string>\",\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -11792,7 +11792,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"access_token\": \"<string>\",\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -11831,7 +11831,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"access_token\": \"<string>\",\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -11870,7 +11870,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"access_token\": \"<string>\",\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -11909,7 +11909,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"access_token\": \"<string>\",\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -11948,7 +11948,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"access_token\": \"<string>\",\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"target_url\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"code\": \"<string>\",\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -13579,7 +13579,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+              "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
               "options": {
                 "raw": { "headerFamily": "json", "language": "json" }
               }
@@ -13612,7 +13612,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -13651,7 +13651,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -13690,7 +13690,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -13729,7 +13729,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -13768,7 +13768,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -13807,7 +13807,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14075,7 +14075,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"campaign_id\": \"<string>\",\n  \"consumer_event\": {\n    \"campaign_id\": \"<string>\",\n    \"origin_event_id\": \"<long>\",\n    \"parameters\": {\n      \"<string>\": \"<string>\"\n    },\n    \"product_id\": \"<string>\",\n    \"recipient_emails\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"site_host_id\": \"<string>\",\n    \"source\": \"<string>\",\n    \"source_url\": \"<string>\",\n    \"via_zone\": \"<string>\",\n    \"zone_name\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_email\": \"<string>\",\n  \"shareable_id\": \"<string>\"\n}\n",
+              "raw": "{\n  \"data\": {},\n  \"message\": \"<string>\"\n}\n",
               "options": {
                 "raw": { "headerFamily": "json", "language": "json" }
               }
@@ -14108,7 +14108,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"campaign_id\": \"<string>\",\n  \"consumer_event\": {\n    \"campaign_id\": \"<string>\",\n    \"origin_event_id\": \"<long>\",\n    \"parameters\": {\n      \"<string>\": \"<string>\"\n    },\n    \"product_id\": \"<string>\",\n    \"recipient_emails\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"site_host_id\": \"<string>\",\n    \"source\": \"<string>\",\n    \"source_url\": \"<string>\",\n    \"via_zone\": \"<string>\",\n    \"zone_name\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_email\": \"<string>\",\n  \"shareable_id\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"message\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14147,7 +14147,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"campaign_id\": \"<string>\",\n  \"consumer_event\": {\n    \"campaign_id\": \"<string>\",\n    \"origin_event_id\": \"<long>\",\n    \"parameters\": {\n      \"<string>\": \"<string>\"\n    },\n    \"product_id\": \"<string>\",\n    \"recipient_emails\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"site_host_id\": \"<string>\",\n    \"source\": \"<string>\",\n    \"source_url\": \"<string>\",\n    \"via_zone\": \"<string>\",\n    \"zone_name\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_email\": \"<string>\",\n  \"shareable_id\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"message\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14186,7 +14186,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"campaign_id\": \"<string>\",\n  \"consumer_event\": {\n    \"campaign_id\": \"<string>\",\n    \"origin_event_id\": \"<long>\",\n    \"parameters\": {\n      \"<string>\": \"<string>\"\n    },\n    \"product_id\": \"<string>\",\n    \"recipient_emails\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"site_host_id\": \"<string>\",\n    \"source\": \"<string>\",\n    \"source_url\": \"<string>\",\n    \"via_zone\": \"<string>\",\n    \"zone_name\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_email\": \"<string>\",\n  \"shareable_id\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"message\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14225,7 +14225,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"campaign_id\": \"<string>\",\n  \"consumer_event\": {\n    \"campaign_id\": \"<string>\",\n    \"origin_event_id\": \"<long>\",\n    \"parameters\": {\n      \"<string>\": \"<string>\"\n    },\n    \"product_id\": \"<string>\",\n    \"recipient_emails\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"site_host_id\": \"<string>\",\n    \"source\": \"<string>\",\n    \"source_url\": \"<string>\",\n    \"via_zone\": \"<string>\",\n    \"zone_name\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_email\": \"<string>\",\n  \"shareable_id\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"message\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14264,7 +14264,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"campaign_id\": \"<string>\",\n  \"consumer_event\": {\n    \"campaign_id\": \"<string>\",\n    \"origin_event_id\": \"<long>\",\n    \"parameters\": {\n      \"<string>\": \"<string>\"\n    },\n    \"product_id\": \"<string>\",\n    \"recipient_emails\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"site_host_id\": \"<string>\",\n    \"source\": \"<string>\",\n    \"source_url\": \"<string>\",\n    \"via_zone\": \"<string>\",\n    \"zone_name\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_email\": \"<string>\",\n  \"shareable_id\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"message\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14303,7 +14303,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"campaign_id\": \"<string>\",\n  \"consumer_event\": {\n    \"campaign_id\": \"<string>\",\n    \"origin_event_id\": \"<long>\",\n    \"parameters\": {\n      \"<string>\": \"<string>\"\n    },\n    \"product_id\": \"<string>\",\n    \"recipient_emails\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"site_host_id\": \"<string>\",\n    \"source\": \"<string>\",\n    \"source_url\": \"<string>\",\n    \"via_zone\": \"<string>\",\n    \"zone_name\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_email\": \"<string>\",\n  \"shareable_id\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"message\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14343,7 +14343,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"campaign_id\": \"<string>\"\n}\n",
+              "raw": "{\n  \"<string>\": \"<string>\"\n}\n",
               "options": {
                 "raw": { "headerFamily": "json", "language": "json" }
               }
@@ -14376,7 +14376,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"campaign_id\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"<string>\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14415,7 +14415,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"campaign_id\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"<string>\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14454,7 +14454,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"campaign_id\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"<string>\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14493,7 +14493,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"campaign_id\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"<string>\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14532,7 +14532,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"campaign_id\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"<string>\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14571,7 +14571,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"campaign_id\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"<string>\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14611,7 +14611,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"advocate_code\": \"<string>\",\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_email\": \"<string>\"\n}\n",
+              "raw": "{\n  \"channel\": \"<string>\",\n  \"data\": {},\n  \"message\": \"<string>\"\n}\n",
               "options": {
                 "raw": { "headerFamily": "json", "language": "json" }
               }
@@ -14644,7 +14644,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"advocate_code\": \"<string>\",\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_email\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"channel\": \"<string>\",\n  \"data\": {},\n  \"message\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14683,7 +14683,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"advocate_code\": \"<string>\",\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_email\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"channel\": \"<string>\",\n  \"data\": {},\n  \"message\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14722,7 +14722,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"advocate_code\": \"<string>\",\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_email\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"channel\": \"<string>\",\n  \"data\": {},\n  \"message\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14761,7 +14761,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"advocate_code\": \"<string>\",\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_email\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"channel\": \"<string>\",\n  \"data\": {},\n  \"message\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14800,7 +14800,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"advocate_code\": \"<string>\",\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_email\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"channel\": \"<string>\",\n  \"data\": {},\n  \"message\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14839,7 +14839,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"advocate_code\": \"<string>\",\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_email\": \"<string>\"\n}\n",
+                  "raw": "{\n  \"channel\": \"<string>\",\n  \"data\": {},\n  \"message\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14879,7 +14879,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"advocate_code\": \"<string>\",\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_emails\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+              "raw": "{\n  \"data\": {},\n  \"message\": \"<string>\",\n  \"subject\": \"<string>\"\n}\n",
               "options": {
                 "raw": { "headerFamily": "json", "language": "json" }
               }
@@ -14912,7 +14912,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"advocate_code\": \"<string>\",\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_emails\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"message\": \"<string>\",\n  \"subject\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14951,7 +14951,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"advocate_code\": \"<string>\",\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_emails\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"message\": \"<string>\",\n  \"subject\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -14990,7 +14990,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"advocate_code\": \"<string>\",\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_emails\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"message\": \"<string>\",\n  \"subject\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -15029,7 +15029,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"advocate_code\": \"<string>\",\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_emails\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"message\": \"<string>\",\n  \"subject\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -15068,7 +15068,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"advocate_code\": \"<string>\",\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_emails\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"message\": \"<string>\",\n  \"subject\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -15107,7 +15107,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"advocate_code\": \"<string>\",\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"message\": \"<string>\",\n  \"recipient_emails\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"data\": {},\n  \"message\": \"<string>\",\n  \"subject\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -15147,7 +15147,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+              "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
               "options": {
                 "raw": { "headerFamily": "json", "language": "json" }
               }
@@ -15186,7 +15186,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -15231,7 +15231,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -15276,7 +15276,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -15321,7 +15321,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -15366,7 +15366,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -15411,7 +15411,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -15451,7 +15451,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+              "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
               "options": {
                 "raw": { "headerFamily": "json", "language": "json" }
               }
@@ -15484,7 +15484,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -15523,7 +15523,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -15562,7 +15562,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -15601,7 +15601,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -15640,7 +15640,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -15679,7 +15679,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"image_url\": \"<string>\",\n    \"partner_content_id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {\n    \"<string>\": \"<string>\"\n  },\n  \"key\": \"<string>\",\n  \"label\": \"<string>\",\n  \"preferred_code_prefixes\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}\n",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"<string>\",\n    \"title\": \"<string>\",\n    \"url\": \"<string>\"\n  },\n  \"data\": {},\n  \"key\": \"<string>\",\n  \"label\": \"<string>\"\n}\n",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
