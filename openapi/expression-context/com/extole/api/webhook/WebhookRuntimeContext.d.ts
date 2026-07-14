@@ -1,4 +1,5 @@
 import type { ClientKeyApiException } from "../client/security/key/ClientKeyApiException";
+import type { JsonServiceException } from "../service/JsonServiceException";
 import type { LoggerContext } from "../LoggerContext";
 import type { RuntimeVariableContext } from "../RuntimeVariableContext";
 import type { Webhook } from "./Webhook";
@@ -9,6 +10,7 @@ export interface WebhookRuntimeContext extends LoggerContext, RuntimeVariableCon
     createRequestBuilder(): WebhookRequestBuilder;
     /**
      * @throws {ClientKeyApiException}
+     * @throws {JsonServiceException}
      */
     createRequestBuilderWithDefaults(): WebhookRequestBuilder;
     getAttemptCount(): number;
