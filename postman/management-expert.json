@@ -104038,7 +104038,7 @@
                   "disabled": false,
                   "description": { "content": "", "type": "text/plain" },
                   "key": "slot",
-                  "value": "<dateTime>"
+                  "value": "<string>"
                 },
                 {
                   "disabled": false,
@@ -104083,7 +104083,7 @@
                       "disabled": false,
                       "description": { "content": "", "type": "text/plain" },
                       "key": "slot",
-                      "value": "<dateTime>"
+                      "value": "<string>"
                     },
                     {
                       "disabled": false,
@@ -104133,7 +104133,7 @@
                       "disabled": false,
                       "description": { "content": "", "type": "text/plain" },
                       "key": "slot",
-                      "value": "<dateTime>"
+                      "value": "<string>"
                     },
                     {
                       "disabled": false,
@@ -104183,7 +104183,7 @@
                       "disabled": false,
                       "description": { "content": "", "type": "text/plain" },
                       "key": "slot",
-                      "value": "<dateTime>"
+                      "value": "<string>"
                     },
                     {
                       "disabled": false,
@@ -104233,7 +104233,7 @@
                       "disabled": false,
                       "description": { "content": "", "type": "text/plain" },
                       "key": "slot",
-                      "value": "<dateTime>"
+                      "value": "<string>"
                     },
                     {
                       "disabled": false,
@@ -104283,7 +104283,7 @@
                       "disabled": false,
                       "description": { "content": "", "type": "text/plain" },
                       "key": "slot",
-                      "value": "<dateTime>"
+                      "value": "<string>"
                     },
                     {
                       "disabled": false,
@@ -104333,7 +104333,7 @@
                       "disabled": false,
                       "description": { "content": "", "type": "text/plain" },
                       "key": "slot",
-                      "value": "<dateTime>"
+                      "value": "<string>"
                     },
                     {
                       "disabled": false,
@@ -104383,7 +104383,7 @@
                       "disabled": false,
                       "description": { "content": "", "type": "text/plain" },
                       "key": "slot",
-                      "value": "<dateTime>"
+                      "value": "<string>"
                     },
                     {
                       "disabled": false,
@@ -104698,7 +104698,7 @@
                   "disabled": false,
                   "description": { "content": "", "type": "text/plain" },
                   "key": "slot",
-                  "value": "<dateTime>"
+                  "value": "<string>"
                 }
               ],
               "variable": [
@@ -104737,7 +104737,7 @@
                       "disabled": false,
                       "description": { "content": "", "type": "text/plain" },
                       "key": "slot",
-                      "value": "<dateTime>"
+                      "value": "<string>"
                     }
                   ],
                   "variable": []
@@ -104781,7 +104781,7 @@
                       "disabled": false,
                       "description": { "content": "", "type": "text/plain" },
                       "key": "slot",
-                      "value": "<dateTime>"
+                      "value": "<string>"
                     }
                   ],
                   "variable": []
@@ -104825,7 +104825,7 @@
                       "disabled": false,
                       "description": { "content": "", "type": "text/plain" },
                       "key": "slot",
-                      "value": "<dateTime>"
+                      "value": "<string>"
                     }
                   ],
                   "variable": []
@@ -104869,7 +104869,7 @@
                       "disabled": false,
                       "description": { "content": "", "type": "text/plain" },
                       "key": "slot",
-                      "value": "<dateTime>"
+                      "value": "<string>"
                     }
                   ],
                   "variable": []
@@ -104913,7 +104913,7 @@
                       "disabled": false,
                       "description": { "content": "", "type": "text/plain" },
                       "key": "slot",
-                      "value": "<dateTime>"
+                      "value": "<string>"
                     }
                   ],
                   "variable": []
@@ -104957,7 +104957,7 @@
                       "disabled": false,
                       "description": { "content": "", "type": "text/plain" },
                       "key": "slot",
-                      "value": "<dateTime>"
+                      "value": "<string>"
                     }
                   ],
                   "variable": []
@@ -105001,7 +105001,7 @@
                       "disabled": false,
                       "description": { "content": "", "type": "text/plain" },
                       "key": "slot",
-                      "value": "<dateTime>"
+                      "value": "<string>"
                     }
                   ],
                   "variable": []
