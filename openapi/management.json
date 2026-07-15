@@ -12457,8 +12457,8 @@
           },
           "type" : "object"
         } ],
-        "description" : "custom reward supplier after buildtime evaluation. Fields `name`, `display_name`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `face_value_type`, `display_type`, and `enabled` are already evaluated.",
-        "required" : [ "auto_fulfillment_enabled", "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "created_date", "data", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "limit_per_day", "limit_per_hour", "missing_fulfillment_alert_delay_ms", "missing_fulfillment_alert_enabled", "missing_fulfillment_auto_fail_delay_ms", "missing_fulfillment_auto_fail_enabled", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_email_auto_send_enabled", "reward_supplier_type", "state_transitions", "tags", "type", "updated_date" ],
+        "description" : "custom reward supplier after buildtime evaluation. Fields `name`, `display_name`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `face_value_type`, `display_type`, `enabled`, and `reward_expires_at` are already evaluated.",
+        "required" : [ "auto_fulfillment_enabled", "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "created_date", "data", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "limit_per_day", "limit_per_hour", "missing_fulfillment_alert_delay_ms", "missing_fulfillment_alert_enabled", "missing_fulfillment_auto_fail_delay_ms", "missing_fulfillment_auto_fail_enabled", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_email_auto_send_enabled", "reward_expires_at", "reward_supplier_type", "state_transitions", "tags", "type", "updated_date" ],
         "type" : "object"
       },
       "BuiltEventStreamResponse" : {
@@ -12984,8 +12984,8 @@
           },
           "type" : "object"
         } ],
-        "description" : "manual coupon reward supplier after buildtime evaluation. Fields `display_type`, `face_value_type`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `name`, `display_name`, and `enabled` are already evaluated.",
-        "required" : [ "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "coupon_count_warn_limit", "created_date", "data", "default_coupon_expiry_date", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "limit_per_day", "limit_per_hour", "minimum_coupon_lifetime", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_supplier_type", "state_transitions", "tags", "updated_date" ],
+        "description" : "manual coupon reward supplier after buildtime evaluation. Fields `display_type`, `face_value_type`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `name`, `display_name`, `enabled`, and `reward_expires_at` are already evaluated.",
+        "required" : [ "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "coupon_count_warn_limit", "created_date", "data", "default_coupon_expiry_date", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "limit_per_day", "limit_per_hour", "minimum_coupon_lifetime", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_expires_at", "reward_supplier_type", "state_transitions", "tags", "updated_date" ],
         "type" : "object"
       },
       "BuiltOAuthClientKeyResponse" : {
@@ -13287,12 +13287,12 @@
           },
           "type" : "object"
         } ],
-        "description" : "pay pal payouts reward supplier after buildtime evaluation. Fields `display_type`, `name`, `display_name`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `face_value_type`, `description`, and `enabled` are already evaluated.",
-        "required" : [ "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "created_date", "data", "description", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "limit_per_day", "limit_per_hour", "merchant_token", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_supplier_type", "state_transitions", "tags", "updated_date" ],
+        "description" : "pay pal payouts reward supplier after buildtime evaluation. Fields `display_type`, `name`, `display_name`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `face_value_type`, `description`, `enabled`, and `reward_expires_at` are already evaluated.",
+        "required" : [ "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "created_date", "data", "description", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "limit_per_day", "limit_per_hour", "merchant_token", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_expires_at", "reward_supplier_type", "state_transitions", "tags", "updated_date" ],
         "type" : "object"
       },
       "BuiltRewardSupplierResponse" : {
-        "description" : "reward supplier after buildtime evaluation. Fields `display_type`, `name`, `display_name`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `face_value_type`, and `enabled` are already evaluated.",
+        "description" : "reward supplier after buildtime evaluation. Fields `display_type`, `name`, `display_name`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `face_value_type`, `enabled`, and `reward_expires_at` are already evaluated.",
         "discriminator" : {
           "mapping" : {
             "CUSTOM_REWARD" : "#/components/schemas/BuiltCustomRewardSupplierResponse",
@@ -13314,7 +13314,7 @@
         }, {
           "$ref" : "#/components/schemas/BuiltTangoRewardSupplierResponse"
         } ],
-        "required" : [ "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "created_date", "data", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "limit_per_day", "limit_per_hour", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_supplier_type", "state_transitions", "tags", "updated_date" ]
+        "required" : [ "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "created_date", "data", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "limit_per_day", "limit_per_hour", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_expires_at", "reward_supplier_type", "state_transitions", "tags", "updated_date" ]
       },
       "BuiltRewardSupplierResponseBase" : {
         "properties" : {
@@ -13389,6 +13389,9 @@
           },
           "partner_reward_supplier_id" : {
             "type" : "string"
+          },
+          "reward_expires_at" : {
+            "$ref" : "#/components/schemas/RewardExpiresAtInBuiltRewardSupplierResponseBase"
           },
           "reward_supplier_type" : {
             "enum" : [ "CUSTOM_REWARD", "MANUAL_COUPON", "PAYPAL_PAYOUTS", "SALESFORCE_COUPON", "TANGO_V2" ],
@@ -13473,8 +13476,8 @@
           },
           "type" : "object"
         } ],
-        "description" : "salesforce coupon reward supplier after buildtime evaluation. Fields `display_type`, `face_value_type`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `name`, `display_name`, `coupon_pool_id`, and `enabled` are already evaluated.",
-        "required" : [ "balance_refill_amount", "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "coupon_pool_id", "created_date", "data", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "initial_offset", "limit_per_day", "limit_per_hour", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_supplier_type", "settings_id", "state_transitions", "tags", "updated_date" ],
+        "description" : "salesforce coupon reward supplier after buildtime evaluation. Fields `display_type`, `face_value_type`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `name`, `display_name`, `coupon_pool_id`, `enabled`, and `reward_expires_at` are already evaluated.",
+        "required" : [ "balance_refill_amount", "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "coupon_pool_id", "created_date", "data", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "initial_offset", "limit_per_day", "limit_per_hour", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_expires_at", "reward_supplier_type", "settings_id", "state_transitions", "tags", "updated_date" ],
         "type" : "object"
       },
       "BuiltSslPkcs12ClientKeyResponse" : {
@@ -13589,8 +13592,8 @@
           },
           "type" : "object"
         } ],
-        "description" : "tango reward supplier after buildtime evaluation. Fields `display_type`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `face_value_type`, `name`, `display_name`, `description`, and `enabled` are already evaluated.",
-        "required" : [ "account_id", "brand_description", "brand_disclaimer", "brand_image_url", "brand_name", "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "created_date", "data", "description", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "limit_per_day", "limit_per_hour", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_supplier_type", "state_transitions", "tags", "updated_date", "utid" ],
+        "description" : "tango reward supplier after buildtime evaluation. Fields `display_type`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `face_value_type`, `name`, `display_name`, `description`, `enabled`, and `reward_expires_at` are already evaluated.",
+        "required" : [ "account_id", "brand_description", "brand_disclaimer", "brand_image_url", "brand_name", "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "created_date", "data", "description", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "limit_per_day", "limit_per_hour", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_expires_at", "reward_supplier_type", "state_transitions", "tags", "updated_date", "utid" ],
         "type" : "object"
       },
       "BuiltWebhookResponse" : {
@@ -22078,6 +22081,9 @@
             "reward_email_auto_send_enabled" : {
               "type" : "boolean"
             },
+            "reward_expires_at" : {
+              "$ref" : "#/components/schemas/RewardExpiresAtInCustomRewardSupplierCreateRequest"
+            },
             "reward_supplier_type" : {
               "enum" : [ "CUSTOM_REWARD" ],
               "type" : "string"
@@ -22142,8 +22148,8 @@
           },
           "type" : "object"
         } ],
-        "description" : "Stored custom reward supplier definition. Fields `name`, `display_name`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `face_value_type`, `display_type`, and `enabled` are unevaluated and appear in buildtime-evaluatable form.",
-        "required" : [ "auto_fulfillment_enabled", "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "created_date", "data", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "limit_per_day", "limit_per_hour", "missing_fulfillment_alert_delay_ms", "missing_fulfillment_alert_enabled", "missing_fulfillment_auto_fail_delay_ms", "missing_fulfillment_auto_fail_enabled", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_email_auto_send_enabled", "reward_supplier_type", "state_transitions", "tags", "type", "updated_date" ],
+        "description" : "Stored custom reward supplier definition. Fields `name`, `display_name`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `face_value_type`, `display_type`, `enabled`, and `reward_expires_at` are unevaluated and appear in buildtime-evaluatable form.",
+        "required" : [ "auto_fulfillment_enabled", "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "created_date", "data", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "limit_per_day", "limit_per_hour", "missing_fulfillment_alert_delay_ms", "missing_fulfillment_alert_enabled", "missing_fulfillment_auto_fail_delay_ms", "missing_fulfillment_auto_fail_enabled", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_email_auto_send_enabled", "reward_expires_at", "reward_supplier_type", "state_transitions", "tags", "type", "updated_date" ],
         "type" : "object"
       },
       "CustomRewardSupplierUpdateRequest" : {
@@ -22182,6 +22188,9 @@
             },
             "reward_email_auto_send_enabled" : {
               "type" : "boolean"
+            },
+            "reward_expires_at" : {
+              "$ref" : "#/components/schemas/RewardExpiresAtInCustomRewardSupplierUpdateRequest"
             },
             "reward_supplier_type" : {
               "enum" : [ "CUSTOM_REWARD" ],
@@ -36059,6 +36068,9 @@
               "format" : "int64",
               "type" : "integer"
             },
+            "reward_expires_at" : {
+              "$ref" : "#/components/schemas/RewardExpiresAtInManualCouponRewardSupplierCreateRequest"
+            },
             "reward_supplier_type" : {
               "enum" : [ "MANUAL_COUPON" ],
               "type" : "string"
@@ -36164,8 +36176,8 @@
           },
           "type" : "object"
         } ],
-        "description" : "Stored manual coupon reward supplier definition. Fields `display_type`, `face_value_type`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `name`, `display_name`, and `enabled` are unevaluated and appear in buildtime-evaluatable form.",
-        "required" : [ "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "coupon_count_warn_limit", "created_date", "data", "default_coupon_expiry_date", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "limit_per_day", "limit_per_hour", "minimum_coupon_lifetime", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_supplier_type", "state_transitions", "tags", "updated_date" ],
+        "description" : "Stored manual coupon reward supplier definition. Fields `display_type`, `face_value_type`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `name`, `display_name`, `enabled`, and `reward_expires_at` are unevaluated and appear in buildtime-evaluatable form.",
+        "required" : [ "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "coupon_count_warn_limit", "created_date", "data", "default_coupon_expiry_date", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "limit_per_day", "limit_per_hour", "minimum_coupon_lifetime", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_expires_at", "reward_supplier_type", "state_transitions", "tags", "updated_date" ],
         "type" : "object"
       },
       "ManualCouponRewardSupplierUpdateRequest" : {
@@ -36195,6 +36207,9 @@
             "minimum_coupon_lifetime" : {
               "format" : "int64",
               "type" : "integer"
+            },
+            "reward_expires_at" : {
+              "$ref" : "#/components/schemas/RewardExpiresAtInManualCouponRewardSupplierUpdateRequest"
             },
             "reward_supplier_type" : {
               "enum" : [ "MANUAL_COUPON" ],
@@ -38830,6 +38845,9 @@
             "merchant_token" : {
               "type" : "string"
             },
+            "reward_expires_at" : {
+              "$ref" : "#/components/schemas/RewardExpiresAtInPayPalPayoutsRewardSupplierCreateRequest"
+            },
             "reward_supplier_type" : {
               "enum" : [ "PAYPAL_PAYOUTS" ],
               "type" : "string"
@@ -38862,8 +38880,8 @@
           },
           "type" : "object"
         } ],
-        "description" : "Stored pay pal payouts reward supplier definition. Fields `display_type`, `name`, `display_name`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `face_value_type`, `description`, and `enabled` are unevaluated and appear in buildtime-evaluatable form.",
-        "required" : [ "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "created_date", "data", "description", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "limit_per_day", "limit_per_hour", "merchant_token", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_supplier_type", "state_transitions", "tags", "updated_date" ],
+        "description" : "Stored pay pal payouts reward supplier definition. Fields `display_type`, `name`, `display_name`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `face_value_type`, `description`, `enabled`, and `reward_expires_at` are unevaluated and appear in buildtime-evaluatable form.",
+        "required" : [ "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "created_date", "data", "description", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "limit_per_day", "limit_per_hour", "merchant_token", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_expires_at", "reward_supplier_type", "state_transitions", "tags", "updated_date" ],
         "type" : "object"
       },
       "PayPalPayoutsRewardSupplierUpdateRequest" : {
@@ -38885,6 +38903,9 @@
             },
             "merchant_token" : {
               "type" : "string"
+            },
+            "reward_expires_at" : {
+              "$ref" : "#/components/schemas/RewardExpiresAtInPayPalPayoutsRewardSupplierUpdateRequest"
             },
             "reward_supplier_type" : {
               "enum" : [ "PAYPAL_PAYOUTS" ],
@@ -42270,6 +42291,686 @@
           "type" : "string"
         } ]
       },
+      "RewardExpiresAtInBuiltRewardSupplierResponseBase" : {
+        "description" : "The reward expires at as configured: a literal value, or an expression (type:string) when defined dynamically.",
+        "oneOf" : [ {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ZonedDateTime"
+          } ],
+          "description" : "Literal reward expires at",
+          "title" : "Static Value"
+        }, {
+          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "handlebars@runtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "RewardExpiresAtInCustomRewardSupplierCreateRequest" : {
+        "description" : "Choose between static or dynamic reward expires at",
+        "oneOf" : [ {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ZonedDateTime"
+          } ],
+          "description" : "Static reward expires at",
+          "title" : "Static Value"
+        }, {
+          "description" : "Handlebars expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "handlebars@runtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "RewardExpiresAtInCustomRewardSupplierUpdateRequest" : {
+        "description" : "Choose between static or dynamic reward expires at",
+        "oneOf" : [ {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ZonedDateTime"
+          } ],
+          "description" : "Static reward expires at",
+          "title" : "Static Value"
+        }, {
+          "description" : "Handlebars expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "handlebars@runtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "RewardExpiresAtInManualCouponRewardSupplierCreateRequest" : {
+        "description" : "Choose between static or dynamic reward expires at",
+        "oneOf" : [ {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ZonedDateTime"
+          } ],
+          "description" : "Static reward expires at",
+          "title" : "Static Value"
+        }, {
+          "description" : "Handlebars expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "handlebars@runtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "RewardExpiresAtInManualCouponRewardSupplierUpdateRequest" : {
+        "description" : "Choose between static or dynamic reward expires at",
+        "oneOf" : [ {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ZonedDateTime"
+          } ],
+          "description" : "Static reward expires at",
+          "title" : "Static Value"
+        }, {
+          "description" : "Handlebars expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "handlebars@runtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "RewardExpiresAtInPayPalPayoutsRewardSupplierCreateRequest" : {
+        "description" : "Choose between static or dynamic reward expires at",
+        "oneOf" : [ {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ZonedDateTime"
+          } ],
+          "description" : "Static reward expires at",
+          "title" : "Static Value"
+        }, {
+          "description" : "Handlebars expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "handlebars@runtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "RewardExpiresAtInPayPalPayoutsRewardSupplierUpdateRequest" : {
+        "description" : "Choose between static or dynamic reward expires at",
+        "oneOf" : [ {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ZonedDateTime"
+          } ],
+          "description" : "Static reward expires at",
+          "title" : "Static Value"
+        }, {
+          "description" : "Handlebars expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "handlebars@runtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "RewardExpiresAtInRewardSupplierCreateRequestBase" : {
+        "description" : "Choose between static or dynamic reward expires at",
+        "oneOf" : [ {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ZonedDateTime"
+          } ],
+          "description" : "Static reward expires at",
+          "title" : "Static Value"
+        }, {
+          "description" : "Handlebars expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "handlebars@runtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "RewardExpiresAtInRewardSupplierResponseBase" : {
+        "description" : "The reward expires at as configured: a literal value, or an expression (type:string) when defined dynamically.",
+        "oneOf" : [ {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ZonedDateTime"
+          } ],
+          "description" : "Literal reward expires at",
+          "title" : "Static Value"
+        }, {
+          "description" : "Handlebars expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "handlebars@runtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "RewardExpiresAtInRewardSupplierUpdateRequestBase" : {
+        "description" : "Choose between static or dynamic reward expires at",
+        "oneOf" : [ {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ZonedDateTime"
+          } ],
+          "description" : "Static reward expires at",
+          "title" : "Static Value"
+        }, {
+          "description" : "Handlebars expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "handlebars@runtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "RewardExpiresAtInSalesforceCouponRewardSupplierCreateRequest" : {
+        "description" : "Choose between static or dynamic reward expires at",
+        "oneOf" : [ {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ZonedDateTime"
+          } ],
+          "description" : "Static reward expires at",
+          "title" : "Static Value"
+        }, {
+          "description" : "Handlebars expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "handlebars@runtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "RewardExpiresAtInSalesforceCouponRewardSupplierUpdateRequest" : {
+        "description" : "Choose between static or dynamic reward expires at",
+        "oneOf" : [ {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ZonedDateTime"
+          } ],
+          "description" : "Static reward expires at",
+          "title" : "Static Value"
+        }, {
+          "description" : "Handlebars expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "handlebars@runtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "RewardExpiresAtInTangoRewardSupplierCreateRequest" : {
+        "description" : "Choose between static or dynamic reward expires at",
+        "oneOf" : [ {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ZonedDateTime"
+          } ],
+          "description" : "Static reward expires at",
+          "title" : "Static Value"
+        }, {
+          "description" : "Handlebars expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "handlebars@runtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "RewardExpiresAtInTangoRewardSupplierUpdateRequest" : {
+        "description" : "Choose between static or dynamic reward expires at",
+        "oneOf" : [ {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/ZonedDateTime"
+          } ],
+          "description" : "Static reward expires at",
+          "title" : "Static Value"
+        }, {
+          "description" : "Handlebars expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardSupplierBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardSupplierBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/supplier/built/RewardSupplierBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "handlebars@runtime:{{rewardExpiresAt}}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
+          "externalDocs" : {
+            "description" : "RewardFulfillmentEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+          },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
       "RewardNameInCampaignControllerActionEarnRewardResponse" : {
         "description" : "The reward name as configured: a literal value, or an expression (type:string) when defined dynamically.",
         "oneOf" : [ {
@@ -42601,6 +43302,9 @@
           "partner_reward_supplier_id" : {
             "type" : "string"
           },
+          "reward_expires_at" : {
+            "$ref" : "#/components/schemas/RewardExpiresAtInRewardSupplierCreateRequestBase"
+          },
           "reward_supplier_type" : {
             "enum" : [ "CUSTOM_REWARD", "MANUAL_COUPON", "PAYPAL_PAYOUTS", "SALESFORCE_COUPON", "TANGO_V2" ],
             "type" : "string"
@@ -42665,7 +43369,7 @@
         }, {
           "$ref" : "#/components/schemas/TangoRewardSupplierResponse"
         } ],
-        "required" : [ "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "created_date", "data", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "limit_per_day", "limit_per_hour", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_supplier_type", "state_transitions", "tags", "updated_date" ]
+        "required" : [ "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "created_date", "data", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "limit_per_day", "limit_per_hour", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_expires_at", "reward_supplier_type", "state_transitions", "tags", "updated_date" ]
       },
       "RewardSupplierResponseBase" : {
         "properties" : {
@@ -42730,6 +43434,9 @@
           },
           "partner_reward_supplier_id" : {
             "type" : "string"
+          },
+          "reward_expires_at" : {
+            "$ref" : "#/components/schemas/RewardExpiresAtInRewardSupplierResponseBase"
           },
           "reward_supplier_type" : {
             "enum" : [ "CUSTOM_REWARD", "MANUAL_COUPON", "PAYPAL_PAYOUTS", "SALESFORCE_COUPON", "TANGO_V2" ],
@@ -42842,6 +43549,9 @@
           },
           "partner_reward_supplier_id" : {
             "type" : "string"
+          },
+          "reward_expires_at" : {
+            "$ref" : "#/components/schemas/RewardExpiresAtInRewardSupplierUpdateRequestBase"
           },
           "reward_supplier_type" : {
             "enum" : [ "CUSTOM_REWARD", "MANUAL_COUPON", "PAYPAL_PAYOUTS", "SALESFORCE_COUPON", "TANGO_V2" ],
@@ -43070,6 +43780,9 @@
             "limit_per_hour" : {
               "$ref" : "#/components/schemas/LimitPerHourInSalesforceCouponRewardSupplierCreateRequest"
             },
+            "reward_expires_at" : {
+              "$ref" : "#/components/schemas/RewardExpiresAtInSalesforceCouponRewardSupplierCreateRequest"
+            },
             "reward_supplier_type" : {
               "enum" : [ "SALESFORCE_COUPON" ],
               "type" : "string"
@@ -43155,8 +43868,8 @@
           },
           "type" : "object"
         } ],
-        "description" : "Stored salesforce coupon reward supplier definition. Fields `display_type`, `face_value_type`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `name`, `display_name`, `coupon_pool_id`, and `enabled` are unevaluated and appear in buildtime-evaluatable form.",
-        "required" : [ "balance_refill_amount", "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "coupon_pool_id", "created_date", "data", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "initial_offset", "limit_per_day", "limit_per_hour", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_supplier_type", "settings_id", "state_transitions", "tags", "updated_date" ],
+        "description" : "Stored salesforce coupon reward supplier definition. Fields `display_type`, `face_value_type`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `name`, `display_name`, `coupon_pool_id`, `enabled`, and `reward_expires_at` are unevaluated and appear in buildtime-evaluatable form.",
+        "required" : [ "balance_refill_amount", "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "coupon_pool_id", "created_date", "data", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "initial_offset", "limit_per_day", "limit_per_hour", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_expires_at", "reward_supplier_type", "settings_id", "state_transitions", "tags", "updated_date" ],
         "type" : "object"
       },
       "SalesforceCouponRewardSupplierUpdateRequest" : {
@@ -43179,6 +43892,9 @@
             },
             "limit_per_hour" : {
               "$ref" : "#/components/schemas/LimitPerHourInSalesforceCouponRewardSupplierUpdateRequest"
+            },
+            "reward_expires_at" : {
+              "$ref" : "#/components/schemas/RewardExpiresAtInSalesforceCouponRewardSupplierUpdateRequest"
             },
             "reward_supplier_type" : {
               "enum" : [ "SALESFORCE_COUPON" ],
@@ -45287,6 +46003,9 @@
             "limit_per_hour" : {
               "$ref" : "#/components/schemas/LimitPerHourInTangoRewardSupplierCreateRequest"
             },
+            "reward_expires_at" : {
+              "$ref" : "#/components/schemas/RewardExpiresAtInTangoRewardSupplierCreateRequest"
+            },
             "reward_supplier_type" : {
               "enum" : [ "TANGO_V2" ],
               "type" : "string"
@@ -45337,8 +46056,8 @@
           },
           "type" : "object"
         } ],
-        "description" : "Stored tango reward supplier definition. Fields `display_type`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `face_value_type`, `name`, `display_name`, `description`, and `enabled` are unevaluated and appear in buildtime-evaluatable form.",
-        "required" : [ "account_id", "brand_description", "brand_disclaimer", "brand_image_url", "brand_name", "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "created_date", "data", "description", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "limit_per_day", "limit_per_hour", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_supplier_type", "state_transitions", "tags", "updated_date", "utid" ],
+        "description" : "Stored tango reward supplier definition. Fields `display_type`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `face_value_type`, `name`, `display_name`, `description`, `enabled`, and `reward_expires_at` are unevaluated and appear in buildtime-evaluatable form.",
+        "required" : [ "account_id", "brand_description", "brand_disclaimer", "brand_image_url", "brand_name", "cash_back_max", "cash_back_min", "cash_back_percentage", "component_ids", "component_references", "created_date", "data", "description", "display_name", "display_type", "enabled", "face_value", "face_value_algorithm_type", "face_value_type", "id", "limit_per_day", "limit_per_hour", "name", "partner_reward_key_type", "partner_reward_supplier_id", "reward_expires_at", "reward_supplier_type", "state_transitions", "tags", "updated_date", "utid" ],
         "type" : "object"
       },
       "TangoRewardSupplierUpdateRequest" : {
@@ -45357,6 +46076,9 @@
             },
             "limit_per_hour" : {
               "$ref" : "#/components/schemas/LimitPerHourInTangoRewardSupplierUpdateRequest"
+            },
+            "reward_expires_at" : {
+              "$ref" : "#/components/schemas/RewardExpiresAtInTangoRewardSupplierUpdateRequest"
             },
             "reward_supplier_type" : {
               "enum" : [ "TANGO_V2" ],
