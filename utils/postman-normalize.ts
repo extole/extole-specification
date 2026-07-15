@@ -31,8 +31,17 @@ function normalizeParams(params: unknown): void {
   }
 }
 
-function stripRequestExamples(request: JsonRecord): void {
-  delete request.body;
+function normalizeBody(body: unknown): void {
+  if (!body || typeof body !== 'object') {
+    return;
+  }
+  const bodyRecord = body as JsonRecord;
+  normalizeParams(bodyRecord.urlencoded);
+  normalizeParams(bodyRecord.formdata);
+}
+
+function normalizeRequest(request: JsonRecord): void {
+  normalizeBody(request.body);
   const url = request.url;
   if (url && typeof url === 'object') {
     const urlRecord = url as JsonRecord;
@@ -44,9 +53,10 @@ function stripRequestExamples(request: JsonRecord): void {
 
 function stripResponseExamples(response: JsonRecord): void {
   delete response.body;
+  normalizeParams(response.header);
   const originalRequest = response.originalRequest;
   if (originalRequest && typeof originalRequest === 'object') {
-    stripRequestExamples(originalRequest as JsonRecord);
+    normalizeRequest(originalRequest as JsonRecord);
   }
 }
 
@@ -88,7 +98,7 @@ function normalizeItems(
 
     if (entry.request) {
       entry.id = stableUuid(`${bundleName}:request:${pathKey}`);
-      stripRequestExamples(entry.request as JsonRecord);
+      normalizeRequest(entry.request as JsonRecord);
     }
     if (Array.isArray(entry.response)) {
       for (let index = 0; index < entry.response.length; index++) {
