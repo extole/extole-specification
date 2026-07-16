@@ -11,7 +11,6 @@ import {
   deleteCollection,
   listCollectionFiles,
   loadLocalCollection,
-  prepareCollectionForPublish,
   postmanDir,
   postmanFetch,
   readJson,
@@ -183,9 +182,7 @@ async function publishCollectionFile(
     );
   }
 
-  const localCollection = prepareCollectionForPublish(
-    loadLocalCollection(filename),
-  );
+  const localCollection = loadLocalCollection(filename);
   const existing = mapping.collections[key];
 
   console.log(

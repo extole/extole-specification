@@ -51,9 +51,12 @@ function normalizeRequest(request: JsonRecord): void {
   normalizeParams(request.header);
 }
 
-function omitNullAuth(request: JsonRecord): void {
-  if (request.auth === null) {
-    delete request.auth;
+function stripResponseExamples(response: JsonRecord): void {
+  delete response.body;
+  normalizeParams(response.header);
+  const originalRequest = response.originalRequest;
+  if (originalRequest && typeof originalRequest === 'object') {
+    normalizeRequest(originalRequest as JsonRecord);
   }
 }
 
@@ -95,11 +98,17 @@ function normalizeItems(
 
     if (entry.request) {
       entry.id = stableUuid(`${bundleName}:request:${pathKey}`);
-      const request = entry.request as JsonRecord;
-      normalizeRequest(request);
-      omitNullAuth(request);
+      normalizeRequest(entry.request as JsonRecord);
     }
-    delete entry.response;
+    if (Array.isArray(entry.response)) {
+      for (let index = 0; index < entry.response.length; index++) {
+        const response = entry.response[index] as JsonRecord;
+        response.id = stableUuid(
+          `${bundleName}:response:${pathKey}:${String(response.name ?? index)}`,
+        );
+        stripResponseExamples(response);
+      }
+    }
     if (Array.isArray(entry.item)) {
       normalizeItems(entry.item, bundleName, itemPath);
     }

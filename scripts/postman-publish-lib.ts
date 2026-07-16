@@ -29,7 +29,6 @@ export interface PublishMapping {
 export interface PostmanCollectionItem {
   name?: string;
   request?: { method?: string; url?: unknown };
-  response?: unknown[];
   item?: PostmanCollectionItem[];
 }
 
@@ -82,40 +81,6 @@ export function loadLocalCollection(filename: string): PostmanCollection {
   return JSON.parse(
     fs.readFileSync(path.join(postmanDir, filename), 'utf8'),
   ) as PostmanCollection;
-}
-
-function stripSavedResponses(items: PostmanCollectionItem[] | undefined): void {
-  if (!items) {
-    return;
-  }
-  for (const item of items) {
-    delete item.response;
-    if (item.item) {
-      stripSavedResponses(item.item);
-    }
-  }
-}
-
-function stripItemIds(items: PostmanCollectionItem[] | undefined): void {
-  if (!items) {
-    return;
-  }
-  for (const item of items) {
-    delete (item as { id?: string }).id;
-    if (item.item) {
-      stripItemIds(item.item);
-    }
-  }
-}
-
-export function prepareCollectionForPublish(
-  collection: PostmanCollection,
-): PostmanCollection {
-  const prepared = JSON.parse(JSON.stringify(collection)) as PostmanCollection;
-  delete prepared.info._postman_id;
-  stripSavedResponses(prepared.item);
-  stripItemIds(prepared.item);
-  return prepared;
 }
 
 export async function deleteCollection(
