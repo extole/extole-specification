@@ -29,6 +29,7 @@ export interface PublishMapping {
 export interface PostmanCollectionItem {
   name?: string;
   request?: { method?: string; url?: unknown };
+  response?: unknown[];
   item?: PostmanCollectionItem[];
 }
 
@@ -71,7 +72,9 @@ export function writeMapping(mapping: PublishMapping): void {
 export function listCollectionFiles(): string[] {
   return fs
     .readdirSync(postmanDir)
-    .filter((filename) => filename.endsWith('.json') && !filename.startsWith('.'))
+    .filter(
+      (filename) => filename.endsWith('.json') && !filename.startsWith('.'),
+    )
     .sort();
 }
 
@@ -79,6 +82,54 @@ export function loadLocalCollection(filename: string): PostmanCollection {
   return JSON.parse(
     fs.readFileSync(path.join(postmanDir, filename), 'utf8'),
   ) as PostmanCollection;
+}
+
+function stripSavedResponses(items: PostmanCollectionItem[] | undefined): void {
+  if (!items) {
+    return;
+  }
+  for (const item of items) {
+    delete item.response;
+    if (item.item) {
+      stripSavedResponses(item.item);
+    }
+  }
+}
+
+function stripItemIds(items: PostmanCollectionItem[] | undefined): void {
+  if (!items) {
+    return;
+  }
+  for (const item of items) {
+    delete (item as { id?: string }).id;
+    if (item.item) {
+      stripItemIds(item.item);
+    }
+  }
+}
+
+export function prepareCollectionForPublish(
+  collection: PostmanCollection,
+): PostmanCollection {
+  const prepared = JSON.parse(JSON.stringify(collection)) as PostmanCollection;
+  delete prepared.info._postman_id;
+  stripSavedResponses(prepared.item);
+  stripItemIds(prepared.item);
+  return prepared;
+}
+
+export async function deleteCollection(
+  apiKey: string,
+  uid: string,
+): Promise<void> {
+  const response = await postmanFetch(apiKey, `/collections/${uid}`, {
+    method: 'DELETE',
+  });
+  const body = await readJson(response);
+  if (response.status === 404) {
+    return;
+  }
+  assertOk(response, body, `DELETE /collections/${uid}`);
 }
 
 export function collectionKeyFromFilename(filename: string): string {
@@ -103,11 +154,17 @@ export async function readJson(response: Response): Promise<unknown> {
   try {
     return text ? JSON.parse(text) : {};
   } catch {
-    throw new Error(`Invalid JSON from Postman API (${response.status}): ${text.slice(0, 500)}`);
+    throw new Error(
+      `Invalid JSON from Postman API (${response.status}): ${text.slice(0, 500)}`,
+    );
   }
 }
 
-export function assertOk(response: Response, body: unknown, context: string): void {
+export function assertOk(
+  response: Response,
+  body: unknown,
+  context: string,
+): void {
   if (response.ok) {
     return;
   }
@@ -120,7 +177,9 @@ export function workspaceOverviewUrl(teamDomain: string, slug: string): string {
   return `https://www.postman.com/${teamDomain}/${slug}/overview`;
 }
 
-export function countRequests(items: PostmanCollectionItem[] | undefined): number {
+export function countRequests(
+  items: PostmanCollectionItem[] | undefined,
+): number {
   if (!items) {
     return 0;
   }
@@ -136,7 +195,9 @@ export function countRequests(items: PostmanCollectionItem[] | undefined): numbe
   return count;
 }
 
-export function collectRequestPaths(items: PostmanCollectionItem[] | undefined): string[] {
+export function collectRequestPaths(
+  items: PostmanCollectionItem[] | undefined,
+): string[] {
   if (!items) {
     return [];
   }
@@ -185,7 +246,10 @@ export function fingerprintCollection(collection: PostmanCollection): string {
     },
     paths: collectRequestPaths(collection.item),
   };
-  return crypto.createHash('sha256').update(JSON.stringify(payload)).digest('hex');
+  return crypto
+    .createHash('sha256')
+    .update(JSON.stringify(payload))
+    .digest('hex');
 }
 
 export function collectBaseUrls(collection: PostmanCollection): string[] {
