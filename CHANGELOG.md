@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.2](https://github.com/extole/extole-specification/compare/v1.1.1...v1.1.2) (2026-07-16)
+
+
+### Bug Fixes
+
+* keep Postman request bodies from OpenAPI examples ([34eb42f](https://github.com/extole/extole-specification/commit/34eb42fb2e0da407e81373781f29eec2a352e902))
+* recreate Postman collections on publish instead of PUT update ([41daafd](https://github.com/extole/extole-specification/commit/41daafd31ba8f97e30a54f8c9c4b1150c11973e1))
+* recreate Postman collections on publish instead of PUT update ([d073233](https://github.com/extole/extole-specification/commit/d07323367e4d4eb126daa84d3a2b5506970f17eb))
+* scope publish fix to DELETE+POST scripts only ([06f1f7f](https://github.com/extole/extole-specification/commit/06f1f7f28c2c49c11e2821a34d85ddb501db5ba5))
+* use parametersResolution Example for OpenAPI to Postman conversion ([94f34f3](https://github.com/extole/extole-specification/commit/94f34f310bd0a00b93610aadaf5b7ae7ba1b7f6e))
+* use parametersResolution Example for OpenAPI to Postman conversion ([1d58afa](https://github.com/extole/extole-specification/commit/1d58afa61dbea76481555d90afc9d1661604bafb))
+
 ## [1.1.1](https://github.com/extole/extole-specification/compare/v1.1.0...v1.1.1) (2026-07-08)
 
 
