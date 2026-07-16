@@ -8,6 +8,7 @@ import {
   WORKSPACE_SLUG,
   assertOk,
   collectionKeyFromFilename,
+  deleteCollection,
   listCollectionFiles,
   loadLocalCollection,
   postmanDir,
@@ -59,7 +60,10 @@ async function getTeamDomain(apiKey: string): Promise<string> {
   return teamDomain;
 }
 
-async function createWorkspace(apiKey: string, teamDomain: string): Promise<WorkspaceResponse['workspace']> {
+async function createWorkspace(
+  apiKey: string,
+  teamDomain: string,
+): Promise<WorkspaceResponse['workspace']> {
   const createPublic = async () => {
     const response = await postmanFetch(apiKey, '/workspaces', {
       method: 'POST',
@@ -103,7 +107,8 @@ async function createWorkspace(apiKey: string, teamDomain: string): Promise<Work
   }
 
   const workspace = body.workspace;
-  const workspaceType = (workspace.type as 'public' | 'team' | 'personal') ?? 'team';
+  const workspaceType =
+    (workspace.type as 'public' | 'team' | 'personal') ?? 'team';
   return {
     ...workspace,
     slug: workspace.slug ?? WORKSPACE_SLUG,
@@ -117,7 +122,10 @@ async function ensureWorkspace(
 ): Promise<NonNullable<ReturnType<typeof readMapping>['workspace']>> {
   const mapping = readMapping();
   if (mapping.workspace?.id) {
-    const response = await postmanFetch(apiKey, `/workspaces/${mapping.workspace.id}`);
+    const response = await postmanFetch(
+      apiKey,
+      `/workspaces/${mapping.workspace.id}`,
+    );
     const body = (await readJson(response)) as WorkspaceResponse;
     if (response.ok) {
       return mapping.workspace;
@@ -134,7 +142,10 @@ async function ensureWorkspace(
     slug: workspace.slug ?? WORKSPACE_SLUG,
     teamDomain,
     type: (workspace.type as 'public' | 'team' | 'personal') ?? 'team',
-    overviewUrl: workspaceOverviewUrl(teamDomain, workspace.slug ?? WORKSPACE_SLUG),
+    overviewUrl: workspaceOverviewUrl(
+      teamDomain,
+      workspace.slug ?? WORKSPACE_SLUG,
+    ),
   };
 }
 
@@ -143,29 +154,16 @@ async function createCollection(
   workspaceId: string,
   collection: unknown,
 ): Promise<CollectionResponse['collection']> {
-  const response = await postmanFetch(apiKey, `/collections?workspace=${workspaceId}`, {
-    method: 'POST',
-    body: JSON.stringify({ collection }),
-  });
+  const response = await postmanFetch(
+    apiKey,
+    `/collections?workspace=${workspaceId}`,
+    {
+      method: 'POST',
+      body: JSON.stringify({ collection }),
+    },
+  );
   const body = (await readJson(response)) as CollectionResponse;
   assertOk(response, body, 'POST /collections');
-  return body.collection;
-}
-
-async function updateCollection(
-  apiKey: string,
-  uid: string,
-  collection: unknown,
-): Promise<CollectionResponse['collection']> {
-  const response = await postmanFetch(apiKey, `/collections/${uid}`, {
-    method: 'PUT',
-    body: JSON.stringify({ collection }),
-  });
-  const body = (await readJson(response)) as CollectionResponse;
-  if (response.status === 404) {
-    throw new Error('COLLECTION_NOT_FOUND');
-  }
-  assertOk(response, body, `PUT /collections/${uid}`);
   return body.collection;
 }
 
@@ -187,25 +185,23 @@ async function publishCollectionFile(
   const localCollection = loadLocalCollection(filename);
   const existing = mapping.collections[key];
 
-  console.log(`Publishing ${filename} (${(fileSize / (1024 * 1024)).toFixed(2)} MB)...`);
+  console.log(
+    `Publishing ${filename} (${(fileSize / (1024 * 1024)).toFixed(2)} MB)...`,
+  );
 
-  let published: CollectionResponse['collection'];
   if (existing?.uid) {
-    try {
-      published = await updateCollection(apiKey, existing.uid, localCollection);
-      console.log(`Updated collection ${published.name} (${published.uid}).`);
-    } catch (error) {
-      if (!(error instanceof Error) || error.message !== 'COLLECTION_NOT_FOUND') {
-        throw error;
-      }
-      console.warn(`Mapped UID ${existing.uid} missing in Postman; creating a new collection.`);
-      published = await createCollection(apiKey, workspaceId, localCollection);
-      console.log(`Created replacement collection ${published.name} (${published.uid}).`);
-    }
-  } else {
-    published = await createCollection(apiKey, workspaceId, localCollection);
-    console.log(`Created collection ${published.name} (${published.uid}).`);
+    console.log(
+      `Deleting previous collection ${existing.name} (${existing.uid})...`,
+    );
+    await deleteCollection(apiKey, existing.uid);
   }
+
+  const published = await createCollection(
+    apiKey,
+    workspaceId,
+    localCollection,
+  );
+  console.log(`Created collection ${published.name} (${published.uid}).`);
 
   mapping.collections[key] = {
     uid: published.uid,
@@ -221,17 +217,26 @@ async function main(): Promise<void> {
 
   const files = listCollectionFiles();
   if (files.length === 0) {
-    throw new Error('No Postman collections found in postman/. Run npm run build first.');
+    throw new Error(
+      'No Postman collections found in postman/. Run npm run build first.',
+    );
   }
 
   for (const filename of files) {
-    await publishCollectionFile(apiKey, mapping.workspace!.id, filename, mapping);
+    await publishCollectionFile(
+      apiKey,
+      mapping.workspace!.id,
+      filename,
+      mapping,
+    );
   }
 
   writeMapping(mapping);
 
   console.log('\nPublish complete.');
-  console.log(`Workspace: ${mapping.workspace.name} (${mapping.workspace.type})`);
+  console.log(
+    `Workspace: ${mapping.workspace.name} (${mapping.workspace.type})`,
+  );
   console.log(`Overview:  ${mapping.workspace.overviewUrl}`);
   console.log(`Collections: ${Object.keys(mapping.collections).length}`);
   console.log(`Mapping:   postman/.postman-publish.json`);
