@@ -5876,7 +5876,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal body",
           "title" : "Static Value"
@@ -5922,7 +5923,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static body",
           "title" : "Static Value"
@@ -5988,7 +5990,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal body",
           "title" : "Static Value"
@@ -6054,7 +6057,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static body",
           "title" : "Static Value"
@@ -14503,7 +14507,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static category",
           "title" : "Static Value"
@@ -14543,7 +14548,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal category",
           "title" : "Static Value"
@@ -17466,7 +17472,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static data",
           "title" : "Static Value"
@@ -17915,7 +17922,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static default data",
           "title" : "Static Value"
@@ -18043,7 +18051,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static default value",
           "title" : "Static Value"
@@ -21862,7 +21870,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static event name",
           "title" : "Static Value"
@@ -21902,7 +21911,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal event name",
           "title" : "Static Value"
@@ -21942,7 +21952,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static event name",
           "title" : "Static Value"
@@ -21982,7 +21993,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal event name",
           "title" : "Static Value"
@@ -22022,7 +22034,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static event name",
           "title" : "Static Value"
@@ -22062,7 +22075,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static event name",
           "title" : "Static Value"
@@ -22102,7 +22116,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal event name",
           "title" : "Static Value"
@@ -22142,7 +22157,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static event name",
           "title" : "Static Value"
@@ -22959,7 +22975,7 @@
           "enum" : [ "CLICK", "GENERIC_ACTION_1", "GENERIC_ACTION_10", "GENERIC_ACTION_100", "GENERIC_ACTION_101", "GENERIC_ACTION_102", "GENERIC_ACTION_103", "GENERIC_ACTION_104", "GENERIC_ACTION_105", "GENERIC_ACTION_106", "GENERIC_ACTION_107", "GENERIC_ACTION_108", "GENERIC_ACTION_109", "GENERIC_ACTION_11", "GENERIC_ACTION_110", "GENERIC_ACTION_111", "GENERIC_ACTION_112", "GENERIC_ACTION_113", "GENERIC_ACTION_114", "GENERIC_ACTION_115", "GENERIC_ACTION_116", "GENERIC_ACTION_117", "GENERIC_ACTION_118", "GENERIC_ACTION_119", "GENERIC_ACTION_12", "GENERIC_ACTION_120", "GENERIC_ACTION_121", "GENERIC_ACTION_122", "GENERIC_ACTION_123", "GENERIC_ACTION_124", "GENERIC_ACTION_125", "GENERIC_ACTION_126", "GENERIC_ACTION_127", "GENERIC_ACTION_128", "GENERIC_ACTION_129", "GENERIC_ACTION_13", "GENERIC_ACTION_130", "GENERIC_ACTION_131", "GENERIC_ACTION_132", "GENERIC_ACTION_133", "GENERIC_ACTION_134", "GENERIC_ACTION_135", "GENERIC_ACTION_136", "GENERIC_ACTION_137", "GENERIC_ACTION_138", "GENERIC_ACTION_139", "GENERIC_ACTION_14", "GENERIC_ACTION_140", "GENERIC_ACTION_141", "GENERIC_ACTION_142", "GENERIC_ACTION_143", "GENERIC_ACTION_144", "GENERIC_ACTION_145", "GENERIC_ACTION_146", "GENERIC_ACTION_147", "GENERIC_ACTION_148", "GENERIC_ACTION_149", "GENERIC_ACTION_15", "GENERIC_ACTION_150", "GENERIC_ACTION_151", "GENERIC_ACTION_152", "GENERIC_ACTION_153", "GENERIC_ACTION_154", "GENERIC_ACTION_155", "GENERIC_ACTION_156", "GENERIC_ACTION_157", "GENERIC_ACTION_158", "GENERIC_ACTION_159", "GENERIC_ACTION_16", "GENERIC_ACTION_160", "GENERIC_ACTION_161", "GENERIC_ACTION_162", "GENERIC_ACTION_163", "GENERIC_ACTION_164", "GENERIC_ACTION_165", "GENERIC_ACTION_166", "GENERIC_ACTION_167", "GENERIC_ACTION_168", "GENERIC_ACTION_169", "GENERIC_ACTION_17", "GENERIC_ACTION_170", "GENERIC_ACTION_171", "GENERIC_ACTION_172", "GENERIC_ACTION_173", "GENERIC_ACTION_174", "GENERIC_ACTION_175", "GENERIC_ACTION_176", "GENERIC_ACTION_177", "GENERIC_ACTION_178", "GENERIC_ACTION_179", "GENERIC_ACTION_18", "GENERIC_ACTION_180", "GENERIC_ACTION_181", "GENERIC_ACTION_182", "GENERIC_ACTION_183", "GENERIC_ACTION_184", "GENERIC_ACTION_185", "GENERIC_ACTION_186", "GENERIC_ACTION_187", "GENERIC_ACTION_188", "GENERIC_ACTION_189", "GENERIC_ACTION_19", "GENERIC_ACTION_190", "GENERIC_ACTION_191", "GENERIC_ACTION_192", "GENERIC_ACTION_193", "GENERIC_ACTION_194", "GENERIC_ACTION_195", "GENERIC_ACTION_196", "GENERIC_ACTION_197", "GENERIC_ACTION_198", "GENERIC_ACTION_199", "GENERIC_ACTION_2", "GENERIC_ACTION_20", "GENERIC_ACTION_200", "GENERIC_ACTION_21", "GENERIC_ACTION_22", "GENERIC_ACTION_23", "GENERIC_ACTION_24", "GENERIC_ACTION_25", "GENERIC_ACTION_26", "GENERIC_ACTION_27", "GENERIC_ACTION_28", "GENERIC_ACTION_29", "GENERIC_ACTION_3", "GENERIC_ACTION_30", "GENERIC_ACTION_31", "GENERIC_ACTION_32", "GENERIC_ACTION_33", "GENERIC_ACTION_34", "GENERIC_ACTION_35", "GENERIC_ACTION_36", "GENERIC_ACTION_37", "GENERIC_ACTION_38", "GENERIC_ACTION_39", "GENERIC_ACTION_4", "GENERIC_ACTION_40", "GENERIC_ACTION_41", "GENERIC_ACTION_42", "GENERIC_ACTION_43", "GENERIC_ACTION_44", "GENERIC_ACTION_45", "GENERIC_ACTION_46", "GENERIC_ACTION_47", "GENERIC_ACTION_48", "GENERIC_ACTION_49", "GENERIC_ACTION_5", "GENERIC_ACTION_50", "GENERIC_ACTION_51", "GENERIC_ACTION_52", "GENERIC_ACTION_53", "GENERIC_ACTION_54", "GENERIC_ACTION_55", "GENERIC_ACTION_56", "GENERIC_ACTION_57", "GENERIC_ACTION_58", "GENERIC_ACTION_59", "GENERIC_ACTION_6", "GENERIC_ACTION_60", "GENERIC_ACTION_61", "GENERIC_ACTION_62", "GENERIC_ACTION_63", "GENERIC_ACTION_64", "GENERIC_ACTION_65", "GENERIC_ACTION_66", "GENERIC_ACTION_67", "GENERIC_ACTION_68", "GENERIC_ACTION_69", "GENERIC_ACTION_7", "GENERIC_ACTION_70", "GENERIC_ACTION_71", "GENERIC_ACTION_72", "GENERIC_ACTION_73", "GENERIC_ACTION_74", "GENERIC_ACTION_75", "GENERIC_ACTION_76", "GENERIC_ACTION_77", "GENERIC_ACTION_78", "GENERIC_ACTION_79", "GENERIC_ACTION_8", "GENERIC_ACTION_80", "GENERIC_ACTION_81", "GENERIC_ACTION_82", "GENERIC_ACTION_83", "GENERIC_ACTION_84", "GENERIC_ACTION_85", "GENERIC_ACTION_86", "GENERIC_ACTION_87", "GENERIC_ACTION_88", "GENERIC_ACTION_89", "GENERIC_ACTION_9", "GENERIC_ACTION_90", "GENERIC_ACTION_91", "GENERIC_ACTION_92", "GENERIC_ACTION_93", "GENERIC_ACTION_94", "GENERIC_ACTION_95", "GENERIC_ACTION_96", "GENERIC_ACTION_97", "GENERIC_ACTION_98", "GENERIC_ACTION_99", "IMPRESSION", "PROMOTION", "PURCHASE", "REGISTER", "SHARE", "SHARE_REWARD", "THEME_GENERIC_ACTION_1", "THEME_GENERIC_ACTION_10", "THEME_GENERIC_ACTION_11", "THEME_GENERIC_ACTION_12", "THEME_GENERIC_ACTION_13", "THEME_GENERIC_ACTION_14", "THEME_GENERIC_ACTION_15", "THEME_GENERIC_ACTION_16", "THEME_GENERIC_ACTION_17", "THEME_GENERIC_ACTION_18", "THEME_GENERIC_ACTION_19", "THEME_GENERIC_ACTION_2", "THEME_GENERIC_ACTION_20", "THEME_GENERIC_ACTION_21", "THEME_GENERIC_ACTION_22", "THEME_GENERIC_ACTION_23", "THEME_GENERIC_ACTION_24", "THEME_GENERIC_ACTION_25", "THEME_GENERIC_ACTION_26", "THEME_GENERIC_ACTION_27", "THEME_GENERIC_ACTION_28", "THEME_GENERIC_ACTION_29", "THEME_GENERIC_ACTION_3", "THEME_GENERIC_ACTION_30", "THEME_GENERIC_ACTION_4", "THEME_GENERIC_ACTION_5", "THEME_GENERIC_ACTION_6", "THEME_GENERIC_ACTION_7", "THEME_GENERIC_ACTION_8", "THEME_GENERIC_ACTION_9" ],
           "nullable" : true,
           "title" : "Static Value",
-          "type" : "object"
+          "type" : "string"
         }, {
           "description" : "Handlebars expression with [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
           "example" : "handlebars@buildtime:{{eventType}}",
@@ -23058,7 +23074,7 @@
           "enum" : [ "CLICK", "GENERIC_ACTION_1", "GENERIC_ACTION_10", "GENERIC_ACTION_100", "GENERIC_ACTION_101", "GENERIC_ACTION_102", "GENERIC_ACTION_103", "GENERIC_ACTION_104", "GENERIC_ACTION_105", "GENERIC_ACTION_106", "GENERIC_ACTION_107", "GENERIC_ACTION_108", "GENERIC_ACTION_109", "GENERIC_ACTION_11", "GENERIC_ACTION_110", "GENERIC_ACTION_111", "GENERIC_ACTION_112", "GENERIC_ACTION_113", "GENERIC_ACTION_114", "GENERIC_ACTION_115", "GENERIC_ACTION_116", "GENERIC_ACTION_117", "GENERIC_ACTION_118", "GENERIC_ACTION_119", "GENERIC_ACTION_12", "GENERIC_ACTION_120", "GENERIC_ACTION_121", "GENERIC_ACTION_122", "GENERIC_ACTION_123", "GENERIC_ACTION_124", "GENERIC_ACTION_125", "GENERIC_ACTION_126", "GENERIC_ACTION_127", "GENERIC_ACTION_128", "GENERIC_ACTION_129", "GENERIC_ACTION_13", "GENERIC_ACTION_130", "GENERIC_ACTION_131", "GENERIC_ACTION_132", "GENERIC_ACTION_133", "GENERIC_ACTION_134", "GENERIC_ACTION_135", "GENERIC_ACTION_136", "GENERIC_ACTION_137", "GENERIC_ACTION_138", "GENERIC_ACTION_139", "GENERIC_ACTION_14", "GENERIC_ACTION_140", "GENERIC_ACTION_141", "GENERIC_ACTION_142", "GENERIC_ACTION_143", "GENERIC_ACTION_144", "GENERIC_ACTION_145", "GENERIC_ACTION_146", "GENERIC_ACTION_147", "GENERIC_ACTION_148", "GENERIC_ACTION_149", "GENERIC_ACTION_15", "GENERIC_ACTION_150", "GENERIC_ACTION_151", "GENERIC_ACTION_152", "GENERIC_ACTION_153", "GENERIC_ACTION_154", "GENERIC_ACTION_155", "GENERIC_ACTION_156", "GENERIC_ACTION_157", "GENERIC_ACTION_158", "GENERIC_ACTION_159", "GENERIC_ACTION_16", "GENERIC_ACTION_160", "GENERIC_ACTION_161", "GENERIC_ACTION_162", "GENERIC_ACTION_163", "GENERIC_ACTION_164", "GENERIC_ACTION_165", "GENERIC_ACTION_166", "GENERIC_ACTION_167", "GENERIC_ACTION_168", "GENERIC_ACTION_169", "GENERIC_ACTION_17", "GENERIC_ACTION_170", "GENERIC_ACTION_171", "GENERIC_ACTION_172", "GENERIC_ACTION_173", "GENERIC_ACTION_174", "GENERIC_ACTION_175", "GENERIC_ACTION_176", "GENERIC_ACTION_177", "GENERIC_ACTION_178", "GENERIC_ACTION_179", "GENERIC_ACTION_18", "GENERIC_ACTION_180", "GENERIC_ACTION_181", "GENERIC_ACTION_182", "GENERIC_ACTION_183", "GENERIC_ACTION_184", "GENERIC_ACTION_185", "GENERIC_ACTION_186", "GENERIC_ACTION_187", "GENERIC_ACTION_188", "GENERIC_ACTION_189", "GENERIC_ACTION_19", "GENERIC_ACTION_190", "GENERIC_ACTION_191", "GENERIC_ACTION_192", "GENERIC_ACTION_193", "GENERIC_ACTION_194", "GENERIC_ACTION_195", "GENERIC_ACTION_196", "GENERIC_ACTION_197", "GENERIC_ACTION_198", "GENERIC_ACTION_199", "GENERIC_ACTION_2", "GENERIC_ACTION_20", "GENERIC_ACTION_200", "GENERIC_ACTION_21", "GENERIC_ACTION_22", "GENERIC_ACTION_23", "GENERIC_ACTION_24", "GENERIC_ACTION_25", "GENERIC_ACTION_26", "GENERIC_ACTION_27", "GENERIC_ACTION_28", "GENERIC_ACTION_29", "GENERIC_ACTION_3", "GENERIC_ACTION_30", "GENERIC_ACTION_31", "GENERIC_ACTION_32", "GENERIC_ACTION_33", "GENERIC_ACTION_34", "GENERIC_ACTION_35", "GENERIC_ACTION_36", "GENERIC_ACTION_37", "GENERIC_ACTION_38", "GENERIC_ACTION_39", "GENERIC_ACTION_4", "GENERIC_ACTION_40", "GENERIC_ACTION_41", "GENERIC_ACTION_42", "GENERIC_ACTION_43", "GENERIC_ACTION_44", "GENERIC_ACTION_45", "GENERIC_ACTION_46", "GENERIC_ACTION_47", "GENERIC_ACTION_48", "GENERIC_ACTION_49", "GENERIC_ACTION_5", "GENERIC_ACTION_50", "GENERIC_ACTION_51", "GENERIC_ACTION_52", "GENERIC_ACTION_53", "GENERIC_ACTION_54", "GENERIC_ACTION_55", "GENERIC_ACTION_56", "GENERIC_ACTION_57", "GENERIC_ACTION_58", "GENERIC_ACTION_59", "GENERIC_ACTION_6", "GENERIC_ACTION_60", "GENERIC_ACTION_61", "GENERIC_ACTION_62", "GENERIC_ACTION_63", "GENERIC_ACTION_64", "GENERIC_ACTION_65", "GENERIC_ACTION_66", "GENERIC_ACTION_67", "GENERIC_ACTION_68", "GENERIC_ACTION_69", "GENERIC_ACTION_7", "GENERIC_ACTION_70", "GENERIC_ACTION_71", "GENERIC_ACTION_72", "GENERIC_ACTION_73", "GENERIC_ACTION_74", "GENERIC_ACTION_75", "GENERIC_ACTION_76", "GENERIC_ACTION_77", "GENERIC_ACTION_78", "GENERIC_ACTION_79", "GENERIC_ACTION_8", "GENERIC_ACTION_80", "GENERIC_ACTION_81", "GENERIC_ACTION_82", "GENERIC_ACTION_83", "GENERIC_ACTION_84", "GENERIC_ACTION_85", "GENERIC_ACTION_86", "GENERIC_ACTION_87", "GENERIC_ACTION_88", "GENERIC_ACTION_89", "GENERIC_ACTION_9", "GENERIC_ACTION_90", "GENERIC_ACTION_91", "GENERIC_ACTION_92", "GENERIC_ACTION_93", "GENERIC_ACTION_94", "GENERIC_ACTION_95", "GENERIC_ACTION_96", "GENERIC_ACTION_97", "GENERIC_ACTION_98", "GENERIC_ACTION_99", "IMPRESSION", "PROMOTION", "PURCHASE", "REGISTER", "SHARE", "SHARE_REWARD", "THEME_GENERIC_ACTION_1", "THEME_GENERIC_ACTION_10", "THEME_GENERIC_ACTION_11", "THEME_GENERIC_ACTION_12", "THEME_GENERIC_ACTION_13", "THEME_GENERIC_ACTION_14", "THEME_GENERIC_ACTION_15", "THEME_GENERIC_ACTION_16", "THEME_GENERIC_ACTION_17", "THEME_GENERIC_ACTION_18", "THEME_GENERIC_ACTION_19", "THEME_GENERIC_ACTION_2", "THEME_GENERIC_ACTION_20", "THEME_GENERIC_ACTION_21", "THEME_GENERIC_ACTION_22", "THEME_GENERIC_ACTION_23", "THEME_GENERIC_ACTION_24", "THEME_GENERIC_ACTION_25", "THEME_GENERIC_ACTION_26", "THEME_GENERIC_ACTION_27", "THEME_GENERIC_ACTION_28", "THEME_GENERIC_ACTION_29", "THEME_GENERIC_ACTION_3", "THEME_GENERIC_ACTION_30", "THEME_GENERIC_ACTION_4", "THEME_GENERIC_ACTION_5", "THEME_GENERIC_ACTION_6", "THEME_GENERIC_ACTION_7", "THEME_GENERIC_ACTION_8", "THEME_GENERIC_ACTION_9" ],
           "nullable" : true,
           "title" : "Static Value",
-          "type" : "object"
+          "type" : "string"
         }, {
           "description" : "Handlebars expression with [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
           "example" : "handlebars@buildtime:{{eventType}}",
@@ -23597,7 +23613,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static expression",
           "title" : "Static Value"
@@ -23637,7 +23654,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal expression",
           "title" : "Static Value"
@@ -23677,7 +23695,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static expression",
           "title" : "Static Value"
@@ -27168,7 +27187,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static flow path",
           "title" : "Static Value"
@@ -27208,7 +27228,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal flow path",
           "title" : "Static Value"
@@ -27248,7 +27269,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static flow path",
           "title" : "Static Value"
@@ -27945,7 +27967,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static icon color",
           "title" : "Static Value"
@@ -27985,7 +28008,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal icon color",
           "title" : "Static Value"
@@ -28025,7 +28049,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static icon color",
           "title" : "Static Value"
@@ -28065,7 +28090,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static icon type",
           "title" : "Static Value"
@@ -28105,7 +28131,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal icon type",
           "title" : "Static Value"
@@ -28145,7 +28172,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static icon type",
           "title" : "Static Value"
@@ -28675,7 +28703,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static journey name",
           "title" : "Static Value"
@@ -28715,7 +28744,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal journey name",
           "title" : "Static Value"
@@ -29614,7 +29644,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -29654,7 +29685,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -29694,7 +29726,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -29734,7 +29767,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -29774,7 +29808,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -29815,7 +29850,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -29855,7 +29890,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -29895,7 +29931,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -29936,7 +29973,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -29977,7 +30014,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -30017,7 +30054,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -30057,7 +30095,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -30097,7 +30136,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -30137,7 +30177,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -30177,7 +30218,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -30217,7 +30259,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -30257,7 +30300,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -30297,7 +30341,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -30337,7 +30382,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -30378,7 +30424,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -30419,7 +30465,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -30459,7 +30505,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -30499,7 +30546,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -30540,7 +30588,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -30580,7 +30629,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -30620,7 +30670,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -34031,7 +34082,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static pattern",
           "title" : "Static Value"
@@ -34071,7 +34123,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal pattern",
           "title" : "Static Value"
@@ -34111,7 +34164,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static pattern",
           "title" : "Static Value"
@@ -34230,7 +34284,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static person counting name",
           "title" : "Static Value"
@@ -34271,7 +34325,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal person counting name",
           "title" : "Static Value"
@@ -34901,7 +34955,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static plural noun name",
           "title" : "Static Value"
@@ -34942,7 +34996,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal plural noun name",
           "title" : "Static Value"
@@ -35623,7 +35677,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static rate name",
           "title" : "Static Value"
@@ -35664,7 +35718,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal rate name",
           "title" : "Static Value"
@@ -36540,7 +36594,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal review status",
           "title" : "Static Value"
@@ -36644,7 +36699,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static review status",
           "title" : "Static Value"
@@ -36710,7 +36766,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal review status",
           "title" : "Static Value"
@@ -36776,7 +36833,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static review status",
           "title" : "Static Value"
@@ -36977,7 +37035,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static reward name",
           "title" : "Static Value"
@@ -37017,7 +37076,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal reward name",
           "title" : "Static Value"
@@ -37057,7 +37117,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static reward name",
           "title" : "Static Value"
@@ -37690,7 +37751,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal schedule name",
           "title" : "Static Value"
@@ -37736,7 +37798,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static schedule name",
           "title" : "Static Value"
@@ -37802,7 +37865,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal schedule name",
           "title" : "Static Value"
@@ -37868,7 +37932,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static schedule name",
           "title" : "Static Value"
@@ -38603,7 +38668,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal signal polling id",
           "title" : "Static Value"
@@ -38643,7 +38709,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static signal polling id",
           "title" : "Static Value"
@@ -38683,7 +38750,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal signal polling id",
           "title" : "Static Value"
@@ -38723,7 +38791,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static signal polling id",
           "title" : "Static Value"
@@ -38764,7 +38833,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static singular noun name",
           "title" : "Static Value"
@@ -38805,7 +38874,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal singular noun name",
           "title" : "Static Value"
@@ -39097,7 +39166,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static source code",
           "title" : "Static Value"
@@ -39137,7 +39207,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal source code",
           "title" : "Static Value"
@@ -39178,7 +39249,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static source code",
           "title" : "Static Value"
@@ -39740,7 +39812,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static step name",
           "title" : "Static Value"
@@ -39780,7 +39853,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal step name",
           "title" : "Static Value"
@@ -39820,7 +39894,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static step name",
           "title" : "Static Value"
@@ -42421,7 +42496,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -42462,7 +42537,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -42503,7 +42578,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -42544,7 +42619,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -42585,7 +42660,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -42626,7 +42701,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -42667,7 +42742,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -42708,7 +42783,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -42749,7 +42824,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -42790,7 +42865,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -42831,7 +42906,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -42872,7 +42947,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -42913,7 +42988,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -42954,7 +43029,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -42995,7 +43070,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43036,7 +43111,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43077,7 +43152,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43118,7 +43193,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43159,7 +43234,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43200,7 +43275,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43241,7 +43316,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43282,7 +43357,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43323,7 +43398,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43364,7 +43439,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43405,7 +43480,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43446,7 +43521,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43487,7 +43562,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43528,7 +43603,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43569,7 +43644,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43610,7 +43685,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43651,7 +43726,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43692,7 +43767,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal trigger name",
           "title" : "Static Value"
@@ -43733,7 +43808,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43774,7 +43849,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43815,7 +43890,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43856,7 +43931,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43897,7 +43972,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43938,7 +44013,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -43979,7 +44054,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -44020,7 +44095,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -44061,7 +44136,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -44102,7 +44177,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -44143,7 +44218,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -44184,7 +44259,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -44225,7 +44300,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -44266,7 +44341,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -44307,7 +44382,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static trigger name",
           "title" : "Static Value"
@@ -45710,7 +45785,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static unit",
           "title" : "Static Value"
@@ -45750,7 +45826,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal unit",
           "title" : "Static Value"
@@ -45790,7 +45867,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static unit",
           "title" : "Static Value"
@@ -46253,7 +46331,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static verb name",
           "title" : "Static Value"
@@ -46294,7 +46372,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal verb name",
           "title" : "Static Value"
@@ -46437,7 +46515,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static zone name",
           "title" : "Static Value"
@@ -46477,7 +46556,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal zone name",
           "title" : "Static Value"
@@ -46517,7 +46597,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static zone name",
           "title" : "Static Value"
@@ -46824,6 +46905,17 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "client_domain_id" : "client_domain_id",
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "pattern" : "pattern",
+                "test" : true,
+                "type" : "DOMAIN"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ClientDomainPatternCreateRequest"
               }
@@ -47327,6 +47419,17 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "client_domain_id" : { },
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "pattern" : "pattern",
+                "test" : true,
+                "type" : "DOMAIN"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ClientDomainPatternUpdateRequest"
               }
@@ -47856,6 +47959,17 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "allowed_values" : [ {
+                  "color" : "color",
+                  "description" : "description",
+                  "display_name" : "display_name",
+                  "icon" : "icon",
+                  "value" : "value"
+                } ],
+                "display_name" : "display_name",
+                "name" : "name"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ComponentFacetCreateRequest"
               }
@@ -48368,6 +48482,16 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "allowed_values" : [ {
+                  "color" : "color",
+                  "description" : "description",
+                  "display_name" : "display_name",
+                  "icon" : "icon",
+                  "value" : "value"
+                } ],
+                "display_name" : "display_name"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ComponentFacetUpdateRequest"
               }
@@ -49757,6 +49881,12 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "display_name" : "display_name",
+                "name" : "name",
+                "parent" : "parent",
+                "schema" : "schema"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ComponentTypeCreateRequest"
               }
@@ -50212,6 +50342,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "display_name" : "display_name"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ComponentTypeUpdateRequest"
               }
@@ -50602,6 +50735,15 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "source_code" : "source_code"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ExtendedCoreCreateRequest"
               }
@@ -51109,6 +51251,15 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "source_code" : "source_code"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ExtendedCoreUpdateRequest"
               }
@@ -51825,6 +51976,38 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "aliases" : [ "aliase" ],
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : [ {
+                  "component_ids" : [ "component_id" ],
+                  "component_references" : [ {
+                    "component_id" : "component_id",
+                    "socket_names" : [ "socket_name" ]
+                  } ],
+                  "default_value" : { },
+                  "dimension" : true,
+                  "enabled" : true,
+                  "key_type" : "NONE",
+                  "name" : "name",
+                  "persist_types" : [ "JOURNEY" ],
+                  "scope" : "CLIENT",
+                  "value" : { }
+                } ],
+                "enabled" : true,
+                "enabled_on_states" : [ "ARCHIVED" ],
+                "journey_names" : [ "journey_name" ],
+                "name" : "name",
+                "scope" : "CLIENT",
+                "selectors" : [ "BEST_REFERRAL" ],
+                "send_policy" : "ALL",
+                "step_builder" : { },
+                "type" : "CONTROLLER"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignStepCreateRequest"
               }
@@ -52776,6 +52959,24 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "cause_type" : "cause_type",
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "event_type" : "event_type",
+                "force" : "force",
+                "legacy_action_id" : "legacy_action_id",
+                "note" : "note",
+                "partner_event_id" : "partner_event_id",
+                "polling_id" : "polling_id",
+                "polling_name" : "polling_name",
+                "quality" : "ALWAYS",
+                "reward_tags" : [ "reward_tag" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionApproveUpdateRequest"
               }
@@ -53486,6 +53687,17 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "message" : "message",
+                "quality" : "ALWAYS",
+                "reward_id" : "reward_id"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionCancelRewardUpdateRequest"
               }
@@ -54184,6 +54396,16 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "audience_id" : { },
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "quality" : "ALWAYS"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionCreateMembershipUpdateRequest"
               }
@@ -54876,6 +55098,13 @@
         "requestBody" : {
           "content" : {
             "multipart/form-data" : {
+              "example" : {
+                "attributes" : {
+                  "fileName" : "fileName",
+                  "size" : 1
+                },
+                "inputStream" : { }
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/FileInputStreamRequest"
               }
@@ -55148,6 +55377,18 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "api_version" : 1,
+                "classification" : "EMAIL",
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "quality" : "ALWAYS",
+                "theme_version" : "theme_version"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionCreativeUpdateRequest"
               }
@@ -56101,6 +56342,30 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "event_name" : "event_name",
+                "intelligence_provider" : "EMAIL_AGE",
+                "profile_risk_update_interval" : {
+                  "nano" : 1,
+                  "negative" : true,
+                  "positive" : true,
+                  "seconds" : 1,
+                  "units" : [ {
+                    "dateBased" : true,
+                    "duration" : "PT42S",
+                    "durationEstimated" : true,
+                    "timeBased" : true
+                  } ],
+                  "zero" : true
+                },
+                "quality" : "ALWAYS"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionDataIntelligenceRequest"
               }
@@ -56584,6 +56849,30 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "event_name" : "event_name",
+                "intelligence_provider" : "EMAIL_AGE",
+                "profile_risk_update_interval" : {
+                  "nano" : 1,
+                  "negative" : true,
+                  "positive" : true,
+                  "seconds" : 1,
+                  "units" : [ {
+                    "dateBased" : true,
+                    "duration" : "PT42S",
+                    "durationEstimated" : true,
+                    "timeBased" : true
+                  } ],
+                  "zero" : true
+                },
+                "quality" : "ALWAYS"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionDataIntelligenceRequest"
               }
@@ -57276,6 +57565,22 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "cause_type" : "cause_type",
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "event_type" : "event_type",
+                "legacy_action_id" : "legacy_action_id",
+                "note" : "note",
+                "partner_event_id" : "partner_event_id",
+                "polling_id" : "polling_id",
+                "polling_name" : "polling_name",
+                "quality" : "ALWAYS"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionDeclineUpdateRequest"
               }
@@ -57983,6 +58288,31 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : { }
+                },
+                "enabled" : true,
+                "event_time" : "2025-10-24T09:00:00.000Z",
+                "extra_data" : {
+                  "extra_data_key" : { }
+                },
+                "polling_id" : "polling_id",
+                "program_domain_id" : "program_domain_id",
+                "quality" : "ALWAYS",
+                "reward_action_id" : "reward_action_id",
+                "reward_name" : "reward_name",
+                "reward_supplier_id" : { },
+                "sandbox" : "sandbox",
+                "slots" : [ "slot" ],
+                "tags" : [ "tag" ],
+                "value_of_event_being_rewarded" : { }
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionEarnRewardUpdateRequest"
               }
@@ -58705,6 +59035,19 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : { }
+                },
+                "enabled" : true,
+                "expression" : { },
+                "quality" : "ALWAYS"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionExpressionUpdateRequest"
               }
@@ -59406,6 +59749,21 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "amount" : { },
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "event_time" : "2025-10-24T09:00:00.000Z",
+                "message" : "message",
+                "partner_reward_id" : "partner_reward_id",
+                "quality" : "ALWAYS",
+                "reward_id" : "reward_id",
+                "success" : "success"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionFulfillRewardUpdateRequest"
               }
@@ -60104,6 +60462,21 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : "data_key"
+                },
+                "enabled" : true,
+                "event_time" : "2025-10-24T09:00:00.000Z",
+                "partner_event_id" : "partner_event_id",
+                "quality" : "ALWAYS",
+                "reward_id" : "reward_id"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionRedeemRewardUpdateRequest"
               }
@@ -60808,6 +61181,16 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "audience_id" : { },
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "quality" : "ALWAYS"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionRemoveMembershipUpdateRequest"
               }
@@ -61500,6 +61883,17 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "message" : "message",
+                "quality" : "ALWAYS",
+                "reward_id" : "reward_id"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionRevokeRewardUpdateRequest"
               }
@@ -62198,6 +62592,25 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : { }
+                },
+                "dates" : [ "2025-10-24T02:00:00-07:00" ],
+                "delays" : [ "PT42S" ],
+                "enabled" : true,
+                "extra_data" : {
+                  "extra_data_key" : { }
+                },
+                "force" : true,
+                "quality" : "ALWAYS",
+                "schedule_name" : "schedule_name"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionScheduleUpdateRequest"
               }
@@ -62914,6 +63327,15 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "quality" : "ALWAYS"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionShareEventRequest"
               }
@@ -63600,6 +64022,19 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : "data_key"
+                },
+                "enabled" : true,
+                "quality" : "ALWAYS",
+                "signal_polling_id" : "signal_polling_id"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionSignalV1UpdateRequest"
               }
@@ -64301,6 +64736,20 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : { }
+                },
+                "enabled" : true,
+                "name" : "name",
+                "quality" : "ALWAYS",
+                "signal_polling_id" : "signal_polling_id"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionSignalUpdateRequest"
               }
@@ -65005,6 +65454,17 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "name" : "name",
+                "polling_id" : "polling_id",
+                "quality" : "ALWAYS"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionStepSignalUpdateRequest"
               }
@@ -65700,6 +66160,19 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : { }
+                },
+                "enabled" : true,
+                "quality" : "ALWAYS",
+                "webhook_id" : { }
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionWebhookUpdateRequest"
               }
@@ -66600,6 +67073,26 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "body" : "body",
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "headers" : {
+                  "headers_key" : "headers_key"
+                },
+                "quality" : "ALWAYS",
+                "response" : {
+                  "body" : "body",
+                  "headers" : {
+                    "headers_key" : "headers_key"
+                  },
+                  "statusCode" : 1
+                }
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionDisplayUpdateRequest"
               }
@@ -67494,6 +67987,19 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : { }
+                },
+                "enabled" : true,
+                "quality" : "ALWAYS",
+                "zone_name" : "zone_name"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionEmailUpdateRequest"
               }
@@ -68409,6 +68915,44 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "as_person_identification" : {
+                  "person_identification_type" : "EMAIL",
+                  "value" : "value"
+                },
+                "as_person_journey" : {
+                  "advocate_code" : "advocate_code",
+                  "advocate_partner_user_id" : "advocate_partner_user_id",
+                  "campaign_id" : "campaign_id",
+                  "container" : "container",
+                  "coupon_code" : "coupon_code",
+                  "journey_type" : "journey_type",
+                  "label" : "label",
+                  "promotable_code" : "promotable_code",
+                  "reason" : "reason",
+                  "referral_reason" : "ADVOCATE",
+                  "share_id" : "share_id",
+                  "shareable_id" : "shareable_id",
+                  "zone" : "zone"
+                },
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : { }
+                },
+                "enabled" : true,
+                "event_name" : "event_name",
+                "event_time" : "2025-10-24T02:00:00-07:00",
+                "extra_data" : {
+                  "extra_data_key" : { }
+                },
+                "labels" : [ "label" ],
+                "person_id" : { },
+                "quality" : "ALWAYS"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionFireAsPersonUpdateRequest"
               }
@@ -69345,6 +69889,24 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : { }
+                },
+                "enabled" : true,
+                "event_type" : "CLICK",
+                "legacy_action_id" : "legacy_action_id",
+                "message" : "message",
+                "move_to_pending" : true,
+                "partner_event_id" : "partner_event_id",
+                "quality" : "ALWAYS",
+                "review_status" : "review_status"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionIncentivizeStatusUpdateUpdateRequest"
               }
@@ -70251,6 +70813,24 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "action_name" : "action_name",
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : { }
+                },
+                "enabled" : true,
+                "incentivize_action_type" : "CLICK",
+                "overrides" : {
+                  "overrides_key" : "overrides_key"
+                },
+                "quality" : "ALWAYS",
+                "review_status" : "EVALUATING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionIncentivizeUpdateRequest"
               }
@@ -71571,6 +72151,20 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING",
+                "trusted_scopes" : [ "BACKEND" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerAccessRequest"
               }
@@ -72314,6 +72908,21 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "audience_ids" : [ "audience_id" ],
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "event_types" : [ "CREATED" ],
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerAudienceMembershipEventUpdateRequest"
               }
@@ -73057,6 +73666,21 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "having_any_audience_id" : [ "having_any_audience_id" ],
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "person_id" : { },
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerAudienceMembershipUpdateRequest"
               }
@@ -73803,6 +74427,20 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "client_domain_ids" : [ "client_domain_id" ],
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerClientDomainUpdateRequest"
               }
@@ -74549,6 +75187,20 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "event_name" : "event_name",
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerDataIntelligenceEventUpdateRequest"
               }
@@ -75298,6 +75950,19 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerHasIdentityUpdateRequest"
               }
@@ -76038,6 +76703,37 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "count_matches" : [ 1 ],
+                "count_max" : 1,
+                "count_min" : 1,
+                "enabled" : true,
+                "filter_expression" : true,
+                "filter_expressions" : [ "filter_expression" ],
+                "filter_face_value_types" : [ "AUD" ],
+                "filter_max_age" : "PT42S",
+                "filter_max_date" : "2025-10-24T02:00:00-07:00",
+                "filter_min_age" : "PT42S",
+                "filter_min_date" : "2025-10-24T02:00:00-07:00",
+                "filter_names" : [ "filter_name" ],
+                "filter_reward_supplier_ids" : [ "filter_reward_supplier_id" ],
+                "filter_scope" : "CAMPAIGN",
+                "filter_states" : [ "CANCELED" ],
+                "filter_tags" : [ "filter_tag" ],
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "sum_of_face_value_max" : { },
+                "sum_of_face_value_min" : { },
+                "tax_year_start" : "--10-24",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerHasPriorRewardUpdateRequest"
               }
@@ -76820,6 +77516,47 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "count_matches" : [ 1 ],
+                "count_max" : 1,
+                "count_min" : 1,
+                "enabled" : true,
+                "filter_campaign_id" : "filter_campaign_id",
+                "filter_campaign_ids" : [ "filter_campaign_id" ],
+                "filter_expression" : true,
+                "filter_expressions" : [ "filter_expression" ],
+                "filter_max_age" : "PT42S",
+                "filter_max_date" : "2025-10-24T02:00:00-07:00",
+                "filter_max_value" : { },
+                "filter_min_age" : "PT42S",
+                "filter_min_date" : "2025-10-24T02:00:00-07:00",
+                "filter_min_value" : { },
+                "filter_names" : [ "filter_name" ],
+                "filter_partner_event_id" : {
+                  "name" : "name",
+                  "value" : "value"
+                },
+                "filter_partner_event_id_name" : "filter_partner_event_id_name",
+                "filter_partner_event_id_value" : "filter_partner_event_id_value",
+                "filter_program_label" : "filter_program_label",
+                "filter_program_labels" : [ "filter_program_label" ],
+                "filter_quality" : "ANY",
+                "filter_scope" : "ATTRIBUTED",
+                "having_all_names" : [ "having_all_name" ],
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "person_id" : { },
+                "sum_of_value_max" : { },
+                "sum_of_value_min" : { },
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerHasPriorStepUpdateRequest"
               }
@@ -77653,6 +78390,19 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerLegacyLabelTargetingUpdateRequest"
               }
@@ -78396,6 +79146,23 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "allow_high_risk_email" : true,
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "default_quality_score" : "ERROR",
+                "enabled" : true,
+                "ip_threshold" : 1,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "risk_threshold" : 1,
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerMaxMindRequest"
               }
@@ -79139,6 +79906,20 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "referral_originator" : "ADVOCATE",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerReferredByEventUpdateRequest"
               }
@@ -79882,6 +80663,23 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "event_names" : [ "event_name" ],
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "reward_states" : [ "CANCELED" ],
+                "slots" : [ "slot" ],
+                "tags" : [ "tag" ],
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerRewardEventCreateRequest"
               }
@@ -80634,6 +81432,21 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "cause_event_name" : "cause_event_name",
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "score_result" : "score_result",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerScoreUpdateRequest"
               }
@@ -81374,6 +82187,22 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "reward_names" : [ "reward_name" ],
+                "reward_states" : [ "FULFILLED" ],
+                "tags" : [ "tag" ],
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerSendRewardEventUpdateRequest"
               }
@@ -82120,6 +82949,22 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "channels" : [ "ANY" ],
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "quality" : "ANY",
+                "share_types" : [ "ANY" ],
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerShareUpdateRequest"
               }
@@ -82860,6 +83705,22 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "invert_mapping_state" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "step_name" : "step_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING",
+                "zone_name" : "zone_name"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerZoneStateUpdateRequest"
               }
@@ -83612,6 +84473,22 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "targeting_attributes" : {
+                  "targeting_attributes_key" : "targeting_attributes_key"
+                },
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerEventTargetingUpdateRequest"
               }
@@ -84572,6 +85449,21 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "event_names" : [ "event_name" ],
+                "event_type" : "ASSET",
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerEventUpdateRequest"
               }
@@ -85517,6 +86409,23 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : "data_key"
+                },
+                "enabled" : true,
+                "expression" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerExpressionRequest"
               }
@@ -86477,6 +87386,20 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "operator" : "AND",
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerGroupUpdateRequest"
               }
@@ -87413,6 +88336,21 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "journey_name" : "journey_name",
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "person_id" : { },
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerJourneyCheckUpdateRequest"
               }
@@ -88376,6 +89314,20 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "action_type" : "ANY_CLICK",
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerLegacyQualityUpdateRequest"
               }
@@ -89312,6 +90264,21 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "event_names" : [ "event_name" ],
+                "having_any_data_name" : [ "having_any_data_name" ],
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerStepEventUpdateRequest"
               }
@@ -90272,6 +91239,20 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "label" : "label",
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerStickyJourneyUpdateRequest"
               }
@@ -91208,6 +92189,20 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "scope" : "CAMPAIGN",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerTargetingUpdateRequest"
               }
@@ -92514,6 +93509,52 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "apps" : [ {
+                  "component_ids" : [ "component_id" ],
+                  "component_references" : [ {
+                    "component_id" : "component_id",
+                    "socket_names" : [ "socket_name" ]
+                  } ],
+                  "description" : "description",
+                  "name" : "name",
+                  "type" : {
+                    "name" : "name"
+                  }
+                } ],
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "description" : "description",
+                "flow_path" : "flow_path",
+                "icon_color" : "icon_color",
+                "icon_type" : "icon_type",
+                "metrics" : [ {
+                  "component_ids" : [ "component_id" ],
+                  "component_references" : [ {
+                    "component_id" : "component_id",
+                    "socket_names" : [ "socket_name" ]
+                  } ],
+                  "description" : "description",
+                  "expression" : "expression",
+                  "name" : "name",
+                  "tags" : [ "tag" ],
+                  "unit" : "unit"
+                } ],
+                "name" : "name",
+                "sequence" : 1.0,
+                "step_name" : "step_name",
+                "tags" : [ "tag" ],
+                "words" : {
+                  "person_counting_name" : "person_counting_name",
+                  "plural_noun_name" : "plural_noun_name",
+                  "rate_name" : "rate_name",
+                  "singular_noun_name" : "singular_noun_name",
+                  "verb_name" : "verb_name"
+                }
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignFlowStepCreateRequest"
               }
@@ -93244,6 +94285,52 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "apps" : [ {
+                  "component_ids" : [ "component_id" ],
+                  "component_references" : [ {
+                    "component_id" : "component_id",
+                    "socket_names" : [ "socket_name" ]
+                  } ],
+                  "description" : "description",
+                  "name" : "name",
+                  "type" : {
+                    "name" : "name"
+                  }
+                } ],
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "description" : "description",
+                "flow_path" : "flow_path",
+                "icon_color" : "icon_color",
+                "icon_type" : "icon_type",
+                "metrics" : [ {
+                  "component_ids" : [ "component_id" ],
+                  "component_references" : [ {
+                    "component_id" : "component_id",
+                    "socket_names" : [ "socket_name" ]
+                  } ],
+                  "description" : "description",
+                  "expression" : "expression",
+                  "name" : "name",
+                  "tags" : [ "tag" ],
+                  "unit" : "unit"
+                } ],
+                "name" : "name",
+                "sequence" : 1.0,
+                "step_name" : "step_name",
+                "tags" : [ "tag" ],
+                "words" : {
+                  "person_counting_name" : "person_counting_name",
+                  "plural_noun_name" : "plural_noun_name",
+                  "rate_name" : "rate_name",
+                  "singular_noun_name" : "singular_noun_name",
+                  "verb_name" : "verb_name"
+                }
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignFlowStepUpdateRequest"
               }
@@ -94179,6 +95266,18 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "description" : "description",
+                "name" : "name",
+                "type" : {
+                  "name" : "name"
+                }
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignFlowStepAppCreateRequest"
               }
@@ -94863,6 +95962,18 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "description" : "description",
+                "name" : "name",
+                "type" : {
+                  "name" : "name"
+                }
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignFlowStepAppUpdateRequest"
               }
@@ -95812,6 +96923,18 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "description" : "description",
+                "expression" : "expression",
+                "name" : "name",
+                "tags" : [ "tag" ],
+                "unit" : "unit"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignFlowStepMetricCreateRequest"
               }
@@ -96508,6 +97631,18 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "description" : "description",
+                "expression" : "expression",
+                "name" : "name",
+                "tags" : [ "tag" ],
+                "unit" : "unit"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignFlowStepMetricUpdateRequest"
               }
@@ -98029,6 +99164,13 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "list_name" : "list_name",
+                "list_type" : "list_type",
+                "optout" : true,
+                "source" : "source",
+                "type" : "ADVOCATE"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/OptoutRequest"
               }
@@ -99997,6 +101139,26 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "actions" : [ {
+                  "expression" : { },
+                  "type" : "EXPRESSION"
+                } ],
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "conditions" : [ {
+                  "considered_block_list_types" : [ "CIDR" ],
+                  "type" : "BLOCK_MATCH"
+                } ],
+                "description" : "description",
+                "enabled" : false,
+                "name" : "name",
+                "order" : 0,
+                "tags" : [ "tag" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/PrehandlerCreateRequest"
               }
@@ -100517,6 +101679,26 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "actions" : [ {
+                  "expression" : { },
+                  "type" : "EXPRESSION"
+                } ],
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "conditions" : [ {
+                  "considered_block_list_types" : [ "CIDR" ],
+                  "type" : "BLOCK_MATCH"
+                } ],
+                "description" : "description",
+                "enabled" : true,
+                "name" : "name",
+                "order" : 1,
+                "tags" : [ "tag" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/PrehandlerUpdateRequest"
               }
@@ -102333,6 +103515,7 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : [ "value" ],
               "schema" : {
                 "items" : {
                   "type" : "string"
@@ -103730,6 +104913,24 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "cause_type" : "cause_type",
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "event_type" : "event_type",
+                "force" : "force",
+                "legacy_action_id" : "legacy_action_id",
+                "note" : "note",
+                "partner_event_id" : "partner_event_id",
+                "polling_id" : "polling_id",
+                "polling_name" : "polling_name",
+                "quality" : "ALWAYS",
+                "reward_tags" : [ "reward_tag" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionApproveCreateRequest"
               }
@@ -104030,6 +105231,17 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "message" : "message",
+                "quality" : "ALWAYS",
+                "reward_id" : "reward_id"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionCancelRewardCreateRequest"
               }
@@ -104318,6 +105530,16 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "audience_id" : { },
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "quality" : "ALWAYS"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionCreateMembershipCreateRequest"
               }
@@ -104597,6 +105819,18 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "api_version" : 1,
+                "classification" : "EMAIL",
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "quality" : "ALWAYS",
+                "theme_version" : "theme_version"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionCreativeCreateRequest"
               }
@@ -104894,6 +106128,22 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "cause_type" : "cause_type",
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "event_type" : "event_type",
+                "legacy_action_id" : "legacy_action_id",
+                "note" : "note",
+                "partner_event_id" : "partner_event_id",
+                "polling_id" : "polling_id",
+                "polling_name" : "polling_name",
+                "quality" : "ALWAYS"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionDeclineCreateRequest"
               }
@@ -105191,6 +106441,26 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "body" : "body",
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "headers" : {
+                  "headers_key" : "headers_key"
+                },
+                "quality" : "ALWAYS",
+                "response" : {
+                  "body" : "body",
+                  "headers" : {
+                    "headers_key" : "headers_key"
+                  },
+                  "statusCode" : 1
+                }
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionDisplayCreateRequest"
               }
@@ -105467,6 +106737,28 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : { }
+                },
+                "enabled" : true,
+                "event_time" : "2025-10-24T09:00:00.000Z",
+                "extra_data" : {
+                  "extra_data_key" : { }
+                },
+                "quality" : "ALWAYS",
+                "reward_action_id" : "reward_action_id",
+                "reward_name" : "reward_name",
+                "reward_supplier_id" : { },
+                "slots" : [ "slot" ],
+                "tags" : [ "tag" ],
+                "value_of_event_being_rewarded" : { }
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionEarnRewardCreateRequest"
               }
@@ -105776,6 +107068,19 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : { }
+                },
+                "enabled" : true,
+                "quality" : "ALWAYS",
+                "zone_name" : "zone_name"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionEmailCreateRequest"
               }
@@ -106073,6 +107378,19 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : { }
+                },
+                "enabled" : true,
+                "expression" : { },
+                "quality" : "ALWAYS"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionExpressionCreateRequest"
               }
@@ -106364,6 +107682,44 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "as_person_identification" : {
+                  "person_identification_type" : "EMAIL",
+                  "value" : "value"
+                },
+                "as_person_journey" : {
+                  "advocate_code" : "advocate_code",
+                  "advocate_partner_user_id" : "advocate_partner_user_id",
+                  "campaign_id" : "campaign_id",
+                  "container" : "container",
+                  "coupon_code" : "coupon_code",
+                  "journey_type" : "journey_type",
+                  "label" : "label",
+                  "promotable_code" : "promotable_code",
+                  "reason" : "reason",
+                  "referral_reason" : "ADVOCATE",
+                  "share_id" : "share_id",
+                  "shareable_id" : "shareable_id",
+                  "zone" : "zone"
+                },
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : { }
+                },
+                "enabled" : true,
+                "event_name" : "event_name",
+                "event_time" : "2025-10-24T02:00:00-07:00",
+                "extra_data" : {
+                  "extra_data_key" : { }
+                },
+                "labels" : [ "label" ],
+                "person_id" : { },
+                "quality" : "ALWAYS"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionFireAsPersonCreateRequest"
               }
@@ -106691,6 +108047,21 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "amount" : { },
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "event_time" : "2025-10-24T09:00:00.000Z",
+                "message" : "message",
+                "partner_reward_id" : "partner_reward_id",
+                "quality" : "ALWAYS",
+                "reward_id" : "reward_id",
+                "success" : "success"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionFulfillRewardCreateRequest"
               }
@@ -106979,6 +108350,24 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : { }
+                },
+                "enabled" : true,
+                "event_type" : "CLICK",
+                "legacy_action_id" : "legacy_action_id",
+                "message" : "message",
+                "move_to_pending" : true,
+                "partner_event_id" : "partner_event_id",
+                "quality" : "ALWAYS",
+                "review_status" : "review_status"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionIncentivizeStatusUpdateCreateRequest"
               }
@@ -107267,6 +108656,24 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "action_name" : "action_name",
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : { }
+                },
+                "enabled" : true,
+                "incentivize_action_type" : "CLICK",
+                "overrides" : {
+                  "overrides_key" : "overrides_key"
+                },
+                "quality" : "ALWAYS",
+                "review_status" : "EVALUATING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionIncentivizeCreateRequest"
               }
@@ -107573,6 +108980,21 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : "data_key"
+                },
+                "enabled" : true,
+                "event_time" : "2025-10-24T09:00:00.000Z",
+                "partner_event_id" : "partner_event_id",
+                "quality" : "ALWAYS",
+                "reward_id" : "reward_id"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionRedeemRewardCreateRequest"
               }
@@ -107867,6 +109289,16 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "audience_id" : { },
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "quality" : "ALWAYS"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionRemoveMembershipCreateRequest"
               }
@@ -108146,6 +109578,17 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "message" : "message",
+                "quality" : "ALWAYS",
+                "reward_id" : "reward_id"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionRevokeRewardCreateRequest"
               }
@@ -108434,6 +109877,25 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : { }
+                },
+                "dates" : [ "2025-10-24T02:00:00-07:00" ],
+                "delays" : [ "PT42S" ],
+                "enabled" : true,
+                "extra_data" : {
+                  "extra_data_key" : { }
+                },
+                "force" : true,
+                "quality" : "ALWAYS",
+                "schedule_name" : "schedule_name"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionScheduleCreateRequest"
               }
@@ -108740,6 +110202,15 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "quality" : "ALWAYS"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionShareEventRequest"
               }
@@ -109016,6 +110487,20 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : { }
+                },
+                "enabled" : true,
+                "name" : "name",
+                "quality" : "ALWAYS",
+                "signal_polling_id" : "signal_polling_id"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionSignalCreateRequest"
               }
@@ -109310,6 +110795,19 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : "data_key"
+                },
+                "enabled" : true,
+                "quality" : "ALWAYS",
+                "signal_polling_id" : "signal_polling_id"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionSignalV1CreateRequest"
               }
@@ -109601,6 +111099,17 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "name" : "name",
+                "polling_id" : "polling_id",
+                "quality" : "ALWAYS"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionStepSignalCreateRequest"
               }
@@ -109886,6 +111395,19 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : { }
+                },
+                "enabled" : true,
+                "quality" : "ALWAYS",
+                "webhook_id" : { }
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerActionWebhookCreateRequest"
               }
@@ -110180,6 +111702,20 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING",
+                "trusted_scopes" : [ "BACKEND" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerAccessRequest"
               }
@@ -110492,6 +112028,21 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "audience_ids" : [ "audience_id" ],
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "event_types" : [ "CREATED" ],
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerAudienceMembershipEventCreateRequest"
               }
@@ -110804,6 +112355,21 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "having_any_audience_id" : [ "having_any_audience_id" ],
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "person_id" : { },
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerAudienceMembershipCreateRequest"
               }
@@ -111119,6 +112685,20 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "client_domain_ids" : [ "client_domain_id" ],
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerClientDomainCreateRequest"
               }
@@ -111434,6 +113014,20 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "event_name" : "event_name",
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerDataIntelligenceEventCreateRequest"
               }
@@ -111752,6 +113346,22 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "targeting_attributes" : {
+                  "targeting_attributes_key" : "targeting_attributes_key"
+                },
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerEventTargetingCreateRequest"
               }
@@ -112082,6 +113692,21 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "event_names" : [ "event_name" ],
+                "event_type" : "ASSET",
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerEventCreateRequest"
               }
@@ -112400,6 +114025,23 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data" : {
+                  "data_key" : "data_key"
+                },
+                "enabled" : true,
+                "expression" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerExpressionRequest"
               }
@@ -112721,6 +114363,20 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "operator" : "AND",
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerGroupCreateRequest"
               }
@@ -113030,6 +114686,19 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerHasIdentityCreateRequest"
               }
@@ -113339,6 +115008,37 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "count_matches" : [ 1 ],
+                "count_max" : 1,
+                "count_min" : 1,
+                "enabled" : true,
+                "filter_expression" : true,
+                "filter_expressions" : [ "filter_expression" ],
+                "filter_face_value_types" : [ "AUD" ],
+                "filter_max_age" : "PT42S",
+                "filter_max_date" : "2025-10-24T02:00:00-07:00",
+                "filter_min_age" : "PT42S",
+                "filter_min_date" : "2025-10-24T02:00:00-07:00",
+                "filter_names" : [ "filter_name" ],
+                "filter_reward_supplier_ids" : [ "filter_reward_supplier_id" ],
+                "filter_scope" : "CAMPAIGN",
+                "filter_states" : [ "CANCELED" ],
+                "filter_tags" : [ "filter_tag" ],
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "sum_of_face_value_max" : { },
+                "sum_of_face_value_min" : { },
+                "tax_year_start" : "--10-24",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerHasPriorRewardCreateRequest"
               }
@@ -113690,6 +115390,47 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "count_matches" : [ 1 ],
+                "count_max" : 1,
+                "count_min" : 1,
+                "enabled" : true,
+                "filter_campaign_id" : "filter_campaign_id",
+                "filter_campaign_ids" : [ "filter_campaign_id" ],
+                "filter_expression" : true,
+                "filter_expressions" : [ "filter_expression" ],
+                "filter_max_age" : "PT42S",
+                "filter_max_date" : "2025-10-24T02:00:00-07:00",
+                "filter_max_value" : { },
+                "filter_min_age" : "PT42S",
+                "filter_min_date" : "2025-10-24T02:00:00-07:00",
+                "filter_min_value" : { },
+                "filter_names" : [ "filter_name" ],
+                "filter_partner_event_id" : {
+                  "name" : "name",
+                  "value" : "value"
+                },
+                "filter_partner_event_id_name" : "filter_partner_event_id_name",
+                "filter_partner_event_id_value" : "filter_partner_event_id_value",
+                "filter_program_label" : "filter_program_label",
+                "filter_program_labels" : [ "filter_program_label" ],
+                "filter_quality" : "ANY",
+                "filter_scope" : "ATTRIBUTED",
+                "having_all_names" : [ "having_all_name" ],
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "person_id" : { },
+                "sum_of_value_max" : { },
+                "sum_of_value_min" : { },
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerHasPriorStepCreateRequest"
               }
@@ -114089,6 +115830,21 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "journey_name" : "journey_name",
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "person_id" : { },
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerJourneyCheckCreateRequest"
               }
@@ -114410,6 +116166,19 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerLegacyLabelTargetingCreateRequest"
               }
@@ -114722,6 +116491,20 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "action_type" : "ANY_CLICK",
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerLegacyQualityCreateRequest"
               }
@@ -115034,6 +116817,23 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "allow_high_risk_email" : true,
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "default_quality_score" : "ERROR",
+                "enabled" : true,
+                "ip_threshold" : 1,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "risk_threshold" : 1,
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerMaxMindRequest"
               }
@@ -115346,6 +117146,20 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "referral_originator" : "ADVOCATE",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerReferredByEventCreateRequest"
               }
@@ -115658,6 +117472,23 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "event_names" : [ "event_name" ],
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "reward_states" : [ "CANCELED" ],
+                "slots" : [ "slot" ],
+                "tags" : [ "tag" ],
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerRewardEventCreateRequest"
               }
@@ -115979,6 +117810,22 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "cause_event_name" : "cause_event_name",
+                "channel" : "channel",
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "score_result" : "FAIL",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerScoreCreateRequest"
               }
@@ -116297,6 +118144,22 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "reward_names" : [ "reward_name" ],
+                "reward_states" : [ "FULFILLED" ],
+                "tags" : [ "tag" ],
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerSendRewardEventCreateRequest"
               }
@@ -116612,6 +118475,22 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "channels" : [ "ANY" ],
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "quality" : "ANY",
+                "share_types" : [ "ANY" ],
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerShareCreateRequest"
               }
@@ -116924,6 +118803,21 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "event_names" : [ "event_name" ],
+                "having_any_data_name" : [ "having_any_data_name" ],
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerStepEventCreateRequest"
               }
@@ -117245,6 +119139,20 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "label" : "label",
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerStickyJourneyCreateRequest"
               }
@@ -117554,6 +119462,20 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "scope" : "CAMPAIGN",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerTargetingCreateRequest"
               }
@@ -117863,6 +119785,22 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "invert_mapping_state" : true,
+                "negated" : true,
+                "parent_trigger_group_name" : "parent_trigger_group_name",
+                "step_name" : "step_name",
+                "trigger_description" : "trigger_description",
+                "trigger_name" : "trigger_name",
+                "trigger_phase" : "MATCHING",
+                "zone_name" : "zone_name"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerZoneStateCreateRequest"
               }
@@ -118450,6 +120388,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "jwt" : "jwt"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/JwtClientKeyVerifyJwtRequest"
               }
@@ -118594,6 +120535,15 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "data" : {
+                  "data_key" : "data_key"
+                },
+                "level" : "DEBUG",
+                "message" : "message",
+                "name" : "name",
+                "tags" : [ "tag" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CreateCreativeClientEventRequest"
               }
@@ -118729,6 +120679,19 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "csp-report" : {
+                  "blocked-uri" : "blocked-uri",
+                  "disposition" : "disposition",
+                  "document-uri" : "document-uri",
+                  "effective-directive" : "effective-directive",
+                  "original-policy" : "original-policy",
+                  "referrer" : "referrer",
+                  "script-sample" : "script-sample",
+                  "status-code" : "status-code",
+                  "violated-directive" : "violated-directive"
+                }
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ContentSecurityPolicyReportRequest"
               }
@@ -118844,6 +120807,10 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "level" : "DEBUG",
+                "message" : "message"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CreateCreativeLogRequest"
               }
@@ -119102,6 +121069,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "email" : "email"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/EmailProviderValidationRequest"
               }
@@ -119223,6 +121193,12 @@
         "requestBody" : {
           "content" : {
             "application/x-www-form-urlencoded" : {
+              "example" : {
+                "client_id" : "client_id",
+                "client_secret" : "client_secret",
+                "grant_type" : "grant_type",
+                "scope" : "scope"
+              },
               "schema" : {
                 "properties" : {
                   "client_id" : {
@@ -119417,6 +121393,13 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "code" : "code",
+                "duration_seconds" : 1,
+                "name" : "name",
+                "scopes" : [ "BACKEND" ],
+                "state" : "state"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/AuthCodeManagedAccessTokenCreationRequest"
               }
@@ -119605,6 +121588,10 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "code" : "code",
+                "state" : "state"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/AuthCodeResponseValidateRequest"
               }
@@ -119768,6 +121755,10 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "auth_provider_type_id" : "auth_provider_type_id",
+                "code" : "code"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/IdpInitiatedAuthCodeResponseValidateRequest"
               }
@@ -119931,6 +121922,10 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "address_lines" : [ "address_line" ],
+                "region_code" : "region_code"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/AddressValidationRequest"
               }
@@ -120511,6 +122506,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "slot" : "slot"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ReportRunnerSlotsRequest"
               }
@@ -120701,6 +122699,39 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "allowed_scopes" : [ "CLIENT_ADMIN" ],
+                "categories" : [ "categorie" ],
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data_start" : "2025-10-24T09:00:00.000Z",
+                "description" : "description",
+                "display_name" : "display_name",
+                "formats" : [ "CSV" ],
+                "parameters" : [ {
+                  "category" : "category",
+                  "default_value" : "default_value",
+                  "description" : "description",
+                  "display_name" : "display_name",
+                  "is_required" : true,
+                  "name" : "name",
+                  "order" : 1,
+                  "type" : "DYNAMIC",
+                  "type_name" : "AUDIENCE_ID",
+                  "values" : [ "value" ]
+                } ],
+                "parent_report_type_id" : "parent_report_type_id",
+                "scopes" : [ "CLIENT_ADMIN" ],
+                "tags" : [ {
+                  "name" : "name",
+                  "type" : "GLOBAL"
+                } ],
+                "type" : "CONFIGURED",
+                "visibility" : "EXTOLE_ONLY"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ReportTypeCreateRequest"
               }
@@ -120843,6 +122874,12 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "client_key_id" : "client_key_id",
+                "code" : "code",
+                "key_type" : "STANDARD",
+                "redirect_uri" : "redirect_uri"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/OAuthFlowCodeExchangeRequest"
               }
@@ -121006,6 +123043,18 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : [ {
+                "category" : "category",
+                "default_value" : "default_value",
+                "description" : "description",
+                "display_name" : "display_name",
+                "is_required" : true,
+                "name" : "name",
+                "order" : 1,
+                "type" : "DYNAMIC",
+                "type_name" : "AUDIENCE_ID",
+                "values" : [ "value" ]
+              } ],
               "schema" : {
                 "items" : {
                   "$ref" : "#/components/schemas/DynamicReportTypeParameterDetailsRequest"
@@ -121166,6 +123215,7 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : [ "value" ],
               "schema" : {
                 "items" : {
                   "type" : "string"
@@ -121320,6 +123370,7 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : [ "value" ],
               "schema" : {
                 "items" : {
                   "type" : "string"
@@ -121474,6 +123525,7 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : [ "value" ],
               "schema" : {
                 "items" : {
                   "type" : "string"

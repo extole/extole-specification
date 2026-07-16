@@ -7384,7 +7384,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static authorization url",
           "title" : "Static Value"
@@ -7424,7 +7425,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal authorization url",
           "title" : "Static Value"
@@ -7464,7 +7466,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static authorization url",
           "title" : "Static Value"
@@ -7505,7 +7508,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static authorization url",
           "title" : "Static Value"
@@ -7546,7 +7549,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal authorization url",
           "title" : "Static Value"
@@ -7587,7 +7590,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static authorization url",
           "title" : "Static Value"
@@ -7628,7 +7631,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static authorization url",
           "title" : "Static Value"
@@ -7669,7 +7672,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal authorization url",
           "title" : "Static Value"
@@ -7710,7 +7713,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static authorization url",
           "title" : "Static Value"
@@ -7751,7 +7754,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static authorization url",
           "title" : "Static Value"
@@ -7792,7 +7795,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal authorization url",
           "title" : "Static Value"
@@ -7833,7 +7836,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static authorization url",
           "title" : "Static Value"
@@ -7874,7 +7877,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static authorization url",
           "title" : "Static Value"
@@ -7915,7 +7918,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal authorization url",
           "title" : "Static Value"
@@ -7956,7 +7959,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static authorization url",
           "title" : "Static Value"
@@ -7997,7 +8000,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static authorization url",
           "title" : "Static Value"
@@ -8038,7 +8041,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal authorization url",
           "title" : "Static Value"
@@ -8079,7 +8082,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static authorization url",
           "title" : "Static Value"
@@ -8120,7 +8123,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static authorization url",
           "title" : "Static Value"
@@ -8161,7 +8164,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal authorization url",
           "title" : "Static Value"
@@ -8202,7 +8205,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static authorization url",
           "title" : "Static Value"
@@ -8243,7 +8246,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static authorization url",
           "title" : "Static Value"
@@ -8284,7 +8287,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal authorization url",
           "title" : "Static Value"
@@ -8325,7 +8328,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static authorization url",
           "title" : "Static Value"
@@ -8484,7 +8487,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal body",
           "title" : "Static Value"
@@ -8530,7 +8534,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal body",
           "title" : "Static Value"
@@ -19755,7 +19760,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static captured setting values description",
           "title" : "Static Value"
@@ -19795,7 +19801,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal captured setting values description",
           "title" : "Static Value"
@@ -19835,7 +19842,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static captured setting values description",
           "title" : "Static Value"
@@ -20127,7 +20135,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal category",
           "title" : "Static Value"
@@ -21900,7 +21909,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static coupon pool id",
           "title" : "Static Value"
@@ -21940,7 +21950,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal coupon pool id",
           "title" : "Static Value"
@@ -23232,7 +23243,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static default method",
           "title" : "Static Value"
@@ -23273,7 +23285,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal default method",
           "title" : "Static Value"
@@ -23313,7 +23325,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static default method",
           "title" : "Static Value"
@@ -28145,7 +28158,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static display type",
           "title" : "Static Value"
@@ -28186,7 +28199,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal display type",
           "title" : "Static Value"
@@ -28227,7 +28240,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static display type",
           "title" : "Static Value"
@@ -29011,7 +29024,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal event name",
           "title" : "Static Value"
@@ -29051,7 +29065,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal event name",
           "title" : "Static Value"
@@ -29091,7 +29106,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal event name",
           "title" : "Static Value"
@@ -30285,7 +30301,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal expression",
           "title" : "Static Value"
@@ -32260,7 +32277,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal flow path",
           "title" : "Static Value"
@@ -34481,7 +34499,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal icon color",
           "title" : "Static Value"
@@ -34521,7 +34540,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal icon type",
           "title" : "Static Value"
@@ -34925,7 +34945,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal journey name",
           "title" : "Static Value"
@@ -36583,7 +36604,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -36623,7 +36645,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -36663,7 +36686,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -36703,7 +36727,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -36743,7 +36768,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -36784,7 +36810,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -36824,7 +36850,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -36865,7 +36892,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -36905,7 +36932,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -36945,7 +36973,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -36985,7 +37014,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -37026,7 +37056,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -37067,7 +37097,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -37107,7 +37137,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -37147,7 +37178,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -37187,7 +37219,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -37228,7 +37261,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -37269,7 +37302,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -37310,7 +37343,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -37351,7 +37384,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -37391,7 +37424,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -37432,7 +37466,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -37472,7 +37506,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -37513,7 +37548,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal name",
           "title" : "Static Value"
@@ -37553,7 +37588,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Static name",
           "title" : "Static Value"
@@ -38964,7 +39000,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal person counting name",
           "title" : "Static Value"
@@ -39424,7 +39460,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal plural noun name",
           "title" : "Static Value"
@@ -39832,7 +39868,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal rate name",
           "title" : "Static Value"
@@ -40062,7 +40098,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static report name pattern",
           "title" : "Static Value"
@@ -40103,7 +40139,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal report name pattern",
           "title" : "Static Value"
@@ -40144,7 +40180,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static report name pattern",
           "title" : "Static Value"
@@ -42114,7 +42150,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal review status",
           "title" : "Static Value"
@@ -42189,7 +42226,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal review status",
           "title" : "Static Value"
@@ -42985,7 +43023,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal reward name",
           "title" : "Static Value"
@@ -43920,7 +43959,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal schedule name",
           "title" : "Static Value"
@@ -43966,7 +44006,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal schedule name",
           "title" : "Static Value"
@@ -44446,7 +44487,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static sftp report name pattern",
           "title" : "Static Value"
@@ -44487,7 +44528,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal sftp report name pattern",
           "title" : "Static Value"
@@ -44528,7 +44569,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Static sftp report name pattern",
           "title" : "Static Value"
@@ -44568,7 +44609,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal signal polling id",
           "title" : "Static Value"
@@ -44608,7 +44650,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal signal polling id",
           "title" : "Static Value"
@@ -44649,7 +44692,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal singular noun name",
           "title" : "Static Value"
@@ -45261,7 +45304,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal step name",
           "title" : "Static Value"
@@ -46351,7 +46395,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal trigger name",
           "title" : "Static Value"
@@ -46472,7 +46516,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal unit",
           "title" : "Static Value"
@@ -48064,7 +48109,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal variant selector",
           "title" : "Static Value"
@@ -48110,7 +48156,8 @@
                 "pattern" : "^javascript@runtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal variant selector",
           "title" : "Static Value"
@@ -48202,7 +48249,7 @@
                 "type" : "string"
               } ]
             },
-            "type" : "object"
+            "type" : "string"
           } ],
           "description" : "Literal verb name",
           "title" : "Static Value"
@@ -48711,7 +48758,8 @@
                 "pattern" : "^javascript@buildtime:.*",
                 "type" : "string"
               } ]
-            }
+            },
+            "type" : "string"
           } ],
           "description" : "Literal zone name",
           "title" : "Static Value"
@@ -48954,6 +49002,16 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "name" : "name",
+                "tags" : [ "tag" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/AudienceCreateRequest"
               }
@@ -49385,6 +49443,16 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "enabled" : true,
+                "name" : "name",
+                "tags" : [ "tag" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/AudienceUpdateRequest"
               }
@@ -50537,6 +50605,18 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "data_source" : {
+                  "event_columns" : [ "event_column" ],
+                  "event_data" : {
+                    "event_data_key" : "event_data_key"
+                  },
+                  "event_name" : "event_name",
+                  "type" : "ACTION"
+                },
+                "tags" : [ "tag" ],
+                "type" : "ACTION"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/AudienceOperationCreateRequest"
               }
@@ -51598,6 +51678,18 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "cname_target" : "cname_target",
+                "domain" : "domain",
+                "name" : "name",
+                "proxy" : true,
+                "redirect_client_domain_id" : "redirect_client_domain_id",
+                "share_uri" : "share_uri",
+                "ssl_certificate" : "ssl_certificate",
+                "ssl_certificate_chain" : "ssl_certificate_chain",
+                "ssl_generation_policy" : "DISABLED",
+                "ssl_private_key" : "ssl_private_key"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ClientDomainCreateRequest"
               }
@@ -51957,6 +52049,16 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "cname_target" : "cname_target",
+                "name" : "name",
+                "proxy" : true,
+                "redirect_client_domain_id" : "redirect_client_domain_id",
+                "ssl_certificate" : "ssl_certificate",
+                "ssl_certificate_chain" : "ssl_certificate_chain",
+                "ssl_generation_policy" : "DISABLED",
+                "ssl_private_key" : "ssl_private_key"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ClientDomainUpdateRequest"
               }
@@ -52843,6 +52945,20 @@
         "requestBody" : {
           "content" : {
             "multipart/form-data" : {
+              "example" : {
+                "file" : {
+                  "creationDate" : "2025-10-24T09:00:00.000Z",
+                  "fileName" : "fileName",
+                  "modificationDate" : "2025-10-24T09:00:00.000Z",
+                  "name" : "name",
+                  "parameters" : {
+                    "parameters_key" : "parameters_key"
+                  },
+                  "readDate" : "2025-10-24T09:00:00.000Z",
+                  "size" : 1,
+                  "type" : "type"
+                }
+              },
               "schema" : {
                 "properties" : {
                   "file" : {
@@ -55429,6 +55545,25 @@
         "requestBody" : {
           "content" : {
             "multipart/form-data" : {
+              "example" : {
+                "asset" : {
+                  "description" : "description",
+                  "name" : "name",
+                  "tags" : [ "tag" ]
+                },
+                "file" : {
+                  "creationDate" : "2025-10-24T09:00:00.000Z",
+                  "fileName" : "fileName",
+                  "modificationDate" : "2025-10-24T09:00:00.000Z",
+                  "name" : "name",
+                  "parameters" : {
+                    "parameters_key" : "parameters_key"
+                  },
+                  "readDate" : "2025-10-24T09:00:00.000Z",
+                  "size" : 1,
+                  "type" : "type"
+                }
+              },
               "schema" : {
                 "properties" : {
                   "asset" : {
@@ -56025,6 +56160,25 @@
         "requestBody" : {
           "content" : {
             "multipart/form-data" : {
+              "example" : {
+                "asset" : {
+                  "description" : "description",
+                  "name" : "name",
+                  "tags" : [ "tag" ]
+                },
+                "file" : {
+                  "creationDate" : "2025-10-24T09:00:00.000Z",
+                  "fileName" : "fileName",
+                  "modificationDate" : "2025-10-24T09:00:00.000Z",
+                  "name" : "name",
+                  "parameters" : {
+                    "parameters_key" : "parameters_key"
+                  },
+                  "readDate" : "2025-10-24T09:00:00.000Z",
+                  "size" : 1,
+                  "type" : "type"
+                }
+              },
               "schema" : {
                 "properties" : {
                   "asset" : {
@@ -56991,6 +57145,18 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "description" : "description",
+                "display_name" : "display_name",
+                "name" : "name",
+                "priority" : "10",
+                "source" : "INHERITED",
+                "tags" : [ "tag" ],
+                "type" : "ADMIN_ICON",
+                "values" : {
+                  "values_key" : { }
+                }
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignComponentSettingRequest"
               }
@@ -57316,6 +57482,22 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "settings" : {
+                  "settings_key" : {
+                    "description" : "description",
+                    "display_name" : "display_name",
+                    "name" : "name",
+                    "priority" : "10",
+                    "source" : "INHERITED",
+                    "tags" : [ "tag" ],
+                    "type" : "ADMIN_ICON",
+                    "values" : {
+                      "values_key" : { }
+                    }
+                  }
+                }
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ComponentSettingBatchUpdateRequest"
               }
@@ -58015,6 +58197,18 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "description" : "description",
+                "display_name" : "display_name",
+                "name" : "name",
+                "priority" : "10",
+                "source" : "INHERITED",
+                "tags" : [ "tag" ],
+                "type" : "ADMIN_ICON",
+                "values" : {
+                  "values_key" : { }
+                }
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignComponentSettingUpdateRequest"
               }
@@ -60296,6 +60490,11 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "filter_type" : "BLACK",
+                "list_type" : "CIDR",
+                "value" : "value"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/BlockCreateRequest"
               }
@@ -61454,6 +61653,20 @@
         "requestBody" : {
           "content" : {
             "multipart/form-data" : {
+              "example" : {
+                "file" : {
+                  "creationDate" : "2025-10-24T09:00:00.000Z",
+                  "fileName" : "fileName",
+                  "modificationDate" : "2025-10-24T09:00:00.000Z",
+                  "name" : "name",
+                  "parameters" : {
+                    "parameters_key" : "parameters_key"
+                  },
+                  "readDate" : "2025-10-24T09:00:00.000Z",
+                  "size" : 1,
+                  "type" : "type"
+                }
+              },
               "schema" : {
                 "properties" : {
                   "file" : {
@@ -63235,6 +63448,20 @@
         "requestBody" : {
           "content" : {
             "multipart/form-data" : {
+              "example" : {
+                "file" : {
+                  "creationDate" : "2025-10-24T09:00:00.000Z",
+                  "fileName" : "fileName",
+                  "modificationDate" : "2025-10-24T09:00:00.000Z",
+                  "name" : "name",
+                  "parameters" : {
+                    "parameters_key" : "parameters_key"
+                  },
+                  "readDate" : "2025-10-24T09:00:00.000Z",
+                  "size" : 1,
+                  "type" : "type"
+                }
+              },
               "schema" : {
                 "properties" : {
                   "file" : {
@@ -64871,6 +65098,13 @@
         "requestBody" : {
           "content" : {
             "multipart/form-data" : {
+              "example" : {
+                "attributes" : {
+                  "fileName" : "fileName",
+                  "size" : 1
+                },
+                "inputStream" : { }
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/FileInputStreamRequest"
               }
@@ -65409,6 +65643,23 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "code" : "code",
+                "content" : {
+                  "content_id" : "content_id",
+                  "description" : "description",
+                  "image_url" : "image_url",
+                  "title" : "title",
+                  "url" : "url"
+                },
+                "data" : {
+                  "data_key" : "data_key"
+                },
+                "description" : "description",
+                "key" : "key",
+                "label" : "label",
+                "program_url" : "program_url"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/PromotionLinkCreateRequest"
               }
@@ -65959,6 +66210,20 @@
         "requestBody" : {
           "content" : {
             "multipart/form-data" : {
+              "example" : {
+                "file" : {
+                  "creationDate" : "2025-10-24T09:00:00.000Z",
+                  "fileName" : "fileName",
+                  "modificationDate" : "2025-10-24T09:00:00.000Z",
+                  "name" : "name",
+                  "parameters" : {
+                    "parameters_key" : "parameters_key"
+                  },
+                  "readDate" : "2025-10-24T09:00:00.000Z",
+                  "size" : 1,
+                  "type" : "type"
+                }
+              },
               "schema" : {
                 "properties" : {
                   "file" : {
@@ -67638,6 +67903,20 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "algorithm" : "A128KW",
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "description" : "description",
+                "key" : "key",
+                "name" : "name",
+                "partner_key_id" : "partner_key_id",
+                "tags" : [ "tag" ],
+                "type" : "JWT"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/StringBasedClientKeyCreateRequest"
               }
@@ -68205,6 +68484,12 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "date" : "2025-10-24T02:00:00-07:00",
+                "description" : "description",
+                "name" : "name",
+                "tags" : [ "tag" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ClientTimelineEntryRequest"
               }
@@ -68506,6 +68791,12 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "date" : "2025-10-24T02:00:00-07:00",
+                "description" : "description",
+                "name" : "name",
+                "tags" : [ "tag" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/UpdateClientTimelineEntryRequest"
               }
@@ -68943,6 +69234,13 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "email" : "email",
+                "first_name" : "first_name",
+                "last_name" : "last_name",
+                "password" : "password",
+                "scopes" : [ "CLIENT_ADMIN" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/UserCreationRequest"
               }
@@ -69268,6 +69566,13 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "email" : "email",
+                "first_name" : "first_name",
+                "last_name" : "last_name",
+                "password" : "password",
+                "scopes" : [ "CLIENT_ADMIN" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/UserUpdateRequest"
               }
@@ -69741,6 +70046,10 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "name" : "name",
+                "value" : "value"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/PropertyCreationRequest"
               }
@@ -70065,6 +70374,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "value" : "value"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/PropertyUpdateRequest"
               }
@@ -70641,6 +70953,14 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "dkim_cname_records" : [ {
+                  "alias" : "alias",
+                  "canonical_name" : "canonical_name"
+                } ],
+                "domain" : "domain",
+                "force_send_from_email_domain" : true
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/EmailDomainCreateRequest"
               }
@@ -70948,6 +71268,14 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "dkim_cname_records" : [ {
+                  "alias" : "alias",
+                  "canonical_name" : "canonical_name"
+                } ],
+                "domain" : "domain",
+                "force_send_from_email_domain" : true
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/EmailDomainUpdateRequest"
               }
@@ -71761,6 +72089,21 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "display_name" : "display_name",
+                "format" : "CSV",
+                "formats" : [ "CSV" ],
+                "name" : "name",
+                "parameters" : {
+                  "parameters_key" : "parameters_key"
+                },
+                "report_type" : "report_type",
+                "rerun" : true,
+                "scopes" : [ "CLIENT_ADMIN" ],
+                "sftp_report_name" : "sftp_report_name",
+                "sftp_server_id" : "sftp_server_id",
+                "tags" : [ "tag" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CreateReportRequest"
               }
@@ -72802,6 +73145,12 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "display_name" : "display_name",
+                "scopes" : [ "CLIENT_ADMIN" ],
+                "tags" : [ "tag" ],
+                "visible" : true
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/UpdateReportRequest"
               }
@@ -74041,6 +74390,12 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "duration_seconds" : 1,
+                "name" : "name",
+                "password" : "password",
+                "scopes" : [ "BACKEND" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ManagedAccessTokenCreationRequest"
               }
@@ -74365,6 +74720,17 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "description" : "description",
+                "name" : "name",
+                "stop_at" : "2025-10-24T09:00:00.000Z",
+                "tags" : [ "tag" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/EventStreamCreateRequest"
               }
@@ -74946,6 +75312,17 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "description" : "description",
+                "name" : "name",
+                "stop_at" : "2025-10-24T09:00:00.000Z",
+                "tags" : [ "tag" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/EventStreamUpdateRequest"
               }
@@ -75892,6 +76269,10 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "app_types" : [ "app_type" ],
+                "type" : "APPLICATION_TYPE"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/EventStreamFilterCreateRequest"
               }
@@ -76351,6 +76732,10 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "app_types" : [ "app_type" ],
+                "type" : "APPLICATION_TYPE"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/EventStreamFilterUpdateRequest"
               }
@@ -76842,6 +77227,22 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "enabled" : true,
+                "name" : "name",
+                "tasks" : [ {
+                  "expected_headers" : [ "expected_header" ],
+                  "match_mode" : "EXACT_SET",
+                  "on_mismatch" : "FAIL",
+                  "order" : 1,
+                  "task_type" : "FILE_HEADER_VALIDATOR"
+                } ],
+                "triggers" : [ {
+                  "match_type" : "EXACT",
+                  "pattern" : "pattern",
+                  "trigger_type" : "FILE_NAME_MATCHES"
+                } ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/JobRequest"
               }
@@ -77521,6 +77922,22 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "enabled" : true,
+                "name" : "name",
+                "tasks" : [ {
+                  "expected_headers" : [ "expected_header" ],
+                  "match_mode" : "EXACT_SET",
+                  "on_mismatch" : "FAIL",
+                  "order" : 1,
+                  "task_type" : "FILE_HEADER_VALIDATOR"
+                } ],
+                "triggers" : [ {
+                  "match_type" : "EXACT",
+                  "pattern" : "pattern",
+                  "trigger_type" : "FILE_NAME_MATCHES"
+                } ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/JobRequest"
               }
@@ -77958,6 +78375,13 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "expected_headers" : [ "expected_header" ],
+                "match_mode" : "EXACT_SET",
+                "on_mismatch" : "FAIL",
+                "order" : 1,
+                "task_type" : "FILE_HEADER_VALIDATOR"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/TaskRequest"
               }
@@ -78282,6 +78706,13 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "expected_headers" : [ "expected_header" ],
+                "match_mode" : "EXACT_SET",
+                "on_mismatch" : "FAIL",
+                "order" : 1,
+                "task_type" : "FILE_HEADER_VALIDATOR"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/TaskRequest"
               }
@@ -78738,6 +79169,11 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "match_type" : "EXACT",
+                "pattern" : "pattern",
+                "trigger_type" : "FILE_NAME_MATCHES"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/TriggerRequest"
               }
@@ -79050,6 +79486,11 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "match_type" : "EXACT",
+                "pattern" : "pattern",
+                "trigger_type" : "FILE_NAME_MATCHES"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/TriggerRequest"
               }
@@ -79642,6 +80083,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "last_read_event_time" : "2025-10-24T02:00:00-07:00"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/NotificationCursorRequest"
               }
@@ -79906,6 +80350,11 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "comment" : "comment",
+                "expires_at" : "2025-10-24T02:00:00-07:00",
+                "having_exactly_tags" : [ "having_exactly_tag" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/SnoozeRequest"
               }
@@ -80583,6 +81032,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "last_read_event_time" : "2025-10-24T02:00:00-07:00"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/NotificationCursorRequest"
               }
@@ -80851,6 +81303,11 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "comment" : "comment",
+                "expires_at" : "2025-10-24T02:00:00-07:00",
+                "having_exactly_tags" : [ "having_exactly_tag" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/SnoozeRequest"
               }
@@ -81993,6 +82450,38 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "allowed_scopes" : [ "CLIENT_ADMIN" ],
+                "categories" : [ "categorie" ],
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "data_start" : "2025-10-24T09:00:00.000Z",
+                "description" : "description",
+                "display_name" : "display_name",
+                "formats" : [ "CSV" ],
+                "parameters" : [ {
+                  "category" : "category",
+                  "default_value" : "default_value",
+                  "description" : "description",
+                  "display_name" : "display_name",
+                  "is_required" : true,
+                  "name" : "name",
+                  "order" : 1,
+                  "type" : "DYNAMIC",
+                  "type_name" : "AUDIENCE_ID",
+                  "values" : [ "value" ]
+                } ],
+                "scopes" : [ "CLIENT_ADMIN" ],
+                "tags" : [ {
+                  "name" : "name",
+                  "type" : "GLOBAL"
+                } ],
+                "type" : "CONFIGURED",
+                "visibility" : "EXTOLE_ONLY"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ReportTypeUpdateRequest"
               }
@@ -82423,6 +82912,41 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "auto_fulfillment_enabled" : true,
+                "cash_back_max" : 1.0,
+                "cash_back_min" : 1.0,
+                "cash_back_percentage" : 1.0,
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "description" : "description",
+                "display_name" : "display_name",
+                "display_type" : "display_type",
+                "enabled" : true,
+                "face_value" : 1.0,
+                "face_value_algorithm_type" : "CASH_BACK",
+                "face_value_type" : "AUD",
+                "limit_per_day" : 1,
+                "limit_per_hour" : 1,
+                "missing_fulfillment_alert_delay_ms" : 1,
+                "missing_fulfillment_alert_enabled" : true,
+                "missing_fulfillment_auto_fail_delay_ms" : 1,
+                "missing_fulfillment_auto_fail_enabled" : true,
+                "name" : "name",
+                "partner_reward_key_type" : "COUPON",
+                "partner_reward_supplier_id" : "partner_reward_supplier_id",
+                "reward_email_auto_send_enabled" : true,
+                "reward_expires_at" : "2025-10-24T02:00:00-07:00",
+                "reward_supplier_type" : "CUSTOM_REWARD",
+                "state_transitions" : {
+                  "state_transitions_key" : [ "CANCELED" ]
+                },
+                "tags" : [ "tag" ],
+                "type" : "ACCOUNT_CREDIT"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/RewardSupplierCreateRequest"
               }
@@ -83308,6 +83832,41 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "auto_fulfillment_enabled" : true,
+                "cash_back_max" : 1.0,
+                "cash_back_min" : 1.0,
+                "cash_back_percentage" : 1.0,
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "description" : "description",
+                "display_name" : "display_name",
+                "display_type" : "display_type",
+                "enabled" : true,
+                "face_value" : 1.0,
+                "face_value_algorithm_type" : "CASH_BACK",
+                "face_value_type" : "AUD",
+                "limit_per_day" : 1,
+                "limit_per_hour" : 1,
+                "missing_fulfillment_alert_delay_ms" : 1,
+                "missing_fulfillment_alert_enabled" : true,
+                "missing_fulfillment_auto_fail_delay_ms" : 1,
+                "missing_fulfillment_auto_fail_enabled" : true,
+                "name" : "name",
+                "partner_reward_key_type" : "COUPON",
+                "partner_reward_supplier_id" : "partner_reward_supplier_id",
+                "reward_email_auto_send_enabled" : true,
+                "reward_expires_at" : "2025-10-24T02:00:00-07:00",
+                "reward_supplier_type" : "CUSTOM_REWARD",
+                "state_transitions" : {
+                  "state_transitions_key" : [ "CANCELED" ]
+                },
+                "tags" : [ "tag" ],
+                "type" : "ACCOUNT_CREDIT"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/RewardSupplierUpdateRequest"
               }
@@ -84459,6 +85018,15 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "channels" : [ {
+                  "type" : "EMAIL"
+                } ],
+                "dedupe_duration_ms" : 1,
+                "filter_expression" : true,
+                "filtering_level" : "ALL",
+                "having_all_tags" : [ "having_all_tag" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/UserSubscriptionRequest"
               }
@@ -84794,6 +85362,15 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "channels" : [ {
+                  "type" : "EMAIL"
+                } ],
+                "dedupe_duration_ms" : 1,
+                "filter_expression" : true,
+                "filtering_level" : "ALL",
+                "having_all_tags" : [ "having_all_tag" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/UserSubscriptionUpdateRequest"
               }
@@ -85251,6 +85828,37 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "client_key_id" : { },
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "default_method" : "default_method",
+                "description" : "description",
+                "enabled" : true,
+                "name" : "name",
+                "request" : {
+                  "body" : "body",
+                  "headers" : {
+                    "headers_key" : [ "headers_key" ]
+                  },
+                  "method" : "method",
+                  "url" : "url",
+                  "urlTemplateParameters" : {
+                    "urlTemplateParameters_key" : "urlTemplateParameters_key"
+                  }
+                },
+                "response_body_handler" : {
+                  "response_body_handler_key" : { }
+                },
+                "response_handler" : "response_handler",
+                "retry_intervals" : [ "PT42S" ],
+                "tags" : [ "tag" ],
+                "type" : "CLIENT",
+                "url" : "url"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/WebhookCreateRequest"
               }
@@ -85806,6 +86414,35 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "client_key_id" : { },
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "default_method" : "default_method",
+                "description" : "description",
+                "enabled" : true,
+                "name" : "name",
+                "request" : {
+                  "body" : "body",
+                  "headers" : {
+                    "headers_key" : [ "headers_key" ]
+                  },
+                  "method" : "method",
+                  "url" : "url",
+                  "urlTemplateParameters" : {
+                    "urlTemplateParameters_key" : "urlTemplateParameters_key"
+                  }
+                },
+                "response_body_handler" : {
+                  "response_body_handler_key" : { }
+                },
+                "response_handler" : "response_handler",
+                "tags" : [ "tag" ],
+                "url" : "url"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/WebhookUpdateRequest"
               }
@@ -86448,6 +87085,39 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "deliver_empty_reports_to_sftp" : true,
+                "enabled" : true,
+                "execution_policy" : "AWAIT_DATA",
+                "expiration_ms" : 1,
+                "formats" : [ "CSV" ],
+                "merging_configuration" : {
+                  "deliverable_type" : "deliverable_type",
+                  "formats" : [ "CSV" ],
+                  "sort_by" : [ "sort_by" ],
+                  "unique_by" : [ "unique_by" ]
+                },
+                "name" : "name",
+                "parameters" : {
+                  "parameters_key" : "parameters_key"
+                },
+                "pause_info" : {
+                  "description" : "description",
+                  "paused" : true
+                },
+                "report_name_pattern" : "report_name_pattern",
+                "report_type" : "report_type",
+                "scopes" : [ "CLIENT_ADMIN" ],
+                "sftp_report_name_pattern" : "sftp_report_name_pattern",
+                "sftp_server_id" : "sftp_server_id",
+                "tags" : [ "tag" ],
+                "type" : "REFRESHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ReportRunnerCreateRequest"
               }
@@ -86878,6 +87548,39 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "deliver_empty_reports_to_sftp" : true,
+                "enabled" : true,
+                "execution_policy" : "AWAIT_DATA",
+                "expiration_ms" : 1,
+                "formats" : [ "CSV" ],
+                "merging_configuration" : {
+                  "deliverable_type" : "deliverable_type",
+                  "formats" : [ "CSV" ],
+                  "sort_by" : [ "sort_by" ],
+                  "unique_by" : [ "unique_by" ]
+                },
+                "name" : "name",
+                "parameters" : {
+                  "parameters_key" : "parameters_key"
+                },
+                "pause_info" : {
+                  "description" : "description",
+                  "paused" : true
+                },
+                "report_name_pattern" : "report_name_pattern",
+                "report_type" : "report_type",
+                "scopes" : [ "CLIENT_ADMIN" ],
+                "sftp_report_name_pattern" : "sftp_report_name_pattern",
+                "sftp_server_id" : "sftp_server_id",
+                "tags" : [ "tag" ],
+                "type" : "REFRESHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ReportRunnerUpdateRequest"
               }
@@ -88076,6 +88779,22 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_display_name" : "component_display_name",
+                "settings" : [ {
+                  "description" : "description",
+                  "display_name" : "display_name",
+                  "name" : "name",
+                  "priority" : "10",
+                  "source" : "INHERITED",
+                  "tags" : [ "tag" ],
+                  "type" : "ADMIN_ICON",
+                  "values" : {
+                    "values_key" : { }
+                  }
+                } ],
+                "source_component_id" : "source_component_id"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignComponentSocketAddComponentRequest"
               }
@@ -88839,6 +89558,39 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "anchors" : [ {
+                  "source_element_id" : "source_element_id",
+                  "target_element_id" : "target_element_id"
+                } ],
+                "component_display_name" : "component_display_name",
+                "component_ids" : [ "component_id" ],
+                "component_name" : "component_name",
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "description" : "description",
+                "tags" : [ "tag" ],
+                "target_campaign_id" : "target_campaign_id",
+                "target_component_absolute_name" : "target_component_absolute_name",
+                "target_setting_name" : "target_setting_name",
+                "target_socket_name" : "target_socket_name",
+                "type" : "type",
+                "types" : [ "type" ],
+                "variables" : [ {
+                  "description" : "description",
+                  "display_name" : "display_name",
+                  "name" : "name",
+                  "priority" : "10",
+                  "source" : "INHERITED",
+                  "tags" : [ "tag" ],
+                  "type" : "ADMIN_ICON",
+                  "values" : {
+                    "values_key" : { }
+                  }
+                } ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ComponentDuplicateRequest"
               }
@@ -89500,6 +90252,10 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "list_type" : "CIDR",
+                "value" : "value"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/BlockCheckRequest"
               }
@@ -89650,6 +90406,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "program_label" : "program_label"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignProgramLabelRenameRequest"
               }
@@ -90268,6 +91027,12 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "description" : "description",
+                "message" : "message",
+                "name" : "name",
+                "program_label" : "program_label"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignDuplicateRequest"
               }
@@ -90717,6 +91482,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "date" : "2025-10-24T02:00:00-07:00"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignScheduleStateRequest"
               }
@@ -90947,6 +91715,11 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "message" : "message",
+                "start_date" : "2025-10-24T02:00:00-07:00",
+                "stop_date" : "2025-10-24T02:00:00-07:00"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignLaunchBurstRequest"
               }
@@ -91324,6 +92097,11 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "message" : "message",
+                "start_date" : "2025-10-24T02:00:00-07:00",
+                "stop_date" : "2025-10-24T02:00:00-07:00"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignLaunchTestRequest"
               }
@@ -91934,6 +92712,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "lock_types" : [ "DUPLICATE" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignLockRequest"
               }
@@ -92119,6 +92900,10 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "message" : "message",
+                "version" : "version"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignMakeLatestRequest"
               }
@@ -92385,6 +93170,10 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "message" : "message",
+                "version" : "version"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignMakeLatestRequest"
               }
@@ -92651,6 +93440,10 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "message" : "message",
+                "version" : "version"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignMakeLatestRequest"
               }
@@ -92917,6 +93710,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "date" : "2025-10-24T02:00:00-07:00"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignScheduleStateRequest"
               }
@@ -93147,6 +93943,10 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "launch" : true,
+                "message" : "message"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignPublishRequest"
               }
@@ -93311,6 +94111,12 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "end_date" : "2025-10-24T02:00:00-07:00",
+                "pause_date" : "2025-10-24T02:00:00-07:00",
+                "start_date" : "2025-10-24T02:00:00-07:00",
+                "stop_date" : "2025-10-24T02:00:00-07:00"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignScheduleRequest"
               }
@@ -93574,6 +94380,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "date" : "2025-10-24T02:00:00-07:00"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignScheduleStateRequest"
               }
@@ -94225,6 +95034,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "lock_types" : [ "DUPLICATE" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignUnlockRequest"
               }
@@ -95079,6 +95891,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "email" : "email"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/PasswordResetRequest"
               }
@@ -95197,6 +96012,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "access_token" : "access_token"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ResendInviteEmailRequest"
               }
@@ -95474,6 +96292,11 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "email" : "email",
+                "note" : "note",
+                "partner_user_id" : "partner_user_id"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ErasureRequest"
               }
@@ -95942,6 +96765,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "duration_seconds" : 1
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ReportSharedTokenCreateRequest"
               }
@@ -96795,6 +97621,39 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "deliver_empty_reports_to_sftp" : true,
+                "enabled" : true,
+                "execution_policy" : "AWAIT_DATA",
+                "expiration_ms" : 1,
+                "formats" : [ "CSV" ],
+                "merging_configuration" : {
+                  "deliverable_type" : "deliverable_type",
+                  "formats" : [ "CSV" ],
+                  "sort_by" : [ "sort_by" ],
+                  "unique_by" : [ "unique_by" ]
+                },
+                "name" : "name",
+                "parameters" : {
+                  "parameters_key" : "parameters_key"
+                },
+                "pause_info" : {
+                  "description" : "description",
+                  "paused" : true
+                },
+                "report_name_pattern" : "report_name_pattern",
+                "report_type" : "report_type",
+                "scopes" : [ "CLIENT_ADMIN" ],
+                "sftp_report_name_pattern" : "sftp_report_name_pattern",
+                "sftp_server_id" : "sftp_server_id",
+                "tags" : [ "tag" ],
+                "type" : "REFRESHING"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ReportRunnerUpdateRequest"
               }
@@ -96948,6 +97807,13 @@
         "requestBody" : {
           "content" : {
             "multipart/form-data" : {
+              "example" : {
+                "attributes" : {
+                  "fileName" : "fileName",
+                  "size" : 1
+                },
+                "inputStream" : { }
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/FileInputStreamRequest"
               }
@@ -97410,6 +98276,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "program_type" : "program_type"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignProgramUpdateRequest"
               }
@@ -97650,6 +98519,18 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "algorithm" : "A128KW",
+                "component_ids" : [ "component_id" ],
+                "component_references" : [ {
+                  "component_id" : "component_id",
+                  "socket_names" : [ "socket_name" ]
+                } ],
+                "description" : "description",
+                "key" : "key",
+                "name" : "name",
+                "partner_key_id" : "partner_key_id"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/ClientKeyUpdateRequest"
               }
@@ -98069,6 +98950,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "password" : "password"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/UserPasswordUpdateRequest"
               }

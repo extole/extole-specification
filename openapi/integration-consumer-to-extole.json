@@ -3098,6 +3098,14 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "access_token" : "access_token",
+                "email" : "email",
+                "first_name" : "first_name",
+                "last_name" : "last_name",
+                "partner_user_id" : "partner_user_id",
+                "profile_picture_url" : "profile_picture_url"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/PersonProfileUpdateRequest"
               }
@@ -3507,6 +3515,144 @@
         "requestBody" : {
           "content" : {
             "multipart/form-data" : {
+              "example" : {
+                "asset" : {
+                  "data_type" : "PRIVATE",
+                  "name" : "name",
+                  "tags" : [ "tag" ]
+                },
+                "file" : {
+                  "content" : { },
+                  "contentDisposition" : {
+                    "creationDate" : "2025-10-24T09:00:00.000Z",
+                    "fileName" : "fileName",
+                    "modificationDate" : "2025-10-24T09:00:00.000Z",
+                    "parameters" : {
+                      "parameters_key" : "parameters_key"
+                    },
+                    "readDate" : "2025-10-24T09:00:00.000Z",
+                    "size" : 1,
+                    "type" : "type"
+                  },
+                  "entity" : { },
+                  "fileName" : "fileName",
+                  "formDataContentDisposition" : {
+                    "creationDate" : "2025-10-24T09:00:00.000Z",
+                    "fileName" : "fileName",
+                    "modificationDate" : "2025-10-24T09:00:00.000Z",
+                    "name" : "name",
+                    "parameters" : {
+                      "parameters_key" : "parameters_key"
+                    },
+                    "readDate" : "2025-10-24T09:00:00.000Z",
+                    "size" : 1,
+                    "type" : "type"
+                  },
+                  "headers" : {
+                    "empty" : true,
+                    "headers_key" : [ "headers_key" ]
+                  },
+                  "mediaType" : {
+                    "parameters" : {
+                      "parameters_key" : "parameters_key"
+                    },
+                    "subtype" : "subtype",
+                    "type" : "type",
+                    "wildcardSubtype" : true,
+                    "wildcardType" : true
+                  },
+                  "messageBodyWorkers" : { },
+                  "name" : "name",
+                  "parameterizedHeaders" : {
+                    "empty" : true,
+                    "parameterizedHeaders_key" : [ {
+                      "parameters" : {
+                        "parameters_key" : "parameters_key"
+                      },
+                      "value" : "value"
+                    } ]
+                  },
+                  "parent" : {
+                    "bodyParts" : [ {
+                      "contentDisposition" : {
+                        "creationDate" : "2025-10-24T09:00:00.000Z",
+                        "fileName" : "fileName",
+                        "modificationDate" : "2025-10-24T09:00:00.000Z",
+                        "parameters" : {
+                          "parameters_key" : "parameters_key"
+                        },
+                        "readDate" : "2025-10-24T09:00:00.000Z",
+                        "size" : 1,
+                        "type" : "type"
+                      },
+                      "entity" : { },
+                      "headers" : {
+                        "empty" : true,
+                        "headers_key" : [ "headers_key" ]
+                      },
+                      "mediaType" : {
+                        "parameters" : {
+                          "parameters_key" : "parameters_key"
+                        },
+                        "subtype" : "subtype",
+                        "type" : "type",
+                        "wildcardSubtype" : true,
+                        "wildcardType" : true
+                      },
+                      "messageBodyWorkers" : { },
+                      "parameterizedHeaders" : {
+                        "empty" : true,
+                        "parameterizedHeaders_key" : [ {
+                          "parameters" : {
+                            "parameters_key" : "parameters_key"
+                          },
+                          "value" : "value"
+                        } ]
+                      },
+                      "providers" : { }
+                    } ],
+                    "contentDisposition" : {
+                      "creationDate" : "2025-10-24T09:00:00.000Z",
+                      "fileName" : "fileName",
+                      "modificationDate" : "2025-10-24T09:00:00.000Z",
+                      "parameters" : {
+                        "parameters_key" : "parameters_key"
+                      },
+                      "readDate" : "2025-10-24T09:00:00.000Z",
+                      "size" : 1,
+                      "type" : "type"
+                    },
+                    "entity" : { },
+                    "headers" : {
+                      "empty" : true,
+                      "headers_key" : [ "headers_key" ]
+                    },
+                    "mediaType" : {
+                      "parameters" : {
+                        "parameters_key" : "parameters_key"
+                      },
+                      "subtype" : "subtype",
+                      "type" : "type",
+                      "wildcardSubtype" : true,
+                      "wildcardType" : true
+                    },
+                    "messageBodyWorkers" : { },
+                    "parameterizedHeaders" : {
+                      "empty" : true,
+                      "parameterizedHeaders_key" : [ {
+                        "parameters" : {
+                          "parameters_key" : "parameters_key"
+                        },
+                        "value" : "value"
+                      } ]
+                    },
+                    "providers" : { }
+                  },
+                  "providers" : { },
+                  "simple" : true,
+                  "value" : "value"
+                }
+              },
               "schema" : {
                 "properties" : {
                   "asset" : {
@@ -4823,6 +4969,12 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "parameters" : {
+                  "parameters_key" : { }
+                },
+                "type" : "CLIENT"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/MeDataBulkUpdateRequest"
               }
@@ -5615,6 +5767,22 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "code" : "code",
+                "content" : {
+                  "description" : "description",
+                  "image_url" : "image_url",
+                  "partner_content_id" : "partner_content_id",
+                  "title" : "title",
+                  "url" : "url"
+                },
+                "data" : {
+                  "data_key" : "data_key"
+                },
+                "key" : "key",
+                "label" : "label",
+                "target_url" : "target_url"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CreateMeShareableV4Request"
               }
@@ -6096,6 +6264,21 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "content" : {
+                  "description" : "description",
+                  "image_url" : "image_url",
+                  "partner_content_id" : "partner_content_id",
+                  "title" : "title",
+                  "url" : "url"
+                },
+                "data" : {
+                  "data_key" : "data_key"
+                },
+                "key" : "key",
+                "label" : "label",
+                "target_url" : "target_url"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/EditMeShareableV4Request"
               }
@@ -7722,6 +7905,20 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "access_token" : "access_token",
+                "code" : "code",
+                "content" : {
+                  "description" : "description",
+                  "image_url" : "image_url",
+                  "partner_content_id" : "partner_content_id",
+                  "title" : "title",
+                  "url" : "url"
+                },
+                "key" : "key",
+                "label" : "label",
+                "target_url" : "target_url"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CreateShareableV4Request"
               }
@@ -8716,6 +8913,11 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "duration_seconds" : 1,
+                "email" : "email",
+                "jwt" : "jwt"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CreateTokenRequest"
               }
@@ -9095,6 +9297,21 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "content" : {
+                  "description" : "description",
+                  "image_url" : "image_url",
+                  "partner_content_id" : "partner_content_id",
+                  "title" : "title",
+                  "url" : "url"
+                },
+                "data" : {
+                  "data_key" : "data_key"
+                },
+                "key" : "key",
+                "label" : "label",
+                "preferred_code_prefixes" : [ "preferred_code_prefixe" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CreateMeShareableRequest"
               }
@@ -9517,6 +9734,30 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "campaign_id" : "campaign_id",
+                "consumer_event" : {
+                  "campaign_id" : "campaign_id",
+                  "channel" : "channel",
+                  "origin_event_id" : 1,
+                  "parameters" : {
+                    "parameters_key" : "parameters_key"
+                  },
+                  "product_id" : "product_id",
+                  "recipient_emails" : [ "recipient_email" ],
+                  "site_host_id" : "site_host_id",
+                  "source" : "source",
+                  "source_url" : "source_url",
+                  "via_zone" : "via_zone",
+                  "zone_name" : "zone_name"
+                },
+                "data" : {
+                  "data_key" : "data_key"
+                },
+                "message" : "message",
+                "recipient_email" : "recipient_email",
+                "shareable_id" : "shareable_id"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/EventShareRequest"
               }
@@ -9681,6 +9922,12 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "data" : {
+                  "data_key" : "data_key"
+                },
+                "zone_name" : "zone_name"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/SendEmailRequest"
               }
@@ -9824,6 +10071,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "campaign_id" : "campaign_id"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/VerificationEmailRequest"
               }
@@ -9960,6 +10210,15 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "advocate_code" : "advocate_code",
+                "channel" : "channel",
+                "data" : {
+                  "data_key" : "data_key"
+                },
+                "message" : "message",
+                "recipient_email" : "recipient_email"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CustomShareRequest"
               }
@@ -10118,6 +10377,15 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "advocate_code" : "advocate_code",
+                "data" : {
+                  "data_key" : "data_key"
+                },
+                "message" : "message",
+                "recipient_emails" : [ "recipient_email" ],
+                "subject" : "subject"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/BatchEmailShareV5Request"
               }
@@ -10290,6 +10558,21 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "content" : {
+                  "description" : "description",
+                  "image_url" : "image_url",
+                  "partner_content_id" : "partner_content_id",
+                  "title" : "title",
+                  "url" : "url"
+                },
+                "data" : {
+                  "data_key" : "data_key"
+                },
+                "key" : "key",
+                "label" : "label",
+                "preferred_code_prefixes" : [ "preferred_code_prefixe" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CreateMeShareableRequest"
               }
@@ -10450,6 +10733,21 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "content" : {
+                  "description" : "description",
+                  "image_url" : "image_url",
+                  "partner_content_id" : "partner_content_id",
+                  "title" : "title",
+                  "url" : "url"
+                },
+                "data" : {
+                  "data_key" : "data_key"
+                },
+                "key" : "key",
+                "label" : "label",
+                "preferred_code_prefixes" : [ "preferred_code_prefixe" ]
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/CreateMeShareableRequest"
               }
@@ -10610,6 +10908,14 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "data" : {
+                  "data_key" : { }
+                },
+                "event_name" : "event_name",
+                "id_token" : "id_token",
+                "jwt" : "jwt"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/RenderZoneRequest"
               }
@@ -10750,6 +11056,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "value" : { }
+              },
               "schema" : {
                 "additionalProperties" : {
                   "type" : "object"
@@ -10885,6 +11194,14 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "data" : {
+                  "data_key" : { }
+                },
+                "event_name" : "event_name",
+                "id_token" : "id_token",
+                "jwt" : "jwt"
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/RenderZoneRequest"
               }
@@ -11038,6 +11355,9 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "value" : { }
+              },
               "schema" : {
                 "additionalProperties" : {
                   "type" : "object"
@@ -11203,6 +11523,10 @@
         "requestBody" : {
           "content" : {
             "application/json" : {
+              "example" : {
+                "type" : "CLIENT",
+                "value" : { }
+              },
               "schema" : {
                 "$ref" : "#/components/schemas/MeDataUpdateRequest"
               }
