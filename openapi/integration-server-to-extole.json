@@ -3158,6 +3158,9 @@
             "nullable" : true,
             "type" : "string"
           },
+          "expires_at" : {
+            "$ref" : "#/components/schemas/ZonedDateTime"
+          },
           "face_value" : {
             "description" : "Monetary or point face value of the reward.",
             "type" : "number"
@@ -3220,7 +3223,7 @@
             "type" : "string"
           }
         },
-        "required" : [ "action_id", "campaign_id", "cause_event_id", "container", "created_at", "data", "email", "face_value", "face_value_type", "journey_key", "journey_name", "partner_reward_id", "partner_reward_key_type", "partner_reward_supplier_id", "partner_user_id", "person_id", "reward_id", "reward_supplier_id", "root_event_id", "sandbox", "state" ],
+        "required" : [ "action_id", "campaign_id", "cause_event_id", "container", "created_at", "data", "email", "expires_at", "face_value", "face_value_type", "journey_key", "journey_name", "partner_reward_id", "partner_reward_key_type", "partner_reward_supplier_id", "partner_user_id", "person_id", "reward_id", "reward_supplier_id", "root_event_id", "sandbox", "state" ],
         "type" : "object"
       },
       "RewardStateResponse" : {

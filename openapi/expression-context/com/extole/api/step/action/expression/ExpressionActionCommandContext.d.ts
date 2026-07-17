@@ -14,5 +14,6 @@ export interface ExpressionActionCommandContext extends AsyncActionContext, Vari
     getJourneyKey(): JourneyKey | null;
     getRewardService(): RewardService;
     internalConsumerEventBuilder(): InternalConsumerEventBuilder;
+    internalConsumerEventBuilder(personId: string): InternalConsumerEventBuilder;
     stepSignalBuilder(pollingId: string): StepSignalBuilder;
 }
