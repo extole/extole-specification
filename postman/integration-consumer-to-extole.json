@@ -33060,6 +33060,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "7d240d89-7186-40c5-9226-26aa58ffbfcc",
+              "name": "CONSUMER_EVENT_MISSING",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "events", "share"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"campaign_id\": \"campaign_id\",\n  \"consumer_event\": {\n    \"campaign_id\": \"campaign_id\",\n    \"channel\": \"channel\",\n    \"origin_event_id\": 1,\n    \"parameters\": {\n      \"parameters_key\": \"parameters_key\"\n    },\n    \"product_id\": \"product_id\",\n    \"recipient_emails\": [\n      \"recipient_email\"\n    ],\n    \"site_host_id\": \"site_host_id\",\n    \"source\": \"source\",\n    \"source_url\": \"source_url\",\n    \"via_zone\": \"via_zone\",\n    \"zone_name\": \"zone_name\"\n  },\n  \"data\": {\n    \"data_key\": \"data_key\"\n  },\n  \"message\": \"message\",\n  \"recipient_email\": \"recipient_email\",\n  \"shareable_id\": \"shareable_id\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "29215858-72fa-4ae8-ab6e-66307a27d70e",
               "name": "INVALID_RECIPIENTS",
               "originalRequest": {
