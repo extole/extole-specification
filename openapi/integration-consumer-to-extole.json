@@ -2462,7 +2462,7 @@
           },
           "state" : {
             "description" : "Current lifecycle state of the reward.",
-            "enum" : [ "CANCELED", "EARNED", "FAILED", "FULFILLED", "REDEEMED", "REVOKED", "SENT" ],
+            "enum" : [ "CANCELED", "EARNED", "EXPIRED", "FAILED", "FULFILLED", "REDEEMED", "REVOKED", "SENT" ],
             "type" : "string"
           }
         },

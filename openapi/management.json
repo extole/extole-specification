@@ -10677,7 +10677,7 @@
             },
             "filter_states" : {
               "items" : {
-                "enum" : [ "CANCELED", "EARNED", "FAILED", "FULFILLED", "REDEEMED", "REVOKED", "SENT" ],
+                "enum" : [ "CANCELED", "EARNED", "EXPIRED", "FAILED", "FULFILLED", "REDEEMED", "REVOKED", "SENT" ],
                 "type" : "string"
               },
               "type" : "array",
@@ -11059,7 +11059,7 @@
             },
             "reward_states" : {
               "items" : {
-                "enum" : [ "CANCELED", "EARNED", "FAILED", "FULFILLED", "REDEEMED", "REVOKED" ],
+                "enum" : [ "CANCELED", "EARNED", "EXPIRED", "FAILED", "FULFILLED", "REDEEMED", "REVOKED" ],
                 "type" : "string"
               },
               "type" : "array",
@@ -13405,7 +13405,7 @@
           "state_transitions" : {
             "additionalProperties" : {
               "items" : {
-                "enum" : [ "CANCELED", "EARNED", "FAILED", "FULFILLED", "REDEEMED", "REVOKED", "SENT" ],
+                "enum" : [ "CANCELED", "EARNED", "EXPIRED", "FAILED", "FULFILLED", "REDEEMED", "REVOKED", "SENT" ],
                 "type" : "string"
               },
               "type" : "array"
@@ -22102,7 +22102,7 @@
             "state_transitions" : {
               "additionalProperties" : {
                 "items" : {
-                  "enum" : [ "CANCELED", "EARNED", "FAILED", "FULFILLED", "REDEEMED", "REVOKED", "SENT" ],
+                  "enum" : [ "CANCELED", "EARNED", "EXPIRED", "FAILED", "FULFILLED", "REDEEMED", "REVOKED", "SENT" ],
                   "type" : "string"
                 },
                 "type" : "array"
@@ -22210,7 +22210,7 @@
             "state_transitions" : {
               "additionalProperties" : {
                 "items" : {
-                  "enum" : [ "CANCELED", "EARNED", "FAILED", "FULFILLED", "REDEEMED", "REVOKED", "SENT" ],
+                  "enum" : [ "CANCELED", "EARNED", "EXPIRED", "FAILED", "FULFILLED", "REDEEMED", "REVOKED", "SENT" ],
                   "type" : "string"
                 },
                 "type" : "array"
@@ -32126,7 +32126,7 @@
         "oneOf" : [ {
           "description" : "Literal filter states",
           "items" : {
-            "enum" : [ "CANCELED", "EARNED", "FAILED", "FULFILLED", "REDEEMED", "REVOKED", "SENT" ],
+            "enum" : [ "CANCELED", "EARNED", "EXPIRED", "FAILED", "FULFILLED", "REDEEMED", "REVOKED", "SENT" ],
             "type" : "string"
           },
           "title" : "Static Value",
@@ -43195,7 +43195,7 @@
         "oneOf" : [ {
           "description" : "Literal reward states",
           "items" : {
-            "enum" : [ "CANCELED", "EARNED", "FAILED", "FULFILLED", "REDEEMED", "REVOKED" ],
+            "enum" : [ "CANCELED", "EARNED", "EXPIRED", "FAILED", "FULFILLED", "REDEEMED", "REVOKED" ],
             "type" : "string"
           },
           "title" : "Static Value",
@@ -43484,7 +43484,7 @@
           "state_transitions" : {
             "additionalProperties" : {
               "items" : {
-                "enum" : [ "CANCELED", "EARNED", "FAILED", "FULFILLED", "REDEEMED", "REVOKED", "SENT" ],
+                "enum" : [ "CANCELED", "EARNED", "EXPIRED", "FAILED", "FULFILLED", "REDEEMED", "REVOKED", "SENT" ],
                 "type" : "string"
               },
               "type" : "array"

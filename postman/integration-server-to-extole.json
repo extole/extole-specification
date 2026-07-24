@@ -37327,6 +37327,49 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "45cd5565-7aff-4d7c-8854-ec218525074b",
+              "name": "expired_state_unreachable",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "rewards",
+                    "custom-reward",
+                    ":reward_id",
+                    "failed"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "d54a6d7e-0d72-4782-bea6-ebe7b7735ac8",
               "name": "invalid_json",
               "originalRequest": {
@@ -37372,6 +37415,49 @@
             {
               "id": "1d0a385e-62bc-4229-a0b7-692cff9753cc",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "rewards",
+                    "custom-reward",
+                    ":reward_id",
+                    "failed"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "36f14cc8-8ea6-46f9-9af4-89e11414176c",
+              "name": "invalid_reward_expiration_date",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -38410,6 +38496,49 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "af214daf-67ed-4579-9ac4-374323ed5b53",
+              "name": "expired_state_unreachable",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "rewards",
+                    "custom-reward",
+                    ":reward_id",
+                    "fulfilled"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"cost_code\": \"cost_code\",\n  \"face_value\": 1,\n  \"face_value_type\": \"AUD\",\n  \"message\": \"message\",\n  \"partner_reward_id\": \"partner_reward_id\",\n  \"success\": true\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "2e0e59c8-443f-4ba2-99a2-bcb5a3491e46",
               "name": "invalid_json",
               "originalRequest": {
@@ -38455,6 +38584,49 @@
             {
               "id": "6eeb9144-23a4-4355-a2ff-4c085a8ca246",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "rewards",
+                    "custom-reward",
+                    ":reward_id",
+                    "fulfilled"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"cost_code\": \"cost_code\",\n  \"face_value\": 1,\n  \"face_value_type\": \"AUD\",\n  \"message\": \"message\",\n  \"partner_reward_id\": \"partner_reward_id\",\n  \"success\": true\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "1c2c0af0-fdf3-4372-8b7f-988a9294ef06",
+              "name": "invalid_reward_expiration_date",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -39493,6 +39665,49 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "24524752-5378-49ad-afe1-ade73d7eab31",
+              "name": "expired_state_unreachable",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "rewards",
+                    "custom-reward",
+                    ":reward_id",
+                    "fulfilled_and_sent"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"cost_code\": \"cost_code\",\n  \"email\": \"email\",\n  \"face_value\": 1,\n  \"face_value_type\": \"AUD\",\n  \"message\": \"message\",\n  \"partner_reward_id\": \"partner_reward_id\",\n  \"partner_reward_sent_id\": \"partner_reward_sent_id\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "e2082571-4743-4255-9726-07509e13d9b4",
               "name": "invalid_json",
               "originalRequest": {
@@ -39538,6 +39753,49 @@
             {
               "id": "96f81419-1f55-494d-8d72-829a984c2296",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "rewards",
+                    "custom-reward",
+                    ":reward_id",
+                    "fulfilled_and_sent"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"cost_code\": \"cost_code\",\n  \"email\": \"email\",\n  \"face_value\": 1,\n  \"face_value_type\": \"AUD\",\n  \"message\": \"message\",\n  \"partner_reward_id\": \"partner_reward_id\",\n  \"partner_reward_sent_id\": \"partner_reward_sent_id\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "bc02f834-e2cb-467d-a775-6298578a47b1",
+              "name": "invalid_reward_expiration_date",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -40576,6 +40834,49 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "7a01b897-7589-4322-a473-8384c431cf0b",
+              "name": "expired_state_unreachable",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "rewards",
+                    "custom-reward",
+                    ":reward_id",
+                    "redeemed"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\",\n  \"partner_reward_redeem_id\": \"partner_reward_redeem_id\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "b16a0975-0ee4-4ec7-b2fe-ade705128776",
               "name": "invalid_json",
               "originalRequest": {
@@ -40621,6 +40922,49 @@
             {
               "id": "ecd0554b-cd09-46df-a323-95968cc962bc",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "rewards",
+                    "custom-reward",
+                    ":reward_id",
+                    "redeemed"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\",\n  \"partner_reward_redeem_id\": \"partner_reward_redeem_id\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "fb772dbb-5476-4a27-85d6-7a51aaea9931",
+              "name": "invalid_reward_expiration_date",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -41653,6 +41997,49 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "512ed01d-9863-466b-a779-0e14bdcdb35c",
+              "name": "expired_state_unreachable",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "rewards",
+                    "custom-reward",
+                    ":reward_id",
+                    "sent"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\",\n  \"partner_reward_sent_id\": \"partner_reward_sent_id\",\n  \"success\": true\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "62871c1a-f2d0-47d2-b016-3a280c6cfb5f",
               "name": "invalid_json",
               "originalRequest": {
@@ -41698,6 +42085,49 @@
             {
               "id": "1af68be7-20b2-4b03-8101-ca08474214e9",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "rewards",
+                    "custom-reward",
+                    ":reward_id",
+                    "sent"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\",\n  \"partner_reward_sent_id\": \"partner_reward_sent_id\",\n  \"success\": true\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "8d6bfa9b-c4ae-4924-8c15-bcf0c1111927",
+              "name": "invalid_reward_expiration_date",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -47140,6 +47570,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "c6e380ab-b9ce-48ff-b481-a38a18c2d215",
+              "name": "expired_state_unreachable",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "3ee291c9-a60b-4589-9bc9-4240d99ec9ac",
               "name": "invalid_json",
               "originalRequest": {
@@ -47172,6 +47632,36 @@
             {
               "id": "3b186ce9-851e-44b0-b44c-14455e4159d0",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "34c451e4-2358-403d-8eea-9125c020a2f7",
+              "name": "invalid_reward_expiration_date",
               "originalRequest": {
                 "url": {
                   "path": ["v2", "rewards", ":reward_id"],
@@ -47836,7 +48326,7 @@
             "method": "PUT",
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+              "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
               "options": {
                 "raw": { "headerFamily": "json", "language": "json" }
               }
@@ -47869,7 +48359,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -47906,7 +48396,44 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3877bd83-eb11-4fa1-8ea0-5ff2792e2bd3",
+              "name": "expired_state_unreachable",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -47943,7 +48470,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -47980,7 +48507,44 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c1491a82-23e4-4bac-9731-e59b0d10bddd",
+              "name": "invalid_reward_expiration_date",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -48017,7 +48581,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -48054,7 +48618,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -48091,7 +48655,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -48128,7 +48692,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -48165,7 +48729,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -48202,7 +48766,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -48239,7 +48803,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -48276,7 +48840,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -48313,7 +48877,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -48350,7 +48914,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -48387,7 +48951,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -48424,7 +48988,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -48461,7 +49025,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -48498,7 +49062,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -48535,7 +49099,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -48572,7 +49136,7 @@
                 "method": "PUT",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"sandbox\": \"sandbox\"\n}",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -48681,6 +49245,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "0f039792-ce90-4273-a0e6-0ef187db75e8",
+              "name": "expired_state_unreachable",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "cancels"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "c02dc929-5465-4f3e-a8a4-e8791bec166e",
               "name": "invalid_json",
               "originalRequest": {
@@ -48713,6 +49307,36 @@
             {
               "id": "9646c5e2-5525-47f4-bc84-414c5ea7ea34",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "cancels"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ea8634b7-a2b8-491b-ae9e-66cfafdba1e3",
+              "name": "invalid_reward_expiration_date",
               "originalRequest": {
                 "url": {
                   "path": ["v2", "rewards", ":reward_id", "cancels"],
@@ -49345,6 +49969,822 @@
           "protocolProfileBehavior": { "disableBodyPruning": true }
         },
         {
+          "id": "fb00c785-e901-417c-8f03-faececf11f69",
+          "name": "Get reward expirations",
+          "request": {
+            "name": "Get reward expirations",
+            "description": {
+              "content": "Returns the expiration records for the specified reward.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": ["v2", "rewards", ":reward_id", "expirations"],
+              "host": ["{{baseUrl}}"],
+              "query": [],
+              "variable": [
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "reward_id",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) Extole-assigned unique identifier for the reward.",
+                    "type": "text/plain"
+                  }
+                }
+              ]
+            },
+            "header": [{ "key": "Accept", "value": "<string>" }],
+            "method": "GET",
+            "body": {},
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "11a7c9e6-c911-4ba7-a085-8c160ba394f8",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f32b54fd-8684-401d-aed1-e46a67c758a1",
+              "name": "binding_error",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "8da591c8-da4e-44c7-964a-9b0021816d0c",
+              "name": "expired_state_unreachable",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "0a590629-ddfb-4a48-a947-5408bc6f60ae",
+              "name": "invalid_json",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "d1a3ac3a-f7bf-48d1-9d40-6085e1b2a5be",
+              "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "6d07a3c0-a55a-4752-88a4-c5fb3d52b99e",
+              "name": "invalid_reward_expiration_date",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "1f2ca6da-a242-4957-b0e6-11f4349af78f",
+              "name": "missing_request_body",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "797c4345-994d-4065-8ed3-a5923bfa21d4",
+              "name": "period_count_invalid",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "5522adf4-d469-4b9c-9d00-a0d21cadccb8",
+              "name": "period_not_supported",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "03300310-a728-4430-9a02-8367fa6ce859",
+              "name": "retry_claimed_reward_not_allowed",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "1b5229ac-0fc2-4b11-8d2b-6dee0dba0c9a",
+              "name": "reward_illegal_state_transition",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a7536c37-823c-4eb9-8774-44277e6778c8",
+              "name": "reward_in_not_retryable_state",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c4477e8f-ae66-4545-b3c7-9d7df8010766",
+              "name": "reward_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e734fbd9-ce29-4627-b279-2a5756636ed4",
+              "name": "reward_retry_not_supported",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "cf8cdf27-90d6-405a-804d-1abf397fb5e7",
+              "name": "reward_state_invalid",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "09055abf-9963-4286-ad89-f4bd9264d596",
+              "name": "reward_supplier_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "228e1808-a34b-4df9-8664-1772265801ee",
+              "name": "reward_type_not_supported",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7edfcaa9-de46-4873-a44a-6c1c435a232a",
+              "name": "sandbox_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "100c999a-49e5-4241-b173-a7d1a4c48f29",
+              "name": "time_interval_invalid",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "1c511775-f384-40a5-a3a5-4333311d594d",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "d93da146-214e-4b7e-bb17-a016155f4fbd",
+              "name": "Payment Required",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Payment Required",
+              "code": 402,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c08c83d3-7142-43be-8035-4b75b4159932",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "cfb6aacb-6bc8-4863-b4ac-91b9ed25cce4",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "68a3a816-30c8-42e3-b6e2-2af019e17ca7",
+              "name": "missing_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e48dd4c9-3cfd-43b7-a712-24d23d9a0b1c",
+              "name": "Unsupported Media Type",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unsupported Media Type",
+              "code": 415,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f8d6bbb1-efa2-4f82-a729-3048f72cf7ae",
+              "name": "Too Many Requests",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expirations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        },
+        {
           "id": "48d38eb5-20e7-41a7-a312-a4685289cc8e",
           "name": "Get reward fails",
           "request": {
@@ -49437,6 +50877,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "40863b60-2116-4922-847b-979f56cc3673",
+              "name": "expired_state_unreachable",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "fails"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "a6bc7c24-9578-43fc-943a-337d6bb0dd54",
               "name": "invalid_json",
               "originalRequest": {
@@ -49469,6 +50939,36 @@
             {
               "id": "3ff89176-2c14-47cf-b163-2cf5fc69bad0",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "fails"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3a80bb06-c982-4de0-bcd7-083e002d8721",
+              "name": "invalid_reward_expiration_date",
               "originalRequest": {
                 "url": {
                   "path": ["v2", "rewards", ":reward_id", "fails"],
@@ -50193,6 +51693,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "05eebb2c-38b0-4d8a-bc7d-bb6a4a21b892",
+              "name": "expired_state_unreachable",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "fulfillments"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "21439c11-87a9-4425-8460-21e79ad7b9bb",
               "name": "invalid_json",
               "originalRequest": {
@@ -50225,6 +51755,36 @@
             {
               "id": "3e3cfda4-433d-42a1-a88d-e0ee515a3fc8",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "fulfillments"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "16634173-63fd-4a60-b91c-d46df69f81cc",
+              "name": "invalid_reward_expiration_date",
               "originalRequest": {
                 "url": {
                   "path": ["v2", "rewards", ":reward_id", "fulfillments"],
@@ -50949,6 +52509,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "0ae6a809-3549-44ce-8892-7d13f563c146",
+              "name": "expired_state_unreachable",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "history"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "ec48b1e2-a42e-4b38-b6a8-91ec2a73a5a1",
               "name": "invalid_json",
               "originalRequest": {
@@ -50981,6 +52571,36 @@
             {
               "id": "e8a820bc-c88e-4440-ba34-c99da868f6f8",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "history"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e02d5670-4211-492f-969b-dfad8242726d",
+              "name": "invalid_reward_expiration_date",
               "originalRequest": {
                 "url": {
                   "path": ["v2", "rewards", ":reward_id", "history"],
@@ -51705,6 +53325,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "696ccc66-a8ae-4d08-8ef9-54d4a2f528d1",
+              "name": "expired_state_unreachable",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "redeems"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "54de902e-b247-413f-be08-25b94e6f52f2",
               "name": "invalid_json",
               "originalRequest": {
@@ -51737,6 +53387,36 @@
             {
               "id": "3c776fdb-09e6-49a9-b25a-8b57ac75359d",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "redeems"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "fdeec76f-0da2-41cd-9e87-4df4eb6f5f65",
+              "name": "invalid_reward_expiration_date",
               "originalRequest": {
                 "url": {
                   "path": ["v2", "rewards", ":reward_id", "redeems"],
@@ -52461,6 +54141,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "31a7d640-89c5-49ea-acfd-081f6fc2a59b",
+              "name": "expired_state_unreachable",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "revokes"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "c3b0f274-57cb-4543-9120-41d1d460ef14",
               "name": "invalid_json",
               "originalRequest": {
@@ -52493,6 +54203,36 @@
             {
               "id": "a59364ec-ecc5-4a78-8a3f-dcc4b9777ccd",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "revokes"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "749355f0-f4cd-495c-bf6e-66644670d490",
+              "name": "invalid_reward_expiration_date",
               "originalRequest": {
                 "url": {
                   "path": ["v2", "rewards", ":reward_id", "revokes"],
@@ -53217,6 +54957,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "d584f6a0-57fd-45dd-9422-cf3423de4326",
+              "name": "expired_state_unreachable",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "sends"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "835d8f83-23f8-4dce-a06c-59721ac5d4b6",
               "name": "invalid_json",
               "originalRequest": {
@@ -53249,6 +55019,36 @@
             {
               "id": "fd8b5778-f1f8-4310-b407-07d1467b9dbd",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "sends"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "582b003e-be4a-4f65-a7de-d76a74df3c49",
+              "name": "invalid_reward_expiration_date",
               "originalRequest": {
                 "url": {
                   "path": ["v2", "rewards", ":reward_id", "sends"],
@@ -53996,6 +55796,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "9d3f7354-8bf4-448c-a0e1-b428a45fdbcd",
+              "name": "expired_state_unreachable",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "cancel"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "04260b45-62c2-4f6d-adb6-8867eddafeeb",
               "name": "invalid_json",
               "originalRequest": {
@@ -54035,6 +55872,43 @@
             {
               "id": "d5ddbbd7-74d1-4ff3-a275-f4ba42dc2f07",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "cancel"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3e4ebb4a-5871-4c3c-90c0-a40570a67038",
+              "name": "invalid_reward_expiration_date",
               "originalRequest": {
                 "url": {
                   "path": ["v2", "rewards", ":reward_id", "cancel"],
@@ -54814,6 +56688,1013 @@
           "protocolProfileBehavior": { "disableBodyPruning": true }
         },
         {
+          "id": "20c2c72f-b366-4085-b05b-ecbb60003fc6",
+          "name": "Expire a reward",
+          "request": {
+            "name": "Expire a reward",
+            "description": {
+              "content": "Marks the specified reward as expired. Returns the updated reward.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": ["v2", "rewards", ":reward_id", "expire"],
+              "host": ["{{baseUrl}}"],
+              "query": [],
+              "variable": [
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "reward_id",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) Extole-assigned unique identifier for the reward.",
+                    "type": "text/plain"
+                  }
+                }
+              ]
+            },
+            "header": [
+              { "key": "Content-Type", "value": "<string>" },
+              { "key": "Accept", "value": "<string>" }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"message\": \"message\"\n}",
+              "options": {
+                "raw": { "headerFamily": "json", "language": "json" }
+              }
+            },
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9e22996a-447f-40f2-aa29-d4c429281c3b",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "379a72a9-3e62-446a-9a5b-30d68bfc3d15",
+              "name": "binding_error",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "299fa23f-c9ab-461c-9f5c-367022daded8",
+              "name": "expired_state_unreachable",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "190f9134-a5fb-4ae7-a41d-d9d880715136",
+              "name": "invalid_json",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "5a415349-7864-417f-8eb4-63ba5f083eff",
+              "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "1ef48ca1-eb6c-4f8b-a3fa-531b93beb7db",
+              "name": "invalid_reward_expiration_date",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "06f87d5a-7f57-416e-a615-cabde6bd8b4d",
+              "name": "missing_request_body",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "20d19d78-adb6-4450-a726-677e6e466ffd",
+              "name": "period_count_invalid",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "5b9093d4-567c-450c-ad71-4a94016ff7ae",
+              "name": "period_not_supported",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a8d35b9f-5a55-46ef-80d7-9229af7d20ab",
+              "name": "retry_claimed_reward_not_allowed",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7c86bd65-14c9-4e3f-bd90-d5dfc49fae28",
+              "name": "reward_illegal_state_transition",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "14e66cf9-6d20-45ab-8e60-cc4d84857445",
+              "name": "reward_in_not_retryable_state",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c06e2e74-adc5-4275-931e-71fbca449aff",
+              "name": "reward_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "51bfaffd-aec4-4656-818a-25b9086b368f",
+              "name": "reward_retry_not_supported",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7e6f9a34-3e37-49dc-85bb-c11b804c8d4b",
+              "name": "reward_state_invalid",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "589d3f2a-483b-4c6a-98f4-ffe8baba5785",
+              "name": "reward_supplier_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "23cb1299-14fa-41bc-b736-c8f00199b0cb",
+              "name": "reward_type_not_supported",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "19cbbb64-c206-40d6-972c-b08675881a2a",
+              "name": "sandbox_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e64bbbfa-ec97-45b5-8126-c4e77f53e274",
+              "name": "time_interval_invalid",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "80a4d718-43b8-40ac-bf50-7f3d729b544f",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "bf804cfb-f020-4141-948d-26cd15bd681b",
+              "name": "Payment Required",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Payment Required",
+              "code": 402,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "0cac2f82-afcb-44d7-9e2f-34b32d53d1a3",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ff9b0931-06a2-4c8c-8610-50311e75fb5a",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "bec5cac5-3f7c-4361-8996-1d38a6f3fd61",
+              "name": "missing_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "280b0a8a-29e5-4feb-a621-11444c7760ad",
+              "name": "Unsupported Media Type",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Unsupported Media Type",
+              "code": 415,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a88db474-e382-4f64-a331-38e73e999f9e",
+              "name": "Too Many Requests",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        },
+        {
           "id": "57375591-f861-42ca-ae13-8b873ecaf42b",
           "name": "Retry a reward",
           "request": {
@@ -54906,6 +57787,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "1d5e82a9-7c56-4722-a7d0-1a8782f0fa1e",
+              "name": "expired_state_unreachable",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "retry"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "3bb0ac1f-9017-4d98-9b5c-0671096d9092",
               "name": "invalid_json",
               "originalRequest": {
@@ -54938,6 +57849,36 @@
             {
               "id": "70144be5-c47f-4e24-8e78-443a0fec08a1",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "retry"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "08b2a64f-c555-41ad-829f-636139374155",
+              "name": "invalid_reward_expiration_date",
               "originalRequest": {
                 "url": {
                   "path": ["v2", "rewards", ":reward_id", "retry"],
@@ -55685,6 +58626,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "742c0dd2-82cb-4773-a1de-4e9c9b82fdc0",
+              "name": "expired_state_unreachable",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "revoke"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "470fb3f5-3956-4cd6-92ee-cdb43cd8f6da",
               "name": "invalid_json",
               "originalRequest": {
@@ -55724,6 +58702,43 @@
             {
               "id": "5c34c59c-58ba-4737-86bf-4d524375c3fa",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id", "revoke"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "9e0f262c-cc36-4687-a7ca-7d64bf9b2c97",
+              "name": "invalid_reward_expiration_date",
               "originalRequest": {
                 "url": {
                   "path": ["v2", "rewards", ":reward_id", "revoke"],
