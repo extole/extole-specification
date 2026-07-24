@@ -9,19 +9,19 @@
   },
   "collections": {
     "integration-consumer-to-extole": {
-      "uid": "55251382-296d11d5-0229-4342-a472-840fdb9c4ff0",
+      "uid": "55251382-34d776a6-47f9-4e8c-b569-df8ad4a4ddc3",
       "name": "Integration API - Consumer to Extole"
     },
     "integration-server-to-extole": {
-      "uid": "55251382-ec02580d-a7f9-4780-9156-e38b21bcb490",
+      "uid": "55251382-5794b523-70bb-451a-88a9-d0045c92e65f",
       "name": "Integration API - Server to Extole"
     },
     "management-expert": {
-      "uid": "55251382-fbc2c499-7761-443f-b196-4e3cdbf4f1ce",
+      "uid": "55251382-ff237e88-05bb-4c3a-b342-dd6a901f4e0f",
       "name": "Management Expert API"
     },
     "management": {
-      "uid": "55251382-12f39b4a-2a27-4085-b785-36af28baece7",
+      "uid": "55251382-7c3d08a0-f8ee-4a66-b10a-ebae253da4cc",
       "name": "Management API"
     }
   }
