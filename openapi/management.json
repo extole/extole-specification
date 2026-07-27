@@ -5841,6 +5841,16 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
+      "start_date_missing" : {
+        "summary" : "start_date_missing",
+        "value" : {
+          "code" : "start_date_missing",
+          "http_status_code" : 400,
+          "message" : "Start date is required when a pause, end, or stop date is set",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
       "step_data_default_value_expression_length_out_of_range" : {
         "summary" : "step_data_default_value_expression_length_out_of_range",
         "value" : {
@@ -91632,6 +91642,9 @@
                   "start_date_after_stop_date" : {
                     "$ref" : "#/components/examples/start_date_after_stop_date"
                   },
+                  "start_date_missing" : {
+                    "$ref" : "#/components/examples/start_date_missing"
+                  },
                   "unlock_missing_lock_types" : {
                     "$ref" : "#/components/examples/unlock_missing_lock_types"
                   }
@@ -92010,6 +92023,9 @@
                   },
                   "start_date_after_stop_date" : {
                     "$ref" : "#/components/examples/start_date_after_stop_date"
+                  },
+                  "start_date_missing" : {
+                    "$ref" : "#/components/examples/start_date_missing"
                   },
                   "unlock_missing_lock_types" : {
                     "$ref" : "#/components/examples/unlock_missing_lock_types"
@@ -92401,6 +92417,9 @@
                   },
                   "start_date_after_stop_date" : {
                     "$ref" : "#/components/examples/start_date_after_stop_date"
+                  },
+                  "start_date_missing" : {
+                    "$ref" : "#/components/examples/start_date_missing"
                   },
                   "unlock_missing_lock_types" : {
                     "$ref" : "#/components/examples/unlock_missing_lock_types"
@@ -93860,6 +93879,9 @@
                   "start_date_after_stop_date" : {
                     "$ref" : "#/components/examples/start_date_after_stop_date"
                   },
+                  "start_date_missing" : {
+                    "$ref" : "#/components/examples/start_date_missing"
+                  },
                   "unlock_missing_lock_types" : {
                     "$ref" : "#/components/examples/unlock_missing_lock_types"
                   }
@@ -94297,6 +94319,9 @@
                   "start_date_after_stop_date" : {
                     "$ref" : "#/components/examples/start_date_after_stop_date"
                   },
+                  "start_date_missing" : {
+                    "$ref" : "#/components/examples/start_date_missing"
+                  },
                   "unlock_missing_lock_types" : {
                     "$ref" : "#/components/examples/unlock_missing_lock_types"
                   }
@@ -94535,6 +94560,9 @@
                   },
                   "start_date_after_stop_date" : {
                     "$ref" : "#/components/examples/start_date_after_stop_date"
+                  },
+                  "start_date_missing" : {
+                    "$ref" : "#/components/examples/start_date_missing"
                   },
                   "unlock_missing_lock_types" : {
                     "$ref" : "#/components/examples/unlock_missing_lock_types"
