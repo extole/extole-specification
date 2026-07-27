@@ -2753,7 +2753,7 @@
             "description" : "Set of permission scopes granted to this token.",
             "items" : {
               "description" : "Set of permission scopes granted to this token.",
-              "enum" : [ "UPDATE_PROFILE", "VERIFIED_CONSUMER" ],
+              "enum" : [ "LOCAL_PROFILE", "UPDATE_PROFILE", "VERIFIED_CONSUMER" ],
               "type" : "string"
             },
             "type" : "array",
