@@ -4691,6 +4691,16 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
+      "report_type_schema_not_supported" : {
+        "summary" : "report_type_schema_not_supported",
+        "value" : {
+          "code" : "report_type_schema_not_supported",
+          "http_status_code" : 400,
+          "message" : "Schema is not supported for this report type",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
       "report_type_update_invalid" : {
         "summary" : "report_type_update_invalid",
         "value" : {
@@ -103392,6 +103402,9 @@
                   },
                   "report_type_missing" : {
                     "$ref" : "#/components/examples/report_type_missing"
+                  },
+                  "report_type_schema_not_supported" : {
+                    "$ref" : "#/components/examples/report_type_schema_not_supported"
                   }
                 },
                 "schema" : {
@@ -123666,6 +123679,9 @@
                   },
                   "report_type_public_cannot_have_component_references" : {
                     "$ref" : "#/components/examples/report_type_public_cannot_have_component_references"
+                  },
+                  "report_type_schema_not_supported" : {
+                    "$ref" : "#/components/examples/report_type_schema_not_supported"
                   },
                   "report_type_update_invalid" : {
                     "$ref" : "#/components/examples/report_type_update_invalid"
