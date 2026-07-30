@@ -2821,6 +2821,16 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
+      "component_ids_and_references_both_provided" : {
+        "summary" : "component_ids_and_references_both_provided",
+        "value" : {
+          "code" : "component_ids_and_references_both_provided",
+          "http_status_code" : 400,
+          "message" : "Only one of componentIds or componentReferences may be provided",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
       "component_type_display_name_contains_illegal_characters" : {
         "summary" : "component_type_display_name_contains_illegal_characters",
         "value" : {
@@ -47017,6 +47027,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "excessive_component_reference" : {
                     "$ref" : "#/components/examples/excessive_component_reference"
                   },
@@ -48112,6 +48125,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "excessive_component_reference" : {
                     "$ref" : "#/components/examples/excessive_component_reference"
@@ -49354,6 +49370,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "excessive_component_reference" : {
                     "$ref" : "#/components/examples/excessive_component_reference"
@@ -50843,6 +50862,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "excessive_component_reference" : {
                     "$ref" : "#/components/examples/excessive_component_reference"
                   },
@@ -51358,6 +51380,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "excessive_component_reference" : {
                     "$ref" : "#/components/examples/excessive_component_reference"
@@ -52175,6 +52200,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_misconfiguration"
@@ -53068,6 +53096,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -53753,6 +53784,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -54427,6 +54461,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -55379,6 +55416,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_misconfiguration"
                   },
@@ -56327,6 +56367,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -56817,6 +56860,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -57516,6 +57562,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -58237,6 +58286,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -58914,6 +58966,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -59619,6 +59674,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -60314,6 +60372,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -60988,6 +61049,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -61676,6 +61740,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -62388,6 +62455,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -63058,6 +63128,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -63733,6 +63806,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -64424,6 +64500,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -65125,6 +65204,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -65799,6 +65881,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -66688,6 +66773,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -67571,6 +67659,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -68535,6 +68626,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -69405,6 +69499,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -70315,6 +70412,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -71596,6 +71696,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -72330,6 +72433,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -73063,6 +73169,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -73799,6 +73908,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -74542,6 +74654,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -75270,6 +75385,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -76059,6 +76177,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -76907,6 +77028,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -77638,6 +77762,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -78378,6 +78505,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -79110,6 +79240,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -79856,6 +79989,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -80586,6 +80722,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -81325,6 +81464,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -82056,6 +82198,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -82797,6 +82942,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -83553,6 +83701,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -84481,6 +84632,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -85418,6 +85572,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -86347,6 +86504,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -87278,6 +87438,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -88212,6 +88375,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -89130,6 +89296,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -90073,6 +90242,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -90990,6 +91162,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -92373,6 +92548,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -93124,6 +93302,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -93971,6 +94152,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -94643,6 +94827,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -94903,6 +95090,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -95583,6 +95773,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -96268,6 +96461,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -96528,6 +96724,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -116476,6 +116675,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "excessive_component_reference" : {
                     "$ref" : "#/components/examples/excessive_component_reference"
                   },
@@ -120283,6 +120485,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -120574,6 +120779,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -120854,6 +121062,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -121137,6 +121348,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_misconfiguration"
@@ -121461,6 +121675,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -121748,6 +121965,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -122072,6 +122292,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -122361,6 +122584,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -122654,6 +122880,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -123027,6 +123256,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -123322,6 +123554,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -123607,6 +123842,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -123924,6 +124162,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -124237,6 +124478,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -124517,6 +124761,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -124808,6 +125055,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -125126,6 +125376,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -125402,6 +125655,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -125684,6 +125940,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -125983,6 +126242,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -126287,6 +126549,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -126567,6 +126832,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -126879,6 +127147,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -127199,6 +127470,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -127517,6 +127791,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -127838,6 +128115,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -128165,6 +128445,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -128504,6 +128787,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -128825,6 +129111,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -129159,6 +129448,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -129474,6 +129766,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -129787,6 +130082,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -130161,6 +130459,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -130594,6 +130895,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -130922,6 +131226,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -131235,6 +131542,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -131557,6 +131867,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -131878,6 +132191,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -132195,6 +132511,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -132526,6 +132845,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -132852,6 +133174,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -133175,6 +133500,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -133491,6 +133819,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -133810,6 +134141,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -134138,6 +134472,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -134452,6 +134789,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -134778,6 +135118,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -138471,6 +138814,9 @@
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
                   "excessive_component_reference" : {
                     "$ref" : "#/components/examples/excessive_component_reference"
                   },
@@ -138878,6 +139224,9 @@
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
+                  },
+                  "component_ids_and_references_both_provided" : {
+                    "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
                   "excessive_component_reference" : {
                     "$ref" : "#/components/examples/excessive_component_reference"
