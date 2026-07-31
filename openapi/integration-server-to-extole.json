@@ -9531,7 +9531,7 @@
           "name" : "reward_types",
           "schema" : {
             "items" : {
-              "enum" : [ "CUSTOM_REWARD", "MANUAL_COUPON", "PAYPAL_PAYOUTS", "SALESFORCE_COUPON", "TANGO_V2" ],
+              "enum" : [ "CUSTOM_REWARD", "MANUAL_COUPON", "SALESFORCE_COUPON", "TANGO_V2" ],
               "type" : "string"
             },
             "type" : "array"
