@@ -119537,7 +119537,7 @@
     },
     "/web/persons/{personId}/assets/download" : {
       "get" : {
-        "description" : "Downloads the binary content of the named asset for the person identified by `personId`. The `name` query parameter selects the asset; omit it to download the person's default asset (if one exists). Returns the asset content stream with the asset's stored content type. Supply `default_url` to redirect to a fallback URL when the asset is not found instead of returning an error.",
+        "description" : "Downloads the binary content of the named asset for the person identified by `personId`. The `name` query parameter selects the asset; omit it to download the person's default asset (if one exists). Returns the asset content stream with the asset's stored content type. Supply `default_url` to redirect to a fallback URL when the asset is not found instead of returning an error. The access token is optional on this operation: omit it and Extole serves only the person's `PUBLIC` assets, resolving the client from the request domain. Supply a token belonging to the person to reach their `PRIVATE` assets. Omitting the token is the recommended way to render another person's avatar, so no token has to be embedded in an image URL.",
         "operationId" : "downloadWebPersonAssetByName",
         "parameters" : [ {
           "description" : "The Extole unique profile identifier of this user at Extole.",
@@ -119674,7 +119674,7 @@
     },
     "/web/persons/{personId}/assets/{assetId}/download" : {
       "get" : {
-        "description" : "Downloads the binary content of the asset identified by `assetId` for the person identified by `personId`. Returns the asset content stream with the asset's stored content type. If the asset has no downloadable content the server returns 400 with `asset_content_not_downloadable`. Supply `default_url` to redirect the caller to a fallback URL instead of returning an error when the asset is not found.",
+        "description" : "Downloads the binary content of the asset identified by `assetId` for the person identified by `personId`. Returns the asset content stream with the asset's stored content type. If the asset has no downloadable content the server returns 400 with `asset_content_not_downloadable`. Supply `default_url` to redirect the caller to a fallback URL instead of returning an error when the asset is not found. The access token is optional on this operation: omit it and Extole serves only the person's `PUBLIC` assets, resolving the client from the request domain. Supply a token belonging to the person to reach their `PRIVATE` assets. Omitting the token is the recommended way to render another person's avatar, so no token has to be embedded in an image URL.",
         "operationId" : "downloadWebPersonAssetById",
         "parameters" : [ {
           "description" : "The Extole unique profile identifier of this user at Extole.",
