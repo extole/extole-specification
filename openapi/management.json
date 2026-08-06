@@ -1301,6 +1301,16 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
+      "client_key_duplicate_name" : {
+        "summary" : "client_key_duplicate_name",
+        "value" : {
+          "code" : "client_key_duplicate_name",
+          "http_status_code" : 400,
+          "message" : "Key with such name already defined",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
       "client_key_duplicate_partner_key_id" : {
         "summary" : "client_key_duplicate_partner_key_id",
         "value" : {
@@ -1397,6 +1407,16 @@
           "code" : "client_key_missing_type",
           "http_status_code" : 400,
           "message" : "Key type is not specified",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "client_key_name_already_in_use" : {
+        "summary" : "client_key_name_already_in_use",
+        "value" : {
+          "code" : "client_key_name_already_in_use",
+          "http_status_code" : 400,
+          "message" : "Client key name is already used by another client key",
           "parameters" : { },
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
@@ -53552,6 +53572,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_asset_content_length_out_of_range" : {
                     "$ref" : "#/components/examples/component_asset_content_length_out_of_range"
                   },
@@ -59979,6 +60002,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_asset_content_length_out_of_range" : {
                     "$ref" : "#/components/examples/component_asset_content_length_out_of_range"
                   },
@@ -62944,6 +62970,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_asset_content_length_out_of_range" : {
                     "$ref" : "#/components/examples/component_asset_content_length_out_of_range"
                   },
@@ -64363,6 +64392,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_asset_content_length_out_of_range" : {
                     "$ref" : "#/components/examples/component_asset_content_length_out_of_range"
                   },
@@ -64987,6 +65019,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -69383,6 +69418,9 @@
                   "client_key_build_failed" : {
                     "$ref" : "#/components/examples/client_key_build_failed"
                   },
+                  "client_key_duplicate_name" : {
+                    "$ref" : "#/components/examples/client_key_duplicate_name"
+                  },
                   "client_key_duplicate_partner_key_id" : {
                     "$ref" : "#/components/examples/client_key_duplicate_partner_key_id"
                   },
@@ -69412,6 +69450,9 @@
                   },
                   "client_key_missing_type" : {
                     "$ref" : "#/components/examples/client_key_missing_type"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "client_key_not_found" : {
                     "$ref" : "#/components/examples/client_key_not_found"
@@ -76191,6 +76232,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -76555,6 +76599,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -76789,6 +76836,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -77002,6 +77052,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -77218,6 +77271,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -77748,6 +77804,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -77976,6 +78035,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -78216,6 +78278,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -78740,6 +78805,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -79540,6 +79608,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -80194,6 +80265,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -80602,6 +80676,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -81142,6 +81219,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -81536,6 +81616,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -85352,6 +85435,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -86263,6 +86349,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -86620,6 +86709,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -88238,6 +88330,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -91054,6 +91149,9 @@
                   "client_key_missing_name" : {
                     "$ref" : "#/components/examples/client_key_missing_name"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_collision" : {
                     "$ref" : "#/components/examples/component_collision"
                   },
@@ -91908,6 +92006,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_collision" : {
                     "$ref" : "#/components/examples/component_collision"
                   },
@@ -92386,6 +92487,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -92992,6 +93096,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -93444,6 +93551,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -94161,6 +94271,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -94549,6 +94662,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -95256,6 +95372,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -95521,6 +95640,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -95785,6 +95907,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -97086,6 +97211,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -97965,7 +98093,7 @@
     },
     "/v2/settings/security/keys/{key_id}/unarchive" : {
       "post" : {
-        "description" : "Restores a previously archived client key so it can be used again.",
+        "description" : "Restores a previously archived client key so it can be used again. Fails when another active key already uses the same name.",
         "operationId" : "unarchiveClientKey",
         "parameters" : [ {
           "in" : "path",
@@ -97996,8 +98124,41 @@
                   "client_key_associated_with_entity" : {
                     "$ref" : "#/components/examples/client_key_associated_with_entity"
                   },
+                  "client_key_duplicate_name" : {
+                    "$ref" : "#/components/examples/client_key_duplicate_name"
+                  },
+                  "client_key_duplicate_partner_key_id" : {
+                    "$ref" : "#/components/examples/client_key_duplicate_partner_key_id"
+                  },
+                  "client_key_invalid" : {
+                    "$ref" : "#/components/examples/client_key_invalid"
+                  },
+                  "client_key_invalid_partner_key_id" : {
+                    "$ref" : "#/components/examples/client_key_invalid_partner_key_id"
+                  },
+                  "client_key_invalid_tag" : {
+                    "$ref" : "#/components/examples/client_key_invalid_tag"
+                  },
+                  "client_key_missing" : {
+                    "$ref" : "#/components/examples/client_key_missing"
+                  },
+                  "client_key_missing_algorithm" : {
+                    "$ref" : "#/components/examples/client_key_missing_algorithm"
+                  },
+                  "client_key_missing_type" : {
+                    "$ref" : "#/components/examples/client_key_missing_type"
+                  },
                   "client_key_not_found" : {
                     "$ref" : "#/components/examples/client_key_not_found"
+                  },
+                  "client_key_too_long" : {
+                    "$ref" : "#/components/examples/client_key_too_long"
+                  },
+                  "client_key_too_short" : {
+                    "$ref" : "#/components/examples/client_key_too_short"
+                  },
+                  "client_key_unsupported_type" : {
+                    "$ref" : "#/components/examples/client_key_unsupported_type"
                   },
                   "external_element_in_use" : {
                     "$ref" : "#/components/examples/external_element_in_use"
@@ -99192,6 +99353,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -99408,6 +99572,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -99620,6 +99787,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -100832,6 +101002,9 @@
                   "client_key_build_failed" : {
                     "$ref" : "#/components/examples/client_key_build_failed"
                   },
+                  "client_key_duplicate_name" : {
+                    "$ref" : "#/components/examples/client_key_duplicate_name"
+                  },
                   "client_key_duplicate_partner_key_id" : {
                     "$ref" : "#/components/examples/client_key_duplicate_partner_key_id"
                   },
@@ -100861,6 +101034,9 @@
                   },
                   "client_key_missing_type" : {
                     "$ref" : "#/components/examples/client_key_missing_type"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "client_key_not_found" : {
                     "$ref" : "#/components/examples/client_key_not_found"
@@ -101594,6 +101770,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"

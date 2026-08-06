@@ -2651,6 +2651,16 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
+      "client_key_name_already_in_use" : {
+        "summary" : "client_key_name_already_in_use",
+        "value" : {
+          "code" : "client_key_name_already_in_use",
+          "http_status_code" : 400,
+          "message" : "Client key name is already used by another client key",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
       "client_key_not_found" : {
         "summary" : "client_key_not_found",
         "value" : {
@@ -47024,6 +47034,9 @@
                   "client_domain_pattern_build_failed" : {
                     "$ref" : "#/components/examples/client_domain_pattern_build_failed"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -48077,6 +48090,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facet_display_name_length_out_of_range" : {
                     "$ref" : "#/components/examples/component_facet_display_name_length_out_of_range"
@@ -49367,6 +49383,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -50859,6 +50878,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -51377,6 +51399,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -52197,6 +52222,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -53093,6 +53121,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -53781,6 +53812,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -54458,6 +54492,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -55413,6 +55450,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -56364,6 +56404,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -56857,6 +56900,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -57559,6 +57605,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -58283,6 +58332,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -58963,6 +59015,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -59671,6 +59726,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -60369,6 +60427,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -61046,6 +61107,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -61737,6 +61801,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -62452,6 +62519,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -63125,6 +63195,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -63803,6 +63876,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -64497,6 +64573,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -65201,6 +65280,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -65878,6 +65960,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -66770,6 +66855,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -67656,6 +67744,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -68623,6 +68714,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -69496,6 +69590,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -70409,6 +70506,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -71693,6 +71793,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -72430,6 +72533,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -73166,6 +73272,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -73905,6 +74014,9 @@
                   },
                   "client_domain_not_found" : {
                     "$ref" : "#/components/examples/client_domain_not_found"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -74651,6 +74763,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -75382,6 +75497,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -76174,6 +76292,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -77025,6 +77146,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -77759,6 +77883,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -78502,6 +78629,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -79237,6 +79367,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -79986,6 +80119,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -80719,6 +80855,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -81461,6 +81600,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -82195,6 +82337,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -82939,6 +83084,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -83698,6 +83846,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -84629,6 +84780,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -85569,6 +85723,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -86501,6 +86658,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -87435,6 +87595,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -88372,6 +88535,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -89293,6 +89459,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -90239,6 +90408,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -91159,6 +91331,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -92545,6 +92720,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -93299,6 +93477,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -94149,6 +94330,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -94824,6 +95008,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -95087,6 +95274,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -95770,6 +95960,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -96458,6 +96651,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -96721,6 +96917,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -116672,6 +116871,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -120482,6 +120684,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -120776,6 +120981,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -121059,6 +121267,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -121345,6 +121556,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -121672,6 +121886,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -121962,6 +122179,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -122289,6 +122509,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -122581,6 +122804,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -122877,6 +123103,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -123253,6 +123482,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -123551,6 +123783,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -123839,6 +124074,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -124159,6 +124397,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -124475,6 +124716,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -124758,6 +125002,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -125052,6 +125299,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -125373,6 +125623,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -125652,6 +125905,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -125937,6 +126193,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -126239,6 +126498,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -126546,6 +126808,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -126829,6 +127094,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -127144,6 +127412,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -127467,6 +127738,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -127788,6 +128062,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -128112,6 +128389,9 @@
                   },
                   "client_domain_not_found" : {
                     "$ref" : "#/components/examples/client_domain_not_found"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -128442,6 +128722,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -128784,6 +129067,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -129108,6 +129394,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -129445,6 +129734,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -129763,6 +130055,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -130079,6 +130374,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -130456,6 +130754,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -130892,6 +131193,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -131223,6 +131527,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -131539,6 +131846,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -131864,6 +132174,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -132188,6 +132501,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -132508,6 +132824,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -132842,6 +133161,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -133171,6 +133493,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -133497,6 +133822,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -133816,6 +134144,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -134138,6 +134469,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -134469,6 +134803,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -134786,6 +135123,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -135115,6 +135455,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
@@ -138811,6 +139154,9 @@
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
+                  },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
                   },
@@ -139221,6 +139567,9 @@
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
+                  },
+                  "client_key_name_already_in_use" : {
+                    "$ref" : "#/components/examples/client_key_name_already_in_use"
                   },
                   "component_facets_not_found" : {
                     "$ref" : "#/components/examples/component_facets_not_found"
