@@ -239427,43 +239427,6 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "97c21b22-64be-498a-b49c-6b8cd1a49c49",
-              "name": "start_batch_job_event_name_required",
-              "originalRequest": {
-                "url": {
-                  "path": ["v6", "jobs"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Content-Type", "value": "<string>" },
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "POST",
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n  \"component_ids\": [\n    \"component_id\"\n  ],\n  \"component_references\": [\n    {\n      \"component_id\": \"component_id\",\n      \"socket_names\": [\n        \"socket_name\"\n      ]\n    }\n  ],\n  \"enabled\": true,\n  \"name\": \"name\",\n  \"tasks\": [\n    {\n      \"component_ids\": [\n        \"component_id\"\n      ],\n      \"component_references\": [\n        {\n          \"component_id\": \"component_id\",\n          \"socket_names\": [\n            \"socket_name\"\n          ]\n        }\n      ],\n      \"expected_headers\": [\n        \"expected_header\"\n      ],\n      \"match_mode\": \"EXACT_SET\",\n      \"on_mismatch\": \"FAIL\",\n      \"order\": 1,\n      \"parent_job_id\": \"parent_job_id\",\n      \"task_type\": \"FILE_HEADER_VALIDATOR\"\n    }\n  ],\n  \"triggers\": [\n    {\n      \"component_ids\": [\n        \"component_id\"\n      ],\n      \"component_references\": [\n        {\n          \"component_id\": \"component_id\",\n          \"socket_names\": [\n            \"socket_name\"\n          ]\n        }\n      ],\n      \"match_type\": \"EXACT\",\n      \"parent_job_id\": \"parent_job_id\",\n      \"pattern\": \"pattern\",\n      \"trigger_type\": \"FILE_NAME_MATCHES\"\n    }\n  ]\n}",
-                  "options": {
-                    "raw": { "headerFamily": "json", "language": "json" }
-                  }
-                }
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
               "id": "7bf6a589-000a-4969-be70-e5895c2d3f35",
               "name": "task_evaluation_failed",
               "originalRequest": {
@@ -244928,43 +244891,6 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "b16b42f6-263e-4c59-81fa-3e254ae0c036",
-              "name": "start_batch_job_event_name_required",
-              "originalRequest": {
-                "url": {
-                  "path": ["v6", "jobs", ":jobId", "tasks"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Content-Type", "value": "<string>" },
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "POST",
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n  \"component_ids\": [\n    \"component_id\"\n  ],\n  \"component_references\": [\n    {\n      \"component_id\": \"component_id\",\n      \"socket_names\": [\n        \"socket_name\"\n      ]\n    }\n  ],\n  \"expected_headers\": [\n    \"expected_header\"\n  ],\n  \"match_mode\": \"EXACT_SET\",\n  \"on_mismatch\": \"FAIL\",\n  \"order\": 1,\n  \"parent_job_id\": \"parent_job_id\",\n  \"task_type\": \"FILE_HEADER_VALIDATOR\"\n}",
-                  "options": {
-                    "raw": { "headerFamily": "json", "language": "json" }
-                  }
-                }
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
               "id": "4a0de66f-fe04-4738-9404-595a826982e5",
               "name": "task_evaluation_failed",
               "originalRequest": {
@@ -247338,43 +247264,6 @@
             {
               "id": "85bad520-ab33-413a-bdb5-d7f3021a1764",
               "name": "start_batch_job_data_source_type_required",
-              "originalRequest": {
-                "url": {
-                  "path": ["v6", "jobs", ":jobId", "tasks", ":taskId"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Content-Type", "value": "<string>" },
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "PUT",
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n  \"component_ids\": [\n    \"component_id\"\n  ],\n  \"component_references\": [\n    {\n      \"component_id\": \"component_id\",\n      \"socket_names\": [\n        \"socket_name\"\n      ]\n    }\n  ],\n  \"expected_headers\": [\n    \"expected_header\"\n  ],\n  \"match_mode\": \"EXACT_SET\",\n  \"on_mismatch\": \"FAIL\",\n  \"order\": 1,\n  \"parent_job_id\": \"parent_job_id\",\n  \"task_type\": \"FILE_HEADER_VALIDATOR\"\n}",
-                  "options": {
-                    "raw": { "headerFamily": "json", "language": "json" }
-                  }
-                }
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "da797399-7d36-4d34-b018-79dc9c475d22",
-              "name": "start_batch_job_event_name_required",
               "originalRequest": {
                 "url": {
                   "path": ["v6", "jobs", ":jobId", "tasks", ":taskId"],
