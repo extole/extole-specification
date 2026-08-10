@@ -5117,7 +5117,7 @@
             },
             "scopes" : {
               "items" : {
-                "enum" : [ "CLIENT_ADMIN", "CLIENT_SUPERUSER", "CONSUMER_PUBLIC" ],
+                "enum" : [ "CLIENT_ADMIN", "CLIENT_SUPERUSER", "CONSUMER_PUBLIC", "USER_SUPPORT" ],
                 "type" : "string"
               },
               "nullable" : true,
@@ -28657,7 +28657,7 @@
             },
             "scopes" : {
               "items" : {
-                "enum" : [ "CLIENT_ADMIN", "CLIENT_SUPERUSER", "CONSUMER_PUBLIC" ],
+                "enum" : [ "CLIENT_ADMIN", "CLIENT_SUPERUSER", "CONSUMER_PUBLIC", "USER_SUPPORT" ],
                 "type" : "string"
               },
               "nullable" : true,
@@ -32546,7 +32546,7 @@
             },
             "scopes" : {
               "items" : {
-                "enum" : [ "CLIENT_ADMIN", "CLIENT_SUPERUSER", "CONSUMER_PUBLIC" ],
+                "enum" : [ "CLIENT_ADMIN", "CLIENT_SUPERUSER", "CONSUMER_PUBLIC", "USER_SUPPORT" ],
                 "type" : "string"
               },
               "nullable" : true,
@@ -36468,7 +36468,7 @@
           },
           "scopes" : {
             "items" : {
-              "enum" : [ "CLIENT_ADMIN", "CLIENT_SUPERUSER", "CONSUMER_PUBLIC" ],
+              "enum" : [ "CLIENT_ADMIN", "CLIENT_SUPERUSER", "CONSUMER_PUBLIC", "USER_SUPPORT" ],
               "type" : "string"
             },
             "type" : "array",
@@ -36534,7 +36534,7 @@
         "properties" : {
           "allowed_scopes" : {
             "items" : {
-              "enum" : [ "CLIENT_ADMIN", "CLIENT_SUPERUSER", "CONSUMER_PUBLIC" ],
+              "enum" : [ "CLIENT_ADMIN", "CLIENT_SUPERUSER", "CONSUMER_PUBLIC", "USER_SUPPORT" ],
               "type" : "string"
             },
             "type" : "array",
@@ -36576,7 +36576,7 @@
           },
           "scopes" : {
             "items" : {
-              "enum" : [ "CLIENT_ADMIN", "CLIENT_SUPERUSER", "CONSUMER_PUBLIC" ],
+              "enum" : [ "CLIENT_ADMIN", "CLIENT_SUPERUSER", "CONSUMER_PUBLIC", "USER_SUPPORT" ],
               "type" : "string"
             },
             "type" : "array",
@@ -36736,7 +36736,7 @@
             "description" : "Scopes the report type may be configured for. Superset of `scopes`.",
             "items" : {
               "description" : "Scopes the report type may be configured for. Superset of `scopes`.",
-              "enum" : [ "CLIENT_ADMIN", "CLIENT_SUPERUSER", "CONSUMER_PUBLIC" ],
+              "enum" : [ "CLIENT_ADMIN", "CLIENT_SUPERUSER", "CONSUMER_PUBLIC", "USER_SUPPORT" ],
               "type" : "string"
             },
             "type" : "array",
@@ -36818,7 +36818,7 @@
             "description" : "Scopes the report type currently applies to (e.g. CLIENT, CAMPAIGN).",
             "items" : {
               "description" : "Scopes the report type currently applies to (e.g. CLIENT, CAMPAIGN).",
-              "enum" : [ "CLIENT_ADMIN", "CLIENT_SUPERUSER", "CONSUMER_PUBLIC" ],
+              "enum" : [ "CLIENT_ADMIN", "CLIENT_SUPERUSER", "CONSUMER_PUBLIC", "USER_SUPPORT" ],
               "type" : "string"
             },
             "type" : "array",
