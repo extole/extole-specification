@@ -7216,10 +7216,13 @@
         }, {
           "properties" : {
             "targeting_attributes" : {
-              "additionalProperties" : {
-                "type" : "string"
+              "items" : {
+                "additionalProperties" : {
+                  "type" : "string"
+                },
+                "type" : "object"
               },
-              "type" : "object"
+              "type" : "array"
             },
             "trigger_type" : {
               "enum" : [ "EVENT_TARGETING" ],
@@ -41724,15 +41727,19 @@
         } ]
       },
       "TargetingAttributesInCampaignControllerTriggerEventTargetingCreateRequest" : {
-        "description" : "Buildtime expression resolving to event-targeting attributes. Required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL.",
+        "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL.",
         "oneOf" : [ {
-          "additionalProperties" : {
-            "description" : "Buildtime expression resolving to event-targeting attributes. Required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL.",
-            "type" : "string"
-          },
           "description" : "Static targeting attributes",
+          "items" : {
+            "additionalProperties" : {
+              "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL.",
+              "type" : "string"
+            },
+            "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL.",
+            "type" : "object"
+          },
           "title" : "Static Value",
-          "type" : "object"
+          "type" : "array"
         }, {
           "description" : "Handlebars expression with [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
           "example" : "handlebars@buildtime:{{targetingAttributes}}",
@@ -41756,14 +41763,19 @@
         } ]
       },
       "TargetingAttributesInCampaignControllerTriggerEventTargetingResponse" : {
-        "description" : "The targeting attributes as configured: a literal value, or an expression (type:string) when defined dynamically.",
+        "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL.",
         "oneOf" : [ {
-          "additionalProperties" : {
-            "type" : "string"
-          },
           "description" : "Literal targeting attributes",
+          "items" : {
+            "additionalProperties" : {
+              "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL.",
+              "type" : "string"
+            },
+            "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL.",
+            "type" : "object"
+          },
           "title" : "Static Value",
-          "type" : "object"
+          "type" : "array"
         }, {
           "description" : "Handlebars expression with [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
           "example" : "handlebars@buildtime:{{targetingAttributes}}",
@@ -41787,15 +41799,19 @@
         } ]
       },
       "TargetingAttributesInCampaignControllerTriggerEventTargetingUpdateRequest" : {
-        "description" : "Buildtime expression resolving to event-targeting attributes. Required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL.",
+        "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL.",
         "oneOf" : [ {
-          "additionalProperties" : {
-            "description" : "Buildtime expression resolving to event-targeting attributes. Required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL.",
-            "type" : "string"
-          },
           "description" : "Static targeting attributes",
+          "items" : {
+            "additionalProperties" : {
+              "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL.",
+              "type" : "string"
+            },
+            "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL.",
+            "type" : "object"
+          },
           "title" : "Static Value",
-          "type" : "object"
+          "type" : "array"
         }, {
           "description" : "Handlebars expression with [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
           "example" : "handlebars@buildtime:{{targetingAttributes}}",
@@ -86640,9 +86656,9 @@
                 "enabled" : true,
                 "negated" : true,
                 "parent_trigger_group_name" : "parent_trigger_group_name",
-                "targeting_attributes" : {
-                  "targeting_attributes_key" : "targeting_attributes_key"
-                },
+                "targeting_attributes" : [ {
+                  "targeting_attribute_key" : "targeting_attribute_key"
+                } ],
                 "trigger_description" : "trigger_description",
                 "trigger_name" : "trigger_name",
                 "trigger_phase" : "MATCHING"
@@ -133700,9 +133716,9 @@
                 "enabled" : true,
                 "negated" : true,
                 "parent_trigger_group_name" : "parent_trigger_group_name",
-                "targeting_attributes" : {
-                  "targeting_attributes_key" : "targeting_attributes_key"
-                },
+                "targeting_attributes" : [ {
+                  "targeting_attribute_key" : "targeting_attribute_key"
+                } ],
                 "trigger_description" : "trigger_description",
                 "trigger_name" : "trigger_name",
                 "trigger_phase" : "MATCHING"
