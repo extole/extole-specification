@@ -6992,13 +6992,16 @@
             "data" : {
               "$ref" : "#/components/schemas/DataMapInBuiltCampaignControllerActionWebhookResponse"
             },
+            "dynamic_data" : {
+              "$ref" : "#/components/schemas/DynamicDataInBuiltCampaignControllerActionWebhookResponse"
+            },
             "webhook_id" : {
               "type" : "string"
             }
           },
           "type" : "object"
         } ],
-        "required" : [ "action_id", "action_type", "component_ids", "component_references", "data", "enabled", "quality", "webhook_id" ],
+        "required" : [ "action_id", "action_type", "component_ids", "component_references", "data", "dynamic_data", "enabled", "quality", "webhook_id" ],
         "type" : "object"
       },
       "BuiltCampaignControllerResponse" : {
@@ -10957,6 +10960,9 @@
           "data" : {
             "$ref" : "#/components/schemas/DataMapInCampaignControllerActionWebhookCreateRequest"
           },
+          "dynamic_data" : {
+            "$ref" : "#/components/schemas/DynamicDataInCampaignControllerActionWebhookCreateRequest"
+          },
           "enabled" : {
             "$ref" : "#/components/schemas/EnabledInCampaignControllerActionWebhookCreateRequest"
           },
@@ -10981,6 +10987,9 @@
             },
             "data" : {
               "$ref" : "#/components/schemas/DataMapInCampaignControllerActionWebhookResponse"
+            },
+            "dynamic_data" : {
+              "$ref" : "#/components/schemas/DynamicDataInCampaignControllerActionWebhookResponse"
             },
             "webhook_id" : {
               "$ref" : "#/components/schemas/WebhookIdInCampaignControllerActionWebhookResponse"
@@ -11007,6 +11016,9 @@
           },
           "data" : {
             "$ref" : "#/components/schemas/DataMapInCampaignControllerActionWebhookUpdateRequest"
+          },
+          "dynamic_data" : {
+            "$ref" : "#/components/schemas/DynamicDataInCampaignControllerActionWebhookUpdateRequest"
           },
           "enabled" : {
             "$ref" : "#/components/schemas/EnabledInCampaignControllerActionWebhookUpdateRequest"
@@ -19066,6 +19078,194 @@
         "example" : "PT42S",
         "pattern" : "^[-+]?P(?:(?:[-+]?[0-9]+D)(?:T(?=(?:[-+]?[0-9]+H|[-+]?[0-9]+M|[-+]?[0-9]+(?:[.,][0-9]*)?S))(?:[-+]?[0-9]+H)?(?:[-+]?[0-9]+M)?(?:[-+]?[0-9]+(?:[.,][0-9]*)?S)?)?|T(?=(?:[-+]?[0-9]+H|[-+]?[0-9]+M|[-+]?[0-9]+(?:[.,][0-9]*)?S))(?:[-+]?[0-9]+H)?(?:[-+]?[0-9]+M)?(?:[-+]?[0-9]+(?:[.,][0-9]*)?S)?)$",
         "type" : "string"
+      },
+      "DynamicDataInBuiltCampaignControllerActionWebhookResponse" : {
+        "description" : "The dynamic data as configured: a literal value, or an expression (type:string) when defined dynamically.",
+        "oneOf" : [ {
+          "additionalProperties" : {
+            "type" : "object"
+          },
+          "description" : "Literal dynamic data",
+          "title" : "Static Value",
+          "type" : "object"
+        }, {
+          "description" : "Handlebars expression with [WebhookActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts).",
+          "example" : "handlebars@runtime:{{dynamicData}}",
+          "externalDocs" : {
+            "description" : "WebhookActionContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts"
+          },
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [WebhookActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('dynamicData');}",
+          "externalDocs" : {
+            "description" : "WebhookActionContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts"
+          },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "DynamicDataInCampaignControllerActionWebhookCreateRequest" : {
+        "description" : "Choose between static or dynamic dynamic data",
+        "oneOf" : [ {
+          "additionalProperties" : {
+            "nullable" : true,
+            "type" : "object"
+          },
+          "description" : "Static dynamic data",
+          "nullable" : true,
+          "title" : "Static Value",
+          "type" : "object"
+        }, {
+          "description" : "Handlebars expression with [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{dynamicData}}",
+          "externalDocs" : {
+            "description" : "ControllerBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('dynamicData');}",
+          "externalDocs" : {
+            "description" : "ControllerBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [WebhookActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts).",
+          "example" : "handlebars@runtime:{{dynamicData}}",
+          "externalDocs" : {
+            "description" : "WebhookActionContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts"
+          },
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [WebhookActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('dynamicData');}",
+          "externalDocs" : {
+            "description" : "WebhookActionContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts"
+          },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "DynamicDataInCampaignControllerActionWebhookResponse" : {
+        "description" : "The dynamic data as configured: a literal value, or an expression (type:string) when defined dynamically.",
+        "oneOf" : [ {
+          "additionalProperties" : {
+            "type" : "object"
+          },
+          "description" : "Literal dynamic data",
+          "title" : "Static Value",
+          "type" : "object"
+        }, {
+          "description" : "Handlebars expression with [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{dynamicData}}",
+          "externalDocs" : {
+            "description" : "ControllerBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('dynamicData');}",
+          "externalDocs" : {
+            "description" : "ControllerBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [WebhookActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts).",
+          "example" : "handlebars@runtime:{{dynamicData}}",
+          "externalDocs" : {
+            "description" : "WebhookActionContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts"
+          },
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [WebhookActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('dynamicData');}",
+          "externalDocs" : {
+            "description" : "WebhookActionContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts"
+          },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "DynamicDataInCampaignControllerActionWebhookUpdateRequest" : {
+        "description" : "Choose between static or dynamic dynamic data",
+        "oneOf" : [ {
+          "additionalProperties" : {
+            "nullable" : true,
+            "type" : "object"
+          },
+          "description" : "Static dynamic data",
+          "nullable" : true,
+          "title" : "Static Value",
+          "type" : "object"
+        }, {
+          "description" : "Handlebars expression with [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{dynamicData}}",
+          "externalDocs" : {
+            "description" : "ControllerBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('dynamicData');}",
+          "externalDocs" : {
+            "description" : "ControllerBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [WebhookActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts).",
+          "example" : "handlebars@runtime:{{dynamicData}}",
+          "externalDocs" : {
+            "description" : "WebhookActionContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts"
+          },
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [WebhookActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('dynamicData');}",
+          "externalDocs" : {
+            "description" : "WebhookActionContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts"
+          },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
       },
       "DynamicReportTypeParameterDetailsRequest" : {
         "allOf" : [ {
@@ -67295,6 +67495,9 @@
                 } ],
                 "data" : {
                   "data_key" : { }
+                },
+                "dynamic_data" : {
+                  "dynamic_data_key" : { }
                 },
                 "enabled" : true,
                 "quality" : "ALWAYS",
@@ -131650,6 +131853,9 @@
                 } ],
                 "data" : {
                   "data_key" : { }
+                },
+                "dynamic_data" : {
+                  "dynamic_data_key" : { }
                 },
                 "enabled" : true,
                 "quality" : "ALWAYS",
