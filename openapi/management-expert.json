@@ -4791,6 +4791,36 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
+      "report_type_schema_context_parameter_invalid" : {
+        "summary" : "report_type_schema_context_parameter_invalid",
+        "value" : {
+          "code" : "report_type_schema_context_parameter_invalid",
+          "http_status_code" : 400,
+          "message" : "Supplied context parameter value is invalid",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "report_type_schema_context_parameter_not_supported" : {
+        "summary" : "report_type_schema_context_parameter_not_supported",
+        "value" : {
+          "code" : "report_type_schema_context_parameter_not_supported",
+          "http_status_code" : 400,
+          "message" : "Report type does not contextualize its schema on the supplied parameters",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "report_type_schema_context_parameter_value_not_found" : {
+        "summary" : "report_type_schema_context_parameter_value_not_found",
+        "value" : {
+          "code" : "report_type_schema_context_parameter_value_not_found",
+          "http_status_code" : 400,
+          "message" : "Supplied context parameter value was not found for this client",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
       "report_type_schema_not_supported" : {
         "summary" : "report_type_schema_not_supported",
         "value" : {
@@ -122881,6 +122911,15 @@
                   "report_type_missing" : {
                     "$ref" : "#/components/examples/report_type_missing"
                   },
+                  "report_type_schema_context_parameter_invalid" : {
+                    "$ref" : "#/components/examples/report_type_schema_context_parameter_invalid"
+                  },
+                  "report_type_schema_context_parameter_not_supported" : {
+                    "$ref" : "#/components/examples/report_type_schema_context_parameter_not_supported"
+                  },
+                  "report_type_schema_context_parameter_value_not_found" : {
+                    "$ref" : "#/components/examples/report_type_schema_context_parameter_value_not_found"
+                  },
                   "report_type_schema_not_supported" : {
                     "$ref" : "#/components/examples/report_type_schema_not_supported"
                   }
@@ -144381,6 +144420,15 @@
                   },
                   "report_type_public_cannot_have_component_references" : {
                     "$ref" : "#/components/examples/report_type_public_cannot_have_component_references"
+                  },
+                  "report_type_schema_context_parameter_invalid" : {
+                    "$ref" : "#/components/examples/report_type_schema_context_parameter_invalid"
+                  },
+                  "report_type_schema_context_parameter_not_supported" : {
+                    "$ref" : "#/components/examples/report_type_schema_context_parameter_not_supported"
+                  },
+                  "report_type_schema_context_parameter_value_not_found" : {
+                    "$ref" : "#/components/examples/report_type_schema_context_parameter_value_not_found"
                   },
                   "report_type_schema_not_supported" : {
                     "$ref" : "#/components/examples/report_type_schema_not_supported"

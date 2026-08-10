@@ -268855,7 +268855,7 @@
           "request": {
             "name": "List report type schemas",
             "description": {
-              "content": "Returns the schema for every report type visible to the calling client whose columns are known ahead of a run. Each entry pairs a `report_type_id` with the ordered `columns` that report type produces. Report types that do not support a schema are omitted from the list. Use this to discover output shapes across report types in one call instead of requesting each schema by id.",
+              "content": "Returns the schema for every report type visible to the calling client whose columns are known ahead of a run. Each entry pairs a `report_type_id` with the ordered `columns` that report type produces. Report types that do not support a schema are omitted from the list. Each entry echoes the `context_parameters` it was resolved against, always the report type's own defaults - post parameter values to a single report type's schema to resolve it against your own context. Use this to discover output shapes across report types in one call instead of requesting each schema by id.",
               "type": "text/plain"
             },
             "url": {
@@ -269449,6 +269449,96 @@
             {
               "id": "bdd96004-0c8f-4eea-b9ac-6a79b8a91c50",
               "name": "report_type_missing",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "5ceb5a3d-843a-426a-9253-cd8940e5dddb",
+              "name": "report_type_schema_context_parameter_invalid",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "495f340e-9a94-4002-8621-c25d46533dc3",
+              "name": "report_type_schema_context_parameter_not_supported",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "cafa9fd7-feb3-4d36-a9ce-6f2bf3c6ab46",
+              "name": "report_type_schema_context_parameter_value_not_found",
               "originalRequest": {
                 "url": {
                   "path": ["v6", "report-types", ":id"],
@@ -270618,7 +270708,7 @@
           "request": {
             "name": "Get report type schema",
             "description": {
-              "content": "Returns the schema a report type produces - the ordered `columns` that appear in its output. For report types with fixed columns, these are the report type's preview columns. For configurable report types, they are the client-named columns defined by the report type's column mapping parameters. Use this to discover a report type's output shape without running the report.",
+              "content": "Returns the schema a report type produces - the ordered `columns` that appear in its output. For report types with fixed columns, these are the report type's preview columns. For configurable report types, they are the client-named columns defined by the report type's column mapping parameters. Report types whose columns depend on the client's own configuration resolve them against the report type's declared parameter defaults, which the response echoes as `context_parameters`. To resolve the columns against your own parameter values instead, post them to this same path. Use this to discover a report type's output shape without running the report.",
               "type": "text/plain"
             },
             "url": {
@@ -270645,8 +270735,8 @@
           },
           "response": [
             {
-              "id": "8d665b4c-f63d-447e-9094-581d2f4c7a48",
-              "name": "Schema the report type produces, as an ordered, non-empty list of output columns.",
+              "id": "66ed8dc6-5fe8-419c-9ba4-8b362167f106",
+              "name": "Schema the report type produces, as an ordered, non-empty list of output columns, alongside the parameter values it was resolved against.",
               "originalRequest": {
                 "url": {
                   "path": ["v6", "report-types", ":id", "schema"],
@@ -270967,6 +271057,569 @@
                 ],
                 "method": "GET",
                 "body": {}
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        },
+        {
+          "id": "0bf34cfa-18ae-468a-91f4-e782d2b9241b",
+          "name": "Get report type schema for a context",
+          "request": {
+            "name": "Get report type schema for a context",
+            "description": {
+              "content": "Returns the schema a report type produces for the supplied report parameter values - the ordered `columns` that appear in its output. Persists nothing. The columns returned are the columns the report emits when run with those same values, so a client can learn its output shape before running it. Only parameters the report type contextualizes its schema on are accepted, and supplying any other is rejected. The response echoes the effective parameter values used to resolve the schema. Parameters left out resolve to the report type's own defaults rather than making the answer partial.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": ["v6", "report-types", ":id", "schema"],
+              "host": ["{{baseUrl}}"],
+              "query": [],
+              "variable": [
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) The Extole unique report type identifier.",
+                    "type": "text/plain"
+                  }
+                }
+              ]
+            },
+            "header": [
+              { "key": "Content-Type", "value": "<string>" },
+              { "key": "Accept", "value": "<string>" }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"parameters\": {\n    \"parameters_key\": \"parameters_key\"\n  }\n}",
+              "options": {
+                "raw": { "headerFamily": "json", "language": "json" }
+              }
+            },
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "756403dc-5e2c-4d3e-89d9-0eb9681e7edf",
+              "name": "Schema the report type produces for the supplied context, as an ordered, non-empty list of output columns, alongside the parameter values it was resolved against.",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "schema"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"parameters\": {\n    \"parameters_key\": \"parameters_key\"\n  }\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3d14d11c-c48f-43fc-a3ed-b262c3e9b86b",
+              "name": "report_type_missing",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "schema"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"parameters\": {\n    \"parameters_key\": \"parameters_key\"\n  }\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "58c97a11-5730-4233-ada0-4aa1e3b96ae7",
+              "name": "report_type_schema_context_parameter_invalid",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "schema"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"parameters\": {\n    \"parameters_key\": \"parameters_key\"\n  }\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f6873380-f74f-4224-9641-e4f949840efe",
+              "name": "report_type_schema_context_parameter_not_supported",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "schema"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"parameters\": {\n    \"parameters_key\": \"parameters_key\"\n  }\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3c26ad8f-c3b5-4513-91d2-de06102333be",
+              "name": "report_type_schema_context_parameter_value_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "schema"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"parameters\": {\n    \"parameters_key\": \"parameters_key\"\n  }\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "9f2b2b9c-f0d3-4260-a8b0-4690ce59adde",
+              "name": "report_type_schema_not_supported",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "schema"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"parameters\": {\n    \"parameters_key\": \"parameters_key\"\n  }\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "5b48d217-60f6-470d-8fec-e18a24937ea8",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "schema"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"parameters\": {\n    \"parameters_key\": \"parameters_key\"\n  }\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "898f48ed-c07d-4eff-91ff-0460cae65f0e",
+              "name": "Payment Required",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "schema"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"parameters\": {\n    \"parameters_key\": \"parameters_key\"\n  }\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Payment Required",
+              "code": 402,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "76e5fe94-1e6e-4f56-b685-d3f886f29730",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "schema"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"parameters\": {\n    \"parameters_key\": \"parameters_key\"\n  }\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "6c2b8cdc-f744-4c59-8f0a-a111b1510963",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "schema"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"parameters\": {\n    \"parameters_key\": \"parameters_key\"\n  }\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "79365f98-471d-4d01-a61b-51584065afec",
+              "name": "missing_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "schema"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"parameters\": {\n    \"parameters_key\": \"parameters_key\"\n  }\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "8a27f0f1-f137-49fd-b3ac-ff6aac1cbac9",
+              "name": "Report type was not found. The supplied id does not match any report type accessible to the calling client.",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "schema"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"parameters\": {\n    \"parameters_key\": \"parameters_key\"\n  }\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "0038cef8-105a-482d-b84c-5fba03774daa",
+              "name": "Unsupported Media Type",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "schema"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"parameters\": {\n    \"parameters_key\": \"parameters_key\"\n  }\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Unsupported Media Type",
+              "code": 415,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "083d75e5-bff7-4382-a89d-def59089639e",
+              "name": "Too Many Requests",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "schema"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"parameters\": {\n    \"parameters_key\": \"parameters_key\"\n  }\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
               },
               "status": "Too Many Requests",
               "code": 429,
