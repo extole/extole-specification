@@ -8496,7 +8496,7 @@
             "type" : "string"
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           },
           "values" : {
@@ -8518,7 +8518,7 @@
             "type" : "string"
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           }
         },
@@ -8874,6 +8874,7 @@
             "STRING" : "#/components/schemas/BuiltCampaignComponentVariableResponseAsString",
             "STRING_LIST" : "#/components/schemas/BuiltCampaignComponentVariableResponseAsStringList",
             "STRING_MAP" : "#/components/schemas/BuiltComponentStringMapVariableResponse",
+            "TRIGGER_CONFIGURATION" : "#/components/schemas/BuiltComponentTriggerConfigurationVariableResponse",
             "URL" : "#/components/schemas/BuiltCampaignComponentVariableResponseAsUrl",
             "WEBHOOK_ID" : "#/components/schemas/BuiltCampaignComponentVariableResponseAsWebhookId"
           },
@@ -8948,6 +8949,8 @@
         }, {
           "$ref" : "#/components/schemas/BuiltComponentStringMapVariableResponse"
         }, {
+          "$ref" : "#/components/schemas/BuiltComponentTriggerConfigurationVariableResponse"
+        }, {
           "$ref" : "#/components/schemas/BuiltCampaignComponentVariableResponseAsUrl"
         }, {
           "$ref" : "#/components/schemas/BuiltCampaignComponentVariableResponseAsWebhookId"
@@ -8973,7 +8976,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           },
           "values" : {
@@ -9015,7 +9018,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           },
           "values" : {
@@ -12608,6 +12611,42 @@
         "required" : [ "allowed_keys", "description", "display_name", "name", "priority", "source", "source_component_id", "source_version", "tags", "type", "values" ],
         "type" : "object"
       },
+      "BuiltComponentTriggerConfigurationVariableResponse" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/BuiltCampaignComponentSettingResponseBase"
+        }, {
+          "properties" : {
+            "allowed_keys" : {
+              "description" : "The keys the trigger configuration map's values are restricted to. Empty allows any key.",
+              "items" : {
+                "type" : "string"
+              },
+              "type" : "array"
+            },
+            "description" : {
+              "type" : "string"
+            },
+            "source" : {
+              "enum" : [ "INHERITED", "LOCAL", "PARAMETER" ],
+              "type" : "string"
+            },
+            "source_component_id" : {
+              "type" : "string"
+            },
+            "source_version" : {
+              "format" : "int32",
+              "type" : "integer"
+            },
+            "type" : {
+              "enum" : [ "TRIGGER_CONFIGURATION" ],
+              "type" : "string"
+            }
+          },
+          "type" : "object"
+        } ],
+        "required" : [ "allowed_keys", "description", "display_name", "name", "priority", "source", "source_component_id", "source_version", "tags", "type", "values" ],
+        "type" : "object"
+      },
       "BuiltCustomRewardSupplierResponse" : {
         "allOf" : [ {
           "$ref" : "#/components/schemas/BuiltRewardSupplierResponseBase"
@@ -15165,6 +15204,7 @@
             "STRING" : "#/components/schemas/CampaignComponentVariableRequestAsString",
             "STRING_LIST" : "#/components/schemas/CampaignComponentVariableRequestAsStringList",
             "STRING_MAP" : "#/components/schemas/CampaignComponentStringMapVariableRequest",
+            "TRIGGER_CONFIGURATION" : "#/components/schemas/CampaignComponentTriggerConfigurationVariableRequest",
             "URL" : "#/components/schemas/CampaignComponentVariableRequestAsUrl",
             "WEBHOOK_ID" : "#/components/schemas/CampaignComponentVariableRequestAsWebhookId"
           },
@@ -15239,6 +15279,8 @@
         }, {
           "$ref" : "#/components/schemas/CampaignComponentStringMapVariableRequest"
         }, {
+          "$ref" : "#/components/schemas/CampaignComponentTriggerConfigurationVariableRequest"
+        }, {
           "$ref" : "#/components/schemas/CampaignComponentVariableRequestAsUrl"
         }, {
           "$ref" : "#/components/schemas/CampaignComponentVariableRequestAsWebhookId"
@@ -15264,7 +15306,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           }
         },
@@ -15307,6 +15349,7 @@
             "STRING" : "#/components/schemas/CampaignComponentVariableResponseAsString",
             "STRING_LIST" : "#/components/schemas/CampaignComponentVariableResponseAsStringList",
             "STRING_MAP" : "#/components/schemas/CampaignComponentStringMapVariableResponse",
+            "TRIGGER_CONFIGURATION" : "#/components/schemas/CampaignComponentTriggerConfigurationVariableResponse",
             "URL" : "#/components/schemas/CampaignComponentVariableResponseAsUrl",
             "WEBHOOK_ID" : "#/components/schemas/CampaignComponentVariableResponseAsWebhookId"
           },
@@ -15381,6 +15424,8 @@
         }, {
           "$ref" : "#/components/schemas/CampaignComponentStringMapVariableResponse"
         }, {
+          "$ref" : "#/components/schemas/CampaignComponentTriggerConfigurationVariableResponse"
+        }, {
           "$ref" : "#/components/schemas/CampaignComponentVariableResponseAsUrl"
         }, {
           "$ref" : "#/components/schemas/CampaignComponentVariableResponseAsWebhookId"
@@ -15409,7 +15454,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           }
         },
@@ -15453,6 +15498,7 @@
             "STRING" : "#/components/schemas/CampaignComponentVariableUpdateRequestAsString",
             "STRING_LIST" : "#/components/schemas/CampaignComponentVariableUpdateRequestAsStringList",
             "STRING_MAP" : "#/components/schemas/CampaignComponentStringMapVariableUpdateRequest",
+            "TRIGGER_CONFIGURATION" : "#/components/schemas/CampaignComponentTriggerConfigurationVariableUpdateRequest",
             "URL" : "#/components/schemas/CampaignComponentVariableUpdateRequestAsUrl",
             "WEBHOOK_ID" : "#/components/schemas/CampaignComponentVariableUpdateRequestAsWebhookId"
           },
@@ -15527,6 +15573,8 @@
         }, {
           "$ref" : "#/components/schemas/CampaignComponentStringMapVariableUpdateRequest"
         }, {
+          "$ref" : "#/components/schemas/CampaignComponentTriggerConfigurationVariableUpdateRequest"
+        }, {
           "$ref" : "#/components/schemas/CampaignComponentVariableUpdateRequestAsUrl"
         }, {
           "$ref" : "#/components/schemas/CampaignComponentVariableUpdateRequestAsWebhookId"
@@ -15553,7 +15601,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           }
         },
@@ -15902,6 +15950,114 @@
         "required" : [ "type" ],
         "type" : "object"
       },
+      "CampaignComponentTriggerConfigurationVariableRequest" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/CampaignComponentSettingRequestBase"
+        }, {
+          "properties" : {
+            "allowed_keys" : {
+              "description" : "The keys the trigger configuration map's values are restricted to. Empty allows any key.",
+              "items" : {
+                "type" : "string"
+              },
+              "type" : "array"
+            },
+            "description" : {
+              "$ref" : "#/components/schemas/DescriptionInCampaignComponentTriggerConfigurationVariableRequest"
+            },
+            "source" : {
+              "enum" : [ "INHERITED", "LOCAL", "PARAMETER" ],
+              "type" : "string"
+            },
+            "type" : {
+              "enum" : [ "TRIGGER_CONFIGURATION" ],
+              "type" : "string"
+            },
+            "values" : {
+              "$ref" : "#/components/schemas/ComponentSettingVariableValues"
+            }
+          },
+          "type" : "object"
+        } ],
+        "required" : [ "name", "type" ],
+        "type" : "object"
+      },
+      "CampaignComponentTriggerConfigurationVariableResponse" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/CampaignComponentSettingResponseBase"
+        }, {
+          "properties" : {
+            "allowed_keys" : {
+              "description" : "The keys the trigger configuration map's values are restricted to. Empty allows any key.",
+              "items" : {
+                "type" : "string"
+              },
+              "type" : "array"
+            },
+            "source" : {
+              "enum" : [ "INHERITED", "LOCAL", "PARAMETER" ],
+              "type" : "string"
+            },
+            "type" : {
+              "enum" : [ "TRIGGER_CONFIGURATION" ],
+              "type" : "string"
+            },
+            "values" : {
+              "additionalProperties" : true,
+              "description" : "Open map of setting values keyed by value key. There is no fixed or maximum number of keys. Any string key may be present; each value uses the same shape for this setting's `type`. The properties listed here are common examples only and are not required.",
+              "properties" : {
+                "default" : {
+                  "$ref" : "#/components/schemas/DefaultInComponentSettingVariableValuesOpenApiDocumentation"
+                },
+                "en" : {
+                  "$ref" : "#/components/schemas/EnInComponentSettingVariableValuesOpenApiDocumentation"
+                }
+              },
+              "type" : "object"
+            }
+          },
+          "type" : "object"
+        } ],
+        "description" : "Stored campaign component trigger configuration variable definition. Field `description` is unevaluated and appears in buildtime-evaluatable form.",
+        "required" : [ "allowed_keys", "description", "display_name", "name", "priority", "source", "tags", "type", "values" ],
+        "type" : "object"
+      },
+      "CampaignComponentTriggerConfigurationVariableUpdateRequest" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/CampaignComponentSettingUpdateRequestBase"
+        }, {
+          "properties" : {
+            "allowed_keys" : {
+              "description" : "The keys the trigger configuration map's values are restricted to. Empty allows any key.",
+              "items" : {
+                "type" : "string"
+              },
+              "type" : "array"
+            },
+            "description" : {
+              "$ref" : "#/components/schemas/DescriptionInCampaignComponentTriggerConfigurationVariableUpdateRequest"
+            },
+            "display_name" : {
+              "nullable" : true,
+              "type" : "string"
+            },
+            "source" : {
+              "enum" : [ "INHERITED", "LOCAL", "PARAMETER" ],
+              "type" : "string"
+            },
+            "type" : {
+              "enum" : [ "TRIGGER_CONFIGURATION" ],
+              "type" : "string"
+            },
+            "values" : {
+              "$ref" : "#/components/schemas/ComponentSettingVariableValues"
+            }
+          },
+          "type" : "object"
+        } ],
+        "required" : [ "type" ],
+        "type" : "object"
+      },
       "CampaignComponentVariableRequest" : {
         "properties" : {
           "description" : {
@@ -15929,7 +16085,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           },
           "values" : {
@@ -16564,7 +16720,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           },
           "values" : {
@@ -24915,6 +25071,64 @@
         } ]
       },
       "DescriptionInCampaignComponentStringMapVariableUpdateRequest" : {
+        "description" : "Choose between static or dynamic description",
+        "oneOf" : [ {
+          "description" : "Static description",
+          "nullable" : true,
+          "title" : "Static Value",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [VariableDescriptionBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{description}}",
+          "externalDocs" : {
+            "description" : "VariableDescriptionBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [VariableDescriptionBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('description');}",
+          "externalDocs" : {
+            "description" : "VariableDescriptionBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "DescriptionInCampaignComponentTriggerConfigurationVariableRequest" : {
+        "description" : "Choose between static or dynamic description",
+        "oneOf" : [ {
+          "description" : "Static description",
+          "nullable" : true,
+          "title" : "Static Value",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [VariableDescriptionBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{description}}",
+          "externalDocs" : {
+            "description" : "VariableDescriptionBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [VariableDescriptionBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('description');}",
+          "externalDocs" : {
+            "description" : "VariableDescriptionBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "DescriptionInCampaignComponentTriggerConfigurationVariableUpdateRequest" : {
         "description" : "Choose between static or dynamic description",
         "oneOf" : [ {
           "description" : "Static description",
