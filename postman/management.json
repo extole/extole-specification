@@ -246689,7 +246689,7 @@
           "request": {
             "name": "List tasks",
             "description": {
-              "content": "Returns all tasks for the specified job, sorted by order.",
+              "content": "Returns all tasks for the specified job, sorted by order. Unattached tasks have no order relative to each other.",
               "type": "text/plain"
             },
             "url": {
@@ -246703,7 +246703,7 @@
                   "key": "jobId",
                   "disabled": false,
                   "description": {
-                    "content": "(Required) ",
+                    "content": "(Required) The unique identifier of the job that owns the task. Use the reserved value `unattached` to address tasks that are not attached to any job, which happens when a component defines a task whose `parent_job_id` expression evaluates to nothing.",
                     "type": "text/plain"
                   }
                 }
@@ -247085,7 +247085,7 @@
           "request": {
             "name": "Add a task",
             "description": {
-              "content": "Adds a task to the specified job. Order defaults to max+1 when omitted.",
+              "content": "Adds a task to the specified job. Order defaults to max+1 when omitted. A task added under `unattached` is stored without a job. When order is omitted it defaults to 0; when provided, the requested order is stored until the task is attached to a job.",
               "type": "text/plain"
             },
             "url": {
@@ -247099,7 +247099,7 @@
                   "key": "jobId",
                   "disabled": false,
                   "description": {
-                    "content": "(Required) ",
+                    "content": "(Required) The unique identifier of the job that owns the task. Use the reserved value `unattached` to address tasks that are not attached to any job, which happens when a component defines a task whose `parent_job_id` expression evaluates to nothing.",
                     "type": "text/plain"
                   }
                 }
@@ -248994,7 +248994,7 @@
                   "key": "jobId",
                   "disabled": false,
                   "description": {
-                    "content": "(Required) ",
+                    "content": "(Required) The unique identifier of the job that owns the task. Use the reserved value `unattached` to address tasks that are not attached to any job, which happens when a component defines a task whose `parent_job_id` expression evaluates to nothing.",
                     "type": "text/plain"
                   }
                 },
@@ -249460,7 +249460,7 @@
                   "key": "jobId",
                   "disabled": false,
                   "description": {
-                    "content": "(Required) ",
+                    "content": "(Required) The unique identifier of the job that owns the task. Use the reserved value `unattached` to address tasks that are not attached to any job, which happens when a component defines a task whose `parent_job_id` expression evaluates to nothing.",
                     "type": "text/plain"
                   }
                 },
@@ -251388,7 +251388,7 @@
           "request": {
             "name": "Delete a task",
             "description": {
-              "content": "Soft-deletes the task and compacts remaining order values.",
+              "content": "Soft-deletes the task and compacts remaining order values. Deleting an unattached task leaves other tasks untouched.",
               "type": "text/plain"
             },
             "url": {
@@ -251402,7 +251402,7 @@
                   "key": "jobId",
                   "disabled": false,
                   "description": {
-                    "content": "(Required) ",
+                    "content": "(Required) The unique identifier of the job that owns the task. Use the reserved value `unattached` to address tasks that are not attached to any job, which happens when a component defines a task whose `parent_job_id` expression evaluates to nothing.",
                     "type": "text/plain"
                   }
                 },
@@ -251868,7 +251868,7 @@
                   "key": "jobId",
                   "disabled": false,
                   "description": {
-                    "content": "(Required) ",
+                    "content": "(Required) The unique identifier of the job that owns the trigger. Use the reserved value `unattached` to address triggers that are not attached to any job, which happens when a component defines a trigger whose `parent_job_id` expression evaluates to nothing.",
                     "type": "text/plain"
                   }
                 }
@@ -252250,7 +252250,7 @@
           "request": {
             "name": "Add a trigger",
             "description": {
-              "content": "Adds a trigger to the specified job.",
+              "content": "Adds a trigger to the specified job. A trigger added under `unattached` is stored without a job and does not fire until it is attached to a job.",
               "type": "text/plain"
             },
             "url": {
@@ -252264,7 +252264,7 @@
                   "key": "jobId",
                   "disabled": false,
                   "description": {
-                    "content": "(Required) ",
+                    "content": "(Required) The unique identifier of the job that owns the trigger. Use the reserved value `unattached` to address triggers that are not attached to any job, which happens when a component defines a trigger whose `parent_job_id` expression evaluates to nothing.",
                     "type": "text/plain"
                   }
                 }
@@ -254085,7 +254085,7 @@
                   "key": "jobId",
                   "disabled": false,
                   "description": {
-                    "content": "(Required) ",
+                    "content": "(Required) The unique identifier of the job that owns the trigger. Use the reserved value `unattached` to address triggers that are not attached to any job, which happens when a component defines a trigger whose `parent_job_id` expression evaluates to nothing.",
                     "type": "text/plain"
                   }
                 },
@@ -254521,7 +254521,7 @@
                   "key": "jobId",
                   "disabled": false,
                   "description": {
-                    "content": "(Required) ",
+                    "content": "(Required) The unique identifier of the job that owns the trigger. Use the reserved value `unattached` to address triggers that are not attached to any job, which happens when a component defines a trigger whose `parent_job_id` expression evaluates to nothing.",
                     "type": "text/plain"
                   }
                 },
@@ -256389,7 +256389,7 @@
                   "key": "jobId",
                   "disabled": false,
                   "description": {
-                    "content": "(Required) ",
+                    "content": "(Required) The unique identifier of the job that owns the trigger. Use the reserved value `unattached` to address triggers that are not attached to any job, which happens when a component defines a trigger whose `parent_job_id` expression evaluates to nothing.",
                     "type": "text/plain"
                   }
                 },
