@@ -8496,7 +8496,7 @@
             "type" : "string"
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           },
           "values" : {
@@ -8518,7 +8518,7 @@
             "type" : "string"
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           }
         },
@@ -8852,6 +8852,7 @@
             "COMPONENT_ID" : "#/components/schemas/BuiltComponentComponentIdVariableResponse",
             "COMPONENT_SETTING_LOOKUP" : "#/components/schemas/BuiltComponentComponentSettingLookupVariableResponse",
             "CSS" : "#/components/schemas/BuiltCampaignComponentVariableResponseAsCss",
+            "DATE_TIME" : "#/components/schemas/BuiltCampaignComponentVariableResponseAsDateTime",
             "DELAY" : "#/components/schemas/BuiltCampaignComponentVariableResponseAsDelay",
             "DELAY_LIST" : "#/components/schemas/BuiltCampaignComponentVariableResponseAsDelayList",
             "ENUM" : "#/components/schemas/BuiltComponentEnumVariableResponse",
@@ -8904,6 +8905,8 @@
           "$ref" : "#/components/schemas/BuiltComponentComponentSettingLookupVariableResponse"
         }, {
           "$ref" : "#/components/schemas/BuiltCampaignComponentVariableResponseAsCss"
+        }, {
+          "$ref" : "#/components/schemas/BuiltCampaignComponentVariableResponseAsDateTime"
         }, {
           "$ref" : "#/components/schemas/BuiltCampaignComponentVariableResponseAsDelay"
         }, {
@@ -8976,7 +8979,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           },
           "values" : {
@@ -9018,7 +9021,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           },
           "values" : {
@@ -9272,6 +9275,34 @@
             },
             "type" : {
               "enum" : [ "CSS" ],
+              "type" : "string"
+            }
+          },
+          "type" : "object"
+        } ],
+        "type" : "object"
+      },
+      "BuiltCampaignComponentVariableResponseAsDateTime" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/BuiltCampaignComponentSettingResponseBase"
+        }, {
+          "properties" : {
+            "description" : {
+              "type" : "string"
+            },
+            "source" : {
+              "enum" : [ "INHERITED", "LOCAL", "PARAMETER" ],
+              "type" : "string"
+            },
+            "source_component_id" : {
+              "type" : "string"
+            },
+            "source_version" : {
+              "format" : "int32",
+              "type" : "integer"
+            },
+            "type" : {
+              "enum" : [ "DATE_TIME" ],
               "type" : "string"
             }
           },
@@ -15182,6 +15213,7 @@
             "COMPONENT_ID" : "#/components/schemas/CampaignComponentComponentIdVariableRequest",
             "COMPONENT_SETTING_LOOKUP" : "#/components/schemas/CampaignComponentComponentSettingLookupVariableRequest",
             "CSS" : "#/components/schemas/CampaignComponentVariableRequestAsCss",
+            "DATE_TIME" : "#/components/schemas/CampaignComponentVariableRequestAsDateTime",
             "DELAY" : "#/components/schemas/CampaignComponentVariableRequestAsDelay",
             "DELAY_LIST" : "#/components/schemas/CampaignComponentVariableRequestAsDelayList",
             "ENUM" : "#/components/schemas/CampaignComponentEnumVariableRequest",
@@ -15234,6 +15266,8 @@
           "$ref" : "#/components/schemas/CampaignComponentComponentSettingLookupVariableRequest"
         }, {
           "$ref" : "#/components/schemas/CampaignComponentVariableRequestAsCss"
+        }, {
+          "$ref" : "#/components/schemas/CampaignComponentVariableRequestAsDateTime"
         }, {
           "$ref" : "#/components/schemas/CampaignComponentVariableRequestAsDelay"
         }, {
@@ -15306,7 +15340,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           }
         },
@@ -15327,6 +15361,7 @@
             "COMPONENT_ID" : "#/components/schemas/CampaignComponentComponentIdVariableResponse",
             "COMPONENT_SETTING_LOOKUP" : "#/components/schemas/CampaignComponentComponentSettingLookupVariableResponse",
             "CSS" : "#/components/schemas/CampaignComponentVariableResponseAsCss",
+            "DATE_TIME" : "#/components/schemas/CampaignComponentVariableResponseAsDateTime",
             "DELAY" : "#/components/schemas/CampaignComponentVariableResponseAsDelay",
             "DELAY_LIST" : "#/components/schemas/CampaignComponentVariableResponseAsDelayList",
             "ENUM" : "#/components/schemas/CampaignComponentEnumVariableResponse",
@@ -15379,6 +15414,8 @@
           "$ref" : "#/components/schemas/CampaignComponentComponentSettingLookupVariableResponse"
         }, {
           "$ref" : "#/components/schemas/CampaignComponentVariableResponseAsCss"
+        }, {
+          "$ref" : "#/components/schemas/CampaignComponentVariableResponseAsDateTime"
         }, {
           "$ref" : "#/components/schemas/CampaignComponentVariableResponseAsDelay"
         }, {
@@ -15454,7 +15491,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           }
         },
@@ -15476,6 +15513,7 @@
             "COMPONENT_ID" : "#/components/schemas/CampaignComponentComponentIdVariableUpdateRequest",
             "COMPONENT_SETTING_LOOKUP" : "#/components/schemas/CampaignComponentComponentSettingLookupVariableUpdateRequest",
             "CSS" : "#/components/schemas/CampaignComponentVariableUpdateRequestAsCss",
+            "DATE_TIME" : "#/components/schemas/CampaignComponentVariableUpdateRequestAsDateTime",
             "DELAY" : "#/components/schemas/CampaignComponentVariableUpdateRequestAsDelay",
             "DELAY_LIST" : "#/components/schemas/CampaignComponentVariableUpdateRequestAsDelayList",
             "ENUM" : "#/components/schemas/CampaignComponentEnumVariableUpdateRequest",
@@ -15528,6 +15566,8 @@
           "$ref" : "#/components/schemas/CampaignComponentComponentSettingLookupVariableUpdateRequest"
         }, {
           "$ref" : "#/components/schemas/CampaignComponentVariableUpdateRequestAsCss"
+        }, {
+          "$ref" : "#/components/schemas/CampaignComponentVariableUpdateRequestAsDateTime"
         }, {
           "$ref" : "#/components/schemas/CampaignComponentVariableUpdateRequestAsDelay"
         }, {
@@ -15601,7 +15641,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           }
         },
@@ -16085,7 +16125,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           },
           "values" : {
@@ -16304,6 +16344,30 @@
             },
             "values" : {
               "$ref" : "#/components/schemas/ComponentSettingVariableValuesAsCss"
+            }
+          },
+          "type" : "object"
+        } ],
+        "type" : "object"
+      },
+      "CampaignComponentVariableRequestAsDateTime" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/CampaignComponentSettingRequestBase"
+        }, {
+          "properties" : {
+            "description" : {
+              "$ref" : "#/components/schemas/DescriptionInCampaignComponentVariableRequestAsDateTime"
+            },
+            "source" : {
+              "enum" : [ "INHERITED", "LOCAL", "PARAMETER" ],
+              "type" : "string"
+            },
+            "type" : {
+              "enum" : [ "DATE_TIME" ],
+              "type" : "string"
+            },
+            "values" : {
+              "$ref" : "#/components/schemas/ComponentSettingVariableValuesAsDateTime"
             }
           },
           "type" : "object"
@@ -16720,7 +16784,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           },
           "values" : {
@@ -16988,6 +17052,37 @@
             },
             "type" : {
               "enum" : [ "CSS" ],
+              "type" : "string"
+            },
+            "values" : {
+              "additionalProperties" : true,
+              "description" : "Open map of setting values keyed by value key. There is no fixed or maximum number of keys. Any string key may be present; each value uses the same shape for this setting's `type`. The properties listed here are common examples only and are not required.",
+              "properties" : {
+                "default" : {
+                  "$ref" : "#/components/schemas/DefaultInComponentSettingVariableValuesOpenApiDocumentation"
+                },
+                "en" : {
+                  "$ref" : "#/components/schemas/EnInComponentSettingVariableValuesOpenApiDocumentation"
+                }
+              },
+              "type" : "object"
+            }
+          },
+          "type" : "object"
+        } ],
+        "type" : "object"
+      },
+      "CampaignComponentVariableResponseAsDateTime" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/CampaignComponentSettingResponseBase"
+        }, {
+          "properties" : {
+            "source" : {
+              "enum" : [ "INHERITED", "LOCAL", "PARAMETER" ],
+              "type" : "string"
+            },
+            "type" : {
+              "enum" : [ "DATE_TIME" ],
               "type" : "string"
             },
             "values" : {
@@ -17714,6 +17809,30 @@
             },
             "values" : {
               "$ref" : "#/components/schemas/ComponentSettingVariableValuesAsCss"
+            }
+          },
+          "type" : "object"
+        } ],
+        "type" : "object"
+      },
+      "CampaignComponentVariableUpdateRequestAsDateTime" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/CampaignComponentSettingUpdateRequestBase"
+        }, {
+          "properties" : {
+            "description" : {
+              "$ref" : "#/components/schemas/DescriptionInCampaignComponentVariableUpdateRequestAsDateTime"
+            },
+            "source" : {
+              "enum" : [ "INHERITED", "LOCAL", "PARAMETER" ],
+              "type" : "string"
+            },
+            "type" : {
+              "enum" : [ "DATE_TIME" ],
+              "type" : "string"
+            },
+            "values" : {
+              "$ref" : "#/components/schemas/ComponentSettingVariableValuesAsDateTime"
             }
           },
           "type" : "object"
@@ -22268,6 +22387,12 @@
         },
         "type" : "object"
       },
+      "ComponentSettingVariableValuesAsDateTime" : {
+        "additionalProperties" : {
+          "$ref" : "#/components/schemas/ValuesInCampaignComponentVariableRequestAsDateTime"
+        },
+        "type" : "object"
+      },
       "ComponentSettingVariableValuesAsDelay" : {
         "additionalProperties" : {
           "$ref" : "#/components/schemas/ValuesInCampaignComponentVariableRequestAsDelay"
@@ -25447,6 +25572,35 @@
           "type" : "string"
         } ]
       },
+      "DescriptionInCampaignComponentVariableRequestAsDateTime" : {
+        "description" : "Choose between static or dynamic description",
+        "oneOf" : [ {
+          "description" : "Static description",
+          "nullable" : true,
+          "title" : "Static Value",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [VariableDescriptionBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{description}}",
+          "externalDocs" : {
+            "description" : "VariableDescriptionBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [VariableDescriptionBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('description');}",
+          "externalDocs" : {
+            "description" : "VariableDescriptionBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        } ]
+      },
       "DescriptionInCampaignComponentVariableRequestAsDelay" : {
         "description" : "Choose between static or dynamic description",
         "oneOf" : [ {
@@ -26172,6 +26326,35 @@
         } ]
       },
       "DescriptionInCampaignComponentVariableUpdateRequestAsCss" : {
+        "description" : "Choose between static or dynamic description",
+        "oneOf" : [ {
+          "description" : "Static description",
+          "nullable" : true,
+          "title" : "Static Value",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [VariableDescriptionBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{description}}",
+          "externalDocs" : {
+            "description" : "VariableDescriptionBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [VariableDescriptionBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('description');}",
+          "externalDocs" : {
+            "description" : "VariableDescriptionBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "DescriptionInCampaignComponentVariableUpdateRequestAsDateTime" : {
         "description" : "Choose between static or dynamic description",
         "oneOf" : [ {
           "description" : "Static description",
@@ -49718,6 +49901,46 @@
         } ]
       },
       "ValuesInCampaignComponentVariableRequestAsCss" : {
+        "description" : "Choose between static or dynamic values",
+        "oneOf" : [ {
+          "description" : "Static values",
+          "title" : "Static Value",
+          "type" : "object"
+        }, {
+          "description" : "Handlebars expression with [VariableBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{values}}",
+          "externalDocs" : {
+            "description" : "VariableBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [VariableBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('values');}",
+          "externalDocs" : {
+            "description" : "VariableBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with one of the contexts: [ApproveActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/approve/ApproveActionContext.d.ts), [AudienceMembershipTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/audience/membership/AudienceMembershipTriggerContext.d.ts), [ClientWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/ClientWebhookRuntimeContext.d.ts), [ConsumerWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/ConsumerWebhookRuntimeContext.d.ts), [CreativeActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/creative/CreativeActionContext.d.ts), [DisplayActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/display/DisplayActionContext.d.ts), [DisplayActionResponseContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/display/DisplayActionResponseContext.d.ts), [EmailActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/email/EmailActionContext.d.ts), [ExpireRewardActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/expire/reward/ExpireRewardActionContext.d.ts), [ExpressionActionCommandContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/expression/ExpressionActionCommandContext.d.ts), [ExpressionActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/expression/ExpressionActionContext.d.ts), [ExpressionTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/expression/ExpressionTriggerContext.d.ts), [FireAsPersonActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/fire/as/person/FireAsPersonActionContext.d.ts), [HasPriorRewardTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/reward/HasPriorRewardTriggerContext.d.ts), [HasPriorStepTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/step/HasPriorStepTriggerContext.d.ts), [IncentivizeActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/incentivize/IncentivizeActionContext.d.ts), [IncentivizeStatusUpdateActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/incentivize/status/update/IncentivizeStatusUpdateActionContext.d.ts), [JourneyKeyContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/journey/JourneyKeyContext.d.ts), [LegacyQualityRuleTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/legacy/quality/LegacyQualityRuleTriggerContext.d.ts), [PartnerWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/PartnerWebhookRuntimeContext.d.ts), [PrehandlerActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/prehandler/PrehandlerActionContext.d.ts), [PrehandlerConditionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/prehandler/PrehandlerConditionContext.d.ts), [PrehandlerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/prehandler/PrehandlerContext.d.ts), [RewardActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/reward/RewardActionContext.d.ts), [RewardHasPriorRewardTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/reward/RewardHasPriorRewardTriggerContext.d.ts), [RewardWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/reward/RewardWebhookRuntimeContext.d.ts), [ScheduleActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/schedule/ScheduleActionContext.d.ts), [SignalActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/signal/SignalActionContext.d.ts), [StepActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/StepActionContext.d.ts), [StepBuilderContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/builder/StepBuilderContext.d.ts), [StepContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/StepContext.d.ts), [StepDataContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/data/StepDataContext.d.ts), [StepHasPriorStepTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/step/StepHasPriorStepTriggerContext.d.ts), [StepTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/StepTriggerContext.d.ts), [VariableRuntimeCreativeActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/runtime/VariableRuntimeCreativeActionContext.d.ts), [WebhookActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts), [WebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/WebhookRuntimeContext.d.ts).",
+          "example" : "handlebars@runtime:{{values}}",
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with one of the contexts: [ApproveActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/approve/ApproveActionContext.d.ts), [AudienceMembershipTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/audience/membership/AudienceMembershipTriggerContext.d.ts), [ClientWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/ClientWebhookRuntimeContext.d.ts), [ConsumerWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/ConsumerWebhookRuntimeContext.d.ts), [CreativeActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/creative/CreativeActionContext.d.ts), [DisplayActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/display/DisplayActionContext.d.ts), [DisplayActionResponseContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/display/DisplayActionResponseContext.d.ts), [EmailActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/email/EmailActionContext.d.ts), [ExpireRewardActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/expire/reward/ExpireRewardActionContext.d.ts), [ExpressionActionCommandContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/expression/ExpressionActionCommandContext.d.ts), [ExpressionActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/expression/ExpressionActionContext.d.ts), [ExpressionTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/expression/ExpressionTriggerContext.d.ts), [FireAsPersonActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/fire/as/person/FireAsPersonActionContext.d.ts), [HasPriorRewardTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/reward/HasPriorRewardTriggerContext.d.ts), [HasPriorStepTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/step/HasPriorStepTriggerContext.d.ts), [IncentivizeActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/incentivize/IncentivizeActionContext.d.ts), [IncentivizeStatusUpdateActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/incentivize/status/update/IncentivizeStatusUpdateActionContext.d.ts), [JourneyKeyContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/journey/JourneyKeyContext.d.ts), [LegacyQualityRuleTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/legacy/quality/LegacyQualityRuleTriggerContext.d.ts), [PartnerWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/PartnerWebhookRuntimeContext.d.ts), [PrehandlerActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/prehandler/PrehandlerActionContext.d.ts), [PrehandlerConditionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/prehandler/PrehandlerConditionContext.d.ts), [PrehandlerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/prehandler/PrehandlerContext.d.ts), [RewardActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/reward/RewardActionContext.d.ts), [RewardHasPriorRewardTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/reward/RewardHasPriorRewardTriggerContext.d.ts), [RewardWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/reward/RewardWebhookRuntimeContext.d.ts), [ScheduleActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/schedule/ScheduleActionContext.d.ts), [SignalActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/signal/SignalActionContext.d.ts), [StepActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/StepActionContext.d.ts), [StepBuilderContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/builder/StepBuilderContext.d.ts), [StepContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/StepContext.d.ts), [StepDataContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/data/StepDataContext.d.ts), [StepHasPriorStepTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/step/StepHasPriorStepTriggerContext.d.ts), [StepTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/StepTriggerContext.d.ts), [VariableRuntimeCreativeActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/runtime/VariableRuntimeCreativeActionContext.d.ts), [WebhookActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts), [WebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/WebhookRuntimeContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('values');}",
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "ValuesInCampaignComponentVariableRequestAsDateTime" : {
         "description" : "Choose between static or dynamic values",
         "oneOf" : [ {
           "description" : "Static values",
