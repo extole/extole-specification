@@ -4711,6 +4711,16 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
+      "report_type_mapping_suggestion_parameter_not_found" : {
+        "summary" : "report_type_mapping_suggestion_parameter_not_found",
+        "value" : {
+          "code" : "report_type_mapping_suggestion_parameter_not_found",
+          "http_status_code" : 400,
+          "message" : "Report type does not have a parameter with the supplied name",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
       "report_type_missing" : {
         "summary" : "report_type_missing",
         "value" : {
@@ -123467,6 +123477,9 @@
                   "report_type_has_dependent_types" : {
                     "$ref" : "#/components/examples/report_type_has_dependent_types"
                   },
+                  "report_type_mapping_suggestion_parameter_not_found" : {
+                    "$ref" : "#/components/examples/report_type_mapping_suggestion_parameter_not_found"
+                  },
                   "report_type_missing" : {
                     "$ref" : "#/components/examples/report_type_missing"
                   },
@@ -144955,6 +144968,9 @@
                   },
                   "report_type_invalid_description_link" : {
                     "$ref" : "#/components/examples/report_type_invalid_description_link"
+                  },
+                  "report_type_mapping_suggestion_parameter_not_found" : {
+                    "$ref" : "#/components/examples/report_type_mapping_suggestion_parameter_not_found"
                   },
                   "report_type_missing" : {
                     "$ref" : "#/components/examples/report_type_missing"

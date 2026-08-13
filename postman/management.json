@@ -269447,6 +269447,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "51fac640-6705-4ae1-8225-50c5a5c7ae03",
+              "name": "report_type_mapping_suggestion_parameter_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "bdd96004-0c8f-4eea-b9ac-6a79b8a91c50",
               "name": "report_type_missing",
               "originalRequest": {
@@ -270690,6 +270720,492 @@
                   }
                 ],
                 "method": "DELETE",
+                "body": {}
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        },
+        {
+          "id": "56b6ab06-d7ae-4535-bcbd-bdc7df32c667",
+          "name": "Get report type mapping suggestions",
+          "request": {
+            "name": "Get report type mapping suggestions",
+            "description": {
+              "content": "Returns the column expressions this report type's mapping parameters accept, as ordered suggestion groups of `column_name` / `expression` pairs. Where the schema endpoints describe the columns a report produces, this endpoint describes the expressions that can go into its column mapping parameters. Each `expression` is complete and ready to append to the parameter's `;`-separated `name=expression` mapping value. Suggestions are derived from the contracts the report executor resolves expressions against, so every suggestion resolves to a real value when the report runs. A report type whose mapping parameters have no suggestions yet, or which has no mapping parameters at all, returns an empty `parameters` list.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": ["v6", "report-types", ":id", "mapping-suggestions"],
+              "host": ["{{baseUrl}}"],
+              "query": [
+                {
+                  "disabled": false,
+                  "description": {
+                    "content": "Optional parameter name to narrow the response to a single mapping parameter. Rejected when the report type has no parameter with this name.",
+                    "type": "text/plain"
+                  },
+                  "key": "parameter",
+                  "value": "<string>"
+                }
+              ],
+              "variable": [
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) The Extole unique report type identifier.",
+                    "type": "text/plain"
+                  }
+                }
+              ]
+            },
+            "header": [{ "key": "Accept", "value": "<string>" }],
+            "method": "GET",
+            "body": {},
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d08a26ed-f513-4489-8396-835fd90f8ea3",
+              "name": "Mapping suggestions per mapping parameter of the report type, as ordered groups of complete column expressions.",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "mapping-suggestions"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Optional parameter name to narrow the response to a single mapping parameter. Rejected when the report type has no parameter with this name.",
+                        "type": "text/plain"
+                      },
+                      "key": "parameter",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "4c7ff160-3a10-4db9-acb9-6611bf9b128c",
+              "name": "report_type_mapping_suggestion_parameter_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "mapping-suggestions"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Optional parameter name to narrow the response to a single mapping parameter. Rejected when the report type has no parameter with this name.",
+                        "type": "text/plain"
+                      },
+                      "key": "parameter",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "5235c2d0-0713-4f8b-87a0-3fadec48f859",
+              "name": "report_type_missing",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "mapping-suggestions"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Optional parameter name to narrow the response to a single mapping parameter. Rejected when the report type has no parameter with this name.",
+                        "type": "text/plain"
+                      },
+                      "key": "parameter",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b3da9dcf-86b8-4eb3-8405-b7cb86631dc0",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "mapping-suggestions"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Optional parameter name to narrow the response to a single mapping parameter. Rejected when the report type has no parameter with this name.",
+                        "type": "text/plain"
+                      },
+                      "key": "parameter",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "fcca8d70-5978-41cf-b42d-385c72722b7b",
+              "name": "Payment Required",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "mapping-suggestions"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Optional parameter name to narrow the response to a single mapping parameter. Rejected when the report type has no parameter with this name.",
+                        "type": "text/plain"
+                      },
+                      "key": "parameter",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Payment Required",
+              "code": 402,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "2665dcda-35ea-4be4-a2f9-2f7f903a9244",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "mapping-suggestions"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Optional parameter name to narrow the response to a single mapping parameter. Rejected when the report type has no parameter with this name.",
+                        "type": "text/plain"
+                      },
+                      "key": "parameter",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b7f70681-517f-4314-abe0-922703b15b38",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "mapping-suggestions"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Optional parameter name to narrow the response to a single mapping parameter. Rejected when the report type has no parameter with this name.",
+                        "type": "text/plain"
+                      },
+                      "key": "parameter",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "4eb2a55f-0169-4895-b67c-9cb90e1666fe",
+              "name": "missing_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "mapping-suggestions"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Optional parameter name to narrow the response to a single mapping parameter. Rejected when the report type has no parameter with this name.",
+                        "type": "text/plain"
+                      },
+                      "key": "parameter",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "1dc77270-6f0e-4e10-b08d-cf49f424d93c",
+              "name": "Report type was not found. The supplied id does not match any report type accessible to the calling client.",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "mapping-suggestions"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Optional parameter name to narrow the response to a single mapping parameter. Rejected when the report type has no parameter with this name.",
+                        "type": "text/plain"
+                      },
+                      "key": "parameter",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "6e958a8f-89c6-4fe6-838b-134e0fd26067",
+              "name": "Unsupported Media Type",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "mapping-suggestions"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Optional parameter name to narrow the response to a single mapping parameter. Rejected when the report type has no parameter with this name.",
+                        "type": "text/plain"
+                      },
+                      "key": "parameter",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unsupported Media Type",
+              "code": 415,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "57a64c12-132f-4967-99fc-c23edd706ca5",
+              "name": "Too Many Requests",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "report-types", ":id", "mapping-suggestions"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Optional parameter name to narrow the response to a single mapping parameter. Rejected when the report type has no parameter with this name.",
+                        "type": "text/plain"
+                      },
+                      "key": "parameter",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
                 "body": {}
               },
               "status": "Too Many Requests",
