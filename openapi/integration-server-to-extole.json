@@ -3361,6 +3361,11 @@
             "format" : "int32",
             "type" : "integer"
           },
+          "expired" : {
+            "description" : "Number of rewards expired in this period.",
+            "format" : "int32",
+            "type" : "integer"
+          },
           "failed" : {
             "description" : "Number of rewards that failed fulfilment in this period.",
             "format" : "int32",
@@ -3387,7 +3392,7 @@
             "type" : "integer"
           }
         },
-        "required" : [ "canceled", "date_from", "date_to", "earned", "failed", "fulfilled", "redeemed", "revoked", "sent" ],
+        "required" : [ "canceled", "date_from", "date_to", "earned", "expired", "failed", "fulfilled", "redeemed", "revoked", "sent" ],
         "type" : "object"
       },
       "RewardUpdateRequest" : {
