@@ -6,6 +6,6 @@ export interface OAuthClientKeyResponseContext extends GlobalContext {
     createResponseBuilder(): OAuthResponseBuilder;
     getOAuthRequestResult(): OAuthRequestResult;
     getVariable(variableName: string): unknown | null;
-    getVariable(name: string, keys: string[]): unknown | null;
     getVariable(name: string, key: string): unknown | null;
+    getVariable(name: string, keys: string[]): unknown | null;
 }
