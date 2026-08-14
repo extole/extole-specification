@@ -1,0 +1,11 @@
+export enum BatchJobStatusValue {
+    PENDING_RETRY = "PENDING_RETRY",
+    QUEUED = "QUEUED",
+    PENDING = "PENDING",
+    IN_PROGRESS = "IN_PROGRESS",
+    DISPATCHING = "DISPATCHING",
+    DONE = "DONE",
+    FAILED = "FAILED",
+    CANCELED = "CANCELED",
+    EXPIRED = "EXPIRED"
+}

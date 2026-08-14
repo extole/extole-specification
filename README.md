@@ -1,8 +1,6 @@
 # extole-specification
 
-OpenAPI 3 specifications and Postman collections for the Extole API.
-
-Specs are extracted from [extole/pluribus](https://github.com/extole/pluribus), published via the private [extole/openapi](https://github.com/extole/openapi) repo, and mirrored here for public consumption.
+OpenAPI 3 specifications, Postman collections, and TypeScript types for Extole evaluatable expression contexts.
 
 ## Installation
 
@@ -45,25 +43,35 @@ const managementCollection = require('@extole/specification/postman/management.j
 | `integration-server-to-extole.json`   | Backend server-to-Extole integration: event submission, person lookup, zone rendering, token management, and reward retrieval.             |
 | `integration-consumer-to-extole.json` | Consumer-to-Extole integration: consumer event submission, zone rendering, profile management, and SDK-backing operations.                 |
 
+## Expression context types
+
+Many Extole configuration fields accept **evaluatable** values — static literals, Handlebars templates, or JavaScript functions that run at **buildtime** (when a campaign or component is saved) or **runtime** (when a step, trigger, or webhook executes). The OpenAPI bundles describe each field's allowed formats; JavaScript evaluatables receive a `context` object whose methods and properties are defined by these types.
+
+This repository publishes **TypeScript declaration files** (`.d.ts`) under [`openapi/expression-context/`](openapi/expression-context/) that document those contexts. They are published alongside the OpenAPI bundles above and updated when the API specs change.
+
+| What                   | Where                                                                                                                                                                                                      |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| All context types      | [`openapi/expression-context/com/extole/api/`](openapi/expression-context/com/extole/api/)                                                                                                                 |
+| Per-field context link | `externalDocs` on evaluatable `oneOf` branches in the OpenAPI bundles (also linked from [ReadMe API reference](https://docs.extole.com/))                                                                  |
+| Example                | [`AudienceBuildtimeContext.d.ts`](openapi/expression-context/com/extole/api/audience/AudienceBuildtimeContext.d.ts), [`StepContext.d.ts`](openapi/expression-context/com/extole/api/step/StepContext.d.ts) |
+
+**Finding the right context:** open the request schema for the API field you are configuring, locate the evaluatable `oneOf` branch you need (`handlebars@buildtime`, `javascript@runtime`, etc.), and follow its `externalDocs` link to the matching `.d.ts` file. Walk the `extends` chain in that file to see every method available on `context`.
+
+**Using the types locally:** clone or browse this repo, or reference the GitHub URLs embedded in the OpenAPI specs. Point your editor or TypeScript tooling at `openapi/expression-context/` for autocomplete when authoring JavaScript evaluatables. Handlebars evaluatables use variable names only (`{{variableName}}`) — the `.d.ts` files apply to JavaScript branches that call `context` methods.
+
 ## Interactive documentation
 
 - **GitHub Pages:** [extole.github.io/extole-specification](https://extole.github.io/extole-specification/) (Swagger UI; enable GitHub Pages in repo settings if this 404s)
-- **Postman:** [Extole API workspace](https://www.postman.com/extole-4017592/extole-api/overview) — four collections are published and kept in sync by CI; **flip workspace visibility to Public in Postman UI** (see below) before sharing the link externally
-- **ReadMe:** synced from [extole/openapi](https://github.com/extole/openapi) on each spec update
+- **Postman:** [Extole API workspace](https://www.postman.com/extole-4017592/extole-api/overview) — public workspace with the four API bundles, kept in sync by CI
+- **ReadMe:** Extole API reference documentation
 
 ## Development
 
 ```bash
 npm ci
 npm run build    # regenerate Postman collections from OpenAPI
-npm run lint     # Spectral lint (mirrors pluribus rules)
+npm run lint     # Spectral lint
 ```
-
-## Updating specs
-
-Specs are synced automatically when [extole/openapi](https://github.com/extole/openapi) publishes a new bundle set from pluribus `master`. The `sync-from-openapi` workflow opens a PR in this repo with the updated files.
-
-Manual sync: trigger **Sync from extole/openapi** in the Actions tab, or dispatch from openapi after a successful `update-specs` run.
 
 ## Publishing to Postman
 
@@ -77,16 +85,18 @@ npm run verify:postman
 
 Collection and workspace UIDs are stored in `postman/.postman-publish.json` so publishes are idempotent.
 
-### Make the workspace publicly discoverable (Postman UI — required once)
+### Workspace visibility
 
-The Postman REST API cannot create or flip a workspace to `public` on all plan tiers. After the first CI publish, a team admin must complete these steps in the Postman web app:
+The workspace is already public — the overview URL resolves without a Postman login.
 
-1. **Enable the team public profile:** Team settings → turn on **Public profile** (otherwise `postman.com/extole-4017592` shows "Profile cannot be found").
-2. **Set workspace visibility to Public:** Open **Extole API** → Settings → Workspace type → **Public** → Save. (May require Community Manager approval on Team/Enterprise plans.)
-3. **Verify anonymously:** open the workspace URL in an incognito window — all four collections should load without login, with **Fork** / **Run in Postman** visible.
+Visibility cannot be set through the Postman REST API on all plan tiers, so it is flipped by hand in the Postman web app. To repeat it for a new workspace:
+
+1. **Enable the team public profile:** Team settings → turn on **Public profile** (otherwise `postman.com/<team>` shows "Profile cannot be found").
+2. **Set workspace visibility to Public:** Open the workspace → Settings → Workspace type → **Public** → Save. (May require Community Manager approval on Team/Enterprise plans.)
+3. **Verify anonymously:** open the workspace URL in an incognito window — the collections should load without login, with **Fork** / **Run in Postman** visible.
 4. **Optional polish:** rename team `extole-4017592` → `extole` for a cleaner URL (`postman.com/extole/extole-api/...`), add logo/description, and submit the workspace to the [Postman API Network](https://www.postman.com/explore) so `search?q=Extole` surfaces it.
 
-After step 2, update `postman/.postman-publish.json` `"type"` to `"public"` (or re-run publish locally) so CI verification enforces anonymous access.
+`postman/.postman-publish.json` records `"type": "team"`, which keeps the visibility checks in `npm run verify:postman` as warnings. Setting it to `"public"` promotes them to hard assertions — only do that once `https://www.postman.com/_api/collection/<uid>` returns 200 anonymously for the published collections, which it does not today.
 
 ## Publishing to npm
 
@@ -102,11 +112,10 @@ Until `NPM_TOKEN` is configured, release-please will still open version-bump PRs
 
 ## Repository secrets
 
-| Secret              | Used by                                                                 |
-| ------------------- | ----------------------------------------------------------------------- |
-| `EXTOLE_GITHUB_PAT` | `sync-from-openapi.yml` — clone private `extole/openapi`, push sync PRs |
-| `NPM_TOKEN`         | `release-please.yml` publish job                                        |
-| `POSTMAN_API_KEY`   | `publish-to-postman.yml` — publish and verify Postman collections       |
+| Secret            | Used by                                                   |
+| ----------------- | --------------------------------------------------------- |
+| `NPM_TOKEN`       | `release-please.yml` publish job                          |
+| `POSTMAN_API_KEY` | `publish-to-postman.yml` — publish and verify collections |
 
 ## License
 

@@ -1,0 +1,35 @@
+export interface NativeDuration {
+    abs(): NativeDuration;
+    dividedBy(divisor: NativeDuration): number;
+    dividedBy(divisor: number): NativeDuration;
+    getNano(): number;
+    getSeconds(): number;
+    isNegative(): boolean;
+    isPositive(): boolean;
+    isZero(): boolean;
+    minus(duration: NativeDuration): NativeDuration;
+    minusDays(daysToSubtract: number): NativeDuration;
+    minusHours(hoursToSubtract: number): NativeDuration;
+    minusMillis(millisToSubtract: number): NativeDuration;
+    minusMinutes(minutesToSubtract: number): NativeDuration;
+    minusNanos(nanosToSubtract: number): NativeDuration;
+    minusSeconds(secondsToSubtract: number): NativeDuration;
+    multipliedBy(multiplicand: number): NativeDuration;
+    negated(): NativeDuration;
+    plus(duration: NativeDuration): NativeDuration;
+    plusDays(daysToAdd: number): NativeDuration;
+    plusHours(hoursToAdd: number): NativeDuration;
+    plusMillis(millisToAdd: number): NativeDuration;
+    plusMinutes(minutesToAdd: number): NativeDuration;
+    plusNanos(nanosToAdd: number): NativeDuration;
+    plusSeconds(secondsToAdd: number): NativeDuration;
+    toDays(): number;
+    toHours(): number;
+    toMillis(): number;
+    toMinutes(): number;
+    toNanos(): number;
+    toSeconds(): number;
+    toString(): string;
+    withNanos(nanoOfSecond: number): NativeDuration;
+    withSeconds(seconds: number): NativeDuration;
+}
