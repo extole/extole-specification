@@ -61,8 +61,8 @@ This repository publishes **TypeScript declaration files** (`.d.ts`) under [`ope
 
 ## Interactive documentation
 
-- **GitHub Pages:** [extole.github.io/extole-specification](https://extole.github.io/extole-specification/) (Swagger UI)
-- **Postman:** [Extole API workspace](https://www.postman.com/extole-4017592/extole-api/overview) — public workspace with forkable collections for all four API bundles
+- **GitHub Pages:** [extole.github.io/extole-specification](https://extole.github.io/extole-specification/) (Swagger UI; enable GitHub Pages in repo settings if this 404s)
+- **Postman:** [Extole API workspace](https://www.postman.com/extole-4017592/extole-api/overview) — public workspace with the four API bundles, kept in sync by CI
 - **ReadMe:** Extole API reference documentation
 
 ## Development
@@ -75,7 +75,7 @@ npm run lint     # Spectral lint
 
 ## Publishing to Postman
 
-The **Publish to Postman** workflow (`publish-to-postman.yml`) keeps the public [Extole API workspace](https://www.postman.com/extole-4017592/extole-api/overview) in sync with `main`. It regenerates Postman collections from OpenAPI, publishes them via the Postman API, and runs verification checks.
+The **Publish to Postman** workflow (`publish-to-postman.yml`) keeps the [Extole API workspace](https://www.postman.com/extole-4017592/extole-api/overview) in sync with `main`. It regenerates Postman collections from OpenAPI, publishes them via the Postman API, and runs verification checks.
 
 ```bash
 export POSTMAN_API_KEY=<your-postman-api-key>
@@ -85,11 +85,18 @@ npm run verify:postman
 
 Collection and workspace UIDs are stored in `postman/.postman-publish.json` so publishes are idempotent.
 
-**Manual follow-ups (Postman UI only):**
+### Workspace visibility
 
-- Submit the workspace to the [Postman API Network](https://www.postman.com/explore) for catalog discoverability.
-- Add team branding (logo, description) under Postman team settings.
-- Optionally rename the team from `Admin's Team` to `Extole` for a cleaner public URL.
+The workspace is already public — the overview URL resolves without a Postman login.
+
+Visibility cannot be set through the Postman REST API on all plan tiers, so it is flipped by hand in the Postman web app. To repeat it for a new workspace:
+
+1. **Enable the team public profile:** Team settings → turn on **Public profile** (otherwise `postman.com/<team>` shows "Profile cannot be found").
+2. **Set workspace visibility to Public:** Open the workspace → Settings → Workspace type → **Public** → Save. (May require Community Manager approval on Team/Enterprise plans.)
+3. **Verify anonymously:** open the workspace URL in an incognito window — the collections should load without login, with **Fork** / **Run in Postman** visible.
+4. **Optional polish:** rename team `extole-4017592` → `extole` for a cleaner URL (`postman.com/extole/extole-api/...`), add logo/description, and submit the workspace to the [Postman API Network](https://www.postman.com/explore) so `search?q=Extole` surfaces it.
+
+`postman/.postman-publish.json` records `"type": "team"`, which keeps the visibility checks in `npm run verify:postman` as warnings. Setting it to `"public"` promotes them to hard assertions — only do that once `https://www.postman.com/_api/collection/<uid>` returns 200 anonymously for the published collections, which it does not today.
 
 ## Publishing to npm
 
