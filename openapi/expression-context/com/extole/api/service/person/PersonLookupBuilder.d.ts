@@ -6,4 +6,5 @@ export interface PersonLookupBuilder {
     withIdentityKeyValue(identityKeyValue: string): PersonLookupBuilder;
     withPersonId(personId: string): PersonLookupBuilder;
     withPersonKey(type: string, value: string): PersonLookupBuilder;
+    withRewardId(rewardId: string): PersonLookupBuilder;
 }
