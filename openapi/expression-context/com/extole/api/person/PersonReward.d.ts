@@ -8,6 +8,7 @@ export interface PersonReward {
     getContainer(): string | null;
     getData(): NativeMap<string, string>;
     getDateEarned(): string;
+    getExpiryDate(): string | null;
     getFaceValue(): string;
     getFaceValueType(): string;
     getId(): string;

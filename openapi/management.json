@@ -44773,21 +44773,21 @@
           "description" : "Literal reward expires at",
           "title" : "Static Value"
         }, {
-          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Handlebars expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "handlebars@runtime:{{rewardExpiresAt}}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^handlebars@runtime:.*",
           "title" : "Runtime - Handlebars",
           "type" : "string"
         }, {
-          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Javascript expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^javascript@runtime:.*",
           "title" : "Runtime - Javascript",
@@ -44873,21 +44873,21 @@
           "title" : "Buildtime - Javascript",
           "type" : "string"
         }, {
-          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Handlebars expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "handlebars@runtime:{{rewardExpiresAt}}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^handlebars@runtime:.*",
           "title" : "Runtime - Handlebars",
           "type" : "string"
         }, {
-          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Javascript expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^javascript@runtime:.*",
           "title" : "Runtime - Javascript",
@@ -44923,21 +44923,21 @@
           "title" : "Buildtime - Javascript",
           "type" : "string"
         }, {
-          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Handlebars expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "handlebars@runtime:{{rewardExpiresAt}}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^handlebars@runtime:.*",
           "title" : "Runtime - Handlebars",
           "type" : "string"
         }, {
-          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Javascript expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^javascript@runtime:.*",
           "title" : "Runtime - Javascript",
@@ -44973,21 +44973,21 @@
           "title" : "Buildtime - Javascript",
           "type" : "string"
         }, {
-          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Handlebars expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "handlebars@runtime:{{rewardExpiresAt}}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^handlebars@runtime:.*",
           "title" : "Runtime - Handlebars",
           "type" : "string"
         }, {
-          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Javascript expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^javascript@runtime:.*",
           "title" : "Runtime - Javascript",
@@ -45023,21 +45023,21 @@
           "title" : "Buildtime - Javascript",
           "type" : "string"
         }, {
-          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Handlebars expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "handlebars@runtime:{{rewardExpiresAt}}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^handlebars@runtime:.*",
           "title" : "Runtime - Handlebars",
           "type" : "string"
         }, {
-          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Javascript expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^javascript@runtime:.*",
           "title" : "Runtime - Javascript",
@@ -45073,21 +45073,21 @@
           "title" : "Buildtime - Javascript",
           "type" : "string"
         }, {
-          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Handlebars expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "handlebars@runtime:{{rewardExpiresAt}}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^handlebars@runtime:.*",
           "title" : "Runtime - Handlebars",
           "type" : "string"
         }, {
-          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Javascript expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^javascript@runtime:.*",
           "title" : "Runtime - Javascript",
@@ -45123,21 +45123,21 @@
           "title" : "Buildtime - Javascript",
           "type" : "string"
         }, {
-          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Handlebars expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "handlebars@runtime:{{rewardExpiresAt}}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^handlebars@runtime:.*",
           "title" : "Runtime - Handlebars",
           "type" : "string"
         }, {
-          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Javascript expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^javascript@runtime:.*",
           "title" : "Runtime - Javascript",
@@ -45173,21 +45173,21 @@
           "title" : "Buildtime - Javascript",
           "type" : "string"
         }, {
-          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Handlebars expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "handlebars@runtime:{{rewardExpiresAt}}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^handlebars@runtime:.*",
           "title" : "Runtime - Handlebars",
           "type" : "string"
         }, {
-          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Javascript expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^javascript@runtime:.*",
           "title" : "Runtime - Javascript",
@@ -45223,21 +45223,21 @@
           "title" : "Buildtime - Javascript",
           "type" : "string"
         }, {
-          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Handlebars expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "handlebars@runtime:{{rewardExpiresAt}}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^handlebars@runtime:.*",
           "title" : "Runtime - Handlebars",
           "type" : "string"
         }, {
-          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Javascript expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^javascript@runtime:.*",
           "title" : "Runtime - Javascript",
@@ -45273,21 +45273,21 @@
           "title" : "Buildtime - Javascript",
           "type" : "string"
         }, {
-          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Handlebars expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "handlebars@runtime:{{rewardExpiresAt}}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^handlebars@runtime:.*",
           "title" : "Runtime - Handlebars",
           "type" : "string"
         }, {
-          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Javascript expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^javascript@runtime:.*",
           "title" : "Runtime - Javascript",
@@ -45323,21 +45323,21 @@
           "title" : "Buildtime - Javascript",
           "type" : "string"
         }, {
-          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Handlebars expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "handlebars@runtime:{{rewardExpiresAt}}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^handlebars@runtime:.*",
           "title" : "Runtime - Handlebars",
           "type" : "string"
         }, {
-          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Javascript expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^javascript@runtime:.*",
           "title" : "Runtime - Javascript",
@@ -45373,21 +45373,21 @@
           "title" : "Buildtime - Javascript",
           "type" : "string"
         }, {
-          "description" : "Handlebars expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Handlebars expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "handlebars@runtime:{{rewardExpiresAt}}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^handlebars@runtime:.*",
           "title" : "Runtime - Handlebars",
           "type" : "string"
         }, {
-          "description" : "Javascript expression with [RewardFulfillmentEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts).",
+          "description" : "Javascript expression with [EarnedRewardEvaluationContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts).",
           "example" : "javascript@runtime:function() { return context.get('rewardExpiresAt');}",
           "externalDocs" : {
-            "description" : "RewardFulfillmentEvaluationContext",
-            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/RewardFulfillmentEvaluationContext.d.ts"
+            "description" : "EarnedRewardEvaluationContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/reward/EarnedRewardEvaluationContext.d.ts"
           },
           "pattern" : "^javascript@runtime:.*",
           "title" : "Runtime - Javascript",
