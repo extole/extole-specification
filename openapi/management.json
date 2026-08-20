@@ -6960,6 +6960,66 @@
           "type" : "string"
         } ]
       },
+      "AncestorTypeComponentReferenceBoundaryRequest" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/ComponentReferenceBoundaryRequestBase"
+        }, {
+          "properties" : {
+            "ancestor_type" : {
+              "description" : "Ancestor component type that defines the selectable component boundary.",
+              "type" : "string"
+            },
+            "type" : {
+              "enum" : [ "ANCESTOR_TYPE" ],
+              "type" : "string"
+            }
+          },
+          "type" : "object"
+        } ],
+        "description" : "Boundary that resolves selectable components within the nearest matching ancestor component type.",
+        "required" : [ "ancestor_type", "type" ],
+        "type" : "object"
+      },
+      "AncestorTypeComponentReferenceBoundaryResponse" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/ComponentReferenceBoundaryResponseBase"
+        }, {
+          "properties" : {
+            "ancestor_type" : {
+              "description" : "Ancestor component type that defines the selectable component boundary.",
+              "type" : "string"
+            },
+            "type" : {
+              "enum" : [ "ANCESTOR_TYPE" ],
+              "type" : "string"
+            }
+          },
+          "type" : "object"
+        } ],
+        "description" : "Boundary that resolves selectable components within the nearest matching ancestor component type.",
+        "required" : [ "ancestor_type", "type" ],
+        "type" : "object"
+      },
+      "AncestorTypeComponentReferenceBoundaryUpdateRequest" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/ComponentReferenceBoundaryUpdateRequestBase"
+        }, {
+          "properties" : {
+            "ancestor_type" : {
+              "description" : "Ancestor component type that defines the selectable component boundary.",
+              "type" : "string"
+            },
+            "type" : {
+              "enum" : [ "ANCESTOR_TYPE" ],
+              "type" : "string"
+            }
+          },
+          "type" : "object"
+        } ],
+        "description" : "Boundary that resolves selectable components within the nearest matching ancestor component type.",
+        "required" : [ "type" ],
+        "type" : "object"
+      },
       "AnchorDetailsResponse" : {
         "properties" : {
           "source_element_id" : {
@@ -8506,7 +8566,7 @@
             "type" : "string"
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_REFERENCE", "COMPONENT_REFERENCE_LIST", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           },
           "values" : {
@@ -8528,7 +8588,7 @@
             "type" : "string"
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_REFERENCE", "COMPONENT_REFERENCE_LIST", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           }
         },
@@ -8721,6 +8781,26 @@
           "type" : "string"
         } ]
       },
+      "BuiltAncestorTypeComponentReferenceBoundaryResponse" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/BuiltComponentReferenceBoundaryResponseBase"
+        }, {
+          "properties" : {
+            "ancestor_type" : {
+              "description" : "Ancestor component type that defines the selectable component boundary.",
+              "type" : "string"
+            },
+            "type" : {
+              "enum" : [ "ANCESTOR_TYPE" ],
+              "type" : "string"
+            }
+          },
+          "type" : "object"
+        } ],
+        "description" : "Evaluated boundary that resolves selectable components within the nearest matching ancestor component type.",
+        "required" : [ "ancestor_type", "type" ],
+        "type" : "object"
+      },
       "BuiltAudienceResponse" : {
         "description" : "audience after buildtime evaluation. Fields `name` and `enabled` are already evaluated.",
         "properties" : {
@@ -8860,6 +8940,8 @@
             "CLIENT_KEY_FLOW" : "#/components/schemas/BuiltComponentClientKeyFlowVariableResponse",
             "COLOR" : "#/components/schemas/BuiltCampaignComponentVariableResponseAsColor",
             "COMPONENT_ID" : "#/components/schemas/BuiltComponentComponentIdVariableResponse",
+            "COMPONENT_REFERENCE" : "#/components/schemas/BuiltComponentComponentReferenceVariableResponseAsComponentReference",
+            "COMPONENT_REFERENCE_LIST" : "#/components/schemas/BuiltComponentComponentReferenceVariableResponseAsComponentReferenceList",
             "COMPONENT_SETTING_LOOKUP" : "#/components/schemas/BuiltComponentComponentSettingLookupVariableResponse",
             "CSS" : "#/components/schemas/BuiltCampaignComponentVariableResponseAsCss",
             "DATE_TIME" : "#/components/schemas/BuiltCampaignComponentVariableResponseAsDateTime",
@@ -8911,6 +8993,10 @@
           "$ref" : "#/components/schemas/BuiltCampaignComponentVariableResponseAsColor"
         }, {
           "$ref" : "#/components/schemas/BuiltComponentComponentIdVariableResponse"
+        }, {
+          "$ref" : "#/components/schemas/BuiltComponentComponentReferenceVariableResponseAsComponentReference"
+        }, {
+          "$ref" : "#/components/schemas/BuiltComponentComponentReferenceVariableResponseAsComponentReferenceList"
         }, {
           "$ref" : "#/components/schemas/BuiltComponentComponentSettingLookupVariableResponse"
         }, {
@@ -8989,7 +9075,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_REFERENCE", "COMPONENT_REFERENCE_LIST", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           },
           "values" : {
@@ -9031,7 +9117,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_REFERENCE", "COMPONENT_REFERENCE_LIST", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           },
           "values" : {
@@ -12185,6 +12271,106 @@
         "required" : [ "description", "display_name", "filter", "name", "priority", "source", "source_component_id", "source_version", "tags", "type", "values" ],
         "type" : "object"
       },
+      "BuiltComponentComponentReferenceVariableResponseAsComponentReference" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/BuiltCampaignComponentSettingResponseBase"
+        }, {
+          "properties" : {
+            "boundary" : {
+              "$ref" : "#/components/schemas/BuiltComponentReferenceBoundaryResponse"
+            },
+            "component_type" : {
+              "description" : "Component type that can be selected by this variable.",
+              "type" : "string"
+            },
+            "description" : {
+              "type" : "string"
+            },
+            "lookup_strategy" : {
+              "$ref" : "#/components/schemas/ComponentReferenceLookupStrategyResponse"
+            },
+            "selectable_filters" : {
+              "description" : "Filters that narrow the components available for selection.",
+              "items" : {
+                "$ref" : "#/components/schemas/SettingFilterResponse"
+              },
+              "type" : "array"
+            },
+            "source" : {
+              "enum" : [ "INHERITED", "LOCAL", "PARAMETER" ],
+              "type" : "string"
+            },
+            "source_component_id" : {
+              "type" : "string"
+            },
+            "source_version" : {
+              "format" : "int32",
+              "type" : "integer"
+            },
+            "type" : {
+              "enum" : [ "COMPONENT_REFERENCE" ],
+              "type" : "string"
+            },
+            "unmatched_description" : {
+              "description" : "Description shown when a saved reference no longer matches a selectable component.",
+              "type" : "string"
+            }
+          },
+          "type" : "object"
+        } ],
+        "required" : [ "boundary", "component_type", "description", "display_name", "lookup_strategy", "name", "priority", "selectable_filters", "source", "source_component_id", "source_version", "tags", "type", "unmatched_description", "values" ],
+        "type" : "object"
+      },
+      "BuiltComponentComponentReferenceVariableResponseAsComponentReferenceList" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/BuiltCampaignComponentSettingResponseBase"
+        }, {
+          "properties" : {
+            "boundary" : {
+              "$ref" : "#/components/schemas/BuiltComponentReferenceBoundaryResponse"
+            },
+            "component_type" : {
+              "description" : "Component type that can be selected by this variable.",
+              "type" : "string"
+            },
+            "description" : {
+              "type" : "string"
+            },
+            "lookup_strategy" : {
+              "$ref" : "#/components/schemas/ComponentReferenceLookupStrategyResponse"
+            },
+            "selectable_filters" : {
+              "description" : "Filters that narrow the components available for selection.",
+              "items" : {
+                "$ref" : "#/components/schemas/SettingFilterResponse"
+              },
+              "type" : "array"
+            },
+            "source" : {
+              "enum" : [ "INHERITED", "LOCAL", "PARAMETER" ],
+              "type" : "string"
+            },
+            "source_component_id" : {
+              "type" : "string"
+            },
+            "source_version" : {
+              "format" : "int32",
+              "type" : "integer"
+            },
+            "type" : {
+              "enum" : [ "COMPONENT_REFERENCE_LIST" ],
+              "type" : "string"
+            },
+            "unmatched_description" : {
+              "description" : "Description shown when a saved reference no longer matches a selectable component.",
+              "type" : "string"
+            }
+          },
+          "type" : "object"
+        } ],
+        "required" : [ "boundary", "component_type", "description", "display_name", "lookup_strategy", "name", "priority", "selectable_filters", "source", "source_component_id", "source_version", "tags", "type", "unmatched_description", "values" ],
+        "type" : "object"
+      },
       "BuiltComponentComponentSettingLookupVariableResponse" : {
         "allOf" : [ {
           "$ref" : "#/components/schemas/BuiltCampaignComponentSettingResponseBase"
@@ -12403,6 +12589,31 @@
           "type" : "object"
         } ],
         "required" : [ "description", "display_name", "name", "options", "priority", "source", "source_component_id", "source_version", "tags", "type", "values", "webhook_id" ],
+        "type" : "object"
+      },
+      "BuiltComponentReferenceBoundaryResponse" : {
+        "description" : "Evaluated boundary that limits where selectable components are resolved from.",
+        "discriminator" : {
+          "mapping" : {
+            "ANCESTOR_TYPE" : "#/components/schemas/BuiltAncestorTypeComponentReferenceBoundaryResponse",
+            "PATH" : "#/components/schemas/BuiltPathComponentReferenceBoundaryResponse"
+          },
+          "propertyName" : "type"
+        },
+        "oneOf" : [ {
+          "$ref" : "#/components/schemas/BuiltAncestorTypeComponentReferenceBoundaryResponse"
+        }, {
+          "$ref" : "#/components/schemas/BuiltPathComponentReferenceBoundaryResponse"
+        } ]
+      },
+      "BuiltComponentReferenceBoundaryResponseBase" : {
+        "properties" : {
+          "type" : {
+            "description" : "How the boundary containing selectable components is derived. ANCESTOR_TYPE takes the nearest ancestor of the configured component type. PATH takes the component matched by a configured absolute path.",
+            "enum" : [ "ANCESTOR_TYPE", "PATH" ],
+            "type" : "string"
+          }
+        },
         "type" : "object"
       },
       "BuiltComponentResponse" : {
@@ -13670,6 +13881,26 @@
         "required" : [ "client_key_id", "component_ids", "component_references", "created_at", "default_method", "description", "enabled", "id", "name", "request", "response_body_handler", "response_handler", "retry_intervals", "tags", "type", "updated_at", "url" ],
         "type" : "object"
       },
+      "BuiltPathComponentReferenceBoundaryResponse" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/BuiltComponentReferenceBoundaryResponseBase"
+        }, {
+          "properties" : {
+            "path" : {
+              "description" : "Evaluated path that defines the selectable component boundary.",
+              "type" : "string"
+            },
+            "type" : {
+              "enum" : [ "PATH" ],
+              "type" : "string"
+            }
+          },
+          "type" : "object"
+        } ],
+        "description" : "Evaluated boundary that resolves selectable components within an evaluated component path.",
+        "required" : [ "path", "type" ],
+        "type" : "object"
+      },
       "BuiltRewardSupplierResponse" : {
         "description" : "reward supplier after buildtime evaluation. Fields `display_type`, `name`, `display_name`, `face_value_algorithm_type`, `face_value`, `cash_back_percentage`, `cash_back_min`, `cash_back_max`, `limit_per_day`, `limit_per_hour`, `face_value_type`, `enabled`, and `reward_expires_at` are already evaluated.",
         "discriminator" : {
@@ -14406,6 +14637,300 @@
             },
             "values" : {
               "$ref" : "#/components/schemas/ComponentSettingVariableValues"
+            }
+          },
+          "type" : "object"
+        } ],
+        "required" : [ "type" ],
+        "type" : "object"
+      },
+      "CampaignComponentComponentReferenceVariableRequestAsComponentReference" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/CampaignComponentSettingRequestBase"
+        }, {
+          "properties" : {
+            "boundary" : {
+              "$ref" : "#/components/schemas/ComponentReferenceBoundaryRequest"
+            },
+            "component_type" : {
+              "description" : "Component type that can be selected by this variable.",
+              "type" : "string"
+            },
+            "description" : {
+              "$ref" : "#/components/schemas/DescriptionInCampaignComponentComponentReferenceVariableRequestAsComponentReference"
+            },
+            "lookup_strategy" : {
+              "$ref" : "#/components/schemas/ComponentReferenceLookupStrategyRequest"
+            },
+            "selectable_filters" : {
+              "description" : "Filters that narrow the components available for selection.",
+              "items" : {
+                "$ref" : "#/components/schemas/SettingFilterCreateRequest"
+              },
+              "type" : "array"
+            },
+            "source" : {
+              "enum" : [ "INHERITED", "LOCAL", "PARAMETER" ],
+              "type" : "string"
+            },
+            "type" : {
+              "enum" : [ "COMPONENT_REFERENCE" ],
+              "type" : "string"
+            },
+            "unmatched_description" : {
+              "$ref" : "#/components/schemas/UnmatchedDescriptionInCampaignComponentComponentReferenceVariableRequestAsComponentReference"
+            },
+            "values" : {
+              "$ref" : "#/components/schemas/ComponentSettingVariableValuesAsComponentReference"
+            }
+          },
+          "type" : "object"
+        } ],
+        "required" : [ "boundary", "component_type", "name", "type" ],
+        "type" : "object"
+      },
+      "CampaignComponentComponentReferenceVariableRequestAsComponentReferenceList" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/CampaignComponentSettingRequestBase"
+        }, {
+          "properties" : {
+            "boundary" : {
+              "$ref" : "#/components/schemas/ComponentReferenceBoundaryRequest"
+            },
+            "component_type" : {
+              "description" : "Component type that can be selected by this variable.",
+              "type" : "string"
+            },
+            "description" : {
+              "$ref" : "#/components/schemas/DescriptionInCampaignComponentComponentReferenceVariableRequestAsComponentReferenceList"
+            },
+            "lookup_strategy" : {
+              "$ref" : "#/components/schemas/ComponentReferenceLookupStrategyRequest"
+            },
+            "selectable_filters" : {
+              "description" : "Filters that narrow the components available for selection.",
+              "items" : {
+                "$ref" : "#/components/schemas/SettingFilterCreateRequest"
+              },
+              "type" : "array"
+            },
+            "source" : {
+              "enum" : [ "INHERITED", "LOCAL", "PARAMETER" ],
+              "type" : "string"
+            },
+            "type" : {
+              "enum" : [ "COMPONENT_REFERENCE_LIST" ],
+              "type" : "string"
+            },
+            "unmatched_description" : {
+              "$ref" : "#/components/schemas/UnmatchedDescriptionInCampaignComponentComponentReferenceVariableRequestAsComponentReferenceList"
+            },
+            "values" : {
+              "$ref" : "#/components/schemas/ComponentSettingVariableValuesAsComponentReferenceList"
+            }
+          },
+          "type" : "object"
+        } ],
+        "required" : [ "boundary", "component_type", "name", "type" ],
+        "type" : "object"
+      },
+      "CampaignComponentComponentReferenceVariableResponseAsComponentReference" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/CampaignComponentSettingResponseBase"
+        }, {
+          "properties" : {
+            "boundary" : {
+              "$ref" : "#/components/schemas/ComponentReferenceBoundaryResponse"
+            },
+            "component_type" : {
+              "description" : "Component type that can be selected by this variable.",
+              "type" : "string"
+            },
+            "lookup_strategy" : {
+              "$ref" : "#/components/schemas/ComponentReferenceLookupStrategyResponse"
+            },
+            "selectable_filters" : {
+              "description" : "Filters that narrow the components available for selection.",
+              "items" : {
+                "$ref" : "#/components/schemas/SettingFilterResponse"
+              },
+              "type" : "array"
+            },
+            "source" : {
+              "enum" : [ "INHERITED", "LOCAL", "PARAMETER" ],
+              "type" : "string"
+            },
+            "type" : {
+              "enum" : [ "COMPONENT_REFERENCE" ],
+              "type" : "string"
+            },
+            "unmatched_description" : {
+              "$ref" : "#/components/schemas/UnmatchedDescriptionInCampaignComponentComponentReferenceVariableResponseAsComponentReference"
+            },
+            "values" : {
+              "additionalProperties" : true,
+              "description" : "Open map of setting values keyed by value key. There is no fixed or maximum number of keys. Any string key may be present; each value uses the same shape for this setting's `type`. The properties listed here are common examples only and are not required.",
+              "properties" : {
+                "default" : {
+                  "$ref" : "#/components/schemas/DefaultInComponentSettingVariableValuesOpenApiDocumentation"
+                },
+                "en" : {
+                  "$ref" : "#/components/schemas/EnInComponentSettingVariableValuesOpenApiDocumentation"
+                }
+              },
+              "type" : "object"
+            }
+          },
+          "type" : "object"
+        } ],
+        "description" : "Stored campaign component component reference variable definition. Fields `description` and `unmatched_description` are unevaluated and appear in buildtime-evaluatable form.",
+        "required" : [ "boundary", "component_type", "description", "display_name", "lookup_strategy", "name", "priority", "selectable_filters", "source", "tags", "type", "unmatched_description", "values" ],
+        "type" : "object"
+      },
+      "CampaignComponentComponentReferenceVariableResponseAsComponentReferenceList" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/CampaignComponentSettingResponseBase"
+        }, {
+          "properties" : {
+            "boundary" : {
+              "$ref" : "#/components/schemas/ComponentReferenceBoundaryResponse"
+            },
+            "component_type" : {
+              "description" : "Component type that can be selected by this variable.",
+              "type" : "string"
+            },
+            "lookup_strategy" : {
+              "$ref" : "#/components/schemas/ComponentReferenceLookupStrategyResponse"
+            },
+            "selectable_filters" : {
+              "description" : "Filters that narrow the components available for selection.",
+              "items" : {
+                "$ref" : "#/components/schemas/SettingFilterResponse"
+              },
+              "type" : "array"
+            },
+            "source" : {
+              "enum" : [ "INHERITED", "LOCAL", "PARAMETER" ],
+              "type" : "string"
+            },
+            "type" : {
+              "enum" : [ "COMPONENT_REFERENCE_LIST" ],
+              "type" : "string"
+            },
+            "unmatched_description" : {
+              "$ref" : "#/components/schemas/UnmatchedDescriptionInCampaignComponentComponentReferenceVariableResponseAsComponentReferenceList"
+            },
+            "values" : {
+              "additionalProperties" : true,
+              "description" : "Open map of setting values keyed by value key. There is no fixed or maximum number of keys. Any string key may be present; each value uses the same shape for this setting's `type`. The properties listed here are common examples only and are not required.",
+              "properties" : {
+                "default" : {
+                  "$ref" : "#/components/schemas/DefaultInComponentSettingVariableValuesOpenApiDocumentation"
+                },
+                "en" : {
+                  "$ref" : "#/components/schemas/EnInComponentSettingVariableValuesOpenApiDocumentation"
+                }
+              },
+              "type" : "object"
+            }
+          },
+          "type" : "object"
+        } ],
+        "description" : "Stored campaign component component reference variable definition. Fields `description` and `unmatched_description` are unevaluated and appear in buildtime-evaluatable form.",
+        "required" : [ "boundary", "component_type", "description", "display_name", "lookup_strategy", "name", "priority", "selectable_filters", "source", "tags", "type", "unmatched_description", "values" ],
+        "type" : "object"
+      },
+      "CampaignComponentComponentReferenceVariableUpdateRequestAsComponentReference" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/CampaignComponentSettingUpdateRequestBase"
+        }, {
+          "properties" : {
+            "boundary" : {
+              "$ref" : "#/components/schemas/ComponentReferenceBoundaryUpdateRequest"
+            },
+            "component_type" : {
+              "description" : "Component type that can be selected by this variable.",
+              "type" : "string"
+            },
+            "description" : {
+              "$ref" : "#/components/schemas/DescriptionInCampaignComponentComponentReferenceVariableUpdateRequestAsComponentReference"
+            },
+            "display_name" : {
+              "nullable" : true,
+              "type" : "string"
+            },
+            "lookup_strategy" : {
+              "$ref" : "#/components/schemas/ComponentReferenceLookupStrategyUpdateRequest"
+            },
+            "selectable_filters" : {
+              "description" : "Filters that narrow the components available for selection.",
+              "items" : {
+                "$ref" : "#/components/schemas/SettingFilterUpdateRequest"
+              },
+              "type" : "array"
+            },
+            "source" : {
+              "enum" : [ "INHERITED", "LOCAL", "PARAMETER" ],
+              "type" : "string"
+            },
+            "type" : {
+              "enum" : [ "COMPONENT_REFERENCE" ],
+              "type" : "string"
+            },
+            "unmatched_description" : {
+              "$ref" : "#/components/schemas/UnmatchedDescriptionInCampaignComponentComponentReferenceVariableUpdateRequestAsComponentReference"
+            },
+            "values" : {
+              "$ref" : "#/components/schemas/ComponentSettingVariableValuesAsComponentReference"
+            }
+          },
+          "type" : "object"
+        } ],
+        "required" : [ "type" ],
+        "type" : "object"
+      },
+      "CampaignComponentComponentReferenceVariableUpdateRequestAsComponentReferenceList" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/CampaignComponentSettingUpdateRequestBase"
+        }, {
+          "properties" : {
+            "boundary" : {
+              "$ref" : "#/components/schemas/ComponentReferenceBoundaryUpdateRequest"
+            },
+            "component_type" : {
+              "description" : "Component type that can be selected by this variable.",
+              "type" : "string"
+            },
+            "description" : {
+              "$ref" : "#/components/schemas/DescriptionInCampaignComponentComponentReferenceVariableUpdateRequestAsComponentReferenceList"
+            },
+            "display_name" : {
+              "nullable" : true,
+              "type" : "string"
+            },
+            "lookup_strategy" : {
+              "$ref" : "#/components/schemas/ComponentReferenceLookupStrategyUpdateRequest"
+            },
+            "selectable_filters" : {
+              "description" : "Filters that narrow the components available for selection.",
+              "items" : {
+                "$ref" : "#/components/schemas/SettingFilterUpdateRequest"
+              },
+              "type" : "array"
+            },
+            "source" : {
+              "enum" : [ "INHERITED", "LOCAL", "PARAMETER" ],
+              "type" : "string"
+            },
+            "type" : {
+              "enum" : [ "COMPONENT_REFERENCE_LIST" ],
+              "type" : "string"
+            },
+            "unmatched_description" : {
+              "$ref" : "#/components/schemas/UnmatchedDescriptionInCampaignComponentComponentReferenceVariableUpdateRequestAsComponentReferenceList"
+            },
+            "values" : {
+              "$ref" : "#/components/schemas/ComponentSettingVariableValuesAsComponentReferenceList"
             }
           },
           "type" : "object"
@@ -15220,6 +15745,8 @@
             "CLIENT_KEY_FLOW" : "#/components/schemas/CampaignComponentClientKeyFlowVariableRequest",
             "COLOR" : "#/components/schemas/CampaignComponentVariableRequestAsColor",
             "COMPONENT_ID" : "#/components/schemas/CampaignComponentComponentIdVariableRequest",
+            "COMPONENT_REFERENCE" : "#/components/schemas/CampaignComponentComponentReferenceVariableRequestAsComponentReference",
+            "COMPONENT_REFERENCE_LIST" : "#/components/schemas/CampaignComponentComponentReferenceVariableRequestAsComponentReferenceList",
             "COMPONENT_SETTING_LOOKUP" : "#/components/schemas/CampaignComponentComponentSettingLookupVariableRequest",
             "CSS" : "#/components/schemas/CampaignComponentVariableRequestAsCss",
             "DATE_TIME" : "#/components/schemas/CampaignComponentVariableRequestAsDateTime",
@@ -15271,6 +15798,10 @@
           "$ref" : "#/components/schemas/CampaignComponentVariableRequestAsColor"
         }, {
           "$ref" : "#/components/schemas/CampaignComponentComponentIdVariableRequest"
+        }, {
+          "$ref" : "#/components/schemas/CampaignComponentComponentReferenceVariableRequestAsComponentReference"
+        }, {
+          "$ref" : "#/components/schemas/CampaignComponentComponentReferenceVariableRequestAsComponentReferenceList"
         }, {
           "$ref" : "#/components/schemas/CampaignComponentComponentSettingLookupVariableRequest"
         }, {
@@ -15349,7 +15880,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_REFERENCE", "COMPONENT_REFERENCE_LIST", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           }
         },
@@ -15368,6 +15899,8 @@
             "CLIENT_KEY_FLOW" : "#/components/schemas/CampaignComponentClientKeyFlowVariableResponse",
             "COLOR" : "#/components/schemas/CampaignComponentVariableResponseAsColor",
             "COMPONENT_ID" : "#/components/schemas/CampaignComponentComponentIdVariableResponse",
+            "COMPONENT_REFERENCE" : "#/components/schemas/CampaignComponentComponentReferenceVariableResponseAsComponentReference",
+            "COMPONENT_REFERENCE_LIST" : "#/components/schemas/CampaignComponentComponentReferenceVariableResponseAsComponentReferenceList",
             "COMPONENT_SETTING_LOOKUP" : "#/components/schemas/CampaignComponentComponentSettingLookupVariableResponse",
             "CSS" : "#/components/schemas/CampaignComponentVariableResponseAsCss",
             "DATE_TIME" : "#/components/schemas/CampaignComponentVariableResponseAsDateTime",
@@ -15419,6 +15952,10 @@
           "$ref" : "#/components/schemas/CampaignComponentVariableResponseAsColor"
         }, {
           "$ref" : "#/components/schemas/CampaignComponentComponentIdVariableResponse"
+        }, {
+          "$ref" : "#/components/schemas/CampaignComponentComponentReferenceVariableResponseAsComponentReference"
+        }, {
+          "$ref" : "#/components/schemas/CampaignComponentComponentReferenceVariableResponseAsComponentReferenceList"
         }, {
           "$ref" : "#/components/schemas/CampaignComponentComponentSettingLookupVariableResponse"
         }, {
@@ -15500,7 +16037,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_REFERENCE", "COMPONENT_REFERENCE_LIST", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           }
         },
@@ -15520,6 +16057,8 @@
             "CLIENT_KEY_FLOW" : "#/components/schemas/CampaignComponentClientKeyFlowVariableUpdateRequest",
             "COLOR" : "#/components/schemas/CampaignComponentVariableUpdateRequestAsColor",
             "COMPONENT_ID" : "#/components/schemas/CampaignComponentComponentIdVariableUpdateRequest",
+            "COMPONENT_REFERENCE" : "#/components/schemas/CampaignComponentComponentReferenceVariableUpdateRequestAsComponentReference",
+            "COMPONENT_REFERENCE_LIST" : "#/components/schemas/CampaignComponentComponentReferenceVariableUpdateRequestAsComponentReferenceList",
             "COMPONENT_SETTING_LOOKUP" : "#/components/schemas/CampaignComponentComponentSettingLookupVariableUpdateRequest",
             "CSS" : "#/components/schemas/CampaignComponentVariableUpdateRequestAsCss",
             "DATE_TIME" : "#/components/schemas/CampaignComponentVariableUpdateRequestAsDateTime",
@@ -15571,6 +16110,10 @@
           "$ref" : "#/components/schemas/CampaignComponentVariableUpdateRequestAsColor"
         }, {
           "$ref" : "#/components/schemas/CampaignComponentComponentIdVariableUpdateRequest"
+        }, {
+          "$ref" : "#/components/schemas/CampaignComponentComponentReferenceVariableUpdateRequestAsComponentReference"
+        }, {
+          "$ref" : "#/components/schemas/CampaignComponentComponentReferenceVariableUpdateRequestAsComponentReferenceList"
         }, {
           "$ref" : "#/components/schemas/CampaignComponentComponentSettingLookupVariableUpdateRequest"
         }, {
@@ -15650,7 +16193,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_REFERENCE", "COMPONENT_REFERENCE_LIST", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           }
         },
@@ -16134,7 +16677,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_REFERENCE", "COMPONENT_REFERENCE_LIST", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           },
           "values" : {
@@ -16793,7 +17336,7 @@
             "uniqueItems" : true
           },
           "type" : {
-            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_REFERENCE", "COMPONENT_REFERENCE_LIST", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
             "type" : "string"
           },
           "values" : {
@@ -20158,6 +20701,54 @@
         },
         "type" : "object"
       },
+      "CampaignPathComponentReferenceLookupStrategyRequest" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/ComponentReferenceLookupStrategyRequestBase"
+        }, {
+          "properties" : {
+            "type" : {
+              "enum" : [ "CAMPAIGN_PATH" ],
+              "type" : "string"
+            }
+          },
+          "type" : "object"
+        } ],
+        "description" : "Default lookup strategy: matches candidates using their in-campaign path.",
+        "required" : [ "type" ],
+        "type" : "object"
+      },
+      "CampaignPathComponentReferenceLookupStrategyResponse" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/ComponentReferenceLookupStrategyResponseBase"
+        }, {
+          "properties" : {
+            "type" : {
+              "enum" : [ "CAMPAIGN_PATH" ],
+              "type" : "string"
+            }
+          },
+          "type" : "object"
+        } ],
+        "description" : "Default lookup strategy: matches candidates using their in-campaign path.",
+        "required" : [ "type" ],
+        "type" : "object"
+      },
+      "CampaignPathComponentReferenceLookupStrategyUpdateRequest" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/ComponentReferenceLookupStrategyUpdateRequestBase"
+        }, {
+          "properties" : {
+            "type" : {
+              "enum" : [ "CAMPAIGN_PATH" ],
+              "type" : "string"
+            }
+          },
+          "type" : "object"
+        } ],
+        "description" : "Default lookup strategy: matches candidates using their in-campaign path.",
+        "required" : [ "type" ],
+        "type" : "object"
+      },
       "CampaignProgramLabelRenameRequest" : {
         "properties" : {
           "program_label" : {
@@ -22173,6 +22764,204 @@
         },
         "type" : "object"
       },
+      "ComponentReferenceBoundaryRequest" : {
+        "description" : "Boundary that limits where selectable components are resolved from.",
+        "discriminator" : {
+          "mapping" : {
+            "ANCESTOR_TYPE" : "#/components/schemas/AncestorTypeComponentReferenceBoundaryRequest",
+            "PATH" : "#/components/schemas/PathComponentReferenceBoundaryRequest"
+          },
+          "propertyName" : "type"
+        },
+        "oneOf" : [ {
+          "$ref" : "#/components/schemas/AncestorTypeComponentReferenceBoundaryRequest"
+        }, {
+          "$ref" : "#/components/schemas/PathComponentReferenceBoundaryRequest"
+        } ]
+      },
+      "ComponentReferenceBoundaryRequestBase" : {
+        "properties" : {
+          "type" : {
+            "description" : "How the boundary containing selectable components is derived. ANCESTOR_TYPE takes the nearest ancestor of the configured component type. PATH takes the component matched by a configured absolute path.",
+            "enum" : [ "ANCESTOR_TYPE", "PATH" ],
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "ComponentReferenceBoundaryResponse" : {
+        "description" : "Boundary that limits where selectable components are resolved from.",
+        "discriminator" : {
+          "mapping" : {
+            "ANCESTOR_TYPE" : "#/components/schemas/AncestorTypeComponentReferenceBoundaryResponse",
+            "PATH" : "#/components/schemas/PathComponentReferenceBoundaryResponse"
+          },
+          "propertyName" : "type"
+        },
+        "oneOf" : [ {
+          "$ref" : "#/components/schemas/AncestorTypeComponentReferenceBoundaryResponse"
+        }, {
+          "$ref" : "#/components/schemas/PathComponentReferenceBoundaryResponse"
+        } ]
+      },
+      "ComponentReferenceBoundaryResponseBase" : {
+        "properties" : {
+          "type" : {
+            "description" : "How the boundary containing selectable components is derived. ANCESTOR_TYPE takes the nearest ancestor of the configured component type. PATH takes the component matched by a configured absolute path.",
+            "enum" : [ "ANCESTOR_TYPE", "PATH" ],
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "ComponentReferenceBoundaryUpdateRequest" : {
+        "description" : "Boundary that limits where selectable components are resolved from.",
+        "discriminator" : {
+          "mapping" : {
+            "ANCESTOR_TYPE" : "#/components/schemas/AncestorTypeComponentReferenceBoundaryUpdateRequest",
+            "PATH" : "#/components/schemas/PathComponentReferenceBoundaryUpdateRequest"
+          },
+          "propertyName" : "type"
+        },
+        "oneOf" : [ {
+          "$ref" : "#/components/schemas/AncestorTypeComponentReferenceBoundaryUpdateRequest"
+        }, {
+          "$ref" : "#/components/schemas/PathComponentReferenceBoundaryUpdateRequest"
+        } ]
+      },
+      "ComponentReferenceBoundaryUpdateRequestBase" : {
+        "properties" : {
+          "type" : {
+            "description" : "How the boundary containing selectable components is derived. ANCESTOR_TYPE takes the nearest ancestor of the configured component type. PATH takes the component matched by a configured absolute path.",
+            "enum" : [ "ANCESTOR_TYPE", "PATH" ],
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "ComponentReferenceLookupKeyRequest" : {
+        "description" : "Declares a component attribute, evaluated per candidate component, used to match selectable components. component.id is a reserved name and cannot be declared as a key.",
+        "properties" : {
+          "expression" : {
+            "$ref" : "#/components/schemas/ExpressionInComponentReferenceLookupKeyRequest"
+          },
+          "match" : {
+            "description" : "How a configured component reference key is matched. Values are compared as whole values, never as substrings. EQUALS requires a component's values for the key to be exactly the declared set, compared case-sensitively. EQUALS_IGNORE_CASE applies the same set equality ignoring case. CONTAINS requires a component's values to include every declared value, ignoring case, and allows the component to carry further values beyond those declared.",
+            "enum" : [ "CONTAINS", "EQUALS", "EQUALS_IGNORE_CASE" ],
+            "type" : "string"
+          },
+          "name" : {
+            "description" : "Name of this key, unique among the lookup strategy's keys.",
+            "type" : "string"
+          },
+          "type" : {
+            "description" : "The declared setting type of this key's evaluated value, driving how it is compared. Supported types are STRING, STRING_LIST, COMPONENT_ID, and TRIGGER_CONFIGURATION.",
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_REFERENCE", "COMPONENT_REFERENCE_LIST", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
+            "type" : "string"
+          }
+        },
+        "required" : [ "expression", "match", "name", "type" ],
+        "type" : "object"
+      },
+      "ComponentReferenceLookupKeyResponse" : {
+        "description" : "Configured component attribute, evaluated per candidate component, used for reference matching.",
+        "properties" : {
+          "expression" : {
+            "$ref" : "#/components/schemas/ExpressionInComponentReferenceLookupKeyResponse"
+          },
+          "match" : {
+            "description" : "How a configured component reference key is matched. Values are compared as whole values, never as substrings. EQUALS requires a component's values for the key to be exactly the declared set, compared case-sensitively. EQUALS_IGNORE_CASE applies the same set equality ignoring case. CONTAINS requires a component's values to include every declared value, ignoring case, and allows the component to carry further values beyond those declared.",
+            "enum" : [ "CONTAINS", "EQUALS", "EQUALS_IGNORE_CASE" ],
+            "type" : "string"
+          },
+          "name" : {
+            "description" : "Name of this key, unique among the lookup strategy's keys.",
+            "type" : "string"
+          },
+          "type" : {
+            "description" : "The declared setting type of this key's evaluated value, driving how it is compared. Supported types are STRING, STRING_LIST, COMPONENT_ID, and TRIGGER_CONFIGURATION.",
+            "enum" : [ "ADMIN_ICON", "AUDIENCE_ID", "AUDIENCE_ID_LIST", "BOOLEAN", "BROWSER_SIDE_JAVASCRIPT", "CLIENT_DOMAIN_ID_LIST", "CLIENT_KEY", "CLIENT_KEY_FLOW", "COLOR", "COMPONENT_ID", "COMPONENT_REFERENCE", "COMPONENT_REFERENCE_LIST", "COMPONENT_SETTING_LOOKUP", "CSS", "DATE_TIME", "DELAY", "DELAY_LIST", "ENUM", "ENUM_LIST", "EXTOLE_CLIENT_KEY", "FONT", "GLOB_COMPONENT_PATH", "HTML", "IMAGE", "INTEGER", "INTEGER_LIST", "JSON", "MULTI_SOCKET", "PARTNER_ENUM", "PARTNER_ENUM_LIST", "PERSON_KEY_NAME", "REWARD_SUPPLIER_ID", "REWARD_SUPPLIER_ID_LIST", "SOCKET", "STRING", "STRING_LIST", "STRING_MAP", "TRIGGER_CONFIGURATION", "URL", "WEBHOOK_ID" ],
+            "type" : "string"
+          }
+        },
+        "required" : [ "expression", "match", "name", "type" ],
+        "type" : "object"
+      },
+      "ComponentReferenceLookupStrategyRequest" : {
+        "description" : "Lookup strategy used to match selectable components. Defaults to CAMPAIGN_PATH when omitted.",
+        "discriminator" : {
+          "mapping" : {
+            "CAMPAIGN_PATH" : "#/components/schemas/CampaignPathComponentReferenceLookupStrategyRequest",
+            "EXPRESSION" : "#/components/schemas/ExpressionComponentReferenceLookupStrategyRequest"
+          },
+          "propertyName" : "type"
+        },
+        "oneOf" : [ {
+          "$ref" : "#/components/schemas/CampaignPathComponentReferenceLookupStrategyRequest"
+        }, {
+          "$ref" : "#/components/schemas/ExpressionComponentReferenceLookupStrategyRequest"
+        } ]
+      },
+      "ComponentReferenceLookupStrategyRequestBase" : {
+        "properties" : {
+          "type" : {
+            "description" : "How candidate components are matched against a saved reference. CAMPAIGN_PATH (the default) matches candidates by their in-campaign path. EXPRESSION matches candidates using declared keys, each evaluated per candidate.",
+            "enum" : [ "CAMPAIGN_PATH", "EXPRESSION" ],
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "ComponentReferenceLookupStrategyResponse" : {
+        "description" : "Lookup strategy used to match selectable components.",
+        "discriminator" : {
+          "mapping" : {
+            "CAMPAIGN_PATH" : "#/components/schemas/CampaignPathComponentReferenceLookupStrategyResponse",
+            "EXPRESSION" : "#/components/schemas/ExpressionComponentReferenceLookupStrategyResponse"
+          },
+          "propertyName" : "type"
+        },
+        "oneOf" : [ {
+          "$ref" : "#/components/schemas/CampaignPathComponentReferenceLookupStrategyResponse"
+        }, {
+          "$ref" : "#/components/schemas/ExpressionComponentReferenceLookupStrategyResponse"
+        } ]
+      },
+      "ComponentReferenceLookupStrategyResponseBase" : {
+        "properties" : {
+          "type" : {
+            "description" : "How candidate components are matched against a saved reference. CAMPAIGN_PATH (the default) matches candidates by their in-campaign path. EXPRESSION matches candidates using declared keys, each evaluated per candidate.",
+            "enum" : [ "CAMPAIGN_PATH", "EXPRESSION" ],
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "ComponentReferenceLookupStrategyUpdateRequest" : {
+        "description" : "Lookup strategy used to match selectable components.",
+        "discriminator" : {
+          "mapping" : {
+            "CAMPAIGN_PATH" : "#/components/schemas/CampaignPathComponentReferenceLookupStrategyUpdateRequest",
+            "EXPRESSION" : "#/components/schemas/ExpressionComponentReferenceLookupStrategyUpdateRequest"
+          },
+          "propertyName" : "type"
+        },
+        "oneOf" : [ {
+          "$ref" : "#/components/schemas/CampaignPathComponentReferenceLookupStrategyUpdateRequest"
+        }, {
+          "$ref" : "#/components/schemas/ExpressionComponentReferenceLookupStrategyUpdateRequest"
+        } ]
+      },
+      "ComponentReferenceLookupStrategyUpdateRequestBase" : {
+        "properties" : {
+          "type" : {
+            "description" : "How candidate components are matched against a saved reference. CAMPAIGN_PATH (the default) matches candidates by their in-campaign path. EXPRESSION matches candidates using declared keys, each evaluated per candidate.",
+            "enum" : [ "CAMPAIGN_PATH", "EXPRESSION" ],
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
       "ComponentReferenceRequest" : {
         "properties" : {
           "component_id" : {
@@ -22387,6 +23176,18 @@
       "ComponentSettingVariableValuesAsColor" : {
         "additionalProperties" : {
           "$ref" : "#/components/schemas/ValuesInCampaignComponentVariableRequestAsColor"
+        },
+        "type" : "object"
+      },
+      "ComponentSettingVariableValuesAsComponentReference" : {
+        "additionalProperties" : {
+          "$ref" : "#/components/schemas/ValuesInCampaignComponentComponentReferenceVariableRequestAsComponentReference"
+        },
+        "type" : "object"
+      },
+      "ComponentSettingVariableValuesAsComponentReferenceList" : {
+        "additionalProperties" : {
+          "$ref" : "#/components/schemas/ValuesInCampaignComponentComponentReferenceVariableRequestAsComponentReferenceList"
         },
         "type" : "object"
       },
@@ -24655,6 +25456,122 @@
         } ]
       },
       "DescriptionInCampaignComponentComponentIdVariableUpdateRequest" : {
+        "description" : "Choose between static or dynamic description",
+        "oneOf" : [ {
+          "description" : "Static description",
+          "nullable" : true,
+          "title" : "Static Value",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [VariableDescriptionBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{description}}",
+          "externalDocs" : {
+            "description" : "VariableDescriptionBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [VariableDescriptionBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('description');}",
+          "externalDocs" : {
+            "description" : "VariableDescriptionBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "DescriptionInCampaignComponentComponentReferenceVariableRequestAsComponentReference" : {
+        "description" : "Choose between static or dynamic description",
+        "oneOf" : [ {
+          "description" : "Static description",
+          "nullable" : true,
+          "title" : "Static Value",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [VariableDescriptionBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{description}}",
+          "externalDocs" : {
+            "description" : "VariableDescriptionBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [VariableDescriptionBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('description');}",
+          "externalDocs" : {
+            "description" : "VariableDescriptionBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "DescriptionInCampaignComponentComponentReferenceVariableRequestAsComponentReferenceList" : {
+        "description" : "Choose between static or dynamic description",
+        "oneOf" : [ {
+          "description" : "Static description",
+          "nullable" : true,
+          "title" : "Static Value",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [VariableDescriptionBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{description}}",
+          "externalDocs" : {
+            "description" : "VariableDescriptionBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [VariableDescriptionBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('description');}",
+          "externalDocs" : {
+            "description" : "VariableDescriptionBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "DescriptionInCampaignComponentComponentReferenceVariableUpdateRequestAsComponentReference" : {
+        "description" : "Choose between static or dynamic description",
+        "oneOf" : [ {
+          "description" : "Static description",
+          "nullable" : true,
+          "title" : "Static Value",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [VariableDescriptionBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{description}}",
+          "externalDocs" : {
+            "description" : "VariableDescriptionBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [VariableDescriptionBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('description');}",
+          "externalDocs" : {
+            "description" : "VariableDescriptionBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableDescriptionBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "DescriptionInCampaignComponentComponentReferenceVariableUpdateRequestAsComponentReferenceList" : {
         "description" : "Choose between static or dynamic description",
         "oneOf" : [ {
           "description" : "Static description",
@@ -31789,6 +32706,75 @@
           "type" : "string"
         } ]
       },
+      "ExpressionComponentReferenceLookupStrategyRequest" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/ComponentReferenceLookupStrategyRequestBase"
+        }, {
+          "properties" : {
+            "keys" : {
+              "description" : "Keys used to match selectable components. At least one key is required.",
+              "items" : {
+                "$ref" : "#/components/schemas/ComponentReferenceLookupKeyRequest"
+              },
+              "type" : "array"
+            },
+            "type" : {
+              "enum" : [ "EXPRESSION" ],
+              "type" : "string"
+            }
+          },
+          "type" : "object"
+        } ],
+        "description" : "Lookup strategy that matches candidates using declared keys, each evaluated per candidate component.",
+        "required" : [ "keys", "type" ],
+        "type" : "object"
+      },
+      "ExpressionComponentReferenceLookupStrategyResponse" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/ComponentReferenceLookupStrategyResponseBase"
+        }, {
+          "properties" : {
+            "keys" : {
+              "description" : "Keys used to match selectable components.",
+              "items" : {
+                "$ref" : "#/components/schemas/ComponentReferenceLookupKeyResponse"
+              },
+              "type" : "array"
+            },
+            "type" : {
+              "enum" : [ "EXPRESSION" ],
+              "type" : "string"
+            }
+          },
+          "type" : "object"
+        } ],
+        "description" : "Lookup strategy that matches candidates using declared keys, each evaluated per candidate component.",
+        "required" : [ "keys", "type" ],
+        "type" : "object"
+      },
+      "ExpressionComponentReferenceLookupStrategyUpdateRequest" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/ComponentReferenceLookupStrategyUpdateRequestBase"
+        }, {
+          "properties" : {
+            "keys" : {
+              "description" : "Keys used to match selectable components. At least one key is required.",
+              "items" : {
+                "$ref" : "#/components/schemas/ComponentReferenceLookupKeyRequest"
+              },
+              "type" : "array"
+            },
+            "type" : {
+              "enum" : [ "EXPRESSION" ],
+              "type" : "string"
+            }
+          },
+          "type" : "object"
+        } ],
+        "description" : "Lookup strategy that matches candidates using declared keys, each evaluated per candidate component.",
+        "required" : [ "keys", "type" ],
+        "type" : "object"
+      },
       "ExpressionInBuiltCampaignControllerActionExpressionResponse" : {
         "description" : "The expression as configured: a literal value, or an expression (type:string) when defined dynamically.",
         "oneOf" : [ {
@@ -31979,6 +32965,62 @@
           },
           "pattern" : "^javascript@buildtime:.*",
           "title" : "Buildtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "ExpressionInComponentReferenceLookupKeyRequest" : {
+        "description" : "Expression evaluated per candidate component to produce this key's value.",
+        "oneOf" : [ {
+          "description" : "Static expression",
+          "title" : "Static Value",
+          "type" : "object"
+        }, {
+          "description" : "Handlebars expression with [ComponentReferenceLookupStrategyContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ComponentReferenceLookupStrategyContext.d.ts).",
+          "example" : "handlebars@runtime:{{expression}}",
+          "externalDocs" : {
+            "description" : "ComponentReferenceLookupStrategyContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ComponentReferenceLookupStrategyContext.d.ts"
+          },
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [ComponentReferenceLookupStrategyContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ComponentReferenceLookupStrategyContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('expression');}",
+          "externalDocs" : {
+            "description" : "ComponentReferenceLookupStrategyContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ComponentReferenceLookupStrategyContext.d.ts"
+          },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "ExpressionInComponentReferenceLookupKeyResponse" : {
+        "description" : "Expression evaluated per candidate component to produce this key's value.",
+        "oneOf" : [ {
+          "description" : "Literal expression",
+          "title" : "Static Value",
+          "type" : "object"
+        }, {
+          "description" : "Handlebars expression with [ComponentReferenceLookupStrategyContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ComponentReferenceLookupStrategyContext.d.ts).",
+          "example" : "handlebars@runtime:{{expression}}",
+          "externalDocs" : {
+            "description" : "ComponentReferenceLookupStrategyContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ComponentReferenceLookupStrategyContext.d.ts"
+          },
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [ComponentReferenceLookupStrategyContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ComponentReferenceLookupStrategyContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('expression');}",
+          "externalDocs" : {
+            "description" : "ComponentReferenceLookupStrategyContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ComponentReferenceLookupStrategyContext.d.ts"
+          },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
           "type" : "string"
         } ]
       },
@@ -41010,6 +42052,186 @@
         "required" : [ "email" ],
         "type" : "object"
       },
+      "PathComponentReferenceBoundaryRequest" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/ComponentReferenceBoundaryRequestBase"
+        }, {
+          "properties" : {
+            "path" : {
+              "$ref" : "#/components/schemas/PathInPathComponentReferenceBoundaryRequest"
+            },
+            "type" : {
+              "enum" : [ "PATH" ],
+              "type" : "string"
+            }
+          },
+          "type" : "object"
+        } ],
+        "description" : "Boundary that resolves selectable components within an evaluated component path.",
+        "required" : [ "path", "type" ],
+        "type" : "object"
+      },
+      "PathComponentReferenceBoundaryResponse" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/ComponentReferenceBoundaryResponseBase"
+        }, {
+          "properties" : {
+            "path" : {
+              "$ref" : "#/components/schemas/PathInPathComponentReferenceBoundaryResponse"
+            },
+            "type" : {
+              "enum" : [ "PATH" ],
+              "type" : "string"
+            }
+          },
+          "type" : "object"
+        } ],
+        "description" : "Boundary that resolves selectable components within an evaluated component path.",
+        "required" : [ "path", "type" ],
+        "type" : "object"
+      },
+      "PathComponentReferenceBoundaryUpdateRequest" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/ComponentReferenceBoundaryUpdateRequestBase"
+        }, {
+          "properties" : {
+            "path" : {
+              "$ref" : "#/components/schemas/PathInPathComponentReferenceBoundaryUpdateRequest"
+            },
+            "type" : {
+              "enum" : [ "PATH" ],
+              "type" : "string"
+            }
+          },
+          "type" : "object"
+        } ],
+        "description" : "Boundary that resolves selectable components within an evaluated component path.",
+        "required" : [ "type" ],
+        "type" : "object"
+      },
+      "PathInPathComponentReferenceBoundaryRequest" : {
+        "description" : "Path expression, evaluated at build or install time, that defines the selectable component boundary.",
+        "oneOf" : [ {
+          "allOf" : [ {
+            "type" : "string"
+          }, {
+            "not" : {
+              "anyOf" : [ {
+                "pattern" : "^handlebars@buildtime:.*",
+                "type" : "string"
+              }, {
+                "pattern" : "^javascript@buildtime:.*",
+                "type" : "string"
+              } ]
+            },
+            "type" : "string"
+          } ],
+          "description" : "Static path",
+          "title" : "Static Value"
+        }, {
+          "description" : "Handlebars expression with [ComponentReferenceBoundaryPathContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ComponentReferenceBoundaryPathContext.d.ts).",
+          "example" : "handlebars@buildtime:{{path}}",
+          "externalDocs" : {
+            "description" : "ComponentReferenceBoundaryPathContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ComponentReferenceBoundaryPathContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [ComponentReferenceBoundaryPathContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ComponentReferenceBoundaryPathContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('path');}",
+          "externalDocs" : {
+            "description" : "ComponentReferenceBoundaryPathContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ComponentReferenceBoundaryPathContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "PathInPathComponentReferenceBoundaryResponse" : {
+        "description" : "Path expression, evaluated at build or install time, that defines the selectable component boundary.",
+        "oneOf" : [ {
+          "allOf" : [ {
+            "type" : "string"
+          }, {
+            "not" : {
+              "anyOf" : [ {
+                "pattern" : "^handlebars@buildtime:.*",
+                "type" : "string"
+              }, {
+                "pattern" : "^javascript@buildtime:.*",
+                "type" : "string"
+              } ]
+            },
+            "type" : "string"
+          } ],
+          "description" : "Literal path",
+          "title" : "Static Value"
+        }, {
+          "description" : "Handlebars expression with [ComponentReferenceBoundaryPathContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ComponentReferenceBoundaryPathContext.d.ts).",
+          "example" : "handlebars@buildtime:{{path}}",
+          "externalDocs" : {
+            "description" : "ComponentReferenceBoundaryPathContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ComponentReferenceBoundaryPathContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [ComponentReferenceBoundaryPathContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ComponentReferenceBoundaryPathContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('path');}",
+          "externalDocs" : {
+            "description" : "ComponentReferenceBoundaryPathContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ComponentReferenceBoundaryPathContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "PathInPathComponentReferenceBoundaryUpdateRequest" : {
+        "description" : "Path expression, evaluated at build or install time, that defines the selectable component boundary.",
+        "oneOf" : [ {
+          "allOf" : [ {
+            "type" : "string"
+          }, {
+            "not" : {
+              "anyOf" : [ {
+                "pattern" : "^handlebars@buildtime:.*",
+                "type" : "string"
+              }, {
+                "pattern" : "^javascript@buildtime:.*",
+                "type" : "string"
+              } ]
+            },
+            "type" : "string"
+          } ],
+          "description" : "Static path",
+          "title" : "Static Value"
+        }, {
+          "description" : "Handlebars expression with [ComponentReferenceBoundaryPathContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ComponentReferenceBoundaryPathContext.d.ts).",
+          "example" : "handlebars@buildtime:{{path}}",
+          "externalDocs" : {
+            "description" : "ComponentReferenceBoundaryPathContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ComponentReferenceBoundaryPathContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [ComponentReferenceBoundaryPathContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ComponentReferenceBoundaryPathContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('path');}",
+          "externalDocs" : {
+            "description" : "ComponentReferenceBoundaryPathContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ComponentReferenceBoundaryPathContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        } ]
+      },
       "PatternInFileNameMatchesTriggerRequest" : {
         "description" : "Filename pattern to match. A literal value or a buildtime expression resolved from component references when the trigger is saved.",
         "oneOf" : [ {
@@ -49118,6 +50340,178 @@
           "type" : "string"
         } ]
       },
+      "UnmatchedDescriptionInCampaignComponentComponentReferenceVariableRequestAsComponentReference" : {
+        "description" : "Description shown when a saved reference no longer matches a selectable component.",
+        "oneOf" : [ {
+          "description" : "Static unmatched description",
+          "nullable" : true,
+          "title" : "Static Value",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [CampaignBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{unmatchedDescription}}",
+          "externalDocs" : {
+            "description" : "CampaignBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [CampaignBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('unmatchedDescription');}",
+          "externalDocs" : {
+            "description" : "CampaignBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "UnmatchedDescriptionInCampaignComponentComponentReferenceVariableRequestAsComponentReferenceList" : {
+        "description" : "Description shown when a saved reference no longer matches a selectable component.",
+        "oneOf" : [ {
+          "description" : "Static unmatched description",
+          "nullable" : true,
+          "title" : "Static Value",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [CampaignBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{unmatchedDescription}}",
+          "externalDocs" : {
+            "description" : "CampaignBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [CampaignBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('unmatchedDescription');}",
+          "externalDocs" : {
+            "description" : "CampaignBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "UnmatchedDescriptionInCampaignComponentComponentReferenceVariableResponseAsComponentReference" : {
+        "description" : "Description shown when a saved reference no longer matches a selectable component.",
+        "oneOf" : [ {
+          "description" : "Literal unmatched description",
+          "title" : "Static Value",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [CampaignBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{unmatchedDescription}}",
+          "externalDocs" : {
+            "description" : "CampaignBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [CampaignBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('unmatchedDescription');}",
+          "externalDocs" : {
+            "description" : "CampaignBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "UnmatchedDescriptionInCampaignComponentComponentReferenceVariableResponseAsComponentReferenceList" : {
+        "description" : "Description shown when a saved reference no longer matches a selectable component.",
+        "oneOf" : [ {
+          "description" : "Literal unmatched description",
+          "title" : "Static Value",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [CampaignBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{unmatchedDescription}}",
+          "externalDocs" : {
+            "description" : "CampaignBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [CampaignBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('unmatchedDescription');}",
+          "externalDocs" : {
+            "description" : "CampaignBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "UnmatchedDescriptionInCampaignComponentComponentReferenceVariableUpdateRequestAsComponentReference" : {
+        "description" : "Description shown when a saved reference no longer matches a selectable component.",
+        "oneOf" : [ {
+          "description" : "Static unmatched description",
+          "nullable" : true,
+          "title" : "Static Value",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [CampaignBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{unmatchedDescription}}",
+          "externalDocs" : {
+            "description" : "CampaignBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [CampaignBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('unmatchedDescription');}",
+          "externalDocs" : {
+            "description" : "CampaignBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "UnmatchedDescriptionInCampaignComponentComponentReferenceVariableUpdateRequestAsComponentReferenceList" : {
+        "description" : "Description shown when a saved reference no longer matches a selectable component.",
+        "oneOf" : [ {
+          "description" : "Static unmatched description",
+          "nullable" : true,
+          "title" : "Static Value",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with [CampaignBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{unmatchedDescription}}",
+          "externalDocs" : {
+            "description" : "CampaignBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [CampaignBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('unmatchedDescription');}",
+          "externalDocs" : {
+            "description" : "CampaignBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        } ]
+      },
       "UpdateClientTimelineEntryRequest" : {
         "properties" : {
           "date" : {
@@ -49665,6 +51059,86 @@
             "description" : "RewardActionContext",
             "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/reward/RewardActionContext.d.ts"
           },
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "ValuesInCampaignComponentComponentReferenceVariableRequestAsComponentReference" : {
+        "description" : "Choose between static or dynamic values",
+        "oneOf" : [ {
+          "description" : "Static values",
+          "title" : "Static Value",
+          "type" : "object"
+        }, {
+          "description" : "Handlebars expression with [VariableBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{values}}",
+          "externalDocs" : {
+            "description" : "VariableBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [VariableBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('values');}",
+          "externalDocs" : {
+            "description" : "VariableBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with one of the contexts: [ApproveActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/approve/ApproveActionContext.d.ts), [AudienceMembershipTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/audience/membership/AudienceMembershipTriggerContext.d.ts), [ClientWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/ClientWebhookRuntimeContext.d.ts), [ConsumerWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/ConsumerWebhookRuntimeContext.d.ts), [CreativeActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/creative/CreativeActionContext.d.ts), [DisplayActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/display/DisplayActionContext.d.ts), [DisplayActionResponseContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/display/DisplayActionResponseContext.d.ts), [EmailActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/email/EmailActionContext.d.ts), [ExpireRewardActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/expire/reward/ExpireRewardActionContext.d.ts), [ExpressionActionCommandContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/expression/ExpressionActionCommandContext.d.ts), [ExpressionActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/expression/ExpressionActionContext.d.ts), [ExpressionTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/expression/ExpressionTriggerContext.d.ts), [FireAsPersonActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/fire/as/person/FireAsPersonActionContext.d.ts), [HasPriorRewardTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/reward/HasPriorRewardTriggerContext.d.ts), [HasPriorStepTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/step/HasPriorStepTriggerContext.d.ts), [IncentivizeActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/incentivize/IncentivizeActionContext.d.ts), [IncentivizeStatusUpdateActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/incentivize/status/update/IncentivizeStatusUpdateActionContext.d.ts), [JourneyKeyContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/journey/JourneyKeyContext.d.ts), [LegacyQualityRuleTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/legacy/quality/LegacyQualityRuleTriggerContext.d.ts), [PartnerWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/PartnerWebhookRuntimeContext.d.ts), [PrehandlerActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/prehandler/PrehandlerActionContext.d.ts), [PrehandlerConditionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/prehandler/PrehandlerConditionContext.d.ts), [PrehandlerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/prehandler/PrehandlerContext.d.ts), [RewardActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/reward/RewardActionContext.d.ts), [RewardHasPriorRewardTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/reward/RewardHasPriorRewardTriggerContext.d.ts), [RewardWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/reward/RewardWebhookRuntimeContext.d.ts), [ScheduleActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/schedule/ScheduleActionContext.d.ts), [SignalActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/signal/SignalActionContext.d.ts), [StepActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/StepActionContext.d.ts), [StepBuilderContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/builder/StepBuilderContext.d.ts), [StepContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/StepContext.d.ts), [StepDataContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/data/StepDataContext.d.ts), [StepHasPriorStepTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/step/StepHasPriorStepTriggerContext.d.ts), [StepTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/StepTriggerContext.d.ts), [VariableRuntimeCreativeActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/runtime/VariableRuntimeCreativeActionContext.d.ts), [WebhookActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts), [WebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/WebhookRuntimeContext.d.ts).",
+          "example" : "handlebars@runtime:{{values}}",
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with one of the contexts: [ApproveActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/approve/ApproveActionContext.d.ts), [AudienceMembershipTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/audience/membership/AudienceMembershipTriggerContext.d.ts), [ClientWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/ClientWebhookRuntimeContext.d.ts), [ConsumerWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/ConsumerWebhookRuntimeContext.d.ts), [CreativeActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/creative/CreativeActionContext.d.ts), [DisplayActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/display/DisplayActionContext.d.ts), [DisplayActionResponseContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/display/DisplayActionResponseContext.d.ts), [EmailActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/email/EmailActionContext.d.ts), [ExpireRewardActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/expire/reward/ExpireRewardActionContext.d.ts), [ExpressionActionCommandContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/expression/ExpressionActionCommandContext.d.ts), [ExpressionActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/expression/ExpressionActionContext.d.ts), [ExpressionTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/expression/ExpressionTriggerContext.d.ts), [FireAsPersonActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/fire/as/person/FireAsPersonActionContext.d.ts), [HasPriorRewardTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/reward/HasPriorRewardTriggerContext.d.ts), [HasPriorStepTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/step/HasPriorStepTriggerContext.d.ts), [IncentivizeActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/incentivize/IncentivizeActionContext.d.ts), [IncentivizeStatusUpdateActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/incentivize/status/update/IncentivizeStatusUpdateActionContext.d.ts), [JourneyKeyContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/journey/JourneyKeyContext.d.ts), [LegacyQualityRuleTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/legacy/quality/LegacyQualityRuleTriggerContext.d.ts), [PartnerWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/PartnerWebhookRuntimeContext.d.ts), [PrehandlerActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/prehandler/PrehandlerActionContext.d.ts), [PrehandlerConditionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/prehandler/PrehandlerConditionContext.d.ts), [PrehandlerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/prehandler/PrehandlerContext.d.ts), [RewardActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/reward/RewardActionContext.d.ts), [RewardHasPriorRewardTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/reward/RewardHasPriorRewardTriggerContext.d.ts), [RewardWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/reward/RewardWebhookRuntimeContext.d.ts), [ScheduleActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/schedule/ScheduleActionContext.d.ts), [SignalActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/signal/SignalActionContext.d.ts), [StepActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/StepActionContext.d.ts), [StepBuilderContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/builder/StepBuilderContext.d.ts), [StepContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/StepContext.d.ts), [StepDataContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/data/StepDataContext.d.ts), [StepHasPriorStepTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/step/StepHasPriorStepTriggerContext.d.ts), [StepTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/StepTriggerContext.d.ts), [VariableRuntimeCreativeActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/runtime/VariableRuntimeCreativeActionContext.d.ts), [WebhookActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts), [WebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/WebhookRuntimeContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('values');}",
+          "pattern" : "^javascript@runtime:.*",
+          "title" : "Runtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "ValuesInCampaignComponentComponentReferenceVariableRequestAsComponentReferenceList" : {
+        "description" : "Choose between static or dynamic values",
+        "oneOf" : [ {
+          "description" : "Static values",
+          "title" : "Static Value",
+          "type" : "object"
+        }, {
+          "description" : "Handlebars expression with [VariableBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{values}}",
+          "externalDocs" : {
+            "description" : "VariableBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [VariableBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('values');}",
+          "externalDocs" : {
+            "description" : "VariableBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/VariableBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        }, {
+          "description" : "Handlebars expression with one of the contexts: [ApproveActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/approve/ApproveActionContext.d.ts), [AudienceMembershipTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/audience/membership/AudienceMembershipTriggerContext.d.ts), [ClientWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/ClientWebhookRuntimeContext.d.ts), [ConsumerWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/ConsumerWebhookRuntimeContext.d.ts), [CreativeActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/creative/CreativeActionContext.d.ts), [DisplayActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/display/DisplayActionContext.d.ts), [DisplayActionResponseContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/display/DisplayActionResponseContext.d.ts), [EmailActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/email/EmailActionContext.d.ts), [ExpireRewardActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/expire/reward/ExpireRewardActionContext.d.ts), [ExpressionActionCommandContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/expression/ExpressionActionCommandContext.d.ts), [ExpressionActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/expression/ExpressionActionContext.d.ts), [ExpressionTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/expression/ExpressionTriggerContext.d.ts), [FireAsPersonActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/fire/as/person/FireAsPersonActionContext.d.ts), [HasPriorRewardTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/reward/HasPriorRewardTriggerContext.d.ts), [HasPriorStepTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/step/HasPriorStepTriggerContext.d.ts), [IncentivizeActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/incentivize/IncentivizeActionContext.d.ts), [IncentivizeStatusUpdateActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/incentivize/status/update/IncentivizeStatusUpdateActionContext.d.ts), [JourneyKeyContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/journey/JourneyKeyContext.d.ts), [LegacyQualityRuleTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/legacy/quality/LegacyQualityRuleTriggerContext.d.ts), [PartnerWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/PartnerWebhookRuntimeContext.d.ts), [PrehandlerActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/prehandler/PrehandlerActionContext.d.ts), [PrehandlerConditionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/prehandler/PrehandlerConditionContext.d.ts), [PrehandlerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/prehandler/PrehandlerContext.d.ts), [RewardActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/reward/RewardActionContext.d.ts), [RewardHasPriorRewardTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/reward/RewardHasPriorRewardTriggerContext.d.ts), [RewardWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/reward/RewardWebhookRuntimeContext.d.ts), [ScheduleActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/schedule/ScheduleActionContext.d.ts), [SignalActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/signal/SignalActionContext.d.ts), [StepActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/StepActionContext.d.ts), [StepBuilderContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/builder/StepBuilderContext.d.ts), [StepContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/StepContext.d.ts), [StepDataContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/data/StepDataContext.d.ts), [StepHasPriorStepTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/step/StepHasPriorStepTriggerContext.d.ts), [StepTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/StepTriggerContext.d.ts), [VariableRuntimeCreativeActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/runtime/VariableRuntimeCreativeActionContext.d.ts), [WebhookActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts), [WebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/WebhookRuntimeContext.d.ts).",
+          "example" : "handlebars@runtime:{{values}}",
+          "pattern" : "^handlebars@runtime:.*",
+          "title" : "Runtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with one of the contexts: [ApproveActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/approve/ApproveActionContext.d.ts), [AudienceMembershipTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/audience/membership/AudienceMembershipTriggerContext.d.ts), [ClientWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/ClientWebhookRuntimeContext.d.ts), [ConsumerWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/ConsumerWebhookRuntimeContext.d.ts), [CreativeActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/creative/CreativeActionContext.d.ts), [DisplayActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/display/DisplayActionContext.d.ts), [DisplayActionResponseContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/display/DisplayActionResponseContext.d.ts), [EmailActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/email/EmailActionContext.d.ts), [ExpireRewardActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/expire/reward/ExpireRewardActionContext.d.ts), [ExpressionActionCommandContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/expression/ExpressionActionCommandContext.d.ts), [ExpressionActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/expression/ExpressionActionContext.d.ts), [ExpressionTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/expression/ExpressionTriggerContext.d.ts), [FireAsPersonActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/fire/as/person/FireAsPersonActionContext.d.ts), [HasPriorRewardTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/reward/HasPriorRewardTriggerContext.d.ts), [HasPriorStepTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/step/HasPriorStepTriggerContext.d.ts), [IncentivizeActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/incentivize/IncentivizeActionContext.d.ts), [IncentivizeStatusUpdateActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/incentivize/status/update/IncentivizeStatusUpdateActionContext.d.ts), [JourneyKeyContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/journey/JourneyKeyContext.d.ts), [LegacyQualityRuleTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/legacy/quality/LegacyQualityRuleTriggerContext.d.ts), [PartnerWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/PartnerWebhookRuntimeContext.d.ts), [PrehandlerActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/prehandler/PrehandlerActionContext.d.ts), [PrehandlerConditionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/prehandler/PrehandlerConditionContext.d.ts), [PrehandlerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/prehandler/PrehandlerContext.d.ts), [RewardActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/reward/RewardActionContext.d.ts), [RewardHasPriorRewardTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/reward/RewardHasPriorRewardTriggerContext.d.ts), [RewardWebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/reward/RewardWebhookRuntimeContext.d.ts), [ScheduleActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/schedule/ScheduleActionContext.d.ts), [SignalActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/signal/SignalActionContext.d.ts), [StepActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/StepActionContext.d.ts), [StepBuilderContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/builder/StepBuilderContext.d.ts), [StepContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/StepContext.d.ts), [StepDataContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/data/StepDataContext.d.ts), [StepHasPriorStepTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/has/prior/step/StepHasPriorStepTriggerContext.d.ts), [StepTriggerContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/trigger/StepTriggerContext.d.ts), [VariableRuntimeCreativeActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/runtime/VariableRuntimeCreativeActionContext.d.ts), [WebhookActionContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/step/action/webhook/WebhookActionContext.d.ts), [WebhookRuntimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/webhook/WebhookRuntimeContext.d.ts).",
+          "example" : "javascript@runtime:function() { return context.get('values');}",
           "pattern" : "^javascript@runtime:.*",
           "title" : "Runtime - Javascript",
           "type" : "string"

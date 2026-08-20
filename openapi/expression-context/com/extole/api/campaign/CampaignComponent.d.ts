@@ -10,6 +10,7 @@ export interface CampaignComponent {
     getName(): string;
     getParent(): CampaignComponent | null;
     getPath(): string;
+    getTags(): string[];
     getTypes(): string[];
     getVariableValue(name: string): unknown;
     getVariableValue(name: string, keys: string[]): unknown;
