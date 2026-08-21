@@ -13767,12 +13767,14 @@
             "$ref" : "#/components/schemas/ComponentDisplayNameInCampaignComponentSocketAddComponentRequest"
           },
           "settings" : {
+            "description" : "Overrides to apply to settings on the duplicated component. Each entry identifies an existing source setting by name and supplies values to apply to the duplicate.",
             "items" : {
               "$ref" : "#/components/schemas/CampaignComponentSettingRequest"
             },
             "type" : "array"
           },
           "source_component_id" : {
+            "description" : "Identifier of the source component to duplicate. The endpoint installs a distinct duplicate and does not reference or modify the source component.",
             "type" : "string"
           }
         },
@@ -17797,7 +17799,7 @@
         "type" : "object"
       },
       "ComponentDisplayNameInCampaignComponentSocketAddComponentRequest" : {
-        "description" : "Choose between static or dynamic component display name. Buildtime expressions use [CampaignBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts).",
+        "description" : "Display name to assign to the duplicated component. Buildtime expressions use [CampaignBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts).",
         "externalDocs" : {
           "description" : "CampaignBuildtimeContext",
           "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts"
@@ -85884,7 +85886,7 @@
     },
     "/v1/components/{component_id}/settings/{setting_name}/add-component" : {
       "post" : {
-        "description" : "Adds a component reference to the specified socket-type setting.",
+        "description" : "Creates a distinct duplicate of the component identified by `source_component_id` and installs it into the specified `SOCKET` or `MULTI_SOCKET` setting. The source component is not referenced or modified. Optional `settings` entries override settings on the duplicate.",
         "operationId" : "addComponentToSetting",
         "parameters" : [ {
           "in" : "path",
@@ -85894,6 +85896,7 @@
             "type" : "string"
           }
         }, {
+          "description" : "Name of the target setting. The setting must have type `SOCKET` or `MULTI_SOCKET`.",
           "in" : "path",
           "name" : "setting_name",
           "required" : true,

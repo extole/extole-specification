@@ -204007,7 +204007,7 @@
           "request": {
             "name": "Add component to setting",
             "description": {
-              "content": "Adds a component reference to the specified socket-type setting.",
+              "content": "Creates a distinct duplicate of the component identified by `source_component_id` and installs it into the specified `SOCKET` or `MULTI_SOCKET` setting. The source component is not referenced or modified. Optional `settings` entries override settings on the duplicate.",
               "type": "text/plain"
             },
             "url": {
@@ -204038,7 +204038,7 @@
                   "key": "setting_name",
                   "disabled": false,
                   "description": {
-                    "content": "(Required) ",
+                    "content": "(Required) Name of the target setting. The setting must have type `SOCKET` or `MULTI_SOCKET`.",
                     "type": "text/plain"
                   }
                 }
