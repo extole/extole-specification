@@ -6516,2152 +6516,6 @@
       ]
     },
     {
-      "name": "Profile Assets",
-      "description": "",
-      "item": [
-        {
-          "id": "e8f28c89-86a6-41b4-bbe7-c4fca30c54ea",
-          "name": "List assets for a person",
-          "request": {
-            "name": "List assets for a person",
-            "description": {
-              "content": "Returns all assets attached to the person profile identified by `personId`. Assets are binary or text files associated with a program participant — for example, wallet passes, QR codes, or uploaded images. Use `getPersonAsset` to fetch a single asset's metadata, or `downloadPersonAsset` to retrieve its content.",
-              "type": "text/plain"
-            },
-            "url": {
-              "path": ["api", "v4", "persons", ":personId", "assets"],
-              "host": ["{{baseUrl}}"],
-              "query": [],
-              "variable": [
-                {
-                  "type": "any",
-                  "value": "<string>",
-                  "key": "personId",
-                  "disabled": false,
-                  "description": {
-                    "content": "(Required) The Extole unique profile identifier of this user at Extole.",
-                    "type": "text/plain"
-                  }
-                }
-              ]
-            },
-            "header": [{ "key": "Accept", "value": "<string>" }],
-            "method": "GET",
-            "body": {},
-            "auth": null
-          },
-          "response": [
-            {
-              "id": "e51d478f-1d07-4c6a-b749-c6f704b98f2e",
-              "name": "Assets attached to the person.",
-              "originalRequest": {
-                "url": {
-                  "path": ["api", "v4", "persons", ":personId", "assets"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "OK",
-              "code": 200,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "7d8fc7c1-aa97-4ad6-a3cd-55fd03139ec8",
-              "name": "invalid_person_id",
-              "originalRequest": {
-                "url": {
-                  "path": ["api", "v4", "persons", ":personId", "assets"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "28855515-4178-419b-b987-7ea92e5c2093",
-              "name": "person_not_found",
-              "originalRequest": {
-                "url": {
-                  "path": ["api", "v4", "persons", ":personId", "assets"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "4188ef2e-3c7a-4ad1-a238-702ce7070658",
-              "name": "Unauthorized",
-              "originalRequest": {
-                "url": {
-                  "path": ["api", "v4", "persons", ":personId", "assets"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Unauthorized",
-              "code": 401,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "184270ac-c3bf-4f2a-8331-7e7976f079b5",
-              "name": "access_denied",
-              "originalRequest": {
-                "url": {
-                  "path": ["api", "v4", "persons", ":personId", "assets"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "ecc22fbc-a9ac-40b9-b744-85e4c63344bc",
-              "name": "expired_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": ["api", "v4", "persons", ":personId", "assets"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "19474f03-766e-4eda-af8b-65943ba18f45",
-              "name": "invalid_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": ["api", "v4", "persons", ":personId", "assets"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "9fead833-1b52-4f34-a4ba-32ba522b9bd6",
-              "name": "jwt_authentication_error",
-              "originalRequest": {
-                "url": {
-                  "path": ["api", "v4", "persons", ":personId", "assets"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "83085c62-c795-40ee-9f1b-5447e98d736f",
-              "name": "method_unauthorized",
-              "originalRequest": {
-                "url": {
-                  "path": ["api", "v4", "persons", ":personId", "assets"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "60ba5658-60d4-487b-baec-a28c3d809670",
-              "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": ["api", "v4", "persons", ":personId", "assets"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "95ea3c0e-7586-4ec5-8009-8044d057be74",
-              "name": "Unsupported Media Type",
-              "originalRequest": {
-                "url": {
-                  "path": ["api", "v4", "persons", ":personId", "assets"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Unsupported Media Type",
-              "code": 415,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "4d617f01-63ec-4ad3-91d5-d482464b0ae1",
-              "name": "Too Many Requests",
-              "originalRequest": {
-                "url": {
-                  "path": ["api", "v4", "persons", ":personId", "assets"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Too Many Requests",
-              "code": 429,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            }
-          ],
-          "event": [],
-          "protocolProfileBehavior": { "disableBodyPruning": true }
-        },
-        {
-          "id": "8dc0299c-5f48-4b54-bbd5-d190622db629",
-          "name": "Download a person asset by name",
-          "request": {
-            "name": "Download a person asset by name",
-            "description": {
-              "content": "Streams the binary or text content of the asset matching the `name` query parameter for the person identified by `personId`. Returns HTTP 302 if the content is hosted at a remote URL; returns HTTP 200 with the raw content otherwise. Use the id variant (`downloadPersonAsset`) when you have the asset id. The access token is optional on this operation: omit it and Extole serves only the person's `PUBLIC` assets, resolving the client from the request domain. Supply a token belonging to the person to reach their `PRIVATE` assets. Omitting the token is the recommended way to render another person's avatar, so no token has to be embedded in an image URL. ",
-              "type": "text/plain"
-            },
-            "url": {
-              "path": [
-                "api",
-                "v4",
-                "persons",
-                ":personId",
-                "assets",
-                "download"
-              ],
-              "host": ["{{baseUrl}}"],
-              "query": [
-                {
-                  "disabled": false,
-                  "description": {
-                    "content": "Name of the asset to download.",
-                    "type": "text/plain"
-                  },
-                  "key": "name",
-                  "value": "<string>"
-                }
-              ],
-              "variable": [
-                {
-                  "type": "any",
-                  "value": "<string>",
-                  "key": "personId",
-                  "disabled": false,
-                  "description": {
-                    "content": "(Required) The Extole unique profile identifier of this user at Extole.",
-                    "type": "text/plain"
-                  }
-                }
-              ]
-            },
-            "header": [{ "key": "Accept", "value": "<string>" }],
-            "method": "GET",
-            "body": {},
-            "auth": null
-          },
-          "response": [
-            {
-              "id": "8002809a-c5be-4479-8c96-341f12bbaec2",
-              "name": "Binary asset content stream with the asset's stored content type.",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": {
-                        "content": "Name of the asset to download.",
-                        "type": "text/plain"
-                      },
-                      "key": "name",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "OK",
-              "code": 200,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "text"
-            },
-            {
-              "id": "d9978200-4cf4-40dc-b914-8e7168cddd89",
-              "name": "Redirect to remote asset content.",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": {
-                        "content": "Name of the asset to download.",
-                        "type": "text/plain"
-                      },
-                      "key": "name",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Found",
-              "code": 302,
-              "header": [],
-              "cookie": [],
-              "_postman_previewlanguage": "text"
-            },
-            {
-              "id": "8266dd7c-7a4a-417b-a8da-c22701740b87",
-              "name": "asset_content_not_downloadable",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": {
-                        "content": "Name of the asset to download.",
-                        "type": "text/plain"
-                      },
-                      "key": "name",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "51649ed6-95d6-40f9-a1a0-b127f3948cd7",
-              "name": "asset_not_found",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": {
-                        "content": "Name of the asset to download.",
-                        "type": "text/plain"
-                      },
-                      "key": "name",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "c1292036-b112-4819-bf5d-dfa085ee13bc",
-              "name": "Unauthorized",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": {
-                        "content": "Name of the asset to download.",
-                        "type": "text/plain"
-                      },
-                      "key": "name",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Unauthorized",
-              "code": 401,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "0da3cb90-2f83-4143-a543-054ee384f613",
-              "name": "access_denied",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": {
-                        "content": "Name of the asset to download.",
-                        "type": "text/plain"
-                      },
-                      "key": "name",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "99e6c9e1-54e0-4146-97e6-6b8081c8e951",
-              "name": "expired_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": {
-                        "content": "Name of the asset to download.",
-                        "type": "text/plain"
-                      },
-                      "key": "name",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "11124e81-bfee-483a-a720-da02b8106758",
-              "name": "invalid_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": {
-                        "content": "Name of the asset to download.",
-                        "type": "text/plain"
-                      },
-                      "key": "name",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "f75481aa-fba4-49e4-a1cc-1ff50e45e45d",
-              "name": "jwt_authentication_error",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": {
-                        "content": "Name of the asset to download.",
-                        "type": "text/plain"
-                      },
-                      "key": "name",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "1a422d4b-016a-48df-aec5-b583e3c98dd7",
-              "name": "method_unauthorized",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": {
-                        "content": "Name of the asset to download.",
-                        "type": "text/plain"
-                      },
-                      "key": "name",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "dc582f83-e40c-4c26-b60c-0ed6ae6fd8d2",
-              "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": {
-                        "content": "Name of the asset to download.",
-                        "type": "text/plain"
-                      },
-                      "key": "name",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "a2b5a131-402a-48dc-a45e-116fc80fab3d",
-              "name": "Unsupported Media Type",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": {
-                        "content": "Name of the asset to download.",
-                        "type": "text/plain"
-                      },
-                      "key": "name",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Unsupported Media Type",
-              "code": 415,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "7606db98-6ea9-42bf-9011-cc3072636cbd",
-              "name": "Too Many Requests",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": {
-                        "content": "Name of the asset to download.",
-                        "type": "text/plain"
-                      },
-                      "key": "name",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Too Many Requests",
-              "code": 429,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            }
-          ],
-          "event": [],
-          "protocolProfileBehavior": { "disableBodyPruning": true }
-        },
-        {
-          "id": "b786291b-1cc0-4f70-99bf-3c08df83d059",
-          "name": "Get a person asset by ID",
-          "request": {
-            "name": "Get a person asset by ID",
-            "description": {
-              "content": "Returns full metadata for the asset identified by `assetId` and owned by the person identified by `personId`. Metadata includes the asset type, name, content URL, MIME type, and creation timestamp. Use `downloadPersonAsset` to stream the asset content.",
-              "type": "text/plain"
-            },
-            "url": {
-              "path": [
-                "api",
-                "v4",
-                "persons",
-                ":personId",
-                "assets",
-                ":assetId"
-              ],
-              "host": ["{{baseUrl}}"],
-              "query": [],
-              "variable": [
-                {
-                  "type": "any",
-                  "value": "<string>",
-                  "key": "personId",
-                  "disabled": false,
-                  "description": {
-                    "content": "(Required) The Extole unique profile identifier of this user at Extole.",
-                    "type": "text/plain"
-                  }
-                },
-                {
-                  "type": "any",
-                  "value": "<string>",
-                  "key": "assetId",
-                  "disabled": false,
-                  "description": {
-                    "content": "(Required) The Extole-assigned unique identifier of the asset.",
-                    "type": "text/plain"
-                  }
-                }
-              ]
-            },
-            "header": [{ "key": "Accept", "value": "<string>" }],
-            "method": "GET",
-            "body": {},
-            "auth": null
-          },
-          "response": [
-            {
-              "id": "2c8bc74c-2e7a-4c12-84ab-c5bd0336c4e9",
-              "name": "Asset metadata.",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "OK",
-              "code": 200,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "618409d6-85b1-4872-ae69-e3bd4593919c",
-              "name": "asset_not_found",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "65b80f0c-cae7-4b5c-a256-b4995b69bb7e",
-              "name": "invalid_person_id",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "7406992e-47d6-41cf-9d93-28aa4f9ad61a",
-              "name": "person_not_found",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "af7d8a71-b612-4fce-8cb7-4c57a3705f64",
-              "name": "Unauthorized",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Unauthorized",
-              "code": 401,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "f2b0b478-087f-442b-9a91-b54ed04e8e5e",
-              "name": "access_denied",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "90821c59-8691-4b22-90b7-b589b37c8ad5",
-              "name": "expired_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "4d5b497a-a864-41c2-935a-6a68fe63ffea",
-              "name": "invalid_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "0a935b19-4511-46f6-9595-abf719a2a26e",
-              "name": "jwt_authentication_error",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "8d563d06-796a-4031-ad18-619a9a11714d",
-              "name": "method_unauthorized",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "a671015e-1fb4-4f82-b171-02213b75c26b",
-              "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "26b83d7a-c688-4988-8a60-acc9b41f8ece",
-              "name": "Unsupported Media Type",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Unsupported Media Type",
-              "code": 415,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "81b01b91-1fcd-4efb-8385-15b1f161dec4",
-              "name": "Too Many Requests",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Too Many Requests",
-              "code": 429,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            }
-          ],
-          "event": [],
-          "protocolProfileBehavior": { "disableBodyPruning": true }
-        },
-        {
-          "id": "c7186cb1-0783-48c2-8ed3-57a52e404494",
-          "name": "Download a person asset by asset ID",
-          "request": {
-            "name": "Download a person asset by asset ID",
-            "description": {
-              "content": "Streams the binary or text content of the asset identified by `assetId`. Returns HTTP 302 if the content is hosted at a remote URL; returns HTTP 200 with the raw content otherwise. Use the `name` variant (`downloadPersonAssetByName`) when you have the asset name but not the id. The access token is optional on this operation: omit it and Extole serves only the person's `PUBLIC` assets, resolving the client from the request domain. Supply a token belonging to the person to reach their `PRIVATE` assets. Omitting the token is the recommended way to render another person's avatar, so no token has to be embedded in an image URL. ",
-              "type": "text/plain"
-            },
-            "url": {
-              "path": [
-                "api",
-                "v4",
-                "persons",
-                ":personId",
-                "assets",
-                ":assetId",
-                "download"
-              ],
-              "host": ["{{baseUrl}}"],
-              "query": [],
-              "variable": [
-                {
-                  "type": "any",
-                  "value": "<string>",
-                  "key": "personId",
-                  "disabled": false,
-                  "description": {
-                    "content": "(Required) The Extole unique profile identifier of this user at Extole.",
-                    "type": "text/plain"
-                  }
-                },
-                {
-                  "type": "any",
-                  "value": "<string>",
-                  "key": "assetId",
-                  "disabled": false,
-                  "description": {
-                    "content": "(Required) The Extole-assigned unique identifier of the asset.",
-                    "type": "text/plain"
-                  }
-                }
-              ]
-            },
-            "header": [{ "key": "Accept", "value": "<string>" }],
-            "method": "GET",
-            "body": {},
-            "auth": null
-          },
-          "response": [
-            {
-              "id": "96bb007f-a66a-4fd1-a73f-c1427dfae808",
-              "name": "Binary asset content stream with the asset's stored content type.",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "OK",
-              "code": 200,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "text"
-            },
-            {
-              "id": "468d5ab8-9989-4b63-95fa-81a6b6e63309",
-              "name": "Redirect to remote asset content.",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Found",
-              "code": 302,
-              "header": [],
-              "cookie": [],
-              "_postman_previewlanguage": "text"
-            },
-            {
-              "id": "8dd41e0f-0bc0-42bc-8cba-dd275a919d33",
-              "name": "asset_content_not_downloadable",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "d5db4dc4-43d2-4f64-9ef3-222a977ecb67",
-              "name": "asset_not_found",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "59d9f994-71d3-4828-a0ca-12166c2e14df",
-              "name": "Unauthorized",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Unauthorized",
-              "code": 401,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "a8d36791-863a-4644-876e-5644e7de84e4",
-              "name": "access_denied",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "0a81dac9-bd72-415b-ae0b-844bfd40a606",
-              "name": "expired_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "4b21f77c-6001-4ee4-b9e3-faebec71116e",
-              "name": "invalid_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "1dab0180-e3d1-436f-bd5f-cd568838bc94",
-              "name": "jwt_authentication_error",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "80ce99da-ef1e-4850-b84d-6b4a03566297",
-              "name": "method_unauthorized",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "9c6e1354-6281-402f-8cdd-54857576ee76",
-              "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "90bf92ac-03da-416b-822f-df44b0facfd0",
-              "name": "Unsupported Media Type",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Unsupported Media Type",
-              "code": 415,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "0c90a410-23ac-43c4-a1ee-d1e00b57ea89",
-              "name": "Too Many Requests",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "api",
-                    "v4",
-                    "persons",
-                    ":personId",
-                    "assets",
-                    ":assetId",
-                    "download"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Too Many Requests",
-              "code": 429,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            }
-          ],
-          "event": [],
-          "protocolProfileBehavior": { "disableBodyPruning": true }
-        }
-      ]
-    },
-    {
       "name": "Profiles",
       "description": "",
       "item": [
@@ -19836,10 +17690,10 @@
           "protocolProfileBehavior": { "disableBodyPruning": true }
         },
         {
-          "id": "f771746f-2454-40b5-b9b1-f158c80767a4",
-          "name": "Create a shareable (legacy)",
+          "id": "b3bb483d-4374-488b-bd76-bd40fc0b2ad3",
+          "name": "Create a shareable for the current consumer (legacy)",
           "request": {
-            "name": "Create a shareable (legacy)",
+            "name": "Create a shareable for the current consumer (legacy)",
             "description": {
               "content": "Deprecated. Use `POST /api/v6/me/shareables` instead. Creates a new shareable for the authenticated consumer.",
               "type": "text/plain"
@@ -19866,7 +17720,7 @@
           },
           "response": [
             {
-              "id": "85304df8-6f65-4a36-b801-28ed326fb7e3",
+              "id": "180ea9a0-5c64-4d19-945a-cf207dd16583",
               "name": "Successful response",
               "originalRequest": {
                 "url": {
@@ -19903,7 +17757,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "d16a5166-d0b8-4a78-bc66-54c4a85e5077",
+              "id": "6f7648af-de3f-4e12-bb49-af7f46c95d26",
               "name": "EXISTING_LINK",
               "originalRequest": {
                 "url": {
@@ -19940,7 +17794,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "513ef986-8c42-4ce4-8004-9cf1203902a3",
+              "id": "beb6f53a-2e88-43a5-964b-60c6b382eb9b",
               "name": "INVALID_IMAGE_URL",
               "originalRequest": {
                 "url": {
@@ -19977,7 +17831,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "84c9b5a5-5cc4-4390-8a52-6ce043b52fe2",
+              "id": "64ad7f9d-27dd-409c-808b-0d9bb5d3cafb",
               "name": "INVALID_PARTNER_CONTENT_URL",
               "originalRequest": {
                 "url": {
@@ -20014,7 +17868,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "55748f6b-009d-4375-93d3-c75627d1a3f4",
+              "id": "e9b03760-88d9-4f00-90c7-fa7137052486",
               "name": "INVALID_SHARE_URL",
               "originalRequest": {
                 "url": {
@@ -20051,7 +17905,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "43c62dca-ca63-4f66-946c-6cf4498e6937",
+              "id": "f6e7b0d9-b644-4869-8e51-c72fd7a45d36",
               "name": "INVALID_TARGET_URL",
               "originalRequest": {
                 "url": {
@@ -20088,7 +17942,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "8da20f68-2d18-402b-a472-f861176d69d4",
+              "id": "4515f0ef-5b8d-4b62-857c-34339bcc0270",
               "name": "INVALID_URL_FORMAT",
               "originalRequest": {
                 "url": {
@@ -20125,7 +17979,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "913d2753-23b8-41e0-ad06-c599ebc27600",
+              "id": "0212353a-f1a8-46f5-b998-d9d6d0a7496b",
               "name": "NON_EXISTING_LINK",
               "originalRequest": {
                 "url": {
@@ -20162,7 +18016,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "d616b345-454e-444e-adf3-1f32c10db456",
+              "id": "125c6ce1-671e-4417-aab9-8cc50ff38b53",
               "name": "UNREWARDABLE",
               "originalRequest": {
                 "url": {
@@ -20199,7 +18053,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "a2d00279-b9ce-4ce2-8c9f-b182c164111f",
+              "id": "b220cfb4-cad6-4122-910f-04e0cafeaab1",
               "name": "binding_error",
               "originalRequest": {
                 "url": {
@@ -20236,7 +18090,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "48f5d41e-2238-4034-a71e-8529fdc80e14",
+              "id": "88709f60-5e7a-4364-b12a-0f191c19f3a5",
               "name": "code_illegal_character",
               "originalRequest": {
                 "url": {
@@ -20273,7 +18127,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "e669c27a-066c-4b17-babf-d0179ed574bb",
+              "id": "0da63cac-c6fa-4638-8873-ba8bc093f1ff",
               "name": "code_out_of_range",
               "originalRequest": {
                 "url": {
@@ -20310,7 +18164,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "13f2b4a4-3958-4737-bfab-47d2c822d4fd",
+              "id": "ef35424c-0a38-4c89-b0fa-06f9ab6c639f",
               "name": "code_profane_word",
               "originalRequest": {
                 "url": {
@@ -20347,7 +18201,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "3cd88cd1-c31d-437a-a847-8807c69c5bbd",
+              "id": "bad7d265-7712-4b26-b903-2a0677b0a645",
               "name": "code_taken_by_promotion",
               "originalRequest": {
                 "url": {
@@ -20384,7 +18238,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "737a7496-4d61-4a8c-bffd-145d0522cca4",
+              "id": "b59ba336-cd02-4cef-b991-8f83891bb19f",
               "name": "content_description_length_exceeded",
               "originalRequest": {
                 "url": {
@@ -20421,7 +18275,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "6dcbefc7-33d8-4cb5-90fd-46db73fb6861",
+              "id": "e82641cc-0df0-45cf-8408-8a6e202ee73a",
               "name": "data_attribute_name_invalid",
               "originalRequest": {
                 "url": {
@@ -20458,7 +18312,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "6ae21169-2fff-48d0-a71d-d2d2ef1f69af",
+              "id": "da589521-2586-4566-a009-fd1ffba5d13b",
               "name": "data_attribute_name_length_out_of_range",
               "originalRequest": {
                 "url": {
@@ -20495,7 +18349,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "5b2d9c42-8a00-4eff-aaee-ad528f8c31b2",
+              "id": "2ed28ef8-11d5-49d1-9864-f45a56680ef8",
               "name": "data_attribute_value_invalid",
               "originalRequest": {
                 "url": {
@@ -20532,7 +18386,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "d7350b3f-2696-4273-a0e0-d682dc457af3",
+              "id": "02762ef9-c8f6-4dc1-9d9f-b9ed531358a3",
               "name": "data_attribute_value_length_out_of_range",
               "originalRequest": {
                 "url": {
@@ -20569,7 +18423,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "e84d457f-c6fe-440f-a01b-82c529b71d29",
+              "id": "b16cbbb5-577f-4320-b4e0-101ab7d3da20",
               "name": "extole_destination_length_out_of_range",
               "originalRequest": {
                 "url": {
@@ -20606,7 +18460,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "2e6ffbc1-5eda-4b8d-aa5a-80c4c4e35651",
+              "id": "48e08e7b-20d9-4d79-ac90-913662951683",
               "name": "invalid_json",
               "originalRequest": {
                 "url": {
@@ -20643,7 +18497,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "878ce5b5-435f-48bc-b6dc-360c60aa9159",
+              "id": "f7e0f1fb-8591-4c99-b8d2-48129b6dad7f",
               "name": "invalid_parameter",
               "originalRequest": {
                 "url": {
@@ -20680,7 +18534,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "4b872492-77ed-46d1-9abd-2ad54f9575d9",
+              "id": "d6505a03-01e5-4192-ae67-11ad1533ee36",
               "name": "invalid_shareable_id",
               "originalRequest": {
                 "url": {
@@ -20717,7 +18571,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "6921df3d-a4e1-448e-93ed-aa233970ec5d",
+              "id": "c6d3fb5c-5b44-4924-9039-5a0ebc05624b",
               "name": "key_taken",
               "originalRequest": {
                 "url": {
@@ -20754,7 +18608,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "1149eab9-b789-4121-8e0e-0a144a27c2f3",
+              "id": "3010a5a7-0f44-4d53-833f-409f5ae4a3ab",
               "name": "label_name_contains_illegal_character",
               "originalRequest": {
                 "url": {
@@ -20791,7 +18645,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "35f52f43-9f9d-46c5-9011-3b52d52ee6c2",
+              "id": "437d01c5-a189-4273-b484-fff9007f8e8b",
               "name": "label_name_out_of_range",
               "originalRequest": {
                 "url": {
@@ -20828,7 +18682,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "262f6894-8478-4f7e-9bf2-ee4cd20ed135",
+              "id": "21928a0a-082d-4c03-8cf4-7429b8d641d4",
               "name": "missing_request_body",
               "originalRequest": {
                 "url": {
@@ -20865,7 +18719,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "3d658a61-6f46-44e5-b095-86f33aecdc04",
+              "id": "6c2e4253-a81d-4eb9-9033-0249c25f486b",
               "name": "person_not_found",
               "originalRequest": {
                 "url": {
@@ -20902,7 +18756,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "9fcf59aa-84ec-4ff8-9d05-4be9432dccb7",
+              "id": "ad55cdeb-5a31-4e01-b388-5519f00b37fc",
               "name": "target_url_length_out_of_range",
               "originalRequest": {
                 "url": {
@@ -20939,7 +18793,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "e50bae2f-5ed1-486e-a451-01f9f5b34be5",
+              "id": "8d69c9aa-02af-4a67-81d9-b8b71099c2d8",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -20976,7 +18830,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "60886020-26d2-402d-957b-980563088bbb",
+              "id": "4f62a09f-231a-40ce-8c1e-73c014b9c0c3",
               "name": "access_denied",
               "originalRequest": {
                 "url": {
@@ -21013,7 +18867,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "e3d97b5f-02aa-49bc-9c65-9a2a568d5777",
+              "id": "30e7d7fe-ff22-4196-8101-b3f42315cca1",
               "name": "code_contains_reserved_word",
               "originalRequest": {
                 "url": {
@@ -21050,7 +18904,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "725eee07-4098-4899-8d50-60a1eb259161",
+              "id": "2375494a-1d37-499c-8f3f-30fa95635591",
               "name": "expired_access_token",
               "originalRequest": {
                 "url": {
@@ -21087,7 +18941,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "fe21b256-9d3e-4004-82eb-7dd035b7f9d3",
+              "id": "6ea897ed-d371-4efc-83ed-330154f2e8f8",
               "name": "invalid_access_token",
               "originalRequest": {
                 "url": {
@@ -21124,7 +18978,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "c216f25e-af04-41fa-bbfa-4a2fe90c94da",
+              "id": "2d0dcb2d-f956-4c11-8d69-a3a8eccba5f6",
               "name": "jwt_authentication_error",
               "originalRequest": {
                 "url": {
@@ -21161,7 +19015,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "f32144a7-9891-4f1e-bcb8-4063809bd382",
+              "id": "372458d8-35b8-4fb9-8d2a-441c027e069c",
               "name": "method_unauthorized",
               "originalRequest": {
                 "url": {
@@ -21198,7 +19052,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "837339ef-be9c-4d4d-bdfc-d19a2c360e6d",
+              "id": "e50f4c03-de64-418d-a0ff-13ade7e8e4f8",
               "name": "missing_access_token",
               "originalRequest": {
                 "url": {
@@ -21235,7 +19089,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "f2793ef6-8abb-4c65-8812-74505cda5cc9",
+              "id": "41947824-0942-4fde-9103-74b571f08245",
               "name": "Unsupported Media Type",
               "originalRequest": {
                 "url": {
@@ -21272,7 +19126,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "fac3bf53-5cf1-4288-9c22-8bbb8b5229f0",
+              "id": "f3f0974f-3063-42cc-884e-011177bd50ed",
               "name": "Too Many Requests",
               "originalRequest": {
                 "url": {
@@ -21313,10 +19167,10 @@
           "protocolProfileBehavior": { "disableBodyPruning": true }
         },
         {
-          "id": "b02e82b8-9afd-4850-b704-e3a1455babe8",
-          "name": "Get shareable creation status (legacy)",
+          "id": "ae8e7953-4bc0-4787-8d9f-ff9b8d3b4d1a",
+          "name": "Get current consumer shareable creation status (legacy)",
           "request": {
-            "name": "Get shareable creation status (legacy)",
+            "name": "Get current consumer shareable creation status (legacy)",
             "description": {
               "content": "Deprecated. Returns the processing status for an asynchronous shareable creation identified by `polling_id`.",
               "type": "text/plain"
@@ -21352,7 +19206,7 @@
           },
           "response": [
             {
-              "id": "6c1e859e-df39-4808-b969-7b5b5fd64edd",
+              "id": "b72ea818-9822-48c9-8544-60e6cc2f0a76",
               "name": "Successful response",
               "originalRequest": {
                 "url": {
@@ -21389,7 +19243,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "87ca667d-e601-4865-b234-2ae58cabbd9f",
+              "id": "d9287d32-713e-488e-9fc2-edde6867999c",
               "name": "binding_error",
               "originalRequest": {
                 "url": {
@@ -21426,7 +19280,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "f21c9f58-4a87-4428-8ea8-c533a8bb0e86",
+              "id": "4f13788d-5db4-4ed0-8cb7-db28afbe914e",
               "name": "invalid_json",
               "originalRequest": {
                 "url": {
@@ -21463,7 +19317,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "2806dceb-a766-44d4-b90d-83b47d824e04",
+              "id": "6166d30d-4c9f-4c6c-b9a5-7a18ab47be9d",
               "name": "invalid_parameter",
               "originalRequest": {
                 "url": {
@@ -21500,7 +19354,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "2e4126b2-5260-4a7d-baf2-73255ebc4c69",
+              "id": "14a0f0ac-1a6f-4d07-a350-9118e53ec97e",
               "name": "missing_request_body",
               "originalRequest": {
                 "url": {
@@ -21537,7 +19391,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "f28d46d4-d7f1-47ec-9710-a74dc858e8e5",
+              "id": "bdc721d4-3fbb-4c58-8647-d5f8af7f6f48",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -21574,7 +19428,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "4ae8ca8f-6c52-4598-9161-62b0912fb5d4",
+              "id": "1dd12a42-fca6-495b-911c-ad53bf4efb77",
               "name": "access_denied",
               "originalRequest": {
                 "url": {
@@ -21611,7 +19465,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "83f7a900-ab00-4187-9009-6d21a3dd940c",
+              "id": "b4f2e26e-15f8-4eaf-8fbe-1d1249c83c68",
               "name": "expired_access_token",
               "originalRequest": {
                 "url": {
@@ -21648,7 +19502,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "4e77e939-a558-48e8-b381-35b5f2fd2052",
+              "id": "7ff18436-93b8-4998-ab67-a616fc82d679",
               "name": "invalid_access_token",
               "originalRequest": {
                 "url": {
@@ -21685,7 +19539,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "5ac7d31d-b06f-4de7-813e-ba775589ce01",
+              "id": "bf51150b-1bd7-4a09-99e6-51dee034133d",
               "name": "jwt_authentication_error",
               "originalRequest": {
                 "url": {
@@ -21722,7 +19576,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "a25d3f3f-33b2-47c9-82db-98bfbf08d383",
+              "id": "6152f63b-e5ec-4cfd-8fb0-0719b62a71ef",
               "name": "method_unauthorized",
               "originalRequest": {
                 "url": {
@@ -21759,7 +19613,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "c699d06a-1a77-426b-8d02-f5e6f8187ff5",
+              "id": "7f87c67a-f9a0-4e31-a1f4-91a134106013",
               "name": "missing_access_token",
               "originalRequest": {
                 "url": {
@@ -21796,7 +19650,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "ef65c5c8-c267-4e8f-916d-e089044c3d7e",
+              "id": "bca62ef3-03a6-44a5-bf4e-6e3b7bb2b3fb",
               "name": "Unsupported Media Type",
               "originalRequest": {
                 "url": {
@@ -21833,7 +19687,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "433fa13d-1f98-48f0-90ce-dae93c01afb3",
+              "id": "163d12b1-1d24-4d29-823b-dec82778e3dc",
               "name": "Too Many Requests",
               "originalRequest": {
                 "url": {
@@ -21874,10 +19728,10 @@
           "protocolProfileBehavior": { "disableBodyPruning": true }
         },
         {
-          "id": "687c217f-d2d5-4259-bb20-87d53975a979",
-          "name": "Get a shareable by ID (legacy)",
+          "id": "1d503f80-0899-4a63-82ae-9dc29fd71c44",
+          "name": "Get a shareable by ID for the current consumer (legacy)",
           "request": {
-            "name": "Get a shareable by ID (legacy)",
+            "name": "Get a shareable by ID for the current consumer (legacy)",
             "description": {
               "content": "Deprecated. Use `GET /api/v6/me/shareables/{code}` instead. Returns the shareable identified by `shareable_id` when it belongs to the authenticated consumer.",
               "type": "text/plain"
@@ -21913,7 +19767,7 @@
           },
           "response": [
             {
-              "id": "b7924670-48d9-4a17-ac9c-740a256b700e",
+              "id": "ef873158-33bc-4cdb-9391-32425b0f4229",
               "name": "Successful response",
               "originalRequest": {
                 "url": {
@@ -21950,7 +19804,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "2af13411-515c-4420-b048-1c593271177a",
+              "id": "d25b6e10-2986-4334-a802-755cd3c50fc9",
               "name": "binding_error",
               "originalRequest": {
                 "url": {
@@ -21987,7 +19841,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "0f563601-ecde-4d22-b4c1-21d042fc28fa",
+              "id": "c0dd97bf-73df-433e-815c-6a9fdd48d7f4",
               "name": "invalid_json",
               "originalRequest": {
                 "url": {
@@ -22024,7 +19878,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "48528cd0-1636-4280-b85f-d4d0be2965c0",
+              "id": "1970230f-ec93-46ed-9609-4180ffcd0238",
               "name": "invalid_parameter",
               "originalRequest": {
                 "url": {
@@ -22061,7 +19915,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "5bdba410-b27b-4968-81c6-888d43812aa7",
+              "id": "383e2ea5-348c-46e2-9e4d-62a07b0503df",
               "name": "missing_request_body",
               "originalRequest": {
                 "url": {
@@ -22098,7 +19952,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "0fcff7fd-929d-49b7-880e-979e7571ae4b",
+              "id": "fdd3dead-86bf-4b50-91ee-075e0a57a40d",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -22135,7 +19989,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "48fd0ebe-e8ae-480b-8ffc-7edbfd676409",
+              "id": "b3cf2b0d-0302-4e9c-a050-253afc6318b8",
               "name": "access_denied",
               "originalRequest": {
                 "url": {
@@ -22172,7 +20026,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "35def7b3-4361-400a-8848-26483422f031",
+              "id": "bd762033-df0c-4131-a3ba-979325c8e0c1",
               "name": "expired_access_token",
               "originalRequest": {
                 "url": {
@@ -22209,7 +20063,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "0151b2d6-4a26-4468-be31-7e5eb922fab3",
+              "id": "1352058a-a969-448b-a47e-025c43147aa8",
               "name": "invalid_access_token",
               "originalRequest": {
                 "url": {
@@ -22246,7 +20100,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "bb56b5cf-a3af-4109-bb8e-d3154f8a6abb",
+              "id": "b667c8f2-763a-4a11-9a2a-0c51d3e76730",
               "name": "invalid_shareable_id",
               "originalRequest": {
                 "url": {
@@ -22283,7 +20137,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "47eaee58-0a6f-44bb-90aa-573eef404496",
+              "id": "b7e471a7-f8ef-4626-9ec9-4d0d1bbcadc0",
               "name": "jwt_authentication_error",
               "originalRequest": {
                 "url": {
@@ -22320,7 +20174,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "2dcc8f00-2853-4d0b-a89a-244d7aceee95",
+              "id": "e83384d6-e5ae-4691-8ccb-1585564b9f7b",
               "name": "method_unauthorized",
               "originalRequest": {
                 "url": {
@@ -22357,7 +20211,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "f5893b95-6054-43e0-aa94-8a0a17d7ac06",
+              "id": "64a72573-e739-4c43-b071-fd21e7231ed2",
               "name": "missing_access_token",
               "originalRequest": {
                 "url": {
@@ -22394,7 +20248,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "ea5c08eb-4183-4dc0-92ea-96de50ece4d6",
+              "id": "767fe54b-8a01-4a85-b801-cb2266d95f1e",
               "name": "Unsupported Media Type",
               "originalRequest": {
                 "url": {
@@ -22431,7 +20285,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "8e26ab75-29b5-44f4-a12b-b738119f801d",
+              "id": "e3bff300-74d0-4303-8bf1-2930d254602d",
               "name": "Too Many Requests",
               "originalRequest": {
                 "url": {
@@ -24682,10 +22536,10 @@
           "protocolProfileBehavior": { "disableBodyPruning": true }
         },
         {
-          "id": "0f0cc8e4-4bcc-47ed-9758-fdd8b8404028",
-          "name": "Get a share by ID",
+          "id": "01044609-fe4d-48ed-8d6c-46620c337801",
+          "name": "Get a share by ID for the current consumer",
           "request": {
-            "name": "Get a share by ID",
+            "name": "Get a share by ID for the current consumer",
             "description": {
               "content": "Returns the share identified by `shareId` when it belongs to the authenticated consumer.",
               "type": "text/plain"
@@ -24714,7 +22568,7 @@
           },
           "response": [
             {
-              "id": "0384d125-6bfb-49c9-a5cd-fe1c1ce0b417",
+              "id": "ae24fb04-af7b-472f-8fa8-3fbda894456d",
               "name": "Successful response",
               "originalRequest": {
                 "url": {
@@ -24744,7 +22598,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "cb6ca5cb-1924-4487-99e2-44159b9a17d7",
+              "id": "251ed4a3-a144-4373-88e0-d9ad1182e4ea",
               "name": "binding_error",
               "originalRequest": {
                 "url": {
@@ -24774,7 +22628,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "ab2fd323-4d8c-4fe1-929e-b9a9c736a7e5",
+              "id": "3e4477d4-5da8-47d2-b679-5a8e5fad6171",
               "name": "invalid_json",
               "originalRequest": {
                 "url": {
@@ -24804,7 +22658,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "785c29ee-cb5a-406a-8f20-ba851081c36f",
+              "id": "87bbf30d-86f4-47d8-b446-e1654389a56b",
               "name": "invalid_parameter",
               "originalRequest": {
                 "url": {
@@ -24834,7 +22688,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "c5b3418c-f0f7-4ab6-bd31-53b9859fdd50",
+              "id": "ecbb9bd0-f2eb-406c-ac88-0911c7406c35",
               "name": "missing_request_body",
               "originalRequest": {
                 "url": {
@@ -24864,7 +22718,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "64af8207-b2f2-44ee-8073-fde6bd4c20fe",
+              "id": "c7eb4197-9e57-42b3-954d-969644ac29eb",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -24894,7 +22748,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "bf07cda9-d544-4c24-a0dc-234c43601417",
+              "id": "667314fb-1732-4d70-894e-9bd902251771",
               "name": "SHARE_NOT_FOUND",
               "originalRequest": {
                 "url": {
@@ -24924,7 +22778,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "3a92bcc9-d88e-4b58-9fd8-fc1f7226b36a",
+              "id": "9ec76738-5de3-4de6-a15e-65d9207647df",
               "name": "access_denied",
               "originalRequest": {
                 "url": {
@@ -24954,7 +22808,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "34bda017-878d-421c-8dc3-333bd065e217",
+              "id": "7bbcae40-5011-4016-a862-646c18f16ea4",
               "name": "expired_access_token",
               "originalRequest": {
                 "url": {
@@ -24984,7 +22838,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "ae445813-750b-460a-97d3-f9341715ed66",
+              "id": "2a209c13-ad19-4ce7-82d8-d75916784235",
               "name": "invalid_access_token",
               "originalRequest": {
                 "url": {
@@ -25014,7 +22868,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "dd9ba83b-f1cd-40d7-bb55-b31d9ec67833",
+              "id": "399e1290-6ccf-4eed-988d-428366fd6ba6",
               "name": "jwt_authentication_error",
               "originalRequest": {
                 "url": {
@@ -25044,7 +22898,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "bfb0a568-1e6e-4cd5-a0ec-51d69bd45d27",
+              "id": "6f1e3b6f-f7cf-429b-9e9b-f081207b9611",
               "name": "method_unauthorized",
               "originalRequest": {
                 "url": {
@@ -25074,7 +22928,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "ea60aba8-18a6-4caa-a55e-d4969d2dad84",
+              "id": "342cfd15-39de-4a11-b148-7f90fd1f5170",
               "name": "missing_access_token",
               "originalRequest": {
                 "url": {
@@ -25104,7 +22958,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "8bda7a61-ac72-4ab8-b0db-99c3cd07a0b1",
+              "id": "4671c2a1-3123-4f1f-8c6d-66088b1cec34",
               "name": "Unsupported Media Type",
               "originalRequest": {
                 "url": {
@@ -25134,7 +22988,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "4fa107b9-1ee5-41bb-b822-57ecafcaab38",
+              "id": "7d926852-b082-4c7c-8ebf-d5d4d9fa5b8a",
               "name": "Too Many Requests",
               "originalRequest": {
                 "url": {
@@ -26141,6 +23995,2146 @@
                       "value": "<string>"
                     }
                   ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        },
+        {
+          "id": "d4cf0d77-0642-4349-9030-7aa0451e8a97",
+          "name": "List assets for a person",
+          "request": {
+            "name": "List assets for a person",
+            "description": {
+              "content": "Returns all assets attached to the person profile identified by `personId`. Assets are binary or text files associated with a program participant — for example, wallet passes, QR codes, or uploaded images. Use `getPersonAsset` to fetch a single asset's metadata, or `downloadPersonAsset` to retrieve its content.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": ["api", "v4", "persons", ":personId", "assets"],
+              "host": ["{{baseUrl}}"],
+              "query": [],
+              "variable": [
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "personId",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) The Extole unique profile identifier of this user at Extole.",
+                    "type": "text/plain"
+                  }
+                }
+              ]
+            },
+            "header": [{ "key": "Accept", "value": "<string>" }],
+            "method": "GET",
+            "body": {},
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "6f7a8142-c133-4beb-9d47-a3b47d0f1fe3",
+              "name": "Assets attached to the person.",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "persons", ":personId", "assets"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c7687b49-00bf-4a4d-97ca-726ae7542eef",
+              "name": "invalid_person_id",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "persons", ":personId", "assets"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7302542d-0f00-4690-93bd-392ad6ff399a",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "persons", ":personId", "assets"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "50717981-5a19-4b04-ba0d-6ef4a64ceed9",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "persons", ":personId", "assets"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f940f61e-25f4-4919-a245-d4c666d046eb",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "persons", ":personId", "assets"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "d176338a-c8d6-4150-9aed-de8e9b69a5e5",
+              "name": "expired_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "persons", ":personId", "assets"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "96b677c1-392f-4551-9c66-4e1c69e8aaaa",
+              "name": "invalid_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "persons", ":personId", "assets"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "36d241eb-feee-4d51-9c8c-3788c2bf105d",
+              "name": "jwt_authentication_error",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "persons", ":personId", "assets"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "fc4157d0-ee09-4d81-be01-59dd2fde530c",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "persons", ":personId", "assets"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "bff1ed00-667e-4e71-9f20-fd2581c4232c",
+              "name": "missing_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "persons", ":personId", "assets"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "0a939ecd-d15a-4ae9-8f0b-8f98b384833d",
+              "name": "Unsupported Media Type",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "persons", ":personId", "assets"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unsupported Media Type",
+              "code": 415,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "9e9e202d-a74f-4cd6-b020-325bc1bfb9f2",
+              "name": "Too Many Requests",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "persons", ":personId", "assets"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        },
+        {
+          "id": "6b6f0096-10bc-4a07-8ddd-f697711e633a",
+          "name": "Download a person asset by name",
+          "request": {
+            "name": "Download a person asset by name",
+            "description": {
+              "content": "Streams the binary or text content of the asset matching the `name` query parameter for the person identified by `personId`. Returns HTTP 302 if the content is hosted at a remote URL; returns HTTP 200 with the raw content otherwise. Use the id variant (`downloadPersonAsset`) when you have the asset id. The access token is optional on this operation: omit it and Extole serves only the person's `PUBLIC` assets, resolving the client from the request domain. Supply a token belonging to the person to reach their `PRIVATE` assets. Omitting the token is the recommended way to render another person's avatar, so no token has to be embedded in an image URL. ",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "v4",
+                "persons",
+                ":personId",
+                "assets",
+                "download"
+              ],
+              "host": ["{{baseUrl}}"],
+              "query": [
+                {
+                  "disabled": false,
+                  "description": {
+                    "content": "Name of the asset to download.",
+                    "type": "text/plain"
+                  },
+                  "key": "name",
+                  "value": "<string>"
+                }
+              ],
+              "variable": [
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "personId",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) The Extole unique profile identifier of this user at Extole.",
+                    "type": "text/plain"
+                  }
+                }
+              ]
+            },
+            "header": [{ "key": "Accept", "value": "<string>" }],
+            "method": "GET",
+            "body": {},
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "bf2471f4-ad48-41af-98b2-d653c1f13bc1",
+              "name": "Binary asset content stream with the asset's stored content type.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Name of the asset to download.",
+                        "type": "text/plain"
+                      },
+                      "key": "name",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "d5e7d94b-5ebc-483b-b765-5a28ad5dd70f",
+              "name": "Redirect to remote asset content.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Name of the asset to download.",
+                        "type": "text/plain"
+                      },
+                      "key": "name",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Found",
+              "code": 302,
+              "header": [],
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "5daa72d2-97a6-48aa-b710-c75baa387d69",
+              "name": "asset_content_not_downloadable",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Name of the asset to download.",
+                        "type": "text/plain"
+                      },
+                      "key": "name",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "957853a8-c97f-4ed9-96dc-29420af84b49",
+              "name": "asset_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Name of the asset to download.",
+                        "type": "text/plain"
+                      },
+                      "key": "name",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "637fe631-b59d-4e4c-b24d-78c887367ae4",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Name of the asset to download.",
+                        "type": "text/plain"
+                      },
+                      "key": "name",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f2f1edde-c9c3-4535-922f-d332329a0a3c",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Name of the asset to download.",
+                        "type": "text/plain"
+                      },
+                      "key": "name",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "1bfb0174-f0ff-4ad7-99bd-cce917635e77",
+              "name": "expired_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Name of the asset to download.",
+                        "type": "text/plain"
+                      },
+                      "key": "name",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "95e1a7b2-b2ef-4279-bc01-3fe0c1f7f78a",
+              "name": "invalid_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Name of the asset to download.",
+                        "type": "text/plain"
+                      },
+                      "key": "name",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "4b041b0e-5bbd-42c3-a607-ab419a8bbe11",
+              "name": "jwt_authentication_error",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Name of the asset to download.",
+                        "type": "text/plain"
+                      },
+                      "key": "name",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ff1864e0-f1b9-40db-b76f-258ee2849fe4",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Name of the asset to download.",
+                        "type": "text/plain"
+                      },
+                      "key": "name",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a660b761-f8ea-4826-8ddf-9a3c3c989dd0",
+              "name": "missing_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Name of the asset to download.",
+                        "type": "text/plain"
+                      },
+                      "key": "name",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "cc4533c3-44c7-4520-8dab-f92bd8ad21ed",
+              "name": "Unsupported Media Type",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Name of the asset to download.",
+                        "type": "text/plain"
+                      },
+                      "key": "name",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unsupported Media Type",
+              "code": 415,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "bfae81fd-c3f8-4ae2-816e-81b6a14f7918",
+              "name": "Too Many Requests",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Name of the asset to download.",
+                        "type": "text/plain"
+                      },
+                      "key": "name",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        },
+        {
+          "id": "ef151fa8-b971-4bca-a89f-0c3f6be46b16",
+          "name": "Get a person asset by ID",
+          "request": {
+            "name": "Get a person asset by ID",
+            "description": {
+              "content": "Returns full metadata for the asset identified by `assetId` and owned by the person identified by `personId`. Metadata includes the asset type, name, content URL, MIME type, and creation timestamp. Use `downloadPersonAsset` to stream the asset content.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "v4",
+                "persons",
+                ":personId",
+                "assets",
+                ":assetId"
+              ],
+              "host": ["{{baseUrl}}"],
+              "query": [],
+              "variable": [
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "personId",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) The Extole unique profile identifier of this user at Extole.",
+                    "type": "text/plain"
+                  }
+                },
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "assetId",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) The Extole-assigned unique identifier of the asset.",
+                    "type": "text/plain"
+                  }
+                }
+              ]
+            },
+            "header": [{ "key": "Accept", "value": "<string>" }],
+            "method": "GET",
+            "body": {},
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "be13bc81-21bd-4300-b3e0-6d53241ccd99",
+              "name": "Asset metadata.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "cce3462e-6e80-4eda-9ac1-9f6c6a99a50d",
+              "name": "asset_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "40afef87-8f36-4386-b145-9bb779bb8e11",
+              "name": "invalid_person_id",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f2e454cb-7350-42be-aef9-0e90a182e9bf",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ba482363-7289-4493-b044-63f98d6bd11e",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "bba3ad2b-31d8-447d-a0a9-bacc27614490",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c96e30a0-d44d-461c-af95-98bc9852f38e",
+              "name": "expired_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b0cd13fe-0c74-444a-82c5-a9ad0672160c",
+              "name": "invalid_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f5e9bdda-6ccb-4b11-9976-1e973343b746",
+              "name": "jwt_authentication_error",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "cb8eae7d-c9c4-4d72-9d9a-b1c335774c2f",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "db055ed6-f637-4615-ad26-e546ac8c19f9",
+              "name": "missing_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e49f0038-6789-4237-bb8e-8370d1da7e4e",
+              "name": "Unsupported Media Type",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unsupported Media Type",
+              "code": 415,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "27385301-5e83-4a58-ad37-5b047c720ec3",
+              "name": "Too Many Requests",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        },
+        {
+          "id": "f7c25561-5086-4863-a40f-b34b90ede887",
+          "name": "Download a person asset by asset ID",
+          "request": {
+            "name": "Download a person asset by asset ID",
+            "description": {
+              "content": "Streams the binary or text content of the asset identified by `assetId`. Returns HTTP 302 if the content is hosted at a remote URL; returns HTTP 200 with the raw content otherwise. Use the `name` variant (`downloadPersonAssetByName`) when you have the asset name but not the id. The access token is optional on this operation: omit it and Extole serves only the person's `PUBLIC` assets, resolving the client from the request domain. Supply a token belonging to the person to reach their `PRIVATE` assets. Omitting the token is the recommended way to render another person's avatar, so no token has to be embedded in an image URL. ",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "v4",
+                "persons",
+                ":personId",
+                "assets",
+                ":assetId",
+                "download"
+              ],
+              "host": ["{{baseUrl}}"],
+              "query": [],
+              "variable": [
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "personId",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) The Extole unique profile identifier of this user at Extole.",
+                    "type": "text/plain"
+                  }
+                },
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "assetId",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) The Extole-assigned unique identifier of the asset.",
+                    "type": "text/plain"
+                  }
+                }
+              ]
+            },
+            "header": [{ "key": "Accept", "value": "<string>" }],
+            "method": "GET",
+            "body": {},
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f8d9d77b-1d45-4d05-bafc-f996c849ef1c",
+              "name": "Binary asset content stream with the asset's stored content type.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "a622820e-00dc-417c-9327-d448f997100f",
+              "name": "Redirect to remote asset content.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Found",
+              "code": 302,
+              "header": [],
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "2921c915-6a19-4104-be5a-982f92b0ad56",
+              "name": "asset_content_not_downloadable",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "eb86b689-1f77-4557-8dee-12ef80aca5ab",
+              "name": "asset_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "23dc20aa-9f66-482b-847f-c76d781a3b6c",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f9d56103-a0bf-469b-aeac-29cd4846fa57",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "2e0e3a8c-4e14-4e81-982c-002227a5d2a4",
+              "name": "expired_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "fb0a2a58-4606-44a4-ab20-b71fc44af27e",
+              "name": "invalid_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f9409823-3b91-49be-acc2-e6a3b65507e3",
+              "name": "jwt_authentication_error",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f6271617-b91b-4d28-9a09-df38380edccd",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "55cea678-c87a-4d71-84c5-6e93588233fb",
+              "name": "missing_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7db5fce0-49ac-43c0-a64d-25c1aad0b523",
+              "name": "Unsupported Media Type",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unsupported Media Type",
+              "code": 415,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a2490080-7d89-4c22-a23a-89b0103f5da8",
+              "name": "Too Many Requests",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v4",
+                    "persons",
+                    ":personId",
+                    "assets",
+                    ":assetId",
+                    "download"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
                   "variable": []
                 },
                 "header": [
