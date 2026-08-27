@@ -9317,10 +9317,7 @@
               "mode": "formdata",
               "formdata": [
                 {
-                  "description": {
-                    "content": "(Required) ",
-                    "type": "text/plain"
-                  },
+                  "description": { "content": "", "type": "text/plain" },
                   "key": "asset",
                   "value": "<string>",
                   "type": "text"
@@ -9363,10 +9360,7 @@
                   "mode": "formdata",
                   "formdata": [
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "asset",
                       "value": "<string>",
                       "type": "text"
@@ -9413,10 +9407,7 @@
                   "mode": "formdata",
                   "formdata": [
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "asset",
                       "value": "<string>",
                       "type": "text"
@@ -9463,10 +9454,7 @@
                   "mode": "formdata",
                   "formdata": [
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "asset",
                       "value": "<string>",
                       "type": "text"
@@ -9513,10 +9501,7 @@
                   "mode": "formdata",
                   "formdata": [
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "asset",
                       "value": "<string>",
                       "type": "text"
@@ -9563,10 +9548,7 @@
                   "mode": "formdata",
                   "formdata": [
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "asset",
                       "value": "<string>",
                       "type": "text"
@@ -9613,10 +9595,7 @@
                   "mode": "formdata",
                   "formdata": [
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "asset",
                       "value": "<string>",
                       "type": "text"
@@ -9663,10 +9642,7 @@
                   "mode": "formdata",
                   "formdata": [
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "asset",
                       "value": "<string>",
                       "type": "text"
@@ -9713,10 +9689,7 @@
                   "mode": "formdata",
                   "formdata": [
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "asset",
                       "value": "<string>",
                       "type": "text"
@@ -9763,10 +9736,7 @@
                   "mode": "formdata",
                   "formdata": [
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "asset",
                       "value": "<string>",
                       "type": "text"
@@ -9813,10 +9783,7 @@
                   "mode": "formdata",
                   "formdata": [
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "asset",
                       "value": "<string>",
                       "type": "text"
@@ -9863,10 +9830,7 @@
                   "mode": "formdata",
                   "formdata": [
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "asset",
                       "value": "<string>",
                       "type": "text"
@@ -9913,10 +9877,7 @@
                   "mode": "formdata",
                   "formdata": [
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "asset",
                       "value": "<string>",
                       "type": "text"
@@ -9963,10 +9924,7 @@
                   "mode": "formdata",
                   "formdata": [
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "asset",
                       "value": "<string>",
                       "type": "text"
@@ -10013,10 +9971,7 @@
                   "mode": "formdata",
                   "formdata": [
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "asset",
                       "value": "<string>",
                       "type": "text"
@@ -10063,10 +10018,7 @@
                   "mode": "formdata",
                   "formdata": [
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "asset",
                       "value": "<string>",
                       "type": "text"
@@ -10113,10 +10065,7 @@
                   "mode": "formdata",
                   "formdata": [
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "asset",
                       "value": "<string>",
                       "type": "text"
@@ -10163,10 +10112,7 @@
                   "mode": "formdata",
                   "formdata": [
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "asset",
                       "value": "<string>",
                       "type": "text"
@@ -20331,7 +20277,7 @@
           "request": {
             "name": "Update a shareable (legacy)",
             "description": {
-              "content": "Deprecated. Updates the shareable identified by `shareable_id` on the authenticated consumer's profile.",
+              "content": "Deprecated. Updates the shareable identified by `shareable_id` on the authenticated consumer's profile.\n\nFields omitted from the body are left unchanged — you do not need to send the whole resource.",
               "type": "text/plain"
             },
             "url": {
@@ -38409,7 +38355,7 @@
           "request": {
             "name": "Set a single profile parameter",
             "description": {
-              "content": "Creates or updates one named custom data field on the authenticated consumer's profile. The parameter name is supplied in the `parameter_name` path segment.",
+              "content": "Creates or updates one named custom data field on the authenticated consumer's profile. The parameter name is supplied in the `parameter_name` path segment.\n\nFields omitted from the body are left unchanged, except `value`, which the request schema marks required and which every request must send.",
               "type": "text/plain"
             },
             "url": {
@@ -39209,7 +39155,7 @@
     "name": "Integration API - Consumer to Extole",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "description": {
-      "content": "Consumer-to-Extole integration endpoints: consumer event submission, zone rendering, profile management, and SDK-backing operations for browser and native app environments.",
+      "content": "Consumer-to-Extole integration endpoints: consumer event submission, zone rendering, profile management, and SDK-backing operations for browser and native app environments.\n\n## Updating a resource\n\n`PUT` merges. A field you omit from the body is left at its stored value, so you do not need to read a resource and send it back whole in order to change one field. This is a deliberate departure from the HTTP convention that `PUT` replaces, and it holds across this API.\n\nTwo qualifications, both visible on each operation's own request schema:\n\n- Some operations mark fields `required` in their request schema. Those must be sent on every request, whether or not you are changing them.\n- A field that holds a list or a map is replaced, not merged, when you supply it. Sending one entry of a collection stores that entry and drops the rest, so to change one member of a collection you must send the collection's other members alongside it.",
       "type": "text/plain"
     }
   }

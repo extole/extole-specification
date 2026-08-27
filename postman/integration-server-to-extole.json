@@ -5926,16 +5926,13 @@
                     "content": "(Required) ",
                     "type": "text/plain"
                   },
-                  "key": "fileAssetMetadata",
+                  "key": "fileInputStreamRequest",
                   "value": "<string>",
                   "type": "text"
                 },
                 {
-                  "description": {
-                    "content": "(Required) ",
-                    "type": "text/plain"
-                  },
-                  "key": "fileInputStreamRequest",
+                  "description": { "content": "", "type": "text/plain" },
+                  "key": "fileAssetMetadata",
                   "value": "<string>",
                   "type": "text"
                 }
@@ -5974,16 +5971,13 @@
                         "content": "(Required) ",
                         "type": "text/plain"
                       },
-                      "key": "fileAssetMetadata",
+                      "key": "fileInputStreamRequest",
                       "value": "<string>",
                       "type": "text"
                     },
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
-                      "key": "fileInputStreamRequest",
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "fileAssetMetadata",
                       "value": "<string>",
                       "type": "text"
                     }
@@ -6027,16 +6021,13 @@
                         "content": "(Required) ",
                         "type": "text/plain"
                       },
-                      "key": "fileAssetMetadata",
+                      "key": "fileInputStreamRequest",
                       "value": "<string>",
                       "type": "text"
                     },
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
-                      "key": "fileInputStreamRequest",
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "fileAssetMetadata",
                       "value": "<string>",
                       "type": "text"
                     }
@@ -6080,16 +6071,13 @@
                         "content": "(Required) ",
                         "type": "text/plain"
                       },
-                      "key": "fileAssetMetadata",
+                      "key": "fileInputStreamRequest",
                       "value": "<string>",
                       "type": "text"
                     },
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
-                      "key": "fileInputStreamRequest",
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "fileAssetMetadata",
                       "value": "<string>",
                       "type": "text"
                     }
@@ -6133,16 +6121,13 @@
                         "content": "(Required) ",
                         "type": "text/plain"
                       },
-                      "key": "fileAssetMetadata",
+                      "key": "fileInputStreamRequest",
                       "value": "<string>",
                       "type": "text"
                     },
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
-                      "key": "fileInputStreamRequest",
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "fileAssetMetadata",
                       "value": "<string>",
                       "type": "text"
                     }
@@ -6186,16 +6171,13 @@
                         "content": "(Required) ",
                         "type": "text/plain"
                       },
-                      "key": "fileAssetMetadata",
+                      "key": "fileInputStreamRequest",
                       "value": "<string>",
                       "type": "text"
                     },
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
-                      "key": "fileInputStreamRequest",
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "fileAssetMetadata",
                       "value": "<string>",
                       "type": "text"
                     }
@@ -6239,16 +6221,13 @@
                         "content": "(Required) ",
                         "type": "text/plain"
                       },
-                      "key": "fileAssetMetadata",
+                      "key": "fileInputStreamRequest",
                       "value": "<string>",
                       "type": "text"
                     },
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
-                      "key": "fileInputStreamRequest",
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "fileAssetMetadata",
                       "value": "<string>",
                       "type": "text"
                     }
@@ -6292,16 +6271,13 @@
                         "content": "(Required) ",
                         "type": "text/plain"
                       },
-                      "key": "fileAssetMetadata",
+                      "key": "fileInputStreamRequest",
                       "value": "<string>",
                       "type": "text"
                     },
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
-                      "key": "fileInputStreamRequest",
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "fileAssetMetadata",
                       "value": "<string>",
                       "type": "text"
                     }
@@ -6345,16 +6321,13 @@
                         "content": "(Required) ",
                         "type": "text/plain"
                       },
-                      "key": "fileAssetMetadata",
+                      "key": "fileInputStreamRequest",
                       "value": "<string>",
                       "type": "text"
                     },
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
-                      "key": "fileInputStreamRequest",
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "fileAssetMetadata",
                       "value": "<string>",
                       "type": "text"
                     }
@@ -6398,16 +6371,13 @@
                         "content": "(Required) ",
                         "type": "text/plain"
                       },
-                      "key": "fileAssetMetadata",
+                      "key": "fileInputStreamRequest",
                       "value": "<string>",
                       "type": "text"
                     },
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
-                      "key": "fileInputStreamRequest",
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "fileAssetMetadata",
                       "value": "<string>",
                       "type": "text"
                     }
@@ -6451,16 +6421,13 @@
                         "content": "(Required) ",
                         "type": "text/plain"
                       },
-                      "key": "fileAssetMetadata",
+                      "key": "fileInputStreamRequest",
                       "value": "<string>",
                       "type": "text"
                     },
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
-                      "key": "fileInputStreamRequest",
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "fileAssetMetadata",
                       "value": "<string>",
                       "type": "text"
                     }
@@ -6504,16 +6471,13 @@
                         "content": "(Required) ",
                         "type": "text/plain"
                       },
-                      "key": "fileAssetMetadata",
+                      "key": "fileInputStreamRequest",
                       "value": "<string>",
                       "type": "text"
                     },
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
-                      "key": "fileInputStreamRequest",
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "fileAssetMetadata",
                       "value": "<string>",
                       "type": "text"
                     }
@@ -6557,16 +6521,13 @@
                         "content": "(Required) ",
                         "type": "text/plain"
                       },
-                      "key": "fileAssetMetadata",
+                      "key": "fileInputStreamRequest",
                       "value": "<string>",
                       "type": "text"
                     },
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
-                      "key": "fileInputStreamRequest",
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "fileAssetMetadata",
                       "value": "<string>",
                       "type": "text"
                     }
@@ -6610,16 +6571,13 @@
                         "content": "(Required) ",
                         "type": "text/plain"
                       },
-                      "key": "fileAssetMetadata",
+                      "key": "fileInputStreamRequest",
                       "value": "<string>",
                       "type": "text"
                     },
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
-                      "key": "fileInputStreamRequest",
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "fileAssetMetadata",
                       "value": "<string>",
                       "type": "text"
                     }
@@ -6663,16 +6621,13 @@
                         "content": "(Required) ",
                         "type": "text/plain"
                       },
-                      "key": "fileAssetMetadata",
+                      "key": "fileInputStreamRequest",
                       "value": "<string>",
                       "type": "text"
                     },
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
-                      "key": "fileInputStreamRequest",
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "fileAssetMetadata",
                       "value": "<string>",
                       "type": "text"
                     }
@@ -6716,16 +6671,13 @@
                         "content": "(Required) ",
                         "type": "text/plain"
                       },
-                      "key": "fileAssetMetadata",
+                      "key": "fileInputStreamRequest",
                       "value": "<string>",
                       "type": "text"
                     },
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
-                      "key": "fileInputStreamRequest",
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "fileAssetMetadata",
                       "value": "<string>",
                       "type": "text"
                     }
@@ -6769,16 +6721,13 @@
                         "content": "(Required) ",
                         "type": "text/plain"
                       },
-                      "key": "fileAssetMetadata",
+                      "key": "fileInputStreamRequest",
                       "value": "<string>",
                       "type": "text"
                     },
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
-                      "key": "fileInputStreamRequest",
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "fileAssetMetadata",
                       "value": "<string>",
                       "type": "text"
                     }
@@ -6822,16 +6771,13 @@
                         "content": "(Required) ",
                         "type": "text/plain"
                       },
-                      "key": "fileAssetMetadata",
+                      "key": "fileInputStreamRequest",
                       "value": "<string>",
                       "type": "text"
                     },
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
-                      "key": "fileInputStreamRequest",
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "fileAssetMetadata",
                       "value": "<string>",
                       "type": "text"
                     }
@@ -6875,16 +6821,13 @@
                         "content": "(Required) ",
                         "type": "text/plain"
                       },
-                      "key": "fileAssetMetadata",
+                      "key": "fileInputStreamRequest",
                       "value": "<string>",
                       "type": "text"
                     },
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
-                      "key": "fileInputStreamRequest",
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "fileAssetMetadata",
                       "value": "<string>",
                       "type": "text"
                     }
@@ -6928,16 +6871,13 @@
                         "content": "(Required) ",
                         "type": "text/plain"
                       },
-                      "key": "fileAssetMetadata",
+                      "key": "fileInputStreamRequest",
                       "value": "<string>",
                       "type": "text"
                     },
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
-                      "key": "fileInputStreamRequest",
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "fileAssetMetadata",
                       "value": "<string>",
                       "type": "text"
                     }
@@ -6981,16 +6921,13 @@
                         "content": "(Required) ",
                         "type": "text/plain"
                       },
-                      "key": "fileAssetMetadata",
+                      "key": "fileInputStreamRequest",
                       "value": "<string>",
                       "type": "text"
                     },
                     {
-                      "description": {
-                        "content": "(Required) ",
-                        "type": "text/plain"
-                      },
-                      "key": "fileInputStreamRequest",
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "fileAssetMetadata",
                       "value": "<string>",
                       "type": "text"
                     }
@@ -7467,7 +7404,7 @@
           "request": {
             "name": "Update a file asset",
             "description": {
-              "content": "Updates the mutable metadata of an existing file asset: `name` and `tags`. File content is immutable after upload. The file asset must be in `AVAILABLE` status; expired file assets cannot be updated.",
+              "content": "Updates the mutable metadata of an existing file asset: `name` and `tags`. File content is immutable after upload. The file asset must be in `AVAILABLE` status; expired file assets cannot be updated.\n\nFields omitted from the body are left unchanged — you do not need to send the whole resource.",
               "type": "text/plain"
             },
             "url": {
@@ -12403,7 +12340,7 @@
           "request": {
             "name": "Update a person",
             "description": {
-              "content": "Updates the identity key value on the specified person profile. Returns `403 person_not_found` if the person does not exist or is not accessible.",
+              "content": "Updates the identity key value on the specified person profile. Returns `403 person_not_found` if the person does not exist or is not accessible.\n\nFields omitted from the body are left unchanged — you do not need to send the whole resource.",
               "type": "text/plain"
             },
             "url": {
@@ -13429,7 +13366,7 @@
           "request": {
             "name": "Update person block status",
             "description": {
-              "content": "Updates the block record for the specified person. Set `type` to `EVENTS` to block event participation, `REWARDS` to block reward fulfilment, or `NONE` to remove any block. Supply an optional `reason` string for audit purposes. Returns the updated block record.",
+              "content": "Updates the block record for the specified person. Set `type` to `EVENTS` to block event participation, `REWARDS` to block reward fulfilment, or `NONE` to remove any block. Supply an optional `reason` string for audit purposes. Returns the updated block record.\n\nFields omitted from the body are left unchanged, except `type`, which the request schema marks required and which every request must send.",
               "type": "text/plain"
             },
             "url": {
@@ -15323,7 +15260,7 @@
           "request": {
             "name": "Update a person data parameter",
             "description": {
-              "content": "Updates the value of the named data parameter for the specified person. Returns `400 data_not_found` if the parameter does not exist, or `400 read_only_name` if the parameter name is read-only. Returns `403 person_not_found` if the person is not accessible.",
+              "content": "Updates the value of the named data parameter for the specified person. Returns `400 data_not_found` if the parameter does not exist, or `400 read_only_name` if the parameter name is read-only. Returns `403 person_not_found` if the person is not accessible.\n\nFields omitted from the body are left unchanged — you do not need to send the whole resource.",
               "type": "text/plain"
             },
             "url": {
@@ -27129,7 +27066,7 @@
           "request": {
             "name": "Update a person shareable",
             "description": {
-              "content": "Updates the content of an existing shareable identified by its share code for the specified person.",
+              "content": "Updates the content of an existing shareable identified by its share code for the specified person.\n\nFields omitted from the body are left unchanged — you do not need to send the whole resource.",
               "type": "text/plain"
             },
             "url": {
@@ -39173,7 +39110,7 @@
           "request": {
             "name": "Update a reward",
             "description": {
-              "content": "Updates attributes on the specified reward record. Returns the updated reward.",
+              "content": "Updates attributes on the specified reward record. Returns the updated reward.\n\nFields omitted from the body are left unchanged — you do not need to send the whole resource.",
               "type": "text/plain"
             },
             "url": {
@@ -62636,7 +62573,7 @@
     "name": "Integration API - Server to Extole",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "description": {
-      "content": "Server-to-Extole integration endpoints: event submission, person lookup, zone rendering, token management, and reward retrieval for backend services authenticating with client credentials.",
+      "content": "Server-to-Extole integration endpoints: event submission, person lookup, zone rendering, token management, and reward retrieval for backend services authenticating with client credentials.\n\n## Updating a resource\n\n`PUT` merges. A field you omit from the body is left at its stored value, so you do not need to read a resource and send it back whole in order to change one field. This is a deliberate departure from the HTTP convention that `PUT` replaces, and it holds across this API.\n\nTwo qualifications, both visible on each operation's own request schema:\n\n- Some operations mark fields `required` in their request schema. Those must be sent on every request, whether or not you are changing them.\n- A field that holds a list or a map is replaced, not merged, when you supply it. Sending one entry of a collection stores that entry and drops the rest, so to change one member of a collection you must send the collection's other members alongside it.",
       "type": "text/plain"
     }
   }

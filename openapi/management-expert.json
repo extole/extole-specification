@@ -6016,7 +6016,7 @@
             "type" : "string"
           }
         },
-        "required" : [ "code", "duration_seconds", "name", "scopes", "state" ],
+        "required" : [ "code", "name", "state" ],
         "type" : "object"
       },
       "AuthCodeResponseValidateRequest" : {
@@ -11313,7 +11313,6 @@
             "uniqueItems" : true
           }
         },
-        "required" : [ "trusted_scopes" ],
         "type" : "object"
       },
       "CampaignControllerTriggerAccessResponse" : {
@@ -11981,7 +11980,7 @@
             "$ref" : "#/components/schemas/TriggerPhaseInCampaignControllerTriggerRequest"
           }
         },
-        "required" : [ "data", "expression" ],
+        "required" : [ "expression" ],
         "type" : "object"
       },
       "CampaignControllerTriggerExpressionResponse" : {
@@ -13064,7 +13063,6 @@
             "$ref" : "#/components/schemas/TriggerPhaseInCampaignControllerTriggerRequest"
           }
         },
-        "required" : [ "action_type" ],
         "type" : "object"
       },
       "CampaignControllerTriggerMaxMindRequest" : {
@@ -13179,7 +13177,6 @@
             "$ref" : "#/components/schemas/TriggerPhaseInCampaignControllerTriggerRequest"
           }
         },
-        "required" : [ "referral_originator" ],
         "type" : "object"
       },
       "CampaignControllerTriggerReferredByEventResponse" : {
@@ -13240,7 +13237,6 @@
             "$ref" : "#/components/schemas/TriggerPhaseInCampaignControllerTriggerRequest"
           }
         },
-        "required" : [ "referral_originator" ],
         "type" : "object"
       },
       "CampaignControllerTriggerResponse" : {
@@ -13490,7 +13486,7 @@
             "$ref" : "#/components/schemas/TriggerPhaseInCampaignControllerTriggerRequest"
           }
         },
-        "required" : [ "cause_event_name", "channel", "score_result" ],
+        "required" : [ "cause_event_name" ],
         "type" : "object"
       },
       "CampaignControllerTriggerScoreResponse" : {
@@ -13558,7 +13554,6 @@
             "$ref" : "#/components/schemas/TriggerPhaseInCampaignControllerTriggerRequest"
           }
         },
-        "required" : [ "cause_event_name", "score_result" ],
         "type" : "object"
       },
       "CampaignControllerTriggerSendRewardEventCreateRequest" : {
@@ -13823,7 +13818,7 @@
             "$ref" : "#/components/schemas/TriggerPhaseInCampaignControllerTriggerRequest"
           }
         },
-        "required" : [ "channels", "quality" ],
+        "required" : [ "quality" ],
         "type" : "object"
       },
       "CampaignControllerTriggerStepEventCreateRequest" : {
@@ -14391,7 +14386,7 @@
             "$ref" : "#/components/schemas/CampaignFlowStepWordsRequest"
           }
         },
-        "required" : [ "apps", "flow_path", "icon_color", "icon_type", "metrics", "name", "sequence", "step_name", "tags" ],
+        "required" : [ "apps", "flow_path", "icon_type", "metrics", "sequence", "step_name", "tags" ],
         "type" : "object"
       },
       "CampaignFlowStepMetricCreateRequest" : {
@@ -15310,7 +15305,7 @@
             "type" : "string"
           }
         },
-        "required" : [ "allowed_values", "display_name", "name" ],
+        "required" : [ "allowed_values", "name" ],
         "type" : "object"
       },
       "ComponentFacetResponse" : {
@@ -15585,7 +15580,7 @@
           },
           "type" : "object"
         } ],
-        "required" : [ "allowed_scopes", "categories", "data_start", "description", "display_name", "formats", "parameters", "parent_report_type_id", "scopes", "tags", "type", "visibility" ],
+        "required" : [ "parent_report_type_id", "type" ],
         "type" : "object"
       },
       "ConfiguredReportTypeResponse" : {
@@ -15634,7 +15629,6 @@
             "$ref" : "#/components/schemas/ReportRequest"
           }
         },
-        "required" : [ "csp-report" ],
         "type" : "object"
       },
       "CountMatchesInCampaignControllerTriggerHasPriorRewardCreateRequest" : {
@@ -16292,7 +16286,7 @@
             "uniqueItems" : true
           }
         },
-        "required" : [ "data", "level", "message", "name", "tags" ],
+        "required" : [ "message", "name" ],
         "type" : "object"
       },
       "CreateCreativeClientEventResponse" : {
@@ -16328,7 +16322,7 @@
             "type" : "string"
           }
         },
-        "required" : [ "level", "message" ],
+        "required" : [ "message" ],
         "type" : "object"
       },
       "CreateCreativeLogResponse" : {
@@ -19653,7 +19647,7 @@
           },
           "type" : "object"
         } ],
-        "required" : [ "category", "default_value", "description", "display_name", "is_required", "name", "order", "type", "type_name", "values" ],
+        "required" : [ "name", "type" ],
         "type" : "object"
       },
       "EmailFireAsPersonIdentification" : {
@@ -31644,7 +31638,7 @@
             "type" : "string"
           }
         },
-        "required" : [ "list_name", "list_type", "optout", "source", "type" ],
+        "required" : [ "optout" ],
         "type" : "object"
       },
       "OptoutResponse" : {
@@ -34255,7 +34249,7 @@
         }, {
           "$ref" : "#/components/schemas/SqlReportTypeCreateRequest"
         } ],
-        "required" : [ "allowed_scopes", "categories", "data_start", "description", "display_name", "formats", "scopes", "tags", "type", "visibility" ]
+        "required" : [ "type" ]
       },
       "ReportTypeCreateRequestBase" : {
         "properties" : {
@@ -37354,7 +37348,7 @@
           "type" : "object"
         } ],
         "description" : "Action that modifies the event data.",
-        "required" : [ "data", "default_data", "delete_data", "type" ],
+        "required" : [ "type" ],
         "type" : "object"
       },
       "SetDataPrehandlerActionResponse" : {
@@ -38148,7 +38142,7 @@
           },
           "type" : "object"
         } ],
-        "required" : [ "allowed_scopes", "categories", "data_start", "database", "description", "display_name", "formats", "query", "scopes", "tags", "type", "visibility" ],
+        "required" : [ "database", "query", "type" ],
         "type" : "object"
       },
       "SqlReportTypeResponse" : {
@@ -38190,7 +38184,7 @@
             }
           }
         } ],
-        "required" : [ "category", "default_value", "description", "display_name", "is_required", "name", "order", "type" ],
+        "required" : [ "name", "type" ],
         "type" : "object"
       },
       "StepBuilderInBuiltCampaignStepResponse" : {
@@ -41242,7 +41236,7 @@
     }
   },
   "info" : {
-    "description" : "Advanced configuration endpoints for Extole platform experts: campaign controllers, typed actions and triggers, advanced component types and facets, source mapping, report post-handlers, pre-handlers, and other expert configuration surfaces not included in the standard Management API.",
+    "description" : "Advanced configuration endpoints for Extole platform experts: campaign controllers, typed actions and triggers, advanced component types and facets, source mapping, report post-handlers, pre-handlers, and other expert configuration surfaces not included in the standard Management API.\n\n## Updating a resource\n\n`PUT` merges. A field you omit from the body is left at its stored value, so you do not need to read a resource and send it back whole in order to change one field. This is a deliberate departure from the HTTP convention that `PUT` replaces, and it holds across this API.\n\nTwo qualifications, both visible on each operation's own request schema:\n\n- Some operations mark fields `required` in their request schema. Those must be sent on every request, whether or not you are changing them.\n- A field that holds a list or a map is replaced, not merged, when you supply it. Sending one entry of a collection stores that entry and drops the rest, so to change one member of a collection you must send the collection's other members alongside it.",
     "title" : "Management Expert API",
     "version" : "1.0"
   },
@@ -43039,7 +43033,7 @@
         "x-extole-visibility" : "expert"
       },
       "put" : {
-        "description" : "Applies a partial update to the supplied component facet. Returns `400 component_facet_not_found` if the name does not match any accessible facet.",
+        "description" : "Applies a partial update to the supplied component facet. Returns `400 component_facet_not_found` if the name does not match any accessible facet.\n\nFields omitted from the body are left unchanged — you do not need to send the whole resource.",
         "operationId" : "updateComponentFacet",
         "parameters" : [ {
           "description" : "Name of the component category to update.",
@@ -44932,7 +44926,7 @@
         "x-extole-visibility" : "expert"
       },
       "put" : {
-        "description" : "Applies a partial update to the supplied component type. Returns `400 component_type_not_found` if the name does not match any accessible type.",
+        "description" : "Applies a partial update to the supplied component type. Returns `400 component_type_not_found` if the name does not match any accessible type.\n\nFields omitted from the body are left unchanged — you do not need to send the whole resource.",
         "operationId" : "updateComponentType",
         "parameters" : [ {
           "description" : "Name of the component type to update.",
