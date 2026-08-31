@@ -52544,6 +52544,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "957d2b30-71b2-4ceb-af39-020c3abdabdb",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "campaigns", ":campaignId"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "54317644-7ae3-4417-9c17-37e84a56ae1f",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -59684,6 +59714,49 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "d4291054-7384-4687-b331-381f02c3d1bb",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "campaigns",
+                    "program",
+                    ":programLabel",
+                    "rename"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"program_label\": \"program_label\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "e7ff42d7-cc78-4cec-b80a-d8c5169e3b1c",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -61418,6 +61491,47 @@
             {
               "id": "c030019c-5823-439a-8237-6c7777b70801",
               "name": "campaign_component_type_validation_failed",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "campaigns", "upload-bundle"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "file",
+                      "value": "<string>",
+                      "type": "text"
+                    }
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b1b4b46b-5dae-4f82-ae7f-21da1def9b71",
+              "name": "campaign_concurrent_client_change_update",
               "originalRequest": {
                 "url": {
                   "path": ["v2", "campaigns", "upload-bundle"],
@@ -71048,6 +71162,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "2a9b8484-4642-4db3-8e5a-c6e3183a63ad",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "campaigns", ":campaignId", "archive"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "2f6c8e98-f638-40db-ae62-f155034b547f",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -72526,6 +72670,36 @@
             {
               "id": "6672d0dd-e27f-44c4-b12c-05dfed79f368",
               "name": "binding_error",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "campaigns", ":campaignId", "discard"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "639676a8-ba1c-49a4-b824-273242752b63",
+              "name": "campaign_concurrent_client_change_update",
               "originalRequest": {
                 "url": {
                   "path": ["v2", "campaigns", ":campaignId", "discard"],
@@ -78121,6 +78295,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "ba317646-04ec-4f72-bb3c-0b40d3105057",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "campaigns", ":campaignId", "end"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"date\": \"2025-10-24T02:00:00-07:00\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "6d4c5a34-6830-41c9-8967-bb9c2bf9e5d4",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -80092,6 +80303,43 @@
             {
               "id": "22513196-f52f-4d54-af36-511ce8094f88",
               "name": "campaign_component_type_validation_failed",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "campaigns", ":campaignId", "launch-burst"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\",\n  \"start_date\": \"2025-10-24T02:00:00-07:00\",\n  \"stop_date\": \"2025-10-24T02:00:00-07:00\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "39e55f3e-107d-4431-89dd-03f643f43bfd",
+              "name": "campaign_concurrent_client_change_update",
               "originalRequest": {
                 "url": {
                   "path": ["v2", "campaigns", ":campaignId", "launch-burst"],
@@ -83946,6 +84194,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "192034b0-a826-4431-967a-387962fd28bc",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "campaigns", ":campaignId", "launch-test"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\",\n  \"start_date\": \"2025-10-24T02:00:00-07:00\",\n  \"stop_date\": \"2025-10-24T02:00:00-07:00\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "ae2504e5-8f22-48b2-8556-227945ce8fb8",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -87402,6 +87687,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "8c987eb1-c41c-4338-9624-051a3c8befe9",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "campaigns", ":campaignId", "live"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "aa6ad51f-d184-4a5e-b260-480da757359a",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -88686,6 +89001,43 @@
             {
               "id": "d7fd38fa-7bc6-4854-b6ac-74e4936359e3",
               "name": "binding_error",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "campaigns", ":campaignId", "lock"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"lock_types\": [\n    \"DUPLICATE\"\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "193ed1ca-5f01-4110-8f42-dd70f8afcfac",
+              "name": "campaign_concurrent_client_change_update",
               "originalRequest": {
                 "url": {
                   "path": ["v2", "campaigns", ":campaignId", "lock"],
@@ -90049,6 +90401,48 @@
             {
               "id": "75ad9713-3e3f-4c2f-aa1b-6cd75936dabc",
               "name": "campaign_component_type_validation_failed",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "campaigns",
+                    ":campaignId",
+                    "make-latest-draft"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\",\n  \"version\": \"version\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7a8a9f20-090f-48ca-b73f-cff444c46450",
+              "name": "campaign_concurrent_client_change_update",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -92827,6 +93221,48 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "642d4f4f-df49-4b85-aa59-aee41ac2cf17",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "campaigns",
+                    ":campaignId",
+                    "make-latest-preserve-state"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\",\n  \"version\": \"version\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "80c503ea-5df5-43c0-8582-0a2010a07b1e",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -95565,6 +96001,48 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "6aa50bec-951e-4427-b794-d13fbc2a862a",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "campaigns",
+                    ":campaignId",
+                    "make-latest-published"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"message\": \"message\",\n  \"version\": \"version\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "eccf02d3-2901-4b83-b29f-3d6bbd20f169",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -97937,6 +98415,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "24ef75c8-63fa-4de3-a398-e11e04fe0ade",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "campaigns", ":campaignId", "pause"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"date\": \"2025-10-24T02:00:00-07:00\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "2044f10d-d7d3-4fe3-83a8-1d62f19ec564",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -100099,6 +100614,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "1f70c10d-b8fe-48d2-9fd2-72c9db2f4cba",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "campaigns", ":campaignId", "schedule"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"end_date\": \"2025-10-24T02:00:00-07:00\",\n  \"pause_date\": \"2025-10-24T02:00:00-07:00\",\n  \"start_date\": \"2025-10-24T02:00:00-07:00\",\n  \"stop_date\": \"2025-10-24T02:00:00-07:00\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "82990a57-0c9f-4a16-bce5-364c5cd53faa",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -102179,6 +102731,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "d165ed29-d54c-4a01-8705-90d7ead584cc",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "campaigns", ":campaignId", "stop"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"date\": \"2025-10-24T02:00:00-07:00\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "89b54994-3413-46b8-ace3-3e54b015186a",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -103718,6 +104307,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "f33d1d9c-4b6b-4806-85c0-7d50856e88ec",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "campaigns", ":campaignId", "unarchive"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "bebd7245-6f94-4537-b907-8038baa99337",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -104686,6 +105305,36 @@
             {
               "id": "614a3867-5e7a-45ef-99df-3782e5010238",
               "name": "campaign_component_type_validation_failed",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "campaigns", ":campaignId", "undelete"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "df50f209-a506-401f-bb24-8ff7a718282a",
+              "name": "campaign_concurrent_client_change_update",
               "originalRequest": {
                 "url": {
                   "path": ["v2", "campaigns", ":campaignId", "undelete"],
@@ -106153,6 +106802,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "4cb97761-2063-455b-a6b0-b95a5dc99f98",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "campaigns", ":campaignId", "unlock"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"lock_types\": [\n    \"DUPLICATE\"\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "92148554-7fc3-4cfb-9c1b-3234b2fa8a79",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -107069,6 +107755,49 @@
             {
               "id": "cf0bb49f-afd2-4e08-bb00-b2d96a65e7e8",
               "name": "campaign_build_failed",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "campaigns",
+                    "program",
+                    ":program_label",
+                    "update"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"program_type\": \"program_type\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7eb969ac-8228-4370-b627-2929a9f969c1",
+              "name": "campaign_concurrent_client_change_update",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -109629,6 +110358,47 @@
             {
               "id": "e51468e0-e44d-4cc0-9043-3cd62a0b2b92",
               "name": "campaign_component_type_validation_failed",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "campaigns", ":campaignId", "upload-bundle"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "file",
+                      "value": "<string>",
+                      "type": "text"
+                    }
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e6f83226-225c-4a53-b797-ef6c3cfab2fa",
+              "name": "campaign_concurrent_client_change_update",
               "originalRequest": {
                 "url": {
                   "path": ["v2", "campaigns", ":campaignId", "upload-bundle"],
@@ -128198,6 +128968,43 @@
             {
               "id": "9b5268de-962a-405c-a983-ed1281be217d",
               "name": "campaign_component_type_validation_failed",
+              "originalRequest": {
+                "url": {
+                  "path": ["v1", "components"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"campaign_id\": \"campaign_id\",\n  \"component_ids\": [\n    \"component_id\"\n  ],\n  \"component_references\": [\n    {\n      \"component_id\": \"component_id\",\n      \"socket_names\": [\n        \"socket_name\"\n      ]\n    }\n  ],\n  \"description\": \"description\",\n  \"display_name\": \"display_name\",\n  \"facets\": [\n    {\n      \"name\": \"name\",\n      \"value\": \"value\"\n    }\n  ],\n  \"install\": {},\n  \"installed_into_socket\": \"installed_into_socket\",\n  \"name\": \"name\",\n  \"settings\": [\n    {\n      \"description\": \"description\",\n      \"display_name\": \"display_name\",\n      \"name\": \"name\",\n      \"priority\": \"10\",\n      \"source\": \"INHERITED\",\n      \"tags\": [\n        \"tag\"\n      ],\n      \"type\": \"ADMIN_ICON\",\n      \"values\": {\n        \"values_key\": {}\n      }\n    }\n  ],\n  \"tags\": [\n    \"tag\"\n  ],\n  \"types\": [\n    \"type\"\n  ],\n  \"upload_version\": \"upload_version\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "04eb1e64-bbcd-4fc7-b111-72918e760131",
+              "name": "campaign_concurrent_client_change_update",
               "originalRequest": {
                 "url": {
                   "path": ["v1", "components"],
@@ -159489,6 +160296,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "396fb119-f54d-40ca-a9ec-5c9b24f355ac",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": ["v1", "components", ":component_id"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"display_name\": \"Welcome Offer\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "91ab7459-236a-4aa7-a1a9-bec9f7a2aeca",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -164991,6 +165835,36 @@
             {
               "id": "2a398c71-2635-42a0-9415-5af904f83da7",
               "name": "campaign_build_failed",
+              "originalRequest": {
+                "url": {
+                  "path": ["v1", "components", ":component_id"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e83f2aa4-7a2f-45bb-add9-d257f2f45c91",
+              "name": "campaign_concurrent_client_change_update",
               "originalRequest": {
                 "url": {
                   "path": ["v1", "components", ":component_id"],
@@ -174789,6 +175663,56 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "ae8c0b24-e8d0-4c46-ab82-9eaea7598d4f",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": ["v1", "components", ":component_id", "assets"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "Body of a `POST /v1/components/{component_id}/assets` request.",
+                        "type": "text/plain"
+                      },
+                      "key": "asset",
+                      "value": "<string>",
+                      "type": "text"
+                    },
+                    {
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "file",
+                      "value": "<string>",
+                      "type": "text"
+                    }
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "7a81015a-59f6-4f04-a820-df5e07801296",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -179167,6 +180091,62 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "a1c8a9f2-f49d-4dfa-af1c-e65fd525cbb9",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "components",
+                    ":component_id",
+                    "assets",
+                    ":asset_id"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "Body of a `PUT /v1/components/{component_id}/assets/{asset_id}` request.",
+                        "type": "text/plain"
+                      },
+                      "key": "asset",
+                      "value": "<string>",
+                      "type": "text"
+                    },
+                    {
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "file",
+                      "value": "<string>",
+                      "type": "text"
+                    }
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "7eedefc1-fd6a-4060-b840-875f9597f6c0",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -181961,6 +182941,42 @@
             {
               "id": "b62a9f16-44d4-4a0c-b1c4-0470ed604742",
               "name": "campaign_component_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "components",
+                    ":component_id",
+                    "assets",
+                    ":asset_id"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "36e5077e-5975-4b47-b14e-9b40c3c5be36",
+              "name": "campaign_concurrent_client_change_update",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -185935,6 +186951,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "ec254749-fcb7-4494-b205-9d3c135484d0",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": ["v1", "components", ":component_id", "settings"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"description\": \"description\",\n  \"display_name\": \"display_name\",\n  \"name\": \"name\",\n  \"priority\": \"10\",\n  \"source\": \"INHERITED\",\n  \"tags\": [\n    \"tag\"\n  ],\n  \"type\": \"ADMIN_ICON\",\n  \"values\": {\n    \"values_key\": {}\n  }\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "c5ff9724-64a9-4b15-963f-4aaf41e7bdda",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -188942,6 +189995,43 @@
             {
               "id": "59a69a6c-85cd-4ee7-84d8-d5c3b0ee5af3",
               "name": "campaign_component_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v1", "components", ":component_id", "settings"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"settings\": {\n    \"settings_key\": {\n      \"description\": \"description\",\n      \"display_name\": \"display_name\",\n      \"name\": \"name\",\n      \"priority\": \"10\",\n      \"source\": \"INHERITED\",\n      \"tags\": [\n        \"tag\"\n      ],\n      \"type\": \"ADMIN_ICON\",\n      \"values\": {\n        \"values_key\": {}\n      }\n    }\n  }\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ca6861f2-d003-4584-b1a6-0b9aa88f0cea",
+              "name": "campaign_concurrent_client_change_update",
               "originalRequest": {
                 "url": {
                   "path": ["v1", "components", ":component_id", "settings"],
@@ -207018,6 +208108,49 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "3b5b5ab8-71f3-4b1c-b56c-d9838fae3670",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "components",
+                    ":component_id",
+                    "settings",
+                    ":setting_name"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"description\": \"description\",\n  \"display_name\": \"display_name\",\n  \"name\": \"name\",\n  \"priority\": \"10\",\n  \"source\": \"INHERITED\",\n  \"tags\": [\n    \"tag\"\n  ],\n  \"type\": \"ADMIN_ICON\",\n  \"values\": {\n    \"values_key\": {}\n  }\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "b450b5fb-786e-4b2f-9f77-e4dfec4e840e",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -211030,6 +212163,42 @@
             {
               "id": "e75a2e3d-947e-4c13-a66d-8272973c5388",
               "name": "campaign_component_type_validation_failed",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "components",
+                    ":component_id",
+                    "settings",
+                    ":setting_name"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "d568823e-ae82-4ea0-81a2-16c9d9ec1412",
+              "name": "campaign_concurrent_client_change_update",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -220936,6 +222105,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "9c51a1bf-b35c-48b8-95a9-47482de2445b",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": ["v1", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"anchors\": [\n    {\n      \"source_element_id\": \"source_element_id\",\n      \"target_element_id\": \"target_element_id\"\n    }\n  ],\n  \"component_display_name\": \"component_display_name\",\n  \"component_ids\": [\n    \"component_id\"\n  ],\n  \"component_name\": \"component_name\",\n  \"component_references\": [\n    {\n      \"component_id\": \"component_id\",\n      \"socket_names\": [\n        \"socket_name\"\n      ]\n    }\n  ],\n  \"description\": \"description\",\n  \"tags\": [\n    \"tag\"\n  ],\n  \"target_campaign_id\": \"target_campaign_id\",\n  \"target_component_absolute_name\": \"target_component_absolute_name\",\n  \"target_setting_name\": \"target_setting_name\",\n  \"target_socket_name\": \"target_socket_name\",\n  \"type\": \"type\",\n  \"types\": [\n    \"type\"\n  ],\n  \"variables\": [\n    {\n      \"description\": \"description\",\n      \"display_name\": \"display_name\",\n      \"name\": \"name\",\n      \"priority\": \"10\",\n      \"source\": \"INHERITED\",\n      \"tags\": [\n        \"tag\"\n      ],\n      \"type\": \"ADMIN_ICON\",\n      \"values\": {\n        \"values_key\": {}\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "126aa12f-94b6-4c60-8da4-cc5c982872ee",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -228930,6 +230136,51 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "ee2ab65b-35fd-4bf4-94b3-8201c7ebf6cf",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "components",
+                    ":component_id",
+                    "settings",
+                    "component-reference-list",
+                    ":setting_name",
+                    "select"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"component_ids\": [\n    \"component_id\"\n  ],\n  \"variant\": \"variant\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "304585d3-8697-4525-a129-b98817ebfa09",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -232325,6 +233576,51 @@
             {
               "id": "98078c7c-e5cd-4dc5-b53a-f7a5f2528ddb",
               "name": "campaign_component_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "components",
+                    ":component_id",
+                    "settings",
+                    "component-reference-list",
+                    ":setting_name",
+                    "unselect"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"component_ids\": [\n    \"component_id\"\n  ],\n  \"variant\": \"variant\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a14377dc-c895-48a2-aaec-d6ecb6fbfccd",
+              "name": "campaign_concurrent_client_change_update",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -235806,6 +237102,51 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "a471f722-cfec-43c3-aa8c-b82818e73e81",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "components",
+                    ":component_id",
+                    "settings",
+                    "component-reference",
+                    ":setting_name",
+                    "select"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"component_id\": \"component_id\",\n  \"variant\": \"variant\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "527d355f-3b58-48a5-abd6-3a33fee93e53",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -239201,6 +240542,51 @@
             {
               "id": "8c119e4a-33ca-4d91-a4f5-587655c43350",
               "name": "campaign_component_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "components",
+                    ":component_id",
+                    "settings",
+                    "component-reference",
+                    ":setting_name",
+                    "unselect"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"component_id\": \"component_id\",\n  \"variant\": \"variant\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ecc171e1-0883-4d11-b68f-3ef25c89322a",
+              "name": "campaign_concurrent_client_change_update",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -243119,6 +244505,50 @@
             {
               "id": "1ba927ec-85fa-491d-8a06-28aa9b62fc5e",
               "name": "campaign_component_type_validation_failed",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "components",
+                    ":component_id",
+                    "settings",
+                    ":setting_name",
+                    "add-component"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"component_display_name\": \"component_display_name\",\n  \"settings\": [\n    {\n      \"description\": \"description\",\n      \"display_name\": \"display_name\",\n      \"name\": \"name\",\n      \"priority\": \"10\",\n      \"source\": \"INHERITED\",\n      \"tags\": [\n        \"tag\"\n      ],\n      \"type\": \"ADMIN_ICON\",\n      \"values\": {\n        \"values_key\": {}\n      }\n    }\n  ],\n  \"source_component_id\": \"source_component_id\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b1596139-c533-409f-91b6-df0344ba5798",
+              "name": "campaign_concurrent_client_change_update",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -249227,6 +250657,44 @@
             {
               "id": "dd035115-2d05-4b6e-ad9f-a08fc4ba98d1",
               "name": "campaign_component_type_validation_failed",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "components",
+                    ":component_id",
+                    "settings",
+                    ":setting_name",
+                    "remove-component",
+                    ":target_component_id"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c1f42f5e-9161-489c-9f3a-d00466d03ab4",
+              "name": "campaign_concurrent_client_change_update",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -260842,6 +262310,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "e4e1dd18-4cba-49fe-88df-d015af4a7742",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": ["v1", "components", ":component_id", "operations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"description\": \"description\",\n  \"display_name\": \"display_name\",\n  \"method\": \"DELETE\",\n  \"name\": \"name\",\n  \"path\": \"path\",\n  \"priority\": \"10\",\n  \"tags\": [\n    \"tag\"\n  ],\n  \"type\": \"CONSUMER_TO_EXTOLE\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "f02ab3e2-b01e-4379-8724-c7a426709c1f",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -265394,6 +266899,49 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "746a6822-e2c1-48ad-b6a0-10e3f75ef21a",
+              "name": "campaign_concurrent_client_change_update",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "components",
+                    ":component_id",
+                    "operations",
+                    ":operation_name"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"description\": \"description\",\n  \"display_name\": \"display_name\",\n  \"method\": \"DELETE\",\n  \"path\": \"path\",\n  \"priority\": \"10\",\n  \"tags\": [\n    \"tag\"\n  ],\n  \"type\": \"CONSUMER_TO_EXTOLE\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "bd9cd735-a6bf-4c0f-9309-25fcca9ab948",
               "name": "campaign_concurrent_update",
               "originalRequest": {
@@ -268417,6 +269965,42 @@
             {
               "id": "04c8de61-021a-4907-b4d6-b1ac79efaffd",
               "name": "campaign_component_type_validation_failed",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "components",
+                    ":component_id",
+                    "operations",
+                    ":operation_name"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f997dbb9-13f9-4b13-8bbe-0508dbbcc53e",
+              "name": "campaign_concurrent_client_change_update",
               "originalRequest": {
                 "url": {
                   "path": [

@@ -241,6 +241,16 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
+      "campaign_concurrent_client_change_update" : {
+        "summary" : "campaign_concurrent_client_change_update",
+        "value" : {
+          "code" : "campaign_concurrent_client_change_update",
+          "http_status_code" : 400,
+          "message" : "Could not perform the operation. A client wide configuration change is rebuilding this campaign. Retry once it completes",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
       "campaign_concurrent_update" : {
         "summary" : "campaign_concurrent_update",
         "value" : {
@@ -46660,6 +46670,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -47639,6 +47652,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -47941,6 +47957,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -48390,6 +48409,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -48680,6 +48702,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -49128,6 +49153,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -49412,6 +49440,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -49830,6 +49861,9 @@
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -50145,6 +50179,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -50444,6 +50481,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -51144,6 +51184,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -51677,6 +51720,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -51961,6 +52007,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -52415,6 +52464,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -52714,6 +52766,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -53177,6 +53232,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -53491,6 +53549,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -53942,6 +54003,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -54235,6 +54299,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -54688,6 +54755,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -54978,6 +55048,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -55431,6 +55504,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -55727,6 +55803,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -56175,6 +56254,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -56459,6 +56541,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -56908,6 +56993,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -57198,6 +57286,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -57655,6 +57746,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -57963,6 +58057,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -58410,6 +58507,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -58688,6 +58788,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -59139,6 +59242,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -59432,6 +59538,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -59884,6 +59993,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -60180,6 +60292,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -60629,6 +60744,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -60916,6 +61034,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -61562,6 +61683,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -61840,6 +61964,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -62479,6 +62606,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -62778,6 +62908,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -63416,6 +63549,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -63700,6 +63836,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -64364,6 +64503,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -64696,6 +64838,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -65340,6 +65485,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -65630,6 +65778,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -66298,6 +66449,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -66606,6 +66760,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -67272,6 +67429,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -67562,6 +67722,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -68594,6 +68757,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -68908,6 +69074,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -69385,6 +69554,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -69696,6 +69868,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -70173,6 +70348,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -70487,6 +70665,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -70960,6 +71141,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -71277,6 +71461,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -71750,6 +71937,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -72070,6 +72260,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -72542,6 +72735,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -72853,6 +73049,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -73343,6 +73542,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -73696,6 +73898,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -74196,6 +74401,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -74600,6 +74808,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -75072,6 +75283,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -75386,6 +75600,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -75862,6 +76079,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -76176,6 +76396,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -76649,6 +76872,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -76963,6 +77189,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -77439,6 +77668,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -77762,6 +77994,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -78236,6 +78471,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -78547,6 +78785,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -79022,6 +79263,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -79339,6 +79583,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -79814,6 +80061,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -80125,6 +80375,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -80600,6 +80853,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -80923,6 +81179,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -81398,6 +81657,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -81733,6 +81995,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -82395,6 +82660,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -82715,6 +82983,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -83379,6 +83650,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -83702,6 +83976,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -84387,6 +84664,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -84698,6 +84978,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -85360,6 +85643,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -85686,6 +85972,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -86371,6 +86660,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -86682,6 +86974,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -87344,6 +87639,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -87667,6 +87965,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -88352,6 +88653,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -88663,6 +88967,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -89324,6 +89631,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -89635,6 +89945,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -90694,6 +91007,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -91500,6 +91816,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -91855,6 +92174,9 @@
                   },
                   "campaign_build_failed" : {
                     "$ref" : "#/components/examples/campaign_build_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -92480,6 +92802,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -93207,6 +93532,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -93527,6 +93855,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -94231,6 +94562,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -94970,6 +95304,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -95302,6 +95639,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -119849,6 +120189,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -120194,6 +120537,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -120526,6 +120872,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -120850,6 +121199,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -121197,6 +121549,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -121549,6 +121904,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -121880,6 +122238,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -122237,6 +122598,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -122580,6 +122944,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -122905,6 +123272,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -123268,6 +123638,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -123645,6 +124018,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -123985,6 +124361,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -124324,6 +124703,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -124680,6 +125062,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -125018,6 +125403,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -125341,6 +125729,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -125682,6 +126073,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -126032,6 +126426,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -126355,6 +126752,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -126697,6 +127097,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -127033,6 +127436,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -127367,6 +127773,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -127703,6 +128112,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -128068,6 +128480,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -128429,6 +128844,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -128788,6 +129206,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -129151,6 +129572,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -129519,6 +129943,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -129899,6 +130326,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -130267,6 +130697,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -130637,6 +131070,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -130992,6 +131428,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -131366,6 +131805,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -131792,6 +132234,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -132241,6 +132686,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -132609,6 +133057,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -132968,6 +133419,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -133332,6 +133786,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -133691,6 +134148,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -134054,6 +134514,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -134426,6 +134889,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -134794,6 +135260,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -135159,6 +135628,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -135519,6 +135991,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -135889,6 +136364,9 @@
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
                   },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
+                  },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
                   },
@@ -136245,6 +136723,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
@@ -136604,6 +137085,9 @@
                   },
                   "campaign_component_type_validation_failed" : {
                     "$ref" : "#/components/examples/campaign_component_type_validation_failed"
+                  },
+                  "campaign_concurrent_client_change_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_client_change_update"
                   },
                   "campaign_concurrent_update" : {
                     "$ref" : "#/components/examples/campaign_concurrent_update"
