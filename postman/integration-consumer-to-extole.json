@@ -18517,6 +18517,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "ba3742f3-5bf9-4f40-9992-3c667df611f6",
+              "name": "key_length_out_of_range",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "shareables"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"code\": \"code\",\n  \"content\": {\n    \"description\": \"description\",\n    \"image_url\": \"image_url\",\n    \"partner_content_id\": \"partner_content_id\",\n    \"title\": \"title\",\n    \"url\": \"url\"\n  },\n  \"data\": {\n    \"data_key\": \"data_key\"\n  },\n  \"key\": \"key\",\n  \"label\": \"label\",\n  \"target_url\": \"target_url\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "c6d3fb5c-5b44-4924-9039-5a0ebc05624b",
               "name": "key_taken",
               "originalRequest": {
@@ -21129,6 +21166,43 @@
             {
               "id": "ba6ab751-3b8a-42be-aa65-7f530852fdd7",
               "name": "invalid_shareable_id",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "shareables", ":shareable_id"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"description\",\n    \"image_url\": \"image_url\",\n    \"partner_content_id\": \"partner_content_id\",\n    \"title\": \"title\",\n    \"url\": \"url\"\n  },\n  \"data\": {\n    \"data_key\": \"data_key\"\n  },\n  \"key\": \"key\",\n  \"label\": \"label\",\n  \"target_url\": \"target_url\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "fd6f84ee-066d-49eb-a4ce-225c79f80cb5",
+              "name": "key_length_out_of_range",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v4", "me", "shareables", ":shareable_id"],
@@ -27539,6 +27613,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "3ceda653-9d3f-481e-b150-226cb405544e",
+              "name": "key_length_out_of_range",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "shareable"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"access_token\": \"access_token\",\n  \"code\": \"code\",\n  \"content\": {\n    \"description\": \"description\",\n    \"image_url\": \"image_url\",\n    \"partner_content_id\": \"partner_content_id\",\n    \"title\": \"title\",\n    \"url\": \"url\"\n  },\n  \"key\": \"key\",\n  \"label\": \"label\",\n  \"target_url\": \"target_url\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "6921df3d-a4e1-448e-93ed-aa233970ec5d",
               "name": "key_taken",
               "originalRequest": {
@@ -32297,6 +32408,43 @@
             {
               "id": "8418a2cf-5aa9-4b4f-b919-d83792e740c8",
               "name": "missing_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v6", "me", "shareables"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"description\",\n    \"image_url\": \"image_url\",\n    \"partner_content_id\": \"partner_content_id\",\n    \"title\": \"title\",\n    \"url\": \"url\"\n  },\n  \"data\": {\n    \"data_key\": \"data_key\"\n  },\n  \"key\": \"key\",\n  \"label\": \"label\",\n  \"preferred_code_prefixes\": [\n    \"preferred_code_prefixe\"\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "4bce4af6-e842-46fa-8b7b-6694e7df94df",
+              "name": "shareable_key_length_out_of_range",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v6", "me", "shareables"],
@@ -37338,6 +37486,49 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "fe466c2c-299b-43a3-b442-b6741ffb529a",
+              "name": "shareable_key_length_out_of_range",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v6",
+                    "me",
+                    "shareables",
+                    "get-create-or-update"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"description\",\n    \"image_url\": \"image_url\",\n    \"partner_content_id\": \"partner_content_id\",\n    \"title\": \"title\",\n    \"url\": \"url\"\n  },\n  \"data\": {\n    \"data_key\": \"data_key\"\n  },\n  \"key\": \"key\",\n  \"label\": \"label\",\n  \"preferred_code_prefixes\": [\n    \"preferred_code_prefixe\"\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "28d6bcb1-15f6-48ad-b089-17e0934a2bb3",
               "name": "Unsupported Media Type",
               "originalRequest": {
@@ -38237,6 +38428,43 @@
             {
               "id": "a52dec3e-fb3d-4a9e-ab3c-d9ea81f8a1db",
               "name": "missing_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v6", "me", "shareables", "get-or-create"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"description\",\n    \"image_url\": \"image_url\",\n    \"partner_content_id\": \"partner_content_id\",\n    \"title\": \"title\",\n    \"url\": \"url\"\n  },\n  \"data\": {\n    \"data_key\": \"data_key\"\n  },\n  \"key\": \"key\",\n  \"label\": \"label\",\n  \"preferred_code_prefixes\": [\n    \"preferred_code_prefixe\"\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c5c13348-3a50-41e1-9f29-fe3371098f0d",
+              "name": "shareable_key_length_out_of_range",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v6", "me", "shareables", "get-or-create"],

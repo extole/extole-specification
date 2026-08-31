@@ -15623,14 +15623,6 @@
         "required" : [ "access_token", "client_id", "scopes" ],
         "type" : "object"
       },
-      "ContentSecurityPolicyReportRequest" : {
-        "properties" : {
-          "csp-report" : {
-            "$ref" : "#/components/schemas/ReportRequest"
-          }
-        },
-        "type" : "object"
-      },
       "CountMatchesInCampaignControllerTriggerHasPriorRewardCreateRequest" : {
         "description" : "Choose between static or dynamic count matches. Buildtime expressions use [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
         "externalDocs" : {
@@ -34036,48 +34028,6 @@
             "nullable" : true,
             "type" : "array",
             "uniqueItems" : true
-          }
-        },
-        "type" : "object"
-      },
-      "ReportRequest" : {
-        "nullable" : true,
-        "properties" : {
-          "blocked-uri" : {
-            "nullable" : true,
-            "type" : "string"
-          },
-          "disposition" : {
-            "nullable" : true,
-            "type" : "string"
-          },
-          "document-uri" : {
-            "nullable" : true,
-            "type" : "string"
-          },
-          "effective-directive" : {
-            "nullable" : true,
-            "type" : "string"
-          },
-          "original-policy" : {
-            "nullable" : true,
-            "type" : "string"
-          },
-          "referrer" : {
-            "nullable" : true,
-            "type" : "string"
-          },
-          "script-sample" : {
-            "nullable" : true,
-            "type" : "string"
-          },
-          "status-code" : {
-            "nullable" : true,
-            "type" : "string"
-          },
-          "violated-directive" : {
-            "nullable" : true,
-            "type" : "string"
           }
         },
         "type" : "object"
@@ -137509,135 +137459,6 @@
           }
         },
         "summary" : "Used to send client events to Extole",
-        "tags" : [ "Debug" ],
-        "x-extole-bundle" : "management-expert",
-        "x-extole-visibility" : "expert"
-      }
-    },
-    "/v4/debug/content-security-policy-reports" : {
-      "post" : {
-        "description" : "Accepts a browser Content-Security-Policy violation report for logging and investigation. Expert-only debugging endpoint.",
-        "operationId" : "submit",
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "example" : {
-                "csp-report" : {
-                  "blocked-uri" : "blocked-uri",
-                  "disposition" : "disposition",
-                  "document-uri" : "document-uri",
-                  "effective-directive" : "effective-directive",
-                  "original-policy" : "original-policy",
-                  "referrer" : "referrer",
-                  "script-sample" : "script-sample",
-                  "status-code" : "status-code",
-                  "violated-directive" : "violated-directive"
-                }
-              },
-              "schema" : {
-                "$ref" : "#/components/schemas/ContentSecurityPolicyReportRequest"
-              }
-            },
-            "application/x-www-form-urlencoded" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/ContentSecurityPolicyReportRequest"
-              }
-            }
-          }
-        },
-        "responses" : {
-          "200" : {
-            "content" : {
-              "*/*" : { }
-            },
-            "description" : "Successful response"
-          },
-          "400" : {
-            "content" : {
-              "application/json" : {
-                "examples" : {
-                  "binding_error" : {
-                    "$ref" : "#/components/examples/binding_error"
-                  },
-                  "invalid_json" : {
-                    "$ref" : "#/components/examples/invalid_json"
-                  },
-                  "invalid_parameter" : {
-                    "$ref" : "#/components/examples/invalid_parameter"
-                  },
-                  "missing_request_body" : {
-                    "$ref" : "#/components/examples/missing_request_body"
-                  }
-                },
-                "schema" : {
-                  "$ref" : "#/components/schemas/RestExceptionResponse"
-                }
-              }
-            },
-            "description" : "Bad Request"
-          },
-          "401" : {
-            "content" : {
-              "application/json" : {
-                "examples" : {
-                  "method_unauthorized" : {
-                    "$ref" : "#/components/examples/method_unauthorized"
-                  }
-                },
-                "schema" : {
-                  "$ref" : "#/components/schemas/RestExceptionResponse"
-                }
-              }
-            },
-            "description" : "Unauthorized"
-          },
-          "403" : {
-            "content" : {
-              "application/json" : {
-                "examples" : {
-                  "method_unauthorized" : {
-                    "$ref" : "#/components/examples/method_unauthorized"
-                  }
-                },
-                "schema" : {
-                  "$ref" : "#/components/schemas/RestExceptionResponse"
-                }
-              }
-            },
-            "description" : "Forbidden"
-          },
-          "415" : {
-            "content" : {
-              "application/json" : {
-                "examples" : {
-                  "unsupported_media_type" : {
-                    "$ref" : "#/components/examples/unsupported_media_type"
-                  }
-                },
-                "schema" : {
-                  "$ref" : "#/components/schemas/RestExceptionResponse"
-                }
-              }
-            },
-            "description" : "Unsupported Media Type"
-          },
-          "429" : {
-            "content" : {
-              "application/json" : {
-                "examples" : {
-                  "too_many_requests" : {
-                    "$ref" : "#/components/examples/too_many_requests"
-                  }
-                },
-                "schema" : {
-                  "$ref" : "#/components/schemas/RestExceptionResponse"
-                }
-              }
-            },
-            "description" : "Too Many Requests"
-          }
-        },
-        "summary" : "Submit a content security policy report",
         "tags" : [ "Debug" ],
         "x-extole-bundle" : "management-expert",
         "x-extole-visibility" : "expert"

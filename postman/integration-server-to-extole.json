@@ -26137,6 +26137,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "ca9cee8a-c574-4dba-a1ac-86fe0d3f97b1",
+              "name": "shareable_key_length_out_of_range",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "shareables"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"code\": \"code\",\n  \"content\": {\n    \"description\": \"description\",\n    \"image_url\": \"image_url\",\n    \"partner_content_id\": \"partner_content_id\",\n    \"title\": \"title\",\n    \"url\": \"url\"\n  },\n  \"data\": {\n    \"data_key\": \"data_key\"\n  },\n  \"key\": \"key\",\n  \"label\": \"label\",\n  \"program_url\": \"program_url\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "230e6653-c800-4321-af50-88e424bd48bd",
               "name": "shareable_key_taken",
               "originalRequest": {
@@ -28146,6 +28183,49 @@
             {
               "id": "7ec6c150-772d-4cd8-ac14-f027b227f75b",
               "name": "program_domain_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v5",
+                    "persons",
+                    ":person_id",
+                    "shareables",
+                    ":code"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"description\",\n    \"image_url\": \"image_url\",\n    \"partner_content_id\": \"partner_content_id\",\n    \"title\": \"title\",\n    \"url\": \"url\"\n  },\n  \"data\": {\n    \"data_key\": \"data_key\"\n  },\n  \"key\": \"key\",\n  \"label\": \"label\",\n  \"program_url\": \"program_url\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3de1213b-c71a-43e3-909f-0c388c75f3c2",
+              "name": "shareable_key_length_out_of_range",
               "originalRequest": {
                 "url": {
                   "path": [
