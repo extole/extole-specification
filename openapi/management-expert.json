@@ -2981,6 +2981,26 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
+      "component_reference_still_pinned" : {
+        "summary" : "component_reference_still_pinned",
+        "value" : {
+          "code" : "component_reference_still_pinned",
+          "http_status_code" : 400,
+          "message" : "Component is still pinned by a component-reference setting in a published campaign",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "component_reference_unmatched_on_publish" : {
+        "summary" : "component_reference_unmatched_on_publish",
+        "value" : {
+          "code" : "component_reference_unmatched_on_publish",
+          "http_status_code" : 400,
+          "message" : "Campaign cannot be published while it holds a component-reference pin that no longer resolves",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
       "component_type_display_name_contains_illegal_characters" : {
         "summary" : "component_type_display_name_contains_illegal_characters",
         "value" : {
@@ -41575,6 +41595,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "excessive_component_reference" : {
                     "$ref" : "#/components/examples/excessive_component_reference"
                   },
@@ -42706,6 +42732,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "excessive_component_reference" : {
                     "$ref" : "#/components/examples/excessive_component_reference"
@@ -43984,6 +44016,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "excessive_component_reference" : {
                     "$ref" : "#/components/examples/excessive_component_reference"
@@ -45530,6 +45568,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "excessive_component_reference" : {
                     "$ref" : "#/components/examples/excessive_component_reference"
                   },
@@ -46081,6 +46125,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "excessive_component_reference" : {
                     "$ref" : "#/components/examples/excessive_component_reference"
@@ -46946,6 +46996,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_misconfiguration"
@@ -47887,6 +47943,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -48635,6 +48697,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -49372,6 +49440,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -50402,6 +50476,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_misconfiguration"
                   },
@@ -51413,6 +51493,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -51951,6 +52037,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -52713,6 +52805,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -53497,6 +53595,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -54237,6 +54341,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -55005,6 +55115,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -55763,6 +55879,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -56500,6 +56622,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -57251,6 +57379,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -58026,6 +58160,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -58759,6 +58899,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -59497,6 +59643,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -60251,6 +60403,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -61014,6 +61172,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -61947,6 +62111,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -62882,6 +63052,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -63819,6 +63995,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -64828,6 +65010,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -65761,6 +65949,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -66747,6 +66941,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -67711,6 +67911,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -69055,6 +69261,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -69852,6 +70064,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -70648,6 +70866,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -71447,6 +71671,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -72253,6 +72483,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -73044,6 +73280,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -73896,6 +74138,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -74807,6 +75055,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -75601,6 +75855,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -76404,6 +76664,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -77199,6 +77465,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -78008,6 +78280,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -78801,6 +79079,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -79603,6 +79887,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -80397,6 +80687,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -81201,6 +81497,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -82020,6 +82322,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -83011,6 +83319,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -84010,6 +84324,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -85016,6 +85336,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -86009,6 +86335,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -87018,6 +87350,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -87999,6 +88337,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -89017,6 +89361,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -89997,6 +90347,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -91455,6 +91811,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -92266,6 +92628,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -93188,6 +93556,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -93920,6 +94294,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -94228,6 +94608,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -94968,6 +95354,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -95713,6 +96105,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -96021,6 +96419,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -116734,6 +117138,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "excessive_component_reference" : {
                     "$ref" : "#/components/examples/excessive_component_reference"
                   },
@@ -120601,6 +121011,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -120940,6 +121356,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -121268,6 +121690,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -121599,6 +122027,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_misconfiguration"
@@ -121971,6 +122405,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -122306,6 +122746,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -122678,6 +123124,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -123015,6 +123467,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -123356,6 +123814,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -123687,6 +124151,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -124108,6 +124578,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -124451,6 +124927,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -124784,6 +125266,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -125149,6 +125637,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -125510,6 +126004,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -125838,6 +126338,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -126177,6 +126683,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -126543,6 +127055,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -126867,6 +127385,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -127197,6 +127721,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -127544,6 +128074,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -127896,6 +128432,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
                   },
@@ -128227,6 +128769,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_state_misconfiguration" : {
                     "$ref" : "#/components/examples/controller_state_misconfiguration"
@@ -128581,6 +129129,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -128949,6 +129503,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -129315,6 +129875,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -129684,6 +130250,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -130059,6 +130631,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -130446,6 +131024,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -130815,6 +131399,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -131197,6 +131787,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -131560,6 +132156,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -131921,6 +132523,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -132343,6 +132951,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -132824,6 +133438,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -133200,6 +133820,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -133561,6 +134187,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -133931,6 +134563,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -134300,6 +134938,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -134665,6 +135309,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -135044,6 +135694,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -135418,6 +136074,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -135789,6 +136451,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -136153,6 +136821,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -136520,6 +137194,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -136896,6 +137576,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
                   },
@@ -137258,6 +137944,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -137632,6 +138324,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "controller_build_failed" : {
                     "$ref" : "#/components/examples/controller_build_failed"
@@ -141232,6 +141930,12 @@
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
                   },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
+                  },
                   "excessive_component_reference" : {
                     "$ref" : "#/components/examples/excessive_component_reference"
                   },
@@ -141687,6 +142391,12 @@
                   },
                   "component_operation_type_missing" : {
                     "$ref" : "#/components/examples/component_operation_type_missing"
+                  },
+                  "component_reference_still_pinned" : {
+                    "$ref" : "#/components/examples/component_reference_still_pinned"
+                  },
+                  "component_reference_unmatched_on_publish" : {
+                    "$ref" : "#/components/examples/component_reference_unmatched_on_publish"
                   },
                   "excessive_component_reference" : {
                     "$ref" : "#/components/examples/excessive_component_reference"
