@@ -198487,7 +198487,7 @@
           "request": {
             "name": "List selectable components for a component reference list",
             "description": {
-              "content": "Returns the components eligible to be selected for the named `COMPONENT_REFERENCE_LIST` setting. Eligibility is evaluated on the server from the setting's component type, its selectable filters, its boundary, and whether the setting's lookup can capture key values for the candidate, so a picker never reproduces those rules.",
+              "content": "Returns the components eligible to be selected for the named `COMPONENT_REFERENCE_LIST` setting. Eligibility is evaluated on the server from the setting's component type, its selectable filters, its boundary, and whether the setting's lookup can capture key values for the candidate, so a picker never reproduces those rules. Candidates from this component's own campaign are resolved against its current draft; candidates from every other campaign are resolved against that campaign's published version, so a component that exists only in another campaign's unpublished draft is never eligible.",
               "type": "text/plain"
             },
             "url": {
@@ -201878,7 +201878,7 @@
           "request": {
             "name": "List selected components for a component reference list",
             "description": {
-              "content": "Returns the components the named `COMPONENT_REFERENCE_LIST` setting points at, hydrated from the component ids it stores. The result is computed per request and is never persisted or written into the built setting. A component whose campaign has been archived is omitted, and a reference that points at nothing returns an empty list.",
+              "content": "Returns the components the named `COMPONENT_REFERENCE_LIST` setting points at, hydrated from the component ids it stores. The result is computed per request and is never persisted or written into the built setting. A pin into this component's own campaign is hydrated from its current draft; a pin into another campaign is hydrated from that other campaign's published version regardless of what its own unpublished draft holds - deleting the component in that draft without publishing does not change what this endpoint returns. A component whose campaign has been archived is omitted, and a reference that points at nothing returns an empty list.",
               "type": "text/plain"
             },
             "url": {
@@ -204909,7 +204909,7 @@
           "request": {
             "name": "List selectable components for a component reference",
             "description": {
-              "content": "Returns the components eligible to be selected for the named `COMPONENT_REFERENCE` setting. Eligibility is evaluated on the server from the setting's component type, its selectable filters, its boundary, and whether the setting's lookup can capture key values for the candidate, so a picker never reproduces those rules.",
+              "content": "Returns the components eligible to be selected for the named `COMPONENT_REFERENCE` setting. Eligibility is evaluated on the server from the setting's component type, its selectable filters, its boundary, and whether the setting's lookup can capture key values for the candidate, so a picker never reproduces those rules. Candidates from this component's own campaign are resolved against its current draft; candidates from every other campaign are resolved against that campaign's published version, so a component that exists only in another campaign's unpublished draft is never eligible.",
               "type": "text/plain"
             },
             "url": {
@@ -208300,7 +208300,7 @@
           "request": {
             "name": "List selected components for a component reference",
             "description": {
-              "content": "Returns the component the named `COMPONENT_REFERENCE` setting points at, hydrated from the component id it stores. The result is computed per request and is never persisted or written into the built setting. A reference that points at nothing, or at a component whose campaign has been archived, returns an empty list.",
+              "content": "Returns the component the named `COMPONENT_REFERENCE` setting points at, hydrated from the component id it stores. The result is computed per request and is never persisted or written into the built setting. A pin into this component's own campaign is hydrated from its current draft; a pin into another campaign is hydrated from that other campaign's published version regardless of what its own unpublished draft holds - deleting the component in that draft without publishing does not change what this endpoint returns. A reference that points at nothing, or at a component whose campaign has been archived, returns an empty list.",
               "type": "text/plain"
             },
             "url": {
