@@ -5,8 +5,8 @@ export interface EncoderService {
     decodeHex(input: string): number[];
     decodeWithBase64(input: string): string;
     encodeBase64(input: number[]): string;
-    encodeHS256(key: number[], message: number[]): number[];
     encodeHS256(key: ClientKey, message: number[]): number[];
+    encodeHS256(key: number[], message: number[]): number[];
     encodeHex(input: number[]): string;
     encodeMd5(input: number[]): number[];
     encodeSha256(input: number[]): number[];

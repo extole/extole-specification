@@ -2681,16 +2681,6 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
-      "client_key_not_found" : {
-        "summary" : "client_key_not_found",
-        "value" : {
-          "code" : "client_key_not_found",
-          "http_status_code" : 400,
-          "message" : "Key is not found",
-          "parameters" : { },
-          "unique_id" : "00000000-0000-0000-0000-000000000000"
-        }
-      },
       "component_facet_display_name_length_out_of_range" : {
         "summary" : "component_facet_display_name_length_out_of_range",
         "value" : {
@@ -3981,16 +3971,6 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
-      "jwt_missing" : {
-        "summary" : "jwt_missing",
-        "value" : {
-          "code" : "jwt_missing",
-          "http_status_code" : 400,
-          "message" : "No JWT specified for verification",
-          "parameters" : { },
-          "unique_id" : "00000000-0000-0000-0000-000000000000"
-        }
-      },
       "key_exchange_exception" : {
         "summary" : "key_exchange_exception",
         "value" : {
@@ -4347,16 +4327,6 @@
           "code" : "person_not_found",
           "http_status_code" : 403,
           "message" : "Person not found",
-          "parameters" : { },
-          "unique_id" : "00000000-0000-0000-0000-000000000000"
-        }
-      },
-      "pgp_extole_client_key_not_found" : {
-        "summary" : "pgp_extole_client_key_not_found",
-        "value" : {
-          "code" : "pgp_extole_client_key_not_found",
-          "http_status_code" : 400,
-          "message" : "PGP Extole key is not found",
           "parameters" : { },
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
@@ -29446,31 +29416,6 @@
           "title" : "Buildtime - Javascript",
           "type" : "string"
         } ]
-      },
-      "JwtClientKeyVerifyJwtRequest" : {
-        "properties" : {
-          "jwt" : {
-            "description" : "JWT string to verify against active client keys in the program.",
-            "type" : "string"
-          }
-        },
-        "required" : [ "jwt" ],
-        "type" : "object"
-      },
-      "JwtClientKeyVerifyJwtResponse" : {
-        "properties" : {
-          "description" : {
-            "description" : "Human-readable explanation of the verification outcome.",
-            "type" : "string"
-          },
-          "result" : {
-            "description" : "Verification outcome code.",
-            "enum" : [ "ALGORITHM_MISMATCH", "ALGORITHM_MISSING", "DECRYPTION_FAILURE", "EXPIRED", "KEY_ID_MISMATCH", "KEY_ID_MISSING", "MALFORMED", "MALFORMED_EXP_CLAIM", "MALFORMED_NBF_CLAIM", "MATCHED", "PREMATURE_USE", "SIGNATURE_MISMATCH", "UNSUPPORTED" ],
-            "type" : "string"
-          }
-        },
-        "required" : [ "description", "result" ],
-        "type" : "object"
       },
       "KeyTypeInStepDataCreateRequest" : {
         "description" : "Choose between static or dynamic key type. Buildtime expressions use [CampaignBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts).",
@@ -138799,163 +138744,6 @@
         "x-extole-visibility" : "expert"
       }
     },
-    "/v2/settings/security/keys/jwt/{key_id}/verify-jwt" : {
-      "post" : {
-        "deprecated" : true,
-        "description" : "Deprecated. Verifies a JWT signature using the key material stored on the client key identified by `key_id`. The JWT `kid` header must match the key `partner_key_id`.",
-        "operationId" : "verifyJwtClientKey",
-        "parameters" : [ {
-          "in" : "path",
-          "name" : "key_id",
-          "required" : true,
-          "schema" : {
-            "type" : "string"
-          }
-        } ],
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "example" : {
-                "jwt" : "jwt"
-              },
-              "schema" : {
-                "$ref" : "#/components/schemas/JwtClientKeyVerifyJwtRequest"
-              }
-            }
-          }
-        },
-        "responses" : {
-          "200" : {
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/JwtClientKeyVerifyJwtResponse"
-                }
-              }
-            },
-            "description" : "Successful response"
-          },
-          "400" : {
-            "content" : {
-              "application/json" : {
-                "examples" : {
-                  "binding_error" : {
-                    "$ref" : "#/components/examples/binding_error"
-                  },
-                  "client_key_not_found" : {
-                    "$ref" : "#/components/examples/client_key_not_found"
-                  },
-                  "invalid_json" : {
-                    "$ref" : "#/components/examples/invalid_json"
-                  },
-                  "invalid_parameter" : {
-                    "$ref" : "#/components/examples/invalid_parameter"
-                  },
-                  "jwt_missing" : {
-                    "$ref" : "#/components/examples/jwt_missing"
-                  },
-                  "missing_request_body" : {
-                    "$ref" : "#/components/examples/missing_request_body"
-                  },
-                  "pgp_extole_client_key_not_found" : {
-                    "$ref" : "#/components/examples/pgp_extole_client_key_not_found"
-                  }
-                },
-                "schema" : {
-                  "$ref" : "#/components/schemas/RestExceptionResponse"
-                }
-              }
-            },
-            "description" : "Bad Request"
-          },
-          "401" : {
-            "content" : {
-              "application/json" : {
-                "examples" : {
-                  "method_unauthorized" : {
-                    "$ref" : "#/components/examples/method_unauthorized"
-                  }
-                },
-                "schema" : {
-                  "$ref" : "#/components/schemas/RestExceptionResponse"
-                }
-              }
-            },
-            "description" : "Unauthorized"
-          },
-          "402" : {
-            "content" : {
-              "application/json" : {
-                "examples" : {
-                  "payment_required" : {
-                    "$ref" : "#/components/examples/payment_required"
-                  }
-                },
-                "schema" : {
-                  "$ref" : "#/components/schemas/RestExceptionResponse"
-                }
-              }
-            },
-            "description" : "Payment Required"
-          },
-          "403" : {
-            "content" : {
-              "application/json" : {
-                "examples" : {
-                  "access_denied" : {
-                    "$ref" : "#/components/examples/access_denied"
-                  },
-                  "method_unauthorized" : {
-                    "$ref" : "#/components/examples/method_unauthorized"
-                  },
-                  "missing_access_token" : {
-                    "$ref" : "#/components/examples/missing_access_token"
-                  }
-                },
-                "schema" : {
-                  "$ref" : "#/components/schemas/RestExceptionResponse"
-                }
-              }
-            },
-            "description" : "Forbidden"
-          },
-          "415" : {
-            "content" : {
-              "application/json" : {
-                "examples" : {
-                  "unsupported_media_type" : {
-                    "$ref" : "#/components/examples/unsupported_media_type"
-                  }
-                },
-                "schema" : {
-                  "$ref" : "#/components/schemas/RestExceptionResponse"
-                }
-              }
-            },
-            "description" : "Unsupported Media Type"
-          },
-          "429" : {
-            "content" : {
-              "application/json" : {
-                "examples" : {
-                  "too_many_requests" : {
-                    "$ref" : "#/components/examples/too_many_requests"
-                  }
-                },
-                "schema" : {
-                  "$ref" : "#/components/schemas/RestExceptionResponse"
-                }
-              }
-            },
-            "description" : "Too Many Requests"
-          }
-        },
-        "summary" : "Verify JWT client key",
-        "tags" : [ "Security Keys" ],
-        "x-extole-bundle" : "management-expert",
-        "x-extole-visibility" : "expert"
-      }
-    },
     "/v4/debug/client-events" : {
       "post" : {
         "operationId" : "createDebugClientEvent",
@@ -142734,12 +142522,10 @@
   }, {
     "name" : "Reports"
   }, {
-    "name" : "Security Keys"
-  }, {
     "name" : "Settings"
   } ],
   "x-tagGroups" : [ {
     "name" : "Management Expert API",
-    "tags" : [ "Authentication", "Campaign Controllers", "Campaign Controllers Actions", "Campaign Controllers Triggers", "Campaign Flow Steps", "Components", "Components Grants", "Components Subscriptions", "Components Types", "Content", "Debug", "Domains", "Email", "Event Prehandlers", "Events", "Javascript Core Extensions", "Persons", "Profiles", "Report Schedules", "Report Types", "Reporting", "Reports", "Security Keys", "Settings" ]
+    "tags" : [ "Authentication", "Campaign Controllers", "Campaign Controllers Actions", "Campaign Controllers Triggers", "Campaign Flow Steps", "Components", "Components Grants", "Components Subscriptions", "Components Types", "Content", "Debug", "Domains", "Email", "Event Prehandlers", "Events", "Javascript Core Extensions", "Persons", "Profiles", "Report Schedules", "Report Types", "Reporting", "Reports", "Settings" ]
   } ]
 }
