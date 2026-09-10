@@ -317075,6 +317075,1332 @@
           "protocolProfileBehavior": { "disableBodyPruning": true }
         },
         {
+          "id": "b8a49520-23a4-457f-b529-e539fe766eba",
+          "name": "Generate missing reports for a schedule",
+          "request": {
+            "name": "Generate missing reports for a schedule",
+            "description": {
+              "content": "Runs a scheduled report runner for past periods that have no report yet, and returns the reports it started. A period that already has a report is left alone, so this is safe to repeat.\n\nThe scheduler itself only ever fills the most recently completed period, so a period that was never run, or whose report was deleted after a newer one existed, stays empty until this operation is called. Each generated report runs against the data available now, not the data that existed when the period closed.\n\nPeriods are filled most recent first. Use `limit` to bound how many reports are started in one call, and poll `GET /v6/report-runners/{reportRunnerId}/reports` for their status.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "v6",
+                "report-runners",
+                "scheduled",
+                ":reportRunnerId",
+                "generate-missing-reports"
+              ],
+              "host": ["{{baseUrl}}"],
+              "query": [
+                {
+                  "disabled": false,
+                  "description": {
+                    "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                    "type": "text/plain"
+                  },
+                  "key": "slot",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "description": {
+                    "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                    "type": "text/plain"
+                  },
+                  "key": "limit",
+                  "value": "<string>"
+                }
+              ],
+              "variable": [
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "reportRunnerId",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) The Extole unique report runner identifier.",
+                    "type": "text/plain"
+                  }
+                }
+              ]
+            },
+            "header": [{ "key": "Accept", "value": "<string>" }],
+            "method": "POST",
+            "body": {},
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b176e1e2-660c-4bee-9759-b2d6244e6881",
+              "name": "The reports that were started, one per period that had none. Empty when every period already has a report.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "857f5f4e-44ed-45fc-af7c-c201dfbabb8c",
+              "name": "binding_error",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "bbaba886-9dcd-40e4-809e-f9ff50b92195",
+              "name": "invalid_json",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b478aa2e-933a-41e9-bd48-1bf7384e7614",
+              "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "be1d74d8-5e15-4b5a-afd1-a7e12295f015",
+              "name": "missing_request_body",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c13fcfcc-fc18-4464-8c73-be272406bb80",
+              "name": "report_runner_invalid_aggregation_status",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ef3bc674-57bc-4deb-ba3b-fa49f81cc9c4",
+              "name": "report_runner_invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "cc156498-1142-4000-b2c1-381cf60928fb",
+              "name": "report_runner_invalid_pause_status",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "cd649c4f-8ca9-4e26-ba18-63f58f97715d",
+              "name": "report_runner_invalid_slot",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "4a4d0739-c68d-4594-8fce-2436be64695d",
+              "name": "report_runner_invalid_slot_type",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "af892293-4f21-4639-89b2-17437f1bc651",
+              "name": "report_runner_invalid_status",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e7900211-a703-4faf-b3f8-fa82f5b3e4ab",
+              "name": "report_runner_invalid_type",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "84a55ed4-0f0a-47b0-bbf4-df69781ebf72",
+              "name": "report_runner_no_execution_time_range",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "6c124b72-5acb-45e4-b9f8-7103dcd98c13",
+              "name": "report_runner_paused",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ca1e59c7-8517-43ff-8742-aa5c0341053f",
+              "name": "report_runner_slots_not_supported",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3acb2e54-7766-425f-8724-1cd0b0593f8a",
+              "name": "report_runner_wrong_type",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "eefae94b-fa55-409a-b188-2fa1780faca0",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e21d49df-b087-4499-ac39-244b3f1a0397",
+              "name": "Payment Required",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Payment Required",
+              "code": 402,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7afc882e-b30d-4c35-8994-f8a0db8b5727",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "852cf421-e27f-411d-aaec-2e89aee50502",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "69e194c6-46b2-474e-af26-5e4fa179d825",
+              "name": "missing_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "393c8019-b9d0-4841-93e3-bff03681f149",
+              "name": "Unsupported Media Type",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Unsupported Media Type",
+              "code": 415,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e8f5cf4a-2674-494f-a390-a541dffd7ae7",
+              "name": "Too Many Requests",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        },
+        {
           "id": "5ede0226-6218-4fdd-b3e7-721b8031fa38",
           "name": "Duplicate a report runner",
           "request": {
