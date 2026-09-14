@@ -13,4 +13,5 @@ export interface ShareableGetOrCreateBuilder {
     withLabel(label: string): ShareableGetOrCreateBuilder;
     withNoLabel(): ShareableGetOrCreateBuilder;
     withPreferredCodePrefixes(preferredCodePrefixes: string[]): ShareableGetOrCreateBuilder;
+    withRandomCode(): ShareableGetOrCreateBuilder;
 }

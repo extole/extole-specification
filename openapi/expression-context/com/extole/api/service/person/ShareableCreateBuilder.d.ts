@@ -15,4 +15,5 @@ export interface ShareableCreateBuilder {
     withLabel(label: string): ShareableCreateBuilder;
     withNoLabel(): ShareableCreateBuilder;
     withPreferredCodePrefixes(preferredCodePrefixes: NativeList<string>): ShareableCreateBuilder;
+    withRandomCode(): ShareableCreateBuilder;
 }
