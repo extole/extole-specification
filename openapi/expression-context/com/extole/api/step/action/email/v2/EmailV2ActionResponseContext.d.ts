@@ -8,9 +8,9 @@ export interface EmailV2ActionResponseContext extends EmailV2ActionContentContex
     getBody(): string;
     getCc(): NativeList<string>;
     getEmailMessageBuilder(): EmailMessageBuilder;
-    getFrom(): string;
+    getFrom(): string | null;
     getHeaders(): NativeMap<string, string>;
-    getReplyTo(): string;
+    getReplyTo(): string | null;
     getSubject(): string;
     getTo(): string;
 }

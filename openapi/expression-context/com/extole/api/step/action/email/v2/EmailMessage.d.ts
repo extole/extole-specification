@@ -5,12 +5,12 @@ export interface EmailMessage {
     bcc(): NativeList<string>;
     body(): string;
     cc(): NativeList<string>;
-    doNotSendReason(): string;
+    doNotSendReason(): string | null;
     equals(o: unknown): boolean;
-    from(): string;
+    from(): string | null;
     hashCode(): number;
     headers(): NativeMap<string, string>;
-    replyTo(): string;
+    replyTo(): string | null;
     subject(): string;
     to(): string;
     toString(): string;

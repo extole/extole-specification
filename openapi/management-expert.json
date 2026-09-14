@@ -20877,6 +20877,7 @@
             "type" : "array"
           },
           "do_not_send_reason" : {
+            "nullable" : true,
             "type" : "string"
           },
           "from" : {
