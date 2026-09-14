@@ -43898,7 +43898,6 @@
     "/v1/client-domain-patterns" : {
       "get" : {
         "description" : "Returns all domain pattern definitions for the calling client. Domain patterns define which URL patterns the Extole platform recognises as belonging to this client — they control campaign-tracking domain matching, shareable link generation, and zone-rendering domain allow-listing. Each entry includes its `pattern`, `type` (`GLOB`, `DOMAIN`, or `SUB_DOMAIN`), and the optional `client_domain_id` that links it to a specific program domain configuration.",
-        "operationId" : "listClientDomainPatterns",
         "parameters" : [ {
           "in" : "query",
           "name" : "client_domain_id",
@@ -44053,7 +44052,6 @@
       },
       "post" : {
         "description" : "Creates a new domain pattern definition and returns the persisted record with its server-assigned id. The `pattern` field is required. `type` defaults to `GLOB` when omitted. Set `test=true` to create a test-only pattern that is not used in production domain matching. The pattern must be buildable; complex `BuildtimeEvaluatable` expressions are evaluated at build time.",
-        "operationId" : "createClientDomainPattern",
         "requestBody" : {
           "content" : {
             "application/json" : {
@@ -44318,7 +44316,6 @@
     "/v1/client-domain-patterns/built" : {
       "get" : {
         "description" : "Returns all domain patterns in their fully evaluated (built) runtime form, with all `BuildtimeEvaluatable` fields resolved to their current string values. Use this when the calling system needs the effective pattern expressions rather than the source template definitions. Use `GET /v1/client-domain-patterns` for the editable source definitions.",
-        "operationId" : "listBuiltClientDomainPatterns",
         "parameters" : [ {
           "in" : "query",
           "name" : "client_domain_id",
@@ -44475,7 +44472,6 @@
     "/v1/client-domain-patterns/{id}" : {
       "get" : {
         "description" : "Returns the source definition for the supplied domain pattern, including its `pattern` expression, `type`, optional `client_domain_id`, and `test` flag. Returns `400 client_domain_pattern_not_found` if the id does not exist or is not accessible to the calling client. For the compiled runtime snapshot use `GET /v1/client-domain-patterns/{id}/built` instead.",
-        "operationId" : "getClientDomainPattern",
         "parameters" : [ {
           "description" : "Identifier of the client domain pattern to retrieve.",
           "in" : "path",
@@ -44600,7 +44596,6 @@
       },
       "put" : {
         "description" : "Applies a partial update to the supplied domain pattern. Only the fields present in the body are changed; omitted fields are left intact. Returns the updated pattern record on success. Returns `400 client_domain_pattern_not_found` if the id does not exist.",
-        "operationId" : "updateClientDomainPattern",
         "parameters" : [ {
           "description" : "Identifier of the client domain pattern to update.",
           "in" : "path",
@@ -44746,7 +44741,6 @@
       },
       "delete" : {
         "description" : "Soft-archives the supplied domain pattern. Archived patterns are retained but are no longer used in domain matching. Reversible via `POST /v1/client-domain-patterns/{id}/unarchive`. Returns the updated pattern record. Returns `400 client_domain_pattern_not_found` if the id does not exist.",
-        "operationId" : "archiveClientDomainPattern",
         "parameters" : [ {
           "description" : "Identifier of the client domain pattern to archive.",
           "in" : "path",
@@ -44873,7 +44867,6 @@
     "/v1/client-domain-patterns/{id}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form for the supplied domain pattern, with all `BuildtimeEvaluatable` fields resolved. Returns `400 client_domain_pattern_not_found` if the id does not exist or is not accessible to the calling client.",
-        "operationId" : "getBuiltClientDomainPattern",
         "parameters" : [ {
           "description" : "Identifier of the client domain pattern to retrieve in built form.",
           "in" : "path",
@@ -45000,7 +44993,6 @@
     "/v1/component-facets" : {
       "get" : {
         "description" : "Returns component facet (category) definitions for the calling client. Facets group component types into logical categories shown in the campaign editor. Use `GET /v1/component-facets/default` to retrieve the platform-default categories.",
-        "operationId" : "listComponentFacets",
         "parameters" : [ {
           "in" : "query",
           "name" : "include_archived",
@@ -45149,7 +45141,6 @@
       },
       "post" : {
         "description" : "Creates a new component facet (category) definition and returns the persisted record. Component facets group types shown in the campaign editor.",
-        "operationId" : "createComponentFacet",
         "requestBody" : {
           "content" : {
             "application/json" : {
@@ -45450,7 +45441,6 @@
     "/v1/component-facets/default" : {
       "get" : {
         "description" : "Returns the platform-default component facet (category) definitions. Default facets are provided by Extole and are available to all clients.",
-        "operationId" : "listDefaultComponentFacets",
         "responses" : {
           "200" : {
             "content" : {
@@ -45580,7 +45570,6 @@
     "/v1/component-facets/{name}" : {
       "get" : {
         "description" : "Returns the component facet (category) definition for the supplied name. Returns `400 component_facet_not_found` if the name does not match any accessible facet.",
-        "operationId" : "getComponentFacet",
         "parameters" : [ {
           "description" : "Name of the component category to retrieve.",
           "in" : "path",
@@ -45705,7 +45694,6 @@
       },
       "put" : {
         "description" : "Applies a partial update to the supplied component facet. Returns `400 component_facet_not_found` if the name does not match any accessible facet.\n\nFields omitted from the body are left unchanged — you do not need to send the whole resource.",
-        "operationId" : "updateComponentFacet",
         "parameters" : [ {
           "description" : "Name of the component category to update.",
           "in" : "path",
@@ -45850,7 +45838,6 @@
       },
       "delete" : {
         "description" : "Archives the supplied component facet. Fails with `400 facet_associated_with_components` if the facet is still assigned to active components. Remove those associations before archiving. Returns the archived facet.",
-        "operationId" : "archiveComponentFacet",
         "parameters" : [ {
           "description" : "Name of the component category to archive.",
           "in" : "path",
@@ -45980,7 +45967,6 @@
     "/v1/component-grants" : {
       "get" : {
         "description" : "Returns all component grants for the current client.",
-        "operationId" : "listComponentGrants",
         "responses" : {
           "200" : {
             "content" : {
@@ -46108,7 +46094,6 @@
       },
       "post" : {
         "description" : "Grants a client permission to use the specified shared component.",
-        "operationId" : "grantComponent",
         "responses" : {
           "200" : {
             "content" : {
@@ -46241,7 +46226,6 @@
     "/v1/component-grants/granters" : {
       "get" : {
         "description" : "Returns the clients that have granted component access to others.",
-        "operationId" : "listGranters",
         "responses" : {
           "200" : {
             "content" : {
@@ -46371,7 +46355,6 @@
     "/v1/component-subscriptions" : {
       "get" : {
         "description" : "Returns all component subscriptions for the current client.",
-        "operationId" : "listComponentSubscriptions",
         "responses" : {
           "200" : {
             "content" : {
@@ -46499,7 +46482,6 @@
       },
       "post" : {
         "description" : "Subscribes a client to receive updates from the specified shared component.",
-        "operationId" : "subscribeComponent",
         "responses" : {
           "200" : {
             "content" : {
@@ -46740,7 +46722,6 @@
     "/v1/component-subscriptions/built" : {
       "get" : {
         "description" : "Returns all component subscriptions in their built (evaluated) form.",
-        "operationId" : "listBuiltComponentSubscriptions",
         "responses" : {
           "200" : {
             "content" : {
@@ -46870,7 +46851,6 @@
     "/v1/component-subscriptions/subscribers" : {
       "get" : {
         "description" : "Returns the clients subscribed to the specified shared component.",
-        "operationId" : "listSubscribers",
         "responses" : {
           "200" : {
             "content" : {
@@ -47000,7 +46980,6 @@
     "/v1/component-types" : {
       "get" : {
         "description" : "Returns component type definitions for the calling client, filtered by the supplied query parameters. Component types define the structure (settings, facets) of campaign components. Use `GET /v1/component-types/default` to retrieve the platform-default types.",
-        "operationId" : "listComponentTypes",
         "parameters" : [ {
           "in" : "query",
           "name" : "parent",
@@ -47155,7 +47134,6 @@
       },
       "post" : {
         "description" : "Creates a new component type definition and returns the persisted record. Component types are typically managed by Extole staff; this endpoint is marked `expert`.",
-        "operationId" : "createComponentType",
         "requestBody" : {
           "content" : {
             "application/json" : {
@@ -47343,7 +47321,6 @@
     "/v1/component-types/default" : {
       "get" : {
         "description" : "Returns the platform-default component type definitions. Default types are provided by Extole and are available to all clients.",
-        "operationId" : "listDefaultComponentTypes",
         "parameters" : [ {
           "in" : "query",
           "name" : "parent",
@@ -47500,7 +47477,6 @@
     "/v1/component-types/{name}" : {
       "get" : {
         "description" : "Returns the component type definition for the supplied name, including its settings schema, facets, and display configuration. Returns `400 component_type_not_found` if the name does not match any accessible type.",
-        "operationId" : "getComponentType",
         "parameters" : [ {
           "description" : "Name of the component type to retrieve.",
           "in" : "path",
@@ -47625,7 +47601,6 @@
       },
       "put" : {
         "description" : "Applies a partial update to the supplied component type. Returns `400 component_type_not_found` if the name does not match any accessible type.\n\nFields omitted from the body are left unchanged — you do not need to send the whole resource.",
-        "operationId" : "updateComponentType",
         "parameters" : [ {
           "description" : "Name of the component type to update.",
           "in" : "path",
@@ -47766,7 +47741,6 @@
       },
       "delete" : {
         "description" : "Archives the supplied component type. Archived types are hidden from the dashboard but their existing component instances remain. Returns `400 component_type_not_found` if the name does not match any accessible type.",
-        "operationId" : "archiveComponentType",
         "parameters" : [ {
           "description" : "Name of the component type to archive.",
           "in" : "path",
@@ -47893,7 +47867,6 @@
     "/v1/extended-cores" : {
       "get" : {
         "description" : "Returns all JavaScript SDK core extensions (extended cores) for the client. Extended cores inject custom JavaScript into the Extole Web SDK's core loader, letting integrators extend SDK behaviour without modifying the page embed code. Set `include_archived=true` to include archived (disabled) extensions in the response.",
-        "operationId" : "listExtendedCores",
         "parameters" : [ {
           "description" : "Optional includeArchived filter",
           "in" : "query",
@@ -48030,7 +48003,6 @@
       },
       "post" : {
         "description" : "Creates a new extended core definition. Returns the persisted extended core with its server-assigned id. The extension is created in an active state; archive it with `DELETE /v1/extended-cores/{id}` to disable it without deleting it permanently.",
-        "operationId" : "createExtendedCore",
         "requestBody" : {
           "content" : {
             "application/json" : {
@@ -48294,7 +48266,6 @@
     "/v1/extended-cores/built" : {
       "get" : {
         "description" : "Returns all extended cores in their fully evaluated (built) runtime form, with all evaluatable fields resolved to their current values. Use this when the calling system needs the effective JavaScript payloads rather than the source definitions. Set `include_archived=true` to include archived extensions.",
-        "operationId" : "listBuiltExtendedCores",
         "parameters" : [ {
           "description" : "Optional includeArchived filter",
           "in" : "query",
@@ -48433,7 +48404,6 @@
     "/v1/extended-cores/{extendedCoreId}" : {
       "get" : {
         "description" : "Returns the source definition of the supplied extended core, including its JavaScript payload, conditions, and lifecycle state. Returns `404 extended_core_not_found` if the id does not exist or is not accessible.",
-        "operationId" : "getExtendedCore",
         "parameters" : [ {
           "description" : "The id of the extended core to be retrieved.",
           "in" : "path",
@@ -48579,7 +48549,6 @@
       },
       "put" : {
         "description" : "Applies a partial update to the supplied extended core. Only the fields present in the body are changed; omitted fields are left intact. Returns the persisted extended core after the update. Returns `404 extended_core_not_found` if the id does not exist.",
-        "operationId" : "updateExtendedCore",
         "parameters" : [ {
           "description" : "The id of the extended core to be updated.",
           "in" : "path",
@@ -48862,7 +48831,6 @@
       },
       "delete" : {
         "description" : "Archives (soft-deletes) the supplied extended core. The extension is removed from the SDK core loader immediately but its definition is retained. Restore it with `POST /v1/extended-cores/{id}/unarchive`. Returns the updated extended core. Returns `404 extended_core_not_found` if the id does not exist.",
-        "operationId" : "archiveExtendedCore",
         "parameters" : [ {
           "description" : "The id of the extended core to be archived.",
           "in" : "path",
@@ -49010,7 +48978,6 @@
     "/v1/extended-cores/{extendedCoreId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the supplied extended core, with all evaluatable fields resolved to their current values. Returns `404 extended_core_not_found` if the id does not exist or is not accessible.",
-        "operationId" : "getBuiltExtendedCore",
         "parameters" : [ {
           "description" : "The id of the extended core to be retrieved.",
           "in" : "path",
@@ -49158,7 +49125,6 @@
     "/v2/campaigns/{campaignId}/controllers" : {
       "get" : {
         "description" : "Returns all controllers for the specified campaign.",
-        "operationId" : "listCampaignControllers",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -49331,7 +49297,6 @@
       },
       "post" : {
         "description" : "Adds a new controller to the specified campaign. Controllers orchestrate campaign logic by combining triggers (conditions) with actions (side effects). Returns the created controller with its server-assigned id.",
-        "operationId" : "createCampaignController",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -49777,7 +49742,6 @@
     "/v2/campaigns/{campaignId}/controllers/built" : {
       "get" : {
         "description" : "Returns all campaign controllers in their fully evaluated runtime form.",
-        "operationId" : "listBuiltCampaignControllers",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -49952,7 +49916,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions" : {
       "get" : {
         "description" : "Returns all actions configured on the specified campaign controller, across all action types.",
-        "operationId" : "listCampaignControllerActions",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -50136,7 +50099,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/approves/{actionId}" : {
       "get" : {
         "description" : "Returns the approve action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getApproveAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -50322,7 +50284,6 @@
       },
       "put" : {
         "description" : "Updates the approve action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateApproveAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -50691,7 +50652,6 @@
       },
       "delete" : {
         "description" : "Removes the approve action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteApproveAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -50909,7 +50869,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/cancel-rewards/{actionId}" : {
       "get" : {
         "description" : "Returns the cancel-reward action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getCancelRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -51095,7 +51054,6 @@
       },
       "put" : {
         "description" : "Updates the cancel-reward action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateCancelRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -51445,7 +51403,6 @@
       },
       "delete" : {
         "description" : "Removes the cancel-reward action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteCancelRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -51663,7 +51620,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/create-memberships/{actionId}" : {
       "get" : {
         "description" : "Returns the create-membership action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getCreateMembershipAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -51849,7 +51805,6 @@
       },
       "put" : {
         "description" : "Updates the create-membership action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateCreateMembershipAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -52192,7 +52147,6 @@
       },
       "delete" : {
         "description" : "Removes the create-membership action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteCreateMembershipAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -52410,7 +52364,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/creatives/{actionId}" : {
       "get" : {
         "description" : "Returns the creative action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getCreativeAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -52596,7 +52549,6 @@
       },
       "post" : {
         "description" : "Uploads a creative archive zip to the specified creative action on the given campaign controller. Returns the updated creative action.",
-        "operationId" : "uploadCreativeAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -52882,7 +52834,6 @@
       },
       "put" : {
         "description" : "Updates the creative action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateCreativeAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -53242,7 +53193,6 @@
       },
       "delete" : {
         "description" : "Removes the creative action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteCreativeAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -53460,7 +53410,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/creatives/{actionId}.zip" : {
       "get" : {
         "description" : "Downloads the creative archive zip for the specified creative action on the given campaign controller.",
-        "operationId" : "downloadCreativeAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -53709,7 +53658,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/data-intelligences" : {
       "get" : {
         "description" : "Returns all data-intelligence actions configured on the specified campaign controller.",
-        "operationId" : "listDataIntelligenceActions",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -53891,7 +53839,6 @@
       },
       "post" : {
         "description" : "Adds a data-intelligence action to the specified campaign controller. When the controller's triggers fire, this action sends the participant's event data to the Data Intelligence pipeline for ML scoring. Returns the created data-intelligence action with its server-assigned id.",
-        "operationId" : "createDataIntelligenceAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -54243,7 +54190,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/data-intelligences/{actionId}" : {
       "get" : {
         "description" : "Returns the data-intelligence action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getDataIntelligenceAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -54429,7 +54375,6 @@
       },
       "put" : {
         "description" : "Updates the data-intelligence action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateDataIntelligenceAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -54786,7 +54731,6 @@
       },
       "delete" : {
         "description" : "Removes the data-intelligence action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteDataIntelligenceAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -55004,7 +54948,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/declines/{actionId}" : {
       "get" : {
         "description" : "Returns the decline action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getDeclineAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -55190,7 +55133,6 @@
       },
       "put" : {
         "description" : "Updates the decline action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateDeclineAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -55554,7 +55496,6 @@
       },
       "delete" : {
         "description" : "Removes the decline action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteDeclineAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -55772,7 +55713,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/earn-rewards/{actionId}" : {
       "get" : {
         "description" : "Returns the earn-reward action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getEarnRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -55958,7 +55898,6 @@
       },
       "put" : {
         "description" : "Updates the earn-reward action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateEarnRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -56346,7 +56285,6 @@
       },
       "delete" : {
         "description" : "Removes the earn-reward action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteEarnRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -56564,7 +56502,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/expressions/{actionId}" : {
       "get" : {
         "description" : "Returns the expression action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getExpressionAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -56750,7 +56687,6 @@
       },
       "put" : {
         "description" : "Updates the expression action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateExpressionAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -57105,7 +57041,6 @@
       },
       "delete" : {
         "description" : "Removes the expression action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteExpressionAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -57323,7 +57258,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/fulfill-rewards/{actionId}" : {
       "get" : {
         "description" : "Returns the fulfill-reward action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getFulfillRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -57509,7 +57443,6 @@
       },
       "put" : {
         "description" : "Updates the fulfill-reward action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateFulfillRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -57863,7 +57796,6 @@
       },
       "delete" : {
         "description" : "Removes the fulfill-reward action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteFulfillRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -58081,7 +58013,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/redeem-rewards/{actionId}" : {
       "get" : {
         "description" : "Returns the redeem-reward action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getRedeemRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -58267,7 +58198,6 @@
       },
       "put" : {
         "description" : "Updates the redeem-reward action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateRedeemRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -58627,7 +58557,6 @@
       },
       "delete" : {
         "description" : "Removes the redeem-reward action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteRedeemRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -58845,7 +58774,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/remove-memberships/{actionId}" : {
       "get" : {
         "description" : "Returns the remove-membership action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getRemoveMembershipAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -59031,7 +58959,6 @@
       },
       "put" : {
         "description" : "Updates the remove-membership action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateRemoveMembershipAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -59374,7 +59301,6 @@
       },
       "delete" : {
         "description" : "Removes the remove-membership action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteRemoveMembershipAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -59592,7 +59518,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/revoke-rewards/{actionId}" : {
       "get" : {
         "description" : "Returns the revoke-reward action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getRevokeRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -59778,7 +59703,6 @@
       },
       "put" : {
         "description" : "Updates the revoke-reward action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateRevokeRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -60128,7 +60052,6 @@
       },
       "delete" : {
         "description" : "Removes the revoke-reward action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteRevokeRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -60346,7 +60269,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/schedules/{actionId}" : {
       "get" : {
         "description" : "Returns the schedule action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getScheduleAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -60532,7 +60454,6 @@
       },
       "put" : {
         "description" : "Updates the schedule action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateScheduleAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -60908,7 +60829,6 @@
       },
       "delete" : {
         "description" : "Removes the schedule action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteScheduleAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -61126,7 +61046,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/share-events/{actionId}" : {
       "get" : {
         "description" : "Returns the share-event action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getShareEventAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -61312,7 +61231,6 @@
       },
       "put" : {
         "description" : "Updates the share-event action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateShareEventAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -61648,7 +61566,6 @@
       },
       "delete" : {
         "description" : "Removes the share-event action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteShareEventAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -61866,7 +61783,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/signals-v1/{actionId}" : {
       "get" : {
         "description" : "Returns the signal-v1 action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getSignalV1Action",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -62052,7 +61968,6 @@
       },
       "put" : {
         "description" : "Updates the signal-v1 action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateSignalV1Action",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -62407,7 +62322,6 @@
       },
       "delete" : {
         "description" : "Removes the signal-v1 action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteSignalV1Action",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -62625,7 +62539,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/signals/{actionId}" : {
       "get" : {
         "description" : "Returns the signal action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getSignalAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -62811,7 +62724,6 @@
       },
       "put" : {
         "description" : "Updates the signal action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateSignalAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -63170,7 +63082,6 @@
       },
       "delete" : {
         "description" : "Removes the signal action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteSignalAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -63388,7 +63299,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/step-signals/{actionId}" : {
       "get" : {
         "description" : "Returns the step-signal action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getStepSignalAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -63574,7 +63484,6 @@
       },
       "put" : {
         "description" : "Updates the step-signal action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateStepSignalAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -63921,7 +63830,6 @@
       },
       "delete" : {
         "description" : "Removes the step-signal action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteStepSignalAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -64139,7 +64047,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/{actionId}" : {
       "get" : {
         "description" : "Returns the action configuration for the specified action id, regardless of type.",
-        "operationId" : "getCampaignControllerAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -64327,7 +64234,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/displays/{actionId}" : {
       "get" : {
         "description" : "Returns the display action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getDisplayAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -64513,7 +64419,6 @@
       },
       "put" : {
         "description" : "Updates the display action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateDisplayAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -64860,7 +64765,6 @@
       },
       "delete" : {
         "description" : "Removes the display action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteDisplayAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -65078,7 +64982,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/displays/{actionId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the display action, with all expression fields resolved.",
-        "operationId" : "getBuiltDisplayAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -65266,7 +65169,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/emails-v2/{actionId}" : {
       "get" : {
         "description" : "Returns the email v2 action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getEmailV2Action",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -65452,7 +65354,6 @@
       },
       "put" : {
         "description" : "Updates the configuration of the email v2 action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateEmailV2Action",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -65838,7 +65739,6 @@
       },
       "delete" : {
         "description" : "Removes the email v2 action configuration from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteEmailV2Action",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -66056,7 +65956,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/emails-v2/{actionId}/built" : {
       "get" : {
         "description" : "Returns the built form of the email v2 action, with buildtime expressions resolved. Runtime expressions are not resolved and are still evaluated when the action runs.",
-        "operationId" : "getBuiltEmailV2Action",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -66268,7 +66167,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/emails/{actionId}" : {
       "get" : {
         "description" : "Returns the email action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getEmailAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -66454,7 +66352,6 @@
       },
       "put" : {
         "description" : "Updates the email action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateEmailAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -66815,7 +66712,6 @@
       },
       "delete" : {
         "description" : "Removes the email action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteEmailAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -67033,7 +66929,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/emails/{actionId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the email action, with all expression fields resolved.",
-        "operationId" : "getBuiltEmailAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -67221,7 +67116,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/expire-rewards/{actionId}" : {
       "get" : {
         "description" : "Returns the expire reward action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getExpireRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -67407,7 +67301,6 @@
       },
       "put" : {
         "description" : "Updates the expire reward action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateExpireRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -67752,7 +67645,6 @@
       },
       "delete" : {
         "description" : "Removes the expire reward action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteExpireRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -67970,7 +67862,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/expire-rewards/{actionId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the expire reward action, with all expression fields resolved.",
-        "operationId" : "getBuiltExpireRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -68158,7 +68049,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/fire-as-person/{actionId}" : {
       "get" : {
         "description" : "Returns the fire-as-person action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getFireAsPersonAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -68344,7 +68234,6 @@
       },
       "put" : {
         "description" : "Updates the fire-as-person action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateFireAsPersonAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -68763,7 +68652,6 @@
       },
       "delete" : {
         "description" : "Removes the fire-as-person action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteFireAsPersonAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -68981,7 +68869,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/fire-as-person/{actionId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the fire-as-person action, with all expression fields resolved.",
-        "operationId" : "getBuiltFireAsPersonAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -69169,7 +69056,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/incentivize-status-updates/{actionId}" : {
       "get" : {
         "description" : "Returns the incentivize-status-update action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getIncentivizeStatusUpdateAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -69355,7 +69241,6 @@
       },
       "put" : {
         "description" : "Updates the incentivize-status-update action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateIncentivizeStatusUpdateAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -69712,7 +69597,6 @@
       },
       "delete" : {
         "description" : "Removes the incentivize-status-update action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteIncentivizeStatusUpdateAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -69930,7 +69814,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/incentivize-status-updates/{actionId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the incentivize-status-update action, with all expression fields resolved.",
-        "operationId" : "getBuiltIncentivizeStatusUpdateAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -70142,7 +70025,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/incentivizes/{actionId}" : {
       "get" : {
         "description" : "Returns the incentivize action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getIncentivizeAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -70328,7 +70210,6 @@
       },
       "put" : {
         "description" : "Updates the incentivize action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateIncentivizeAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -70703,7 +70584,6 @@
       },
       "delete" : {
         "description" : "Removes the incentivize action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteIncentivizeAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -70921,7 +70801,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/incentivizes/{actionId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the incentivize action, with all expression fields resolved.",
-        "operationId" : "getBuiltIncentivizeAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -71133,7 +71012,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/webhooks/{actionId}" : {
       "get" : {
         "description" : "Returns the webhook action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getWebhookAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -71319,7 +71197,6 @@
       },
       "put" : {
         "description" : "Updates the webhook action on the specified campaign controller. Only fields present in the request body are changed. Returns the updated action.",
-        "operationId" : "updateWebhookAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -71674,7 +71551,6 @@
       },
       "delete" : {
         "description" : "Removes the webhook action from the specified campaign controller. Returns the deleted action record.",
-        "operationId" : "deleteWebhookAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -71892,7 +71768,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/webhooks/{actionId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the webhook action, with all expression fields resolved.",
-        "operationId" : "getBuiltWebhookAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -72080,7 +71955,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers" : {
       "get" : {
         "description" : "Returns all triggers configured on the specified campaign controller, across all trigger types.",
-        "operationId" : "listCampaignControllerTriggers",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -72264,7 +72138,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/built" : {
       "get" : {
         "description" : "Returns all triggers on the controller in their fully evaluated runtime form.",
-        "operationId" : "listBuiltCampaignControllerTriggers",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -72472,7 +72345,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/accesses/{triggerId}" : {
       "get" : {
         "description" : "Returns the access trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getAccessTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -72658,7 +72530,6 @@
       },
       "put" : {
         "description" : "Updates the access trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateAccessTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -73035,7 +72906,6 @@
       },
       "delete" : {
         "description" : "Removes the access trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteAccessTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -73274,7 +73144,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/audience-membership-events/{triggerId}" : {
       "get" : {
         "description" : "Returns the audience membership event trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getAudienceMembershipEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -73460,7 +73329,6 @@
       },
       "put" : {
         "description" : "Updates the audience membership event trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateAudienceMembershipEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -73838,7 +73706,6 @@
       },
       "delete" : {
         "description" : "Removes the audience membership event trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteAudienceMembershipEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -74077,7 +73944,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/audience-memberships/{triggerId}" : {
       "get" : {
         "description" : "Returns the audience membership trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getAudienceMembershipTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -74263,7 +74129,6 @@
       },
       "put" : {
         "description" : "Updates the audience membership trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateAudienceMembershipTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -74644,7 +74509,6 @@
       },
       "delete" : {
         "description" : "Removes the audience membership trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteAudienceMembershipTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -74883,7 +74747,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/client-domains/{triggerId}" : {
       "get" : {
         "description" : "Returns the client domain trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getClientDomainTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -75069,7 +74932,6 @@
       },
       "put" : {
         "description" : "Updates the client domain trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateClientDomainTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -75449,7 +75311,6 @@
       },
       "delete" : {
         "description" : "Removes the client domain trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteClientDomainTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -75688,7 +75549,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/data-intelligence-events/{triggerId}" : {
       "get" : {
         "description" : "Returns the Data Intelligence event trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getDataIntelligenceEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -75874,7 +75734,6 @@
       },
       "put" : {
         "description" : "Updates the Data Intelligence event trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateDataIntelligenceEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -76257,7 +76116,6 @@
       },
       "delete" : {
         "description" : "Removes the Data Intelligence event trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteDataIntelligenceEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -76496,7 +76354,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/has-identities/{triggerId}" : {
       "get" : {
         "description" : "Returns the has-identity trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getHasIdentityTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -76682,7 +76539,6 @@
       },
       "put" : {
         "description" : "Updates the has-identity trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateHasIdentityTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -77055,7 +76911,6 @@
       },
       "delete" : {
         "description" : "Removes the has-identity trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteHasIdentityTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -77294,7 +77149,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/has-prior-rewards/{triggerId}" : {
       "get" : {
         "description" : "Returns the has-prior-reward trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getHasPriorRewardTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -77480,7 +77334,6 @@
       },
       "put" : {
         "description" : "Updates the has-prior-reward trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateHasPriorRewardTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -77913,7 +77766,6 @@
       },
       "delete" : {
         "description" : "Removes the has-prior-reward trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteHasPriorRewardTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -78152,7 +78004,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/has-prior-steps/{triggerId}" : {
       "get" : {
         "description" : "Returns the has-prior-step trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getHasPriorStepTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -78338,7 +78189,6 @@
       },
       "put" : {
         "description" : "Updates the has-prior-step trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateHasPriorStepTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -78832,7 +78682,6 @@
       },
       "delete" : {
         "description" : "Removes the has-prior-step trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteHasPriorStepTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -79071,7 +78920,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/legacy-labels-targeting/{triggerId}" : {
       "get" : {
         "description" : "Returns the legacy label targeting trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getLegacyLabelTargetingTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -79257,7 +79105,6 @@
       },
       "put" : {
         "description" : "Updates the legacy label targeting trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateLegacyLabelTargetingTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -79633,7 +79480,6 @@
       },
       "delete" : {
         "description" : "Removes the legacy label targeting trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteLegacyLabelTargetingTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -79872,7 +79718,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/max-minds/{triggerId}" : {
       "get" : {
         "description" : "Returns the MaxMind trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getMaxMindTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -80058,7 +79903,6 @@
       },
       "put" : {
         "description" : "Updates the MaxMind trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateMaxMindTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -80438,7 +80282,6 @@
       },
       "delete" : {
         "description" : "Removes the MaxMind trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteMaxMindTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -80677,7 +80520,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/referred-by-events/{triggerId}" : {
       "get" : {
         "description" : "Returns the referred-by-event trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getReferredByEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -80863,7 +80705,6 @@
       },
       "put" : {
         "description" : "Updates the referred-by-event trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateReferredByEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -81240,7 +81081,6 @@
       },
       "delete" : {
         "description" : "Removes the referred-by-event trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteReferredByEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -81479,7 +81319,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/reward-events/{triggerId}" : {
       "get" : {
         "description" : "Returns the reward event trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getRewardEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -81665,7 +81504,6 @@
       },
       "put" : {
         "description" : "Updates the reward event trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateRewardEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -82054,7 +81892,6 @@
       },
       "delete" : {
         "description" : "Removes the reward event trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteRewardEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -82293,7 +82130,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/scores/{triggerId}" : {
       "get" : {
         "description" : "Returns the score trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getScoreTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -82479,7 +82315,6 @@
       },
       "put" : {
         "description" : "Updates the score trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateScoreTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -82854,7 +82689,6 @@
       },
       "delete" : {
         "description" : "Removes the score trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteScoreTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -83093,7 +82927,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/send-reward-events/{triggerId}" : {
       "get" : {
         "description" : "Returns the send-reward-event trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getSendRewardEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -83279,7 +83112,6 @@
       },
       "put" : {
         "description" : "Updates the send-reward-event trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateSendRewardEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -83661,7 +83493,6 @@
       },
       "delete" : {
         "description" : "Removes the send-reward-event trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteSendRewardEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -83900,7 +83731,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/shares/{triggerId}" : {
       "get" : {
         "description" : "Returns the share trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getShareTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -84086,7 +83916,6 @@
       },
       "put" : {
         "description" : "Updates the share trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateShareTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -84462,7 +84291,6 @@
       },
       "delete" : {
         "description" : "Removes the share trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteShareTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -84701,7 +84529,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/zone-states/{triggerId}" : {
       "get" : {
         "description" : "Returns the zone state trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getZoneStateTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -84887,7 +84714,6 @@
       },
       "put" : {
         "description" : "Updates the zone state trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateZoneStateTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -85275,7 +85101,6 @@
       },
       "delete" : {
         "description" : "Removes the zone state trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteZoneStateTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -85514,7 +85339,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/event-targetings/{triggerId}" : {
       "get" : {
         "description" : "Returns the event targeting trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getEventTargetingTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -85700,7 +85524,6 @@
       },
       "put" : {
         "description" : "Updates the event targeting trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateEventTargetingTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -86100,7 +85923,6 @@
       },
       "delete" : {
         "description" : "Removes the event targeting trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteEventTargetingTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -86339,7 +86161,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/event-targetings/{triggerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the event targeting trigger with all expression fields resolved.",
-        "operationId" : "getBuiltEventTargetingTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -86527,7 +86348,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/events/{triggerId}" : {
       "get" : {
         "description" : "Returns the event trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -86713,7 +86533,6 @@
       },
       "put" : {
         "description" : "Updates the event trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -87097,7 +86916,6 @@
       },
       "delete" : {
         "description" : "Removes the event trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -87336,7 +87154,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/events/{triggerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the event trigger with all expression fields resolved.",
-        "operationId" : "getBuiltEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -87524,7 +87341,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/expressions/{triggerId}" : {
       "get" : {
         "description" : "Returns the expression trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getExpressionTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -87710,7 +87526,6 @@
       },
       "put" : {
         "description" : "Updates the expression trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateExpressionTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -88099,7 +87914,6 @@
       },
       "delete" : {
         "description" : "Removes the expression trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteExpressionTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -88338,7 +88152,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/expressions/{triggerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the expression trigger with all expression fields resolved.",
-        "operationId" : "getBuiltExpressionTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -88550,7 +88363,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/groups/{triggerId}" : {
       "get" : {
         "description" : "Returns the group trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getGroupTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -88736,7 +88548,6 @@
       },
       "put" : {
         "description" : "Updates the group trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateGroupTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -89110,7 +88921,6 @@
       },
       "delete" : {
         "description" : "Removes the group trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteGroupTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -89349,7 +89159,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/groups/{triggerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the group trigger with all expression fields resolved.",
-        "operationId" : "getBuiltGroupTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -89537,7 +89346,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/journey-checks/{triggerId}" : {
       "get" : {
         "description" : "Returns the journey check trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getJourneyCheckTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -89723,7 +89531,6 @@
       },
       "put" : {
         "description" : "Updates the journey check trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateJourneyCheckTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -90113,7 +89920,6 @@
       },
       "delete" : {
         "description" : "Removes the journey check trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteJourneyCheckTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -90352,7 +90158,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/journey-checks/{triggerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the journey check trigger with all expression fields resolved.",
-        "operationId" : "getBuiltJourneyCheckTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -90564,7 +90369,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/legacy-quality/{triggerId}" : {
       "get" : {
         "description" : "Returns the legacy quality trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getLegacyQualityTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -90750,7 +90554,6 @@
       },
       "put" : {
         "description" : "Updates the legacy quality trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateLegacyQualityTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -91124,7 +90927,6 @@
       },
       "delete" : {
         "description" : "Removes the legacy quality trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteLegacyQualityTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -91363,7 +91165,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/legacy-quality/{triggerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the legacy quality trigger with all expression fields resolved.",
-        "operationId" : "getBuiltLegacyQualityTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -91551,7 +91352,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/step-events/{triggerId}" : {
       "get" : {
         "description" : "Returns the step event trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getStepEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -91737,7 +91537,6 @@
       },
       "put" : {
         "description" : "Updates the step event trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateStepEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -92124,7 +91923,6 @@
       },
       "delete" : {
         "description" : "Removes the step event trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteStepEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -92363,7 +92161,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/step-events/{triggerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the step event trigger with all expression fields resolved.",
-        "operationId" : "getBuiltStepEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -92575,7 +92372,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/sticky-journeys/{triggerId}" : {
       "get" : {
         "description" : "Returns the sticky journey trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getStickyJourneyTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -92761,7 +92557,6 @@
       },
       "put" : {
         "description" : "Updates the sticky journey trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateStickyJourneyTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -93135,7 +92930,6 @@
       },
       "delete" : {
         "description" : "Removes the sticky journey trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteStickyJourneyTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -93374,7 +93168,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/sticky-journeys/{triggerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the sticky journey trigger with all expression fields resolved.",
-        "operationId" : "getBuiltStickyJourneyTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -93562,7 +93355,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/targeting/{triggerId}" : {
       "get" : {
         "description" : "Returns the targeting trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getTargetingTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -93748,7 +93540,6 @@
       },
       "put" : {
         "description" : "Updates the targeting trigger on the specified campaign controller. Only fields present in the request body are changed. Returns the updated trigger.",
-        "operationId" : "updateTargetingTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -94122,7 +93913,6 @@
       },
       "delete" : {
         "description" : "Removes the targeting trigger from the specified campaign controller. Returns the deleted trigger record.",
-        "operationId" : "deleteTargetingTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -94361,7 +94151,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/targeting/{triggerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the targeting trigger with all expression fields resolved.",
-        "operationId" : "getBuiltTargetingTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -94549,7 +94338,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/{triggerId}" : {
       "get" : {
         "description" : "Returns the trigger configuration for the specified trigger id, regardless of type.",
-        "operationId" : "getCampaignControllerTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -94737,7 +94525,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/{triggerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the trigger with all expression fields resolved.",
-        "operationId" : "getBuiltCampaignControllerTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -94949,7 +94736,6 @@
     "/v2/campaigns/{campaignId}/flow-steps" : {
       "get" : {
         "description" : "Returns all flow steps for the specified campaign.",
-        "operationId" : "listCampaignFlowSteps",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -95115,7 +94901,6 @@
       },
       "post" : {
         "description" : "Adds a new flow step to the specified campaign. Flow steps are the visual builder blocks of a participant's journey through a campaign. Returns the created flow step with its server-assigned id.",
-        "operationId" : "createCampaignFlowStep",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -95554,7 +95339,6 @@
     "/v2/campaigns/{campaignId}/flow-steps/built" : {
       "get" : {
         "description" : "Returns all campaign flow steps in their fully evaluated runtime form.",
-        "operationId" : "listBuiltCampaignFlowSteps",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -95753,7 +95537,6 @@
     "/v2/campaigns/{campaignId}/flow-steps/{flowStepId}" : {
       "get" : {
         "description" : "Returns the campaign flow step for the specified id.",
-        "operationId" : "getCampaignFlowStep",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -95926,7 +95709,6 @@
       },
       "put" : {
         "description" : "Updates the specified campaign flow step. Only fields present in the request body are changed. Returns the updated flow step.",
-        "operationId" : "updateCampaignFlowStep",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -96376,7 +96158,6 @@
       },
       "delete" : {
         "description" : "Removes the specified campaign flow step and returns the deleted record.",
-        "operationId" : "deleteCampaignFlowStep",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -96581,7 +96362,6 @@
     "/v2/campaigns/{campaignId}/flow-steps/{flowStepId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the campaign flow step, with expression fields resolved.",
-        "operationId" : "getBuiltCampaignFlowStep",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -96780,7 +96560,6 @@
     "/v2/campaigns/{campaignId}/flow-steps/{flowStepId}/apps" : {
       "get" : {
         "description" : "Returns all apps for the specified campaign flow step.",
-        "operationId" : "listCampaignFlowStepApps",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -96956,7 +96735,6 @@
       },
       "post" : {
         "description" : "Adds a new app to the specified campaign flow step. Returns the created app with its server-assigned id.",
-        "operationId" : "createCampaignFlowStepApp",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -97302,7 +97080,6 @@
     "/v2/campaigns/{campaignId}/flow-steps/{flowStepId}/apps/built" : {
       "get" : {
         "description" : "Returns all campaign flow step apps in their fully evaluated runtime form.",
-        "operationId" : "listBuiltCampaignFlowStepApps",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -97504,7 +97281,6 @@
     "/v2/campaigns/{campaignId}/flow-steps/{flowStepId}/apps/{flowStepAppId}" : {
       "get" : {
         "description" : "Returns the campaign flow step app for the specified id.",
-        "operationId" : "getCampaignFlowStepApp",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -97687,7 +97463,6 @@
       },
       "put" : {
         "description" : "Updates the specified campaign flow step app. Only fields present in the request body are changed. Returns the updated app.",
-        "operationId" : "updateCampaignFlowStepApp",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -98041,7 +97816,6 @@
       },
       "delete" : {
         "description" : "Removes the specified campaign flow step app and returns the deleted record.",
-        "operationId" : "deleteCampaignFlowStepApp",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -98358,7 +98132,6 @@
     "/v2/campaigns/{campaignId}/flow-steps/{flowStepId}/apps/{flowStepAppId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the campaign flow step app, with expression fields resolved.",
-        "operationId" : "getBuiltCampaignFlowStepApp",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -98567,7 +98340,6 @@
     "/v2/campaigns/{campaignId}/flow-steps/{flowStepId}/metrics" : {
       "get" : {
         "description" : "Returns all metrics for the specified campaign flow step.",
-        "operationId" : "listCampaignFlowStepMetrics",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -98743,7 +98515,6 @@
       },
       "post" : {
         "description" : "Adds a new tracking metric to the specified campaign flow step. Returns the created metric with its server-assigned id.",
-        "operationId" : "createCampaignFlowStepMetric",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -99101,7 +98872,6 @@
     "/v2/campaigns/{campaignId}/flow-steps/{flowStepId}/metrics/built" : {
       "get" : {
         "description" : "Returns all campaign flow step metrics in their fully evaluated runtime form.",
-        "operationId" : "listBuiltCampaignFlowStepMetrics",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -99303,7 +99073,6 @@
     "/v2/campaigns/{campaignId}/flow-steps/{flowStepId}/metrics/{flowStepMetricId}" : {
       "get" : {
         "description" : "Returns the campaign flow step metric for the specified id.",
-        "operationId" : "getCampaignFlowStepMetric",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -99486,7 +99255,6 @@
       },
       "put" : {
         "description" : "Updates the specified campaign flow step metric. Only fields present in the request body are changed. Returns the updated metric.",
-        "operationId" : "updateCampaignFlowStepMetric",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -99852,7 +99620,6 @@
       },
       "delete" : {
         "description" : "Removes the specified campaign flow step metric and returns the deleted record.",
-        "operationId" : "deleteCampaignFlowStepMetric",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -100169,7 +99936,6 @@
     "/v2/campaigns/{campaignId}/flow-steps/{flowStepId}/metrics/{flowStepMetricId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the campaign flow step metric, with expression fields resolved.",
-        "operationId" : "getBuiltCampaignFlowStepMetric",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -100378,7 +100144,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers" : {
       "get" : {
         "description" : "Returns all controllers for the specified campaign.",
-        "operationId" : "listCampaignControllersVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -100560,7 +100325,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/built" : {
       "get" : {
         "description" : "Returns all campaign controllers in their fully evaluated runtime form.",
-        "operationId" : "listBuiltCampaignControllersVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -100742,7 +100506,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions" : {
       "get" : {
         "description" : "Returns all actions configured on the specified campaign controller, across all action types.",
-        "operationId" : "listCampaignControllerActionsVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -100933,7 +100696,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/approves/{actionId}" : {
       "get" : {
         "description" : "Returns the approve action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getApproveActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -101128,7 +100890,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/cancel-rewards/{actionId}" : {
       "get" : {
         "description" : "Returns the cancel-reward action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getCancelRewardActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -101323,7 +101084,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/create-memberships/{actionId}" : {
       "get" : {
         "description" : "Returns the create-membership action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getCreateMembershipActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -101518,7 +101278,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/creatives/{actionId}" : {
       "get" : {
         "description" : "Returns the creative action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getCreativeActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -101713,7 +101472,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/creatives/{actionId}.zip" : {
       "get" : {
         "description" : "Downloads the creative archive zip for the specified creative action on the given campaign controller.",
-        "operationId" : "downloadCreativeActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -101969,7 +101727,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/data-intelligences" : {
       "get" : {
         "description" : "Returns all data-intelligence actions configured on the specified campaign controller.",
-        "operationId" : "listDataIntelligenceActionsVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -102160,7 +101917,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/data-intelligences/{actionId}" : {
       "get" : {
         "description" : "Returns the data-intelligence action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getDataIntelligenceActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -102355,7 +102111,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/declines/{actionId}" : {
       "get" : {
         "description" : "Returns the decline action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getDeclineActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -102550,7 +102305,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/earn-rewards/{actionId}" : {
       "get" : {
         "description" : "Returns the earn-reward action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getEarnRewardActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -102745,7 +102499,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/expressions/{actionId}" : {
       "get" : {
         "description" : "Returns the expression action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getExpressionActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -102940,7 +102693,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/fulfill-rewards/{actionId}" : {
       "get" : {
         "description" : "Returns the fulfill-reward action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getFulfillRewardActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -103135,7 +102887,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/redeem-rewards/{actionId}" : {
       "get" : {
         "description" : "Returns the redeem-reward action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getRedeemRewardActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -103330,7 +103081,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/remove-memberships/{actionId}" : {
       "get" : {
         "description" : "Returns the remove-membership action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getRemoveMembershipActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -103525,7 +103275,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/revoke-rewards/{actionId}" : {
       "get" : {
         "description" : "Returns the revoke-reward action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getRevokeRewardActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -103720,7 +103469,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/schedules/{actionId}" : {
       "get" : {
         "description" : "Returns the schedule action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getScheduleActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -103915,7 +103663,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/share-events/{actionId}" : {
       "get" : {
         "description" : "Returns the share-event action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getShareEventActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -104110,7 +103857,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/signals-v1/{actionId}" : {
       "get" : {
         "description" : "Returns the signal-v1 action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getSignalV1ActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -104305,7 +104051,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/signals/{actionId}" : {
       "get" : {
         "description" : "Returns the signal action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getSignalActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -104500,7 +104245,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/step-signals/{actionId}" : {
       "get" : {
         "description" : "Returns the step-signal action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getStepSignalActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -104695,7 +104439,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/{actionId}" : {
       "get" : {
         "description" : "Returns the action configuration for the specified action id, regardless of type.",
-        "operationId" : "getCampaignControllerActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -104890,7 +104633,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/displays/{actionId}" : {
       "get" : {
         "description" : "Returns the display action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getDisplayActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -105085,7 +104827,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/displays/{actionId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the display action, with all expression fields resolved.",
-        "operationId" : "getBuiltDisplayActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -105280,7 +105021,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/emails-v2/{actionId}" : {
       "get" : {
         "description" : "Returns the email v2 action configuration for the specified action id on the given campaign controller, at the requested campaign version.",
-        "operationId" : "getEmailV2ActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -105475,7 +105215,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/emails-v2/{actionId}/built" : {
       "get" : {
         "description" : "Returns the built form of the email v2 action at the requested campaign version, with buildtime expressions resolved. Runtime expressions are not resolved and are still evaluated when the action runs.",
-        "operationId" : "getBuiltEmailV2ActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -105694,7 +105433,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/emails/{actionId}" : {
       "get" : {
         "description" : "Returns the email action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getEmailActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -105889,7 +105627,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/emails/{actionId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the email action, with all expression fields resolved.",
-        "operationId" : "getBuiltEmailActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -106084,7 +105821,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/expire-rewards/{actionId}" : {
       "get" : {
         "description" : "Returns the expire reward action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getExpireRewardActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -106279,7 +106015,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/expire-rewards/{actionId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the expire reward action, with all expression fields resolved.",
-        "operationId" : "getBuiltExpireRewardActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -106474,7 +106209,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/fire-as-person/{actionId}" : {
       "get" : {
         "description" : "Returns the fire-as-person action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getFireAsPersonActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -106669,7 +106403,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/fire-as-person/{actionId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the fire-as-person action, with all expression fields resolved.",
-        "operationId" : "getBuiltFireAsPersonActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -106864,7 +106597,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/incentivize-status-updates/{actionId}" : {
       "get" : {
         "description" : "Returns the incentivize-status-update action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getIncentivizeStatusUpdateActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -107059,7 +106791,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/incentivize-status-updates/{actionId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the incentivize-status-update action, with all expression fields resolved.",
-        "operationId" : "getBuiltIncentivizeStatusUpdateActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -107278,7 +107009,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/incentivizes/{actionId}" : {
       "get" : {
         "description" : "Returns the incentivize action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getIncentivizeActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -107473,7 +107203,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/incentivizes/{actionId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the incentivize action, with all expression fields resolved.",
-        "operationId" : "getBuiltIncentivizeActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -107692,7 +107421,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/webhooks/{actionId}" : {
       "get" : {
         "description" : "Returns the webhook action configuration for the specified action id on the given campaign controller.",
-        "operationId" : "getWebhookActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -107887,7 +107615,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/actions/webhooks/{actionId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the webhook action, with all expression fields resolved.",
-        "operationId" : "getBuiltWebhookActionVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -108082,7 +107809,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers" : {
       "get" : {
         "description" : "Returns all triggers configured on the specified campaign controller, across all trigger types.",
-        "operationId" : "listCampaignControllerTriggersVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -108273,7 +107999,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/built" : {
       "get" : {
         "description" : "Returns all triggers on the controller in their fully evaluated runtime form.",
-        "operationId" : "listBuiltCampaignControllerTriggersVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -108488,7 +108213,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/accesses/{triggerId}" : {
       "get" : {
         "description" : "Returns the access trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getAccessTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -108683,7 +108407,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/audience-membership-events/{triggerId}" : {
       "get" : {
         "description" : "Returns the audience membership event trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getAudienceMembershipEventTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -108878,7 +108601,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/audience-memberships/{triggerId}" : {
       "get" : {
         "description" : "Returns the audience membership trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getAudienceMembershipTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -109073,7 +108795,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/client-domains/{triggerId}" : {
       "get" : {
         "description" : "Returns the client domain trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getClientDomainTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -109268,7 +108989,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/data-intelligence-events/{triggerId}" : {
       "get" : {
         "description" : "Returns the Data Intelligence event trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getDataIntelligenceEventTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -109463,7 +109183,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/has-identities/{triggerId}" : {
       "get" : {
         "description" : "Returns the has-identity trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getHasIdentityTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -109658,7 +109377,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/has-prior-rewards/{triggerId}" : {
       "get" : {
         "description" : "Returns the has-prior-reward trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getHasPriorRewardTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -109853,7 +109571,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/has-prior-steps/{triggerId}" : {
       "get" : {
         "description" : "Returns the has-prior-step trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getHasPriorStepTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -110048,7 +109765,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/legacy-labels-targeting/{triggerId}" : {
       "get" : {
         "description" : "Returns the legacy label targeting trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getLegacyLabelTargetingTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -110243,7 +109959,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/max-minds/{triggerId}" : {
       "get" : {
         "description" : "Returns the MaxMind trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getMaxMindTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -110438,7 +110153,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/referred-by-events/{triggerId}" : {
       "get" : {
         "description" : "Returns the referred-by-event trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getReferredByEventTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -110633,7 +110347,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/reward-events/{triggerId}" : {
       "get" : {
         "description" : "Returns the reward event trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getRewardEventTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -110828,7 +110541,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/scores/{triggerId}" : {
       "get" : {
         "description" : "Returns the score trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getScoreTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -111023,7 +110735,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/send-reward-events/{triggerId}" : {
       "get" : {
         "description" : "Returns the send-reward-event trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getSendRewardEventTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -111218,7 +110929,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/shares/{triggerId}" : {
       "get" : {
         "description" : "Returns the share trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getShareTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -111413,7 +111123,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/zone-states/{triggerId}" : {
       "get" : {
         "description" : "Returns the zone state trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getZoneStateTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -111608,7 +111317,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/event-targetings/{triggerId}" : {
       "get" : {
         "description" : "Returns the event targeting trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getEventTargetingTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -111803,7 +111511,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/event-targetings/{triggerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the event targeting trigger with all expression fields resolved.",
-        "operationId" : "getBuiltEventTargetingTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -111998,7 +111705,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/events/{triggerId}" : {
       "get" : {
         "description" : "Returns the event trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getEventTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -112193,7 +111899,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/events/{triggerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the event trigger with all expression fields resolved.",
-        "operationId" : "getBuiltEventTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -112388,7 +112093,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/expressions/{triggerId}" : {
       "get" : {
         "description" : "Returns the expression trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getExpressionTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -112583,7 +112287,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/expressions/{triggerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the expression trigger with all expression fields resolved.",
-        "operationId" : "getBuiltExpressionTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -112802,7 +112505,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/groups/{triggerId}" : {
       "get" : {
         "description" : "Returns the group trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getGroupTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -112997,7 +112699,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/groups/{triggerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the group trigger with all expression fields resolved.",
-        "operationId" : "getBuiltGroupTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -113192,7 +112893,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/journey-checks/{triggerId}" : {
       "get" : {
         "description" : "Returns the journey check trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getJourneyCheckTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -113387,7 +113087,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/journey-checks/{triggerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the journey check trigger with all expression fields resolved.",
-        "operationId" : "getBuiltJourneyCheckTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -113606,7 +113305,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/legacy-quality/{triggerId}" : {
       "get" : {
         "description" : "Returns the legacy quality trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getLegacyQualityTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -113801,7 +113499,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/legacy-quality/{triggerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the legacy quality trigger with all expression fields resolved.",
-        "operationId" : "getBuiltLegacyQualityTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -113996,7 +113693,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/step-events/{triggerId}" : {
       "get" : {
         "description" : "Returns the step event trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getStepEventTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -114191,7 +113887,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/step-events/{triggerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the step event trigger with all expression fields resolved.",
-        "operationId" : "getBuiltStepEventTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -114410,7 +114105,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/sticky-journeys/{triggerId}" : {
       "get" : {
         "description" : "Returns the sticky journey trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getStickyJourneyTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -114605,7 +114299,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/sticky-journeys/{triggerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the sticky journey trigger with all expression fields resolved.",
-        "operationId" : "getBuiltStickyJourneyTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -114800,7 +114493,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/targeting/{triggerId}" : {
       "get" : {
         "description" : "Returns the targeting trigger configuration for the specified trigger id on the given campaign controller.",
-        "operationId" : "getTargetingTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -114995,7 +114687,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/targeting/{triggerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the targeting trigger with all expression fields resolved.",
-        "operationId" : "getBuiltTargetingTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -115190,7 +114881,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/{triggerId}" : {
       "get" : {
         "description" : "Returns the trigger configuration for the specified trigger id, regardless of type.",
-        "operationId" : "getCampaignControllerTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -115385,7 +115075,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/controllers/{controllerId}/triggers/{triggerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the trigger with all expression fields resolved.",
-        "operationId" : "getBuiltCampaignControllerTriggerVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -115604,7 +115293,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/flow-steps" : {
       "get" : {
         "description" : "Returns all flow steps for the specified campaign.",
-        "operationId" : "listCampaignFlowStepsVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -115779,7 +115467,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/flow-steps/built" : {
       "get" : {
         "description" : "Returns all campaign flow steps in their fully evaluated runtime form.",
-        "operationId" : "listBuiltCampaignFlowStepsVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -115985,7 +115672,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/flow-steps/{flowStepId}" : {
       "get" : {
         "description" : "Returns the campaign flow step for the specified id.",
-        "operationId" : "getCampaignFlowStepVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -116167,7 +115853,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/flow-steps/{flowStepId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the campaign flow step, with expression fields resolved.",
-        "operationId" : "getBuiltCampaignFlowStepVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -116373,7 +116058,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/flow-steps/{flowStepId}/apps" : {
       "get" : {
         "description" : "Returns all apps for the specified campaign flow step.",
-        "operationId" : "listCampaignFlowStepAppsVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -116558,7 +116242,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/flow-steps/{flowStepId}/apps/built" : {
       "get" : {
         "description" : "Returns all campaign flow step apps in their fully evaluated runtime form.",
-        "operationId" : "listBuiltCampaignFlowStepAppsVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -116767,7 +116450,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/flow-steps/{flowStepId}/apps/{flowStepAppId}" : {
       "get" : {
         "description" : "Returns the campaign flow step app for the specified id.",
-        "operationId" : "getCampaignFlowStepAppVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -116959,7 +116641,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/flow-steps/{flowStepId}/apps/{flowStepAppId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the campaign flow step app, with expression fields resolved.",
-        "operationId" : "getBuiltCampaignFlowStepAppVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -117175,7 +116856,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/flow-steps/{flowStepId}/metrics" : {
       "get" : {
         "description" : "Returns all metrics for the specified campaign flow step.",
-        "operationId" : "listCampaignFlowStepMetricsVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -117360,7 +117040,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/flow-steps/{flowStepId}/metrics/built" : {
       "get" : {
         "description" : "Returns all campaign flow step metrics in their fully evaluated runtime form.",
-        "operationId" : "listBuiltCampaignFlowStepMetricsVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -117569,7 +117248,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/flow-steps/{flowStepId}/metrics/{flowStepMetricId}" : {
       "get" : {
         "description" : "Returns the campaign flow step metric for the specified id.",
-        "operationId" : "getCampaignFlowStepMetricVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -117761,7 +117439,6 @@
     "/v2/campaigns/{campaignId}/version/{version}/flow-steps/{flowStepId}/metrics/{flowStepMetricId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the campaign flow step metric, with expression fields resolved.",
-        "operationId" : "getBuiltCampaignFlowStepMetricVersioned",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -117977,7 +117654,6 @@
     "/v2/me/clients" : {
       "get" : {
         "description" : "Returns all clients accessible to the currently authenticated staff user.",
-        "operationId" : "listMeClients",
         "responses" : {
           "200" : {
             "content" : {
@@ -118106,7 +117782,6 @@
     },
     "/v3/signals/step/status/{pollingId}" : {
       "get" : {
-        "operationId" : "getStatus_2",
         "parameters" : [ {
           "in" : "path",
           "name" : "pollingId",
@@ -118234,7 +117909,6 @@
     "/v4/debug/mode/{container}" : {
       "get" : {
         "description" : "Sets or clears the `container` cookie used to pin the consumer API to a specific deployment container. Pass `enable=false` to disable. Expert-only debugging endpoint.",
-        "operationId" : "setEnvironmentCookie",
         "parameters" : [ {
           "in" : "path",
           "name" : "container",
@@ -118354,7 +118028,6 @@
     "/v4/me/public-steps" : {
       "get" : {
         "description" : "Returns program steps for the authenticated consumer that are visible in public scope. Filter by `campaign_id`, `program_label`, or `step_name` to narrow the result set.",
-        "operationId" : "getMyPublicPersonSteps",
         "parameters" : [ {
           "in" : "query",
           "name" : "campaign_id",
@@ -118500,7 +118173,6 @@
     "/v4/me/shares-all" : {
       "get" : {
         "description" : "Returns every share recorded for the authenticated consumer without partner filters.",
-        "operationId" : "getAllShares",
         "responses" : {
           "200" : {
             "content" : {
@@ -118623,7 +118295,6 @@
     },
     "/v4/optout/{secure_email}" : {
       "get" : {
-        "operationId" : "getOptout",
         "parameters" : [ {
           "in" : "path",
           "name" : "secure_email",
@@ -118736,7 +118407,6 @@
         "x-extole-visibility" : "expert"
       },
       "post" : {
-        "operationId" : "updateOptout",
         "parameters" : [ {
           "in" : "path",
           "name" : "secure_email",
@@ -118868,7 +118538,6 @@
     "/v4/persons/{personId}" : {
       "get" : {
         "description" : "Returns the public profile for the person identified by `personId`. The response includes display name, profile picture URL, and custom `parameters` visible to the caller's access token. Use when rendering another participant's profile in a referral or social context.",
-        "operationId" : "getPublicPerson",
         "parameters" : [ {
           "in" : "path",
           "name" : "personId",
@@ -119024,7 +118693,6 @@
     "/v4/persons/{personId}/profile-picture-url" : {
       "get" : {
         "description" : "Returns the profile picture URL for the person identified by `personId` as plain text. Use when you need only the image URL rather than the full public profile from `GET /api/v4/persons/{personId}`.",
-        "operationId" : "getPersonProfilePictureUrl",
         "parameters" : [ {
           "in" : "path",
           "name" : "personId",
@@ -119180,7 +118848,6 @@
     "/v4/persons/{personId}/steps" : {
       "get" : {
         "description" : "Returns program steps completed by the person identified by `personId` that are visible in public scope. Filter by `campaign_id`, `program_label`, or `step_name` when you need a subset. For the authenticated consumer's own steps use `GET /api/v4/me/steps` instead.",
-        "operationId" : "getPublicPersonSteps",
         "parameters" : [ {
           "in" : "path",
           "name" : "personId",
@@ -119359,7 +119026,6 @@
     },
     "/v4/reports/latest" : {
       "get" : {
-        "operationId" : "readLatestReport",
         "parameters" : [ {
           "in" : "query",
           "name" : "tags",
@@ -119502,7 +119168,6 @@
     },
     "/v4/reports/latest/download{format}" : {
       "get" : {
-        "operationId" : "downloadLatestReport",
         "parameters" : [ {
           "in" : "header",
           "name" : "Content-Type",
@@ -119656,7 +119321,6 @@
     "/v4/reports/performance-profiles" : {
       "get" : {
         "description" : "Returns per-report-type performance profiles derived from this client's report execution history over the last three months. Each profile carries a performance tier, the p90 run duration, and an optional per-range-hour normalized duration. SQL-backed report types are tiered VERY_FAST regardless of their execution history. Any other report type with at least 3 runs and more than 30% of them failing on memory or interrupt errors is tiered VERY_SLOW. Report types with fewer than 3 completed runs in the window are tiered UNKNOWN. VERY_FAST is also assigned outright to any other report type whose p90 duration is under a minute, regardless of its relative rank. Remaining report types are ranked relative to their peers, with range-parameterized types ranked by per-range-hour duration and rangeless types ranked by absolute p90 duration in separate peer groups. Aside from UNKNOWN, results are ordered slowest first. Use this to bias automated report runs toward faster report types.",
-        "operationId" : "listReportTypePerformanceProfiles",
         "parameters" : [ {
           "description" : "Optional maximum number of profiles to return, defaults to 20.",
           "in" : "query",
@@ -119803,7 +119467,6 @@
     "/v4/reports/performance-profiles/{report_type}" : {
       "get" : {
         "description" : "Returns the performance profile for a single named report type, derived from this client's report execution history over the last three months. Tiering rules match `GET /v4/reports/performance-profiles`: SQL-backed types are always VERY_FAST; types with at least 3 runs and more than 30% of them failing on memory or interrupt errors are VERY_SLOW; other types are UNKNOWN below 3 completed runs, VERY_FAST outright under a minute of p90 duration, otherwise ranked relative to this client's other report types within their range-parameterized or rangeless peer group. If the report type has never run in the window, a placeholder profile is returned with a zero sample count.",
-        "operationId" : "getReportTypePerformanceProfile",
         "parameters" : [ {
           "description" : "The report type name.",
           "in" : "path",
@@ -119941,7 +119604,6 @@
     },
     "/v4/reports/{reportId}" : {
       "get" : {
-        "operationId" : "readReport",
         "parameters" : [ {
           "in" : "path",
           "name" : "reportId",
@@ -120077,7 +119739,6 @@
     },
     "/v4/reports/{reportId}/download{format}" : {
       "get" : {
-        "operationId" : "downloadReport",
         "parameters" : [ {
           "in" : "header",
           "name" : "Content-Type",
@@ -120223,7 +119884,6 @@
     },
     "/v4/reports/{reportId}/info/{format}" : {
       "get" : {
-        "operationId" : "getReportInfo",
         "parameters" : [ {
           "in" : "path",
           "name" : "reportId",
@@ -120368,7 +120028,6 @@
     "/v4/tokens/resource" : {
       "get" : {
         "description" : "Returns the resource-scoped access token associated with the current credentials.",
-        "operationId" : "getResourceToken",
         "responses" : {
           "200" : {
             "content" : {
@@ -120494,7 +120153,6 @@
     },
     "/v6/dimensions" : {
       "get" : {
-        "operationId" : "getSummaryDimensions",
         "parameters" : [ {
           "in" : "query",
           "name" : "campaign_id",
@@ -120660,7 +120318,6 @@
     },
     "/v6/dimensions/{dimensionName}" : {
       "get" : {
-        "operationId" : "getDimensionStats",
         "parameters" : [ {
           "in" : "path",
           "name" : "dimensionName",
@@ -120846,7 +120503,6 @@
     "/v6/prehandlers" : {
       "get" : {
         "description" : "Returns all prehandlers for the client, sorted by their execution order. Prehandlers are pre-processing hooks that run before the main event-processing pipeline. Each entry includes its script, conditions, and current state (active or archived). Use `GET /v6/prehandlers/built` to retrieve the evaluated runtime version.",
-        "operationId" : "listPrehandlers",
         "parameters" : [ {
           "in" : "query",
           "name" : "tags",
@@ -121005,7 +120661,6 @@
       },
       "post" : {
         "description" : "Creates a new prehandler definition and appends it to the end of the execution order. Returns the persisted prehandler with its server-assigned id. The prehandler is created in an active state; archive it with `POST /v6/prehandlers/{id}/archive` to disable it without deleting it.",
-        "operationId" : "createPrehandler",
         "requestBody" : {
           "content" : {
             "application/json" : {
@@ -121292,7 +120947,6 @@
     "/v6/prehandlers/built" : {
       "get" : {
         "description" : "Returns all prehandlers in their fully evaluated (built) runtime form, sorted by execution order. Built prehandlers have all evaluatable fields resolved and reflect the current live state of the pipeline. Use this when you need the effective script and condition values rather than the source definitions.",
-        "operationId" : "listBuiltPrehandlers",
         "parameters" : [ {
           "in" : "query",
           "name" : "tags",
@@ -121453,7 +121107,6 @@
     "/v6/prehandlers/{prehandlerId}" : {
       "get" : {
         "description" : "Returns the source definition of the supplied prehandler, including its script, conditions, and lifecycle state. Returns `400 prehandler_not_found` if the id does not exist or is not accessible to the calling client.",
-        "operationId" : "getPrehandler",
         "parameters" : [ {
           "description" : "The id of the prehandler to be retrieved.",
           "in" : "path",
@@ -121578,7 +121231,6 @@
       },
       "put" : {
         "description" : "Applies a partial update to the supplied prehandler. Only the fields present in the body are changed; omitted fields are left intact. Returns the persisted prehandler after the update. Returns `400 prehandler_not_found` if the id does not exist.",
-        "operationId" : "updatePrehandler",
         "parameters" : [ {
           "description" : "The id of the prehandler to be updated.",
           "in" : "path",
@@ -121734,7 +121386,6 @@
       },
       "delete" : {
         "description" : "Permanently deletes the supplied prehandler from the pipeline. Unlike archiving, deletion is irreversible. Returns the deleted prehandler record on success. Returns `400 prehandler_not_found` if the id does not exist.",
-        "operationId" : "deletePrehandler",
         "parameters" : [ {
           "description" : "The id of the prehandler to be deleted.",
           "in" : "path",
@@ -121861,7 +121512,6 @@
     "/v6/prehandlers/{prehandlerId}/built" : {
       "get" : {
         "description" : "Returns the fully evaluated (built) runtime form of the supplied prehandler, with all evaluatable fields resolved. Returns `400 prehandler_not_found` if the id does not exist or is not accessible.",
-        "operationId" : "getBuiltPrehandler",
         "parameters" : [ {
           "description" : "The id of the prehandler to be retrieved.",
           "in" : "path",
@@ -121988,7 +121638,6 @@
     "/v6/report-runners-tags" : {
       "get" : {
         "description" : "Returns all distinct tags applied to report runners for the calling client. Use these values with the `having_any_tags` or `having_all_tags` filter on `GET /v7/report-runners` to retrieve runners by tag.",
-        "operationId" : "listReportRunnerTags",
         "parameters" : [ {
           "in" : "query",
           "name" : "having_any_tags",
@@ -122154,7 +121803,6 @@
     },
     "/v6/report-runners/views/detailed" : {
       "get" : {
-        "operationId" : "getReportRunners",
         "parameters" : [ {
           "in" : "query",
           "name" : "type",
@@ -122408,7 +122056,6 @@
     },
     "/v6/report-runners/{reportRunnerId}/accumulating-reports" : {
       "get" : {
-        "operationId" : "getAccumulatingReports",
         "parameters" : [ {
           "description" : "The Extole unique report runner identifier.",
           "in" : "path",
@@ -122595,7 +122242,6 @@
     "/v6/report-runners/{reportRunnerId}/latest" : {
       "get" : {
         "description" : "Returns the most recent completed report produced by the specified report runner.",
-        "operationId" : "getLatestReportForRunner",
         "parameters" : [ {
           "in" : "path",
           "name" : "reportRunnerId",
@@ -122730,7 +122376,6 @@
     "/v6/report-runners/{reportRunnerId}/latest/download{format}" : {
       "get" : {
         "description" : "Downloads the output of the most recent completed report produced by the specified report runner. Append a format extension to select the download format.",
-        "operationId" : "downloadLatestReportForRunner",
         "parameters" : [ {
           "in" : "header",
           "name" : "Content-Type",
@@ -122929,7 +122574,6 @@
     },
     "/v6/report-runners/{reportRunnerId}/reports" : {
       "get" : {
-        "operationId" : "getReports",
         "parameters" : [ {
           "description" : "The Extole unique report runner identifier.",
           "in" : "path",
@@ -123123,7 +122767,6 @@
     },
     "/v6/report-runners/{reportRunnerId}/views/detailed" : {
       "get" : {
-        "operationId" : "getReportRunner",
         "parameters" : [ {
           "description" : "The Extole unique report runner identifier.",
           "in" : "path",
@@ -123259,7 +122902,6 @@
     "/v6/report-types/{id}/clients" : {
       "get" : {
         "description" : "Returns the ids of every client that currently has access to the supplied report type. Useful for auditing PRIVATE report types whose access list is managed via `PUT /v6/report-types/{id}/clients`. Marked `expert`: most integrators do not need cross-client access lists.",
-        "operationId" : "listReportTypeClients",
         "parameters" : [ {
           "description" : "The Extole unique report type identifier.",
           "in" : "path",
@@ -123429,7 +123071,6 @@
       },
       "put" : {
         "description" : "Replaces the set of clients that have access to a PRIVATE report type with the supplied list. The body is the complete new list - clients omitted lose access. Only applicable to PRIVATE report types; other visibilities return `400 report_type_change_clients_invalid`. Marked `expert`.",
-        "operationId" : "updateReportTypeClients",
         "parameters" : [ {
           "description" : "The Extole unique report type identifier.",
           "in" : "path",
@@ -123582,7 +123223,6 @@
       },
       "delete" : {
         "description" : "Removes the supplied `client_ids` from the report type's access list. Only applicable to PRIVATE report types; other visibilities return `400 report_type_change_clients_invalid`. Returns the report type after the revoke.",
-        "operationId" : "deleteReportTypeClients",
         "parameters" : [ {
           "description" : "The Extole unique report type identifier.",
           "in" : "path",
@@ -123732,7 +123372,6 @@
     },
     "/web/me/assets/download" : {
       "get" : {
-        "operationId" : "downloadAssetByName_2",
         "parameters" : [ {
           "in" : "query",
           "name" : "name",
@@ -123866,7 +123505,6 @@
     },
     "/web/me/assets/{assetId}/download" : {
       "get" : {
-        "operationId" : "downloadAssetById_2",
         "parameters" : [ {
           "in" : "path",
           "name" : "assetId",
@@ -124002,7 +123640,6 @@
     "/web/persons/{personId}/assets/download" : {
       "get" : {
         "description" : "Downloads the binary content of the named asset for the person identified by `personId`. The `name` query parameter selects the asset; omit it to download the person's default asset (if one exists). Returns the asset content stream with the asset's stored content type. Supply `default_url` to redirect to a fallback URL when the asset is not found instead of returning an error. The access token is optional on this operation: omit it and Extole serves only the person's `PUBLIC` assets, resolving the client from the request domain. Supply a token belonging to the person to reach their `PRIVATE` assets. Omitting the token is the recommended way to render another person's avatar, so no token has to be embedded in an image URL.",
-        "operationId" : "downloadWebPersonAssetByName",
         "parameters" : [ {
           "description" : "The Extole unique profile identifier of this user at Extole.",
           "in" : "path",
@@ -124139,7 +123776,6 @@
     "/web/persons/{personId}/assets/{assetId}/download" : {
       "get" : {
         "description" : "Downloads the binary content of the asset identified by `assetId` for the person identified by `personId`. Returns the asset content stream with the asset's stored content type. If the asset has no downloadable content the server returns 400 with `asset_content_not_downloadable`. Supply `default_url` to redirect the caller to a fallback URL instead of returning an error when the asset is not found. The access token is optional on this operation: omit it and Extole serves only the person's `PUBLIC` assets, resolving the client from the request domain. Supply a token belonging to the person to reach their `PRIVATE` assets. Omitting the token is the recommended way to render another person's avatar, so no token has to be embedded in an image URL.",
-        "operationId" : "downloadWebPersonAssetById",
         "parameters" : [ {
           "description" : "The Extole unique profile identifier of this user at Extole.",
           "in" : "path",
@@ -124278,7 +123914,6 @@
     "/v1/client-domain-patterns/{id}/delete" : {
       "post" : {
         "description" : "Hard-deletes the supplied domain pattern. Unlike archiving, deletion is irreversible. Returns the deleted pattern record on success. Returns `400 client_domain_pattern_not_found` if the id does not exist.",
-        "operationId" : "deleteClientDomainPattern",
         "parameters" : [ {
           "description" : "Identifier of the client domain pattern to delete.",
           "in" : "path",
@@ -124405,7 +124040,6 @@
     "/v1/client-domain-patterns/{id}/unarchive" : {
       "post" : {
         "description" : "Restores a previously archived domain pattern so it is active in domain matching again. Returns the restored pattern record. Returns `400 client_domain_pattern_not_found` if the id does not exist.",
-        "operationId" : "unarchiveClientDomainPattern",
         "parameters" : [ {
           "description" : "Identifier of the client domain pattern to unarchive.",
           "in" : "path",
@@ -124532,7 +124166,6 @@
     "/v1/component-grants/all" : {
       "post" : {
         "description" : "Grants a client permission to use all available shared components in the library.",
-        "operationId" : "grantAllComponents",
         "responses" : {
           "200" : {
             "content" : {
@@ -124665,7 +124298,6 @@
     "/v1/extended-cores/{extendedCoreId}/unarchive" : {
       "post" : {
         "description" : "Restores a previously archived extended core and re-inserts it into the SDK core loader. Returns the restored extended core. Returns `404 extended_core_not_found` if the id does not exist.",
-        "operationId" : "unarchiveExtendedCore",
         "parameters" : [ {
           "description" : "The id of the extended core to be unarchived.",
           "in" : "path",
@@ -124813,7 +124445,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/approves" : {
       "post" : {
         "description" : "Adds an approve action to the specified campaign controller. When the controller's triggers fire, this action approves the participant's pending step or reward in the journey. Returns the created approve action with its server-assigned id.",
-        "operationId" : "createApproveAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -125177,7 +124808,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/cancel-rewards" : {
       "post" : {
         "description" : "Adds a cancel-reward action to the specified campaign controller. When the controller's triggers fire, this action cancels the specified reward for the participant. Returns the created cancel-reward action with its server-assigned id.",
-        "operationId" : "createCancelRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -125522,7 +125152,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/create-memberships" : {
       "post" : {
         "description" : "Adds a create-membership action to the specified campaign controller. When the controller's triggers fire, this action adds the participant to the specified audience. Returns the created create-membership action with its server-assigned id.",
-        "operationId" : "createCreateMembershipAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -125857,7 +125486,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/creatives" : {
       "post" : {
         "description" : "Adds a creative action to the specified campaign controller. When the controller's triggers fire, this action renders the configured creative asset for the participant. Returns the created creative action with its server-assigned id.",
-        "operationId" : "createCreativeAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -126212,7 +125840,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/declines" : {
       "post" : {
         "description" : "Adds a decline action to the specified campaign controller. When the controller's triggers fire, this action declines the participant's pending step or reward in the journey. Returns the created decline action with its server-assigned id.",
-        "operationId" : "createDeclineAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -126571,7 +126198,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/displays" : {
       "post" : {
         "description" : "Adds a display action to the specified campaign controller. When the controller's triggers fire, this action controls which content zone or creative is displayed to the participant. Returns the created display action with its server-assigned id.",
-        "operationId" : "createDisplayAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -126913,7 +126539,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/earn-rewards" : {
       "post" : {
         "description" : "Adds an earn-reward action to the specified campaign controller. When the controller's triggers fire, this action earns (issues) a new reward for the participant through the configured reward supplier. Returns the created earn-reward action with its server-assigned id.",
-        "operationId" : "createEarnRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -127290,7 +126915,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/emails" : {
       "post" : {
         "description" : "Adds an email action to the specified campaign controller. When the controller's triggers fire, this action sends the configured email to the participant. Returns the created email action with its server-assigned id.",
-        "operationId" : "createEmailAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -127646,7 +127270,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/emails-v2" : {
       "post" : {
         "description" : "Creates an email v2 action on the specified campaign controller. The action defines the email content and recipients as expressions that are evaluated when the controller runs. Returns the created email v2 action with its server-assigned id.",
-        "operationId" : "createEmailV2Action",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -128024,7 +127647,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/expire-rewards" : {
       "post" : {
         "description" : "Adds an expire reward action to the specified campaign controller. When the controller's triggers fire, this action expires the specified reward for the participant. Returns the created expire reward action with its server-assigned id.",
-        "operationId" : "createExpireRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -128361,7 +127983,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/expressions" : {
       "post" : {
         "description" : "Adds an expression action to the specified campaign controller. When the controller's triggers fire, this action evaluates the configured JavaScript expression in the campaign runtime context. Returns the created expression action with its server-assigned id.",
-        "operationId" : "createExpressionAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -128711,7 +128332,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/fire-as-person" : {
       "post" : {
         "description" : "Adds a fire-as-person action to the specified campaign controller. When the controller's triggers fire, this action fires the configured campaign step as a different person identity. Returns the created fire-as-person action with its server-assigned id.",
-        "operationId" : "createFireAsPersonAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -129122,7 +128742,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/fulfill-rewards" : {
       "post" : {
         "description" : "Adds a fulfill-reward action to the specified campaign controller. When the controller's triggers fire, this action fulfills a previously earned reward, triggering downstream fulfilment logic. Returns the created fulfill-reward action with its server-assigned id.",
-        "operationId" : "createFulfillRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -129471,7 +129090,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/incentivize-status-updates" : {
       "post" : {
         "description" : "Adds an incentivize-status-update action to the specified campaign controller. When the controller's triggers fire, this action updates the status of a pending incentivize action. Returns the created incentivize-status-update action with its server-assigned id.",
-        "operationId" : "createIncentivizeStatusUpdateAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -129823,7 +129441,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/incentivizes" : {
       "post" : {
         "description" : "Adds an incentivize action to the specified campaign controller. When the controller's triggers fire, this action issues an incentive (coupon, gift card, payout, etc.) to the participant. Returns the created incentivize action with its server-assigned id.",
-        "operationId" : "createIncentivizeAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -130193,7 +129810,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/redeem-rewards" : {
       "post" : {
         "description" : "Adds a redeem-reward action to the specified campaign controller. When the controller's triggers fire, this action marks a reward as redeemed by the participant. Returns the created redeem-reward action with its server-assigned id.",
-        "operationId" : "createRedeemRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -130548,7 +130164,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/remove-memberships" : {
       "post" : {
         "description" : "Adds a remove-membership action to the specified campaign controller. When the controller's triggers fire, this action removes the participant from the specified audience. Returns the created remove-membership action with its server-assigned id.",
-        "operationId" : "createRemoveMembershipAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -130883,7 +130498,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/revoke-rewards" : {
       "post" : {
         "description" : "Adds a revoke-reward action to the specified campaign controller. When the controller's triggers fire, this action revokes a previously issued reward, marking it as invalidated. Returns the created revoke-reward action with its server-assigned id.",
-        "operationId" : "createRevokeRewardAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -131228,7 +130842,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/schedules" : {
       "post" : {
         "description" : "Adds a schedule action to the specified campaign controller. When the controller's triggers fire, this action schedules the configured action to fire at a future date and time. Returns the created schedule action with its server-assigned id.",
-        "operationId" : "createScheduleAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -131599,7 +131212,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/share-events" : {
       "post" : {
         "description" : "Adds a share-event action to the specified campaign controller. When the controller's triggers fire, this action records a share event for the participant in the campaign pipeline. Returns the created share-event action with its server-assigned id.",
-        "operationId" : "createShareEventAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -131930,7 +131542,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/signals" : {
       "post" : {
         "description" : "Adds a signal action to the specified campaign controller. When the controller's triggers fire, this action fires the configured signal event into the campaign event pipeline. Returns the created signal action with its server-assigned id.",
-        "operationId" : "createSignalAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -132284,7 +131895,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/signals-v1" : {
       "post" : {
         "description" : "Adds a signal-v1 action to the specified campaign controller. When the controller's triggers fire, this action fires a legacy v1 signal event into the campaign pipeline (deprecated; prefer signal action). Returns the created signal-v1 action with its server-assigned id.",
-        "operationId" : "createSignalV1Action",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -132634,7 +132244,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/step-signals" : {
       "post" : {
         "description" : "Adds a step-signal action to the specified campaign controller. When the controller's triggers fire, this action fires a step-scoped signal, advancing the participant within the configured flow step. Returns the created step-signal action with its server-assigned id.",
-        "operationId" : "createStepSignalAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -132976,7 +132585,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/webhooks" : {
       "post" : {
         "description" : "Adds a webhook action to the specified campaign controller. When the controller's triggers fire, this action posts the configured payload to the configured external webhook URL. Returns the created webhook action with its server-assigned id.",
-        "operationId" : "createWebhookAction",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -133326,7 +132934,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/accesses" : {
       "post" : {
         "description" : "Adds an access trigger to the specified campaign controller. The trigger fires when a participant accesses the campaign via a tracked URL. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createAccessTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -133698,7 +133305,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/audience-membership-events" : {
       "post" : {
         "description" : "Adds an audience membership event trigger to the specified campaign controller. The trigger fires on audience membership lifecycle events (join, leave, etc.). Returns the created trigger with its server-assigned id.",
-        "operationId" : "createAudienceMembershipEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -134071,7 +133677,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/audience-memberships" : {
       "post" : {
         "description" : "Adds an audience membership trigger to the specified campaign controller. The trigger fires when a participant joins or leaves the configured audience. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createAudienceMembershipTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -134447,7 +134052,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/client-domains" : {
       "post" : {
         "description" : "Adds a client domain trigger to the specified campaign controller. The trigger fires when the participant's referral or action originates from the configured client domain. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createClientDomainTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -134822,7 +134426,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/data-intelligence-events" : {
       "post" : {
         "description" : "Adds a Data Intelligence event trigger to the specified campaign controller. The trigger fires when a Data Intelligence scoring event matches the configured criteria. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createDataIntelligenceEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -135200,7 +134803,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/event-targetings" : {
       "post" : {
         "description" : "Adds an event targeting trigger to the specified campaign controller. The trigger fires when the inbound event matches the configured targeting criteria. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createEventTargetingTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -135592,7 +135194,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/events" : {
       "post" : {
         "description" : "Adds an event trigger to the specified campaign controller. When an event matching the configured event name fires for a participant, the controller's actions are executed. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -135971,7 +135572,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/expressions" : {
       "post" : {
         "description" : "Adds an expression trigger to the specified campaign controller. The trigger fires when the configured JavaScript expression evaluates to true in the campaign runtime. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createExpressionTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -136355,7 +135955,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/groups" : {
       "post" : {
         "description" : "Adds a group trigger to the specified campaign controller. The trigger fires when all (or any, based on logic) of the contained child triggers fire. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createGroupTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -136724,7 +136323,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/has-identities" : {
       "post" : {
         "description" : "Adds a has-identity trigger to the specified campaign controller. The trigger fires when the participant does (or does not) have the configured identity attribute. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createHasIdentityTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -137092,7 +136690,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/has-prior-rewards" : {
       "post" : {
         "description" : "Adds a has-prior-reward trigger to the specified campaign controller. The trigger fires when the participant does (or does not) have a prior reward of the configured type. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createHasPriorRewardTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -137520,7 +137117,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/has-prior-steps" : {
       "post" : {
         "description" : "Adds a has-prior-step trigger to the specified campaign controller. The trigger fires when the participant does (or does not) have a prior completed step. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createHasPriorStepTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -138006,7 +137602,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/journey-checks" : {
       "post" : {
         "description" : "Adds a journey check trigger to the specified campaign controller. The trigger fires based on the participant's current position within the campaign journey. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createJourneyCheckTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -138388,7 +137983,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/legacy-labels-targeting" : {
       "post" : {
         "description" : "Adds a legacy label targeting trigger to the specified campaign controller. The trigger fires based on legacy label-based audience targeting rules (deprecated; prefer audience membership trigger). Returns the created trigger with its server-assigned id.",
-        "operationId" : "createLegacyLabelTargetingTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -138759,7 +138353,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/legacy-quality" : {
       "post" : {
         "description" : "Adds a legacy quality trigger to the specified campaign controller. The trigger fires when the legacy quality check passes for the participant (deprecated). Returns the created trigger with its server-assigned id.",
-        "operationId" : "createLegacyQualityTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -139131,7 +138724,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/max-minds" : {
       "post" : {
         "description" : "Adds a MaxMind trigger to the specified campaign controller. The trigger fires when the MaxMind fraud-score for the participant falls within the configured threshold. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createMaxMindTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -139506,7 +139098,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/referred-by-events" : {
       "post" : {
         "description" : "Adds a referred-by-event trigger to the specified campaign controller. The trigger fires when the participant was referred to the campaign by another participant. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createReferredByEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -139878,7 +139469,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/reward-events" : {
       "post" : {
         "description" : "Adds a reward event trigger to the specified campaign controller. The trigger fires on reward lifecycle events (earned, fulfilled, cancelled, etc.) for the participant. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createRewardEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -140262,7 +139852,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/scores" : {
       "post" : {
         "description" : "Adds a score trigger to the specified campaign controller. The trigger fires when the computed score for the participant crosses the configured threshold. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createScoreTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -140642,7 +140231,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/send-reward-events" : {
       "post" : {
         "description" : "Adds a send-reward-event trigger to the specified campaign controller. The trigger fires when a send-reward event is detected in the campaign pipeline. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createSendRewardEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -141019,7 +140607,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/shares" : {
       "post" : {
         "description" : "Adds a share trigger to the specified campaign controller. The trigger fires when the participant performs a share action in the campaign. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createShareTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -141393,7 +140980,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/step-events" : {
       "post" : {
         "description" : "Adds a step event trigger to the specified campaign controller. The trigger fires on step lifecycle events (entered, completed, exited) for the participant. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createStepEventTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -141775,7 +141361,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/sticky-journeys" : {
       "post" : {
         "description" : "Adds a sticky journey trigger to the specified campaign controller. The trigger fires based on the participant's sticky journey state in the campaign. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createStickyJourneyTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -142144,7 +141729,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/targeting" : {
       "post" : {
         "description" : "Adds a targeting trigger to the specified campaign controller. The trigger fires when the participant matches the configured targeting rule expression. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createTargetingTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -142513,7 +142097,6 @@
     "/v2/campaigns/{campaignId}/controllers/{controllerId}/triggers/zone-states" : {
       "post" : {
         "description" : "Adds a zone state trigger to the specified campaign controller. The trigger fires when the specified zone reaches the configured display state. Returns the created trigger with its server-assigned id.",
-        "operationId" : "createZoneStateTrigger",
         "parameters" : [ {
           "in" : "path",
           "name" : "campaignId",
@@ -142896,7 +142479,6 @@
     "/v2/consumers/{accessToken}/authorize" : {
       "post" : {
         "description" : "Upgrades an anonymous consumer access token to an authenticated token by associating it with a verified consumer identity. Returns the upgraded consumer token.",
-        "operationId" : "upgradeConsumerAuthorization",
         "parameters" : [ {
           "in" : "path",
           "name" : "accessToken",
@@ -143037,7 +142619,6 @@
     "/v2/consumers/{personId}/token" : {
       "post" : {
         "description" : "Creates a consumer access token for the specified person id. Returns the new consumer token.",
-        "operationId" : "createConsumerAuthorization",
         "parameters" : [ {
           "in" : "path",
           "name" : "personId",
@@ -143175,7 +142756,6 @@
     },
     "/v4/debug/client-events" : {
       "post" : {
-        "operationId" : "createDebugClientEvent",
         "requestBody" : {
           "content" : {
             "application/json" : {
@@ -143318,7 +142898,6 @@
     },
     "/v4/debug/logs" : {
       "post" : {
-        "operationId" : "createDebugLog",
         "requestBody" : {
           "content" : {
             "application/json" : {
@@ -143442,7 +143021,6 @@
     "/v4/email-domains/{emailDomainId}/generate-dkim-records" : {
       "post" : {
         "description" : "Generates new DKIM DNS records for the custom sending domain. Returns the records that must be added to DNS to enable DKIM signing.",
-        "operationId" : "generateEmailDomainDkimRecords",
         "parameters" : [ {
           "in" : "path",
           "name" : "emailDomainId",
@@ -143580,7 +143158,6 @@
     "/v4/email/validate" : {
       "post" : {
         "description" : "Checks whether the supplied email address is syntactically valid and acceptable for use in Extole programs. Returns validation status without creating or updating a consumer identity.",
-        "operationId" : "validateEmail",
         "requestBody" : {
           "content" : {
             "application/json" : {
@@ -143704,7 +143281,6 @@
     "/v4/oauth/tokens" : {
       "post" : {
         "description" : "Exchanges OAuth client credentials (client_id and client_secret) for an API access token using the client credentials grant flow. Returns the access token and expiry information.",
-        "operationId" : "createOAuthClientCredentialsToken",
         "requestBody" : {
           "content" : {
             "application/x-www-form-urlencoded" : {
@@ -143891,7 +143467,6 @@
     "/v4/tokens/managed/openid-connect/authorization-code-flow" : {
       "post" : {
         "description" : "Creates a managed access token by exchanging an OpenID Connect authorization code. Returns the created token.",
-        "operationId" : "createManagedTokenViaAuthorizationCode",
         "parameters" : [ {
           "in" : "header",
           "name" : "X-CSRF-TOKEN",
@@ -144086,7 +143661,6 @@
     "/v4/tokens/openid-connect/authorization-code-flow" : {
       "post" : {
         "description" : "Exchanges an OpenID Connect authorization-code response for an Extole access token. Pair the body's `code` and `state` with the `X-CSRF-TOKEN` and `X-NONCE` headers - all four are required by the OIDC validator. Marked as `expert`: most integrators authenticate via `POST /v4/tokens` instead.",
-        "operationId" : "exchangeAuthorizationCode",
         "parameters" : [ {
           "in" : "header",
           "name" : "X-CSRF-TOKEN",
@@ -144266,7 +143840,6 @@
     "/v4/tokens/openid-connect/idp-initiated-authorization-code-flow" : {
       "post" : {
         "description" : "Validates an authorization code returned by an IdP-initiated OpenID Connect SSO flow and exchanges it for an Extole access token. Expert-only; most integrators use `POST /v4/tokens` instead.",
-        "operationId" : "validateIdpInitiated",
         "requestBody" : {
           "content" : {
             "application/json" : {
@@ -144433,7 +144006,6 @@
     "/v6/address/validate" : {
       "post" : {
         "description" : "Validates and normalizes the postal address in the request body. Returns corrected address fields and validation status when the address can be verified.",
-        "operationId" : "validateAddress",
         "requestBody" : {
           "content" : {
             "application/json" : {
@@ -144570,7 +144142,6 @@
     "/v6/prehandlers/{prehandlerId}/archive" : {
       "post" : {
         "description" : "Archives (soft-deletes) the supplied prehandler. The prehandler is removed from the execution pipeline immediately but its definition is retained. Restore it with `POST /v6/prehandlers/{id}/unarchive`. Returns the updated prehandler.",
-        "operationId" : "archivePrehandler",
         "parameters" : [ {
           "description" : "The id of the prehandler to be archived.",
           "in" : "path",
@@ -144697,7 +144268,6 @@
     "/v6/prehandlers/{prehandlerId}/unarchive" : {
       "post" : {
         "description" : "Restores a previously archived prehandler and re-inserts it into the execution pipeline. Returns the restored prehandler. Returns `400 prehandler_not_found` if the id does not exist.",
-        "operationId" : "unarchivePrehandler",
         "parameters" : [ {
           "description" : "The id of the prehandler to be unarchived.",
           "in" : "path",
@@ -144823,7 +144393,6 @@
     },
     "/v6/report-runners/{reportRunnerId}/run" : {
       "post" : {
-        "operationId" : "run_2",
         "parameters" : [ {
           "description" : "The Extole unique report runner identifier.",
           "in" : "path",
@@ -145025,7 +144594,6 @@
     "/v6/report-types" : {
       "post" : {
         "description" : "Creates a new report-type definition (SQL- or CONFIGURED-shaped). Returns the persisted report type with its server-assigned id and any defaulted fields. Marked `expert`: report-type definitions are typically managed by Extole staff.",
-        "operationId" : "createReportType",
         "requestBody" : {
           "content" : {
             "application/json" : {
@@ -145200,7 +144768,6 @@
     "/v6/security/oauth/flow/exchange" : {
       "post" : {
         "description" : "Exchanges an OAuth authorization code for an access token using the authorization code flow. Returns the access token and associated session information.",
-        "operationId" : "exchangeOAuthCode",
         "requestBody" : {
           "content" : {
             "application/json" : {
@@ -145359,8 +144926,7 @@
     },
     "/v6/report-types/{id}/parameters-add" : {
       "put" : {
-        "description" : "Appends the supplied dynamic parameters to the report type's `parameters` list. Static parameters cannot be added via this endpoint - use `createReportType` or `updateReportType` to configure those. Returns the report type after the update.",
-        "operationId" : "addReportTypeParameters",
+        "description" : "Appends the supplied dynamic parameters to the report type's `parameters` list. Static parameters cannot be added via this endpoint - use `POST /v6/report-types` or `PUT /v6/report-types/{id}` to configure those. Returns the report type after the update.",
         "parameters" : [ {
           "description" : "The Extole unique report type identifier.",
           "in" : "path",
@@ -145531,8 +145097,7 @@
     },
     "/v6/report-types/{id}/parameters-delete" : {
       "put" : {
-        "description" : "Removes the supplied parameters (by name) from the report type's `parameters` list. Static parameters cannot be deleted via this endpoint - they are part of the report type's contract and changing them requires a `updateReportType` call. Returns the report type after the update.",
-        "operationId" : "deleteReportTypeParameters",
+        "description" : "Removes the supplied parameters (by name) from the report type's `parameters` list. Static parameters cannot be deleted via this endpoint - they are part of the report type's contract and changing them requires a `PUT /v6/report-types/{id}` call. Returns the report type after the update.",
         "parameters" : [ {
           "description" : "The Extole unique report type identifier.",
           "in" : "path",
@@ -145687,7 +145252,6 @@
     "/v6/report-types/{id}/tags-add" : {
       "put" : {
         "description" : "Appends the supplied tags to the report type's tag list. Existing tags are left unchanged; duplicates in the body are ignored. Returns the report type after the update.",
-        "operationId" : "addReportTypeTags",
         "parameters" : [ {
           "description" : "The Extole unique report type identifier.",
           "in" : "path",
@@ -145842,7 +145406,6 @@
     "/v6/report-types/{id}/tags-delete" : {
       "put" : {
         "description" : "Removes the supplied tags from the report type's tag list. Tags that are not currently set are silently ignored. Returns the report type after the update.",
-        "operationId" : "deleteReportTypeTags",
         "parameters" : [ {
           "description" : "The Extole unique report type identifier.",
           "in" : "path",
@@ -146177,7 +145740,6 @@
     "/v1/component-grants/{grantId}" : {
       "delete" : {
         "description" : "Revokes a previously granted component permission.",
-        "operationId" : "revokeComponentGrant",
         "parameters" : [ {
           "in" : "path",
           "name" : "grantId",
@@ -146318,7 +145880,6 @@
     "/v1/component-subscriptions/{subscriptionId}" : {
       "delete" : {
         "description" : "Removes a client's subscription to the specified shared component.",
-        "operationId" : "unsubscribeComponent",
         "parameters" : [ {
           "in" : "path",
           "name" : "subscriptionId",
@@ -146567,7 +146128,6 @@
     "/v4/tokens/resource/{access_token_to_delete}" : {
       "delete" : {
         "description" : "Revokes the specified resource-scoped access token.",
-        "operationId" : "deleteResourceToken",
         "parameters" : [ {
           "description" : "Resource-scoped access token to revoke.",
           "in" : "path",
@@ -146737,7 +146297,6 @@
     },
     "/v6/report-runners/scheduled/{reportRunnerId}/reports" : {
       "delete" : {
-        "operationId" : "deleteReports",
         "parameters" : [ {
           "description" : "The Extole unique report runner identifier.",
           "in" : "path",

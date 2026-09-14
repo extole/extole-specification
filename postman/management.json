@@ -320747,7 +320747,7 @@
           "request": {
             "name": "List report types with their associated clients",
             "description": {
-              "content": "Returns every report type alongside the ids of clients that have access to it. Equivalent to running `listReportTypes` and `listReportTypeClients` for every result, but in a single call. Requires the `client_superuser` scope - use this only when auditing cross-client access at the platform level.",
+              "content": "Returns every report type alongside the ids of clients that have access to it. Equivalent to running `GET /v6/report-types` and `GET /v6/report-types/{id}/clients` for every result, but in a single call. Requires the `client_superuser` scope - use this only when auditing cross-client access at the platform level.",
               "type": "text/plain"
             },
             "url": {
@@ -389794,7 +389794,7 @@
           "request": {
             "name": "List recent notifications",
             "description": {
-              "content": "Returns the calling user's in-portal notifications sorted newest first. Use the `limit` and `offset` parameters to page through results. Notifications include report completion alerts, campaign status changes, and custom client events fired via `createClientEvent`.",
+              "content": "Returns the calling user's in-portal notifications sorted newest first. Use the `limit` and `offset` parameters to page through results. Notifications include report completion alerts, campaign status changes, and custom client events fired via `POST /v6/client-events`.",
               "type": "text/plain"
             },
             "url": {
@@ -390588,7 +390588,7 @@
           "request": {
             "name": "Get notification read cursor",
             "description": {
-              "content": "Returns the timestamp up to which the calling user has read their notifications. Use this cursor to determine which notifications are unread (those created after the returned timestamp). Advance the cursor with `updateNotificationCursor`.",
+              "content": "Returns the timestamp up to which the calling user has read their notifications. Use this cursor to determine which notifications are unread (those created after the returned timestamp). Advance the cursor with `POST /v6/notifications/read`.",
               "type": "text/plain"
             },
             "url": {
@@ -390973,7 +390973,7 @@
           "request": {
             "name": "Mark notifications as read",
             "description": {
-              "content": "Advances the read cursor to the supplied timestamp, marking all notifications created at or before that time as read for the calling user. Returns the updated cursor state. Use `getNotificationCursor` to retrieve the current cursor position.",
+              "content": "Advances the read cursor to the supplied timestamp, marking all notifications created at or before that time as read for the calling user. Returns the updated cursor state. Use `GET /v6/notifications/read` to retrieve the current cursor position.",
               "type": "text/plain"
             },
             "url": {
@@ -391340,7 +391340,7 @@
           "request": {
             "name": "List notification snoozes for the caller",
             "description": {
-              "content": "Returns all active notification snooze rules for the calling portal user, sorted newest first. A snooze rule suppresses notifications matching specified tags until its expiry time. To list snoozes for a different user, use `listSnoozesByUser`.",
+              "content": "Returns all active notification snooze rules for the calling portal user, sorted newest first. A snooze rule suppresses notifications matching specified tags until its expiry time. To list snoozes for a different user, use `GET /v6/notifications/{userId}/snoozes`.",
               "type": "text/plain"
             },
             "url": {
@@ -391815,7 +391815,7 @@
           "request": {
             "name": "Create a notification snooze for the caller",
             "description": {
-              "content": "Creates a snooze rule that suppresses portal notifications matching the supplied tags for the calling portal user until the `expires_at` timestamp. Returns the newly created snooze with its assigned id. To create a snooze for a different user, use `createSnoozeByUser`.",
+              "content": "Creates a snooze rule that suppresses portal notifications matching the supplied tags for the calling portal user until the `expires_at` timestamp. Returns the newly created snooze with its assigned id. To create a snooze for a different user, use `POST /v6/notifications/{userId}/snoozes`.",
               "type": "text/plain"
             },
             "url": {
@@ -392219,7 +392219,7 @@
           "request": {
             "name": "Get a notification snooze for the caller",
             "description": {
-              "content": "Returns the snooze rule identified by `snoozeId` belonging to the calling portal user. Returns the tags being snoozed and the expiry timestamp. To retrieve a snooze for a different user, use `getSnoozeByUser`.",
+              "content": "Returns the snooze rule identified by `snoozeId` belonging to the calling portal user. Returns the tags being snoozed and the expiry timestamp. To retrieve a snooze for a different user, use `GET /v6/notifications/{userId}/snoozes/{snoozeId}`.",
               "type": "text/plain"
             },
             "url": {
@@ -392525,7 +392525,7 @@
           "request": {
             "name": "Delete a notification snooze for the caller",
             "description": {
-              "content": "Removes the snooze rule identified by `snoozeId` belonging to the calling portal user. Returns the deleted snooze. Notifications previously suppressed by this rule will resume immediately. To delete a snooze for a different user, use `deleteSnoozeByUser`.",
+              "content": "Removes the snooze rule identified by `snoozeId` belonging to the calling portal user. Returns the deleted snooze. Notifications previously suppressed by this rule will resume immediately. To delete a snooze for a different user, use `DELETE /v6/notifications/{userId}/snoozes/{snoozeId}`.",
               "type": "text/plain"
             },
             "url": {
@@ -393453,7 +393453,7 @@
           "request": {
             "name": "Get notification read cursor for a user",
             "description": {
-              "content": "Returns the timestamp up to which the Extole portal user identified by `userId` has read their notifications. Requires the `USER_SUPPORT` scope. Use `updateNotificationCursorByUser` to advance the cursor.",
+              "content": "Returns the timestamp up to which the Extole portal user identified by `userId` has read their notifications. Requires the `USER_SUPPORT` scope. Use `POST /v6/notifications/{userId}/read` to advance the cursor.",
               "type": "text/plain"
             },
             "url": {
