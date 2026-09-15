@@ -15862,12 +15862,438 @@
           "protocolProfileBehavior": { "disableBodyPruning": true }
         },
         {
+          "id": "7f1195b0-a2ba-4fd3-8ee0-ef4f7376fd1f",
+          "name": "List the devices that claimed a person's identity",
+          "request": {
+            "name": "List the devices that claimed a person's identity",
+            "description": {
+              "content": "Returns the devices recorded as having claimed the specified person's identity, most recently seen first. A device that claims an identity without verifying it keeps its own activity, so this history is how to find that activity from the identity. Each entry says whether the device still points at this identity, so an entry is a record that the device was here, not a claim that it still is, and its `last_seen_at` is refreshed at most once a day, so it can trail the device's latest activity. Extole started recording this history in September 2026 and does not backfill it, so a device that claimed an identity before then appears only after it saves again. The history is bounded to the most recently seen devices, so a flood of claims evicts the ones seen longest ago, and it carries no marker of what it dropped. It is for support: Extole's own engine, targeting and reporting never read it.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": ["v5", "persons", ":person_id", "device-history"],
+              "host": ["{{baseUrl}}"],
+              "query": [],
+              "variable": [
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "person_id",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) The Extole unique profile identifier of this user at Extole.",
+                    "type": "text/plain"
+                  }
+                }
+              ]
+            },
+            "header": [{ "key": "Accept", "value": "<string>" }],
+            "method": "GET",
+            "body": {},
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b27c2051-83bf-44a8-b48f-b3274214519d",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "device-history"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "1ca1a5a9-bdc3-4df8-8f61-1908c7115aaf",
+              "name": "binding_error",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "device-history"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "598dc730-22be-42e2-96b3-450c00efe1da",
+              "name": "invalid_json",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "device-history"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "99eecd6b-7e9f-40c2-a1c2-e59856166556",
+              "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "device-history"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3a414cbb-fafb-4364-99dd-4044bd5b04c0",
+              "name": "missing_request_body",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "device-history"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "cec2a0e7-1891-4d63-9a36-2b44870d6ef4",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "device-history"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "80f0fccc-6bc9-4fa4-a5b3-816d18149495",
+              "name": "Payment Required",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "device-history"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Payment Required",
+              "code": 402,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "87b18d4b-3bb9-4778-932d-e2fab349b4e0",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "device-history"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "48103f1b-25ce-445b-a51e-450a5f7af844",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "device-history"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "1b2a9c0b-7ca0-4daa-a947-a2617e7b8764",
+              "name": "missing_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "device-history"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b6ab6f6e-4c93-4bdf-b45a-bb21690e5342",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "device-history"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "be85b318-14ba-4217-942b-a4ce66716618",
+              "name": "Unsupported Media Type",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "device-history"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unsupported Media Type",
+              "code": 415,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "59a86653-4702-4c4e-b491-ba93bf651585",
+              "name": "Too Many Requests",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "device-history"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        },
+        {
           "id": "75ee9a84-4ce2-4d28-ba73-31fb62dbbb36",
           "name": "Get identity history for a person",
           "request": {
             "name": "Get identity history for a person",
             "description": {
-              "content": "Returns the chronological log of identity-merge and identity-link events for the specified person. Each entry records the event type, the previous identity key information, and the event date. Use this to audit how a person's unified profile evolved over time.",
+              "content": "Returns the log of identity-merge and identity-link events for the specified person, most recently recorded first. Each entry records the event type, the previous identity key information, and the event date. Use this to audit how a person's unified profile evolved over time.",
               "type": "text/plain"
             },
             "url": {
