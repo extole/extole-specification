@@ -313695,6 +313695,260 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "d1f457cb-df86-4214-af5a-fccac9796f6e",
+              "name": "report_runner_invalid_order",
+              "originalRequest": {
+                "url": {
+                  "path": ["v7", "report-runners"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "type",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "report_type",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "display_name",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "user_ids",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "having_any_tags",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "having_all_tags",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "exclude_having_any_tags",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "exclude_having_all_tags",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "search_query",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "pause_status",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "aggregation_status",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "offset",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "limit",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "order_by",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "order",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "report_type_name",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "984c9066-31ff-46f4-85ed-f9caea315277",
+              "name": "report_runner_invalid_order_by",
+              "originalRequest": {
+                "url": {
+                  "path": ["v7", "report-runners"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "type",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "report_type",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "display_name",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "user_ids",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "having_any_tags",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "having_all_tags",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "exclude_having_any_tags",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "exclude_having_all_tags",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "search_query",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "pause_status",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "aggregation_status",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "offset",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "limit",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "order_by",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "order",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "report_type_name",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "a3f91b7a-2527-4c26-97ed-dffc53747774",
               "name": "report_runner_invalid_pause_status",
               "originalRequest": {
@@ -317655,6 +317909,116 @@
             {
               "id": "c13fcfcc-fc18-4464-8c73-be272406bb80",
               "name": "report_runner_invalid_aggregation_status",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "44aa169f-6e16-4789-bfcd-089fa667e1aa",
+              "name": "report_runner_invalid_order",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v6",
+                    "report-runners",
+                    "scheduled",
+                    ":reportRunnerId",
+                    "generate-missing-reports"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Restrict generation to periods ending at or after this date. Omit to consider every period since the schedule started.",
+                        "type": "text/plain"
+                      },
+                      "key": "slot",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of reports to start. Defaults to `1` when `slot` is omitted, and to unlimited when `slot` is supplied.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "bc0165d8-55b4-47cf-a9e6-4bfbef2be5b1",
+              "name": "report_runner_invalid_order_by",
               "originalRequest": {
                 "url": {
                   "path": [

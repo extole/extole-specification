@@ -4681,6 +4681,26 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
+      "report_runner_invalid_order" : {
+        "summary" : "report_runner_invalid_order",
+        "value" : {
+          "code" : "report_runner_invalid_order",
+          "http_status_code" : 400,
+          "message" : "Report runner order is invalid",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "report_runner_invalid_order_by" : {
+        "summary" : "report_runner_invalid_order_by",
+        "value" : {
+          "code" : "report_runner_invalid_order_by",
+          "http_status_code" : 400,
+          "message" : "Report runner order by is invalid",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
       "report_runner_invalid_parameter" : {
         "summary" : "report_runner_invalid_parameter",
         "value" : {
@@ -121693,6 +121713,12 @@
                   "report_runner_invalid_aggregation_status" : {
                     "$ref" : "#/components/examples/report_runner_invalid_aggregation_status"
                   },
+                  "report_runner_invalid_order" : {
+                    "$ref" : "#/components/examples/report_runner_invalid_order"
+                  },
+                  "report_runner_invalid_order_by" : {
+                    "$ref" : "#/components/examples/report_runner_invalid_order_by"
+                  },
                   "report_runner_invalid_pause_status" : {
                     "$ref" : "#/components/examples/report_runner_invalid_pause_status"
                   },
@@ -121946,6 +121972,12 @@
                   "report_runner_invalid_aggregation_status" : {
                     "$ref" : "#/components/examples/report_runner_invalid_aggregation_status"
                   },
+                  "report_runner_invalid_order" : {
+                    "$ref" : "#/components/examples/report_runner_invalid_order"
+                  },
+                  "report_runner_invalid_order_by" : {
+                    "$ref" : "#/components/examples/report_runner_invalid_order_by"
+                  },
                   "report_runner_invalid_pause_status" : {
                     "$ref" : "#/components/examples/report_runner_invalid_pause_status"
                   },
@@ -122130,6 +122162,12 @@
                   },
                   "report_runner_invalid_aggregation_status" : {
                     "$ref" : "#/components/examples/report_runner_invalid_aggregation_status"
+                  },
+                  "report_runner_invalid_order" : {
+                    "$ref" : "#/components/examples/report_runner_invalid_order"
+                  },
+                  "report_runner_invalid_order_by" : {
+                    "$ref" : "#/components/examples/report_runner_invalid_order_by"
                   },
                   "report_runner_invalid_pause_status" : {
                     "$ref" : "#/components/examples/report_runner_invalid_pause_status"
@@ -122656,6 +122694,12 @@
                   },
                   "report_runner_invalid_aggregation_status" : {
                     "$ref" : "#/components/examples/report_runner_invalid_aggregation_status"
+                  },
+                  "report_runner_invalid_order" : {
+                    "$ref" : "#/components/examples/report_runner_invalid_order"
+                  },
+                  "report_runner_invalid_order_by" : {
+                    "$ref" : "#/components/examples/report_runner_invalid_order_by"
                   },
                   "report_runner_invalid_pause_status" : {
                     "$ref" : "#/components/examples/report_runner_invalid_pause_status"
