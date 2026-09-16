@@ -11184,6 +11184,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "f9c62e6c-091d-4f8e-9899-17eae782ff2c",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"identity_key_value\": \"identity_key_value\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "935e2318-58bd-4d45-84a7-bb7e1a4477b2",
               "name": "Unauthorized",
               "originalRequest": {
@@ -11334,43 +11371,6 @@
             {
               "id": "1760c407-9fa9-47f3-a831-689fc97db858",
               "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": ["v5", "persons"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Content-Type", "value": "<string>" },
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "POST",
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n  \"identity_key_value\": \"identity_key_value\"\n}",
-                  "options": {
-                    "raw": { "headerFamily": "json", "language": "json" }
-                  }
-                }
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "f9c62e6c-091d-4f8e-9899-17eae782ff2c",
-              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons"],
@@ -12004,7 +12004,7 @@
           "request": {
             "name": "Get a person",
             "description": {
-              "content": "Returns the person profile for the specified `person_id`. The response includes the person's current identity key and value, locale settings, and version. Returns `403 person_not_found` if the person does not exist or is not accessible.",
+              "content": "Returns the person profile for the specified `person_id`. The response includes the person's current identity key and value, locale settings, and version. Returns `400 person_not_found` if the person does not exist or is not accessible.",
               "type": "text/plain"
             },
             "url": {
@@ -12181,6 +12181,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "fdc47789-0e9c-4bdd-a933-e125889a5d41",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "1f0234f1-ea4b-4984-924d-ee477d82f6bd",
               "name": "Unauthorized",
               "originalRequest": {
@@ -12241,8 +12271,68 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "159c83c7-7be1-4f02-a364-65dcecfcf69f",
-              "name": "Person was not found or is not accessible to the calling client.",
+              "id": "0585f9a4-532b-4ffc-b771-49c3c8204fda",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b91b4b08-4b52-4292-9d5d-01c5e00825a5",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e995512f-e20b-4683-a159-d6385f90357e",
+              "name": "missing_access_token",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id"],
@@ -12340,7 +12430,7 @@
           "request": {
             "name": "Update a person",
             "description": {
-              "content": "Updates the identity key value on the specified person profile. Returns `403 person_not_found` if the person does not exist or is not accessible.\n\nFields omitted from the body are left unchanged — you do not need to send the whole resource.",
+              "content": "Updates the identity key value on the specified person profile. Returns `400 person_not_found` if the person does not exist or is not accessible.\n\nFields omitted from the body are left unchanged — you do not need to send the whole resource.",
               "type": "text/plain"
             },
             "url": {
@@ -12746,6 +12836,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "4024e0c9-29af-47e3-ac07-1a3e3ca693b1",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"identity_key_value\": \"identity_key_value\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "7942abac-337c-44e8-9544-00cb33d63bc4",
               "name": "Unauthorized",
               "originalRequest": {
@@ -12820,8 +12947,82 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "a2e6e5fc-4e8a-4d00-a3a2-1e9827fac844",
-              "name": "Person was not found or is not accessible to the calling client.",
+              "id": "7a4eaff1-ee26-48a2-bbf5-6553253ac508",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"identity_key_value\": \"identity_key_value\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "d7073267-a781-4714-8209-00986bc583d5",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"identity_key_value\": \"identity_key_value\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ebcf21da-c8d9-4a2a-b768-9ab266c1ce1a",
+              "name": "missing_access_token",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id"],
@@ -13117,6 +13318,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "c1da296d-32be-4460-a612-b707e471ecac",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "block"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "56e4db59-8ccf-49de-b9be-1c2b7d69c300",
               "name": "Unauthorized",
               "originalRequest": {
@@ -13239,36 +13470,6 @@
             {
               "id": "acc0970d-212e-4764-a15e-42f31834dd5c",
               "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": ["v5", "persons", ":person_id", "block"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "c1da296d-32be-4460-a612-b707e471ecac",
-              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id", "block"],
@@ -13772,6 +13973,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "869d4725-51e3-4466-b17c-41dad0d92840",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "block"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"reason\": \"reason\",\n  \"type\": \"EVENTS\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "f1cb7b54-9e0f-4b5b-b99a-4728a56b8df0",
               "name": "Unauthorized",
               "originalRequest": {
@@ -13957,43 +14195,6 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "869d4725-51e3-4466-b17c-41dad0d92840",
-              "name": "person_not_found",
-              "originalRequest": {
-                "url": {
-                  "path": ["v5", "persons", ":person_id", "block"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Content-Type", "value": "<string>" },
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "PUT",
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n  \"reason\": \"reason\",\n  \"type\": \"EVENTS\"\n}",
-                  "options": {
-                    "raw": { "headerFamily": "json", "language": "json" }
-                  }
-                }
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
               "id": "c324c3d9-9bfd-4713-8998-385200c8f9f6",
               "name": "Unsupported Media Type",
               "originalRequest": {
@@ -14077,7 +14278,7 @@
           "request": {
             "name": "List person data parameters",
             "description": {
-              "content": "Returns all data parameters for the specified person, sorted by updated date in descending order. Use query parameters to filter by name or date range. Returns `403 person_not_found` if the person is not accessible.",
+              "content": "Returns all data parameters for the specified person, sorted by updated date in descending order. Use query parameters to filter by name or date range. Returns `400 person_not_found` if the person is not accessible.",
               "type": "text/plain"
             },
             "url": {
@@ -14416,6 +14617,61 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "2ebed149-ff59-433d-bef3-0dd0d25cae13",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "data"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "names",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "scopes",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "offset",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "6e9c5926-deb5-4a6f-9e4c-e3f5ac0388e8",
               "name": "Unauthorized",
               "originalRequest": {
@@ -14526,8 +14782,118 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "55337db0-afad-442f-a400-a369268cd797",
-              "name": "Person was not found or is not accessible to the calling client.",
+              "id": "85187a0c-b130-4685-b6e1-121399045f46",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "data"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "names",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "scopes",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "offset",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e30d473a-6837-4644-b648-fbf50b8b2c7c",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "data"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "names",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "scopes",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "offset",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "73a221b8-8844-4c00-be10-def5f31886d8",
+              "name": "missing_access_token",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id", "data"],
@@ -14700,7 +15066,7 @@
           "request": {
             "name": "Create a person data parameter",
             "description": {
-              "content": "Creates a new named data parameter for the specified person. Returns `400 data_already_exists` if a parameter with the same name already exists; use PUT to update an existing parameter. Returns `403 person_not_found` if the person is not accessible.",
+              "content": "Creates a new named data parameter for the specified person. Returns `400 data_already_exists` if a parameter with the same name already exists; use PUT to update an existing parameter. Returns `400 person_not_found` if the person is not accessible.",
               "type": "text/plain"
             },
             "url": {
@@ -14773,8 +15139,45 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "53a9fb5b-55e2-4c56-9a2e-968d526e2009",
-              "name": "Person data entry was not found. The supplied name does not match any data parameter for the given person.",
+              "id": "106f1fe7-a3bf-48b8-961b-5e41eae84ba0",
+              "name": "data_already_exists",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "data"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"name\",\n  \"scope\": \"CLIENT\",\n  \"value\": {}\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "75f241cd-b1c4-42d9-bde2-065266117b69",
+              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id", "data"],
@@ -14884,8 +15287,82 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "bdb107e6-6c0e-4550-afb4-ee921e7d7bcc",
-              "name": "Person was not found or is not accessible to the calling client.",
+              "id": "b4bc649e-f6bd-4584-9c7e-34029e625932",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "data"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"name\",\n  \"scope\": \"CLIENT\",\n  \"value\": {}\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "44309105-a0b0-44d7-84ba-79d6664f8944",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "data"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"name\",\n  \"scope\": \"CLIENT\",\n  \"value\": {}\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "1da45f2b-5bab-4891-ace7-5702668a758c",
+              "name": "missing_access_token",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id", "data"],
@@ -15004,7 +15481,7 @@
           "request": {
             "name": "Get a person data parameter",
             "description": {
-              "content": "Returns the named data parameter for the specified person. Person data parameters are arbitrary key-value pairs attached to a person profile and can be used in campaign targeting and personalization. Returns `400 data_not_found` if the name does not exist, or `403 person_not_found` if the person is not accessible.",
+              "content": "Returns the named data parameter for the specified person. Person data parameters are arbitrary key-value pairs attached to a person profile and can be used in campaign targeting and personalization. Returns `400 data_not_found` if the name does not exist, or `400 person_not_found` if the person is not accessible.",
               "type": "text/plain"
             },
             "url": {
@@ -15071,8 +15548,38 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "2e282313-4e8b-487d-a052-2abe8bef022a",
-              "name": "Person data entry was not found. The supplied name does not match any data parameter for the given person.",
+              "id": "b4c7a11d-3dd8-4a3e-8e6e-8cf7caf4e4b3",
+              "name": "data_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "data", ":name"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "93fa73a9-3688-4e4e-96da-efb29a919c27",
+              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id", "data", ":name"],
@@ -15161,8 +15668,68 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "85541984-f672-455a-8d54-35af881d0aae",
-              "name": "Person was not found or is not accessible to the calling client.",
+              "id": "359bd28f-36b5-445e-ba5a-d57d39358623",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "data", ":name"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "eb7dfc86-0b90-4f5c-8e9e-5e9e6a6d4f09",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "data", ":name"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b3cad5c2-e942-4f2a-9906-4ddaf44d0863",
+              "name": "missing_access_token",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id", "data", ":name"],
@@ -15260,7 +15827,7 @@
           "request": {
             "name": "Update a person data parameter",
             "description": {
-              "content": "Updates the value of the named data parameter for the specified person. Returns `400 data_not_found` if the parameter does not exist, or `400 read_only_name` if the parameter name is read-only. Returns `403 person_not_found` if the person is not accessible.\n\nFields omitted from the body are left unchanged — you do not need to send the whole resource.",
+              "content": "Updates the value of the named data parameter for the specified person. Returns `400 data_not_found` if the parameter does not exist, or `400 read_only_name` if the parameter name is read-only. Returns `400 person_not_found` if the person is not accessible.\n\nFields omitted from the body are left unchanged — you do not need to send the whole resource.",
               "type": "text/plain"
             },
             "url": {
@@ -15345,6 +15912,43 @@
             {
               "id": "2f9a11b2-5fb1-467e-bdac-1f56fd474879",
               "name": "data_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "data", ":name"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"scope\": \"CLIENT\",\n  \"value\": {}\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a3f8442f-512c-450f-bba9-47f4a2267715",
+              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id", "data", ":name"],
@@ -15491,8 +16095,82 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "1df6b703-3956-4b48-aa08-f90ef9b9ecae",
-              "name": "Person was not found or is not accessible to the calling client.",
+              "id": "110b495c-e0a3-4658-8d69-b03052527d9c",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "data", ":name"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"scope\": \"CLIENT\",\n  \"value\": {}\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3a6ffdd2-33b9-4a46-a9b5-82446240e41e",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "data", ":name"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"scope\": \"CLIENT\",\n  \"value\": {}\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "2ec6ca64-d44a-4ff5-a4b0-3c13720d17f9",
+              "name": "missing_access_token",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id", "data", ":name"],
@@ -15611,7 +16289,7 @@
           "request": {
             "name": "Delete a person data parameter",
             "description": {
-              "content": "Permanently deletes the named data parameter for the specified person. Returns `400 data_not_found` if the parameter does not exist. Returns `403 person_not_found` if the person is not accessible.",
+              "content": "Permanently deletes the named data parameter for the specified person. Returns `400 data_not_found` if the parameter does not exist. Returns `400 person_not_found` if the person is not accessible.",
               "type": "text/plain"
             },
             "url": {
@@ -15678,8 +16356,38 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "10f234ef-3c0e-46bf-b695-14d243dcf9d3",
-              "name": "Person data entry was not found. The supplied name does not match any data parameter for the given person.",
+              "id": "0dee21f4-dff3-4cbf-b973-727e3471dd36",
+              "name": "data_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "data", ":name"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "2c650d34-2e68-4445-a8a5-7b198a38e4d1",
+              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id", "data", ":name"],
@@ -15768,8 +16476,68 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "03738d83-3854-4d66-829f-3a5260335b15",
-              "name": "Person was not found or is not accessible to the calling client.",
+              "id": "bc6e5604-a676-4d6f-a8e7-b21bd9e05410",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "data", ":name"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "85ff1ddf-4738-47ab-9ea5-0d242d3fd4a7",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "data", ":name"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "19fe6a02-5d71-42d6-87b4-fe4a6a4eb937",
+              "name": "missing_access_token",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id", "data", ":name"],
@@ -16044,6 +16812,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "b6ab6f6e-4c93-4bdf-b45a-bb21690e5342",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "device-history"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "cec2a0e7-1891-4d63-9a36-2b44870d6ef4",
               "name": "Unauthorized",
               "originalRequest": {
@@ -16166,36 +16964,6 @@
             {
               "id": "1b2a9c0b-7ca0-4daa-a947-a2617e7b8764",
               "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": ["v5", "persons", ":person_id", "device-history"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "b6ab6f6e-4c93-4bdf-b45a-bb21690e5342",
-              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id", "device-history"],
@@ -16470,6 +17238,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "f1179ba9-9e2e-4b59-bfc2-a99844a965c6",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "identity-history"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "d7a8a5f2-fe80-4f9c-8601-599291cd1239",
               "name": "Unauthorized",
               "originalRequest": {
@@ -16592,36 +17390,6 @@
             {
               "id": "81e05bbb-4d30-4da8-9bcc-4ee41fbce38a",
               "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": ["v5", "persons", ":person_id", "identity-history"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "f1179ba9-9e2e-4b59-bfc2-a99844a965c6",
-              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id", "identity-history"],
@@ -17352,6 +18120,103 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "dfafffea-d288-4880-b5ea-4364c493df45",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "journeys"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "ids",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "names",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "programs",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "campaign_ids",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "containers",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "data_keys",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "data_values",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "offset",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "limit",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "key_names",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "key_values",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "9f469fd6-ea14-4b80-ad7a-e5c434d14393",
               "name": "value_does_not_follow_pattern",
               "originalRequest": {
@@ -17934,103 +18799,6 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "dfafffea-d288-4880-b5ea-4364c493df45",
-              "name": "person_not_found",
-              "originalRequest": {
-                "url": {
-                  "path": ["v5", "persons", ":person_id", "journeys"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "ids",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "names",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "programs",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "campaign_ids",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "containers",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "data_keys",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "data_values",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "offset",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "limit",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "key_names",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "key_values",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
               "id": "20e73371-73a3-42ae-aaf5-08619e79aa29",
               "name": "Unsupported Media Type",
               "originalRequest": {
@@ -18493,6 +19261,42 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "c965381f-6a60-4c08-a3d6-66142d87732f",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v5",
+                    "persons",
+                    ":person_id",
+                    "journeys",
+                    ":journey_id"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "b48db846-8cdf-4bd4-bf7e-93ff4d4059b4",
               "name": "Unauthorized",
               "originalRequest": {
@@ -18639,42 +19443,6 @@
             {
               "id": "aea4a184-1856-41bf-802f-d1281cb9b064",
               "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "v5",
-                    "persons",
-                    ":person_id",
-                    "journeys",
-                    ":journey_id"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "c965381f-6a60-4c08-a3d6-66142d87732f",
-              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -19087,6 +19855,55 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "909006ca-bc6a-402e-aa60-2dfd047dec4b",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "locations"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "countries",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "offset",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "98a2d2fd-dbfe-46d8-a733-5371d7961b92",
               "name": "Unauthorized",
               "originalRequest": {
@@ -19285,55 +20102,6 @@
             {
               "id": "054cfd5a-0c85-4166-9199-ade2a65568f6",
               "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": ["v5", "persons", ":person_id", "locations"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "countries",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "offset",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "limit",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "909006ca-bc6a-402e-aa60-2dfd047dec4b",
-              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id", "locations"],
@@ -19882,6 +20650,61 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "c3d29586-8664-4310-9cc0-23e6b9db4e70",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "memberships"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "audience_ids",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "audience_names",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "offset",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "1279462b-629e-4974-aeb4-f82f8e505e26",
               "name": "Unauthorized",
               "originalRequest": {
@@ -20104,61 +20927,6 @@
             {
               "id": "39cc85d0-f805-4cda-888d-4e6a7f2586e5",
               "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": ["v5", "persons", ":person_id", "memberships"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "audience_ids",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "audience_names",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "offset",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "limit",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "c3d29586-8664-4310-9cc0-23e6b9db4e70",
-              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id", "memberships"],
@@ -20663,6 +21431,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "3cb54174-cb7d-43cd-a86b-bdb9cf8f294f",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "memberships"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"audience_id\": \"audience_id\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "fc77d111-8d69-4541-aae4-2f35d36e9dc3",
               "name": "person_not_identified",
               "originalRequest": {
@@ -20850,43 +21655,6 @@
             {
               "id": "4a7a408a-e03b-4796-83c8-4547e2e66f96",
               "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": ["v5", "persons", ":person_id", "memberships"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Content-Type", "value": "<string>" },
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "POST",
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n  \"audience_id\": \"audience_id\"\n}",
-                  "options": {
-                    "raw": { "headerFamily": "json", "language": "json" }
-                  }
-                }
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "3cb54174-cb7d-43cd-a86b-bdb9cf8f294f",
-              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id", "memberships"],
@@ -21717,6 +22485,103 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "eb76de08-f062-4c85-9f31-b89ccb94f7dd",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "relationships"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "my_roles",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "containers",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "programs",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "campaign_ids",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "data_keys",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "data_values",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "exclude_anonymous",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "include_duplicate_identities",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "include_self_referrals",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "offset",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "89b360a3-11bd-4514-8139-b80cfd3c9515",
               "name": "Unauthorized",
               "originalRequest": {
@@ -22107,103 +22972,6 @@
             {
               "id": "4bd2c1d9-9078-4e5c-8242-337564e9a275",
               "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": ["v5", "persons", ":person_id", "relationships"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "my_roles",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "containers",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "programs",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "campaign_ids",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "data_keys",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "data_values",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "exclude_anonymous",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "include_duplicate_identities",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "include_self_referrals",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "offset",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "limit",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "eb76de08-f062-4c85-9f31-b89ccb94f7dd",
-              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id", "relationships"],
@@ -23177,6 +23945,109 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "8e666100-172a-422e-819d-daf301608fdb",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "rewards"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "programs",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "campaign_ids",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "containers",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "data_keys",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "data_values",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "reward_types",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "reward_states",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "offset",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "limit",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "journey_names",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "journey_key_names",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "journey_key_values",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "1e6325e0-3a83-41de-95fb-0a7c9134a929",
               "name": "value_does_not_follow_pattern",
               "originalRequest": {
@@ -23795,109 +24666,6 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "8e666100-172a-422e-819d-daf301608fdb",
-              "name": "person_not_found",
-              "originalRequest": {
-                "url": {
-                  "path": ["v5", "persons", ":person_id", "rewards"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "programs",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "campaign_ids",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "containers",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "data_keys",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "data_values",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "reward_types",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "reward_states",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "offset",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "limit",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "journey_names",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "journey_key_names",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "journey_key_values",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
               "id": "8d8489d1-adc8-4bc0-858f-cbd55059981b",
               "name": "Unsupported Media Type",
               "originalRequest": {
@@ -24330,6 +25098,42 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "06606a81-1a4c-47d4-bc9b-d946352f8ed6",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v5",
+                    "persons",
+                    ":person_id",
+                    "rewards",
+                    ":reward_id"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "af0da543-88b9-48af-9794-5734ca35dc5d",
               "name": "reward_not_found",
               "originalRequest": {
@@ -24512,42 +25316,6 @@
             {
               "id": "c61f0617-b3a4-4d69-84af-21497e30d355",
               "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "v5",
-                    "persons",
-                    ":person_id",
-                    "rewards",
-                    ":reward_id"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "06606a81-1a4c-47d4-bc9b-d946352f8ed6",
-              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -25105,6 +25873,67 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "da16ed52-2dd5-4e2e-a7a6-59e0e81af8b0",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "shareables"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "labels",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "data_keys",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "data_values",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "offset",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "38ebfd55-f08f-4735-9423-3da9027077af",
               "name": "Unauthorized",
               "originalRequest": {
@@ -25351,67 +26180,6 @@
             {
               "id": "97ebb8ff-c6a7-48da-b583-ce8dab9217e7",
               "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": ["v5", "persons", ":person_id", "shareables"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "labels",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "data_keys",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "data_values",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "offset",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "limit",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "da16ed52-2dd5-4e2e-a7a6-59e0e81af8b0",
-              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id", "shareables"],
@@ -26489,6 +27257,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "af80b931-f0f7-47e4-b56e-4e7215d54057",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "shareables"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"code\": \"code\",\n  \"content\": {\n    \"description\": \"description\",\n    \"image_url\": \"image_url\",\n    \"partner_content_id\": \"partner_content_id\",\n    \"title\": \"title\",\n    \"url\": \"url\"\n  },\n  \"data\": {\n    \"data_key\": \"data_key\"\n  },\n  \"key\": \"key\",\n  \"label\": \"label\",\n  \"program_url\": \"program_url\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "317c2bf0-9f0e-4da4-bf3a-390d9ff238a9",
               "name": "person_not_rewardable",
               "originalRequest": {
@@ -26859,43 +27664,6 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "af80b931-f0f7-47e4-b56e-4e7215d54057",
-              "name": "person_not_found",
-              "originalRequest": {
-                "url": {
-                  "path": ["v5", "persons", ":person_id", "shareables"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Content-Type", "value": "<string>" },
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "POST",
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"content\": {\n    \"description\": \"description\",\n    \"image_url\": \"image_url\",\n    \"partner_content_id\": \"partner_content_id\",\n    \"title\": \"title\",\n    \"url\": \"url\"\n  },\n  \"data\": {\n    \"data_key\": \"data_key\"\n  },\n  \"key\": \"key\",\n  \"label\": \"label\",\n  \"program_url\": \"program_url\"\n}",
-                  "options": {
-                    "raw": { "headerFamily": "json", "language": "json" }
-                  }
-                }
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
               "id": "9dbdf197-f3df-44f3-8015-39954c09c583",
               "name": "Unsupported Media Type",
               "originalRequest": {
@@ -27196,6 +27964,42 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "3ad793a8-aab7-461e-970e-25fe4c38c062",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v5",
+                    "persons",
+                    ":person_id",
+                    "shareables",
+                    ":code"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "9d8b84cf-61b8-4359-986c-a87360d82a44",
               "name": "shareable_not_found",
               "originalRequest": {
@@ -27378,42 +28182,6 @@
             {
               "id": "5d421fa1-7252-48d9-b96e-6c8434b64d51",
               "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "v5",
-                    "persons",
-                    ":person_id",
-                    "shareables",
-                    ":code"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "3ad793a8-aab7-461e-970e-25fe4c38c062",
-              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -28564,6 +29332,49 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "7fea9246-f8b2-45a0-8274-9d02e1cea4a4",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v5",
+                    "persons",
+                    ":person_id",
+                    "shareables",
+                    ":code"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"description\",\n    \"image_url\": \"image_url\",\n    \"partner_content_id\": \"partner_content_id\",\n    \"title\": \"title\",\n    \"url\": \"url\"\n  },\n  \"data\": {\n    \"data_key\": \"data_key\"\n  },\n  \"key\": \"key\",\n  \"label\": \"label\",\n  \"program_url\": \"program_url\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "79315959-061b-4c2e-8077-a85c280b43f5",
               "name": "person_not_rewardable",
               "originalRequest": {
@@ -28996,49 +29807,6 @@
             {
               "id": "f33a038a-d9a8-4843-b3fe-a44d86afaa19",
               "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "v5",
-                    "persons",
-                    ":person_id",
-                    "shareables",
-                    ":code"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Content-Type", "value": "<string>" },
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "PUT",
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"description\",\n    \"image_url\": \"image_url\",\n    \"partner_content_id\": \"partner_content_id\",\n    \"title\": \"title\",\n    \"url\": \"url\"\n  },\n  \"data\": {\n    \"data_key\": \"data_key\"\n  },\n  \"key\": \"key\",\n  \"label\": \"label\",\n  \"program_url\": \"program_url\"\n}",
-                  "options": {
-                    "raw": { "headerFamily": "json", "language": "json" }
-                  }
-                }
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "7fea9246-f8b2-45a0-8274-9d02e1cea4a4",
-              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -29786,6 +30554,79 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "b7ae2092-c63f-4c8e-b344-6891c233d8f6",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "shares"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "programs",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "campaign_ids",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "partner_ids",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "data_keys",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "data_values",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "offset",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "limit",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "8a133d26-4038-487f-84e6-f426e932dfa8",
               "name": "Unauthorized",
               "originalRequest": {
@@ -30080,79 +30921,6 @@
             {
               "id": "b7af642d-7cf7-44ab-8153-3f9fe8502ba7",
               "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": ["v5", "persons", ":person_id", "shares"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "programs",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "campaign_ids",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "partner_ids",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "data_keys",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "data_values",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "offset",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "limit",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "b7ae2092-c63f-4c8e-b344-6891c233d8f6",
-              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id", "shares"],
@@ -30596,6 +31364,42 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "65789a52-31a6-4f5f-af35-5b1570539861",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v5",
+                    "persons",
+                    ":person_id",
+                    "shares",
+                    ":share_id"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "3fbc2734-1430-488e-8cd8-95fbf8a70d5d",
               "name": "share_not_found",
               "originalRequest": {
@@ -30778,42 +31582,6 @@
             {
               "id": "36557111-302e-4ec5-a9a5-5ae72c2618c4",
               "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "v5",
-                    "persons",
-                    ":person_id",
-                    "shares",
-                    ":share_id"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "65789a52-31a6-4f5f-af35-5b1570539861",
-              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -31569,6 +32337,121 @@
             {
               "id": "216c2ed0-370b-4498-b55a-b8e2c3f8f237",
               "name": "missing_request_body",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "steps"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "names",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "containers",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "campaign_ids",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "programs",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "journey_names",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "is_primary",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "data_keys",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "event_ids",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "cause_event_ids",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "root_event_ids",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "offset",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "limit",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "journey_key_names",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "journey_key_values",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "19f49b74-ade2-428f-be7d-0f2c6d9a8889",
+              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id", "steps"],
@@ -32602,121 +33485,6 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "19f49b74-ade2-428f-be7d-0f2c6d9a8889",
-              "name": "person_not_found",
-              "originalRequest": {
-                "url": {
-                  "path": ["v5", "persons", ":person_id", "steps"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "names",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "containers",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "campaign_ids",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "programs",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "journey_names",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "is_primary",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "data_keys",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "event_ids",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "cause_event_ids",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "root_event_ids",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "offset",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "limit",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "journey_key_names",
-                      "value": "<string>"
-                    },
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "journey_key_values",
-                      "value": "<string>"
-                    }
-                  ],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
               "id": "726734c5-c1e8-447c-8cde-0f2f0ebab04c",
               "name": "Unsupported Media Type",
               "originalRequest": {
@@ -33362,6 +34130,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "d9a1ae64-36b7-45a3-af38-8916ffd9e711",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v5", "persons", ":person_id", "forward"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"forward_to_profile_id\": \"forward_to_profile_id\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "eb113c2e-a5bf-459b-acd5-1cb9230d1265",
               "name": "Unauthorized",
               "originalRequest": {
@@ -33512,43 +34317,6 @@
             {
               "id": "5d51f737-6b0d-40df-b0ed-b286b93dc057",
               "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": ["v5", "persons", ":person_id", "forward"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Content-Type", "value": "<string>" },
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "POST",
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n  \"forward_to_profile_id\": \"forward_to_profile_id\"\n}",
-                  "options": {
-                    "raw": { "headerFamily": "json", "language": "json" }
-                  }
-                }
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "d9a1ae64-36b7-45a3-af38-8916ffd9e711",
-              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": ["v5", "persons", ":person_id", "forward"],
@@ -33962,6 +34730,42 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "3411f9da-a5c6-45d0-9e4b-af2f9f516aaa",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v5",
+                    "persons",
+                    ":person_id",
+                    "memberships",
+                    ":audience_id"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "39722696-5c17-4427-8108-3e54270db544",
               "name": "person_not_identified",
               "originalRequest": {
@@ -34144,42 +34948,6 @@
             {
               "id": "4b3096fc-5794-4273-b89a-bed6e97304ec",
               "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "v5",
-                    "persons",
-                    ":person_id",
-                    "memberships",
-                    ":audience_id"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "DELETE",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "3411f9da-a5c6-45d0-9e4b-af2f9f516aaa",
-              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -39948,6 +40716,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "013564ed-447c-4b39-8071-7a3049576522",
+              "name": "person_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "rewards", ":reward_id"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "f32d1ac0-a536-4a0b-aee8-1aaaaa90a16c",
               "name": "retry_claimed_reward_not_allowed",
               "originalRequest": {
@@ -40394,43 +41199,6 @@
             {
               "id": "b98dae45-6857-4de3-abad-b1c289acf8a5",
               "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": ["v2", "rewards", ":reward_id"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Content-Type", "value": "<string>" },
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "PUT",
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n  \"expires_at\": \"2025-10-24T02:00:00-07:00\",\n  \"sandbox\": \"sandbox\"\n}",
-                  "options": {
-                    "raw": { "headerFamily": "json", "language": "json" }
-                  }
-                }
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "013564ed-447c-4b39-8071-7a3049576522",
-              "name": "person_not_found",
               "originalRequest": {
                 "url": {
                   "path": ["v2", "rewards", ":reward_id"],
