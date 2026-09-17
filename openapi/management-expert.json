@@ -681,6 +681,106 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
+      "campaign_controller_action_email_v2_preview_action_not_built" : {
+        "summary" : "campaign_controller_action_email_v2_preview_action_not_built",
+        "value" : {
+          "code" : "campaign_controller_action_email_v2_preview_action_not_built",
+          "http_status_code" : 400,
+          "message" : "The action has no built version to preview in this sandbox",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "campaign_controller_action_email_v2_preview_client_domain_id_not_found" : {
+        "summary" : "campaign_controller_action_email_v2_preview_client_domain_id_not_found",
+        "value" : {
+          "code" : "campaign_controller_action_email_v2_preview_client_domain_id_not_found",
+          "http_status_code" : 400,
+          "message" : "Client domain not found",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "campaign_controller_action_email_v2_preview_client_domain_not_found" : {
+        "summary" : "campaign_controller_action_email_v2_preview_client_domain_not_found",
+        "value" : {
+          "code" : "campaign_controller_action_email_v2_preview_client_domain_not_found",
+          "http_status_code" : 400,
+          "message" : "The client has no active domain to build the email with",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "campaign_controller_action_email_v2_preview_data_value_missing" : {
+        "summary" : "campaign_controller_action_email_v2_preview_data_value_missing",
+        "value" : {
+          "code" : "campaign_controller_action_email_v2_preview_data_value_missing",
+          "http_status_code" : 400,
+          "message" : "A data entry has no value",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "campaign_controller_action_email_v2_preview_evaluation_failed" : {
+        "summary" : "campaign_controller_action_email_v2_preview_evaluation_failed",
+        "value" : {
+          "code" : "campaign_controller_action_email_v2_preview_evaluation_failed",
+          "http_status_code" : 400,
+          "message" : "An email expression could not be evaluated",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "campaign_controller_action_email_v2_preview_person_id_missing" : {
+        "summary" : "campaign_controller_action_email_v2_preview_person_id_missing",
+        "value" : {
+          "code" : "campaign_controller_action_email_v2_preview_person_id_missing",
+          "http_status_code" : 400,
+          "message" : "Person id is required",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "campaign_controller_action_email_v2_preview_person_not_found" : {
+        "summary" : "campaign_controller_action_email_v2_preview_person_not_found",
+        "value" : {
+          "code" : "campaign_controller_action_email_v2_preview_person_not_found",
+          "http_status_code" : 400,
+          "message" : "Person not found",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "campaign_controller_action_email_v2_preview_sandbox_not_found" : {
+        "summary" : "campaign_controller_action_email_v2_preview_sandbox_not_found",
+        "value" : {
+          "code" : "campaign_controller_action_email_v2_preview_sandbox_not_found",
+          "http_status_code" : 400,
+          "message" : "Sandbox not found",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "campaign_controller_action_email_v2_preview_variant_missing" : {
+        "summary" : "campaign_controller_action_email_v2_preview_variant_missing",
+        "value" : {
+          "code" : "campaign_controller_action_email_v2_preview_variant_missing",
+          "http_status_code" : 400,
+          "message" : "Variant is required",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "campaign_controller_action_email_v2_preview_variant_not_found" : {
+        "summary" : "campaign_controller_action_email_v2_preview_variant_not_found",
+        "value" : {
+          "code" : "campaign_controller_action_email_v2_preview_variant_not_found",
+          "http_status_code" : 400,
+          "message" : "Variant is not defined on the campaign",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
       "campaign_controller_action_email_v2_subject_length_out_of_range" : {
         "summary" : "campaign_controller_action_email_v2_subject_length_out_of_range",
         "value" : {
@@ -10270,6 +10370,94 @@
             "$ref" : "#/components/schemas/ToInCampaignControllerActionEmailV2CreateRequest"
           }
         },
+        "type" : "object"
+      },
+      "CampaignControllerActionEmailV2PreviewRequest" : {
+        "properties" : {
+          "client_domain_id" : {
+            "description" : "Client domain to build the email against. A real send uses the domain the triggering event arrived on, so name that domain to see the links it produces. Defaults to the client's default domain.",
+            "nullable" : true,
+            "type" : "string"
+          },
+          "data" : {
+            "additionalProperties" : {
+              "description" : "Values the engine would have resolved from the action data map, keyed by data entry name. Available to the email expressions through the context data map. A preview does not evaluate the action data expressions, so an entry left out reads as absent. Defaults to no data.",
+              "type" : "object"
+            },
+            "description" : "Values the engine would have resolved from the action data map, keyed by data entry name. Available to the email expressions through the context data map. A preview does not evaluate the action data expressions, so an entry left out reads as absent. Defaults to no data.",
+            "nullable" : true,
+            "type" : "object"
+          },
+          "person_id" : {
+            "description" : "Id of the person the email is built for. The person supplies the values that the email expressions read, such as the recipient address and the first name.",
+            "type" : "string"
+          },
+          "sandbox" : {
+            "description" : "Sandbox to read the campaign from. Defaults to the campaign sandbox of the campaign being previewed, which holds the latest saved version.",
+            "nullable" : true,
+            "type" : "string"
+          },
+          "variant" : {
+            "description" : "Campaign variant to build the email with. A real send evaluates the variant the campaign selected for the person, so name the variant you want to see.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "person_id", "variant" ],
+        "type" : "object"
+      },
+      "CampaignControllerActionEmailV2PreviewResponse" : {
+        "properties" : {
+          "bcc" : {
+            "description" : "Addresses the email would be blind copied to.",
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "body" : {
+            "description" : "HTML body the email would be sent with.",
+            "type" : "string"
+          },
+          "cc" : {
+            "description" : "Addresses the email would be copied to.",
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "do_not_send_reason" : {
+            "description" : "Reason the email message itself gives for not sending, as set by the email message expression of the action. Absent when that expression sets no reason. A send applies opt-out and suppression rules of its own, which a preview does not evaluate, so an absent reason does not mean the person receives the email.",
+            "nullable" : true,
+            "type" : "string"
+          },
+          "from" : {
+            "description" : "Address the email would be sent from. Absent when the action leaves the from address unset.",
+            "nullable" : true,
+            "type" : "string"
+          },
+          "headers" : {
+            "additionalProperties" : {
+              "description" : "Custom email headers the email would be sent with, keyed by header name.",
+              "type" : "string"
+            },
+            "description" : "Custom email headers the email would be sent with, keyed by header name.",
+            "type" : "object"
+          },
+          "reply_to" : {
+            "description" : "Address replies would go to. Absent when the action leaves the reply-to address unset.",
+            "nullable" : true,
+            "type" : "string"
+          },
+          "subject" : {
+            "description" : "Subject line the email would be sent with.",
+            "type" : "string"
+          },
+          "to" : {
+            "description" : "Address the email would be sent to.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "bcc", "body", "cc", "do_not_send_reason", "from", "headers", "reply_to", "subject", "to" ],
         "type" : "object"
       },
       "CampaignControllerActionEmailV2Response" : {
@@ -132970,6 +133158,241 @@
           }
         },
         "summary" : "Create a webhook action",
+        "tags" : [ "Campaign Controllers Actions" ],
+        "x-extole-bundle" : "management-expert",
+        "x-extole-visibility" : "expert"
+      }
+    },
+    "/v2/campaigns/{campaignId}/controllers/{controllerId}/actions/emails-v2/{actionId}/preview" : {
+      "post" : {
+        "description" : "Builds the email the action would send for the given person, without sending it. Evaluates the same expressions the send path evaluates, so the returned subject, body and addresses are what those expressions produce for that person. Reads the action from the campaign sandbox, so an unpublished change is previewable as soon as the campaign builds. A send then applies steps a preview does not: it drops an email whose subject, body, to or from address is blank, it applies opt-out, and it rewrites the from address when the domain is not one the client may send from. So a preview shows the evaluated message, not the decision to deliver it.",
+        "parameters" : [ {
+          "in" : "path",
+          "name" : "campaignId",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "in" : "path",
+          "name" : "controllerId",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "in" : "path",
+          "name" : "actionId",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "example" : {
+                "client_domain_id" : "client_domain_id",
+                "data" : {
+                  "data_key" : { }
+                },
+                "person_id" : "person_id",
+                "sandbox" : "sandbox",
+                "variant" : "variant"
+              },
+              "schema" : {
+                "$ref" : "#/components/schemas/CampaignControllerActionEmailV2PreviewRequest"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/CampaignControllerActionEmailV2PreviewResponse"
+                }
+              }
+            },
+            "description" : "Successful response"
+          },
+          "400" : {
+            "content" : {
+              "application/json" : {
+                "examples" : {
+                  "binding_error" : {
+                    "$ref" : "#/components/examples/binding_error"
+                  },
+                  "campaign_concurrent_update" : {
+                    "$ref" : "#/components/examples/campaign_concurrent_update"
+                  },
+                  "campaign_controller_action_email_v2_preview_action_not_built" : {
+                    "$ref" : "#/components/examples/campaign_controller_action_email_v2_preview_action_not_built"
+                  },
+                  "campaign_controller_action_email_v2_preview_client_domain_id_not_found" : {
+                    "$ref" : "#/components/examples/campaign_controller_action_email_v2_preview_client_domain_id_not_found"
+                  },
+                  "campaign_controller_action_email_v2_preview_client_domain_not_found" : {
+                    "$ref" : "#/components/examples/campaign_controller_action_email_v2_preview_client_domain_not_found"
+                  },
+                  "campaign_controller_action_email_v2_preview_data_value_missing" : {
+                    "$ref" : "#/components/examples/campaign_controller_action_email_v2_preview_data_value_missing"
+                  },
+                  "campaign_controller_action_email_v2_preview_evaluation_failed" : {
+                    "$ref" : "#/components/examples/campaign_controller_action_email_v2_preview_evaluation_failed"
+                  },
+                  "campaign_controller_action_email_v2_preview_person_id_missing" : {
+                    "$ref" : "#/components/examples/campaign_controller_action_email_v2_preview_person_id_missing"
+                  },
+                  "campaign_controller_action_email_v2_preview_person_not_found" : {
+                    "$ref" : "#/components/examples/campaign_controller_action_email_v2_preview_person_not_found"
+                  },
+                  "campaign_controller_action_email_v2_preview_sandbox_not_found" : {
+                    "$ref" : "#/components/examples/campaign_controller_action_email_v2_preview_sandbox_not_found"
+                  },
+                  "campaign_controller_action_email_v2_preview_variant_missing" : {
+                    "$ref" : "#/components/examples/campaign_controller_action_email_v2_preview_variant_missing"
+                  },
+                  "campaign_controller_action_email_v2_preview_variant_not_found" : {
+                    "$ref" : "#/components/examples/campaign_controller_action_email_v2_preview_variant_not_found"
+                  },
+                  "campaign_has_pending_changes" : {
+                    "$ref" : "#/components/examples/campaign_has_pending_changes"
+                  },
+                  "campaign_locked" : {
+                    "$ref" : "#/components/examples/campaign_locked"
+                  },
+                  "campaign_version_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "date_invalid" : {
+                    "$ref" : "#/components/examples/date_invalid"
+                  },
+                  "invalid_campaign_controller_id" : {
+                    "$ref" : "#/components/examples/invalid_campaign_controller_id"
+                  },
+                  "invalid_campaign_id" : {
+                    "$ref" : "#/components/examples/invalid_campaign_id"
+                  },
+                  "invalid_campaign_state" : {
+                    "$ref" : "#/components/examples/invalid_campaign_state"
+                  },
+                  "invalid_campaign_version" : {
+                    "$ref" : "#/components/examples/invalid_campaign_version"
+                  },
+                  "invalid_controller_action_id" : {
+                    "$ref" : "#/components/examples/invalid_controller_action_id"
+                  },
+                  "invalid_controller_trigger_id" : {
+                    "$ref" : "#/components/examples/invalid_controller_trigger_id"
+                  },
+                  "invalid_json" : {
+                    "$ref" : "#/components/examples/invalid_json"
+                  },
+                  "invalid_parameter" : {
+                    "$ref" : "#/components/examples/invalid_parameter"
+                  },
+                  "lock_missing_lock_types" : {
+                    "$ref" : "#/components/examples/lock_missing_lock_types"
+                  },
+                  "missing_request_body" : {
+                    "$ref" : "#/components/examples/missing_request_body"
+                  },
+                  "unlock_missing_lock_types" : {
+                    "$ref" : "#/components/examples/unlock_missing_lock_types"
+                  }
+                },
+                "schema" : {
+                  "$ref" : "#/components/schemas/RestExceptionResponse"
+                }
+              }
+            },
+            "description" : "Bad Request"
+          },
+          "401" : {
+            "content" : {
+              "application/json" : {
+                "examples" : {
+                  "method_unauthorized" : {
+                    "$ref" : "#/components/examples/method_unauthorized"
+                  }
+                },
+                "schema" : {
+                  "$ref" : "#/components/schemas/RestExceptionResponse"
+                }
+              }
+            },
+            "description" : "Unauthorized"
+          },
+          "402" : {
+            "content" : {
+              "application/json" : {
+                "examples" : {
+                  "payment_required" : {
+                    "$ref" : "#/components/examples/payment_required"
+                  }
+                },
+                "schema" : {
+                  "$ref" : "#/components/schemas/RestExceptionResponse"
+                }
+              }
+            },
+            "description" : "Payment Required"
+          },
+          "403" : {
+            "content" : {
+              "application/json" : {
+                "examples" : {
+                  "access_denied" : {
+                    "$ref" : "#/components/examples/access_denied"
+                  },
+                  "method_unauthorized" : {
+                    "$ref" : "#/components/examples/method_unauthorized"
+                  },
+                  "missing_access_token" : {
+                    "$ref" : "#/components/examples/missing_access_token"
+                  }
+                },
+                "schema" : {
+                  "$ref" : "#/components/schemas/RestExceptionResponse"
+                }
+              }
+            },
+            "description" : "Forbidden"
+          },
+          "415" : {
+            "content" : {
+              "application/json" : {
+                "examples" : {
+                  "unsupported_media_type" : {
+                    "$ref" : "#/components/examples/unsupported_media_type"
+                  }
+                },
+                "schema" : {
+                  "$ref" : "#/components/schemas/RestExceptionResponse"
+                }
+              }
+            },
+            "description" : "Unsupported Media Type"
+          },
+          "429" : {
+            "content" : {
+              "application/json" : {
+                "examples" : {
+                  "too_many_requests" : {
+                    "$ref" : "#/components/examples/too_many_requests"
+                  }
+                },
+                "schema" : {
+                  "$ref" : "#/components/schemas/RestExceptionResponse"
+                }
+              }
+            },
+            "description" : "Too Many Requests"
+          }
+        },
+        "summary" : "Preview an email v2 action",
         "tags" : [ "Campaign Controllers Actions" ],
         "x-extole-bundle" : "management-expert",
         "x-extole-visibility" : "expert"
