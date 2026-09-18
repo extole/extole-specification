@@ -18,13 +18,13 @@ export interface DateService {
     toClientTimezone(dateTime: string): string;
     /**
      * @throws {InvalidDateException}
+     */
+    toClientTimezone(dateTime: string, sameLocal: boolean): string;
+    /**
+     * @throws {InvalidDateException}
      * @throws {InvalidTimezoneException}
      */
     toClientTimezone(dateTime: string, format: string): string;
-    /**
-     * @throws {InvalidDateException}
-     */
-    toClientTimezone(dateTime: string, sameLocal: boolean): string;
     /**
      * @throws {InvalidDateException}
      * @throws {InvalidTimezoneException}
@@ -34,10 +34,10 @@ export interface DateService {
      * @throws {InvalidDateException}
      * @throws {InvalidTimezoneException}
      */
-    toTimezone(dateTime: string, format: string, timezone: string): string;
+    toTimezone(dateTime: string, timezone: string, sameLocal: boolean): string;
     /**
      * @throws {InvalidDateException}
      * @throws {InvalidTimezoneException}
      */
-    toTimezone(dateTime: string, timezone: string, sameLocal: boolean): string;
+    toTimezone(dateTime: string, format: string, timezone: string): string;
 }
