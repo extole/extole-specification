@@ -1,3 +1,4 @@
+import type { EmailMessageBuilder } from "./EmailMessageBuilder";
 import type { NativeList } from "../../../../../native/collection/NativeList";
 import type { NativeMap } from "../../../../../native/collection/NativeMap";
 
@@ -13,5 +14,6 @@ export interface EmailMessage {
     replyTo(): string | null;
     subject(): string;
     to(): string;
+    toBuilder(): EmailMessageBuilder;
     toString(): string;
 }
