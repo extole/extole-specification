@@ -731,16 +731,6 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
-      "campaign_controller_action_email_v2_preview_person_id_missing" : {
-        "summary" : "campaign_controller_action_email_v2_preview_person_id_missing",
-        "value" : {
-          "code" : "campaign_controller_action_email_v2_preview_person_id_missing",
-          "http_status_code" : 400,
-          "message" : "Person id is required",
-          "parameters" : { },
-          "unique_id" : "00000000-0000-0000-0000-000000000000"
-        }
-      },
       "campaign_controller_action_email_v2_preview_person_not_found" : {
         "summary" : "campaign_controller_action_email_v2_preview_person_not_found",
         "value" : {
@@ -757,16 +747,6 @@
           "code" : "campaign_controller_action_email_v2_preview_sandbox_not_found",
           "http_status_code" : 400,
           "message" : "Sandbox not found",
-          "parameters" : { },
-          "unique_id" : "00000000-0000-0000-0000-000000000000"
-        }
-      },
-      "campaign_controller_action_email_v2_preview_variant_missing" : {
-        "summary" : "campaign_controller_action_email_v2_preview_variant_missing",
-        "value" : {
-          "code" : "campaign_controller_action_email_v2_preview_variant_missing",
-          "http_status_code" : 400,
-          "message" : "Variant is required",
           "parameters" : { },
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
@@ -10397,7 +10377,8 @@
             "type" : "object"
           },
           "person_id" : {
-            "description" : "Id of the person the email is built for. The person supplies the values that the email expressions read, such as the recipient address and the first name.",
+            "description" : "Id of the person the email is built for. The person supplies the values that the email expressions read, such as the recipient address and the first name. Omit it to build the email for the preview person, whose email is preview@example.com and whose first name is preview_first_name. Extole creates that person on the first preview and reuses it after that, so an action is previewable before anyone has entered the journey.",
+            "nullable" : true,
             "type" : "string"
           },
           "sandbox" : {
@@ -10406,11 +10387,11 @@
             "type" : "string"
           },
           "variant" : {
-            "description" : "Campaign variant to build the email with. A real send evaluates the variant the campaign selected for the person, so name the variant you want to see.",
+            "description" : "Campaign variant to build the email with. A real send evaluates the variant the campaign selected for the person, so name the variant you want to see. Defaults to the first variant the campaign declares, or to en when the campaign declares none.",
+            "nullable" : true,
             "type" : "string"
           }
         },
-        "required" : [ "person_id", "variant" ],
         "type" : "object"
       },
       "CampaignControllerActionEmailV2PreviewResponse" : {
@@ -133362,17 +133343,11 @@
                   "campaign_controller_action_email_v2_preview_evaluation_failed" : {
                     "$ref" : "#/components/examples/campaign_controller_action_email_v2_preview_evaluation_failed"
                   },
-                  "campaign_controller_action_email_v2_preview_person_id_missing" : {
-                    "$ref" : "#/components/examples/campaign_controller_action_email_v2_preview_person_id_missing"
-                  },
                   "campaign_controller_action_email_v2_preview_person_not_found" : {
                     "$ref" : "#/components/examples/campaign_controller_action_email_v2_preview_person_not_found"
                   },
                   "campaign_controller_action_email_v2_preview_sandbox_not_found" : {
                     "$ref" : "#/components/examples/campaign_controller_action_email_v2_preview_sandbox_not_found"
-                  },
-                  "campaign_controller_action_email_v2_preview_variant_missing" : {
-                    "$ref" : "#/components/examples/campaign_controller_action_email_v2_preview_variant_missing"
                   },
                   "campaign_controller_action_email_v2_preview_variant_not_found" : {
                     "$ref" : "#/components/examples/campaign_controller_action_email_v2_preview_variant_not_found"
