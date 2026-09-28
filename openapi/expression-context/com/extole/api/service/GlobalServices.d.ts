@@ -17,6 +17,7 @@ import type { PersonService } from "./person/PersonService";
 import type { PublicClientDomainService } from "./PublicClientDomainService";
 import type { RandomService } from "./RandomService";
 import type { RewardSupplierService } from "./RewardSupplierService";
+import type { SecureEmailService } from "./SecureEmailService";
 import type { ShareService } from "./ShareService";
 import type { ShareableService } from "./ShareableService";
 import type { StringService } from "./StringService";
@@ -44,6 +45,7 @@ export interface GlobalServices {
     getPublicClientDomainService(): PublicClientDomainService;
     getRandomService(): RandomService;
     getRewardSupplierService(): RewardSupplierService;
+    getSecureEmailService(): SecureEmailService;
     getShareService(): ShareService;
     getShareableService(): ShareableService;
     getStringService(): StringService;
