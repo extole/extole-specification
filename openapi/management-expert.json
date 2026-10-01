@@ -1591,12 +1591,12 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
-      "campaign_controller_trigger_event_targeting_unsupported_event_type" : {
-        "summary" : "campaign_controller_trigger_event_targeting_unsupported_event_type",
+      "campaign_controller_trigger_event_targeting_unsupported_targeting_attribute" : {
+        "summary" : "campaign_controller_trigger_event_targeting_unsupported_targeting_attribute",
         "value" : {
-          "code" : "campaign_controller_trigger_event_targeting_unsupported_event_type",
+          "code" : "campaign_controller_trigger_event_targeting_unsupported_targeting_attribute",
           "http_status_code" : 400,
-          "message" : "Event type is not supported for event targeting",
+          "message" : "Targeting attribute is not supported for the event type",
           "parameters" : { },
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
@@ -42438,7 +42438,7 @@
         } ]
       },
       "TargetingAttributesInCampaignControllerTriggerEventTargetingCreateRequest" : {
-        "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL. Buildtime expressions use [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
+        "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, INTERNAL, AUDIENCE_MEMBERSHIP_CREATED, AUDIENCE_MEMBERSHIP_UPDATED, and AUDIENCE_MEMBERSHIP_REMOVED. A configuration whose EVENT_TYPE is an audience membership type instead requires AUDIENCE, the id of the audience, accepts APP_TYPE as its only optional key, and does not accept EVENT_NAME, PROGRAM, CAMPAIGN, or JOURNEY. AUDIENCE is not accepted with any other event type. Buildtime expressions use [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
         "externalDocs" : {
           "description" : "ControllerBuildtimeContext",
           "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts"
@@ -42447,10 +42447,10 @@
           "description" : "Static targeting attributes",
           "items" : {
             "additionalProperties" : {
-              "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL.",
+              "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, INTERNAL, AUDIENCE_MEMBERSHIP_CREATED, AUDIENCE_MEMBERSHIP_UPDATED, and AUDIENCE_MEMBERSHIP_REMOVED. A configuration whose EVENT_TYPE is an audience membership type instead requires AUDIENCE, the id of the audience, accepts APP_TYPE as its only optional key, and does not accept EVENT_NAME, PROGRAM, CAMPAIGN, or JOURNEY. AUDIENCE is not accepted with any other event type.",
               "type" : "string"
             },
-            "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL.",
+            "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, INTERNAL, AUDIENCE_MEMBERSHIP_CREATED, AUDIENCE_MEMBERSHIP_UPDATED, and AUDIENCE_MEMBERSHIP_REMOVED. A configuration whose EVENT_TYPE is an audience membership type instead requires AUDIENCE, the id of the audience, accepts APP_TYPE as its only optional key, and does not accept EVENT_NAME, PROGRAM, CAMPAIGN, or JOURNEY. AUDIENCE is not accepted with any other event type.",
             "type" : "object"
           },
           "title" : "Static Value",
@@ -42478,7 +42478,7 @@
         } ]
       },
       "TargetingAttributesInCampaignControllerTriggerEventTargetingResponse" : {
-        "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL. Buildtime expressions use [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
+        "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, INTERNAL, AUDIENCE_MEMBERSHIP_CREATED, AUDIENCE_MEMBERSHIP_UPDATED, and AUDIENCE_MEMBERSHIP_REMOVED. A configuration whose EVENT_TYPE is an audience membership type instead requires AUDIENCE, the id of the audience, accepts APP_TYPE as its only optional key, and does not accept EVENT_NAME, PROGRAM, CAMPAIGN, or JOURNEY. AUDIENCE is not accepted with any other event type. Buildtime expressions use [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
         "externalDocs" : {
           "description" : "ControllerBuildtimeContext",
           "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts"
@@ -42487,10 +42487,10 @@
           "description" : "Literal targeting attributes",
           "items" : {
             "additionalProperties" : {
-              "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL.",
+              "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, INTERNAL, AUDIENCE_MEMBERSHIP_CREATED, AUDIENCE_MEMBERSHIP_UPDATED, and AUDIENCE_MEMBERSHIP_REMOVED. A configuration whose EVENT_TYPE is an audience membership type instead requires AUDIENCE, the id of the audience, accepts APP_TYPE as its only optional key, and does not accept EVENT_NAME, PROGRAM, CAMPAIGN, or JOURNEY. AUDIENCE is not accepted with any other event type.",
               "type" : "string"
             },
-            "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL.",
+            "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, INTERNAL, AUDIENCE_MEMBERSHIP_CREATED, AUDIENCE_MEMBERSHIP_UPDATED, and AUDIENCE_MEMBERSHIP_REMOVED. A configuration whose EVENT_TYPE is an audience membership type instead requires AUDIENCE, the id of the audience, accepts APP_TYPE as its only optional key, and does not accept EVENT_NAME, PROGRAM, CAMPAIGN, or JOURNEY. AUDIENCE is not accepted with any other event type.",
             "type" : "object"
           },
           "title" : "Static Value",
@@ -42518,7 +42518,7 @@
         } ]
       },
       "TargetingAttributesInCampaignControllerTriggerEventTargetingUpdateRequest" : {
-        "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL. Buildtime expressions use [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
+        "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, INTERNAL, AUDIENCE_MEMBERSHIP_CREATED, AUDIENCE_MEMBERSHIP_UPDATED, and AUDIENCE_MEMBERSHIP_REMOVED. A configuration whose EVENT_TYPE is an audience membership type instead requires AUDIENCE, the id of the audience, accepts APP_TYPE as its only optional key, and does not accept EVENT_NAME, PROGRAM, CAMPAIGN, or JOURNEY. AUDIENCE is not accepted with any other event type. Buildtime expressions use [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
         "externalDocs" : {
           "description" : "ControllerBuildtimeContext",
           "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts"
@@ -42527,10 +42527,10 @@
           "description" : "Static targeting attributes",
           "items" : {
             "additionalProperties" : {
-              "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL.",
+              "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, INTERNAL, AUDIENCE_MEMBERSHIP_CREATED, AUDIENCE_MEMBERSHIP_UPDATED, and AUDIENCE_MEMBERSHIP_REMOVED. A configuration whose EVENT_TYPE is an audience membership type instead requires AUDIENCE, the id of the audience, accepts APP_TYPE as its only optional key, and does not accept EVENT_NAME, PROGRAM, CAMPAIGN, or JOURNEY. AUDIENCE is not accepted with any other event type.",
               "type" : "string"
             },
-            "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, and INTERNAL.",
+            "description" : "Buildtime expression resolving to a list of event-targeting attribute configurations, combined with logical OR. Each configuration's required key: EVENT_NAME. Optional keys: EVENT_TYPE, PROGRAM, CAMPAIGN, JOURNEY, and APP_TYPE. When EVENT_TYPE is set, supported values are INPUT, STEP, INTERNAL, AUDIENCE_MEMBERSHIP_CREATED, AUDIENCE_MEMBERSHIP_UPDATED, and AUDIENCE_MEMBERSHIP_REMOVED. A configuration whose EVENT_TYPE is an audience membership type instead requires AUDIENCE, the id of the audience, accepts APP_TYPE as its only optional key, and does not accept EVENT_NAME, PROGRAM, CAMPAIGN, or JOURNEY. AUDIENCE is not accepted with any other event type.",
             "type" : "object"
           },
           "title" : "Static Value",
@@ -86284,8 +86284,8 @@
                   "campaign_controller_trigger_event_targeting_targeting_attributes_empty" : {
                     "$ref" : "#/components/examples/campaign_controller_trigger_event_targeting_targeting_attributes_empty"
                   },
-                  "campaign_controller_trigger_event_targeting_unsupported_event_type" : {
-                    "$ref" : "#/components/examples/campaign_controller_trigger_event_targeting_unsupported_event_type"
+                  "campaign_controller_trigger_event_targeting_unsupported_targeting_attribute" : {
+                    "$ref" : "#/components/examples/campaign_controller_trigger_event_targeting_unsupported_targeting_attribute"
                   },
                   "campaign_controller_trigger_name_invalid" : {
                     "$ref" : "#/components/examples/campaign_controller_trigger_name_invalid"
@@ -136268,8 +136268,8 @@
                   "campaign_controller_trigger_event_targeting_targeting_attributes_empty" : {
                     "$ref" : "#/components/examples/campaign_controller_trigger_event_targeting_targeting_attributes_empty"
                   },
-                  "campaign_controller_trigger_event_targeting_unsupported_event_type" : {
-                    "$ref" : "#/components/examples/campaign_controller_trigger_event_targeting_unsupported_event_type"
+                  "campaign_controller_trigger_event_targeting_unsupported_targeting_attribute" : {
+                    "$ref" : "#/components/examples/campaign_controller_trigger_event_targeting_unsupported_targeting_attribute"
                   },
                   "campaign_controller_trigger_name_invalid" : {
                     "$ref" : "#/components/examples/campaign_controller_trigger_name_invalid"
