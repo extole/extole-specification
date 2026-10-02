@@ -2781,6 +2781,16 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
+      "clearing_program_requires_clearing_campaign" : {
+        "summary" : "clearing_program_requires_clearing_campaign",
+        "value" : {
+          "code" : "clearing_program_requires_clearing_campaign",
+          "http_status_code" : 400,
+          "message" : "Clearing the relationship program requires clearing the campaign as well",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
       "client_domain_not_found" : {
         "summary" : "client_domain_not_found",
         "value" : {
@@ -4281,12 +4291,42 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
+      "missing_container" : {
+        "summary" : "missing_container",
+        "value" : {
+          "code" : "missing_container",
+          "http_status_code" : 400,
+          "message" : "Container is mandatory",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
       "missing_credentials" : {
         "summary" : "missing_credentials",
         "value" : {
           "code" : "missing_credentials",
           "http_status_code" : 403,
           "message" : "No credentials provided with this request.",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "missing_my_role" : {
+        "summary" : "missing_my_role",
+        "value" : {
+          "code" : "missing_my_role",
+          "http_status_code" : 400,
+          "message" : "My role is mandatory",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "missing_other_person_id" : {
+        "summary" : "missing_other_person_id",
+        "value" : {
+          "code" : "missing_other_person_id",
+          "http_status_code" : 400,
+          "message" : "Other person ID is mandatory",
           "parameters" : { },
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
@@ -4371,6 +4411,16 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
+      "no_relationships_to_update" : {
+        "summary" : "no_relationships_to_update",
+        "value" : {
+          "code" : "no_relationships_to_update",
+          "http_status_code" : 400,
+          "message" : "No relationships between the two profiles were found",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
       "no_such_managed_token" : {
         "summary" : "no_such_managed_token",
         "value" : {
@@ -4427,6 +4477,16 @@
           "code" : "orphan_external_component_reference",
           "http_status_code" : 400,
           "message" : "Orphan external referenced campaign component",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "other_person_not_found" : {
+        "summary" : "other_person_not_found",
+        "value" : {
+          "code" : "other_person_not_found",
+          "http_status_code" : 400,
+          "message" : "Other person not found",
           "parameters" : { },
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
@@ -4597,6 +4657,16 @@
           "code" : "redundant_component_reference",
           "http_status_code" : 400,
           "message" : "Same reference defined multiple times",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "relationship_campaign_requires_program" : {
+        "summary" : "relationship_campaign_requires_program",
+        "value" : {
+          "code" : "relationship_campaign_requires_program",
+          "http_status_code" : 400,
+          "message" : "Campaign ID can be updated only with a program",
           "parameters" : { },
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
@@ -5257,6 +5327,16 @@
           "code" : "triggers_with_duplicate_name",
           "http_status_code" : 400,
           "message" : "Triggers with the same name are not allowed",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "unable_to_update_relationship" : {
+        "summary" : "unable_to_update_relationship",
+        "value" : {
+          "code" : "unable_to_update_relationship",
+          "http_status_code" : 500,
+          "message" : "Unable to update relationship",
           "parameters" : { },
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
@@ -30886,6 +30966,15 @@
           "type" : "string"
         } ]
       },
+      "IdentityKey" : {
+        "description" : "Name of the identity key this client uses to identify persons, for example `email` or `phone`.",
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
       "IdpInitiatedAuthCodeResponseValidateRequest" : {
         "properties" : {
           "auth_provider_type_id" : {
@@ -34147,6 +34236,23 @@
           "type" : "string"
         } ]
       },
+      "OtherPersonResponse" : {
+        "description" : "The other party in a relationship, identified by this client's identity key.",
+        "properties" : {
+          "id" : {
+            "description" : "Extole-assigned unique identifier for this person. Distinct persons always have distinct ids, even when they share an identity key value or have none.",
+            "type" : "string"
+          },
+          "identity_key" : {
+            "$ref" : "#/components/schemas/IdentityKey"
+          },
+          "identity_key_value" : {
+            "description" : "Value of this person's identity key, suitable for display. Absent for persons who have not been identified, which is normal for friends who only browsed a share link.",
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
       "ParentTriggerGroupNameInCampaignControllerTriggerRequest" : {
         "description" : "Choose between static or dynamic parent trigger group name. Buildtime expressions use [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
         "externalDocs" : {
@@ -35514,6 +35620,109 @@
           "title" : "Runtime - Javascript",
           "type" : "string"
         } ]
+      },
+      "PersonRelationshipDataResponse" : {
+        "description" : "Named data parameters attached to this relationship.",
+        "properties" : {
+          "name" : {
+            "description" : "Name of the data parameter.",
+            "type" : "string"
+          },
+          "value" : {
+            "description" : "Value stored for the data parameter.",
+            "type" : "object"
+          }
+        },
+        "type" : "object"
+      },
+      "PersonRelationshipResponse" : {
+        "properties" : {
+          "campaign_id" : {
+            "description" : "Extole campaign id associated with this relationship. Absent when no campaign is linked.",
+            "type" : "string"
+          },
+          "cause_event_id" : {
+            "description" : "Id of the direct cause event for this relationship.",
+            "type" : "string"
+          },
+          "container" : {
+            "description" : "Campaign container in which the relationship was established.",
+            "type" : "string"
+          },
+          "created_date" : {
+            "$ref" : "#/components/schemas/ZonedDateTime"
+          },
+          "data" : {
+            "additionalProperties" : {
+              "$ref" : "#/components/schemas/PersonRelationshipDataResponse"
+            },
+            "description" : "Named data parameters attached to this relationship.",
+            "type" : "object"
+          },
+          "id" : {
+            "description" : "Extole-assigned unique identifier for this relationship.",
+            "readOnly" : true,
+            "type" : "string"
+          },
+          "my_role" : {
+            "description" : "This person's role in the relationship (`ADVOCATE` or `FRIEND`).",
+            "enum" : [ "ADVOCATE", "FRIEND" ],
+            "type" : "string"
+          },
+          "other_person" : {
+            "$ref" : "#/components/schemas/OtherPersonResponse"
+          },
+          "other_person_id" : {
+            "description" : "Extole person id of the other party in the relationship.",
+            "type" : "string"
+          },
+          "person_id" : {
+            "description" : "Extole person id of the person in the relationship.",
+            "type" : "string"
+          },
+          "program" : {
+            "description" : "Program key associated with this relationship. Absent for relationships with no program context.",
+            "type" : "string"
+          },
+          "root_event_id" : {
+            "description" : "Id of the root event that initiated this relationship.",
+            "type" : "string"
+          },
+          "updated_date" : {
+            "$ref" : "#/components/schemas/ZonedDateTime"
+          }
+        },
+        "required" : [ "campaign_id", "cause_event_id", "container", "created_date", "data", "id", "my_role", "other_person", "other_person_id", "person_id", "program", "root_event_id", "updated_date" ],
+        "type" : "object"
+      },
+      "PersonRelationshipUpdateRequest" : {
+        "description" : "Body of a `PUT /v5/persons/{person_id}/relationships` request.",
+        "properties" : {
+          "campaign_id" : {
+            "nullable" : true,
+            "type" : "string"
+          },
+          "container" : {
+            "type" : "string"
+          },
+          "include_duplicate_identities" : {
+            "description" : "Optional flag to update or not all relationships that match the profiles identities. Default behavior is to only update the relationship that matches the profile IDs.",
+            "type" : "boolean"
+          },
+          "my_role" : {
+            "enum" : [ "ADVOCATE", "FRIEND" ],
+            "type" : "string"
+          },
+          "other_person_id" : {
+            "type" : "string"
+          },
+          "program" : {
+            "nullable" : true,
+            "type" : "string"
+          }
+        },
+        "required" : [ "container", "my_role", "other_person_id" ],
+        "type" : "object"
       },
       "PluralNounNameInCampaignFlowStepResponse" : {
         "description" : "The plural noun name as configured: a literal value, or an expression (type:string) when defined dynamically. Buildtime expressions use [FlowStepBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/FlowStepBuildtimeContext.d.ts).",
@@ -146653,6 +146862,202 @@
         "tags" : [ "Authentication" ],
         "x-extole-bundle" : "management-expert",
         "x-extole-visibility" : "expert"
+      }
+    },
+    "/v5/persons/{person_id}/relationships" : {
+      "put" : {
+        "description" : "Fields omitted from the body are left unchanged, except `container`, `my_role` and `other_person_id`, which the request schema marks required and which every request must send.",
+        "parameters" : [ {
+          "description" : "The Extole unique profile identifier of this user at Extole.",
+          "in" : "path",
+          "name" : "person_id",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "example" : {
+                "campaign_id" : "campaign_id",
+                "container" : "container",
+                "include_duplicate_identities" : true,
+                "my_role" : "ADVOCATE",
+                "other_person_id" : "other_person_id",
+                "program" : "program"
+              },
+              "schema" : {
+                "$ref" : "#/components/schemas/PersonRelationshipUpdateRequest"
+              }
+            }
+          },
+          "description" : "PersonRelationshipUpdateRequest object",
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "items" : {
+                    "$ref" : "#/components/schemas/PersonRelationshipResponse"
+                  },
+                  "type" : "array"
+                }
+              }
+            },
+            "description" : "Successful response"
+          },
+          "400" : {
+            "content" : {
+              "application/json" : {
+                "examples" : {
+                  "binding_error" : {
+                    "$ref" : "#/components/examples/binding_error"
+                  },
+                  "clearing_program_requires_clearing_campaign" : {
+                    "$ref" : "#/components/examples/clearing_program_requires_clearing_campaign"
+                  },
+                  "invalid_json" : {
+                    "$ref" : "#/components/examples/invalid_json"
+                  },
+                  "invalid_parameter" : {
+                    "$ref" : "#/components/examples/invalid_parameter"
+                  },
+                  "missing_container" : {
+                    "$ref" : "#/components/examples/missing_container"
+                  },
+                  "missing_my_role" : {
+                    "$ref" : "#/components/examples/missing_my_role"
+                  },
+                  "missing_other_person_id" : {
+                    "$ref" : "#/components/examples/missing_other_person_id"
+                  },
+                  "missing_request_body" : {
+                    "$ref" : "#/components/examples/missing_request_body"
+                  },
+                  "no_relationships_to_update" : {
+                    "$ref" : "#/components/examples/no_relationships_to_update"
+                  },
+                  "other_person_not_found" : {
+                    "$ref" : "#/components/examples/other_person_not_found"
+                  },
+                  "person_not_found" : {
+                    "$ref" : "#/components/examples/person_not_found"
+                  },
+                  "relationship_campaign_requires_program" : {
+                    "$ref" : "#/components/examples/relationship_campaign_requires_program"
+                  }
+                },
+                "schema" : {
+                  "$ref" : "#/components/schemas/RestExceptionResponse"
+                }
+              }
+            },
+            "description" : "Bad Request"
+          },
+          "401" : {
+            "content" : {
+              "application/json" : {
+                "examples" : {
+                  "method_unauthorized" : {
+                    "$ref" : "#/components/examples/method_unauthorized"
+                  }
+                },
+                "schema" : {
+                  "$ref" : "#/components/schemas/RestExceptionResponse"
+                }
+              }
+            },
+            "description" : "Unauthorized"
+          },
+          "402" : {
+            "content" : {
+              "application/json" : {
+                "examples" : {
+                  "payment_required" : {
+                    "$ref" : "#/components/examples/payment_required"
+                  }
+                },
+                "schema" : {
+                  "$ref" : "#/components/schemas/RestExceptionResponse"
+                }
+              }
+            },
+            "description" : "Payment Required"
+          },
+          "403" : {
+            "content" : {
+              "application/json" : {
+                "examples" : {
+                  "access_denied" : {
+                    "$ref" : "#/components/examples/access_denied"
+                  },
+                  "method_unauthorized" : {
+                    "$ref" : "#/components/examples/method_unauthorized"
+                  },
+                  "missing_access_token" : {
+                    "$ref" : "#/components/examples/missing_access_token"
+                  }
+                },
+                "schema" : {
+                  "$ref" : "#/components/schemas/RestExceptionResponse"
+                }
+              }
+            },
+            "description" : "Forbidden"
+          },
+          "415" : {
+            "content" : {
+              "application/json" : {
+                "examples" : {
+                  "unsupported_media_type" : {
+                    "$ref" : "#/components/examples/unsupported_media_type"
+                  }
+                },
+                "schema" : {
+                  "$ref" : "#/components/schemas/RestExceptionResponse"
+                }
+              }
+            },
+            "description" : "Unsupported Media Type"
+          },
+          "429" : {
+            "content" : {
+              "application/json" : {
+                "examples" : {
+                  "too_many_requests" : {
+                    "$ref" : "#/components/examples/too_many_requests"
+                  }
+                },
+                "schema" : {
+                  "$ref" : "#/components/schemas/RestExceptionResponse"
+                }
+              }
+            },
+            "description" : "Too Many Requests"
+          },
+          "500" : {
+            "content" : {
+              "application/json" : {
+                "examples" : {
+                  "unable_to_update_relationship" : {
+                    "$ref" : "#/components/examples/unable_to_update_relationship"
+                  }
+                },
+                "schema" : {
+                  "$ref" : "#/components/schemas/RestExceptionResponse"
+                }
+              }
+            },
+            "description" : "Internal Server Error"
+          }
+        },
+        "summary" : "Updates both sides of the relationship. Doesn't change the relationships order on the person. Does not trigger referral events, but sends an input event for each update. Updates both the device and identity profiles, of the referrals involved.",
+        "tags" : [ "Persons" ],
+        "x-extole-bundle" : "management-expert",
+        "x-extole-visibility" : "visible"
       }
     },
     "/v6/report-types/{id}/parameters-add" : {
