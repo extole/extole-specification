@@ -148647,9 +148647,5 @@
     "name" : "Reports"
   }, {
     "name" : "Settings"
-  } ],
-  "x-tagGroups" : [ {
-    "name" : "Management Expert API",
-    "tags" : [ "Authentication", "Campaign Controllers", "Campaign Controllers Actions", "Campaign Controllers Triggers", "Campaign Flow Steps", "Components", "Components Grants", "Components Subscriptions", "Components Types", "Content", "Debug", "Domains", "Email", "Event Prehandlers", "Events", "Javascript Core Extensions", "Persons", "Profiles", "Report Schedules", "Report Types", "Reporting", "Reports", "Settings" ]
   } ]
 }
