@@ -44498,18 +44498,21 @@
           "in" : "query",
           "name" : "client_domain_id",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "include_archived",
           "schema" : {
+            "default" : false,
             "type" : "boolean"
           }
         }, {
           "in" : "query",
           "name" : "limit",
           "schema" : {
+            "default" : 1000,
             "format" : "int32",
             "type" : "integer"
           }
@@ -44517,6 +44520,7 @@
           "in" : "query",
           "name" : "offset",
           "schema" : {
+            "default" : 0,
             "format" : "int32",
             "type" : "integer"
           }
@@ -44928,18 +44932,21 @@
           "in" : "query",
           "name" : "client_domain_id",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "include_archived",
           "schema" : {
+            "default" : false,
             "type" : "boolean"
           }
         }, {
           "in" : "query",
           "name" : "limit",
           "schema" : {
+            "default" : 1000,
             "format" : "int32",
             "type" : "integer"
           }
@@ -44947,6 +44954,7 @@
           "in" : "query",
           "name" : "offset",
           "schema" : {
+            "default" : 0,
             "format" : "int32",
             "type" : "integer"
           }
@@ -45611,12 +45619,14 @@
           "in" : "query",
           "name" : "include_archived",
           "schema" : {
+            "default" : false,
             "type" : "boolean"
           }
         }, {
           "in" : "query",
           "name" : "limit",
           "schema" : {
+            "default" : 1000,
             "format" : "int32",
             "type" : "integer"
           }
@@ -45624,6 +45634,7 @@
           "in" : "query",
           "name" : "offset",
           "schema" : {
+            "default" : 0,
             "format" : "int32",
             "type" : "integer"
           }
@@ -47655,28 +47666,35 @@
       "get" : {
         "description" : "Returns component type definitions for the calling client, filtered by the supplied query parameters. Component types define the structure (settings, facets) of campaign components. Use `GET /v1/component-types/default` to retrieve the platform-default types.",
         "parameters" : [ {
+          "description" : "Optional parent filter",
           "in" : "query",
           "name" : "parent",
           "schema" : {
             "type" : "string"
           }
         }, {
+          "description" : "Optional includeArchived filter",
           "in" : "query",
           "name" : "include_archived",
           "schema" : {
+            "default" : false,
             "type" : "boolean"
           }
         }, {
+          "description" : "Optional limit filter",
           "in" : "query",
           "name" : "limit",
           "schema" : {
+            "default" : 1000,
             "format" : "int32",
             "type" : "integer"
           }
         }, {
+          "description" : "Optional offset filter",
           "in" : "query",
           "name" : "offset",
           "schema" : {
+            "default" : 0,
             "format" : "int32",
             "type" : "integer"
           }
@@ -48008,28 +48026,35 @@
       "get" : {
         "description" : "Returns the platform-default component type definitions. Default types are provided by Extole and are available to all clients.",
         "parameters" : [ {
+          "description" : "Optional parent filter",
           "in" : "query",
           "name" : "parent",
           "schema" : {
             "type" : "string"
           }
         }, {
+          "description" : "Optional includeArchived filter",
           "in" : "query",
           "name" : "include_archived",
           "schema" : {
+            "default" : false,
             "type" : "boolean"
           }
         }, {
+          "description" : "Optional limit filter",
           "in" : "query",
           "name" : "limit",
           "schema" : {
+            "default" : 1000,
             "format" : "int32",
             "type" : "integer"
           }
         }, {
+          "description" : "Optional offset filter",
           "in" : "query",
           "name" : "offset",
           "schema" : {
+            "default" : 0,
             "format" : "int32",
             "type" : "integer"
           }
@@ -123675,6 +123700,7 @@
           "in" : "query",
           "name" : "limit",
           "schema" : {
+            "default" : 5,
             "format" : "int32",
             "type" : "integer"
           }
@@ -123682,6 +123708,7 @@
           "in" : "query",
           "name" : "offset",
           "schema" : {
+            "default" : 0,
             "format" : "int32",
             "type" : "integer"
           }
@@ -123842,15 +123869,17 @@
           }
         }, {
           "in" : "query",
-          "name" : "limit",
+          "name" : "offset",
           "schema" : {
+            "default" : 0,
             "format" : "int32",
             "type" : "integer"
           }
         }, {
           "in" : "query",
-          "name" : "offset",
+          "name" : "limit",
           "schema" : {
+            "default" : 100,
             "format" : "int32",
             "type" : "integer"
           }
@@ -123858,6 +123887,7 @@
           "in" : "query",
           "name" : "include_archived",
           "schema" : {
+            "default" : false,
             "type" : "boolean"
           }
         } ],
@@ -124298,15 +124328,17 @@
           }
         }, {
           "in" : "query",
-          "name" : "limit",
+          "name" : "offset",
           "schema" : {
+            "default" : 0,
             "format" : "int32",
             "type" : "integer"
           }
         }, {
           "in" : "query",
-          "name" : "offset",
+          "name" : "limit",
           "schema" : {
+            "default" : 100,
             "format" : "int32",
             "type" : "integer"
           }
@@ -124314,6 +124346,7 @@
           "in" : "query",
           "name" : "include_archived",
           "schema" : {
+            "default" : false,
             "type" : "boolean"
           }
         } ],
@@ -124984,15 +125017,35 @@
       "get" : {
         "description" : "Returns all distinct tags applied to report runners for the calling client. Use these values with the `having_any_tags` or `having_all_tags` filter on `GET /v7/report-runners` to retrieve runners by tag.",
         "parameters" : [ {
+          "description" : "Optional filter for tags, asks for tags that match any of specified patterns.",
           "in" : "query",
           "name" : "having_any_tags",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
+          "description" : "Optional filter for exclude tags, asks for tags that are do not match any of the specified patterns.",
           "in" : "query",
           "name" : "exclude_having_any_tags",
           "schema" : {
+            "nullable" : true,
+            "type" : "string"
+          }
+        }, {
+          "description" : "Optional filter for offset, defaults to 0.",
+          "in" : "query",
+          "name" : "offset",
+          "schema" : {
+            "nullable" : true,
+            "type" : "string"
+          }
+        }, {
+          "description" : "Optional filter for limit, defaults to 100.",
+          "in" : "query",
+          "name" : "limit",
+          "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         } ],
@@ -125161,21 +125214,34 @@
     "/v6/report-runners/views/detailed" : {
       "get" : {
         "parameters" : [ {
+          "description" : "Optional filter for report runner type, one of: SCHEDULED, REFRESHING.",
           "in" : "query",
           "name" : "type",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
+          "description" : "Optional filter for report type name.",
           "in" : "query",
           "name" : "report_type",
           "schema" : {
+            "nullable" : true,
+            "type" : "string"
+          }
+        }, {
+          "description" : "Optional filter for report type name.",
+          "in" : "query",
+          "name" : "report_type_name",
+          "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "display_name",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
@@ -125185,79 +125251,93 @@
             "items" : {
               "type" : "string"
             },
+            "nullable" : true,
             "type" : "array",
             "uniqueItems" : true
           }
         }, {
+          "description" : "Optional filter for report runner tags, asks for report runners that contain at least one of the specified tags.",
           "in" : "query",
           "name" : "having_any_tags",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
+          "description" : "Optional filter for required report runner tags, asks for report runners that contain all of the specified tags.",
           "in" : "query",
           "name" : "having_all_tags",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
+          "description" : "Optional filter for report runner exclude tags, asks for report runners that do not contain any of the specified tags.",
           "in" : "query",
           "name" : "exclude_having_any_tags",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
+          "description" : "Optional filter for report runner exclude tags, asks for report runners that do not contain all of the specified tags.",
           "in" : "query",
           "name" : "exclude_having_all_tags",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "search_query",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "pause_status",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
           "in" : "query",
           "name" : "aggregation_status",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
+          "description" : "Optional filter for offset, defaults to 0.",
           "in" : "query",
           "name" : "offset",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
+          "description" : "Optional filter for limit, defaults to all.",
           "in" : "query",
           "name" : "limit",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
+          "description" : "Optional sort field, defaults to CREATED_DATE. Valid values: CREATED_DATE, UPDATED_DATE, NAME.",
           "in" : "query",
           "name" : "order_by",
           "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         }, {
+          "description" : "Optional sort direction, defaults to DESCENDING. Valid values: ASCENDING (or ASC), DESCENDING (or DESC).",
           "in" : "query",
           "name" : "order",
           "schema" : {
-            "type" : "string"
-          }
-        }, {
-          "in" : "query",
-          "name" : "report_type_name",
-          "schema" : {
+            "nullable" : true,
             "type" : "string"
           }
         } ],
