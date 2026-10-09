@@ -86,6 +86,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "a74dd192-1b8a-4dcb-942e-bd4b9703f4c6",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v5", "token"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "e5be704c-6ab0-4651-8131-503bfa721f76",
               "name": "invalid_json",
               "originalRequest": {
@@ -118,6 +148,36 @@
             {
               "id": "7ccdf5df-0fea-4dab-9ad7-781fa737497a",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v5", "token"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ebe80d63-2c43-480f-834f-7c679f533a77",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v5", "token"],
@@ -935,6 +995,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "9fba12fd-58ab-40a8-ba4e-79f8f6c75323",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v5", "token"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "7063727c-f898-487e-a287-a4a928b2de25",
               "name": "invalid_json",
               "originalRequest": {
@@ -967,6 +1057,36 @@
             {
               "id": "b3396ba7-7a04-414a-8092-f02f4df1b76a",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v5", "token"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f650d5ca-1011-492f-9942-6dea824a7dce",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v5", "token"],
@@ -2413,6 +2533,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "899494b8-a515-42c1-a25e-ebb0e51b8d0e",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["zones"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"data\": {\n    \"data_key\": {}\n  },\n  \"event_name\": \"event_name\",\n  \"id_token\": \"id_token\",\n  \"jwt\": \"jwt\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "a5bf8030-bd71-45a3-a056-9933fd366b33",
               "name": "invalid_json",
               "originalRequest": {
@@ -2452,6 +2609,43 @@
             {
               "id": "60fd729b-c209-4e21-b5d7-6d1da875d377",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["zones"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"data\": {\n    \"data_key\": {}\n  },\n  \"event_name\": \"event_name\",\n  \"id_token\": \"id_token\",\n  \"jwt\": \"jwt\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "6e4a378a-2ae5-4f42-bbbf-293985ae3c57",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["zones"],
@@ -2976,6 +3170,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "4860189b-bd4d-47c0-8b29-a66e8a75e7a8",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["zones", ":zone_name"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "55880c73-afec-461a-a00a-d9c5e388abb4",
               "name": "invalid_json",
               "originalRequest": {
@@ -3015,6 +3246,43 @@
             {
               "id": "6e26c146-5226-4a3d-ba68-4ef2829d735f",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["zones", ":zone_name"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "74e32e47-5e0a-4132-a82b-d70a1111a82a",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["zones", ":zone_name"],
@@ -3536,6 +3804,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "bc0e8259-c993-43ef-b184-513fc57a59e3",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["events", ":event_name"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "cccb3a01-1809-4ca8-a329-1dfd2b605cde",
               "name": "invalid_json",
               "originalRequest": {
@@ -3568,6 +3866,36 @@
             {
               "id": "66d8518c-9ddc-49d4-8c2d-78e3eb77a985",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["events", ":event_name"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e6eff5d2-732d-4f45-a88f-462c91ec202f",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["events", ":event_name"],
@@ -3837,6 +4165,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "2862d5d4-1aa5-4b9b-aa06-c07f23cdbddb",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "9929917e-2049-4ea7-8238-08ce816908be",
               "name": "invalid_json",
               "originalRequest": {
@@ -3869,6 +4227,36 @@
             {
               "id": "e01c04ec-e830-4565-a967-27b6fbbd6bcd",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "dfda4b23-43e1-4133-9068-8867b8a2e137",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v4", "me"],
@@ -4305,6 +4693,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "cf90b150-36ff-481e-8731-eff554fd340a",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"access_token\": \"access_token\",\n  \"email\": \"email\",\n  \"first_name\": \"first_name\",\n  \"last_name\": \"last_name\",\n  \"partner_user_id\": \"partner_user_id\",\n  \"profile_picture_url\": \"profile_picture_url\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "de1b1509-0c10-4137-abfb-69b6f9618244",
               "name": "invalid_json",
               "originalRequest": {
@@ -4529,6 +4954,43 @@
             {
               "id": "03f1b42a-bf46-4d40-9c3a-60a8fb7f184e",
               "name": "invalid_profile_picture_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"access_token\": \"access_token\",\n  \"email\": \"email\",\n  \"first_name\": \"first_name\",\n  \"last_name\": \"last_name\",\n  \"partner_user_id\": \"partner_user_id\",\n  \"profile_picture_url\": \"profile_picture_url\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3ca68b11-ede8-4ce6-b81c-8ce845db7a9b",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v4", "me"],
@@ -5167,6 +5629,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "4267693d-2ba5-47fc-9860-80d6936c7f2b",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "assets"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "474b9d33-4a32-43f0-a1d2-4170aa51494e",
               "name": "invalid_json",
               "originalRequest": {
@@ -5199,6 +5691,36 @@
             {
               "id": "dce54e2c-5bf2-458e-a8a4-a24d3a830ac3",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "assets"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b50bc6ee-1c89-4a46-a730-ac96d307be96",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v4", "me", "assets"],
@@ -5806,6 +6328,53 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "877890da-9a37-4227-a992-65f62f3ac5ab",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "assets"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "asset",
+                      "value": "<string>",
+                      "type": "text"
+                    },
+                    {
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "file",
+                      "value": "<string>",
+                      "type": "text"
+                    }
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "978f70cc-f41c-4844-8ee8-06f7a5fc2b4b",
               "name": "invalid_json",
               "originalRequest": {
@@ -5855,6 +6424,53 @@
             {
               "id": "ecb1ee9e-3f98-4be2-906f-40bc227931b3",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "assets"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "asset",
+                      "value": "<string>",
+                      "type": "text"
+                    },
+                    {
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "file",
+                      "value": "<string>",
+                      "type": "text"
+                    }
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "61005d24-8c2e-4519-bf69-03131bb64f0e",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v4", "me", "assets"],
@@ -6513,6 +7129,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "e64c0930-06f1-418d-890f-a026f88c4396",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "assets", "download"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "name",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "0c2909a6-f12b-471a-b108-12da5c5e8ed1",
               "name": "invalid_json",
               "originalRequest": {
@@ -6552,6 +7205,43 @@
             {
               "id": "3659448e-bfd8-45cd-a5a6-b02b86f257f9",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "assets", "download"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "name",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f38a022d-7a81-4d6e-bf8a-4fd4b71a7eee",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v4", "me", "assets", "download"],
@@ -7113,6 +7803,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "53f08184-dae6-422d-9318-f53c48c67175",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "assets", ":assetId"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "3b5031a3-6390-487a-a191-31021fc0cd56",
               "name": "invalid_json",
               "originalRequest": {
@@ -7145,6 +7865,36 @@
             {
               "id": "e0460e0e-bca2-4ac6-afdc-ef99b27dbe96",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "assets", ":assetId"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c0c50943-83fe-4ad3-96ad-5f65743ac4c8",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v4", "me", "assets", ":assetId"],
@@ -7629,6 +8379,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "2c4a559e-ca3f-45ff-9527-795e8ff81cb6",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "assets", ":assetId"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "8d5199bb-c716-4403-bb0d-dafb6f0357d5",
               "name": "invalid_json",
               "originalRequest": {
@@ -7661,6 +8441,36 @@
             {
               "id": "5df7864a-b6a6-4f2d-a3e2-c666946e5a19",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "assets", ":assetId"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e0c850ea-9b5b-4c42-aa67-cee07991012f",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v4", "me", "assets", ":assetId"],
@@ -8115,6 +8925,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "58a9f893-72a6-4f79-a0e9-76d17aa08653",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "assets", ":assetId", "download"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "5bab9cbc-753c-47d8-aca5-62497dbd0786",
               "name": "invalid_json",
               "originalRequest": {
@@ -8147,6 +8987,36 @@
             {
               "id": "b1a769e1-b3df-46a6-9286-04a3d5a8b5dc",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "assets", ":assetId", "download"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "8cae9669-e904-4617-be37-9cfba5672d78",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v4", "me", "assets", ":assetId", "download"],
@@ -8560,6 +9430,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "a5a3a3a9-b220-4345-adb4-4784839bb30d",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "audience-memberships"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "75de66f1-000a-4ee4-8b17-67f896c569e3",
               "name": "invalid_json",
               "originalRequest": {
@@ -8592,6 +9492,36 @@
             {
               "id": "56e4ced4-b37c-4fb2-a1cb-bf32ee4ba17d",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "audience-memberships"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e6b28ec5-428d-437f-bddf-d5dfac1a706b",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v4", "me", "audience-memberships"],
@@ -9044,6 +9974,49 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "5b815bc4-f62a-4ae7-bf00-1072805cbc50",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "journeys"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "container",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "type",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "f29c4360-dbc3-4837-b3f0-b519be8329ab",
               "name": "invalid_json",
               "originalRequest": {
@@ -9089,6 +10062,49 @@
             {
               "id": "634606e7-6aac-4a7a-8847-b0b36c397a0b",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "journeys"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "container",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "type",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "50ccb9d2-e3bd-4129-aa96-86fff460974f",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v4", "me", "journeys"],
@@ -9645,6 +10661,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "3053d38c-0865-41d6-9046-cd5801ec9eae",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "parameters"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "83276cdf-555f-45cb-8cd1-71b8b4b77449",
               "name": "invalid_json",
               "originalRequest": {
@@ -9677,6 +10723,36 @@
             {
               "id": "ff296f13-1787-4983-b4bd-d2af1330f3d7",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "parameters"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7c9ab5c1-5582-43d4-bd1a-46268d9f4e83",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v4", "me", "parameters"],
@@ -10113,6 +11189,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "cbc22029-992c-4d06-80d9-160c71ecf8d5",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "parameters"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"parameters\": {\n    \"parameters_key\": {}\n  },\n  \"type\": \"CLIENT\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "83a420a5-cd65-445c-a0f6-7550d5449a92",
               "name": "invalid_json",
               "originalRequest": {
@@ -10152,6 +11265,43 @@
             {
               "id": "645174c5-45d9-4245-aa51-e98ecdd731da",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "parameters"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"parameters\": {\n    \"parameters_key\": {}\n  },\n  \"type\": \"CLIENT\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "77ce799d-47c5-4bcf-bb06-9f7bc69b58fe",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v4", "me", "parameters"],
@@ -10864,6 +12014,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "cb0a7514-b6e4-4e75-bd48-09c262ebc1bd",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "referrals-from-me"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "1b593a31-687f-4666-b7b0-c4659be6890d",
               "name": "invalid_json",
               "originalRequest": {
@@ -10896,6 +12076,36 @@
             {
               "id": "e092f4a0-93a4-4fec-a412-5217f80e08de",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "referrals-from-me"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a2ac41fd-c371-46cd-a116-0574f18a8de2",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v4", "me", "referrals-from-me"],
@@ -11309,6 +12519,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "fc0b339f-6357-4d4e-91a7-8b1e532631b1",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "referrals-to-me"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "e79e200b-3230-4041-aff9-4501cceb34d5",
               "name": "invalid_json",
               "originalRequest": {
@@ -11341,6 +12581,36 @@
             {
               "id": "28a86c9d-652c-45de-9ca9-9ebc8eeca2db",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "referrals-to-me"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a5c0fbe5-1518-4dd3-b8be-40f823c585f1",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v4", "me", "referrals-to-me"],
@@ -12551,6 +13821,52 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "9c875e7f-c333-44fd-abc4-2d8e6d1e463e",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "shares"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "partner_share_id",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A partner id using this format: <name>:<value>",
+                        "type": "text/plain"
+                      },
+                      "key": "partner_id",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "b0b019cb-4bab-4ecc-8cdd-8e8b6931d838",
               "name": "invalid_json",
               "originalRequest": {
@@ -12599,6 +13915,52 @@
             {
               "id": "4b0f7de0-cecf-4bd2-883c-298e31dc5047",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "shares"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "partner_share_id",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A partner id using this format: <name>:<value>",
+                        "type": "text/plain"
+                      },
+                      "key": "partner_id",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f8aa23fc-de94-46a1-be83-25da0ff130eb",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v4", "me", "shares"],
@@ -13199,6 +14561,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "158a6a0e-a4e9-47cf-8a2b-8c2f1e8c6f43",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "shares", ":shareId"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "3e4477d4-5da8-47d2-b679-5a8e5fad6171",
               "name": "invalid_json",
               "originalRequest": {
@@ -13231,6 +14623,36 @@
             {
               "id": "87bbf30d-86f4-47d8-b446-e1654389a56b",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "shares", ":shareId"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c28064a3-4813-4107-b84a-3c184bce7941",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v4", "me", "shares", ":shareId"],
@@ -13785,6 +15207,73 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "ff1a42c0-403f-499e-9129-9dff2d158af6",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "steps"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "campaign_id",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "program_label",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "step_name",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "quality",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "partner_event_id_name",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "partner_event_id_value",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "71e0940d-251d-4184-956a-d08ff02852af",
               "name": "invalid_json",
               "originalRequest": {
@@ -13854,6 +15343,73 @@
             {
               "id": "ae478b41-00ca-4458-bb2e-b3a28cfb6211",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "steps"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "campaign_id",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "program_label",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "step_name",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "quality",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "partner_event_id_name",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "partner_event_id_value",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "2945d0e3-6630-41b0-aa57-eb47dff17e43",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v4", "me", "steps"],
@@ -16853,6 +18409,49 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "af58ff2d-3ac7-4785-8811-e2e170a9b69c",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v6", "me", "shareables"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "key",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "label",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "fe7cac47-658a-4a72-ba9d-569eb0c5d7a2",
               "name": "invalid_json",
               "originalRequest": {
@@ -16898,6 +18497,49 @@
             {
               "id": "a608cae1-eff9-412d-a9fb-509c2e232766",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v6", "me", "shareables"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "key",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "label",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "1ab5eb52-ae12-4fe5-9204-8511db68af92",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v6", "me", "shareables"],
@@ -17514,6 +19156,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "4cda3781-5954-4b00-9d4b-b1048e5f7f9d",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v6", "me", "shareables"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"description\",\n    \"image_url\": \"image_url\",\n    \"partner_content_id\": \"partner_content_id\",\n    \"title\": \"title\",\n    \"url\": \"url\"\n  },\n  \"data\": {\n    \"data_key\": \"data_key\"\n  },\n  \"key\": \"key\",\n  \"label\": \"label\",\n  \"preferred_code_prefixes\": [\n    \"preferred_code_prefixe\"\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "c9f330ea-3856-4836-ab28-c59744c94778",
               "name": "invalid_json",
               "originalRequest": {
@@ -17553,6 +19232,43 @@
             {
               "id": "2ae5d143-5960-4401-b732-7ae487964fac",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v6", "me", "shareables"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"description\",\n    \"image_url\": \"image_url\",\n    \"partner_content_id\": \"partner_content_id\",\n    \"title\": \"title\",\n    \"url\": \"url\"\n  },\n  \"data\": {\n    \"data_key\": \"data_key\"\n  },\n  \"key\": \"key\",\n  \"label\": \"label\",\n  \"preferred_code_prefixes\": [\n    \"preferred_code_prefixe\"\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "d51560e2-9633-4b1a-8ee3-238a458452ab",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v6", "me", "shareables"],
@@ -18424,6 +20140,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "1511fa18-2c22-469f-b7e7-b9a3a27c00c1",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v6", "me", "shareables", ":code"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "18a6c6fa-a2dd-46ba-b47b-4ad9eca213e4",
               "name": "invalid_json",
               "originalRequest": {
@@ -18456,6 +20202,36 @@
             {
               "id": "b549e216-9799-4aef-871a-f781562e915d",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v6", "me", "shareables", ":code"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "0cbed650-8141-4659-a394-4b9f02af6ed5",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v6", "me", "shareables", ":code"],
@@ -18977,6 +20753,49 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "b8d2c6e2-0b50-44f7-82d9-a988c59954dc",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v6",
+                    "me",
+                    "shareables",
+                    "get-create-or-update"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"description\",\n    \"image_url\": \"image_url\",\n    \"partner_content_id\": \"partner_content_id\",\n    \"title\": \"title\",\n    \"url\": \"url\"\n  },\n  \"data\": {\n    \"data_key\": \"data_key\"\n  },\n  \"key\": \"key\",\n  \"label\": \"label\",\n  \"preferred_code_prefixes\": [\n    \"preferred_code_prefixe\"\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "ddf961d0-5aae-4761-aa43-e224c650661b",
               "name": "invalid_json",
               "originalRequest": {
@@ -19022,6 +20841,49 @@
             {
               "id": "0f55be12-6b1b-4d12-ad65-d084dc7635a4",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v6",
+                    "me",
+                    "shareables",
+                    "get-create-or-update"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"description\",\n    \"image_url\": \"image_url\",\n    \"partner_content_id\": \"partner_content_id\",\n    \"title\": \"title\",\n    \"url\": \"url\"\n  },\n  \"data\": {\n    \"data_key\": \"data_key\"\n  },\n  \"key\": \"key\",\n  \"label\": \"label\",\n  \"preferred_code_prefixes\": [\n    \"preferred_code_prefixe\"\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a4e7f4df-cfe5-457d-9107-6c94f588717c",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -20068,6 +21930,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "8718de88-2efa-4ce3-9225-a63f81881a28",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v6", "me", "shareables", "get-or-create"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"description\",\n    \"image_url\": \"image_url\",\n    \"partner_content_id\": \"partner_content_id\",\n    \"title\": \"title\",\n    \"url\": \"url\"\n  },\n  \"data\": {\n    \"data_key\": \"data_key\"\n  },\n  \"key\": \"key\",\n  \"label\": \"label\",\n  \"preferred_code_prefixes\": [\n    \"preferred_code_prefixe\"\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "a298d913-27e4-4123-b8e3-df7ba011db20",
               "name": "invalid_json",
               "originalRequest": {
@@ -20107,6 +22006,43 @@
             {
               "id": "4cbd0338-88ee-4c35-8ed8-9da005c62abb",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v6", "me", "shareables", "get-or-create"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"content\": {\n    \"description\": \"description\",\n    \"image_url\": \"image_url\",\n    \"partner_content_id\": \"partner_content_id\",\n    \"title\": \"title\",\n    \"url\": \"url\"\n  },\n  \"data\": {\n    \"data_key\": \"data_key\"\n  },\n  \"key\": \"key\",\n  \"label\": \"label\",\n  \"preferred_code_prefixes\": [\n    \"preferred_code_prefixe\"\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "8f3b0e5c-2bb5-4ce9-b272-8f87a9fab696",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v6", "me", "shareables", "get-or-create"],
@@ -21001,6 +22937,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "e5f1fa12-806b-44da-a4f1-08bf035016e9",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "parameters", ":parameter_name"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"type\": \"CLIENT\",\n  \"value\": {}\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "ec8372ac-2075-4cee-81f0-2ef4271ff4f2",
               "name": "invalid_json",
               "originalRequest": {
@@ -21040,6 +23013,43 @@
             {
               "id": "8c538d45-ce75-458d-a58b-ffda91423c60",
               "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "parameters", ":parameter_name"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"type\": \"CLIENT\",\n  \"value\": {}\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a4609f22-0b84-4975-bab4-725df5aa3f07",
+              "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v4", "me", "parameters", ":parameter_name"],
