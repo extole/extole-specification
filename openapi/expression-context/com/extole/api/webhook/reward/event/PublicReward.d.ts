@@ -1,5 +1,4 @@
 import type { NativeMap } from "../../../../native/collection/NativeMap";
-import type { NativeURI } from "../../../../native/network/NativeURI";
 
 export interface PublicReward {
     getCode(): string | null;
@@ -7,9 +6,9 @@ export interface PublicReward {
     getExpiryDate(): string | null;
     getFaceValue(): string;
     getFaceValueType(): string;
-    getImage(): NativeURI | null;
+    getImage(): string | null;
     getInstructions(): string | null;
-    getLink(): NativeURI | null;
+    getLink(): string | null;
     getPartnerRewardId(): string | null;
     getPartnerRewardKeyType(): string;
     getPartnerRewardSupplierId(): string | null;

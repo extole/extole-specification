@@ -1,7 +1,6 @@
 import type { JourneyKey } from "./JourneyKey";
 import type { NativeMap } from "../../native/collection/NativeMap";
 import type { NativeOptional } from "../../native/collection/NativeOptional";
-import type { NativeURI } from "../../native/network/NativeURI";
 
 export interface PersonReward {
     expiryDate(): NativeOptional<string>;
@@ -14,11 +13,11 @@ export interface PersonReward {
     getFaceValue(): string;
     getFaceValueType(): string;
     getId(): string;
-    getImage(): NativeURI | null;
+    getImage(): string | null;
     getInstructions(): string | null;
     getJourneyKey(): JourneyKey | null;
     getJourneyName(): string;
-    getLink(): NativeURI | null;
+    getLink(): string | null;
     getName(): string | null;
     getPartnerRewardId(): string | null;
     getPersonRole(): string;
