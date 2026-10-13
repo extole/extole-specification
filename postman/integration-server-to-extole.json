@@ -32910,43 +32910,6 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "3b87483e-5681-48d7-b951-46ceb74694da",
-              "name": "label_is_missing",
-              "originalRequest": {
-                "url": {
-                  "path": ["v5", "persons", ":person_id", "shareables"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Content-Type", "value": "<string>" },
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "POST",
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"content\": {\n    \"description\": \"description\",\n    \"image_url\": \"image_url\",\n    \"partner_content_id\": \"partner_content_id\",\n    \"title\": \"title\",\n    \"url\": \"url\"\n  },\n  \"data\": {\n    \"data_key\": \"data_key\"\n  },\n  \"key\": \"key\",\n  \"label\": \"label\",\n  \"program_url\": \"program_url\"\n}",
-                  "options": {
-                    "raw": { "headerFamily": "json", "language": "json" }
-                  }
-                }
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
               "id": "dc1e00da-885d-4817-ab1e-997db388bf0b",
               "name": "label_name_contains_illegal_character",
               "originalRequest": {
@@ -35078,49 +35041,6 @@
             {
               "id": "e0a30ecb-37f7-4ef3-b99c-315b66e5c9bd",
               "name": "invalid_uri_in_json",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "v5",
-                    "persons",
-                    ":person_id",
-                    "shareables",
-                    ":code"
-                  ],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Content-Type", "value": "<string>" },
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "PUT",
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n  \"content\": {\n    \"description\": \"description\",\n    \"image_url\": \"image_url\",\n    \"partner_content_id\": \"partner_content_id\",\n    \"title\": \"title\",\n    \"url\": \"url\"\n  },\n  \"data\": {\n    \"data_key\": \"data_key\"\n  },\n  \"key\": \"key\",\n  \"label\": \"label\",\n  \"program_url\": \"program_url\"\n}",
-                  "options": {
-                    "raw": { "headerFamily": "json", "language": "json" }
-                  }
-                }
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "189c5a55-da7e-4e90-9e12-792949351314",
-              "name": "label_is_missing",
               "originalRequest": {
                 "url": {
                   "path": [
