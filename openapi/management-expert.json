@@ -37090,7 +37090,8 @@
           "$ref" : "#/components/schemas/DynamicReportTypeParameterDetailsRequest"
         }, {
           "$ref" : "#/components/schemas/StaticReportTypeParameterDetailsRequest"
-        } ]
+        } ],
+        "required" : [ "name", "type" ]
       },
       "ReportTypeParameterDetailsRequestBase" : {
         "properties" : {
