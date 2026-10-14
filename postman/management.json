@@ -207030,12 +207030,12 @@
           "protocolProfileBehavior": { "disableBodyPruning": true }
         },
         {
-          "id": "93faa84d-304b-4fa9-b01e-e6d7c507ca00",
-          "name": "List the references a component can be selected by",
+          "id": "eb6e8c12-e1c7-4927-b508-7962a585787e",
+          "name": "List the components that use or could use a component",
           "request": {
-            "name": "List the references a component can be selected by",
+            "name": "List the components that use or could use a component",
             "description": {
-              "content": "Returns the `COMPONENT_REFERENCE` and `COMPONENT_REFERENCE_LIST` settings across the client that can select the specified component — the reverse of `GET /v1/components/{component_id}/settings/component-reference/{setting_name}/selectable-components`. A reference is listed when it already points at the component (`SELECTED`), or when the component is eligible for it: the component carries the reference's declared component type, sits inside the reference's boundary, and is not excluded by one of its selectable filters. Matching runs entirely on the server, so callers never reproduce match rules. One row per component, setting and variant. The result is computed per request and never persisted.\n\nThe search covers every non-archived campaign of the client at its latest version, so the row count is driven by how those references declare their boundary: campaign-scoped references match only within their own campaign, while an account-scoped reference can match a component anywhere in the client.",
+              "content": "Lists the components that use the specified component, and the components that could use it. Each row is one `COMPONENT_REFERENCE` or `COMPONENT_REFERENCE_LIST` setting on a component in the client, in one variant. `SELECTED` means the setting already points at the specified component. `SELECTABLE` means the setting does not point at it but would accept it: the component carries the setting's declared component type, sits inside the setting's boundary, and is not excluded by one of its selectable filters. This is the reverse of `GET /v1/components/{component_id}/settings/component-reference/{setting_name}/selectable-components`, so a caller does not call that endpoint on every setting that might accept the component. Matching runs entirely on the server. The result is computed per request and never persisted.\n\nThe search covers every non-archived campaign of the client at its latest version, so the row count is driven by how those references declare their boundary: campaign-scoped references match only within their own campaign, while an account-scoped reference can match a component anywhere in the client.",
               "type": "text/plain"
             },
             "url": {
@@ -207046,7 +207046,26 @@
                 "selectable-by-references"
               ],
               "host": ["{{baseUrl}}"],
-              "query": [],
+              "query": [
+                {
+                  "disabled": false,
+                  "description": {
+                    "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                    "type": "text/plain"
+                  },
+                  "key": "selection",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "description": {
+                    "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                    "type": "text/plain"
+                  },
+                  "key": "having_any_ancestor_types",
+                  "value": "<string>"
+                }
+              ],
               "variable": [
                 {
                   "type": "any",
@@ -207067,7 +207086,7 @@
           },
           "response": [
             {
-              "id": "124390dd-9479-495b-9eb9-15e6ee005260",
+              "id": "d3efbada-64a9-4955-a17b-d7a8e33036d6",
               "name": "The selectable-by references, each marked `SELECTED` or `SELECTABLE`.",
               "originalRequest": {
                 "url": {
@@ -207078,7 +207097,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207102,7 +207140,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "77726cde-3324-441a-aeb3-d6e624f74c54",
+              "id": "ea232d8e-f4fd-48d0-81c9-8d352fb9cff6",
               "name": "binding_error",
               "originalRequest": {
                 "url": {
@@ -207113,7 +207151,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207137,7 +207194,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "382dd0eb-13d2-44cb-81d1-5f52e6fbb75b",
+              "id": "f47b851d-48d6-419c-ad76-6e704180d500",
               "name": "campaign_build_failed",
               "originalRequest": {
                 "url": {
@@ -207148,7 +207205,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207172,7 +207248,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "d0310566-955c-4301-aee0-8a073b46aa7e",
+              "id": "063f8169-4db6-415e-9c24-7a5756f2764d",
               "name": "component_not_found",
               "originalRequest": {
                 "url": {
@@ -207183,7 +207259,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207207,7 +207302,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "adee9e2e-e762-4a1f-994d-5674dbea3f30",
+              "id": "394b99f6-8d6a-4822-ab59-b4e4d77209bf",
               "name": "component_operation_parameter_invalid",
               "originalRequest": {
                 "url": {
@@ -207218,7 +207313,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207242,7 +207356,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "b880c58e-44ae-45c7-b006-dcd09b1c01de",
+              "id": "f0b56217-439e-444b-a570-548babae6662",
               "name": "component_operation_path_malformed",
               "originalRequest": {
                 "url": {
@@ -207253,7 +207367,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207277,7 +207410,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "9dfb7011-d629-4858-8474-2e55a874f9e1",
+              "id": "4d6db4c2-f5bc-4752-868e-b06b432cd8f5",
               "name": "component_operation_path_missing",
               "originalRequest": {
                 "url": {
@@ -207288,7 +207421,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207312,7 +207464,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "3dfdcd19-4670-40b6-b116-65d078092635",
+              "id": "d732679f-4d9a-4102-b0c3-8e031dbb4276",
               "name": "component_operation_schema_invalid",
               "originalRequest": {
                 "url": {
@@ -207323,7 +207475,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207347,7 +207518,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "0265afe7-b970-4c23-a073-102735afb428",
+              "id": "db77a3a0-cc70-4f95-8d0a-274d28345ff7",
               "name": "component_operation_schema_too_large",
               "originalRequest": {
                 "url": {
@@ -207358,7 +207529,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207382,7 +207572,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "a028977c-1629-4b2e-96bb-e1fcb688f10e",
+              "id": "00dfa3ae-6d3a-493c-affe-2f59f4ba81f4",
               "name": "component_owner_not_supported",
               "originalRequest": {
                 "url": {
@@ -207393,7 +207583,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207417,7 +207626,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "07a1bc92-7075-400b-8f96-ad22631a2ca7",
+              "id": "b7d3dc00-76a4-497c-9ea2-0ddb4940cf82",
               "name": "component_state_not_supported",
               "originalRequest": {
                 "url": {
@@ -207428,7 +207637,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207452,7 +207680,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "1d296036-2c53-4d06-8717-3623319119fd",
+              "id": "a7449789-d0bb-4d17-b757-a167e3b0567f",
               "name": "controller_state_misconfiguration",
               "originalRequest": {
                 "url": {
@@ -207463,7 +207691,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207487,7 +207734,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "39dd1fe5-3661-4085-8a65-426f5b90ea11",
+              "id": "2f77e70f-08de-479d-84fe-3be72b85e544",
               "name": "expression_invalid_syntax",
               "originalRequest": {
                 "url": {
@@ -207498,7 +207745,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207522,7 +207788,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "b7c01931-f2df-4420-8695-a9fa8adce6c9",
+              "id": "2636af85-c562-4e46-9d97-6c5a8a3adb18",
               "name": "invalid_incoming_url",
               "originalRequest": {
                 "url": {
@@ -207533,7 +207799,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207557,7 +207842,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "d19c1497-ac5e-4d0f-9c90-aee0b1f88acb",
+              "id": "832fa6aa-db77-466a-8978-e040873c2d13",
               "name": "invalid_json",
               "originalRequest": {
                 "url": {
@@ -207568,7 +207853,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207592,7 +207896,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "eae744dc-9990-4020-a58d-7a5eed5f692f",
+              "id": "979b8e45-411e-49e9-9887-046a5f7cbb59",
               "name": "invalid_parameter",
               "originalRequest": {
                 "url": {
@@ -207603,7 +207907,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207627,7 +207950,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "49ea74e2-7cb4-4121-bd11-83c5d8346f6d",
+              "id": "cb2550fc-1d8e-48c5-870c-3e923ad3bb59",
               "name": "invalid_setting_filter",
               "originalRequest": {
                 "url": {
@@ -207638,7 +207961,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207662,7 +208004,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "5e079706-56e7-4612-a6ff-fa82e83d3805",
+              "id": "c9b6c5c9-69bf-4e4e-8946-67002f77093c",
               "name": "invalid_uri_in_json",
               "originalRequest": {
                 "url": {
@@ -207673,7 +208015,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207697,7 +208058,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "8a5a8392-ffab-4f19-8179-878f0e8b34f2",
+              "id": "e7368041-566f-4adf-abd7-14e4a49b0a83",
               "name": "missing_request_body",
               "originalRequest": {
                 "url": {
@@ -207708,7 +208069,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207732,7 +208112,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "6d4a098e-9e48-4b32-bd3a-782bf21fc6ea",
+              "id": "fbe38b65-3fc2-4536-b697-5dd95c72c9e7",
               "name": "rebuild_campaigns_build_failed",
               "originalRequest": {
                 "url": {
@@ -207743,7 +208123,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207767,7 +208166,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "5df3831e-be85-40b2-90b3-10817b772f1a",
+              "id": "53fc32e0-ac8a-494c-98a8-f22b7fe94b05",
               "name": "unknown_source_clients",
               "originalRequest": {
                 "url": {
@@ -207778,7 +208177,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207802,7 +208220,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "8f56f54b-80fd-44d2-8239-4dbec3f4a83b",
+              "id": "08f49874-c64d-4395-aba6-df4a7bc6c8d1",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -207813,7 +208231,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207837,7 +208274,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "e00aa544-a880-41d2-a129-8d3e313a58a2",
+              "id": "d048860a-aea7-4b76-aad5-2c845664ca2a",
               "name": "Payment Required",
               "originalRequest": {
                 "url": {
@@ -207848,7 +208285,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207872,7 +208328,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "4ee56730-8593-4220-9dcc-bb55d4fc0dc2",
+              "id": "f59bd501-1ff1-4d74-8b67-0b7a8c934ea5",
               "name": "access_denied",
               "originalRequest": {
                 "url": {
@@ -207883,7 +208339,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207907,7 +208382,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "3752ca9a-1cdb-434c-b954-ec3366354498",
+              "id": "2bd72c0d-d0b5-420b-befa-5128e0bbae5f",
               "name": "method_unauthorized",
               "originalRequest": {
                 "url": {
@@ -207918,7 +208393,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207942,7 +208436,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "8d44ed0c-3905-4bb0-b76e-f0169f8006b3",
+              "id": "f54bdc18-ca42-4f91-8100-1535a3b156e4",
               "name": "missing_access_token",
               "originalRequest": {
                 "url": {
@@ -207953,7 +208447,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -207977,7 +208490,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "a515db73-70dd-4792-96e1-3df53952dfa5",
+              "id": "d369f9c8-aa8d-4f43-ac0a-9939fb6d1b6b",
               "name": "Unsupported Media Type",
               "originalRequest": {
                 "url": {
@@ -207988,7 +208501,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
@@ -208012,7 +208544,7 @@
               "_postman_previewlanguage": "json"
             },
             {
-              "id": "318f5b22-4485-4c54-a99d-0552da336688",
+              "id": "df3d20c9-a9ce-43f5-9867-2fa47f47b18b",
               "name": "Too Many Requests",
               "originalRequest": {
                 "url": {
@@ -208023,7 +208555,26 @@
                     "selectable-by-references"
                   ],
                   "host": ["{{baseUrl}}"],
-                  "query": [],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Lists only the references with this selection: SELECTED for the references that already point at the component, SELECTABLE for the references the component could be selected by. Lists both when omitted.",
+                        "type": "text/plain"
+                      },
+                      "key": "selection",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "A comma-separated list of component types. Lists only the references held by a component whose parent, grandparent or any further ancestor in its campaign has at least one of these types. The types of the component that holds the reference are not checked. A type also matches its subtypes.",
+                        "type": "text/plain"
+                      },
+                      "key": "having_any_ancestor_types",
+                      "value": "<string>"
+                    }
+                  ],
                   "variable": []
                 },
                 "header": [
