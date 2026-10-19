@@ -22,7 +22,6 @@ export interface DateService {
     toClientTimezone(dateTime: string, sameLocal: boolean): string;
     /**
      * @throws {InvalidDateException}
-     * @throws {InvalidTimezoneException}
      */
     toClientTimezone(dateTime: string, format: string): string;
     /**
