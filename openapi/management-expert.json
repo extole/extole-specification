@@ -4341,6 +4341,16 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
+      "missing_optout" : {
+        "summary" : "missing_optout",
+        "value" : {
+          "code" : "missing_optout",
+          "http_status_code" : 400,
+          "message" : "The optout field is required.",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
       "missing_other_person_id" : {
         "summary" : "missing_other_person_id",
         "value" : {
@@ -35090,21 +35100,26 @@
       "OptoutRequest" : {
         "properties" : {
           "list_name" : {
+            "description" : "Value copied into the `list_name` data of the `list_optout` or `list_optin` event.",
             "nullable" : true,
             "type" : "string"
           },
           "list_type" : {
+            "description" : "Value copied into the `list_type` data of the `list_optout` or `list_optin` event.",
             "nullable" : true,
             "type" : "string"
           },
           "optout" : {
+            "description" : "`true` opts the email address in the path out of the client's emails. `false` opts it back in.",
             "type" : "boolean"
           },
           "source" : {
+            "description" : "Value copied into the `source` data of the `list_optout` or `list_optin` event.",
             "nullable" : true,
             "type" : "string"
           },
           "type" : {
+            "description" : "Audience the opt-out applies to, `FRIEND` or `ADVOCATE`. Used only when `optout` is `true`.",
             "enum" : [ "ADVOCATE", "FRIEND" ],
             "nullable" : true,
             "type" : "string"
@@ -122619,6 +122634,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "missing_optout" : {
+                    "$ref" : "#/components/examples/missing_optout"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   }
@@ -122752,6 +122770,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "missing_optout" : {
+                    "$ref" : "#/components/examples/missing_optout"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"

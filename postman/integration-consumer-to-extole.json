@@ -6140,8 +6140,102 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "5914b3c4-e38f-4369-976e-6e7ac9096710",
+              "name": "asset_file_missing",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "assets"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "asset",
+                      "value": "<string>",
+                      "type": "text"
+                    },
+                    {
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "file",
+                      "value": "<string>",
+                      "type": "text"
+                    }
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "32e11f76-c861-49f6-a745-59b9350252fa",
               "name": "asset_limit_exceeded",
+              "originalRequest": {
+                "url": {
+                  "path": ["api", "v4", "me", "assets"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "asset",
+                      "value": "<string>",
+                      "type": "text"
+                    },
+                    {
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "file",
+                      "value": "<string>",
+                      "type": "text"
+                    }
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "8dc7e7ba-0f08-4f1f-b118-35e38ee3ffa6",
+              "name": "asset_metadata_missing",
               "originalRequest": {
                 "url": {
                   "path": ["api", "v4", "me", "assets"],

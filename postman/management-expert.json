@@ -777708,6 +777708,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "55ccfdb3-dd8e-4caf-a5ef-befc872949fb",
+              "name": "missing_optout",
+              "originalRequest": {
+                "url": {
+                  "path": ["v4", "optout", ":secure_email"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "4439f826-f552-42e2-86b7-c22915f90674",
               "name": "missing_request_body",
               "originalRequest": {
@@ -778117,6 +778147,43 @@
             {
               "id": "a1124734-e1ca-40b3-9fe4-3a62f985c0be",
               "name": "invalid_uri_in_json",
+              "originalRequest": {
+                "url": {
+                  "path": ["v4", "optout", ":secure_email"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"list_name\": \"list_name\",\n  \"list_type\": \"list_type\",\n  \"optout\": true,\n  \"source\": \"source\",\n  \"type\": \"ADVOCATE\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "55ccfdb3-dd8e-4caf-a5ef-befc872949fb",
+              "name": "missing_optout",
               "originalRequest": {
                 "url": {
                   "path": ["v4", "optout", ":secure_email"],
