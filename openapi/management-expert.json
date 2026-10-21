@@ -5563,6 +5563,7 @@
           "type" : "object"
         } ],
         "required" : [ "completed_date", "created_date", "display_name", "download_uri", "error_code", "executor_type", "format", "formats", "name", "parameters", "report_id", "report_type", "scopes", "sftp_report_name", "sftp_server_id", "slot", "started_date", "status", "tags", "type", "user_id", "visible" ],
+        "title" : "ROLLING",
         "type" : "object"
       },
       "ActionTypeInCampaignControllerTriggerLegacyQualityCreateRequest" : {
@@ -6766,6 +6767,7 @@
         } ],
         "description" : "Condition that adds the block list types to be checked.",
         "required" : [ "type" ],
+        "title" : "BLOCK_MATCH",
         "type" : "object"
       },
       "BlockMatchPrehandlerConditionResponse" : {
@@ -6794,6 +6796,7 @@
         } ],
         "description" : "Condition that adds the block list types to be checked.",
         "required" : [ "considered_block_list_types", "id", "type" ],
+        "title" : "BLOCK_MATCH",
         "type" : "object"
       },
       "BodyInBuiltCampaignControllerActionDisplayResponse" : {
@@ -7328,6 +7331,7 @@
           "type" : "object"
         } ],
         "required" : [ "action_id", "action_type", "cause_type", "component_ids", "component_references", "enabled", "event_type", "force", "legacy_action_id", "note", "partner_event_id", "polling_id", "polling_name", "quality", "reward_tags" ],
+        "title" : "APPROVE",
         "type" : "object"
       },
       "BuiltCampaignControllerActionCancelRewardResponse" : {
@@ -7349,6 +7353,7 @@
           "type" : "object"
         } ],
         "required" : [ "action_id", "action_type", "component_ids", "component_references", "enabled", "message", "quality", "reward_id" ],
+        "title" : "CANCEL_REWARD",
         "type" : "object"
       },
       "BuiltCampaignControllerActionCreateMembershipResponse" : {
@@ -7367,6 +7372,7 @@
           "type" : "object"
         } ],
         "required" : [ "action_id", "action_type", "audience_id", "component_ids", "component_references", "enabled", "quality" ],
+        "title" : "CREATE_MEMBERSHIP",
         "type" : "object"
       },
       "BuiltCampaignControllerActionCreativeResponse" : {
@@ -7404,6 +7410,7 @@
           "type" : "object"
         } ],
         "required" : [ "action_id", "action_type", "api_version", "build_version", "classification", "component_ids", "component_references", "enabled", "has_creative", "latest_version", "quality", "theme_version" ],
+        "title" : "CREATIVE",
         "type" : "object"
       },
       "BuiltCampaignControllerActionDataIntelligenceResponse" : {
@@ -7429,6 +7436,7 @@
           "type" : "object"
         } ],
         "required" : [ "action_id", "action_type", "component_ids", "component_references", "enabled", "event_name", "intelligence_provider", "profile_risk_update_interval", "quality" ],
+        "title" : "DATA_INTELLIGENCE",
         "type" : "object"
       },
       "BuiltCampaignControllerActionDeclineResponse" : {
@@ -7465,6 +7473,7 @@
           "type" : "object"
         } ],
         "required" : [ "action_id", "action_type", "cause_type", "component_ids", "component_references", "enabled", "event_type", "legacy_action_id", "note", "partner_event_id", "polling_id", "polling_name", "quality" ],
+        "title" : "DECLINE",
         "type" : "object"
       },
       "BuiltCampaignControllerActionDisplayResponse" : {
@@ -7488,6 +7497,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "DISPLAY",
         "type" : "object"
       },
       "BuiltCampaignControllerActionEarnRewardResponse" : {
@@ -7527,6 +7537,7 @@
           "type" : "object"
         } ],
         "required" : [ "action_id", "action_type", "component_ids", "component_references", "data", "enabled", "extra_data", "quality", "reward_action_id", "reward_name", "reward_supplier_id", "slots", "tags", "value_of_event_being_rewarded" ],
+        "title" : "EARN_REWARD",
         "type" : "object"
       },
       "BuiltCampaignControllerActionEmailResponse" : {
@@ -7547,6 +7558,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "EMAIL",
         "type" : "object"
       },
       "BuiltCampaignControllerActionEmailV2Response" : {
@@ -7599,6 +7611,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "EMAIL_V2",
         "type" : "object"
       },
       "BuiltCampaignControllerActionExpireRewardResponse" : {
@@ -7622,6 +7635,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "EXPIRE_REWARD",
         "type" : "object"
       },
       "BuiltCampaignControllerActionExpressionResponse" : {
@@ -7643,6 +7657,7 @@
           "type" : "object"
         } ],
         "required" : [ "action_id", "action_type", "component_ids", "component_references", "data", "enabled", "expression", "quality" ],
+        "title" : "EXPRESSION",
         "type" : "object"
       },
       "BuiltCampaignControllerActionFireAsPersonResponse" : {
@@ -7685,6 +7700,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "FIRE_AS_PERSON",
         "type" : "object"
       },
       "BuiltCampaignControllerActionFulfillRewardResponse" : {
@@ -7730,6 +7746,7 @@
           "type" : "object"
         } ],
         "required" : [ "action_id", "action_type", "amount", "code", "component_ids", "component_references", "enabled", "event_time", "image", "instructions", "link", "message", "partner_reward_id", "quality", "reward_id", "success" ],
+        "title" : "FULFILL_REWARD",
         "type" : "object"
       },
       "BuiltCampaignControllerActionIncentivizeResponse" : {
@@ -7764,6 +7781,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "INCENTIVIZE",
         "type" : "object"
       },
       "BuiltCampaignControllerActionIncentivizeStatusUpdateResponse" : {
@@ -7799,6 +7817,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "INCENTIVIZE_STATUS_UPDATE",
         "type" : "object"
       },
       "BuiltCampaignControllerActionRedeemRewardResponse" : {
@@ -7826,6 +7845,7 @@
           "type" : "object"
         } ],
         "required" : [ "action_id", "action_type", "component_ids", "component_references", "data", "enabled", "partner_event_id", "quality", "reward_id" ],
+        "title" : "REDEEM_REWARD",
         "type" : "object"
       },
       "BuiltCampaignControllerActionRemoveMembershipResponse" : {
@@ -7844,6 +7864,7 @@
           "type" : "object"
         } ],
         "required" : [ "action_id", "action_type", "audience_id", "component_ids", "component_references", "enabled", "quality" ],
+        "title" : "REMOVE_MEMBERSHIP",
         "type" : "object"
       },
       "BuiltCampaignControllerActionResponse" : {
@@ -7979,6 +8000,7 @@
           "type" : "object"
         } ],
         "required" : [ "action_id", "action_type", "component_ids", "component_references", "enabled", "message", "quality", "reward_id" ],
+        "title" : "REVOKE_REWARD",
         "type" : "object"
       },
       "BuiltCampaignControllerActionScheduleResponse" : {
@@ -8012,6 +8034,7 @@
           "type" : "object"
         } ],
         "required" : [ "action_id", "action_type", "component_ids", "component_references", "data", "dates", "delays", "enabled", "extra_data", "force", "quality", "schedule_name" ],
+        "title" : "SCHEDULE",
         "type" : "object"
       },
       "BuiltCampaignControllerActionShareEventResponse" : {
@@ -8026,6 +8049,7 @@
           }
         } ],
         "required" : [ "action_id", "action_type", "component_ids", "component_references", "enabled", "quality" ],
+        "title" : "SHARE_EVENT",
         "type" : "object"
       },
       "BuiltCampaignControllerActionSignalResponse" : {
@@ -8050,6 +8074,7 @@
           "type" : "object"
         } ],
         "required" : [ "action_id", "action_type", "component_ids", "component_references", "data", "enabled", "name", "quality", "signal_polling_id" ],
+        "title" : "SIGNAL",
         "type" : "object"
       },
       "BuiltCampaignControllerActionSignalV1Response" : {
@@ -8074,6 +8099,7 @@
           "type" : "object"
         } ],
         "required" : [ "action_id", "action_type", "component_ids", "component_references", "data", "enabled", "quality", "signal_polling_id" ],
+        "title" : "SIGNAL_V1",
         "type" : "object"
       },
       "BuiltCampaignControllerActionStepSignalResponse" : {
@@ -8095,6 +8121,7 @@
           "type" : "object"
         } ],
         "required" : [ "action_id", "action_type", "component_ids", "component_references", "enabled", "name", "polling_id", "quality" ],
+        "title" : "STEP_SIGNAL",
         "type" : "object"
       },
       "BuiltCampaignControllerActionWebhookResponse" : {
@@ -8118,6 +8145,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "WEBHOOK",
         "type" : "object"
       },
       "BuiltCampaignControllerResponse" : {
@@ -8185,6 +8213,7 @@
           "type" : "object"
         } ],
         "required" : [ "actions", "aliases", "component_ids", "component_references", "controller_id", "created_date", "data", "enabled", "enabled_on_states", "id", "journey_names", "name", "scope", "selectors", "send_policy", "step_builder", "triggers", "type", "updated_date" ],
+        "title" : "CONTROLLER",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerAccessResponse" : {
@@ -8208,6 +8237,7 @@
           "type" : "object"
         } ],
         "required" : [ "component_ids", "component_references", "enabled", "negated", "parent_trigger_group_name", "trigger_description", "trigger_id", "trigger_name", "trigger_phase", "trigger_type", "trusted_scopes" ],
+        "title" : "ACCESS",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerAudienceMembershipEventResponse" : {
@@ -8238,6 +8268,7 @@
           "type" : "object"
         } ],
         "required" : [ "audience_ids", "component_ids", "component_references", "enabled", "event_types", "negated", "parent_trigger_group_name", "trigger_description", "trigger_id", "trigger_name", "trigger_phase", "trigger_type" ],
+        "title" : "AUDIENCE_MEMBERSHIP_EVENT",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerAudienceMembershipResponse" : {
@@ -8263,6 +8294,7 @@
           "type" : "object"
         } ],
         "required" : [ "component_ids", "component_references", "enabled", "having_any_audience_id", "negated", "parent_trigger_group_name", "person_id", "trigger_description", "trigger_id", "trigger_name", "trigger_phase", "trigger_type" ],
+        "title" : "AUDIENCE_MEMBERSHIP",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerClientDomainResponse" : {
@@ -8285,6 +8317,7 @@
           "type" : "object"
         } ],
         "required" : [ "client_domain_ids", "component_ids", "component_references", "enabled", "negated", "parent_trigger_group_name", "trigger_description", "trigger_id", "trigger_name", "trigger_phase", "trigger_type" ],
+        "title" : "CLIENT_DOMAIN",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerDataIntelligenceEventResponse" : {
@@ -8303,6 +8336,7 @@
           "type" : "object"
         } ],
         "required" : [ "component_ids", "component_references", "enabled", "event_name", "negated", "parent_trigger_group_name", "trigger_description", "trigger_id", "trigger_name", "trigger_phase", "trigger_type" ],
+        "title" : "DATA_INTELLIGENCE_EVENT",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerEventResponse" : {
@@ -8327,6 +8361,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "EVENT",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerEventTargetingResponse" : {
@@ -8350,6 +8385,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "EVENT_TARGETING",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerExpressionResponse" : {
@@ -8373,6 +8409,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "EXPRESSION",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerGroupResponse" : {
@@ -8391,6 +8428,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "GROUP",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerHasIdentityResponse" : {
@@ -8405,6 +8443,7 @@
           }
         } ],
         "required" : [ "component_ids", "component_references", "enabled", "negated", "parent_trigger_group_name", "trigger_description", "trigger_id", "trigger_name", "trigger_phase", "trigger_type" ],
+        "title" : "HAS_IDENTITY",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerHasPriorRewardResponse" : {
@@ -8505,6 +8544,7 @@
           "type" : "object"
         } ],
         "required" : [ "component_ids", "component_references", "count_matches", "count_max", "count_min", "enabled", "filter_expressions", "filter_face_value_types", "filter_max_age", "filter_max_date", "filter_min_age", "filter_min_date", "filter_names", "filter_reward_supplier_ids", "filter_scope", "filter_states", "filter_tags", "negated", "parent_trigger_group_name", "sum_of_face_value_max", "sum_of_face_value_min", "tax_year_start", "trigger_description", "trigger_id", "trigger_name", "trigger_phase", "trigger_type" ],
+        "title" : "HAS_PRIOR_REWARD",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerHasPriorStepResponse" : {
@@ -8612,6 +8652,7 @@
           "type" : "object"
         } ],
         "required" : [ "component_ids", "component_references", "count_matches", "count_max", "count_min", "enabled", "filter_campaign_id", "filter_campaign_ids", "filter_expression", "filter_expressions", "filter_max_age", "filter_max_date", "filter_max_value", "filter_min_age", "filter_min_date", "filter_min_value", "filter_names", "filter_partner_event_id", "filter_partner_event_id_name", "filter_partner_event_id_value", "filter_program_label", "filter_program_labels", "filter_quality", "filter_scope", "having_all_names", "negated", "parent_trigger_group_name", "person_id", "sum_of_value_max", "sum_of_value_min", "trigger_description", "trigger_id", "trigger_name", "trigger_phase", "trigger_type" ],
+        "title" : "HAS_PRIOR_STEP",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerJourneyCheckResponse" : {
@@ -8632,6 +8673,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "JOURNEY_CHECK",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerLegacyLabelTargetingResponse" : {
@@ -8646,6 +8688,7 @@
           }
         } ],
         "required" : [ "component_ids", "component_references", "enabled", "negated", "parent_trigger_group_name", "trigger_description", "trigger_id", "trigger_name", "trigger_phase", "trigger_type" ],
+        "title" : "LEGACY_LABEL_TARGETING",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerLegacyQualityResponse" : {
@@ -8664,6 +8707,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "LEGACY_QUALITY",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerMaxMindResponse" : {
@@ -8694,6 +8738,7 @@
           "type" : "object"
         } ],
         "required" : [ "allow_high_risk_email", "component_ids", "component_references", "default_quality_score", "enabled", "ip_threshold", "negated", "parent_trigger_group_name", "risk_threshold", "trigger_description", "trigger_id", "trigger_name", "trigger_phase", "trigger_type" ],
+        "title" : "MAXMIND",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerReferredByEventResponse" : {
@@ -8714,6 +8759,7 @@
           "type" : "object"
         } ],
         "required" : [ "component_ids", "component_references", "enabled", "negated", "parent_trigger_group_name", "referral_originator", "trigger_description", "trigger_id", "trigger_name", "trigger_phase", "trigger_type" ],
+        "title" : "REFERRED_BY_EVENT",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerResponse" : {
@@ -8885,6 +8931,7 @@
           "type" : "object"
         } ],
         "required" : [ "component_ids", "component_references", "enabled", "event_names", "negated", "parent_trigger_group_name", "reward_states", "slots", "tags", "trigger_description", "trigger_id", "trigger_name", "trigger_phase", "trigger_type" ],
+        "title" : "REWARD_EVENT",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerScoreResponse" : {
@@ -8909,6 +8956,7 @@
           "type" : "object"
         } ],
         "required" : [ "cause_event_name", "channel", "component_ids", "component_references", "enabled", "negated", "parent_trigger_group_name", "score_result", "trigger_description", "trigger_id", "trigger_name", "trigger_phase", "trigger_type" ],
+        "title" : "SCORE",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerSendRewardEventResponse" : {
@@ -8946,6 +8994,7 @@
           "type" : "object"
         } ],
         "required" : [ "component_ids", "component_references", "enabled", "negated", "parent_trigger_group_name", "reward_names", "reward_states", "tags", "trigger_description", "trigger_id", "trigger_name", "trigger_phase", "trigger_type" ],
+        "title" : "SEND_REWARD_EVENT",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerShareResponse" : {
@@ -8982,6 +9031,7 @@
           "type" : "object"
         } ],
         "required" : [ "channels", "component_ids", "component_references", "enabled", "negated", "parent_trigger_group_name", "quality", "trigger_description", "trigger_id", "trigger_name", "trigger_phase", "trigger_type" ],
+        "title" : "SHARE",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerStepEventResponse" : {
@@ -9010,6 +9060,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "STEP_EVENT",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerStickyJourneyResponse" : {
@@ -9027,6 +9078,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "STICKY_JOURNEY",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerTargetingResponse" : {
@@ -9045,6 +9097,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "TARGETING",
         "type" : "object"
       },
       "BuiltCampaignControllerTriggerZoneStateResponse" : {
@@ -9071,6 +9124,7 @@
           "type" : "object"
         } ],
         "required" : [ "component_ids", "component_references", "enabled", "invert_mapping_state", "negated", "parent_trigger_group_name", "step_name", "trigger_description", "trigger_id", "trigger_name", "trigger_phase", "trigger_type", "zone_name" ],
+        "title" : "ZONE_STATE",
         "type" : "object"
       },
       "BuiltCampaignFlowStepAppResponse" : {
@@ -9292,6 +9346,7 @@
           "type" : "object"
         } ],
         "required" : [ "actions", "aliases", "category", "component_ids", "component_references", "created_date", "data", "enabled", "enabled_on_states", "id", "journey_names", "name", "scope", "send_policy", "step_builder", "triggers", "type", "updated_date" ],
+        "title" : "FRONTEND_CONTROLLER",
         "type" : "object"
       },
       "BuiltCampaignJourneyEntryResponse" : {
@@ -9320,6 +9375,7 @@
           "type" : "object"
         } ],
         "required" : [ "component_ids", "component_references", "created_date", "data", "enabled", "id", "journey_name", "key", "priority", "step_builder", "triggers", "type", "updated_date" ],
+        "title" : "JOURNEY_ENTRY",
         "type" : "object"
       },
       "BuiltCampaignStepResponse" : {
@@ -9726,6 +9782,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "APPROVE",
         "type" : "object"
       },
       "CampaignControllerActionApproveUpdateRequest" : {
@@ -9833,6 +9890,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "CANCEL_REWARD",
         "type" : "object"
       },
       "CampaignControllerActionCancelRewardUpdateRequest" : {
@@ -9910,6 +9968,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "CREATE_MEMBERSHIP",
         "type" : "object"
       },
       "CampaignControllerActionCreateMembershipUpdateRequest" : {
@@ -10015,6 +10074,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "CREATIVE",
         "type" : "object"
       },
       "CampaignControllerActionCreativeUpdateRequest" : {
@@ -10107,6 +10167,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "DATA_INTELLIGENCE",
         "type" : "object"
       },
       "CampaignControllerActionDeclineCreateRequest" : {
@@ -10191,6 +10252,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "DECLINE",
         "type" : "object"
       },
       "CampaignControllerActionDeclineUpdateRequest" : {
@@ -10297,6 +10359,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "DISPLAY",
         "type" : "object"
       },
       "CampaignControllerActionDisplayUpdateRequest" : {
@@ -10424,6 +10487,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "EARN_REWARD",
         "type" : "object"
       },
       "CampaignControllerActionEarnRewardUpdateRequest" : {
@@ -10536,6 +10600,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "EMAIL",
         "type" : "object"
       },
       "CampaignControllerActionEmailUpdateRequest" : {
@@ -10772,6 +10837,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "EMAIL_V2",
         "type" : "object"
       },
       "CampaignControllerActionEmailV2TestSendRequest" : {
@@ -10921,6 +10987,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "EXPIRE_REWARD",
         "type" : "object"
       },
       "CampaignControllerActionExpireRewardUpdateRequest" : {
@@ -11006,6 +11073,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "EXPRESSION",
         "type" : "object"
       },
       "CampaignControllerActionExpressionUpdateRequest" : {
@@ -11132,6 +11200,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "FIRE_AS_PERSON",
         "type" : "object"
       },
       "CampaignControllerActionFireAsPersonUpdateRequest" : {
@@ -11286,6 +11355,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "FULFILL_REWARD",
         "type" : "object"
       },
       "CampaignControllerActionFulfillRewardUpdateRequest" : {
@@ -11419,6 +11489,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "INCENTIVIZE",
         "type" : "object"
       },
       "CampaignControllerActionIncentivizeStatusUpdateCreateRequest" : {
@@ -11500,6 +11571,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "INCENTIVIZE_STATUS_UPDATE",
         "type" : "object"
       },
       "CampaignControllerActionIncentivizeStatusUpdateUpdateRequest" : {
@@ -11660,6 +11732,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "REDEEM_REWARD",
         "type" : "object"
       },
       "CampaignControllerActionRedeemRewardUpdateRequest" : {
@@ -11746,6 +11819,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "REMOVE_MEMBERSHIP",
         "type" : "object"
       },
       "CampaignControllerActionRemoveMembershipUpdateRequest" : {
@@ -11942,6 +12016,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "REVOKE_REWARD",
         "type" : "object"
       },
       "CampaignControllerActionRevokeRewardUpdateRequest" : {
@@ -12049,6 +12124,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "SCHEDULE",
         "type" : "object"
       },
       "CampaignControllerActionScheduleUpdateRequest" : {
@@ -12130,6 +12206,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "SHARE_EVENT",
         "type" : "object"
       },
       "CampaignControllerActionSignalCreateRequest" : {
@@ -12187,6 +12264,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "SIGNAL",
         "type" : "object"
       },
       "CampaignControllerActionSignalUpdateRequest" : {
@@ -12278,6 +12356,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "SIGNAL_V1",
         "type" : "object"
       },
       "CampaignControllerActionSignalV1UpdateRequest" : {
@@ -12363,6 +12442,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "STEP_SIGNAL",
         "type" : "object"
       },
       "CampaignControllerActionStepSignalUpdateRequest" : {
@@ -12451,6 +12531,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "WEBHOOK",
         "type" : "object"
       },
       "CampaignControllerActionWebhookUpdateRequest" : {
@@ -12530,6 +12611,7 @@
           "type" : "object"
         } ],
         "required" : [ "name", "type" ],
+        "title" : "CONTROLLER",
         "type" : "object"
       },
       "CampaignControllerResponse" : {
@@ -12580,6 +12662,7 @@
         } ],
         "description" : "Stored campaign controller definition. Fields `enabled`, `name`, `scope`, `enabled_on_states`, `selectors`, `aliases`, `journey_names`, `send_policy`, and `step_builder` are unevaluated and appear in buildtime-evaluatable form.",
         "required" : [ "actions", "aliases", "component_ids", "component_references", "controller_id", "created_date", "data", "enabled", "enabled_on_states", "id", "journey_names", "name", "scope", "selectors", "send_policy", "step_builder", "triggers", "type", "updated_date" ],
+        "title" : "CONTROLLER",
         "type" : "object"
       },
       "CampaignControllerTriggerAccessRequest" : {
@@ -12646,6 +12729,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "ACCESS",
         "type" : "object"
       },
       "CampaignControllerTriggerAudienceMembershipCreateRequest" : {
@@ -12750,6 +12834,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "AUDIENCE_MEMBERSHIP_EVENT",
         "type" : "object"
       },
       "CampaignControllerTriggerAudienceMembershipEventUpdateRequest" : {
@@ -12812,6 +12897,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "AUDIENCE_MEMBERSHIP",
         "type" : "object"
       },
       "CampaignControllerTriggerAudienceMembershipUpdateRequest" : {
@@ -12910,6 +12996,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "CLIENT_DOMAIN",
         "type" : "object"
       },
       "CampaignControllerTriggerClientDomainUpdateRequest" : {
@@ -13006,6 +13093,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "DATA_INTELLIGENCE_EVENT",
         "type" : "object"
       },
       "CampaignControllerTriggerDataIntelligenceEventUpdateRequest" : {
@@ -13108,6 +13196,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "EVENT",
         "type" : "object"
       },
       "CampaignControllerTriggerEventTargetingCreateRequest" : {
@@ -13165,6 +13254,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "EVENT_TARGETING",
         "type" : "object"
       },
       "CampaignControllerTriggerEventTargetingUpdateRequest" : {
@@ -13316,6 +13406,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "EXPRESSION",
         "type" : "object"
       },
       "CampaignControllerTriggerGroupCreateRequest" : {
@@ -13372,6 +13463,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "GROUP",
         "type" : "object"
       },
       "CampaignControllerTriggerGroupUpdateRequest" : {
@@ -13461,6 +13553,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "HAS_IDENTITY",
         "type" : "object"
       },
       "CampaignControllerTriggerHasIdentityUpdateRequest" : {
@@ -13663,6 +13756,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "HAS_PRIOR_REWARD",
         "type" : "object"
       },
       "CampaignControllerTriggerHasPriorRewardUpdateRequest" : {
@@ -13969,6 +14063,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "HAS_PRIOR_STEP",
         "type" : "object"
       },
       "CampaignControllerTriggerHasPriorStepUpdateRequest" : {
@@ -14150,6 +14245,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "JOURNEY_CHECK",
         "type" : "object"
       },
       "CampaignControllerTriggerJourneyCheckUpdateRequest" : {
@@ -14242,6 +14338,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "LEGACY_LABEL_TARGETING",
         "type" : "object"
       },
       "CampaignControllerTriggerLegacyLabelTargetingUpdateRequest" : {
@@ -14335,6 +14432,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "LEGACY_QUALITY",
         "type" : "object"
       },
       "CampaignControllerTriggerLegacyQualityUpdateRequest" : {
@@ -14447,6 +14545,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "MAXMIND",
         "type" : "object"
       },
       "CampaignControllerTriggerReferredByEventCreateRequest" : {
@@ -14507,6 +14606,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "REFERRED_BY_EVENT",
         "type" : "object"
       },
       "CampaignControllerTriggerReferredByEventUpdateRequest" : {
@@ -14749,6 +14849,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "REWARD_EVENT",
         "type" : "object"
       },
       "CampaignControllerTriggerScoreCreateRequest" : {
@@ -14821,6 +14922,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "SCORE",
         "type" : "object"
       },
       "CampaignControllerTriggerScoreUpdateRequest" : {
@@ -14933,6 +15035,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "SEND_REWARD_EVENT",
         "type" : "object"
       },
       "CampaignControllerTriggerSendRewardEventUpdateRequest" : {
@@ -15071,6 +15174,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "SHARE",
         "type" : "object"
       },
       "CampaignControllerTriggerShareUpdateRequest" : {
@@ -15192,6 +15296,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "STEP_EVENT",
         "type" : "object"
       },
       "CampaignControllerTriggerStepEventUpdateRequest" : {
@@ -15290,6 +15395,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "STICKY_JOURNEY",
         "type" : "object"
       },
       "CampaignControllerTriggerStickyJourneyUpdateRequest" : {
@@ -15385,6 +15491,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "TARGETING",
         "type" : "object"
       },
       "CampaignControllerTriggerTargetingUpdateRequest" : {
@@ -15492,6 +15599,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "ZONE_STATE",
         "type" : "object"
       },
       "CampaignControllerTriggerZoneStateUpdateRequest" : {
@@ -16000,6 +16108,7 @@
           "type" : "object"
         } ],
         "required" : [ "name", "type" ],
+        "title" : "FRONTEND_CONTROLLER",
         "type" : "object"
       },
       "CampaignFrontendControllerResponse" : {
@@ -16047,6 +16156,7 @@
         } ],
         "description" : "Stored campaign frontend controller definition. Fields `enabled`, `name`, `scope`, `enabled_on_states`, `category`, `aliases`, `journey_names`, `send_policy`, and `step_builder` are unevaluated and appear in buildtime-evaluatable form.",
         "required" : [ "actions", "aliases", "category", "component_ids", "component_references", "created_date", "data", "enabled", "enabled_on_states", "id", "journey_names", "name", "scope", "send_policy", "step_builder", "triggers", "type", "updated_date" ],
+        "title" : "FRONTEND_CONTROLLER",
         "type" : "object"
       },
       "CampaignJourneyEntryCreateRequest" : {
@@ -16074,6 +16184,7 @@
           "type" : "object"
         } ],
         "required" : [ "type" ],
+        "title" : "JOURNEY_ENTRY",
         "type" : "object"
       },
       "CampaignJourneyEntryResponse" : {
@@ -16103,6 +16214,7 @@
         } ],
         "description" : "Stored campaign journey entry definition. Fields `enabled`, `journey_name`, `priority`, and `step_builder` are unevaluated and appear in buildtime-evaluatable form.",
         "required" : [ "component_ids", "component_references", "created_date", "data", "enabled", "id", "journey_name", "key", "priority", "step_builder", "triggers", "type", "updated_date" ],
+        "title" : "JOURNEY_ENTRY",
         "type" : "object"
       },
       "CampaignStepCreateRequest" : {
@@ -17305,6 +17417,7 @@
           "type" : "object"
         } ],
         "required" : [ "parent_report_type_id", "type" ],
+        "title" : "CONFIGURED",
         "type" : "object"
       },
       "ConfiguredReportTypeResponse" : {
@@ -17326,6 +17439,7 @@
           "type" : "object"
         } ],
         "required" : [ "allowed_scopes", "categories", "component_ids", "component_references", "created_date", "data_sources", "data_start", "description", "display_name", "executor_type", "formats", "name", "parameters", "preview_columns", "scopes", "tags", "type", "updated_date", "visibility" ],
+        "title" : "CONFIGURED",
         "type" : "object"
       },
       "ConsumerTokenResponse" : {
@@ -18062,6 +18176,7 @@
           }
         } ],
         "required" : [ "allowed_scopes", "categories", "component_ids", "component_references", "data_sources", "data_start", "description", "display_name", "executor_type", "formats", "name", "parameters", "preview_columns", "scopes", "tags", "type", "visibility" ],
+        "title" : "DASHBOARD",
         "type" : "object"
       },
       "DataAttributeMapping" : {
@@ -18101,6 +18216,7 @@
         } ],
         "description" : "Condition that checks the data name exists.",
         "required" : [ "data_keys", "type" ],
+        "title" : "DATA_EXISTS",
         "type" : "object"
       },
       "DataExistsPrehandlerConditionResponse" : {
@@ -18128,6 +18244,7 @@
         } ],
         "description" : "Condition that checks the data name exists.",
         "required" : [ "data_keys", "id", "type" ],
+        "title" : "DATA_EXISTS",
         "type" : "object"
       },
       "DataInBuiltCampaignControllerActionEarnRewardResponse" : {
@@ -21568,6 +21685,7 @@
           "type" : "object"
         } ],
         "required" : [ "name", "type" ],
+        "title" : "DYNAMIC",
         "type" : "object"
       },
       "EmailFireAsPersonIdentification" : {
@@ -21581,6 +21699,7 @@
             }
           }
         } ],
+        "title" : "EMAIL",
         "type" : "object"
       },
       "EmailMessage" : {
@@ -24321,6 +24440,7 @@
         } ],
         "description" : "Condition that checks the event name.",
         "required" : [ "event_names", "type" ],
+        "title" : "EVENT_NAME_MATCH",
         "type" : "object"
       },
       "EventNameMatchPrehandlerConditionResponse" : {
@@ -24348,6 +24468,7 @@
         } ],
         "description" : "Condition that checks the event name.",
         "required" : [ "event_names", "id", "type" ],
+        "title" : "EVENT_NAME_MATCH",
         "type" : "object"
       },
       "EventNamesInCampaignControllerTriggerEventCreateRequest" : {
@@ -26183,6 +26304,7 @@
         } ],
         "description" : "Action represented by expression that can change the event.",
         "required" : [ "expression", "type" ],
+        "title" : "EXPRESSION",
         "type" : "object"
       },
       "ExpressionPrehandlerActionResponse" : {
@@ -26206,6 +26328,7 @@
         } ],
         "description" : "Action represented by expression that can change the event.",
         "required" : [ "expression", "id", "type" ],
+        "title" : "EXPRESSION",
         "type" : "object"
       },
       "ExpressionPrehandlerConditionRequest" : {
@@ -26225,6 +26348,7 @@
         } ],
         "description" : "Condition represented by expression. It evaluates to true if the expression returns true.",
         "required" : [ "expression", "type" ],
+        "title" : "EXPRESSION",
         "type" : "object"
       },
       "ExpressionPrehandlerConditionResponse" : {
@@ -26248,6 +26372,7 @@
         } ],
         "description" : "Condition represented by expression. It evaluates to true if the expression returns true.",
         "required" : [ "expression", "id", "type" ],
+        "title" : "EXPRESSION",
         "type" : "object"
       },
       "ExtendedCoreCreateRequest" : {
@@ -31116,6 +31241,7 @@
         } ],
         "description" : "Condition that checks the event HTTP headers.",
         "required" : [ "http_header_names", "http_headers", "type" ],
+        "title" : "HTTP_HEADER_MATCH",
         "type" : "object"
       },
       "HttpHeaderMatchPrehandlerConditionResponse" : {
@@ -31152,6 +31278,7 @@
         } ],
         "description" : "Condition that checks the event HTTP headers.",
         "required" : [ "http_header_names", "http_headers", "id", "type" ],
+        "title" : "HTTP_HEADER_MATCH",
         "type" : "object"
       },
       "IconColorInCampaignFlowStepCreateRequest" : {
@@ -31802,6 +31929,7 @@
           "type" : "object"
         } ],
         "required" : [ "completed_date", "created_date", "display_name", "download_uri", "error_code", "executor_type", "format", "formats", "name", "parameters", "report_id", "report_type", "scopes", "sftp_report_name", "sftp_server_id", "slot", "started_date", "status", "tags", "type", "user_id", "visible" ],
+        "title" : "EXECUTED",
         "type" : "object"
       },
       "Instant" : {
@@ -32137,6 +32265,7 @@
         } ],
         "description" : "Action represented by Javascript that can change the event.",
         "required" : [ "javascript", "type" ],
+        "title" : "JAVASCRIPT_V1",
         "type" : "object"
       },
       "JavascriptPrehandlerActionResponse" : {
@@ -32160,6 +32289,7 @@
         } ],
         "description" : "Action represented by Javascript that can change the event.",
         "required" : [ "id", "javascript", "type" ],
+        "title" : "JAVASCRIPT_V1",
         "type" : "object"
       },
       "JavascriptPrehandlerConditionRequest" : {
@@ -32179,6 +32309,7 @@
         } ],
         "description" : "Condition represented by Javascript. It evaluates to true if the javascript returns true.",
         "required" : [ "javascript", "type" ],
+        "title" : "JAVASCRIPT_V1",
         "type" : "object"
       },
       "JavascriptPrehandlerConditionResponse" : {
@@ -32202,6 +32333,7 @@
         } ],
         "description" : "Condition represented by Javascript. It evaluates to true if the javascript returns true.",
         "required" : [ "id", "javascript", "type" ],
+        "title" : "JAVASCRIPT_V1",
         "type" : "object"
       },
       "JourneyKeyCreateRequest" : {
@@ -33137,6 +33269,7 @@
         } ],
         "description" : "Action that modifies the event data based on data mappers attributes.",
         "required" : [ "data_attribute_mappings", "type" ],
+        "title" : "MAP_DATA_ATTRIBUTES",
         "type" : "object"
       },
       "MapDataAttributesPrehandlerActionResponse" : {
@@ -33163,6 +33296,7 @@
         } ],
         "description" : "Action represented by data mappers that can change the data of the event.",
         "required" : [ "data_attribute_mappings", "id", "type" ],
+        "title" : "MAP_DATA_ATTRIBUTES",
         "type" : "object"
       },
       "MeClientResponse" : {
@@ -34839,6 +34973,7 @@
           "type" : "object"
         } ],
         "required" : [ "completed_date", "created_date", "display_name", "download_uri", "error_code", "executor_type", "format", "formats", "name", "parameters", "report_id", "report_type", "scopes", "sftp_report_name", "sftp_server_id", "slot", "started_date", "status", "tags", "type", "user_id", "visible" ],
+        "title" : "NEW_ENTRIES",
         "type" : "object"
       },
       "NotExecutedReportRunnerReportResponse" : {
@@ -34853,6 +34988,7 @@
           }
         } ],
         "required" : [ "display_name", "name", "parameters", "report_type", "slot", "tags", "type" ],
+        "title" : "NOT_EXECUTED",
         "type" : "object"
       },
       "OAuthAccessTokenResponse" : {
@@ -35350,6 +35486,7 @@
           },
           "type" : "object"
         } ],
+        "title" : "PARTNER_EVENT_ID",
         "type" : "object"
       },
       "PartnerEventIdInBuiltCampaignControllerActionIncentivizeStatusUpdateResponse" : {
@@ -35733,6 +35870,7 @@
             }
           }
         } ],
+        "title" : "PARTNER_USER_ID",
         "type" : "object"
       },
       "PatternInClientDomainPatternCreateRequest" : {
@@ -36057,6 +36195,7 @@
             }
           }
         } ],
+        "title" : "PERSON_ID",
         "type" : "object"
       },
       "PersonIdInBuiltCampaignControllerActionFireAsPersonResponse" : {
@@ -37635,6 +37774,7 @@
           "type" : "object"
         } ],
         "required" : [ "created_date", "execution_policy", "expiration_ms", "formats", "id", "merging_configuration", "name", "next_execution_date", "parameters", "paused", "report_type_name", "scopes", "sftp_server_id", "tags", "type", "updated_date", "user_id" ],
+        "title" : "REFRESHING",
         "type" : "object"
       },
       "ReplyToInBuiltCampaignControllerActionEmailV2Response" : {
@@ -40511,6 +40651,7 @@
           "type" : "object"
         } ],
         "required" : [ "created_date", "execution_policy", "formats", "frequency", "id", "legacy_sftp_report_name_format", "merging_configuration", "name", "next_execution_date", "parameters", "paused", "report_type_name", "schedule_start_date", "scopes", "sftp_server_id", "tags", "type", "updated_date", "user_id" ],
+        "title" : "SCHEDULED",
         "type" : "object"
       },
       "ScopeInCampaignControllerCreateRequest" : {
@@ -41141,6 +41282,7 @@
         } ],
         "description" : "Action that modifies the event data.",
         "required" : [ "type" ],
+        "title" : "SET_DATA",
         "type" : "object"
       },
       "SetDataPrehandlerActionResponse" : {
@@ -41186,6 +41328,7 @@
         } ],
         "description" : "Action that modifies the event data.",
         "required" : [ "data", "default_data", "delete_data", "id", "type" ],
+        "title" : "SET_DATA",
         "type" : "object"
       },
       "SetSandboxPrehandlerActionRequest" : {
@@ -41206,6 +41349,7 @@
         } ],
         "description" : "Action that modifies the event sandbox.",
         "required" : [ "sandbox_id", "type" ],
+        "title" : "SET_SANDBOX",
         "type" : "object"
       },
       "SetSandboxPrehandlerActionResponse" : {
@@ -41229,6 +41373,7 @@
         } ],
         "description" : "Action that modifies the event sandbox.",
         "required" : [ "id", "sandbox_id", "type" ],
+        "title" : "SET_SANDBOX",
         "type" : "object"
       },
       "SignalPollingIdInBuiltCampaignControllerActionSignalResponse" : {
@@ -41913,6 +42058,7 @@
           }
         } ],
         "required" : [ "allowed_scopes", "categories", "component_ids", "component_references", "data_sources", "data_start", "description", "display_name", "executor_type", "formats", "name", "parameters", "preview_columns", "scopes", "tags", "type", "visibility" ],
+        "title" : "SPARK",
         "type" : "object"
       },
       "SqlReportTypeCreateRequest" : {
@@ -41935,6 +42081,7 @@
           "type" : "object"
         } ],
         "required" : [ "database", "query", "type" ],
+        "title" : "SQL",
         "type" : "object"
       },
       "SqlReportTypeResponse" : {
@@ -41963,6 +42110,7 @@
           "type" : "object"
         } ],
         "required" : [ "allowed_scopes", "categories", "component_ids", "component_references", "created_date", "data_sources", "data_start", "database", "description", "display_name", "executor_type", "formats", "name", "parameters", "preview_columns", "query", "scopes", "tags", "type", "updated_date", "visibility" ],
+        "title" : "SQL",
         "type" : "object"
       },
       "StaticReportTypeParameterDetailsRequest" : {
@@ -41977,6 +42125,7 @@
           }
         } ],
         "required" : [ "name", "type" ],
+        "title" : "STATIC",
         "type" : "object"
       },
       "StepBuilderInBuiltCampaignStepResponse" : {
