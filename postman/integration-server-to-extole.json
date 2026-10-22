@@ -854,6 +854,450 @@
           "protocolProfileBehavior": { "disableBodyPruning": true }
         },
         {
+          "id": "5253388a-86d4-400a-ad68-b2e8960ff1db",
+          "name": "Invalidate current access token",
+          "request": {
+            "name": "Invalidate current access token",
+            "description": {
+              "content": "Invalidates the access token used to authenticate the request. Equivalent to `DELETE /v4/tokens/{token}` but without putting the token in the URL path. Subsequent requests using the same token return `403 access_denied`. Returns `204` with an empty body on success. A token issued by the Extole identity provider cannot be invalidated: the call succeeds and the token stays valid until it expires. When the request carries the `admin_token` cookie for the same token, the response expires that cookie.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": ["v4", "tokens"],
+              "host": ["{{baseUrl}}"],
+              "query": [],
+              "variable": []
+            },
+            "header": [{ "key": "Accept", "value": "<string>" }],
+            "method": "DELETE",
+            "body": {},
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "cfe6f31c-7d2e-44df-99e2-e9bd222299a1",
+              "name": "Logged out. A stored token is invalidated. A token issued by the Extole identity provider stays valid until it expires.",
+              "originalRequest": {
+                "url": {
+                  "path": ["v4", "tokens"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "No Content",
+              "code": 204,
+              "header": [],
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "e68c467e-b6a8-4da3-bc7d-0677fe8a43a0",
+              "name": "binding_error",
+              "originalRequest": {
+                "url": {
+                  "path": ["v4", "tokens"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "88d31813-0b06-43d5-9681-1f3038e732e9",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["v4", "tokens"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "d4392114-511e-474a-acf3-5049bc9f2701",
+              "name": "invalid_json",
+              "originalRequest": {
+                "url": {
+                  "path": ["v4", "tokens"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ae09b8e9-4dc0-4b41-8185-0a35554689cf",
+              "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["v4", "tokens"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "9ecdd781-565b-4fb1-84bd-dd570e7b69c8",
+              "name": "invalid_uri_in_json",
+              "originalRequest": {
+                "url": {
+                  "path": ["v4", "tokens"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c1f08c16-16b3-4e89-acf4-7f0639e99723",
+              "name": "missing_request_body",
+              "originalRequest": {
+                "url": {
+                  "path": ["v4", "tokens"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ed2aed2e-19dc-4dee-850a-b19eb9f2e51a",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v4", "tokens"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "062a8c49-196c-4d8f-a9d6-5aaa3d0a5b0c",
+              "name": "Payment Required",
+              "originalRequest": {
+                "url": {
+                  "path": ["v4", "tokens"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Payment Required",
+              "code": 402,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "34747717-9fb5-4be8-bf78-bf2bf87c2327",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": ["v4", "tokens"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "abfb8797-4971-48eb-b7ca-8c843058dc1a",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v4", "tokens"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3c30c3d3-db5c-4413-bfac-1483a50b866d",
+              "name": "missing_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": ["v4", "tokens"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "08c4f310-dfa4-4d85-8be0-9796fbb7dc04",
+              "name": "Unsupported Media Type",
+              "originalRequest": {
+                "url": {
+                  "path": ["v4", "tokens"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Unsupported Media Type",
+              "code": 415,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e2f1c634-fb28-4030-b467-fe6a4f09d55e",
+              "name": "Too Many Requests",
+              "originalRequest": {
+                "url": {
+                  "path": ["v4", "tokens"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        },
+        {
           "id": "b13bd785-6049-42dc-93e2-e231273e5aa5",
           "name": "Get access token by value",
           "request": {
@@ -1315,7 +1759,7 @@
           "request": {
             "name": "Invalidate access token",
             "description": {
-              "content": "Invalidates the supplied access token immediately. Subsequent requests using the same token return `401 invalid_access_token`. Returns `200` with an empty body on success.",
+              "content": "Deprecated. Use `DELETE /v4/tokens`, which keeps the token out of the URL. Invalidates the supplied access token immediately. Subsequent requests using the same token return `403 access_denied`. Returns `204` with an empty body on success. A token issued by the Extole identity provider cannot be invalidated: the call succeeds and the token stays valid until it expires. When the request carries the `admin_token` cookie for the same token, the response expires that cookie.",
               "type": "text/plain"
             },
             "url": {
@@ -1342,8 +1786,8 @@
           },
           "response": [
             {
-              "id": "e9c6b0c5-f676-4c3e-ae62-c653b7668814",
-              "name": "Token invalidated.",
+              "id": "b8534343-20b5-418a-84f1-8ce02ef846a3",
+              "name": "Logged out. A stored token is invalidated. A token issued by the Extole identity provider stays valid until it expires.",
               "originalRequest": {
                 "url": {
                   "path": ["v4", "tokens", ":token"],
@@ -1364,8 +1808,8 @@
                 "method": "DELETE",
                 "body": {}
               },
-              "status": "OK",
-              "code": 200,
+              "status": "No Content",
+              "code": 204,
               "header": [],
               "cookie": [],
               "_postman_previewlanguage": "text"
