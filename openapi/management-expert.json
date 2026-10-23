@@ -32339,7 +32339,7 @@
       "JourneyKeyCreateRequest" : {
         "properties" : {
           "name" : {
-            "$ref" : "#/components/schemas/NameInCampaignControllerCreateRequest"
+            "$ref" : "#/components/schemas/NameInCampaignJourneyEntryCreateRequest"
           },
           "value" : {
             "$ref" : "#/components/schemas/ValueInCampaignJourneyEntryCreateRequest"
@@ -32350,7 +32350,7 @@
       "JourneyKeyResponse" : {
         "properties" : {
           "name" : {
-            "$ref" : "#/components/schemas/NameInCampaignStepResponse"
+            "$ref" : "#/components/schemas/NameInCampaignJourneyEntryResponse"
           },
           "value" : {
             "$ref" : "#/components/schemas/ValueInCampaignJourneyEntryResponse"
@@ -34563,7 +34563,52 @@
           "type" : "string"
         } ]
       },
-      "NameInCampaignStepResponse" : {
+      "NameInCampaignJourneyEntryCreateRequest" : {
+        "description" : "Choose between static or dynamic name. Buildtime expressions use [CampaignBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts).",
+        "externalDocs" : {
+          "description" : "CampaignBuildtimeContext",
+          "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts"
+        },
+        "oneOf" : [ {
+          "allOf" : [ {
+            "type" : "string"
+          }, {
+            "not" : {
+              "anyOf" : [ {
+                "pattern" : "^handlebars@buildtime:.*",
+                "type" : "string"
+              }, {
+                "pattern" : "^javascript@buildtime:.*",
+                "type" : "string"
+              } ]
+            },
+            "type" : "string"
+          } ],
+          "description" : "Static name",
+          "title" : "Static Value"
+        }, {
+          "description" : "Handlebars expression with [CampaignBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts).",
+          "example" : "handlebars@buildtime:{{name}}",
+          "externalDocs" : {
+            "description" : "CampaignBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts"
+          },
+          "pattern" : "^handlebars@buildtime:.*",
+          "title" : "Buildtime - Handlebars",
+          "type" : "string"
+        }, {
+          "description" : "Javascript expression with [CampaignBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts).",
+          "example" : "javascript@buildtime:function() { return context.getVariableContext().get('name');}",
+          "externalDocs" : {
+            "description" : "CampaignBuildtimeContext",
+            "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts"
+          },
+          "pattern" : "^javascript@buildtime:.*",
+          "title" : "Buildtime - Javascript",
+          "type" : "string"
+        } ]
+      },
+      "NameInCampaignJourneyEntryResponse" : {
         "description" : "The name as configured: a literal value, or an expression (type:string) when defined dynamically. Buildtime expressions use [CampaignBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/CampaignBuildtimeContext.d.ts).",
         "externalDocs" : {
           "description" : "CampaignBuildtimeContext",
@@ -35668,7 +35713,6 @@
         } ]
       },
       "PartnerEventIdResponse" : {
-        "nullable" : true,
         "properties" : {
           "name" : {
             "description" : "Name of the partner event identifier (e.g. `order_id`).",
@@ -37415,48 +37459,11 @@
           "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts"
         },
         "oneOf" : [ {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/Duration"
+          } ],
           "description" : "Static profile risk update interval",
-          "properties" : {
-            "nano" : {
-              "format" : "int32",
-              "type" : "integer"
-            },
-            "negative" : {
-              "type" : "boolean"
-            },
-            "positive" : {
-              "type" : "boolean"
-            },
-            "seconds" : {
-              "format" : "int64",
-              "type" : "integer"
-            },
-            "units" : {
-              "items" : {
-                "properties" : {
-                  "dateBased" : {
-                    "type" : "boolean"
-                  },
-                  "duration" : {
-                    "$ref" : "#/components/schemas/Duration"
-                  },
-                  "durationEstimated" : {
-                    "type" : "boolean"
-                  },
-                  "timeBased" : {
-                    "type" : "boolean"
-                  }
-                },
-                "type" : "object"
-              },
-              "type" : "array"
-            },
-            "zero" : {
-              "type" : "boolean"
-            }
-          },
-          "title" : "Static Value",
-          "type" : "object"
+          "title" : "Static Value"
         }, {
           "description" : "Handlebars expression with [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
           "example" : "handlebars@buildtime:{{profileRiskUpdateInterval}}",
@@ -37486,48 +37493,11 @@
           "url" : "https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts"
         },
         "oneOf" : [ {
+          "allOf" : [ {
+            "$ref" : "#/components/schemas/Duration"
+          } ],
           "description" : "Literal profile risk update interval",
-          "properties" : {
-            "nano" : {
-              "format" : "int32",
-              "type" : "integer"
-            },
-            "negative" : {
-              "type" : "boolean"
-            },
-            "positive" : {
-              "type" : "boolean"
-            },
-            "seconds" : {
-              "format" : "int64",
-              "type" : "integer"
-            },
-            "units" : {
-              "items" : {
-                "properties" : {
-                  "dateBased" : {
-                    "type" : "boolean"
-                  },
-                  "duration" : {
-                    "$ref" : "#/components/schemas/Duration"
-                  },
-                  "durationEstimated" : {
-                    "type" : "boolean"
-                  },
-                  "timeBased" : {
-                    "type" : "boolean"
-                  }
-                },
-                "type" : "object"
-              },
-              "type" : "array"
-            },
-            "zero" : {
-              "type" : "boolean"
-            }
-          },
-          "title" : "Static Value",
-          "type" : "object"
+          "title" : "Static Value"
         }, {
           "description" : "Handlebars expression with [ControllerBuildtimeContext](https://github.com/extole/extole-specification/blob/main/openapi/expression-context/com/extole/api/campaign/ControllerBuildtimeContext.d.ts).",
           "example" : "handlebars@buildtime:{{profileRiskUpdateInterval}}",
@@ -56160,19 +56130,7 @@
                 "enabled" : true,
                 "event_name" : "event_name",
                 "intelligence_provider" : "EMAIL_AGE",
-                "profile_risk_update_interval" : {
-                  "nano" : 1,
-                  "negative" : true,
-                  "positive" : true,
-                  "seconds" : 1,
-                  "units" : [ {
-                    "dateBased" : true,
-                    "duration" : "PT42S",
-                    "durationEstimated" : true,
-                    "timeBased" : true
-                  } ],
-                  "zero" : true
-                },
+                "profile_risk_update_interval" : "PT42S",
                 "quality" : "ALWAYS"
               },
               "schema" : {
@@ -56718,19 +56676,7 @@
                 "enabled" : true,
                 "event_name" : "event_name",
                 "intelligence_provider" : "EMAIL_AGE",
-                "profile_risk_update_interval" : {
-                  "nano" : 1,
-                  "negative" : true,
-                  "positive" : true,
-                  "seconds" : 1,
-                  "units" : [ {
-                    "dateBased" : true,
-                    "duration" : "PT42S",
-                    "durationEstimated" : true,
-                    "timeBased" : true
-                  } ],
-                  "zero" : true
-                },
+                "profile_risk_update_interval" : "PT42S",
                 "quality" : "ALWAYS"
               },
               "schema" : {
