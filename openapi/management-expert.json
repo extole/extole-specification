@@ -3021,6 +3021,16 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
+      "component_not_found" : {
+        "summary" : "component_not_found",
+        "value" : {
+          "code" : "component_not_found",
+          "http_status_code" : 400,
+          "message" : "Component not found",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
       "component_operation_method_missing" : {
         "summary" : "component_operation_method_missing",
         "value" : {
@@ -35059,6 +35069,10 @@
             "type" : "string"
           },
           "code" : {
+            "type" : "string"
+          },
+          "component_id" : {
+            "description" : "Integration component this connection belongs to. When set, the exchanged key is added to that component.",
             "type" : "string"
           },
           "key_type" : {
@@ -150405,6 +150419,7 @@
               "example" : {
                 "client_key_id" : "client_key_id",
                 "code" : "code",
+                "component_id" : "component_id",
                 "key_type" : "STANDARD",
                 "redirect_uri" : "redirect_uri"
               },
@@ -150437,6 +150452,9 @@
                   },
                   "client_key_exchanger_not_found" : {
                     "$ref" : "#/components/examples/client_key_exchanger_not_found"
+                  },
+                  "component_not_found" : {
+                    "$ref" : "#/components/examples/component_not_found"
                   },
                   "exchange_client_key_not_found" : {
                     "$ref" : "#/components/examples/exchange_client_key_not_found"
