@@ -148898,7 +148898,6 @@
                     "type" : "string"
                   },
                   "scope" : {
-                    "nullable" : true,
                     "type" : "string"
                   }
                 },
