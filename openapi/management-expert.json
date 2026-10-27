@@ -4131,6 +4131,16 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
+      "invalid_uri_in_query_parameter" : {
+        "summary" : "invalid_uri_in_query_parameter",
+        "value" : {
+          "code" : "invalid_uri_in_query_parameter",
+          "http_status_code" : 400,
+          "message" : "Invalid URI in query parameter",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
       "invalid_user_id" : {
         "summary" : "invalid_user_id",
         "value" : {
@@ -45726,6 +45736,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   }
@@ -45982,6 +45995,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_client_domain_pattern" : {
                     "$ref" : "#/components/examples/missing_client_domain_pattern"
                   },
@@ -46159,6 +46175,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -46840,6 +46859,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   }
@@ -47135,6 +47157,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   },
@@ -47278,6 +47303,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -47811,6 +47839,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   }
@@ -47943,6 +47974,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_client_id" : {
                     "$ref" : "#/components/examples/missing_client_id"
@@ -48082,6 +48116,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   }
@@ -48216,6 +48253,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -48446,6 +48486,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_client_id" : {
                     "$ref" : "#/components/examples/missing_client_id"
                   },
@@ -48596,6 +48639,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   }
@@ -48730,6 +48776,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -48899,6 +48948,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -49082,6 +49134,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_component_type_name" : {
                     "$ref" : "#/components/examples/missing_component_type_name"
                   },
@@ -49259,6 +49314,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -49794,6 +49852,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   }
@@ -50049,6 +50110,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   },
@@ -50205,6 +50269,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   }
@@ -50345,6 +50412,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -50622,6 +50692,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   },
@@ -50785,6 +50858,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   }
@@ -50937,6 +51013,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -51123,6 +51202,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -51537,6 +51619,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "journey_name_invalid" : {
                     "$ref" : "#/components/examples/journey_name_invalid"
                   },
@@ -51756,6 +51841,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -51944,6 +52032,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -52137,6 +52228,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -52503,6 +52597,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -52736,6 +52833,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -52931,6 +53031,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -53278,6 +53381,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -53511,6 +53617,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -53706,6 +53815,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -54046,6 +54158,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -54279,6 +54394,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -54474,6 +54592,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -54849,6 +54970,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "javascript_error" : {
                     "$ref" : "#/components/examples/javascript_error"
                   },
@@ -55211,6 +55335,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -55549,6 +55676,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -55809,6 +55939,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "javascript_error" : {
                     "$ref" : "#/components/examples/javascript_error"
                   },
@@ -56003,6 +56136,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -56338,6 +56474,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -56542,6 +56681,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -56884,6 +57026,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -57117,6 +57262,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -57312,6 +57460,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -57673,6 +57824,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -57906,6 +58060,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -58101,6 +58258,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -58486,6 +58646,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -58719,6 +58882,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -58914,6 +59080,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -59266,6 +59435,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -59499,6 +59671,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -59694,6 +59869,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -60049,6 +60227,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -60282,6 +60463,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -60477,6 +60661,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -60834,6 +61021,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -61067,6 +61257,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -61262,6 +61455,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -61602,6 +61798,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -61835,6 +62034,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -62030,6 +62232,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -62377,6 +62582,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -62610,6 +62818,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -62805,6 +63016,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -63178,6 +63392,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -63411,6 +63628,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -63606,6 +63826,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -63939,6 +64162,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -64172,6 +64398,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -64367,6 +64596,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -64719,6 +64951,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -64952,6 +65187,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -65147,6 +65385,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -65497,6 +65738,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -65736,6 +65980,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -65931,6 +66178,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -66275,6 +66525,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -66508,6 +66761,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -66704,6 +66960,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -66896,6 +67155,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -67240,6 +67502,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -67473,6 +67738,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -67669,6 +67937,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -67861,6 +68132,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -68245,6 +68519,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -68478,6 +68755,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -68698,6 +68978,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -68893,6 +69176,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -69251,6 +69537,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -69484,6 +69773,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -69680,6 +69972,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -69872,6 +70167,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -70211,6 +70509,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -70447,6 +70748,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -70643,6 +70947,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -70835,6 +71142,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -71251,6 +71561,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -71484,6 +71797,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -71680,6 +71996,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -71872,6 +72191,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -72226,6 +72548,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -72459,6 +72784,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -72679,6 +73007,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -72874,6 +73205,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -73246,6 +73580,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -73479,6 +73816,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -73699,6 +74039,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -73894,6 +74237,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -74240,6 +74586,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -74479,6 +74828,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -74675,6 +75027,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -74863,6 +75218,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -75077,6 +75435,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -75272,6 +75633,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -75628,6 +75992,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -75885,6 +76252,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -76095,6 +76465,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -76452,6 +76825,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -76709,6 +77085,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -76919,6 +77298,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -77279,6 +77661,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -77536,6 +77921,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -77746,6 +78134,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -78102,6 +78493,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -78362,6 +78756,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -78572,6 +78969,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -78934,6 +79334,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -79191,6 +79594,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -79401,6 +79807,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -79753,6 +80162,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -80010,6 +80422,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -80220,6 +80635,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -80632,6 +81050,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -80889,6 +81310,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -81099,6 +81523,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -81572,6 +81999,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -81829,6 +82259,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -82039,6 +82472,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -82391,6 +82827,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "legacy_label_targeting_triggers_are_only_supported_with_targeting_v3" : {
                     "$ref" : "#/components/examples/legacy_label_targeting_triggers_are_only_supported_with_targeting_v3"
                   },
@@ -82651,6 +83090,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -82861,6 +83303,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -83220,6 +83665,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -83477,6 +83925,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -83687,6 +84138,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -84043,6 +84497,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -84300,6 +84757,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -84510,6 +84970,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -84878,6 +85341,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -85135,6 +85601,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -85345,6 +85814,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -85699,6 +86171,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -85956,6 +86431,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -86166,6 +86644,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -86527,6 +87008,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -86784,6 +87268,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -86994,6 +87481,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -87349,6 +87839,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -87606,6 +88099,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -87816,6 +88312,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -88183,6 +88682,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -88440,6 +88942,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -88650,6 +89155,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -89029,6 +89537,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -89286,6 +89797,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -89497,6 +90011,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -89689,6 +90206,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -90049,6 +90569,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -90309,6 +90832,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -90520,6 +91046,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -90712,6 +91241,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -91080,6 +91612,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -91337,6 +91872,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -91572,6 +92110,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -91767,6 +92308,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -92120,6 +92664,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -92377,6 +92924,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -92588,6 +93138,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -92780,6 +93333,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -93149,6 +93705,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -93406,6 +93965,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -93641,6 +94203,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -93836,6 +94401,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -94189,6 +94757,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -94446,6 +95017,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -94657,6 +95231,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -94849,6 +95426,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -95212,6 +95792,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -95472,6 +96055,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -95707,6 +96293,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -95902,6 +96491,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -96255,6 +96847,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -96512,6 +97107,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -96723,6 +97321,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -96915,6 +97516,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -97268,6 +97872,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -97525,6 +98132,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -97736,6 +98346,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -97928,6 +98541,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -98146,6 +98762,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -98321,6 +98940,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -98755,6 +99377,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -98971,6 +99596,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -99153,6 +99781,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -99600,6 +100231,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -99916,6 +100550,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -100132,6 +100769,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -100317,6 +100957,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -100658,6 +101301,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -100877,6 +101523,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -101069,6 +101718,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -101420,6 +102072,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -101743,6 +102398,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -101969,6 +102627,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -102154,6 +102815,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -102507,6 +103171,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -102726,6 +103393,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -102918,6 +103588,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -103281,6 +103954,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -103604,6 +104280,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -103830,6 +104509,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -104020,6 +104702,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -104206,6 +104891,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -104402,6 +105090,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -104603,6 +105294,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -104802,6 +105496,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -105003,6 +105700,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -105202,6 +105902,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -105458,6 +106161,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "javascript_error" : {
                     "$ref" : "#/components/examples/javascript_error"
                   },
@@ -105660,6 +106366,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -105859,6 +106568,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -106060,6 +106772,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -106259,6 +106974,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -106460,6 +107178,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -106659,6 +107380,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -106860,6 +107584,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -107059,6 +107786,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -107260,6 +107990,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -107459,6 +108192,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -107660,6 +108396,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -107859,6 +108598,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -108060,6 +108802,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -108259,6 +109004,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -108460,6 +109208,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -108659,6 +109410,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -108860,6 +109614,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -109059,6 +109816,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -109284,6 +110044,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -109487,6 +110250,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -109686,6 +110452,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -109887,6 +110656,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -110086,6 +110858,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -110287,6 +111062,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -110487,6 +111265,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -110686,6 +111467,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -110911,6 +111695,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -111113,6 +111900,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -111338,6 +112128,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -111541,6 +112334,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -111741,6 +112537,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -111936,6 +112735,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -112157,6 +112959,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -112360,6 +113165,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -112559,6 +113367,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -112760,6 +113571,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -112959,6 +113773,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -113160,6 +113977,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -113359,6 +114179,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -113560,6 +114383,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -113759,6 +114585,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -113960,6 +114789,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -114159,6 +114991,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -114360,6 +115195,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -114559,6 +115397,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -114760,6 +115601,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -114959,6 +115803,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -115160,6 +116007,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -115359,6 +116209,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -115560,6 +116413,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -115759,6 +116615,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -115960,6 +116819,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -116160,6 +117022,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -116359,6 +117224,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -116584,6 +117452,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -116787,6 +117658,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -116987,6 +117861,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -117186,6 +118063,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -117411,6 +118291,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -117614,6 +118497,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -117814,6 +118700,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -118013,6 +118902,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -118238,6 +119130,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -118441,6 +119336,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -118640,6 +119538,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -118841,6 +119742,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -119041,6 +119945,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -119240,6 +120147,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -119465,6 +120375,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -119647,6 +120560,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -119859,6 +120775,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -120048,6 +120967,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -120260,6 +121182,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -120452,6 +121377,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -120667,6 +121595,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -120866,6 +121797,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -121088,6 +122022,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -121280,6 +122217,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -121495,6 +122435,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -121694,6 +122637,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -121916,6 +122862,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -122060,6 +123009,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   }
@@ -122199,6 +123151,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   }
@@ -122334,6 +123289,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -122474,6 +123432,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   }
@@ -122602,6 +123563,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -122735,6 +123699,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_optout" : {
                     "$ref" : "#/components/examples/missing_optout"
@@ -122872,6 +123839,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_optout" : {
                     "$ref" : "#/components/examples/missing_optout"
@@ -123011,6 +123981,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -123172,6 +124145,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -123358,6 +124334,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   },
@@ -123509,6 +124488,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -123668,6 +124650,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   },
@@ -123819,6 +124804,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "max_fetch_size_1000" : {
                     "$ref" : "#/components/examples/max_fetch_size_1000"
                   },
@@ -123963,6 +124951,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   }
@@ -124104,6 +125095,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -124256,6 +125250,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   },
@@ -124405,6 +125402,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   },
@@ -124538,6 +125538,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -124706,6 +125709,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "max_fetch_size_1000" : {
                     "$ref" : "#/components/examples/max_fetch_size_1000"
@@ -124899,6 +125905,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "max_fetch_size_1000" : {
                     "$ref" : "#/components/examples/max_fetch_size_1000"
                   },
@@ -125070,6 +126079,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -125331,6 +126343,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   },
@@ -125529,6 +126544,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -126235,6 +127253,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "max_fetch_size_1000" : {
                     "$ref" : "#/components/examples/max_fetch_size_1000"
                   },
@@ -126527,6 +127548,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "max_fetch_size_1000" : {
                     "$ref" : "#/components/examples/max_fetch_size_1000"
                   },
@@ -126724,6 +127748,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "max_fetch_size_1000" : {
                     "$ref" : "#/components/examples/max_fetch_size_1000"
                   },
@@ -126887,6 +127914,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -127065,6 +128095,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "max_fetch_size_1000" : {
                     "$ref" : "#/components/examples/max_fetch_size_1000"
@@ -127274,6 +128307,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "max_fetch_size_1000" : {
                     "$ref" : "#/components/examples/max_fetch_size_1000"
                   },
@@ -127438,6 +128474,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   }
@@ -127581,6 +128620,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -128061,6 +129103,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   }
@@ -128200,6 +129245,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -128855,6 +129903,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_client_id" : {
                     "$ref" : "#/components/examples/missing_client_id"
                   },
@@ -128998,6 +130049,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -129365,6 +130419,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -129718,6 +130775,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -130060,6 +131120,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -130411,6 +131474,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -130791,6 +131857,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -131140,6 +132209,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -131526,6 +132598,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -131889,6 +132964,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -132277,6 +133355,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -132618,6 +133699,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -132979,6 +134063,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -133399,6 +134486,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -133760,6 +134850,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -134119,6 +135212,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -134498,6 +135594,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -134861,6 +135960,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -135203,6 +136305,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -135556,6 +136661,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -135936,6 +137044,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -136274,6 +137385,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -136630,6 +137744,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -136995,6 +138112,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -137344,6 +138464,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -137697,6 +138820,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -137950,6 +139076,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -138173,6 +139302,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -138523,6 +139655,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -138904,6 +140039,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -139289,6 +140427,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -139668,6 +140809,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -140057,6 +141201,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -140458,6 +141605,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -140841,6 +141991,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -141237,6 +142390,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -141614,6 +142770,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -141989,6 +143148,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -142425,6 +143587,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -142920,6 +144085,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -143310,6 +144478,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -143685,6 +144856,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "legacy_label_targeting_triggers_are_only_supported_with_targeting_v3" : {
                     "$ref" : "#/components/examples/legacy_label_targeting_triggers_are_only_supported_with_targeting_v3"
@@ -144069,6 +145243,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -144452,6 +145629,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -144831,6 +146011,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -145224,6 +146407,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -145612,6 +146798,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -145997,6 +147186,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -146378,6 +147570,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -146766,6 +147961,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -147146,6 +148344,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -147522,6 +148723,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
@@ -147914,6 +149118,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "lock_missing_lock_types" : {
                     "$ref" : "#/components/examples/lock_missing_lock_types"
                   },
@@ -148093,6 +149300,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   }
@@ -148236,6 +149446,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -148394,6 +149607,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   }
@@ -148537,6 +149753,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   }
@@ -148658,6 +149877,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -148802,6 +150024,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -148954,6 +150179,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "invalid_user_id" : {
                     "$ref" : "#/components/examples/invalid_user_id"
@@ -149142,6 +150370,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "maximum_name_length" : {
                     "$ref" : "#/components/examples/maximum_name_length"
@@ -149343,6 +150574,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "invalid_user_id" : {
                     "$ref" : "#/components/examples/invalid_user_id"
                   },
@@ -149515,6 +150749,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "invalid_user_id" : {
                     "$ref" : "#/components/examples/invalid_user_id"
                   },
@@ -149683,6 +150920,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
@@ -150082,6 +151322,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   },
@@ -150470,6 +151713,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   }
@@ -150656,6 +151902,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_container" : {
                     "$ref" : "#/components/examples/missing_container"
@@ -151422,6 +152671,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
                   },
@@ -151654,6 +152906,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_client_id" : {
                     "$ref" : "#/components/examples/missing_client_id"
@@ -151897,6 +153152,9 @@
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
                   },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
+                  },
                   "missing_client_id" : {
                     "$ref" : "#/components/examples/missing_client_id"
                   },
@@ -152048,6 +153306,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "maximum_name_length" : {
                     "$ref" : "#/components/examples/maximum_name_length"
@@ -152236,6 +153497,9 @@
                   },
                   "invalid_uri_in_json" : {
                     "$ref" : "#/components/examples/invalid_uri_in_json"
+                  },
+                  "invalid_uri_in_query_parameter" : {
+                    "$ref" : "#/components/examples/invalid_uri_in_query_parameter"
                   },
                   "missing_request_body" : {
                     "$ref" : "#/components/examples/missing_request_body"
