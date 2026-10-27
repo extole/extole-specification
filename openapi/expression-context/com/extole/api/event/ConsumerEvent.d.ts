@@ -1,5 +1,5 @@
-import type { ClientContext } from "../ClientContext";
 import type { ClientDomainContext } from "../ClientDomainContext";
+import type { ConsumerEventClientContext } from "./ConsumerEventClientContext";
 import type { EventContext } from "./EventContext";
 import type { NativeMap } from "../../native/collection/NativeMap";
 import type { Person } from "../person/Person";
@@ -7,7 +7,7 @@ import type { Sandbox } from "./Sandbox";
 
 export interface ConsumerEvent {
     getCauseEventId(): string;
-    getClientContext(): ClientContext;
+    getClientContext(): ConsumerEventClientContext;
     getClientDomainContext(): ClientDomainContext;
     getData(): NativeMap<string, unknown>;
     getEventContext(): EventContext;
