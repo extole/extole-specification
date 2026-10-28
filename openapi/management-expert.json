@@ -5494,7 +5494,7 @@
             "description" : "Authorization scopes granted to this token. Determines which API operations the token may invoke.",
             "items" : {
               "description" : "Authorization scopes granted to this token. Determines which API operations the token may invoke.",
-              "enum" : [ "BACKEND", "CLIENT_ADMIN", "CLIENT_REPORT_DOWNLOAD", "CLIENT_SUPERUSER", "LOCAL_PROFILE", "ONE_TIME", "PASSWORD_RESET", "UPDATE_PROFILE", "USER_SUPPORT", "VERIFIED_CONSUMER" ],
+              "enum" : [ "ANONYMOUS_CONSUMER", "BACKEND", "CLIENT_ADMIN", "CLIENT_REPORT_DOWNLOAD", "CLIENT_SUPERUSER", "LOCAL_PROFILE", "ONE_TIME", "PASSWORD_RESET", "UPDATE_PROFILE", "USER_SUPPORT", "VERIFIED_CONSUMER" ],
               "type" : "string"
             },
             "type" : "array",
@@ -6488,7 +6488,7 @@
           },
           "scopes" : {
             "items" : {
-              "enum" : [ "BACKEND", "CLIENT_ADMIN", "CLIENT_REPORT_DOWNLOAD", "CLIENT_SUPERUSER", "LOCAL_PROFILE", "ONE_TIME", "PASSWORD_RESET", "UPDATE_PROFILE", "USER_SUPPORT", "VERIFIED_CONSUMER" ],
+              "enum" : [ "ANONYMOUS_CONSUMER", "BACKEND", "CLIENT_ADMIN", "CLIENT_REPORT_DOWNLOAD", "CLIENT_SUPERUSER", "LOCAL_PROFILE", "ONE_TIME", "PASSWORD_RESET", "UPDATE_PROFILE", "USER_SUPPORT", "VERIFIED_CONSUMER" ],
               "type" : "string"
             },
             "nullable" : true,
@@ -8247,7 +8247,7 @@
             },
             "trusted_scopes" : {
               "items" : {
-                "enum" : [ "BACKEND", "CLIENT_ADMIN", "CLIENT_REPORT_DOWNLOAD", "CLIENT_SUPERUSER", "LOCAL_PROFILE", "ONE_TIME", "PASSWORD_RESET", "UPDATE_PROFILE", "USER_SUPPORT", "VERIFIED_CONSUMER" ],
+                "enum" : [ "ANONYMOUS_CONSUMER", "BACKEND", "CLIENT_ADMIN", "CLIENT_REPORT_DOWNLOAD", "CLIENT_SUPERUSER", "LOCAL_PROFILE", "ONE_TIME", "PASSWORD_RESET", "UPDATE_PROFILE", "USER_SUPPORT", "VERIFIED_CONSUMER" ],
                 "type" : "string"
               },
               "type" : "array",
@@ -12719,7 +12719,7 @@
           },
           "trusted_scopes" : {
             "items" : {
-              "enum" : [ "BACKEND", "CLIENT_ADMIN", "CLIENT_REPORT_DOWNLOAD", "CLIENT_SUPERUSER", "LOCAL_PROFILE", "ONE_TIME", "PASSWORD_RESET", "UPDATE_PROFILE", "USER_SUPPORT", "VERIFIED_CONSUMER" ],
+              "enum" : [ "ANONYMOUS_CONSUMER", "BACKEND", "CLIENT_ADMIN", "CLIENT_REPORT_DOWNLOAD", "CLIENT_SUPERUSER", "LOCAL_PROFILE", "ONE_TIME", "PASSWORD_RESET", "UPDATE_PROFILE", "USER_SUPPORT", "VERIFIED_CONSUMER" ],
               "type" : "string"
             },
             "nullable" : true,
@@ -12740,7 +12740,7 @@
             },
             "trusted_scopes" : {
               "items" : {
-                "enum" : [ "BACKEND", "CLIENT_ADMIN", "CLIENT_REPORT_DOWNLOAD", "CLIENT_SUPERUSER", "LOCAL_PROFILE", "ONE_TIME", "PASSWORD_RESET", "UPDATE_PROFILE", "USER_SUPPORT", "VERIFIED_CONSUMER" ],
+                "enum" : [ "ANONYMOUS_CONSUMER", "BACKEND", "CLIENT_ADMIN", "CLIENT_REPORT_DOWNLOAD", "CLIENT_SUPERUSER", "LOCAL_PROFILE", "ONE_TIME", "PASSWORD_RESET", "UPDATE_PROFILE", "USER_SUPPORT", "VERIFIED_CONSUMER" ],
                 "type" : "string"
               },
               "type" : "array",
@@ -75780,7 +75780,7 @@
                 "trigger_description" : "trigger_description",
                 "trigger_name" : "trigger_name",
                 "trigger_phase" : "MATCHING",
-                "trusted_scopes" : [ "BACKEND" ]
+                "trusted_scopes" : [ "ANONYMOUS_CONSUMER" ]
               },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerAccessRequest"
@@ -139444,7 +139444,7 @@
                 "trigger_description" : "trigger_description",
                 "trigger_name" : "trigger_name",
                 "trigger_phase" : "MATCHING",
-                "trusted_scopes" : [ "BACKEND" ]
+                "trusted_scopes" : [ "ANONYMOUS_CONSUMER" ]
               },
               "schema" : {
                 "$ref" : "#/components/schemas/CampaignControllerTriggerAccessRequest"
@@ -150329,7 +150329,7 @@
                 "code" : "code",
                 "duration_seconds" : 1,
                 "name" : "name",
-                "scopes" : [ "BACKEND" ],
+                "scopes" : [ "ANONYMOUS_CONSUMER" ],
                 "state" : "state"
               },
               "schema" : {
