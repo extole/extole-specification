@@ -3031,6 +3031,16 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
+      "component_operation_code_sample_invalid" : {
+        "summary" : "component_operation_code_sample_invalid",
+        "value" : {
+          "code" : "component_operation_code_sample_invalid",
+          "http_status_code" : 400,
+          "message" : "Component operation code sample is invalid",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
       "component_operation_method_missing" : {
         "summary" : "component_operation_method_missing",
         "value" : {
@@ -51511,6 +51521,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -52492,6 +52505,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -52778,6 +52794,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -53276,6 +53295,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -53562,6 +53584,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -54050,6 +54075,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -54339,6 +54367,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -54817,6 +54848,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -55224,6 +55258,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -55570,6 +55607,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -56369,6 +56409,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -56921,6 +56964,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -57207,6 +57253,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -57719,6 +57768,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -58005,6 +58057,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -58538,6 +58593,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -58827,6 +58885,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -59315,6 +59376,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -59616,6 +59680,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -60122,6 +60189,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -60408,6 +60478,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -60916,6 +60989,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -61202,6 +61278,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -61690,6 +61769,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -61979,6 +62061,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -62477,6 +62562,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -62763,6 +62851,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -63287,6 +63378,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -63573,6 +63667,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -64057,6 +64154,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -64343,6 +64443,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -64846,6 +64949,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -65132,6 +65238,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -65621,6 +65730,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -65925,6 +66037,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -66420,6 +66535,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -66706,6 +66824,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -67397,6 +67518,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -67683,6 +67807,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -68411,6 +68538,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -68701,6 +68831,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
                   },
@@ -68923,6 +69056,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -69420,6 +69556,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -69718,6 +69857,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -70401,6 +70543,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -70693,6 +70838,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -71453,6 +71601,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -71742,6 +71893,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -72431,6 +72585,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -72730,6 +72887,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
                   },
@@ -72952,6 +73112,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -73463,6 +73626,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -73762,6 +73928,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
                   },
@@ -73984,6 +74153,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -74475,6 +74647,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -74773,6 +74948,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -75381,6 +75559,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
                   },
@@ -75881,6 +76062,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -76191,6 +76375,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -76714,6 +76901,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -77024,6 +77214,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -77547,6 +77740,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -77860,6 +78056,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -78382,6 +78581,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -78695,6 +78897,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -79223,6 +79428,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -79533,6 +79741,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -80051,6 +80262,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -80361,6 +80575,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -80939,6 +81156,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -81249,6 +81469,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -81885,6 +82108,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -82198,6 +82424,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -82716,6 +82945,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -83029,6 +83261,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -83554,6 +83789,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -83864,6 +84102,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -84386,6 +84627,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -84696,6 +84940,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -85230,6 +85477,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -85540,6 +85790,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -86060,6 +86313,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -86370,6 +86626,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -86897,6 +87156,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -87207,6 +87469,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -87728,6 +87993,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -88038,6 +88306,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -88568,6 +88839,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -88881,6 +89155,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -89423,6 +89700,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -89736,6 +90016,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -90458,6 +90741,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -90771,6 +91057,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -91501,6 +91790,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -91812,6 +92104,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
                   },
@@ -92055,6 +92350,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -92553,6 +92851,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -92863,6 +93164,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -93591,6 +93895,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -93905,6 +94212,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
                   },
@@ -94148,6 +94458,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -94646,6 +94959,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -94956,6 +95272,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -95672,6 +95991,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -95995,6 +96317,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
                   },
@@ -96238,6 +96563,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -96736,6 +97064,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -97046,6 +97377,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -97761,6 +98095,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -98071,6 +98408,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -98708,6 +99048,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
                   },
@@ -99281,6 +99624,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -99550,6 +99896,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -100129,6 +100478,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -100448,6 +100800,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -100720,6 +101075,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -101202,6 +101560,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -101474,6 +101835,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -101970,6 +102334,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -102296,6 +102663,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -102575,6 +102945,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -103072,6 +103445,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -103344,6 +103720,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -103852,6 +104231,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -104178,6 +104560,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -104457,6 +104842,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -109990,6 +110378,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
                   },
@@ -111641,6 +112032,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
                   },
@@ -112073,6 +112467,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -112904,6 +113301,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -117398,6 +117798,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
                   },
@@ -118237,6 +118640,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
                   },
@@ -119075,6 +119481,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -120321,6 +120730,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
                   },
@@ -120730,6 +121142,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
                   },
@@ -121133,6 +121548,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -121546,6 +121964,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -121971,6 +122392,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
                   },
@@ -122386,6 +122810,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -122810,6 +123237,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_parameter_invalid" : {
                     "$ref" : "#/components/examples/component_operation_parameter_invalid"
@@ -130314,6 +130744,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -130670,6 +131103,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -131015,6 +131451,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -131363,6 +131802,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -131752,6 +132194,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -132104,6 +132549,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -132493,6 +132941,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -132847,6 +133298,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -133250,6 +133704,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -133594,6 +134051,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -133943,6 +134403,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -134381,6 +134844,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -134745,6 +135211,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -135095,6 +135564,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -135477,6 +135949,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -135855,6 +136330,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -136200,6 +136678,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -136556,6 +137037,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -136939,6 +137423,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -137280,6 +137767,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -137627,6 +138117,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -138007,6 +138500,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -138360,6 +138856,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -138708,6 +139207,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -139545,6 +140047,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -139929,6 +140434,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -140312,6 +140820,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -140698,6 +141209,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -141090,6 +141604,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -141494,6 +142011,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -141880,6 +142400,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -142279,6 +142802,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -142659,6 +143185,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -143037,6 +143566,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -143476,6 +144008,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -143974,6 +144509,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -144367,6 +144905,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -144745,6 +145286,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -145132,6 +145676,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -145518,6 +146065,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -145900,6 +146450,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -146296,6 +146849,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -146687,6 +147243,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -147075,6 +147634,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -147460,6 +148022,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -147840,6 +148405,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -148233,6 +148801,9 @@
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
                   },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
+                  },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
                   },
@@ -148612,6 +149183,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
@@ -149003,6 +149577,9 @@
                   },
                   "component_ids_and_references_both_provided" : {
                     "$ref" : "#/components/examples/component_ids_and_references_both_provided"
+                  },
+                  "component_operation_code_sample_invalid" : {
+                    "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
                   "component_operation_method_missing" : {
                     "$ref" : "#/components/examples/component_operation_method_missing"
