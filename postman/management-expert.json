@@ -3112,7 +3112,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+              "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
               "options": {
                 "raw": { "headerFamily": "json", "language": "json" }
               }
@@ -3163,7 +3163,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -3218,7 +3218,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -3273,7 +3273,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -3328,7 +3328,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -3383,7 +3383,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -3438,7 +3438,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -3493,7 +3493,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -3548,7 +3548,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -3603,7 +3603,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -3658,7 +3658,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -3713,7 +3713,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -3768,7 +3768,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -3823,7 +3823,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -3878,7 +3878,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -3933,7 +3933,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -3988,7 +3988,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -4043,7 +4043,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -4098,7 +4098,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -4153,7 +4153,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -4208,7 +4208,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -4263,7 +4263,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -4318,7 +4318,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -4373,7 +4373,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -4428,7 +4428,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -4483,7 +4483,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -4538,7 +4538,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -4593,7 +4593,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
@@ -4648,7 +4648,7 @@
                 "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"ANONYMOUS_CONSUMER\"\n  ],\n  \"state\": \"state\"\n}",
+                  "raw": "{\n  \"code\": \"code\",\n  \"duration_seconds\": 1,\n  \"name\": \"name\",\n  \"scopes\": [\n    \"BACKEND\"\n  ],\n  \"state\": \"state\"\n}",
                   "options": {
                     "raw": { "headerFamily": "json", "language": "json" }
                   }
