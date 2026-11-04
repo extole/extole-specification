@@ -480014,7 +480014,7 @@
           "request": {
             "name": "Upload a client logo",
             "description": {
-              "content": "Uploads a new logo image for the client via multipart form upload. Returns the created logo metadata.",
+              "content": "Uploads a PNG image as the client logo, sent as the multipart form part `file`. The image must be at most 1,000,000 bytes. A client has one active logo, so when one exists this returns `400 logo_already_exists`; archive the current logo with `DELETE /v2/logo` first. Returns the created logo metadata.",
               "type": "text/plain"
             },
             "url": {
@@ -480028,7 +480028,19 @@
               { "key": "Accept", "value": "<string>" }
             ],
             "method": "POST",
-            "body": { "mode": "formdata", "formdata": [] },
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "description": {
+                    "content": "The PNG logo image.",
+                    "type": "text/plain"
+                  },
+                  "key": "file",
+                  "type": "file"
+                }
+              ]
+            },
             "auth": null
           },
           "response": [
@@ -480055,7 +480067,19 @@
                   }
                 ],
                 "method": "POST",
-                "body": { "mode": "formdata", "formdata": [] }
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "The PNG logo image.",
+                        "type": "text/plain"
+                      },
+                      "key": "file",
+                      "type": "file"
+                    }
+                  ]
+                }
               },
               "status": "OK",
               "code": 200,
@@ -480086,7 +480110,19 @@
                   }
                 ],
                 "method": "POST",
-                "body": { "mode": "formdata", "formdata": [] }
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "The PNG logo image.",
+                        "type": "text/plain"
+                      },
+                      "key": "file",
+                      "type": "file"
+                    }
+                  ]
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -480117,7 +480153,19 @@
                   }
                 ],
                 "method": "POST",
-                "body": { "mode": "formdata", "formdata": [] }
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "The PNG logo image.",
+                        "type": "text/plain"
+                      },
+                      "key": "file",
+                      "type": "file"
+                    }
+                  ]
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -480148,7 +480196,19 @@
                   }
                 ],
                 "method": "POST",
-                "body": { "mode": "formdata", "formdata": [] }
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "The PNG logo image.",
+                        "type": "text/plain"
+                      },
+                      "key": "file",
+                      "type": "file"
+                    }
+                  ]
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -480179,7 +480239,19 @@
                   }
                 ],
                 "method": "POST",
-                "body": { "mode": "formdata", "formdata": [] }
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "The PNG logo image.",
+                        "type": "text/plain"
+                      },
+                      "key": "file",
+                      "type": "file"
+                    }
+                  ]
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -480210,7 +480282,19 @@
                   }
                 ],
                 "method": "POST",
-                "body": { "mode": "formdata", "formdata": [] }
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "The PNG logo image.",
+                        "type": "text/plain"
+                      },
+                      "key": "file",
+                      "type": "file"
+                    }
+                  ]
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -480241,7 +480325,19 @@
                   }
                 ],
                 "method": "POST",
-                "body": { "mode": "formdata", "formdata": [] }
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "The PNG logo image.",
+                        "type": "text/plain"
+                      },
+                      "key": "file",
+                      "type": "file"
+                    }
+                  ]
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -480272,7 +480368,19 @@
                   }
                 ],
                 "method": "POST",
-                "body": { "mode": "formdata", "formdata": [] }
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "The PNG logo image.",
+                        "type": "text/plain"
+                      },
+                      "key": "file",
+                      "type": "file"
+                    }
+                  ]
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -480303,7 +480411,19 @@
                   }
                 ],
                 "method": "POST",
-                "body": { "mode": "formdata", "formdata": [] }
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "The PNG logo image.",
+                        "type": "text/plain"
+                      },
+                      "key": "file",
+                      "type": "file"
+                    }
+                  ]
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -480334,7 +480454,19 @@
                   }
                 ],
                 "method": "POST",
-                "body": { "mode": "formdata", "formdata": [] }
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "The PNG logo image.",
+                        "type": "text/plain"
+                      },
+                      "key": "file",
+                      "type": "file"
+                    }
+                  ]
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -480365,7 +480497,19 @@
                   }
                 ],
                 "method": "POST",
-                "body": { "mode": "formdata", "formdata": [] }
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "The PNG logo image.",
+                        "type": "text/plain"
+                      },
+                      "key": "file",
+                      "type": "file"
+                    }
+                  ]
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -480396,7 +480540,19 @@
                   }
                 ],
                 "method": "POST",
-                "body": { "mode": "formdata", "formdata": [] }
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "The PNG logo image.",
+                        "type": "text/plain"
+                      },
+                      "key": "file",
+                      "type": "file"
+                    }
+                  ]
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -480427,7 +480583,19 @@
                   }
                 ],
                 "method": "POST",
-                "body": { "mode": "formdata", "formdata": [] }
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "The PNG logo image.",
+                        "type": "text/plain"
+                      },
+                      "key": "file",
+                      "type": "file"
+                    }
+                  ]
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -480458,7 +480626,19 @@
                   }
                 ],
                 "method": "POST",
-                "body": { "mode": "formdata", "formdata": [] }
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "The PNG logo image.",
+                        "type": "text/plain"
+                      },
+                      "key": "file",
+                      "type": "file"
+                    }
+                  ]
+                }
               },
               "status": "Unauthorized",
               "code": 401,
@@ -480489,7 +480669,19 @@
                   }
                 ],
                 "method": "POST",
-                "body": { "mode": "formdata", "formdata": [] }
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "The PNG logo image.",
+                        "type": "text/plain"
+                      },
+                      "key": "file",
+                      "type": "file"
+                    }
+                  ]
+                }
               },
               "status": "Payment Required",
               "code": 402,
@@ -480520,7 +480712,19 @@
                   }
                 ],
                 "method": "POST",
-                "body": { "mode": "formdata", "formdata": [] }
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "The PNG logo image.",
+                        "type": "text/plain"
+                      },
+                      "key": "file",
+                      "type": "file"
+                    }
+                  ]
+                }
               },
               "status": "Forbidden",
               "code": 403,
@@ -480551,7 +480755,19 @@
                   }
                 ],
                 "method": "POST",
-                "body": { "mode": "formdata", "formdata": [] }
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "The PNG logo image.",
+                        "type": "text/plain"
+                      },
+                      "key": "file",
+                      "type": "file"
+                    }
+                  ]
+                }
               },
               "status": "Forbidden",
               "code": 403,
@@ -480582,7 +480798,19 @@
                   }
                 ],
                 "method": "POST",
-                "body": { "mode": "formdata", "formdata": [] }
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "The PNG logo image.",
+                        "type": "text/plain"
+                      },
+                      "key": "file",
+                      "type": "file"
+                    }
+                  ]
+                }
               },
               "status": "Forbidden",
               "code": 403,
@@ -480613,7 +480841,19 @@
                   }
                 ],
                 "method": "POST",
-                "body": { "mode": "formdata", "formdata": [] }
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "The PNG logo image.",
+                        "type": "text/plain"
+                      },
+                      "key": "file",
+                      "type": "file"
+                    }
+                  ]
+                }
               },
               "status": "Unsupported Media Type",
               "code": 415,
@@ -480644,7 +480884,19 @@
                   }
                 ],
                 "method": "POST",
-                "body": { "mode": "formdata", "formdata": [] }
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "The PNG logo image.",
+                        "type": "text/plain"
+                      },
+                      "key": "file",
+                      "type": "file"
+                    }
+                  ]
+                }
               },
               "status": "Too Many Requests",
               "code": 429,
