@@ -6781,7 +6781,7 @@
             "considered_block_list_types" : {
               "description" : "Condition evaluates to true if any value from the list of any list type blocks matches the value from the event being evaluated. By default all list type blocks are evaluated.",
               "items" : {
-                "description" : "Condition evaluates to true if any value from the list of any list type blocks matches the value from the event being evaluated. By default all list type blocks are evaluated.",
+                "description" : "What the fraud-control rule matches. USER_AGENT matches a substring of the event user-agent header (regex is not supported). EMAIL_DOMAIN matches the profile email domain on the event (for example example.com). NORMALIZED_EMAIL matches the provider-normalized profile email. Whether plus-address variants of the same mailbox match depends on the email provider. CIDR matches the event IP with CIDR notation (for example 192.168.1.0/24); overlapping CIDRs are separate fraud-control rules, not duplicates.",
                 "enum" : [ "CIDR", "EMAIL_DOMAIN", "NORMALIZED_EMAIL", "USER_AGENT" ],
                 "type" : "string"
               },
@@ -6807,6 +6807,7 @@
           "properties" : {
             "considered_block_list_types" : {
               "items" : {
+                "description" : "What the fraud-control rule matches. USER_AGENT matches a substring of the event user-agent header (regex is not supported). EMAIL_DOMAIN matches the profile email domain on the event (for example example.com). NORMALIZED_EMAIL matches the provider-normalized profile email. Whether plus-address variants of the same mailbox match depends on the email provider. CIDR matches the event IP with CIDR notation (for example 192.168.1.0/24); overlapping CIDRs are separate fraud-control rules, not duplicates.",
                 "enum" : [ "CIDR", "EMAIL_DOMAIN", "NORMALIZED_EMAIL", "USER_AGENT" ],
                 "type" : "string"
               },
