@@ -498637,7 +498637,7 @@
           "request": {
             "name": "List notifications for a user",
             "description": {
-              "content": "Returns the in-portal notifications for the Extole portal user identified by `userId`, sorted newest first. Requires the `USER_SUPPORT` scope. Use the `limit` and `offset` parameters to page through results.",
+              "content": "Returns the in-portal notifications for the Extole portal user identified by `userId`, sorted newest first. Requires the `VIEWER` scope. Use the `limit` and `offset` parameters to page through results.",
               "type": "text/plain"
             },
             "url": {
@@ -499259,7 +499259,7 @@
           "request": {
             "name": "Get notification read cursor for a user",
             "description": {
-              "content": "Returns the timestamp up to which the Extole portal user identified by `userId` has read their notifications. Requires the `USER_SUPPORT` scope. Use `POST /v6/notifications/{userId}/read` to advance the cursor.",
+              "content": "Returns the timestamp up to which the Extole portal user identified by `userId` has read their notifications. Requires the `VIEWER` scope. Use `POST /v6/notifications/{userId}/read` to advance the cursor.",
               "type": "text/plain"
             },
             "url": {

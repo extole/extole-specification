@@ -2826,7 +2826,7 @@
           "request": {
             "name": "Fetch a rendered zone",
             "description": {
-              "content": "Renders the named zone with no targeting data and returns its configured content. Useful for fetching static or anonymous zones from a server-rendered page or backend service. Identity (`email`, `partner_user_id`, `person_id`) and additional targeting fields are not accepted on this GET form - use `POST /v5/zones/{zone_name}` to pass them. Authenticated with a USER_SUPPORT scope access token.",
+              "content": "Renders the named zone with no targeting data and returns its configured content. Useful for fetching static or anonymous zones from a server-rendered page or backend service. Identity (`email`, `partner_user_id`, `person_id`) and additional targeting fields are not accepted on this GET form - use `POST /v5/zones/{zone_name}` to pass them. Authenticated with a VIEWER scope access token.",
               "type": "text/plain"
             },
             "url": {
