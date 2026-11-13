@@ -187248,7 +187248,7 @@
           "request": {
             "name": "List duplicatable components",
             "description": {
-              "content": "Returns one page of the components that are eligible for duplication by the current client.",
+              "content": "Returns all components that are eligible for duplication by the current client.",
               "type": "text/plain"
             },
             "url": {
@@ -187258,7 +187258,7 @@
                 {
                   "disabled": false,
                   "description": {
-                    "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                    "content": "The name of the component to filter by.",
                     "type": "text/plain"
                   },
                   "key": "name",
@@ -187410,19 +187410,13 @@
                 },
                 {
                   "disabled": false,
-                  "description": {
-                    "content": "The maximum number of components to return.",
-                    "type": "text/plain"
-                  },
+                  "description": { "content": "", "type": "text/plain" },
                   "key": "limit",
                   "value": "<string>"
                 },
                 {
                   "disabled": false,
-                  "description": {
-                    "content": "The number of components to skip before the first one returned.",
-                    "type": "text/plain"
-                  },
+                  "description": { "content": "", "type": "text/plain" },
                   "key": "offset",
                   "value": "<string>"
                 }
@@ -187446,7 +187440,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -187598,19 +187592,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -187648,7 +187636,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -187800,19 +187788,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -187850,7 +187832,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -188002,19 +187984,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -188052,7 +188028,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -188204,19 +188180,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -188254,7 +188224,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -188406,19 +188376,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -188456,7 +188420,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -188608,19 +188572,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -188658,7 +188616,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -188810,19 +188768,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -188860,7 +188812,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -189012,19 +188964,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -189062,7 +189008,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -189214,19 +189160,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -189264,7 +189204,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -189416,19 +189356,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -189466,7 +189400,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -189618,19 +189552,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -189668,7 +189596,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -189820,19 +189748,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -189870,7 +189792,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -190022,19 +189944,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -190072,7 +189988,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -190224,19 +190140,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -190274,7 +190184,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -190426,19 +190336,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -190476,7 +190380,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -190628,19 +190532,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -190678,7 +190576,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -190830,19 +190728,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -190880,7 +190772,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -191032,19 +190924,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -191082,7 +190968,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -191234,19 +191120,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -191284,7 +191164,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -191436,19 +191316,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -191486,7 +191360,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -191638,19 +191512,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -191688,7 +191556,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -191840,19 +191708,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -191890,7 +191752,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -192042,19 +191904,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -192092,7 +191948,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -192244,19 +192100,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -192294,7 +192144,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -192446,19 +192296,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -192496,7 +192340,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -192648,19 +192492,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -192698,7 +192536,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -192850,19 +192688,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -192900,7 +192732,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -193052,19 +192884,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -193102,7 +192928,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -193254,19 +193080,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -193304,7 +193124,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -193456,19 +193276,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -193506,7 +193320,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -193658,19 +193472,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -193708,7 +193516,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -193860,19 +193668,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -193910,7 +193712,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -194062,19 +193864,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -194112,7 +193908,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -194264,19 +194060,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -194314,7 +194104,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -194466,19 +194256,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -194516,7 +194300,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -194668,19 +194452,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -194718,7 +194496,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -194870,19 +194648,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -194920,7 +194692,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -195072,19 +194844,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -195122,7 +194888,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -195274,19 +195040,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -195324,7 +195084,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -195476,19 +195236,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -195526,7 +195280,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -195678,19 +195432,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -195728,7 +195476,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -195880,19 +195628,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -195930,7 +195672,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -196082,19 +195824,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -196132,7 +195868,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -196284,19 +196020,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -196334,7 +196064,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -196486,19 +196216,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -196536,7 +196260,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -196688,19 +196412,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -196738,7 +196456,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -196890,19 +196608,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -196940,7 +196652,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -197092,19 +196804,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -197142,7 +196848,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -197294,19 +197000,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -197344,7 +197044,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -197496,19 +197196,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -197546,7 +197240,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -197698,19 +197392,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -197748,7 +197436,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -197900,19 +197588,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -197950,7 +197632,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -198102,19 +197784,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -198152,7 +197828,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -198304,19 +197980,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -198354,7 +198024,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -198506,19 +198176,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -198556,7 +198220,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -198708,19 +198372,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -198758,7 +198416,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -198910,19 +198568,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -198959,7 +198611,7 @@
           "request": {
             "name": "List built duplicatable components",
             "description": {
-              "content": "Returns one page of the duplicatable components in their fully evaluated runtime form.",
+              "content": "Returns all duplicatable components in their fully evaluated runtime form.",
               "type": "text/plain"
             },
             "url": {
@@ -198969,7 +198621,7 @@
                 {
                   "disabled": false,
                   "description": {
-                    "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                    "content": "The name of the component to filter by.",
                     "type": "text/plain"
                   },
                   "key": "name",
@@ -199121,19 +198773,13 @@
                 },
                 {
                   "disabled": false,
-                  "description": {
-                    "content": "The maximum number of components to return.",
-                    "type": "text/plain"
-                  },
+                  "description": { "content": "", "type": "text/plain" },
                   "key": "limit",
                   "value": "<string>"
                 },
                 {
                   "disabled": false,
-                  "description": {
-                    "content": "The number of components to skip before the first one returned.",
-                    "type": "text/plain"
-                  },
+                  "description": { "content": "", "type": "text/plain" },
                   "key": "offset",
                   "value": "<string>"
                 }
@@ -199157,7 +198803,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -199309,19 +198955,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -199359,7 +198999,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -199511,19 +199151,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -199561,7 +199195,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -199713,19 +199347,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -199763,7 +199391,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -199915,19 +199543,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -199965,7 +199587,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -200117,19 +199739,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -200167,7 +199783,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -200319,19 +199935,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -200369,7 +199979,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -200521,19 +200131,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -200571,7 +200175,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -200723,19 +200327,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -200773,7 +200371,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -200925,19 +200523,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -200975,7 +200567,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -201127,19 +200719,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -201177,7 +200763,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -201329,19 +200915,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -201379,7 +200959,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -201531,19 +201111,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -201581,7 +201155,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -201733,19 +201307,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -201783,7 +201351,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -201935,19 +201503,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -201985,7 +201547,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -202137,19 +201699,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -202187,7 +201743,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -202339,19 +201895,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -202389,7 +201939,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -202541,19 +202091,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -202591,7 +202135,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -202743,19 +202287,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -202793,7 +202331,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -202945,19 +202483,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -202995,7 +202527,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -203147,19 +202679,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -203197,7 +202723,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -203349,19 +202875,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -203399,7 +202919,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -203551,19 +203071,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -203601,7 +203115,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -203753,19 +203267,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -203803,7 +203311,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -203955,19 +203463,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -204005,7 +203507,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -204157,19 +203659,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -204207,7 +203703,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -204359,19 +203855,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -204409,7 +203899,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -204561,19 +204051,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -204611,7 +204095,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -204763,19 +204247,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -204813,7 +204291,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -204965,19 +204443,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -205015,7 +204487,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -205167,19 +204639,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -205217,7 +204683,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -205369,19 +204835,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -205419,7 +204879,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -205571,19 +205031,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -205621,7 +205075,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -205773,19 +205227,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -205823,7 +205271,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -205975,19 +205423,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -206025,7 +205467,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -206177,19 +205619,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -206227,7 +205663,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -206379,19 +205815,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -206429,7 +205859,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -206581,19 +206011,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -206631,7 +206055,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -206783,19 +206207,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -206833,7 +206251,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -206985,19 +206403,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -207035,7 +206447,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -207187,19 +206599,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -207237,7 +206643,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -207389,19 +206795,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -207439,7 +206839,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -207591,19 +206991,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -207641,7 +207035,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -207793,19 +207187,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -207843,7 +207231,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -207995,19 +207383,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -208045,7 +207427,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -208197,19 +207579,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -208247,7 +207623,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -208399,19 +207775,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -208449,7 +207819,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -208601,19 +207971,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -208651,7 +208015,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -208803,19 +208167,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -208853,7 +208211,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -209005,19 +208363,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -209055,7 +208407,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -209207,19 +208559,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -209257,7 +208603,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -209409,19 +208755,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -209459,7 +208799,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -209611,19 +208951,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -209661,7 +208995,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -209813,19 +209147,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -209863,7 +209191,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -210015,19 +209343,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -210065,7 +209387,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -210217,19 +209539,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -210267,7 +209583,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -210419,19 +209735,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
@@ -210469,7 +209779,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "The name of the component to filter by. Without `*` it must equal the whole name. Put `*` at the start, the end, or both to match names that end with, start with, or contain the rest.",
+                        "content": "The name of the component to filter by.",
                         "type": "text/plain"
                       },
                       "key": "name",
@@ -210621,19 +209931,13 @@
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The maximum number of components to return.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "limit",
                       "value": "<string>"
                     },
                     {
                       "disabled": false,
-                      "description": {
-                        "content": "The number of components to skip before the first one returned.",
-                        "type": "text/plain"
-                      },
+                      "description": { "content": "", "type": "text/plain" },
                       "key": "offset",
                       "value": "<string>"
                     }
