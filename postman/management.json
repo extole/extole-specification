@@ -481506,6 +481506,3486 @@
           "protocolProfileBehavior": { "disableBodyPruning": true }
         },
         {
+          "id": "45ba7cd5-6a50-4da2-963e-88181daf18b5",
+          "name": "Send a GET through a client key",
+          "request": {
+            "name": "Send a GET through a client key",
+            "description": {
+              "content": "Sends one request through a key that can send requests, such as a proxy key. The path after `proxy/` and the query are appended to the key's base URL. The caller's headers are forwarded, except hop-by-hop headers and the caller's Extole credentials: `Authorization`, `Cookie` and the `access_token` query parameter. The key adds its own credential, which is never returned. The response is the partner's status, headers and body. A request the key refuses is not sent, and nothing is retried.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "v2",
+                "settings",
+                "security",
+                "keys",
+                ":key_id",
+                "proxy",
+                ":path"
+              ],
+              "host": ["{{baseUrl}}"],
+              "query": [],
+              "variable": [
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "key_id",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) ",
+                    "type": "text/plain"
+                  }
+                },
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "path",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) ",
+                    "type": "text/plain"
+                  }
+                }
+              ]
+            },
+            "header": [{ "key": "Accept", "value": "<string>" }],
+            "method": "GET",
+            "body": {},
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b5c71b0a-d797-47b1-99f4-c4653c955bfc",
+              "name": "binding_error",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "2d334677-803f-4ff4-ab3e-ff5c6bcebd99",
+              "name": "client_key_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "036fe960-41b9-404d-9f0b-511384cae873",
+              "name": "client_key_request_invalid",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "39d0fe01-c179-4102-8f43-cee6b4e9f47c",
+              "name": "client_key_requests_not_supported",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "2b71a253-1fb3-4a44-a0bc-8fb8a24d5983",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "8e8268e6-be37-4baa-9ab2-9c7d4dceae05",
+              "name": "invalid_json",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "42fe93a4-a920-4c9e-a0b4-5c67334ff4b5",
+              "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "2c68e993-cfa8-461a-a316-bd31d7cdc1da",
+              "name": "invalid_uri_in_json",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "fbf4ab68-49c9-451f-b00e-d4184735962b",
+              "name": "invalid_uri_in_query_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7beb37cb-12de-417e-b346-127f004fc2e1",
+              "name": "missing_request_body",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "35a314e6-3baf-450d-819b-c986fe51b229",
+              "name": "pgp_extole_client_key_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "5f8dd645-962c-4aea-995a-23bd302e0742",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "2af828be-ec78-4f5a-8cb5-c31737b0ee39",
+              "name": "Payment Required",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Payment Required",
+              "code": 402,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "4b7a6a18-ef01-4cb8-bc39-ed1d5af4fc24",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a4fb01f4-5d78-4ccf-b5af-7087721a92f3",
+              "name": "client_key_request_refused",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "0351efd3-2d8c-4bee-a33c-623bbd35fc29",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c51ff892-5280-4431-866b-514d28a69c3a",
+              "name": "missing_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "4fe82fa5-53e4-4960-b215-c640d5706f09",
+              "name": "Unsupported Media Type",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unsupported Media Type",
+              "code": 415,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a9139a68-552e-452e-9db3-ba071de0d04e",
+              "name": "Too Many Requests",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "8346266c-2a14-4636-b8b0-9370a4d25b2d",
+              "name": "client_key_request_failed",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Gateway",
+              "code": 502,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "1ce745b8-69a5-4128-bbb1-48eb80e9f4fc",
+              "name": "client_key_response_refused",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Gateway",
+              "code": 502,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        },
+        {
+          "id": "1c255d51-73bc-449d-a14e-04c4b25ead81",
+          "name": "Send a POST through a client key",
+          "request": {
+            "name": "Send a POST through a client key",
+            "description": {
+              "content": "Sends one request through a key that can send requests, such as a proxy key. The path after `proxy/` and the query are appended to the key's base URL. The caller's headers are forwarded, except hop-by-hop headers and the caller's Extole credentials: `Authorization`, `Cookie` and the `access_token` query parameter. The key adds its own credential, which is never returned. The response is the partner's status, headers and body. A request the key refuses is not sent, and nothing is retried.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "v2",
+                "settings",
+                "security",
+                "keys",
+                ":key_id",
+                "proxy",
+                ":path"
+              ],
+              "host": ["{{baseUrl}}"],
+              "query": [],
+              "variable": [
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "key_id",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) ",
+                    "type": "text/plain"
+                  }
+                },
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "path",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) ",
+                    "type": "text/plain"
+                  }
+                }
+              ]
+            },
+            "header": [
+              { "key": "Content-Type", "value": "<string>" },
+              { "key": "Accept", "value": "<string>" }
+            ],
+            "method": "POST",
+            "body": { "mode": "raw", "raw": "value" },
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2dcf3166-197d-4cbe-ad33-aaed5a09a06d",
+              "name": "binding_error",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a4832a09-b6b4-4172-9a3f-35ad296cb677",
+              "name": "client_key_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "dca93590-0ff6-4186-9e17-2d5598730928",
+              "name": "client_key_request_invalid",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "912f0517-812e-425b-8a5d-af7a0f95eec4",
+              "name": "client_key_requests_not_supported",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "afe51198-3091-4015-be8f-cc70b7bc3f4f",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "fa91a653-de89-4551-9e44-1a49f51b8877",
+              "name": "invalid_json",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "6ee9a687-346c-4ea4-a7aa-b508541a9f29",
+              "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "640584ac-82cd-4045-a677-759d0e640656",
+              "name": "invalid_uri_in_json",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3d32a5b5-027e-46f3-aeae-4e235d962165",
+              "name": "invalid_uri_in_query_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a7c21c71-64ce-4fbf-b9ba-7005f170da3e",
+              "name": "missing_request_body",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e2884494-2a7c-44be-ba2e-df3b81c50591",
+              "name": "pgp_extole_client_key_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "5dd72520-3389-42c5-b405-30b13a8d14b4",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a502d858-c59b-46f7-962d-839933f7deb8",
+              "name": "Payment Required",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Payment Required",
+              "code": 402,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "2c8d0c8b-c56d-49dc-b349-1ce007321c56",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "83545928-4368-4475-9155-8ee53c336b08",
+              "name": "client_key_request_refused",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "d46b0963-5250-4b12-9184-2654f44f6fba",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "9fca3136-9a4a-426e-ad6f-6319c4ead8b3",
+              "name": "missing_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a2dfd917-d941-4b9b-8de4-7e9c623f7505",
+              "name": "Unsupported Media Type",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Unsupported Media Type",
+              "code": 415,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f409089b-762b-423c-be0e-51da0224d76f",
+              "name": "Too Many Requests",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "11121fbd-c4d9-4018-83c6-11fe5077adbc",
+              "name": "client_key_request_failed",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Gateway",
+              "code": 502,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "772d9694-78af-4434-be28-41a3f64daf3d",
+              "name": "client_key_response_refused",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Gateway",
+              "code": 502,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        },
+        {
+          "id": "57b97080-8ae6-4289-8c5f-6515dda91554",
+          "name": "Send a PUT through a client key",
+          "request": {
+            "name": "Send a PUT through a client key",
+            "description": {
+              "content": "Sends one request through a key that can send requests, such as a proxy key. The path after `proxy/` and the query are appended to the key's base URL. The caller's headers are forwarded, except hop-by-hop headers and the caller's Extole credentials: `Authorization`, `Cookie` and the `access_token` query parameter. The key adds its own credential, which is never returned. The response is the partner's status, headers and body. A request the key refuses is not sent, and nothing is retried.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "v2",
+                "settings",
+                "security",
+                "keys",
+                ":key_id",
+                "proxy",
+                ":path"
+              ],
+              "host": ["{{baseUrl}}"],
+              "query": [],
+              "variable": [
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "key_id",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) ",
+                    "type": "text/plain"
+                  }
+                },
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "path",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) ",
+                    "type": "text/plain"
+                  }
+                }
+              ]
+            },
+            "header": [
+              { "key": "Content-Type", "value": "<string>" },
+              { "key": "Accept", "value": "<string>" }
+            ],
+            "method": "PUT",
+            "body": { "mode": "raw", "raw": "value" },
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f7ffdaf0-c6d6-41a8-82e7-7c1b3d420169",
+              "name": "binding_error",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "5bcd6dbe-04ed-4688-9a6c-89674b2589c0",
+              "name": "client_key_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "19c6e33d-7065-40c1-a435-0ef1792a5ac8",
+              "name": "client_key_request_invalid",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "21eef0bf-bde2-4ce9-b2d2-56f346e1b810",
+              "name": "client_key_requests_not_supported",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "127a3909-3c06-4bb4-83b9-38057681e25e",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "8d403768-b8cd-4bc2-9b39-4691f13f9746",
+              "name": "invalid_json",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7b3f700e-f7a1-4bd2-8a4b-37fe5f287525",
+              "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "de959c55-1194-45f5-8118-abcc3c6696cc",
+              "name": "invalid_uri_in_json",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "090caa73-8e91-445c-8994-8b8ea7876190",
+              "name": "invalid_uri_in_query_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "82d7dac1-0fcb-4779-92e3-53cffa040129",
+              "name": "missing_request_body",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "2a08cf6b-9437-430e-b6d7-e0010c4223a2",
+              "name": "pgp_extole_client_key_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ee3af075-1ab0-44c3-86a8-60dab8b202dc",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "23616b17-bc68-4388-a17a-2bb1beb60548",
+              "name": "Payment Required",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Payment Required",
+              "code": 402,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "afc2984f-35ac-4456-9d2b-ede07f7c6672",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c15f98a9-b2db-496e-bc06-1e2a463b7e54",
+              "name": "client_key_request_refused",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "38799e0b-6ad0-4872-bb6d-69a2af8d9dca",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c86d2ec4-6121-46db-a6ce-83f6e9013ceb",
+              "name": "missing_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "abb763c7-d618-4026-9f3d-d7bd3a12da35",
+              "name": "Unsupported Media Type",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Unsupported Media Type",
+              "code": 415,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b7f948b8-ee80-4116-9de1-3d3e0e469d1c",
+              "name": "Too Many Requests",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "fe6982e8-bc00-4ffa-9a75-90ee2fd8cb91",
+              "name": "client_key_request_failed",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Gateway",
+              "code": 502,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "9d68438b-7785-4204-98f0-0a55e0915109",
+              "name": "client_key_response_refused",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": { "mode": "raw", "raw": "value" }
+              },
+              "status": "Bad Gateway",
+              "code": 502,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        },
+        {
+          "id": "334c69ec-ef5a-42a7-8330-389e17b916bd",
+          "name": "Send a PATCH through a client key",
+          "request": {
+            "name": "Send a PATCH through a client key",
+            "description": {
+              "content": "Sends one request through a key that can send requests, such as a proxy key. The path after `proxy/` and the query are appended to the key's base URL. The caller's headers are forwarded, except hop-by-hop headers and the caller's Extole credentials: `Authorization`, `Cookie` and the `access_token` query parameter. The key adds its own credential, which is never returned. The response is the partner's status, headers and body. A request the key refuses is not sent, and nothing is retried.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "v2",
+                "settings",
+                "security",
+                "keys",
+                ":key_id",
+                "proxy",
+                ":path"
+              ],
+              "host": ["{{baseUrl}}"],
+              "query": [],
+              "variable": [
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "key_id",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) ",
+                    "type": "text/plain"
+                  }
+                },
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "path",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) ",
+                    "type": "text/plain"
+                  }
+                }
+              ]
+            },
+            "header": [
+              { "key": "Content-Type", "value": "<string>" },
+              { "key": "Accept", "value": "<string>" }
+            ],
+            "method": "PATCH",
+            "body": { "mode": "raw", "raw": "nulla amet ut" },
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "35381bf8-14ad-4164-a98d-82502c7e5b41",
+              "name": "binding_error",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "356a9342-1843-4682-8587-885948fe9323",
+              "name": "client_key_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "2eac5e67-c74e-463c-9b2b-754fe7c87780",
+              "name": "client_key_request_invalid",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "faa3c01e-2dd8-4761-8678-f8a2c1083309",
+              "name": "client_key_requests_not_supported",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "29a0512e-30d6-4b28-8437-9968d0024ac9",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b61ff9c7-df5e-4d0c-8d33-1a24d4da4be1",
+              "name": "invalid_json",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "bf3976b4-303c-4b59-bd3e-9011a4d44272",
+              "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c94cb1b2-cd95-4a66-b011-114b887f6774",
+              "name": "invalid_uri_in_json",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "6dcb42cd-24ce-4a34-bf29-f8ede8560e2b",
+              "name": "invalid_uri_in_query_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "95d3e424-91ba-4e1b-a629-50d0cb564541",
+              "name": "missing_request_body",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f818e148-be68-4bfc-bc63-2e71354ba964",
+              "name": "pgp_extole_client_key_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ac3304cb-4047-4175-a970-e5005261d035",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "fe4d7296-b8d6-4e26-97c4-10b003c5a862",
+              "name": "Payment Required",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Payment Required",
+              "code": 402,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "925c9553-77ba-4e5c-aa51-0a236f23f9ee",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "88fc0489-a1b6-43c8-b769-db2ea2562268",
+              "name": "client_key_request_refused",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c95eb42e-7186-4be1-bd88-10d43a87d1f7",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "403a9d48-7e3b-455c-8670-357419ca4a52",
+              "name": "missing_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "5249c851-50d3-4b26-8648-6ce521126e8b",
+              "name": "Unsupported Media Type",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Unsupported Media Type",
+              "code": 415,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "2b12fed4-4d10-42e4-b956-06a2f1652c17",
+              "name": "Too Many Requests",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "830b9337-aa3a-488f-b1d1-3b59a2fbd44b",
+              "name": "client_key_request_failed",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Bad Gateway",
+              "code": 502,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "04c8da76-c53b-41d0-b743-697b98da4211",
+              "name": "client_key_response_refused",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "settings",
+                    "security",
+                    "keys",
+                    ":key_id",
+                    "proxy",
+                    ":path"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PATCH",
+                "body": { "mode": "raw", "raw": "nulla amet ut" }
+              },
+              "status": "Bad Gateway",
+              "code": 502,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        },
+        {
           "id": "cc2c07d3-61d9-4a9f-a64d-22dd1ad3e355",
           "name": "Create client key from file",
           "request": {
