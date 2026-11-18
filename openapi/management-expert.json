@@ -3271,6 +3271,16 @@
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
       },
+      "consumer_token_person_is_identity" : {
+        "summary" : "consumer_token_person_is_identity",
+        "value" : {
+          "code" : "consumer_token_person_is_identity",
+          "http_status_code" : 400,
+          "message" : "A consumer token is issued for a device profile, and this person id is an identity profile",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
       "consumer_token_upgrade_not_allowed" : {
         "summary" : "consumer_token_upgrade_not_allowed",
         "value" : {
@@ -149653,7 +149663,7 @@
     },
     "/v2/consumers/{personId}/token" : {
       "post" : {
-        "description" : "Creates a consumer access token for the specified person id. Returns the new consumer token.",
+        "description" : "Creates a consumer access token for the specified person id. The person id must be the id of a device profile. The id of an identity profile is rejected. Returns the new consumer token.",
         "parameters" : [ {
           "in" : "path",
           "name" : "personId",
@@ -149680,6 +149690,9 @@
                 "examples" : {
                   "binding_error" : {
                     "$ref" : "#/components/examples/binding_error"
+                  },
+                  "consumer_token_person_is_identity" : {
+                    "$ref" : "#/components/examples/consumer_token_person_is_identity"
                   },
                   "invalid_incoming_url" : {
                     "$ref" : "#/components/examples/invalid_incoming_url"

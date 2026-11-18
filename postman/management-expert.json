@@ -1031,7 +1031,7 @@
           "request": {
             "name": "Create consumer authorization",
             "description": {
-              "content": "Creates a consumer access token for the specified person id. Returns the new consumer token.",
+              "content": "Creates a consumer access token for the specified person id. The person id must be the id of a device profile. The id of an identity profile is rejected. Returns the new consumer token.",
               "type": "text/plain"
             },
             "url": {
@@ -1090,6 +1090,36 @@
             {
               "id": "2ade8d45-90e7-46ea-98d0-32ecccd74939",
               "name": "binding_error",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "consumers", ":personId", "token"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "97606c00-55e8-48c6-85c8-50e114fb709f",
+              "name": "consumer_token_person_is_identity",
               "originalRequest": {
                 "url": {
                   "path": ["v2", "consumers", ":personId", "token"],
