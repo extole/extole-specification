@@ -63057,481 +63057,6 @@
           "protocolProfileBehavior": { "disableBodyPruning": true }
         },
         {
-          "id": "314f6f4e-24f4-49a2-986e-e84c00030215",
-          "name": "List duplicatable campaigns",
-          "request": {
-            "name": "List duplicatable campaigns",
-            "description": {
-              "content": "Deprecated. Use `GET /v1/components/duplicatable/summaries`, which returns one small row for each duplicatable component. This operation returns every duplicatable campaign in full.",
-              "type": "text/plain"
-            },
-            "url": {
-              "path": ["v2", "campaigns", "duplicatable"],
-              "host": ["{{baseUrl}}"],
-              "query": [],
-              "variable": []
-            },
-            "header": [{ "key": "Accept", "value": "<string>" }],
-            "method": "GET",
-            "body": {},
-            "auth": null
-          },
-          "response": [
-            {
-              "id": "50d8a228-f184-4b12-97d8-f674ab8548c4",
-              "name": "Successful response",
-              "originalRequest": {
-                "url": {
-                  "path": ["v2", "campaigns", "duplicatable"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "OK",
-              "code": 200,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "ec6a77df-db6f-4bcb-85a7-a7e8d6621f09",
-              "name": "binding_error",
-              "originalRequest": {
-                "url": {
-                  "path": ["v2", "campaigns", "duplicatable"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "fe678460-2d68-4566-9e30-e69480f666e4",
-              "name": "invalid_incoming_url",
-              "originalRequest": {
-                "url": {
-                  "path": ["v2", "campaigns", "duplicatable"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "591857ca-0da7-44ef-ad7b-73fd8f24ff02",
-              "name": "invalid_json",
-              "originalRequest": {
-                "url": {
-                  "path": ["v2", "campaigns", "duplicatable"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "f080ba4e-223e-47ee-be73-d69549dcf384",
-              "name": "invalid_parameter",
-              "originalRequest": {
-                "url": {
-                  "path": ["v2", "campaigns", "duplicatable"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "fefbbae6-1dfe-43fd-89a6-04331499923b",
-              "name": "invalid_uri_in_json",
-              "originalRequest": {
-                "url": {
-                  "path": ["v2", "campaigns", "duplicatable"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "bb44cb17-8cc0-4cd1-ae49-3ac46ede13da",
-              "name": "invalid_uri_in_query_parameter",
-              "originalRequest": {
-                "url": {
-                  "path": ["v2", "campaigns", "duplicatable"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "6d1c6783-0d4e-47b1-b666-98ac2e92a1e2",
-              "name": "missing_request_body",
-              "originalRequest": {
-                "url": {
-                  "path": ["v2", "campaigns", "duplicatable"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Bad Request",
-              "code": 400,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "1705dc8a-e62f-447c-bb00-220a35d12fc2",
-              "name": "Unauthorized",
-              "originalRequest": {
-                "url": {
-                  "path": ["v2", "campaigns", "duplicatable"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Unauthorized",
-              "code": 401,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "cb12d892-239d-410b-ace4-81bf52ca3c41",
-              "name": "Payment Required",
-              "originalRequest": {
-                "url": {
-                  "path": ["v2", "campaigns", "duplicatable"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Payment Required",
-              "code": 402,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "1c5f98f5-d6e9-40ef-8be4-e0c947349bf1",
-              "name": "access_denied",
-              "originalRequest": {
-                "url": {
-                  "path": ["v2", "campaigns", "duplicatable"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "776385f1-06a7-48ab-831c-d8517b9df95b",
-              "name": "method_unauthorized",
-              "originalRequest": {
-                "url": {
-                  "path": ["v2", "campaigns", "duplicatable"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "83e25677-999c-490f-a556-a74acaf32043",
-              "name": "missing_access_token",
-              "originalRequest": {
-                "url": {
-                  "path": ["v2", "campaigns", "duplicatable"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Forbidden",
-              "code": 403,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "4e5e7cec-2f46-4b8d-9aa8-86ea6c650315",
-              "name": "Unsupported Media Type",
-              "originalRequest": {
-                "url": {
-                  "path": ["v2", "campaigns", "duplicatable"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Unsupported Media Type",
-              "code": 415,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            },
-            {
-              "id": "e909a5b9-1c6c-4c77-93d1-f60d7046de8d",
-              "name": "Too Many Requests",
-              "originalRequest": {
-                "url": {
-                  "path": ["v2", "campaigns", "duplicatable"],
-                  "host": ["{{baseUrl}}"],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  { "key": "Accept", "value": "<string>" },
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "Too Many Requests",
-              "code": 429,
-              "header": [{ "key": "Content-Type", "value": "<string>" }],
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            }
-          ],
-          "event": [],
-          "protocolProfileBehavior": { "disableBodyPruning": true }
-        },
-        {
           "id": "a3063731-62f8-4a26-b0e5-dd9eeb1702f7",
           "name": "Get a campaign",
           "request": {
@@ -187402,7 +186927,7 @@
                 {
                   "disabled": false,
                   "description": {
-                    "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                    "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                     "type": "text/plain"
                   },
                   "key": "show_all",
@@ -187590,7 +187115,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -187792,7 +187317,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -187994,7 +187519,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -188196,7 +187721,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -188398,7 +187923,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -188600,7 +188125,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -188802,7 +188327,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -189004,7 +188529,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -189206,7 +188731,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -189408,7 +188933,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -189610,7 +189135,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -189812,7 +189337,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -190014,7 +189539,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -190216,7 +189741,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -190418,7 +189943,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -190620,7 +190145,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -190822,7 +190347,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -191024,7 +190549,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -191226,7 +190751,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -191428,7 +190953,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -191630,7 +191155,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -191832,7 +191357,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -192034,7 +191559,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -192236,7 +191761,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -192438,7 +191963,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -192640,7 +192165,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -192842,7 +192367,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -193044,7 +192569,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -193246,7 +192771,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -193448,7 +192973,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -193650,7 +193175,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -193852,7 +193377,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -194054,7 +193579,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -194256,7 +193781,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -194458,7 +193983,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -194660,7 +194185,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -194862,7 +194387,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -195064,7 +194589,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -195266,7 +194791,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -195468,7 +194993,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -195670,7 +195195,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -195872,7 +195397,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -196074,7 +195599,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -196276,7 +195801,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -196478,7 +196003,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -196680,7 +196205,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -196882,7 +196407,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -197084,7 +196609,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -197286,7 +196811,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -197488,7 +197013,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -197690,7 +197215,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -197892,7 +197417,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -198094,7 +197619,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -198296,7 +197821,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -198498,7 +198023,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -198700,7 +198225,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -198902,7 +198427,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -199113,7 +198638,7 @@
                 {
                   "disabled": false,
                   "description": {
-                    "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                    "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                     "type": "text/plain"
                   },
                   "key": "show_all",
@@ -199301,7 +198826,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -199503,7 +199028,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -199705,7 +199230,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -199907,7 +199432,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -200109,7 +199634,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -200311,7 +199836,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -200513,7 +200038,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -200715,7 +200240,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -200917,7 +200442,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -201119,7 +200644,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -201321,7 +200846,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -201523,7 +201048,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -201725,7 +201250,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -201927,7 +201452,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -202129,7 +201654,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -202331,7 +201856,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -202533,7 +202058,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -202735,7 +202260,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -202937,7 +202462,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -203139,7 +202664,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -203341,7 +202866,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -203543,7 +203068,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -203745,7 +203270,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -203947,7 +203472,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -204149,7 +203674,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -204351,7 +203876,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -204553,7 +204078,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -204755,7 +204280,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -204957,7 +204482,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -205159,7 +204684,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -205361,7 +204886,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -205563,7 +205088,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -205765,7 +205290,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -205967,7 +205492,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -206169,7 +205694,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -206371,7 +205896,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -206573,7 +206098,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -206775,7 +206300,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -206977,7 +206502,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -207179,7 +206704,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -207381,7 +206906,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -207583,7 +207108,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -207785,7 +207310,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -207987,7 +207512,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -208189,7 +207714,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -208391,7 +207916,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -208593,7 +208118,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -208795,7 +208320,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -208997,7 +208522,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -209199,7 +208724,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -209401,7 +208926,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -209603,7 +209128,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -209805,7 +209330,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -210007,7 +209532,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -210209,7 +209734,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -210411,7 +209936,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -210613,7 +210138,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -210670,7 +210195,7 @@
           "request": {
             "name": "List duplicatable component summaries",
             "description": {
-              "content": "Returns one page of duplicatable component summaries, with enough info to choose which to use.",
+              "content": "Returns one page of duplicatable component summaries, with enough info to choose which to use. The list holds the client's own components and the components of the clients it subscribes to, including the Extole accounts that hold the campaign templates. A client with no subscription to an Extole account sees none of its templates.",
               "type": "text/plain"
             },
             "url": {
@@ -210824,7 +210349,7 @@
                 {
                   "disabled": false,
                   "description": {
-                    "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                    "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                     "type": "text/plain"
                   },
                   "key": "show_all",
@@ -211012,7 +210537,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -211214,7 +210739,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -211416,7 +210941,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -211618,7 +211143,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -211820,7 +211345,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -212022,7 +211547,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -212224,7 +211749,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -212426,7 +211951,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -212628,7 +212153,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -212830,7 +212355,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -213032,7 +212557,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -213234,7 +212759,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -213436,7 +212961,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -213638,7 +213163,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -213840,7 +213365,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -214042,7 +213567,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -214244,7 +213769,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -214446,7 +213971,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -214648,7 +214173,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -214850,7 +214375,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -215052,7 +214577,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -215254,7 +214779,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -215456,7 +214981,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -215658,7 +215183,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -215860,7 +215385,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -216062,7 +215587,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -216264,7 +215789,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -216466,7 +215991,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -216668,7 +216193,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -216870,7 +216395,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -217072,7 +216597,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -217274,7 +216799,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -217476,7 +217001,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -217678,7 +217203,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -217880,7 +217405,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -218082,7 +217607,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -218284,7 +217809,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -218486,7 +218011,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -218688,7 +218213,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -218890,7 +218415,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -219092,7 +218617,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -219294,7 +218819,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -219496,7 +219021,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -219698,7 +219223,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -219900,7 +219425,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -220102,7 +219627,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -220304,7 +219829,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -220506,7 +220031,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -220708,7 +220233,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -220910,7 +220435,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -221112,7 +220637,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -221314,7 +220839,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -221516,7 +221041,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -221718,7 +221243,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -221920,7 +221445,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -222122,7 +221647,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -222324,7 +221849,7 @@
                     {
                       "disabled": false,
                       "description": {
-                        "content": "showAll applies only for components visible due components subscriptionsfalse (default) shows components from LIVE, `integration` and `campaign-components` program-types.true returns all components regardless of their program-type or state of the campaign.",
+                        "content": "Applies only to components that the client sees through its component subscriptions. When false, the default, the list keeps only the components of LIVE campaigns whose program type is `integration` or `campaign-component`. When true, it keeps the components of every campaign, whatever its program type or state.",
                         "type": "text/plain"
                       },
                       "key": "show_all",
@@ -496565,7 +496090,7 @@
               { "key": "Accept", "value": "<string>" }
             ],
             "method": "PATCH",
-            "body": { "mode": "raw", "raw": "cillum" },
+            "body": { "mode": "raw", "raw": "sit sunt" },
             "auth": null
           },
           "response": [
@@ -496600,7 +496125,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496639,7 +496164,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496678,7 +496203,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496717,7 +496242,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496756,7 +496281,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496795,7 +496320,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496834,7 +496359,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496873,7 +496398,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496912,7 +496437,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496951,7 +496476,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496990,7 +496515,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -497029,7 +496554,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Unauthorized",
               "code": 401,
@@ -497068,7 +496593,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Payment Required",
               "code": 402,
@@ -497107,7 +496632,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Forbidden",
               "code": 403,
@@ -497146,7 +496671,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Forbidden",
               "code": 403,
@@ -497185,7 +496710,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Forbidden",
               "code": 403,
@@ -497224,7 +496749,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Forbidden",
               "code": 403,
@@ -497263,7 +496788,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Unsupported Media Type",
               "code": 415,
@@ -497302,7 +496827,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Too Many Requests",
               "code": 429,
@@ -497341,7 +496866,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Bad Gateway",
               "code": 502,
@@ -497380,7 +496905,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "cillum" }
+                "body": { "mode": "raw", "raw": "sit sunt" }
               },
               "status": "Bad Gateway",
               "code": 502,
