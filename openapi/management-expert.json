@@ -2766,7 +2766,17 @@
         "value" : {
           "code" : "campaign_version_malformed",
           "http_status_code" : 400,
-          "message" : "Campaign version is malformed",
+          "message" : "Campaign version is malformed. Expected a valid number.",
+          "parameters" : { },
+          "unique_id" : "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "campaign_version_state_malformed" : {
+        "summary" : "campaign_version_state_malformed",
+        "value" : {
+          "code" : "campaign_version_state_malformed",
+          "http_status_code" : 400,
+          "message" : "Campaign version state is malformed. Valid options: published or latest.",
           "parameters" : { },
           "unique_id" : "00000000-0000-0000-0000-000000000000"
         }
@@ -51170,6 +51180,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -51489,6 +51502,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -51811,6 +51827,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -51993,6 +52012,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -52189,6 +52211,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -52473,6 +52498,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -52776,6 +52804,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -52998,6 +53029,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -53263,6 +53297,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -53566,6 +53603,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -53788,6 +53828,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -54043,6 +54086,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -54349,6 +54395,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -54571,6 +54620,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -54816,6 +54868,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -55227,6 +55282,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -55577,6 +55635,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -55882,6 +55943,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "creative_archive_size_too_big" : {
                     "$ref" : "#/components/examples/creative_archive_size_too_big"
                   },
@@ -56124,6 +56188,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -56377,6 +56444,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -56673,6 +56743,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -56932,6 +57005,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -57235,6 +57311,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -57457,6 +57536,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -57736,6 +57818,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -58039,6 +58124,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -58261,6 +58349,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -58561,6 +58652,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -58867,6 +58961,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -59089,6 +59186,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -59344,6 +59444,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -59662,6 +59765,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -59884,6 +59990,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -60157,6 +60266,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -60460,6 +60572,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -60682,6 +60797,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -60957,6 +61075,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -61260,6 +61381,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -61482,6 +61606,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -61737,6 +61864,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -62043,6 +62173,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -62265,6 +62398,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -62530,6 +62666,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -62833,6 +62972,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -63055,6 +63197,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -63346,6 +63491,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -63649,6 +63797,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -63871,6 +64022,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -64122,6 +64276,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -64425,6 +64582,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -64647,6 +64807,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -64917,6 +65080,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -65220,6 +65386,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -65442,6 +65611,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -65698,6 +65870,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -66019,6 +66194,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -66241,6 +66419,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -66503,6 +66684,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -66806,6 +66990,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -67029,6 +67216,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -67224,6 +67414,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -67486,6 +67679,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -67789,6 +67985,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -68012,6 +68211,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -68207,6 +68409,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -68506,6 +68711,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -68812,6 +69020,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -69038,6 +69249,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -69260,6 +69474,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -69524,6 +69741,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -69839,6 +70059,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -70062,6 +70285,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -70257,6 +70483,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -70511,6 +70740,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -70820,6 +71052,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -71043,6 +71278,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -71238,6 +71476,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -71570,6 +71811,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -71875,6 +72119,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -72098,6 +72345,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -72293,6 +72543,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -72553,6 +72806,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -72868,6 +73124,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -73094,6 +73353,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -73316,6 +73578,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -73594,6 +73859,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -73909,6 +74177,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -74135,6 +74406,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -74357,6 +74631,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -74615,6 +74892,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -74930,6 +75210,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -75153,6 +75436,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -75344,6 +75630,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -75539,6 +75828,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
@@ -75762,6 +76054,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -76030,6 +76325,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -76357,6 +76655,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -76600,6 +76901,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -76869,6 +77173,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -77196,6 +77503,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -77439,6 +77749,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -77708,6 +78021,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -78038,6 +78354,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -78281,6 +78600,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -78546,6 +78868,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -78879,6 +79204,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -79122,6 +79450,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -79396,6 +79727,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -79723,6 +80057,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -79966,6 +80303,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -80230,6 +80570,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -80557,6 +80900,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -80800,6 +81146,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -81124,6 +81473,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -81451,6 +81803,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -81694,6 +82049,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -82077,6 +82435,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -82406,6 +82767,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -82649,6 +83013,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -82913,6 +83280,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -83243,6 +83613,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -83486,6 +83859,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -83757,6 +84133,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -84084,6 +84463,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -84327,6 +84709,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -84595,6 +84980,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -84922,6 +85310,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -85165,6 +85556,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -85445,6 +85839,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -85772,6 +86169,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -86015,6 +86415,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -86281,6 +86684,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -86608,6 +87014,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -86851,6 +87260,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -87124,6 +87536,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -87451,6 +87866,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -87694,6 +88112,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -87961,6 +88382,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -88288,6 +88712,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -88531,6 +88958,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -88807,6 +89237,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -89137,6 +89570,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -89380,6 +89816,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -89668,6 +90107,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -89998,6 +90440,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -90242,6 +90687,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -90437,6 +90885,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -90709,6 +91160,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -91039,6 +91493,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -91283,6 +91740,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -91478,6 +91938,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -91758,6 +92221,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -92085,6 +92551,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -92332,6 +92801,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -92554,6 +93026,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -92819,6 +93294,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -93146,6 +93624,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -93390,6 +93871,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -93585,6 +94069,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -93863,6 +94350,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -94193,6 +94683,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -94440,6 +94933,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -94662,6 +95158,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -94927,6 +95426,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -95254,6 +95756,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -95498,6 +96003,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -95693,6 +96201,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -95959,6 +96470,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -96298,6 +96812,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -96545,6 +97062,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -96767,6 +97287,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -97032,6 +97555,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -97359,6 +97885,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -97603,6 +98132,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -97798,6 +98330,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -98063,6 +98598,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -98390,6 +98928,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -98634,6 +99175,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -98829,6 +99373,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -99028,6 +99575,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
@@ -99240,6 +99790,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -99593,6 +100146,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -99878,6 +100434,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -100084,6 +100643,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -100447,6 +101009,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -100769,6 +101334,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -101057,6 +101625,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -101269,6 +101840,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -101528,6 +102102,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -101817,6 +102394,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -102033,6 +102613,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -102302,6 +102885,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -102632,6 +103218,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -102927,6 +103516,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -103142,6 +103734,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -103413,6 +104008,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -103702,6 +104300,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -103918,6 +104519,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -104199,6 +104803,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -104529,6 +105136,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -104824,6 +105434,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
                   },
@@ -105047,6 +105660,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -105237,6 +105853,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -105426,6 +106045,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -105630,6 +106252,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -105832,6 +106457,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -106036,6 +106664,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -106238,6 +106869,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -106451,6 +107085,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "creative_archive_size_too_big" : {
                     "$ref" : "#/components/examples/creative_archive_size_too_big"
@@ -106702,6 +107339,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -106904,6 +107544,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -107108,6 +107751,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -107310,6 +107956,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -107514,6 +108163,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -107716,6 +108368,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -107920,6 +108575,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -108122,6 +108780,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -108326,6 +108987,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -108528,6 +109192,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -108732,6 +109399,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -108934,6 +109604,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -109138,6 +109811,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -109340,6 +110016,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -109544,6 +110223,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -109746,6 +110428,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -109950,6 +110635,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -110152,6 +110840,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -110358,6 +111049,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
@@ -110589,6 +111283,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -110791,6 +111488,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -110995,6 +111695,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -111197,6 +111900,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -111401,6 +112107,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -111604,6 +112313,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -111806,6 +112518,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -112012,6 +112727,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
@@ -112243,6 +112961,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -112448,6 +113169,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
@@ -112679,6 +113403,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -112882,6 +113609,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -113080,6 +113810,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -113282,6 +114015,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
@@ -113513,6 +114249,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -113715,6 +114454,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -113919,6 +114661,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -114121,6 +114866,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -114325,6 +115073,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -114527,6 +115278,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -114731,6 +115485,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -114933,6 +115690,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -115137,6 +115897,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -115339,6 +116102,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -115543,6 +116309,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -115745,6 +116514,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -115949,6 +116721,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -116151,6 +116926,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -116355,6 +117133,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -116557,6 +117338,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -116761,6 +117545,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -116963,6 +117750,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -117167,6 +117957,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -117370,6 +118163,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -117572,6 +118368,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -117778,6 +118577,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
@@ -118009,6 +118811,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -118212,6 +119017,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -118414,6 +119222,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -118620,6 +119431,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
@@ -118851,6 +119665,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -119054,6 +119871,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -119256,6 +120076,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -119462,6 +120285,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
@@ -119693,6 +120519,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -119895,6 +120724,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -120099,6 +120931,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -120302,6 +121137,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -120504,6 +121342,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -120710,6 +121551,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
@@ -120930,6 +121774,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -121122,6 +121969,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
@@ -121337,6 +122187,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -121529,6 +122382,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
@@ -121750,6 +122606,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -121945,6 +122804,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
@@ -122170,6 +123032,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -122372,6 +123237,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
@@ -122596,6 +123464,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -122791,6 +123662,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
@@ -123016,6 +123890,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -123218,6 +124095,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "component_operation_code_sample_invalid" : {
                     "$ref" : "#/components/examples/component_operation_code_sample_invalid"
@@ -130411,6 +131291,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -130770,6 +131653,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -131118,6 +132004,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -131469,6 +132358,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -131861,6 +132753,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -132216,6 +133111,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -132608,6 +133506,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -132965,6 +133866,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -133371,6 +134275,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -133718,6 +134625,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -134070,6 +134980,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -134511,6 +135424,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -134878,6 +135794,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -135231,6 +136150,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -135616,6 +136538,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -135997,6 +136922,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -136345,6 +137273,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -136704,6 +137635,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -137090,6 +138024,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -137434,6 +138371,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -137784,6 +138724,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -138167,6 +139110,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -138523,6 +139469,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -138875,6 +139824,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -139224,6 +140176,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
                   },
@@ -139450,6 +140405,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "date_invalid" : {
                     "$ref" : "#/components/examples/date_invalid"
@@ -139713,6 +140671,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -140101,6 +141062,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -140488,6 +141452,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -140873,6 +141840,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -141271,6 +142241,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -141678,6 +142651,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -142067,6 +143043,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -142469,6 +143448,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -142852,6 +143834,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -143233,6 +144218,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -143675,6 +144663,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -144176,6 +145167,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -144572,6 +145566,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -144953,6 +145950,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -145343,6 +146343,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -145732,6 +146735,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -146117,6 +147123,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -146516,6 +147525,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -146910,6 +147922,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -147301,6 +148316,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -147689,6 +148707,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -148072,6 +149093,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -148468,6 +149492,9 @@
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
                   },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
+                  },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
                   },
@@ -148850,6 +149877,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
@@ -149244,6 +150274,9 @@
                   },
                   "campaign_version_malformed" : {
                     "$ref" : "#/components/examples/campaign_version_malformed"
+                  },
+                  "campaign_version_state_malformed" : {
+                    "$ref" : "#/components/examples/campaign_version_state_malformed"
                   },
                   "circular_component_reference" : {
                     "$ref" : "#/components/examples/circular_component_reference"
