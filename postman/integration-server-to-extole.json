@@ -8934,6 +8934,36 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "f0ff8e7b-c309-49b1-89a8-f3020cace68c",
+              "name": "Error",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "files", ":fileId"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Locked (WebDAV) (RFC 4918)",
+              "code": 423,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "6fbab59a-4755-48fb-9a95-37df0d281b6a",
               "name": "Too Many Requests",
               "originalRequest": {
@@ -9858,6 +9888,43 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "5e314960-2e73-4e84-b391-941f7538100b",
+              "name": "Error",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "files", ":fileId"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"name\",\n  \"tags\": [\n    \"tag\"\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Locked (WebDAV) (RFC 4918)",
+              "code": 423,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "703eb29c-98de-45fb-a094-c60b8bfe4b2f",
               "name": "Too Many Requests",
               "originalRequest": {
@@ -10404,6 +10471,36 @@
               },
               "status": "Unsupported Media Type",
               "code": 415,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "87b0d825-1e39-4532-8c21-02b2219af3cb",
+              "name": "Error",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "files", ":fileId"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Locked (WebDAV) (RFC 4918)",
+              "code": 423,
               "header": [{ "key": "Content-Type", "value": "<string>" }],
               "cookie": [],
               "_postman_previewlanguage": "json"
@@ -11472,6 +11569,55 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "341bbe74-f2eb-4f95-8666-b64422e19624",
+              "name": "Error",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "files", ":fileId", "download"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Maximum number of rows to return.",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Number of rows to skip before returning results.",
+                        "type": "text/plain"
+                      },
+                      "key": "offset",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Locked (WebDAV) (RFC 4918)",
+              "code": 423,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "05f99dab-c89f-4b7c-9080-f3fea73534ed",
               "name": "Too Many Requests",
               "originalRequest": {
@@ -12030,6 +12176,36 @@
               },
               "status": "Unsupported Media Type",
               "code": 415,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "062f2887-962d-413c-9f18-812d082855d1",
+              "name": "Error",
+              "originalRequest": {
+                "url": {
+                  "path": ["v6", "files", ":fileId", "expire"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Locked (WebDAV) (RFC 4918)",
+              "code": 423,
               "header": [{ "key": "Content-Type", "value": "<string>" }],
               "cookie": [],
               "_postman_previewlanguage": "json"
