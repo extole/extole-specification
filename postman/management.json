@@ -305649,6 +305649,339 @@
               "_postman_previewlanguage": "json"
             },
             {
+              "id": "e0b377cc-52cc-4c99-a3bd-86cd22d7393f",
+              "name": "campaign_controller_duplicate_controller",
+              "originalRequest": {
+                "url": {
+                  "path": ["v1", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"anchors\": [\n    {\n      \"source_element_id\": \"source_element_id\",\n      \"target_element_id\": \"target_element_id\"\n    }\n  ],\n  \"component_display_name\": \"component_display_name\",\n  \"component_ids\": [\n    \"component_id\"\n  ],\n  \"component_name\": \"component_name\",\n  \"component_references\": [\n    {\n      \"component_id\": \"component_id\",\n      \"socket_names\": [\n        \"socket_name\"\n      ]\n    }\n  ],\n  \"description\": \"description\",\n  \"tags\": [\n    \"tag\"\n  ],\n  \"target_campaign_id\": \"target_campaign_id\",\n  \"target_component_absolute_name\": \"target_component_absolute_name\",\n  \"target_setting_name\": \"target_setting_name\",\n  \"target_socket_name\": \"target_socket_name\",\n  \"type\": \"type\",\n  \"types\": [\n    \"type\"\n  ],\n  \"variables\": [\n    {\n      \"description\": \"description\",\n      \"display_name\": \"display_name\",\n      \"name\": \"name\",\n      \"priority\": \"10\",\n      \"source\": \"INHERITED\",\n      \"tags\": [\n        \"tag\"\n      ],\n      \"type\": \"ADMIN_ICON\",\n      \"values\": {\n        \"values_key\": {}\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ef5b76bc-a6a9-4db6-b598-f66ded8d13c2",
+              "name": "campaign_controller_invalid_enabled_on_state",
+              "originalRequest": {
+                "url": {
+                  "path": ["v1", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"anchors\": [\n    {\n      \"source_element_id\": \"source_element_id\",\n      \"target_element_id\": \"target_element_id\"\n    }\n  ],\n  \"component_display_name\": \"component_display_name\",\n  \"component_ids\": [\n    \"component_id\"\n  ],\n  \"component_name\": \"component_name\",\n  \"component_references\": [\n    {\n      \"component_id\": \"component_id\",\n      \"socket_names\": [\n        \"socket_name\"\n      ]\n    }\n  ],\n  \"description\": \"description\",\n  \"tags\": [\n    \"tag\"\n  ],\n  \"target_campaign_id\": \"target_campaign_id\",\n  \"target_component_absolute_name\": \"target_component_absolute_name\",\n  \"target_setting_name\": \"target_setting_name\",\n  \"target_socket_name\": \"target_socket_name\",\n  \"type\": \"type\",\n  \"types\": [\n    \"type\"\n  ],\n  \"variables\": [\n    {\n      \"description\": \"description\",\n      \"display_name\": \"display_name\",\n      \"name\": \"name\",\n      \"priority\": \"10\",\n      \"source\": \"INHERITED\",\n      \"tags\": [\n        \"tag\"\n      ],\n      \"type\": \"ADMIN_ICON\",\n      \"values\": {\n        \"values_key\": {}\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "5b7bf739-e586-4258-8800-df3a82be31aa",
+              "name": "campaign_controller_missing_event_trigger",
+              "originalRequest": {
+                "url": {
+                  "path": ["v1", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"anchors\": [\n    {\n      \"source_element_id\": \"source_element_id\",\n      \"target_element_id\": \"target_element_id\"\n    }\n  ],\n  \"component_display_name\": \"component_display_name\",\n  \"component_ids\": [\n    \"component_id\"\n  ],\n  \"component_name\": \"component_name\",\n  \"component_references\": [\n    {\n      \"component_id\": \"component_id\",\n      \"socket_names\": [\n        \"socket_name\"\n      ]\n    }\n  ],\n  \"description\": \"description\",\n  \"tags\": [\n    \"tag\"\n  ],\n  \"target_campaign_id\": \"target_campaign_id\",\n  \"target_component_absolute_name\": \"target_component_absolute_name\",\n  \"target_setting_name\": \"target_setting_name\",\n  \"target_socket_name\": \"target_socket_name\",\n  \"type\": \"type\",\n  \"types\": [\n    \"type\"\n  ],\n  \"variables\": [\n    {\n      \"description\": \"description\",\n      \"display_name\": \"display_name\",\n      \"name\": \"name\",\n      \"priority\": \"10\",\n      \"source\": \"INHERITED\",\n      \"tags\": [\n        \"tag\"\n      ],\n      \"type\": \"ADMIN_ICON\",\n      \"values\": {\n        \"values_key\": {}\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "d5fb3796-ea99-4c3b-9e1c-76534279976f",
+              "name": "campaign_controller_missing_journey_name",
+              "originalRequest": {
+                "url": {
+                  "path": ["v1", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"anchors\": [\n    {\n      \"source_element_id\": \"source_element_id\",\n      \"target_element_id\": \"target_element_id\"\n    }\n  ],\n  \"component_display_name\": \"component_display_name\",\n  \"component_ids\": [\n    \"component_id\"\n  ],\n  \"component_name\": \"component_name\",\n  \"component_references\": [\n    {\n      \"component_id\": \"component_id\",\n      \"socket_names\": [\n        \"socket_name\"\n      ]\n    }\n  ],\n  \"description\": \"description\",\n  \"tags\": [\n    \"tag\"\n  ],\n  \"target_campaign_id\": \"target_campaign_id\",\n  \"target_component_absolute_name\": \"target_component_absolute_name\",\n  \"target_setting_name\": \"target_setting_name\",\n  \"target_socket_name\": \"target_socket_name\",\n  \"type\": \"type\",\n  \"types\": [\n    \"type\"\n  ],\n  \"variables\": [\n    {\n      \"description\": \"description\",\n      \"display_name\": \"display_name\",\n      \"name\": \"name\",\n      \"priority\": \"10\",\n      \"source\": \"INHERITED\",\n      \"tags\": [\n        \"tag\"\n      ],\n      \"type\": \"ADMIN_ICON\",\n      \"values\": {\n        \"values_key\": {}\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "d38b6654-07d3-4d83-ad63-26fa93a60c83",
+              "name": "campaign_controller_name_contains_illegal_character",
+              "originalRequest": {
+                "url": {
+                  "path": ["v1", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"anchors\": [\n    {\n      \"source_element_id\": \"source_element_id\",\n      \"target_element_id\": \"target_element_id\"\n    }\n  ],\n  \"component_display_name\": \"component_display_name\",\n  \"component_ids\": [\n    \"component_id\"\n  ],\n  \"component_name\": \"component_name\",\n  \"component_references\": [\n    {\n      \"component_id\": \"component_id\",\n      \"socket_names\": [\n        \"socket_name\"\n      ]\n    }\n  ],\n  \"description\": \"description\",\n  \"tags\": [\n    \"tag\"\n  ],\n  \"target_campaign_id\": \"target_campaign_id\",\n  \"target_component_absolute_name\": \"target_component_absolute_name\",\n  \"target_setting_name\": \"target_setting_name\",\n  \"target_socket_name\": \"target_socket_name\",\n  \"type\": \"type\",\n  \"types\": [\n    \"type\"\n  ],\n  \"variables\": [\n    {\n      \"description\": \"description\",\n      \"display_name\": \"display_name\",\n      \"name\": \"name\",\n      \"priority\": \"10\",\n      \"source\": \"INHERITED\",\n      \"tags\": [\n        \"tag\"\n      ],\n      \"type\": \"ADMIN_ICON\",\n      \"values\": {\n        \"values_key\": {}\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a7ff8d87-2664-46e7-b955-d24a66e66251",
+              "name": "campaign_controller_name_missing",
+              "originalRequest": {
+                "url": {
+                  "path": ["v1", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"anchors\": [\n    {\n      \"source_element_id\": \"source_element_id\",\n      \"target_element_id\": \"target_element_id\"\n    }\n  ],\n  \"component_display_name\": \"component_display_name\",\n  \"component_ids\": [\n    \"component_id\"\n  ],\n  \"component_name\": \"component_name\",\n  \"component_references\": [\n    {\n      \"component_id\": \"component_id\",\n      \"socket_names\": [\n        \"socket_name\"\n      ]\n    }\n  ],\n  \"description\": \"description\",\n  \"tags\": [\n    \"tag\"\n  ],\n  \"target_campaign_id\": \"target_campaign_id\",\n  \"target_component_absolute_name\": \"target_component_absolute_name\",\n  \"target_setting_name\": \"target_setting_name\",\n  \"target_socket_name\": \"target_socket_name\",\n  \"type\": \"type\",\n  \"types\": [\n    \"type\"\n  ],\n  \"variables\": [\n    {\n      \"description\": \"description\",\n      \"display_name\": \"display_name\",\n      \"name\": \"name\",\n      \"priority\": \"10\",\n      \"source\": \"INHERITED\",\n      \"tags\": [\n        \"tag\"\n      ],\n      \"type\": \"ADMIN_ICON\",\n      \"values\": {\n        \"values_key\": {}\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c040f9eb-941a-486b-973d-e14a26415d1b",
+              "name": "campaign_controller_name_out_of_range",
+              "originalRequest": {
+                "url": {
+                  "path": ["v1", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"anchors\": [\n    {\n      \"source_element_id\": \"source_element_id\",\n      \"target_element_id\": \"target_element_id\"\n    }\n  ],\n  \"component_display_name\": \"component_display_name\",\n  \"component_ids\": [\n    \"component_id\"\n  ],\n  \"component_name\": \"component_name\",\n  \"component_references\": [\n    {\n      \"component_id\": \"component_id\",\n      \"socket_names\": [\n        \"socket_name\"\n      ]\n    }\n  ],\n  \"description\": \"description\",\n  \"tags\": [\n    \"tag\"\n  ],\n  \"target_campaign_id\": \"target_campaign_id\",\n  \"target_component_absolute_name\": \"target_component_absolute_name\",\n  \"target_setting_name\": \"target_setting_name\",\n  \"target_socket_name\": \"target_socket_name\",\n  \"type\": \"type\",\n  \"types\": [\n    \"type\"\n  ],\n  \"variables\": [\n    {\n      \"description\": \"description\",\n      \"display_name\": \"display_name\",\n      \"name\": \"name\",\n      \"priority\": \"10\",\n      \"source\": \"INHERITED\",\n      \"tags\": [\n        \"tag\"\n      ],\n      \"type\": \"ADMIN_ICON\",\n      \"values\": {\n        \"values_key\": {}\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "cfba8d5f-105a-44af-86ec-e34414420f05",
+              "name": "campaign_controller_name_same_as_a_default_controller_name",
+              "originalRequest": {
+                "url": {
+                  "path": ["v1", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"anchors\": [\n    {\n      \"source_element_id\": \"source_element_id\",\n      \"target_element_id\": \"target_element_id\"\n    }\n  ],\n  \"component_display_name\": \"component_display_name\",\n  \"component_ids\": [\n    \"component_id\"\n  ],\n  \"component_name\": \"component_name\",\n  \"component_references\": [\n    {\n      \"component_id\": \"component_id\",\n      \"socket_names\": [\n        \"socket_name\"\n      ]\n    }\n  ],\n  \"description\": \"description\",\n  \"tags\": [\n    \"tag\"\n  ],\n  \"target_campaign_id\": \"target_campaign_id\",\n  \"target_component_absolute_name\": \"target_component_absolute_name\",\n  \"target_setting_name\": \"target_setting_name\",\n  \"target_socket_name\": \"target_socket_name\",\n  \"type\": \"type\",\n  \"types\": [\n    \"type\"\n  ],\n  \"variables\": [\n    {\n      \"description\": \"description\",\n      \"display_name\": \"display_name\",\n      \"name\": \"name\",\n      \"priority\": \"10\",\n      \"source\": \"INHERITED\",\n      \"tags\": [\n        \"tag\"\n      ],\n      \"type\": \"ADMIN_ICON\",\n      \"values\": {\n        \"values_key\": {}\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a2dd59ba-b805-46c8-aee2-34ff3a880f95",
+              "name": "campaign_controller_too_many_journey_names",
+              "originalRequest": {
+                "url": {
+                  "path": ["v1", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"anchors\": [\n    {\n      \"source_element_id\": \"source_element_id\",\n      \"target_element_id\": \"target_element_id\"\n    }\n  ],\n  \"component_display_name\": \"component_display_name\",\n  \"component_ids\": [\n    \"component_id\"\n  ],\n  \"component_name\": \"component_name\",\n  \"component_references\": [\n    {\n      \"component_id\": \"component_id\",\n      \"socket_names\": [\n        \"socket_name\"\n      ]\n    }\n  ],\n  \"description\": \"description\",\n  \"tags\": [\n    \"tag\"\n  ],\n  \"target_campaign_id\": \"target_campaign_id\",\n  \"target_component_absolute_name\": \"target_component_absolute_name\",\n  \"target_setting_name\": \"target_setting_name\",\n  \"target_socket_name\": \"target_socket_name\",\n  \"type\": \"type\",\n  \"types\": [\n    \"type\"\n  ],\n  \"variables\": [\n    {\n      \"description\": \"description\",\n      \"display_name\": \"display_name\",\n      \"name\": \"name\",\n      \"priority\": \"10\",\n      \"source\": \"INHERITED\",\n      \"tags\": [\n        \"tag\"\n      ],\n      \"type\": \"ADMIN_ICON\",\n      \"values\": {\n        \"values_key\": {}\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
               "id": "585b1fda-d835-42ee-99f2-26b43e90aac5",
               "name": "campaign_has_pending_changes",
               "originalRequest": {
@@ -309092,6 +309425,43 @@
             {
               "id": "14786f2a-6805-491b-a1cb-40f5b7046ec1",
               "name": "invalid_setting_filter",
+              "originalRequest": {
+                "url": {
+                  "path": ["v1", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"anchors\": [\n    {\n      \"source_element_id\": \"source_element_id\",\n      \"target_element_id\": \"target_element_id\"\n    }\n  ],\n  \"component_display_name\": \"component_display_name\",\n  \"component_ids\": [\n    \"component_id\"\n  ],\n  \"component_name\": \"component_name\",\n  \"component_references\": [\n    {\n      \"component_id\": \"component_id\",\n      \"socket_names\": [\n        \"socket_name\"\n      ]\n    }\n  ],\n  \"description\": \"description\",\n  \"tags\": [\n    \"tag\"\n  ],\n  \"target_campaign_id\": \"target_campaign_id\",\n  \"target_component_absolute_name\": \"target_component_absolute_name\",\n  \"target_setting_name\": \"target_setting_name\",\n  \"target_socket_name\": \"target_socket_name\",\n  \"type\": \"type\",\n  \"types\": [\n    \"type\"\n  ],\n  \"variables\": [\n    {\n      \"description\": \"description\",\n      \"display_name\": \"display_name\",\n      \"name\": \"name\",\n      \"priority\": \"10\",\n      \"source\": \"INHERITED\",\n      \"tags\": [\n        \"tag\"\n      ],\n      \"type\": \"ADMIN_ICON\",\n      \"values\": {\n        \"values_key\": {}\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "2b9c1426-d968-470e-97d9-addc6d3ea2bb",
+              "name": "invalid_step_alias",
               "originalRequest": {
                 "url": {
                   "path": ["v1", "components", ":component_id", "duplicate"],
@@ -499890,7 +500260,10 @@
               { "key": "Accept", "value": "<string>" }
             ],
             "method": "PATCH",
-            "body": { "mode": "raw", "raw": "aliquip nisi" },
+            "body": {
+              "mode": "raw",
+              "raw": "incididunt in nisi ut adipisicing"
+            },
             "auth": null
           },
           "response": [
@@ -499925,7 +500298,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -499964,7 +500340,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500003,7 +500382,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500042,7 +500424,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500081,7 +500466,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500120,7 +500508,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500159,7 +500550,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500198,7 +500592,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500237,7 +500634,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500276,7 +500676,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500315,7 +500718,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500354,7 +500760,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Unauthorized",
               "code": 401,
@@ -500393,7 +500802,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Payment Required",
               "code": 402,
@@ -500432,7 +500844,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Forbidden",
               "code": 403,
@@ -500471,7 +500886,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Forbidden",
               "code": 403,
@@ -500510,7 +500928,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Forbidden",
               "code": 403,
@@ -500549,7 +500970,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Forbidden",
               "code": 403,
@@ -500588,7 +501012,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Unsupported Media Type",
               "code": 415,
@@ -500627,7 +501054,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Too Many Requests",
               "code": 429,
@@ -500666,7 +501096,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Bad Gateway",
               "code": 502,
@@ -500705,7 +501138,10 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "aliquip nisi" }
+                "body": {
+                  "mode": "raw",
+                  "raw": "incididunt in nisi ut adipisicing"
+                }
               },
               "status": "Bad Gateway",
               "code": 502,
