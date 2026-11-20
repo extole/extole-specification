@@ -53701,7 +53701,7 @@
                   "key": "version",
                   "disabled": false,
                   "description": {
-                    "content": "(Required) ",
+                    "content": "(Required) Campaign version: a version number, `latest` or `published`.",
                     "type": "text/plain"
                   }
                 }
@@ -69646,7 +69646,7 @@
                   "key": "version",
                   "disabled": false,
                   "description": {
-                    "content": "(Required) ",
+                    "content": "(Required) Campaign version: a version number, `latest` or `published`.",
                     "type": "text/plain"
                   }
                 }
@@ -70635,7 +70635,7 @@
                   "key": "version",
                   "disabled": false,
                   "description": {
-                    "content": "(Required) ",
+                    "content": "(Required) Campaign version: a version number, `latest` or `published`.",
                     "type": "text/plain"
                   }
                 }
@@ -297870,7 +297870,7 @@
                   "key": "version",
                   "disabled": false,
                   "description": {
-                    "content": "(Required) ",
+                    "content": "(Required) Version of the component's campaign, as a number. Any other value reads the component with no version: the latest version of a component in your own campaign, or the published version of a component that another client shares.",
                     "type": "text/plain"
                   }
                 }
@@ -299111,7 +299111,7 @@
                   "key": "version",
                   "disabled": false,
                   "description": {
-                    "content": "(Required) ",
+                    "content": "(Required) Version of the component's campaign, as a number. Any other value reads the component with no version: the latest version of a component in your own campaign, or the published version of a component that another client shares.",
                     "type": "text/plain"
                   }
                 }
@@ -300385,7 +300385,7 @@
                   "key": "version",
                   "disabled": false,
                   "description": {
-                    "content": "(Required) ",
+                    "content": "(Required) Version of the component's campaign, as a number. Any other value reads the component with no version: the latest version of a component in your own campaign, or the published version of a component that another client shares.",
                     "type": "text/plain"
                   }
                 }
@@ -496090,7 +496090,7 @@
               { "key": "Accept", "value": "<string>" }
             ],
             "method": "PATCH",
-            "body": { "mode": "raw", "raw": "in non" },
+            "body": { "mode": "raw", "raw": "incididunt exercitation" },
             "auth": null
           },
           "response": [
@@ -496125,7 +496125,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496164,7 +496164,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496203,7 +496203,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496242,7 +496242,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496281,7 +496281,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496320,7 +496320,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496359,7 +496359,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496398,7 +496398,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496437,7 +496437,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496476,7 +496476,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496515,7 +496515,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -496554,7 +496554,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Unauthorized",
               "code": 401,
@@ -496593,7 +496593,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Payment Required",
               "code": 402,
@@ -496632,7 +496632,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Forbidden",
               "code": 403,
@@ -496671,7 +496671,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Forbidden",
               "code": 403,
@@ -496710,7 +496710,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Forbidden",
               "code": 403,
@@ -496749,7 +496749,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Forbidden",
               "code": 403,
@@ -496788,7 +496788,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Unsupported Media Type",
               "code": 415,
@@ -496827,7 +496827,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Too Many Requests",
               "code": 429,
@@ -496866,7 +496866,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Bad Gateway",
               "code": 502,
@@ -496905,7 +496905,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": { "mode": "raw", "raw": "in non" }
+                "body": { "mode": "raw", "raw": "incididunt exercitation" }
               },
               "status": "Bad Gateway",
               "code": 502,
