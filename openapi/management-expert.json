@@ -128187,18 +128187,20 @@
             "type" : "string"
           }
         }, {
-          "description" : "Optional filter for offset, defaults to 0.",
+          "description" : "Optional filter for offset.",
           "in" : "query",
           "name" : "offset",
           "schema" : {
+            "default" : "0",
             "nullable" : true,
             "type" : "string"
           }
         }, {
-          "description" : "Optional filter for limit, defaults to 100.",
+          "description" : "Optional filter for limit.",
           "in" : "query",
           "name" : "limit",
           "schema" : {
+            "default" : "100",
             "nullable" : true,
             "type" : "string"
           }
@@ -128466,34 +128468,38 @@
             "type" : "string"
           }
         }, {
-          "description" : "Optional filter for offset, defaults to 0.",
+          "description" : "Optional filter for offset.",
           "in" : "query",
           "name" : "offset",
           "schema" : {
+            "default" : "0",
             "nullable" : true,
             "type" : "string"
           }
         }, {
-          "description" : "Optional filter for limit, defaults to all.",
+          "description" : "Optional filter for limit.",
           "in" : "query",
           "name" : "limit",
           "schema" : {
+            "default" : "100",
             "nullable" : true,
             "type" : "string"
           }
         }, {
-          "description" : "Optional sort field, defaults to CREATED_DATE. Valid values: CREATED_DATE, UPDATED_DATE, NAME.",
+          "description" : "Optional sort field. Valid values: CREATED_DATE, UPDATED_DATE, NAME.",
           "in" : "query",
           "name" : "order_by",
           "schema" : {
+            "default" : "CREATED_DATE",
             "nullable" : true,
             "type" : "string"
           }
         }, {
-          "description" : "Optional sort direction, defaults to DESCENDING. Valid values: ASCENDING (or ASC), DESCENDING (or DESC).",
+          "description" : "Optional sort direction. Valid values: ASCENDING (or ASC), DESCENDING (or DESC).",
           "in" : "query",
           "name" : "order",
           "schema" : {
+            "default" : "DESCENDING",
             "nullable" : true,
             "type" : "string"
           }
@@ -128682,18 +128688,20 @@
             "type" : "string"
           }
         }, {
-          "description" : "Optional filter for offset, defaults to 0.",
+          "description" : "Optional filter for offset.",
           "in" : "query",
           "name" : "offset",
           "schema" : {
+            "default" : "0",
             "nullable" : true,
             "type" : "string"
           }
         }, {
-          "description" : "Optional filter for limit, defaults to 100.",
+          "description" : "Optional filter for limit.",
           "in" : "query",
           "name" : "limit",
           "schema" : {
+            "default" : "100",
             "nullable" : true,
             "type" : "string"
           }
@@ -129241,18 +129249,20 @@
             "type" : "string"
           }
         }, {
-          "description" : "Optional filter for offset, defaults to 0.",
+          "description" : "Optional filter for offset.",
           "in" : "query",
           "name" : "offset",
           "schema" : {
+            "default" : "0",
             "nullable" : true,
             "type" : "string"
           }
         }, {
-          "description" : "Optional filter for limit, defaults to 100.",
+          "description" : "Optional filter for limit.",
           "in" : "query",
           "name" : "limit",
           "schema" : {
+            "default" : "100",
             "nullable" : true,
             "type" : "string"
           }
