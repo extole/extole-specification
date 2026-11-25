@@ -304942,7 +304942,7 @@
           "request": {
             "name": "Duplicate a component",
             "description": {
-              "content": "Creates a deep copy of the specified component and all its child settings and assets.",
+              "content": "Deprecated. Use `POST /v2/components/{component_id}/duplicate` instead. Creates a deep copy of the specified component and all its child settings and assets.",
               "type": "text/plain"
             },
             "url": {
@@ -334228,7 +334228,7 @@
           "request": {
             "name": "Add component to setting",
             "description": {
-              "content": "Creates a distinct duplicate of the component identified by `source_component_id` and installs it into the specified `SOCKET` or `MULTI_SOCKET` setting. The source component is not referenced or modified. Optional `settings` entries override settings on the duplicate.",
+              "content": "Deprecated. Use `POST /v2/components/{component_id}/duplicate` instead, with `target_socket_name` set to the socket. Creates a distinct duplicate of the component identified by `source_component_id` and installs it into the specified `SOCKET` or `MULTI_SOCKET` setting. The source component is not referenced or modified. Optional `settings` entries override settings on the duplicate.",
               "type": "text/plain"
             },
             "url": {
@@ -347303,6 +347303,2976 @@
                 ],
                 "method": "POST",
                 "body": {}
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        },
+        {
+          "id": "e02ad60c-d681-48c8-90b7-b83fc34ccecb",
+          "name": "Duplicate a component by id",
+          "request": {
+            "name": "Duplicate a component by id",
+            "description": {
+              "content": "Copies the component and its descendants, attaches the copy to `target_component_path`, which must be writable, or to its `target_socket_name` socket, and applies `overrides` to the copy. Returns the copy. The copy and its overrides are one change: a failure leaves no copy. Overrides apply before the copied component's install script runs.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": ["v2", "components", ":component_id", "duplicate"],
+              "host": ["{{baseUrl}}"],
+              "query": [],
+              "variable": [
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "component_id",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) ",
+                    "type": "text/plain"
+                  }
+                }
+              ]
+            },
+            "header": [
+              { "key": "Content-Type", "value": "<string>" },
+              { "key": "Accept", "value": "<string>" }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+              "options": {
+                "raw": { "headerFamily": "json", "language": "json" }
+              }
+            },
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4c6fdd4c-1e93-4259-b589-10b9da855885",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "cd15992a-6e53-4a85-9ff4-569fd8513dbc",
+              "name": "binding_error",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3316295a-0f23-4fc6-8ba8-ffc3deb5dc14",
+              "name": "component_build_failed",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "20d652b8-78bb-4aa7-af0d-86482fc4971a",
+              "name": "component_concurrent_update",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "79acf120-783a-4346-8c3d-091efea6f1a1",
+              "name": "component_install_failed",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "76d07629-3285-468f-abbe-5832c2bee794",
+              "name": "component_locked",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "93a00595-d368-4a97-8dde-90cb6b574b64",
+              "name": "component_parent_not_allowed",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e3735050-e11c-40ef-a641-53226bbeaf15",
+              "name": "component_path_ambiguous",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3b2d1a73-b777-403f-94d0-032ffe821dba",
+              "name": "component_path_invalid",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "9d2e395f-7622-4773-8992-964a15b6bc88",
+              "name": "component_path_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ba41cae6-8984-4a24-b875-0952f181b408",
+              "name": "component_setting_unknown",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "d3ccf00e-3220-47a1-bd44-995f9fa2abf9",
+              "name": "description_length_out_of_range",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "0682b4a7-c90f-4abf-8f23-21190175d95d",
+              "name": "display_name_contains_illegal_character",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c7f6374a-37e3-48ab-8aba-e7096f51186c",
+              "name": "display_name_length_out_of_range",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "af23c873-ffcd-492a-a127-1c2e174026f8",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "cc3cc726-ec84-4930-8d5b-d19d915bf0e0",
+              "name": "invalid_json",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "83579836-c1f4-4b37-8a38-283180ab616b",
+              "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b5d07373-c639-4823-8cc5-b08b796864cd",
+              "name": "invalid_uri_in_json",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "bc115da1-54c8-4826-a29c-daa6994b20ce",
+              "name": "invalid_uri_in_query_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "d681b627-b06c-497a-843d-257e9491f734",
+              "name": "missing_request_body",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "93f30ce1-aefa-4eab-af24-2c0bfd9fe51d",
+              "name": "name_already_in_use",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "eff47699-cca0-4cbd-93d8-11e54774f400",
+              "name": "name_contains_illegal_character",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "25465db2-7945-4ac2-8bb4-ad4d45a7688b",
+              "name": "name_length_out_of_range",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "fa378442-4f23-4d4a-a081-19140fba2fdf",
+              "name": "setting_name_missing",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "1937f5fe-45b1-4072-868b-1452742f05f8",
+              "name": "setting_values_conflict",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "42110207-06d3-4250-8d61-c4003c88f15b",
+              "name": "setting_values_unsupported",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "9d4649ca-880b-487b-a09a-f04ea4098e62",
+              "name": "target_component_path_missing",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "6c78b24c-70da-4569-a83b-692065673470",
+              "name": "target_socket_not_allowed",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "6bc62e5c-4cf8-45d6-99e3-21568e8bd905",
+              "name": "target_socket_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3bc5120c-c240-4e75-b3f9-1d69dbfe06aa",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c8c9d77c-cce0-4883-9e51-e09e965b4eb4",
+              "name": "Payment Required",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Payment Required",
+              "code": 402,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "0ac2aabf-3cf4-4419-aee3-20ab0f2d2417",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "17c13fc7-d9bb-40a3-abc3-1ad466b8e8f5",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "8fcf150f-c210-4cf3-a68e-b7be9789878d",
+              "name": "missing_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "02d73e64-009f-4e4b-a33b-94fac3241922",
+              "name": "Unsupported Media Type",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Unsupported Media Type",
+              "code": 415,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "4f77a5b3-d52c-4650-8957-39c87fb71cfa",
+              "name": "Too Many Requests",
+              "originalRequest": {
+                "url": {
+                  "path": ["v2", "components", ":component_id", "duplicate"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        },
+        {
+          "id": "dc8d95fc-8300-4cd2-a3ec-fbcb5db31623",
+          "name": "Duplicate a component by path",
+          "request": {
+            "name": "Duplicate a component by path",
+            "description": {
+              "content": "Copies the component and its descendants, attaches the copy to `target_component_path`, which must be writable, or to its `target_socket_name` socket, and applies `overrides` to the copy. Returns the copy. The copy and its overrides are one change: a failure leaves no copy. Overrides apply before the copied component's install script runs.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": ["v2", "components", ":component_path", "-", "duplicate"],
+              "host": ["{{baseUrl}}"],
+              "query": [],
+              "variable": [
+                {
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "component_path",
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) The component to copy, as a path that starts at `account` or `client:`.",
+                    "type": "text/plain"
+                  }
+                }
+              ]
+            },
+            "header": [
+              { "key": "Content-Type", "value": "<string>" },
+              { "key": "Accept", "value": "<string>" }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+              "options": {
+                "raw": { "headerFamily": "json", "language": "json" }
+              }
+            },
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a33c5fb3-9076-4c43-8134-2bf16ffffb17",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "45c14e3d-74de-43e6-8f2c-f2c5bf7de58c",
+              "name": "binding_error",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ad8b3d6e-0fce-478e-892b-06047492926b",
+              "name": "component_build_failed",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "fab95adb-33e6-446b-a07d-ec24accf1308",
+              "name": "component_concurrent_update",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "0fdba902-aa1d-40ad-890a-b8744c3149f6",
+              "name": "component_install_failed",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7bf95fbd-e8e6-4434-971c-21df9269fb20",
+              "name": "component_locked",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "4fa7ae6f-9029-48cf-93d2-eb8485feda42",
+              "name": "component_parent_not_allowed",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b5fd85f5-6b2f-4b39-96b8-20b2f217ec27",
+              "name": "component_path_ambiguous",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "0b84deea-6bec-43ce-aef3-a08a8db92792",
+              "name": "component_path_invalid",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "4e2df17d-9c95-4ee5-94f9-b089e8b35ae7",
+              "name": "component_path_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e709d2b8-760e-4f8e-9f5f-cd38c2c520c9",
+              "name": "component_setting_unknown",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3e5ad1af-4537-42fa-a6c1-efa5c25097ad",
+              "name": "description_length_out_of_range",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e3e7713b-07ef-4180-8795-0a15b59626ef",
+              "name": "display_name_contains_illegal_character",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "55ff80f5-6bc8-40ba-a9ff-f59a52f25885",
+              "name": "display_name_length_out_of_range",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7b925cd1-daa0-4f96-99ec-7ec7a61e23de",
+              "name": "invalid_incoming_url",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3e789baa-3483-47b8-af32-c5cff5e7fc98",
+              "name": "invalid_json",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "fa9fcf00-29bb-4450-87fb-7d0cd6818769",
+              "name": "invalid_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a16aa666-de6d-4400-8238-5378be7b27a9",
+              "name": "invalid_uri_in_json",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3f10aaf9-5c2b-47f1-8dff-c2076727ce8c",
+              "name": "invalid_uri_in_query_parameter",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c83b09a2-4d2a-47df-b40b-6e26c8bf26d1",
+              "name": "missing_request_body",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "1142947d-39ed-4534-b126-f1be4c6da123",
+              "name": "name_already_in_use",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "6004082a-24e3-48e7-9b9c-3fd8d98b13ae",
+              "name": "name_contains_illegal_character",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "4c2ddc3d-8ff1-41a5-b2c4-be89e09a1a55",
+              "name": "name_length_out_of_range",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7eec2d8d-8651-4fa2-bfe9-2a61fae0354b",
+              "name": "setting_name_missing",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "2301d5d7-495c-44bc-ba7d-2c07f30d539e",
+              "name": "setting_values_conflict",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "d02f60d3-25c1-4b65-a552-239d2877f1c1",
+              "name": "setting_values_unsupported",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "74c4ae35-c74e-49d9-bde7-a646d91ab818",
+              "name": "target_component_path_missing",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b604d429-b871-49b3-9e8d-4bf9d26ca544",
+              "name": "target_socket_not_allowed",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "8d0454b3-1571-4e2e-a99d-03960399d4b1",
+              "name": "target_socket_not_found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c9913142-d508-4e52-84a8-ea054305aa4c",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "97f60288-6535-4f11-b528-8508cfd4a421",
+              "name": "Payment Required",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Payment Required",
+              "code": 402,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "82ab4937-eb50-4724-a0b4-41ce5e7cbea5",
+              "name": "access_denied",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "9df8387d-e6d9-4a3e-8090-e365ee8b7477",
+              "name": "method_unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "4bf31174-56eb-42c1-8ec9-e5513743e88f",
+              "name": "missing_access_token",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "00d7c262-5d58-4e7d-afe5-308560cb6383",
+              "name": "Unsupported Media Type",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
+              },
+              "status": "Unsupported Media Type",
+              "code": 415,
+              "header": [{ "key": "Content-Type", "value": "<string>" }],
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "96807b48-1096-4a24-967a-5c577525a043",
+              "name": "Too Many Requests",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "components",
+                    ":component_path",
+                    "-",
+                    "duplicate"
+                  ],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "<string>" },
+                  { "key": "Accept", "value": "<string>" },
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"overrides\": {\n    \"components\": {\n      \".roles/advocate.flows/share\": {\n        \"settings\": [\n          {\n            \"name\": \"cta\",\n            \"values\": {\n              \"default\": \"Share now\"\n            }\n          }\n        ]\n      }\n    },\n    \"display_name\": \"Referral Program\",\n    \"name\": \"referral\",\n    \"settings\": [\n      {\n        \"name\": \"headline\",\n        \"remove_values\": [\n          \"fr\"\n        ],\n        \"values\": {\n          \"default\": \"Invite a friend\",\n          \"es\": \"Invita a un amigo\"\n        }\n      }\n    ]\n  },\n  \"target_component_path\": \"7276515999902863419\",\n  \"target_socket_name\": \"placements\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                }
               },
               "status": "Too Many Requests",
               "code": 429,
@@ -500440,10 +503410,7 @@
               { "key": "Accept", "value": "<string>" }
             ],
             "method": "PATCH",
-            "body": {
-              "mode": "raw",
-              "raw": "reprehenderit non consectetur ex nostrud"
-            },
+            "body": { "mode": "raw", "raw": "ullamco non quis" },
             "auth": null
           },
           "response": [
@@ -500478,10 +503445,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500520,10 +503484,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500562,10 +503523,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500604,10 +503562,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500646,10 +503601,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500688,10 +503640,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500730,10 +503679,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500772,10 +503718,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500814,10 +503757,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500856,10 +503796,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500898,10 +503835,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Bad Request",
               "code": 400,
@@ -500940,10 +503874,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Unauthorized",
               "code": 401,
@@ -500982,10 +503913,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Payment Required",
               "code": 402,
@@ -501024,10 +503952,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Forbidden",
               "code": 403,
@@ -501066,10 +503991,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Forbidden",
               "code": 403,
@@ -501108,10 +504030,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Forbidden",
               "code": 403,
@@ -501150,10 +504069,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Forbidden",
               "code": 403,
@@ -501192,10 +504108,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Unsupported Media Type",
               "code": 415,
@@ -501234,10 +504147,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Too Many Requests",
               "code": 429,
@@ -501276,10 +504186,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Bad Gateway",
               "code": 502,
@@ -501318,10 +504225,7 @@
                   }
                 ],
                 "method": "PATCH",
-                "body": {
-                  "mode": "raw",
-                  "raw": "reprehenderit non consectetur ex nostrud"
-                }
+                "body": { "mode": "raw", "raw": "ullamco non quis" }
               },
               "status": "Bad Gateway",
               "code": 502,
